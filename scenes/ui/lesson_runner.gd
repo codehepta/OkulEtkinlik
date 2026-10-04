@@ -109,6 +109,10 @@ func start(profile_id: String, node_id: String, rng_seed: int = -1) -> void:
 		return
 	_advance()
 
+## Altyazı balonu üstte: cevap seçenekleri ve sürükleme yuvaları alt yarıdadır.
+func subtitle_placement() -> String:
+	return "top"
+
 func current_round_index() -> int:
 	return _pos
 

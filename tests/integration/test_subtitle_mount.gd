@@ -64,3 +64,33 @@ func test_new_line_during_linger_stays_visible() -> void:
 	await wait_seconds(0.4)
 	assert_true(_bubble.visible, "yeni satır eski gizleme zamanlayıcısını iptal eder")
 	_n.stop()
+
+func test_hidden_placement_hides_bubble() -> void:
+	_bubble.set("placement_provider", func() -> String: return "hidden")
+	_n.say(LINE_ID)
+	assert_false(_bubble.visible, "veli ekranında balon gösterilmez")
+
+func test_top_placement_anchors_to_top() -> void:
+	_bubble.set("placement_provider", func() -> String: return "top")
+	_n.say(LINE_ID)
+	assert_true(_bubble.visible)
+	assert_eq(_bubble.anchor_top, 0.0)
+	assert_eq(_bubble.call("placement"), "top")
+	await wait_frames(2)
+	assert_lt(_bubble.position.y, 100.0, "üst şeritte")
+
+func test_bubble_sizes_to_text() -> void:
+	_bubble.set("placement_provider", func() -> String: return "bottom")
+	_n.say(LINE_ID)
+	await wait_frames(3)
+	var max_w: float = float(_bubble.get("MAX_TEXT_WIDTH"))
+	assert_lt(_bubble.size.x, max_w / 2.0, "kısa metin: dar balon")
+	assert_lt(_bubble.size.y, 140.0, "tek satır: alçak balon")
+	var vp: Vector2 = _bubble.get_viewport_rect().size
+	assert_almost_eq(_bubble.position.y + _bubble.size.y, vp.y - 24.0, 2.0, "alt kenardan 24 px yukarıda")
+
+func test_long_text_wraps_within_max_width() -> void:
+	var long: String = "İstersen kendine bir takma ad yazabilirsin. Bir büyüğünden yardım iste. İstemezsen Geç düğmesine dokun."
+	var w: float = float(_bubble.call("text_width", long))
+	assert_lte(w, float(_bubble.get("MAX_TEXT_WIDTH")))
+	assert_gt(w, 400.0)
