@@ -116,7 +116,7 @@ func set_grade(grade: int) -> void:
 func unlock_today() -> void:
 	if _pid == "":
 		return
-	app.session_timer.parent_unlock_today(_pid)
+	app.session_timer.parent_unlock_today()
 	_set_status(Strings.t("parent.unlocked"))
 
 func request_delete() -> void:

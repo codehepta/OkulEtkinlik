@@ -3,11 +3,19 @@ extends Node
 ## Saf hesaplar Mastery/Leitner/Stars sınıflarındadır; burası kayıt verisini günceller.
 
 const MAX_PROFILES: int = 4
+const ReviewPicker: GDScript = preload("res://scripts/core/review_picker.gd")
+## Tekrar Bulutu'nun giriş satırı.
+const REVIEW_INTRO_VOICE: String = "vo.genel.tekrar_bulutu"
 
 var clock: DayClock = DayClock.new()
 ## Testlerde değiştirilebilir; boşsa _ready'de autoload'lar bağlanır.
 var save: Node = null
 var content: Node = null
+## Ağaç evi kataloğu; testlerde değiştirilebilir.
+var decor_path: String = TreeHouseRules.DEFAULT_PATH
+
+var _decor_items: PackedStringArray = PackedStringArray()
+var _decor_loaded: bool = false
 
 func _ready() -> void:
 	if save == null:
@@ -79,46 +87,20 @@ func outcome_mastery(profile_id: String, code: String) -> float:
 	return float((e as Dictionary).get("mastery", 0.0)) if e is Dictionary else 0.0
 
 func record_node(profile_id: String, node_id: String, results: Array[RoundResult]) -> Dictionary:
-	var out: Dictionary = {"stars": 0, "new_sticker": "", "unlocked": ""}
+	var out: Dictionary = {"stars": 0, "new_sticker": "", "unlocked": "", "new_decor": ""}
 	var p: Dictionary = _profile(profile_id)
 	if p.is_empty():
 		return out
-	var total_wrong: int = 0
-	for r: RoundResult in results:
-		total_wrong += r.wrong
-	var stars: int = Stars.compute(total_wrong)
+	var stars: int = _stars_of(results)
 	out["stars"] = stars
+	var unlocked_before: int = decor_unlocked(profile_id).size()
 	var nodes: Dictionary = p["nodes"]
 	var entry: Dictionary = nodes.get(node_id, {"best_stars": 0, "plays": 0})
 	var first_time: bool = int(entry.get("plays", 0)) == 0
 	entry["best_stars"] = maxi(int(entry.get("best_stars", 0)), stars)
 	entry["plays"] = int(entry.get("plays", 0)) + 1
 	nodes[node_id] = entry
-
-	var outs: Dictionary = p["outcomes"]
-	var helped_codes: Dictionary = {}
-	var touched: Array[String] = []
-	for r: RoundResult in results:
-		for code: String in r.outcomes:
-			var o: Dictionary = outs.get(code, {"mastery": 0.0, "box": 1, "due": 0})
-			var v: float = Mastery.result_value(r.wrong + 1, r.helped)
-			o["mastery"] = Mastery.update(float(o.get("mastery", 0.0)), v)
-			outs[code] = o
-			if not touched.has(code):
-				touched.append(code)
-			if r.helped:
-				helped_codes[code] = true
-	var today: int = clock.today()
-	for code: String in touched:
-		var o: Dictionary = outs[code]
-		o["last_day"] = today
-		var box: int = clampi(int(o.get("box", 1)), 1, 5)
-		if helped_codes.has(code):
-			box = Leitner.reset()
-		elif stars >= 2:
-			box = Leitner.promote(box)
-		o["box"] = box
-		o["due"] = Leitner.due_day(box, today)
+	_apply_outcomes(p, results, stars, true)
 
 	if first_time:
 		var sticker: String = str(content.node(node_id).get("sticker", ""))
@@ -126,6 +108,9 @@ func record_node(profile_id: String, node_id: String, results: Array[RoundResult
 		if not sticker.is_empty() and not owned.has(sticker):
 			owned.append(sticker)
 			out["new_sticker"] = sticker
+	var unlocked_now: PackedStringArray = decor_unlocked(profile_id)
+	if unlocked_now.size() > unlocked_before:
+		out["new_decor"] = unlocked_now[unlocked_now.size() - 1]
 	out["unlocked"] = content.next_node_id(node_id)
 	save.save()
 	return out
@@ -136,14 +121,23 @@ func record_partial(profile_id: String, node_id: String, results: Array[RoundRes
 	var p: Dictionary = _profile(profile_id)
 	if p.is_empty() or content.node(node_id).is_empty():
 		return
-	var outs: Dictionary = p["outcomes"]
-	for r: RoundResult in results:
-		for code: String in r.outcomes:
-			var o: Dictionary = outs.get(code, {"mastery": 0.0, "box": 1, "due": 0})
-			o["mastery"] = Mastery.update(float(o.get("mastery", 0.0)), Mastery.result_value(r.wrong + 1, r.helped))
-			o["last_day"] = clock.today()
-			outs[code] = o
+	_apply_outcomes(p, results, 0, false)
 	save.save()
+
+## Tekrar Bulutu sonucu: ustalık ve Leitner duraktaki kuralla işlenir (≥2 yıldız bir kutu
+## ilerletir, yardımlı tur 1. kutuya döndürür, aksi halde vade korunur). Düğüm yıldızı,
+## çıkartma ve kilit yoktur; yıldız yalnızca sonuç ekranı içindir. partial: süre doldu,
+## yalnızca ustalık işlenir.
+func record_review(profile_id: String, results: Array[RoundResult], partial: bool = false) -> Dictionary:
+	var out: Dictionary = {"stars": 0, "new_sticker": "", "unlocked": "", "new_decor": ""}
+	var p: Dictionary = _profile(profile_id)
+	if p.is_empty() or results.is_empty():
+		return out
+	var stars: int = 0 if partial else _stars_of(results)
+	out["stars"] = stars
+	_apply_outcomes(p, results, stars, not partial)
+	save.save()
+	return out
 
 func due_outcomes(profile_id: String) -> PackedStringArray:
 	var res: PackedStringArray = PackedStringArray()
@@ -152,6 +146,146 @@ func due_outcomes(profile_id: String) -> PackedStringArray:
 	for code: String in outs:
 		if Leitner.is_due(int((outs[code] as Dictionary).get("due", 0)), today):
 			res.append(code)
+	return res
+
+## Dersin (profilin sınıfında) tamamlanmış duraklarında geçen, vadesi gelmiş çıktılar;
+## vadesi en eski önce. Boşsa patikada Tekrar Bulutu görünmez.
+func review_codes(profile_id: String, subject: String) -> PackedStringArray:
+	var p: Dictionary = _profile(profile_id)
+	var res: PackedStringArray = PackedStringArray()
+	if p.is_empty():
+		return res
+	var in_subject: Dictionary = {}
+	for n: Dictionary in _review_nodes(profile_id, subject):
+		for code: Variant in n.get("outcomes", []):
+			in_subject[str(code)] = true
+	var outs: Dictionary = p["outcomes"]
+	var due: Array[String] = []
+	for code: String in due_outcomes(profile_id):
+		if in_subject.has(code):
+			due.append(code)
+	due.sort_custom(func(a: String, b: String) -> bool:
+		var da: int = int((outs[a] as Dictionary).get("due", 0))
+		var db: int = int((outs[b] as Dictionary).get("due", 0))
+		return da < db if da != db else a < b)
+	res.append_array(due)
+	return res
+
+## Tekrar Bulutu için LessonRunner'ın oynatacağı sanal düğüm; tur yoksa {}.
+func review_node(profile_id: String, subject: String, rng: RandomNumberGenerator) -> Dictionary:
+	var rounds: Array[Dictionary] = ReviewPicker.pick(review_codes(profile_id, subject), _review_nodes(profile_id, subject), rng)
+	if rounds.is_empty():
+		return {}
+	return {"id": "", "intro_voice": REVIEW_INTRO_VOICE, "outcomes": [], "rounds": rounds}
+
+# --- Bilge'nin Ağaç Evi ---
+
+## Profilin bütün duraklarındaki en yüksek yıldızların toplamı (bütün sınıf ve dersler).
+func total_stars(profile_id: String) -> int:
+	var total: int = 0
+	var nodes: Dictionary = _profile(profile_id).get("nodes", {})
+	for e: Variant in nodes.values():
+		if e is Dictionary:
+			total += int((e as Dictionary).get("best_stars", 0))
+	return total
+
+## Ağaç evi kataloğu (açılma sırasıyla).
+func decor_items() -> PackedStringArray:
+	if not _decor_loaded:
+		_decor_loaded = true
+		_decor_items = TreeHouseRules.load_items(decor_path)
+	return _decor_items
+
+## Profilin açtığı süs eşyaları (açılma sırasıyla).
+func decor_unlocked(profile_id: String) -> PackedStringArray:
+	var items: PackedStringArray = decor_items()
+	return items.slice(0, TreeHouseRules.unlocked_count(total_stars(profile_id), items.size()))
+
+## Sıradaki süsün eşiği; hepsi açıldıysa -1.
+func next_decor_threshold(profile_id: String) -> int:
+	var n: int = decor_unlocked(profile_id).size()
+	return TreeHouseRules.threshold(n) if n < decor_items().size() else -1
+
+## Odaya yerleştirilmiş süsler: anahtar -> Vector2 (0–1 oranı).
+func decor_layout(profile_id: String) -> Dictionary:
+	var res: Dictionary = {}
+	var placed: Variant = _profile(profile_id).get("decor", {})
+	if not (placed is Dictionary):
+		return res
+	for key: String in placed:
+		var v: Variant = placed[key]
+		if v is Array and (v as Array).size() == 2:
+			res[key] = Vector2(float(v[0]), float(v[1]))
+	return res
+
+## Açılmış bir süsü odada pos (0–1 oranı) konumuna koyar.
+func place_decor(profile_id: String, key: String, pos: Vector2) -> void:
+	var p: Dictionary = _profile(profile_id)
+	if p.is_empty() or not decor_unlocked(profile_id).has(key):
+		return
+	if not (p.get("decor") is Dictionary):
+		p["decor"] = {}
+	var c: Vector2 = TreeHouseRules.clamp_pos(pos)
+	(p["decor"] as Dictionary)[key] = [c.x, c.y]
+	save.save()
+
+## Süsü odadan kaldırıp rafa geri koyar.
+func store_decor(profile_id: String, key: String) -> void:
+	var p: Dictionary = _profile(profile_id)
+	if p.get("decor") is Dictionary and (p["decor"] as Dictionary).has(key):
+		(p["decor"] as Dictionary).erase(key)
+		save.save()
+
+func _stars_of(results: Array[RoundResult]) -> int:
+	var total_wrong: int = 0
+	for r: RoundResult in results:
+		total_wrong += r.wrong
+	return Stars.compute(total_wrong)
+
+## Turların ustalığını işler. leitner: kutu ve vade de güncellenir. Kutu değişmiyorsa
+## (yardımsız ve 2 yıldızın altında) mevcut vade korunur, tekrar tarihi ileri itilmez.
+func _apply_outcomes(p: Dictionary, results: Array[RoundResult], stars: int, leitner: bool) -> void:
+	var outs: Dictionary = p["outcomes"]
+	var helped_codes: Dictionary = {}
+	var touched: Array[String] = []
+	var known: Dictionary = {}
+	for r: RoundResult in results:
+		for code: String in r.outcomes:
+			if not touched.has(code):
+				touched.append(code)
+				known[code] = outs.has(code)
+			var o: Dictionary = outs.get(code, {"mastery": 0.0, "box": 1, "due": 0})
+			o["mastery"] = Mastery.update(float(o.get("mastery", 0.0)), Mastery.result_value(r.wrong + 1, r.helped))
+			outs[code] = o
+			if r.helped:
+				helped_codes[code] = true
+	var today: int = clock.today()
+	for code: String in touched:
+		var o: Dictionary = outs[code]
+		o["last_day"] = today
+		if not leitner:
+			continue
+		var box: int = clampi(int(o.get("box", 1)), 1, 5)
+		if helped_codes.has(code):
+			box = Leitner.reset()
+		elif stars >= 2:
+			box = Leitner.promote(box)
+		elif bool(known[code]):
+			o["box"] = box
+			continue
+		o["box"] = box
+		o["due"] = Leitner.due_day(box, today)
+
+## Tekrar turlarının alınabileceği düğümler: profilin sınıfında, dersin tamamlanmış durakları.
+func _review_nodes(profile_id: String, subject: String) -> Array[Dictionary]:
+	var res: Array[Dictionary] = []
+	var p: Dictionary = _profile(profile_id)
+	if p.is_empty():
+		return res
+	for u: Dictionary in content.units(int(p.get("grade", 1)), subject):
+		for n: Dictionary in u["nodes"]:
+			if n.has("id") and best_stars(profile_id, str(n["id"])) > 0:
+				res.append(n)
 	return res
 
 func _profiles() -> Array:

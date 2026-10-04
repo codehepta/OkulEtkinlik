@@ -83,7 +83,7 @@ func adopt_scene(scene_name: String, node: Node) -> void:
 const PLAY_SCENES: Array[String] = ["world_map", "region_path", "lesson", "result", "album"]
 
 func goto(scene: String, args: Dictionary = {}) -> void:
-	if PLAY_SCENES.has(scene) and profile_id != "" and session_timer.is_locked(profile_id):
+	if PLAY_SCENES.has(scene) and profile_id != "" and session_timer.is_locked():
 		scene = "session_end"
 		args = {}
 	if not scenes.has(scene):
@@ -130,11 +130,11 @@ func select_profile(id: String) -> void:
 	for p: Dictionary in progress.profiles():
 		if str(p["id"]) == id:
 			active_grade = int(p["grade"])
-	session_timer.start(id)
+	session_timer.start()
 
 ## Profil seçildikten ya da oluşturulduktan sonra: kilitliyse session_end, değilse world_map.
 func enter_after_profile() -> void:
-	if session_timer.is_locked(profile_id):
+	if session_timer.is_locked():
 		goto("session_end")
 	else:
 		goto("world_map")

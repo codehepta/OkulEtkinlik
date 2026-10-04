@@ -204,11 +204,10 @@ func test_album_has_fen_tab_for_grade_3() -> void:
 
 func _lock(id: String) -> void:
 	_save.data["settings"]["daily_limit_min"] = 10
-	for p: Variant in _save.data["profiles"]:
-		var d: Dictionary = p
-		if str(d["id"]) == id:
-			d["usage"]["seconds"] = 9999
-			d["usage"]["day"] = _timer._effective_day()
+	# Süre sınırı cihaz başınadır; profil kimliği yalnızca çağrıyı okunur kılmak için.
+	assert_ne(id, "")
+	_save.data["usage"]["seconds"] = 9999
+	_save.data["usage"]["day"] = _timer._effective_day()
 
 func test_locked_profile_cannot_enter_play_scenes() -> void:
 	var pid: String = _login(1)
