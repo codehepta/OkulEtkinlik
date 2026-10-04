@@ -105,5 +105,6 @@
 	"parent.import_ok": "Yedek yüklendi.",
 	"parent.import_bad": "Yedek dosyası okunamadı. Mevcut kayıt değişmedi.",
 	"parent.exit": "Çıkış",
-	"parent.profile_default": "Profil {n}"
+	"parent.profile_default": "Profil {n}",
+	"parent.import_too_many": "Yedek dosyasında en fazla 4 profil olabilir. Mevcut kayıt değişmedi."
 }

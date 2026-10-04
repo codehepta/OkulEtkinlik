@@ -91,6 +91,9 @@ func set_daily_limit(minutes: int) -> void:
 func set_volume(key: String, value: float) -> void:
 	_settings()[key] = value
 	app.audio.apply_volumes(_settings())
+
+## Kaydırıcı bırakılınca diske yazılır.
+func commit_volumes() -> void:
 	app.save.save()
 
 func set_toggle(key: String, on: bool) -> void:
@@ -146,17 +149,20 @@ func export_backup() -> String:
 
 ## Yedek metnini içe alır. Geçersizse mevcut kayıt değişmez ve false döner.
 func import_text(text: String) -> bool:
-	var parsed: Dictionary = ProgressExport.from_json(text)
-	if parsed.is_empty():
-		_set_status(Strings.t("parent.import_bad"))
+	var result: Dictionary = ProgressExport.prepare_import(text)
+	if str(result["error"]) != "":
+		_set_status(Strings.t(str(result["error"])))
 		return false
-	app.save.data = SaveSchema.migrate(parsed)
+	app.save.data = result["data"]
+	app.save.last_load_status = "loaded"
 	app.save.save()
 	app.audio.apply_volumes(_settings())
 	if _find_profile(app.profile_id).is_empty():
 		app.session_timer.stop()
 		app.profile_id = ""
 		app.active_grade = 0
+	else:
+		app.active_grade = int(_find_profile(app.profile_id)["grade"])
 	_pid = app.profile_id
 	if _pid == "" and not app.progress.profiles().is_empty():
 		_pid = str(app.progress.profiles()[0]["id"])
@@ -244,6 +250,8 @@ func _rebuild() -> void:
 	_delete_dialog.ok_button_text = Strings.t("parent.delete_ok")
 	_delete_dialog.cancel_button_text = Strings.t("parent.cancel")
 	_delete_dialog.confirmed.connect(confirm_delete)
+	_delete_dialog.get_ok_button().custom_minimum_size = Vector2(MIN_TOUCH, MIN_TOUCH)
+	_delete_dialog.get_cancel_button().custom_minimum_size = Vector2(MIN_TOUCH, MIN_TOUCH)
 	add_child(_delete_dialog)
 
 	_import_dialog = FileDialog.new()
@@ -251,6 +259,8 @@ func _rebuild() -> void:
 	_import_dialog.file_mode = FileDialog.FILE_MODE_OPEN_FILE
 	_import_dialog.filters = PackedStringArray(["*.json"])
 	_import_dialog.use_native_dialog = false
+	_import_dialog.get_ok_button().custom_minimum_size = Vector2(MIN_TOUCH, MIN_TOUCH)
+	_import_dialog.get_cancel_button().custom_minimum_size = Vector2(MIN_TOUCH, MIN_TOUCH)
 	_import_dialog.file_selected.connect(_on_import_file.call_deferred)
 	add_child(_import_dialog)
 
@@ -323,6 +333,7 @@ func _build_volumes() -> void:
 		s.value = float(_settings().get(key, 1.0))
 		s.custom_minimum_size = Vector2(900, MIN_TOUCH)
 		s.value_changed.connect(func(val: float) -> void: set_volume(key, val))
+		s.drag_ended.connect(func(_changed: bool) -> void: commit_volumes())
 		_content.add_child(s)
 
 func _build_toggles() -> void:

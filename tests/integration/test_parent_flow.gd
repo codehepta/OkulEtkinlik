@@ -156,7 +156,7 @@ func test_panel_delete_needs_confirmation_then_goes_to_select() -> void:
 	panel.select_profile_tab(b)
 	panel.request_delete()
 	assert_eq(_progress.profiles().size(), 2, "onaydan önce silinmez")
-	assert_true(panel.delete_dialog().visible or panel.delete_dialog().get_parent() != null)
+	assert_true(panel.delete_dialog().visible, "onay kutusu açılmalı")
 	panel.confirm_delete()
 	assert_eq(_progress.profiles().size(), 1)
 	assert_eq(_app.current_scene_name(), "profile_select")
@@ -249,3 +249,52 @@ func test_session_end_not_redirected_when_locked() -> void:
 	_app.goto("session_end")
 	_screen().parent_button().pressed.emit()
 	assert_eq(_app.current_scene_name(), "parent_gate")
+
+func _import_rejected(payload: Variant) -> void:
+	_login(1)
+	var before: Dictionary = _save.data.duplicate(true)
+	var panel: Node = _open_panel()
+	assert_false(panel.import_text(payload if payload is String else JSON.stringify(payload)))
+	assert_eq(_save.data, before)
+	assert_ne(panel.status_text(), "")
+
+func _good_profile(id: String = "p1") -> Dictionary:
+	return SaveSchema.new_profile(id, "avatar.kedi", "Z", 1)
+
+func test_import_future_version_rejected() -> void:
+	_import_rejected({"schema_version": 99, "profiles": []})
+
+func test_import_wrong_field_types_rejected() -> void:
+	var p: Dictionary = _good_profile()
+	p["usage"] = 5
+	_import_rejected({"schema_version": 1, "profiles": [p]})
+	var q: Dictionary = _good_profile()
+	q["outcomes"] = "x"
+	_import_rejected({"schema_version": 1, "profiles": [q]})
+
+func test_import_empty_or_duplicate_ids_rejected() -> void:
+	_import_rejected({"schema_version": 1, "profiles": [_good_profile("")]})
+	_import_rejected({"schema_version": 1, "profiles": [_good_profile("p1"), _good_profile("p1")]})
+
+func test_import_bad_grade_or_nondict_profile_rejected() -> void:
+	var p: Dictionary = _good_profile()
+	p["grade"] = 7
+	_import_rejected({"schema_version": 1, "profiles": [p]})
+	_import_rejected({"schema_version": 1, "profiles": [3]})
+
+func test_import_more_than_four_profiles_rejected() -> void:
+	var list: Array = []
+	for i: int in 5:
+		list.append(_good_profile("p%d" % (i + 1)))
+	_import_rejected({"schema_version": 1, "profiles": list})
+
+func test_import_success_clears_warning_and_refreshes_grade() -> void:
+	var id: String = _login(1)
+	_save.last_load_status = "reset"
+	var other: Dictionary = SaveSchema.new_save()
+	other["profiles"].append(SaveSchema.new_profile(id, "avatar.kedi", "Z", 3))
+	var panel: Node = _open_panel()
+	assert_true(panel.warning_visible())
+	assert_true(panel.import_text(ProgressExport.to_json(other)))
+	assert_false(_screen().warning_visible())
+	assert_eq(_app.active_grade, 3)
