@@ -92,20 +92,31 @@ func _run() -> void:
 	await _show("session_end", {})
 	await _shot("15_session_end")
 
+	# --- Ek kareler: açılış (animasyon bitmiş), kazanılmış çıkartmalı albüm ---
+	await _show("splash", {})
+	await _frames(150)
+	await _shot("16_splash_settled")
+	for p: Variant in root.get_node("SaveService").data["profiles"]:
+		if str((p as Dictionary)["id"]) == pid:
+			(p as Dictionary)["stickers"] = ["st.matematik.elma", "st.matematik.balon"]
+	await _show("album", {})
+	await _shot("17_album_earned")
+	# --- Ek kareler sonu ---
+
 	# --- Harita ve patika ek kareleri (1. ve 3. sınıf haritası, ilk durak bitince patika) ---
 	_app.select_profile(pid)
 	await _show("world_map", {})
-	await _shot("20_world_map_grade1")
+	await _shot("18_world_map_grade1")
 	var g3: String = progress.create_profile("avatar.kedi", "Ali", 3)
 	_app.select_profile(g3)
 	await _show("world_map", {})
-	await _shot("21_world_map_grade3")
+	await _shot("19_world_map_grade3")
 	_app.select_profile(pid)
 	var no_results: Array[RoundResult] = []
 	progress.record_node(pid, "g1.matematik.u01.n01", no_results)
 	await _show("region_path", {"subject": "matematik", "highlight": "g1.matematik.u01.n02"})
 	await _frames(30)
-	await _shot("22_region_path_after_n01")
+	await _shot("20_region_path_after_n01")
 	var path_scene: Node = _app.current_scene()
 	var path_scroll: ScrollContainer = null
 	for c: Node in path_scene.get_children():
@@ -114,7 +125,7 @@ func _run() -> void:
 	if path_scroll != null:
 		path_scroll.scroll_horizontal = 100000
 		await _frames(30)
-		await _shot("23_region_path_scrolled_end")
+		await _shot("21_region_path_scrolled_end")
 	# --- ek kareler sonu ---
 
 	# --- Ders ekranları: ek kareler (yanlış cevap + ipucu 1, kalabalık sayma, eşleşme ortası) ---
@@ -147,14 +158,14 @@ func _lesson_extras() -> void:
 	await _wait_game()
 	await _wrong_twice()
 	await _frames(20)
-	await _shot("16_lesson_count_choose_hint1")
+	await _shot("22_lesson_count_choose_hint1")
 	# Kalabalık sayma: 6 ve 11 nesne.
 	await _show("lesson", {"node_id": "g1.matematik.u01.n04"})
 	await _wait_game()
-	await _shot("17_lesson_count_choose_6")
+	await _shot("23_lesson_count_choose_6")
 	await _show("lesson", {"node_id": "g1.matematik.u01.n05"})
 	await _wait_game()
-	await _shot("18_lesson_count_choose_11")
+	await _shot("24_lesson_count_choose_11")
 	# 20 nesne: şablon doğrudan runner'ın oyun alanına kurulur (yalnızca görüntü için).
 	var runner: Node = _app.current_scene()
 	var area: Control = runner.get_node("Host/GameArea") as Control
@@ -166,7 +177,7 @@ func _lesson_extras() -> void:
 	ctx.rng.seed = 3
 	cc.call("setup", {"item": "item.oyuncak.top", "count": 20, "choices": [18, 19, 20]}, 1, ctx)
 	await _frames(20)
-	await _shot("19_lesson_count_choose_20")
+	await _shot("25_lesson_count_choose_20")
 	# 4 çiftli drag_match, bir çift yerleşmiş (yalnızca görüntü için doğrudan kurulur).
 	cc.queue_free()
 	var dm4: Control = (load("res://scenes/games/drag_match/drag_match.tscn") as PackedScene).instantiate() as Control
@@ -179,7 +190,7 @@ func _lesson_extras() -> void:
 	var s4: Array = dm4.call("_debug_right_slots")
 	dm4.call("_debug_drop", 1, s4.find(1))
 	await _frames(30)
-	await _shot("19b_lesson_drag_match_4_pairs")
+	await _shot("26_lesson_drag_match_4_pairs")
 	# drag_match: bir eşleşme yapılmış, sonra iki yanlış -> ipucu 1 (doğru yuva parlar).
 	await _show("lesson", {"node_id": "g1.matematik.u01.n02"})
 	await _wait_game()
@@ -191,13 +202,13 @@ func _lesson_extras() -> void:
 		await _frames(30)
 	await _wrong_twice()
 	await _frames(20)
-	await _shot("20_lesson_drag_match_hint1")
+	await _shot("27_lesson_drag_match_hint1")
 	# listen_find: iki yanlış -> ipucu 1 (bir yanlış seçenek soluklaşır).
 	await _show("lesson", {"node_id": "g1.matematik.u01.n03"})
 	await _wait_game()
 	await _wrong_twice()
 	await _frames(30)
-	await _shot("21_lesson_listen_find_hint1")
+	await _shot("28_lesson_listen_find_hint1")
 
 func _runner_game() -> Node:
 	var runner: Node = _app.current_scene()

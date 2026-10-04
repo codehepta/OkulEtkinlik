@@ -68,6 +68,29 @@ func test_splash_with_profile_goes_to_select() -> void:
 	await wait_until(func() -> bool: return _app.current_scene_name() == "profile_select", 3.0)
 	assert_eq(_app.current_scene_name(), "profile_select")
 
+func test_splash_has_island_backdrop_title_plaque_and_bilge() -> void:
+	_app.splash_delay = 999.0
+	var splash: Control = (load("res://scenes/ui/splash.tscn") as PackedScene).instantiate() as Control
+	splash.app = _app
+	_root.add_child(splash)
+	assert_eq(splash.backdrop().texture, AssetRegistry.texture("map.island"), "ada görseli zemin")
+	assert_eq(splash.title_label().text, Strings.t("app.title"))
+	assert_true(splash.title_label().get_parent() == splash.title_plaque(), "başlık kil plakette")
+	assert_not_null(splash.bilge_view())
+	assert_gte(splash.bilge_view().size.y, 300.0)
+	splash.queue_free()
+
+func test_splash_reduce_motion_shows_final_state() -> void:
+	_app.splash_delay = 999.0
+	_save.data["settings"]["reduce_motion"] = true
+	var splash: Control = (load("res://scenes/ui/splash.tscn") as PackedScene).instantiate() as Control
+	splash.app = _app
+	_root.add_child(splash)
+	await wait_physics_frames(3)
+	assert_eq(splash.title_plaque().modulate.a, 1.0, "hareket azaltılınca plaket hemen görünür")
+	assert_eq(splash.bilge_view().modulate.a, 1.0)
+	splash.queue_free()
+
 func test_create_profile_flow_reaches_world_map() -> void:
 	_app.goto("profile_create")
 	var s: Node = _screen()

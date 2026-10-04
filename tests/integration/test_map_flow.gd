@@ -258,6 +258,26 @@ func test_album_selected_tab_has_shape_cue() -> void:
 	assert_false(_screen().tab_selected("matematik"))
 	assert_true(_screen().tab_scale("turkce") > _screen().tab_scale("matematik"))
 
+func test_album_has_title_plaque_and_large_centered_grid() -> void:
+	_login(1)
+	(_save.data["profiles"][0]["stickers"] as Array).append("st.matematik.elma")
+	_app.goto("album")
+	assert_not_null(_screen().title_plaque(), "başlık plaketi olmalı")
+	assert_eq(_screen().title_text(), Strings.t("album.title"))
+	assert_eq(_screen().grid_columns(), 3, "büyük yuvalar 3 sütunlu ızgarada")
+	var earned: Control = _screen().slot_image("st.matematik.elma")
+	var empty: Control = _screen().slot_image("st.matematik.armut")
+	assert_gte((earned.get_parent() as Control).custom_minimum_size.x, 240.0, "yuvalar büyük")
+	assert_eq(earned.modulate.a, 1.0, "kazanılan çıkartma tam görünür")
+	assert_lt(empty.modulate.a, 1.0, "boş yuva soluk")
+
+func test_album_selected_tab_scale_survives_layout() -> void:
+	_login(1)
+	_app.goto("album")
+	await wait_physics_frames(3)
+	assert_gt(_screen().tab_scale("matematik"), 1.0, "kap sıralaması seçili sekme büyütmesini silmemeli")
+	assert_eq(_screen().tab_scale("turkce"), 1.0)
+
 func test_result_buttons_have_icons() -> void:
 	_login(1)
 	_app.goto("result", {"stars": 1, "new_sticker": "", "unlocked": "", "node_id": N1, "time_up": false, "subject": "matematik"})
