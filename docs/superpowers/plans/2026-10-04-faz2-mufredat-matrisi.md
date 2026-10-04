@@ -290,4 +290,4 @@ Türkçe'de konuşma (`T.K.*`) ve yazma (`T.Y.*`) çıktılarının çoğu `none
 - [x] **Step 4:** `docs/curriculum/README.md` yaz: üç JSON'un sözleşmesi (bu plandaki "Veri sözleşmesi"nin kısa hali), MEB yeni PDF yayımlayınca güncelleme adımları (PDF + `.txt` döküm → taslak çıkarıcı → fark gözden geçirme → kapı testi → rapor). `sources/README.md`'deki "Faz 2'de yeniden düzenlenebilir" notunu `themes.json`'a yönlendir. `docs/qa-checklist.md`'ye Faz 2 maddesi: "Veli paneli → ilerleme: 1. sınıf Matematik çıktı metinleri görünür (outcomes.json şema değişikliği sonrası)".
 - [x] **Step 5:** Tüm paketi çalıştır, hepsi PASS. `godot --headless --path . -s res://tools/missing_assets.gd` hata vermeden biter.
 - [x] **Step 6: Commit** — `docs(curriculum): okunur müfredat matrisi ve güncelleme rehberi`.
-- [ ] **Step 7: PR aç** — başlık: `Faz 2: müfredat matrisi`; açıklamada sayılar ve spec'e eklenen açık sorular; atıf satırı yok.
+- [x] **Step 7: PR aç** — başlık: `Faz 2: müfredat matrisi`; açıklamada sayılar ve spec'e eklenen açık sorular; atıf satırı yok. (https://github.com/codehepta/OkulEtkinlik/pull/9)
