@@ -29,6 +29,8 @@ Her maddeyi sırayla uygula; "Beklenen" ile uyuşmayan her şeyi not al.
 2. Çocuk profiliyle oyna ve 10 dakika bekle. Beklenen: süre dolunca **mevcut tur biter**, ardından Bilge'nin uyku ekranı gelir; oyun devam ettirilemez.
 3. Uyku ekranından çıkıp uygulamayı kapat-aç, aynı profili seç. Beklenen: aynı gün yine uyku ekranı.
 4. Panelde "Bugünlük süreyi aç" ile kilit kalkar.
+5. **Cihaz başına sınır (Faz 7a):** süre dolunca profil seçimine dön, başka bir profil seç. Beklenen: o profil de uyku ekranına gider; süre bütün profiller için ortaktır.
+6. **Günü sıfırla (Faz 7a):** cihaz tarihini 2 gün ileri al, oyna, sonra tarihi bugüne geri getir. Veli paneli -> "Günü sıfırla". Beklenen: "Oyun günü bugüne döndürüldü." mesajı; süre sınırı bugünün sayacıyla yeniden işler.
 
 ## 5. Veli kapısı
 1. Profil seçim ekranında dişli simgesine dokun. Beklenen: aritmetik soru çıkar.
@@ -96,6 +98,72 @@ Bu şablonların henüz ünite içeriği yok (içerik Faz 2 matrisinden sonra ya
 
 ## Asset geldiğinde (parti 010)
 1. `item.para.*`, `item.yiyecek.pizza`, `ui.clock_face` dosyaları eklenince yer tutucu çizimlerin yerini alır; değer etiketleri paraların ortasında, pizza dilimleri görselin çemberiyle örtüşüyor, kadran rakamları kenara taşmıyor.
+
+# Faz 4a — Türkçe şablonları ve sessiz okuma
+
+Bu şablonların henüz ünite içeriği yok (Faz 4b, 4c). Cihazda denemek için geliştirici bir test durağı ekler ya da `tools/ui_screenshots.gd` karelerine (44–55) bakılır. Faz 3a'daki ortak kontroller (hata akışı, dokunma, hareketi azalt, renk körlüğü) burada da geçerlidir.
+
+## trace (iz sür)
+1. Harfi parmakla izle: numaralı yeşil noktadan başla, iz yolu boyunca kaydır. Beklenen: parmağın arkasından mürekkep çıkar, vuruş bitince boyanır ve sıradaki vuruşun numaralı noktası belirir.
+2. Başka bir yere basmak hiçbir şey yapmaz (yalnızca başlangıç noktası büyüyüp küçülür); yanlış sayılmaz.
+3. Yoldan bilerek çok uzaklaş. Beklenen: yumuşak "boop", kalem vuruşu baştan sona yavaşça çizer; yarım kalan mürekkep silinmez, kalınan yerden devam edilebilir.
+4. Tolerans: 6 yaşında bir çocuğun biraz titrek izi zorluk 1–2'de kabul ediliyor; sondan başa (ters yönde) izlemek kabul edilmiyor.
+5. `i`, `j`, `ö`, `ü`, `İ` gibi noktalı harflerde nokta tek dokunuşla konuyor.
+6. **Öğretmen gözden geçirmesi (açık soru):** 29 küçük, 29 büyük harf ve 10 rakamın vuruş sırası ve yönü sınıfta öğretilenle aynı mı? (`content/trace/glyphs.json`; özellikle `T`, `5`, `k`, `K`, `y`.) Farklı olanları listele.
+
+## syllable_build (hece kur)
+1. Karoya dokun: sıradaki yuvanın hecesiyse yuvaya uçar ve yeşile döner; değilse hafifçe sallanıp yerinde kalır.
+2. Kelime tamamlanınca (ses satırı varsa) kelime okunur.
+3. "baba" gibi aynı heceyi iki kez içeren kelimede iki "ba" karosundan hangisine basılsa da doğru sayılır.
+4. Zorluk 1'de çeldirici karo yok, zorluk 3'te hepsi var; 5 parçalı bir kelimede bile karolar ekrana sığıyor.
+
+## story (hikâye)
+1. Dinleme kipi: her sayfa açılınca okunur; hoparlör sayfayı yeniden okutur; ok sayfayı çevirir (sayfa çevirme sesi).
+2. Son sayfadan sonra soru seslendirilir; kitap düğmesi hikâyeye döndürür (yanlış sayılmaz).
+3. Sayfa metni büyük ve okunaklı; uzun cümleler kutudan taşmıyor.
+4. **Sessiz okuma:** yönerge ve soru okunur ama sayfa okunmaz, hoparlör görünmez. İlk cevaptan sonra hikâyeye dönünce hoparlör çıkar. 2. yanlışta sorunun dayandığı sayfa kendiliğinden okunur.
+
+## drag_match (sessiz okuma kipi)
+1. `read: silent` durakta sözcük kartını tutmak ilk cevaba kadar ses çıkarmaz; ilk cevaptan sonra tutunca sözcük okunur. 2. yanlışta sıradaki çiftin sözcüğü okunur.
+2. Faz 1 ünitesindeki çetele–rakam eşleştirmesi eskisi gibi (kart tutunca ses yok).
+
+## Asset geldiğinde (parti 015, 016)
+1. `ui.trace_pencil` gelince yön ipucunda sarı top yerine kalem görünür; kalemin ucu iz yolunun üstünde ilerliyor.
+2. `ui.page_next`, `ui.book` hikâye düğmelerinde kodla çizilen ok ve kitabın yerini alır; `sfx.page_turn` sayfa çevrilirken çalar.
+
+## Faz 7a — Ağaç Evi, Tekrar Bulutu, veli paneli
+1. **Ağaç Evi girişi:** haritada ortadaki ağaç eve dokun. Beklenen: "Bilge'nin Ağaç Evi" okunur, oda açılır. Hiç süs yokken Bilge "Ağaç evim şimdilik boş..." der; rafta kilitli bir yuva ve yıldız sayacı (ör. "2 / 5") görünür.
+2. **Süs açılması:** toplam 5 yıldıza ulaşan durağı bitir. Beklenen: sonuç ekranında çıkartmadan sonra süs görseli çıkar ve Bilge "Ağaç evim için yeni bir süs kazandın!" der.
+3. **Sürükle-düzenle:** Ağaç Evi'nde raftaki süsü parmakla odaya sürükle, bırak. Beklenen: süs bırakılan yerde kalır; parmağın altında hafifçe büyür (hareketi azalt açıkken büyümez). Süsü rafa geri sürükle: rafa döner. Uygulamayı kapat-aç: yerleşim korunur.
+4. **Kilitli yuva:** kilide dokun. Beklenen: Bilge "Bu süs için biraz daha yıldız toplayalım!" der; ceza ya da bekleme yok.
+5. **Tekrar Bulutu:** bir durağı 1 yıldızla bitir (çok yanlış yap) ya da ertesi gün 3 yıldızlı bir durağın patikasına gir. Beklenen: patikanın sağ üstünde Tekrar Bulutu belirir, Bilge "Tekrar Bulutu geldi!" der. Buluta dokun: 3 karışık tur oynanır; sonuçta yıldız görünür, "Tekrar oyna" düğmesi yoktur. "Devam" ile patikaya dönülür; iyi oynandıysa bulut kaybolur.
+6. **Evde etkinlik önerileri:** veli paneli -> "Evde etkinlik önerileri". Beklenen: seçili profilin sınıfına göre ders başlıkları altında çıktı adı ve öneri metni listelenir; sınıf değişince liste değişir. Metinler doğru Türkçe yazımla ve çevrimdışı görünür.
+
+## Asset geldiğinde (parti 023, 024)
+1. `decor.*` görselleri eklenince rafta ve odada yer tutucuların yerini alır; süsler kırpılmadan ve aynı ışıkta görünür.
+2. `vo.genel.tekrar_giris`, `vo.genel.agac_ev_bos`, `vo.genel.agac_ev_kilitli` kayıtları cihaz sesinin yerine çalar.
+
+---
+
+# Faz 5a — `sort_bins` ve `scenario` şablonları
+
+Bu şablonların henüz ünite içeriği yok (içerik Faz 5b, 3c–3e ve 6'da gelir). Cihazda denemek için geliştirici bir test durağı ekler ya da `tools/ui_screenshots.gd` karelerine (60–63) bakılır. Faz 3a'daki ortak kontroller (hata akışı, dokunma, hareketi azalt, renk körlüğü) burada da geçerlidir.
+
+## sort_bins (kutulara ayır)
+1. Öğeyi parmakla sürükle, doğru kutuya bırak. Beklenen: öğe küçülerek kutunun iç bölmesine oturur; yanlış kutuda geri seker; kutu dışına bırakınca sessizce geri döner (yanlış sayılmaz).
+2. Kutular hem şekil rozetiyle (kalp, kare, yıldız...) hem renkle ayrılıyor; gri tonlamada da hangi kutunun hangisi olduğu anlaşılıyor.
+3. Kutuya (öğe sürüklemeden) dokununca etiketin adı okunur; cevap sayılmaz.
+4. Zorluk 1'de her kutuda bir örnek öğe baştan durur; zorluk 3'te kutular boş başlar.
+5. İpucu 1: sıradaki öğe ve kutusu parlar. Çözüm: kalan öğeler sırayla kutularına yerleşir. 9 öğede bile yerleşen öğeler kutunun içinde kalıyor.
+
+## scenario (durum seç)
+1. Üstte durum görseli, altta 2–3 davranış kartı; soru seslendirilir ve tekrar dinlenebilir.
+2. Yanlış karta dokun. Beklenen: kart hafifçe eğilir, sahne kısa süre sonucu gösterir, (varsa) sonuç cümlesi okunur, sonra sahne geri gelir. Ceza hissi yok: titreşim ya da kırmızı çarpı yok, yalnızca olağan yumuşak "boop" sesi. Denenen kart soluklaşır ve yeniden seçilemez.
+3. Sonuç gösterilirken başka karta dokunmak bir şey yapmaz.
+4. Zorluk 1'de 2 seçenek, zorluk 2–3'te 3 seçenek görünür.
+5. 2. yanlışta ipucu: ipucu cümlesi okunur, sahne parlar; geriye yalnızca doğru kart kalır.
+
+---
 
 # Faz 3b — Matematik için yeni mekanikler
 

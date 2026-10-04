@@ -1,6 +1,9 @@
 extends MiniGame
 ## Sürükle ve eşleştir: sol raftaki kabarık kartlar sağdaki doğru yuvaya sürüklenir.
 ## Sağdaki her yuva: kesik kenarlı boş bırakma çukuru + yanında düz hedef kartı.
+## Okuma kipi (`read`): "listen" (varsayılan) sesi olan sol kartı tutunca sesini okur;
+## "silent" (sessiz okuma, T.O.* durakları) kart seslerini ilk cevaba kadar tutar, ipucu 1
+## sıradaki çiftin sesini okur. Yönerge (tur sesi) her iki kipte de seslendirilir.
 
 const TOKEN_VIEW: PackedScene = preload("res://scenes/games/token_view.tscn")
 ## Çift sayısına göre kart boyu (2–3 çift büyük, 4 çift sığacak kadar).
@@ -19,6 +22,7 @@ const TARGET_COLOR: Color = ClayStyle.IVORY
 const WELL_LINE: Color = Color(ClayStyle.CLAY_EDGE, 0.9)
 const WELL_FILL: Color = Color(ClayStyle.COCOA, 0.12)
 const AUTO_STEP_SECONDS: float = 0.35
+const READ_MODES: PackedStringArray = ["listen", "silent"]
 
 var _pairs: Array = []
 var _left_views: Array[Control] = []
@@ -30,10 +34,13 @@ var _matched: Array[bool] = []
 var _drag_index: int = -1
 var _drag_offset: Vector2 = Vector2.ZERO
 var _view_size: Vector2 = Vector2(200, 200)
+## Sessiz okumada kart sesleri ilk cevaba (ya da ipucuna) kadar kapalıdır.
+var _voice_unlocked: bool = true
 
 func setup(params: Dictionary, difficulty_value: int, context: RoundContext) -> void:
 	_init_round(difficulty_value, context)
 	_pairs = params["pairs"] as Array
+	_voice_unlocked = str(params.get("read", "listen")) != "silent"
 	var n: int = _pairs.size()
 	_slot_pair.clear()
 	for i: int in n:
@@ -115,6 +122,7 @@ func _on_left_input(event: InputEvent, index: int) -> void:
 		_drag_offset = view.get_global_mouse_position() - view.global_position
 		view.move_to_front()
 		_tap_feedback(view)
+		_say_pair(index, false)
 	elif event is InputEventMouseMotion and _drag_index == index:
 		view.global_position = view.get_global_mouse_position() - _drag_offset
 	elif event is InputEventMouseButton and _drag_index == index and not (event as InputEventMouseButton).pressed:
@@ -134,6 +142,16 @@ func _debug_drop(left_index: int, right_index: int) -> void:
 func _debug_right_slots() -> Array[int]:
 	return _slot_pair.duplicate()
 
+## Test için: ilk eşleşmemiş kartı doğru yuvaya ya da (yanlışta) başka bir yuvaya bırakır.
+func _debug_answer(correct: bool) -> void:
+	var i: int = _first_unmatched()
+	if i < 0:
+		return
+	var slot: int = _slot_of(i)
+	if not correct:
+		slot = (slot + 1) % _right_views.size()
+	_drop(i, slot)
+
 ## right_slot: bırakılan sağ yuva (-1: hedef dışı, öğe yalnızca geri döner).
 func _drop(left_index: int, right_slot: int) -> void:
 	if not _can_input() or left_index < 0 or left_index >= _pairs.size() or _matched[left_index]:
@@ -141,6 +159,7 @@ func _drop(left_index: int, right_slot: int) -> void:
 	if right_slot < 0 or right_slot >= _right_views.size():
 		_move_to(_left_views[left_index], _left_home[left_index])
 		return
+	_voice_unlocked = true
 	if _slot_pair[right_slot] == left_index:
 		_place(left_index, right_slot)
 		_submit_answer(true, _all_matched())
@@ -182,9 +201,26 @@ func show_hint(level: int) -> void:
 	if i < 0:
 		return
 	if level == 1:
+		_voice_unlocked = true
 		_glow(_right_views[_slot_of(i)])
+		_say_pair(i, true)
 	elif level >= 2:
 		_auto_complete()
+
+## Çiftin sesi: sol kartın sesi; `any_side` ise sol kartta ses yoksa sağ kartınki.
+## Sessiz okumada ses açılmadıysa okunmaz.
+func _say_pair(pair_index: int, any_side: bool) -> void:
+	if not _voice_unlocked:
+		return
+	var pr: Dictionary = _pairs[pair_index] as Dictionary
+	var voice: String = Token.voice_of(pr["left"] as Dictionary)
+	if voice == "" and any_side:
+		voice = Token.voice_of(pr["right"] as Dictionary)
+	if voice != "":
+		narrator.say(voice)
+
+func voice_unlocked() -> bool:
+	return _voice_unlocked
 
 ## İpucu 2: eşleşmemiş çiftler sırayla otomatik eşleşir, yardım bitene kadar girdi kapalıdır.
 func _auto_complete() -> void:
@@ -220,6 +256,15 @@ static func validate_params(p: Dictionary) -> Array[String]:
 		rights.append((pr as Dictionary)["right"])
 	if _has_dup(lefts) or _has_dup(rights):
 		errs.append(ContentValidator.msg("err.params.pairs_dup"))
+	var read: Variant = p.get("read", "listen")
+	if not (read is String) or not READ_MODES.has(read as String):
+		errs.append(ContentValidator.msg("err.params.read_mode"))
+	elif read == "silent":
+		var voiced: bool = false
+		for t: Variant in lefts + rights:
+			voiced = voiced or Token.voice_of(t as Dictionary) != ""
+		if not voiced:
+			errs.append(ContentValidator.msg("err.params.silent_voice"))
 	return errs
 
 static func _has_dup(tokens: Array) -> bool:

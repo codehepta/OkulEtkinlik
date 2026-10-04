@@ -33,8 +33,8 @@ func make(id: String, params: Dictionary, difficulty: int = 1, rng_seed: int = 7
 	return game
 
 ## Fixture dosyasındaki örnek params (ad -> {"template", "params"}).
-static func fixture(name: String) -> Dictionary:
-	var data: Variant = JSON.parse_string(FileAccess.get_file_as_string(FIXTURE_PATH))
+static func fixture(name: String, path: String = FIXTURE_PATH) -> Dictionary:
+	var data: Variant = JSON.parse_string(FileAccess.get_file_as_string(path))
 	return ((data as Dictionary)[name] as Dictionary).duplicate(true)
 
 ## Kilidin açılmasını bekler (yanlış cevaptan sonra).

@@ -2,7 +2,7 @@ extends Control
 ## Bir durağın (düğümün) turlarını sırayla oynatır; hata akışını (tekrar dinle, ipucu,
 ## çözüm, sona yeniden ekleme) yönetir ve bitişte ilerlemeyi kaydeder (spec §4, §6).
 
-## `Progress.record_node` dönüşü + node_id + time_up.
+## `Progress.record_node` (tekrarda `record_review`) dönüşü + node_id + time_up + review.
 signal lesson_completed(summary: Dictionary)
 ## Ev düğmesi: onaysız çıkış, ilerleme kaydedilmez.
 signal home_requested
@@ -12,8 +12,9 @@ const WRONG_FOR_HINT_1: int = 2
 const WRONG_FOR_SOLUTION: int = 3
 ## Bir anlatım satırını beklerken en fazla bu kadar sn beklenir (takılmayı önler).
 const SAY_TIMEOUT_SECONDS: float = 10.0
-## Kurulumda kendi hedef sesini okuyan şablonlar: yönerge önce okunur, sonra kurulur.
-const SPEAKS_ON_SETUP: Array[String] = ["listen_find"]
+## Kurulumda kendi sesini (hedef sesi, hikâye sayfası) okuyan şablonlar: yönerge önce okunur,
+## sonra kurulur.
+const SPEAKS_ON_SETUP: Array[String] = ["listen_find", "story"]
 
 ## Testlerde sahte düğümle değiştirilir.
 var narrator: Node = Narrator
@@ -28,6 +29,8 @@ var step_delay: float = 0.8
 
 var _profile_id: String = ""
 var _node_id: String = ""
+## Tekrar Bulutu oturumu: turlar vadesi gelen çıktılardan seçilir, düğüm kaydı yapılmaz.
+var _review: bool = false
 var _node: Dictionary = {}
 var _rng: RandomNumberGenerator = RandomNumberGenerator.new()
 ## Her öğe: {"index": özgün tur sırası, "round": Dictionary, "retry": bool}
@@ -79,22 +82,43 @@ func enter(args: Dictionary) -> void:
 		session_timer.limit_reached.connect(_on_limit_reached)
 	step_delay = 0.8 * float(app.anim_scale)
 	var node_id: String = str(args.get("node_id", ""))
-	var subject: String = node_id.get_slice(".", 1)
+	var review_subject: String = str(args.get("review", ""))
+	var subject: String = review_subject if review_subject != "" else node_id.get_slice(".", 1)
 	lesson_completed.connect(func(summary: Dictionary) -> void:
 		var result: Dictionary = summary.duplicate()
 		result["subject"] = subject
 		app.goto("result", result))
 	home_requested.connect(func() -> void: app.goto("region_path", {"subject": subject}))
-	start(app.profile_id, node_id)
+	if review_subject != "":
+		start_review(app.profile_id, review_subject)
+	else:
+		start(app.profile_id, node_id)
 
 func start(profile_id: String, node_id: String, rng_seed: int = -1) -> void:
-	_profile_id = profile_id
-	_node_id = node_id
-	_node = content.node(node_id)
+	_seed(rng_seed)
+	_review = false
+	_begin(profile_id, node_id, content.node(node_id), node_id.get_slice(".", 1))
+
+## Tekrar Bulutu: dersin vadesi gelen çıktılarından karışık turlar (spec §3.4).
+## Oynanacak tur yoksa hemen yıldızsız biter.
+func start_review(profile_id: String, subject: String, rng_seed: int = -1) -> void:
+	_seed(rng_seed)
+	_review = true
+	_begin(profile_id, "", progress.review_node(profile_id, subject, _rng), subject)
+
+func is_review() -> bool:
+	return _review
+
+func _seed(rng_seed: int) -> void:
 	if rng_seed >= 0:
 		_rng.seed = rng_seed
 	else:
 		_rng.randomize()
+
+func _begin(profile_id: String, node_id: String, node: Dictionary, subject: String) -> void:
+	_profile_id = profile_id
+	_node_id = node_id
+	_node = node
 	_queue.clear()
 	_requeued.clear()
 	_results.clear()
@@ -107,7 +131,7 @@ func start(profile_id: String, node_id: String, rng_seed: int = -1) -> void:
 	var rounds: Array = _node.get("rounds", [])
 	for i: int in rounds.size():
 		_queue.append({"index": i, "round": rounds[i], "retry": false})
-	_apply_region(node_id.get_slice(".", 1))
+	_apply_region(subject)
 	_listen_narrator(narrator)
 	_update_dots()
 	await _say(str(_node.get("intro_voice", "")))
@@ -245,7 +269,8 @@ func _load_round(entry: Dictionary) -> void:
 		return
 	game.narrator = narrator
 	game.audio = audio
-	var outcomes: PackedStringArray = PackedStringArray(_node.get("outcomes", []))
+	# Tekrar turları kendi düğümlerinin çıktılarını taşır.
+	var outcomes: PackedStringArray = PackedStringArray(rd.get("outcomes", _node.get("outcomes", [])))
 	var mastery: float = 0.0
 	if not outcomes.is_empty():
 		mastery = float(progress.outcome_mastery(_profile_id, outcomes[0]))
@@ -393,14 +418,18 @@ func _on_home_pressed() -> void:
 func _complete(time_up: bool, partial: bool) -> void:
 	_active = false
 	_gen += 1
-	var summary: Dictionary = {"stars": 0, "new_sticker": "", "unlocked": ""}
-	if partial:
+	var summary: Dictionary = {"stars": 0, "new_sticker": "", "unlocked": "", "new_decor": ""}
+	if _review:
+		if _any_played():
+			summary = progress.record_review(_profile_id, _played_results(), partial)
+	elif partial:
 		if not _results.is_empty():
 			progress.record_partial(_profile_id, _node_id, _results)
 	elif _any_played():
 		summary = progress.record_node(_profile_id, _node_id, _results)
 	summary["node_id"] = _node_id
 	summary["time_up"] = time_up
+	summary["review"] = _review
 	lesson_completed.emit(summary)
 
 ## En az bir tur gerçekten oynandı mı? (Hepsi atlandıysa yıldız/çıkartma/kilit açma yok.)
@@ -409,3 +438,11 @@ func _any_played() -> bool:
 		if not _skipped.has(i):
 			return true
 	return false
+
+## Atlanan turlar hariç sonuçlar (tekrar kaydı için).
+func _played_results() -> Array[RoundResult]:
+	var out: Array[RoundResult] = []
+	for i: int in _results.size():
+		if not _skipped.has(i):
+			out.append(_results[i])
+	return out

@@ -1,5 +1,6 @@
 extends Control
-## Ders sonucu: yıldızlar tek tek gelir, yeni çıkartma varsa görünür; "Devam" ve "Tekrar oyna".
+## Ders sonucu: yıldızlar tek tek gelir, yeni çıkartma ve ağaç evi süsü varsa görünür;
+## "Devam" ve "Tekrar oyna". Tekrar Bulutu sonucunda "Tekrar oyna" yoktur.
 
 const NarrationWait: GDScript = preload("res://scripts/ui/narration_wait.gd")
 
@@ -17,6 +18,7 @@ var _continue: Button = null
 var _replay: Button = null
 var _burst: Control = null
 var _sticker: Control = null
+var _decor: Control = null
 var _done: bool = false
 var _limit_hit: bool = false
 
@@ -54,6 +56,10 @@ func replay_button() -> Button:
 func is_sequence_done() -> bool:
 	return _done
 
+## Gösterilen yeni ağaç evi süsü ("" = yok).
+func shown_decor() -> String:
+	return str(_decor.get("key")) if _decor != null and _decor.visible else ""
+
 func _run() -> void:
 	var stars: int = clampi(int(args.get("stars", 0)), 0, 3)
 	await _burst.play(stars)
@@ -68,18 +74,32 @@ func _run() -> void:
 		_sticker.set("key", sticker)
 		_sticker.visible = true
 		app.audio.play_sfx("sfx.sticker")
-		if not app.reduce_motion():
-			_sticker.pivot_offset = STICKER_SIZE / 2.0
-			_sticker.scale = Vector2(0.1, 0.1)
-			var tw: Tween = create_tween()
-			tw.tween_property(_sticker, "scale", Vector2.ONE, 0.4).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
+		_pop_in(_sticker)
 		await NarrationWait.say(self, app.narrator, "vo.genel.cikartma")
+		if not is_inside_tree():
+			return
+	var decor: String = str(args.get("new_decor", ""))
+	if decor != "":
+		_decor.set("key", decor)
+		_decor.visible = true
+		app.audio.play_sfx("sfx.sticker")
+		_pop_in(_decor)
+		await NarrationWait.say(self, app.narrator, "vo.genel.hediye")
 		if not is_inside_tree():
 			return
 	_done = true
 	sequence_finished.emit()
 	if _limit_hit:
 		app.goto("session_end")
+
+## Ödül görseli küçükten büyüyerek gelir; hareket azaltılmışsa doğrudan görünür.
+func _pop_in(c: Control) -> void:
+	if app.reduce_motion():
+		return
+	c.pivot_offset = STICKER_SIZE / 2.0
+	c.scale = Vector2(0.1, 0.1)
+	var tw: Tween = create_tween()
+	tw.tween_property(c, "scale", Vector2.ONE, 0.4).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
 
 func _build() -> void:
 	var bg: ColorRect = ColorRect.new()
@@ -100,13 +120,13 @@ func _build() -> void:
 	_burst.set("step_seconds", STEP_SECONDS * float(app.anim_scale))
 	col.add_child(_burst)
 
-	var sticker_row: CenterContainer = CenterContainer.new()
-	sticker_row.custom_minimum_size = STICKER_SIZE
-	col.add_child(sticker_row)
-	_sticker = (load("res://scenes/components/asset_image.tscn") as PackedScene).instantiate() as Control
-	sticker_row.add_child(_sticker)
-	_sticker.custom_minimum_size = STICKER_SIZE
-	_sticker.visible = false
+	var reward_row: HBoxContainer = HBoxContainer.new()
+	reward_row.alignment = BoxContainer.ALIGNMENT_CENTER
+	reward_row.add_theme_constant_override("separation", 64)
+	reward_row.custom_minimum_size = Vector2(0, STICKER_SIZE.y)
+	col.add_child(reward_row)
+	_sticker = _reward_image(reward_row)
+	_decor = _reward_image(reward_row)
 
 	var row: HBoxContainer = HBoxContainer.new()
 	row.alignment = BoxContainer.ALIGNMENT_CENTER
@@ -115,6 +135,8 @@ func _build() -> void:
 	_replay = _button("result.replay", "ui.back", ClayStyle.APRICOT)
 	_replay.pressed.connect(_on_replay)
 	row.add_child(_replay)
+	# Tekrar Bulutu turları her seferinde vadeye göre seçilir; aynı oturum yeniden oynanmaz.
+	_replay.visible = not bool(args.get("review", false))
 	_continue = _button("result.continue", "ui.check", ClayStyle.MINT)
 	_continue.pressed.connect(_on_continue)
 	row.add_child(_continue)
@@ -122,6 +144,13 @@ func _build() -> void:
 	var voice: Button = (load("res://scenes/components/replay_voice_button.tscn") as PackedScene).instantiate() as Button
 	voice.position = Vector2(24, 24)
 	add_child(voice)
+
+func _reward_image(parent: Control) -> Control:
+	var img: Control = (load("res://scenes/components/asset_image.tscn") as PackedScene).instantiate() as Control
+	parent.add_child(img)
+	img.custom_minimum_size = STICKER_SIZE
+	img.visible = false
+	return img
 
 func _button(text_key: String, icon_key: String, color: Color) -> Button:
 	var b: Button = (load("res://scenes/components/big_button.tscn") as PackedScene).instantiate() as Button

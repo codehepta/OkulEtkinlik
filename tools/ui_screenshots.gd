@@ -132,12 +132,34 @@ func _run() -> void:
 		await _shot("21_region_path_scrolled_end")
 	# --- ek kareler sonu ---
 
+	# --- Faz 7a: Ağaç Evi (raf + odaya yerleştirilmiş süs) ve veli panelindeki öneriler ---
+	await _tree_house_shots(pid)
+
 	# --- Ders ekranları: ek kareler (yanlış cevap + ipucu 1, kalabalık sayma, eşleşme ortası) ---
 	await _lesson_extras()
 	# --- Faz 3 şablonları (runner'ın oyun alanına doğrudan kurulur) ---
 	await _faz3_templates()
+	# --- Faz 4a Türkçe şablonları ---
+	await _faz4a_templates()
 	print("ui_screenshots: %d görüntü -> %s" % [_shots, ProjectSettings.globalize_path(OUT_DIR)])
 	quit(0)
+
+## Ağaç evi: 30 yıldızla üç süs açık, biri odada; sıradaki süsün kilidi rafta.
+func _tree_house_shots(pid: String) -> void:
+	var progress: Node = root.get_node("Progress")
+	for p: Variant in root.get_node("SaveService").data["profiles"]:
+		if str((p as Dictionary)["id"]) == pid:
+			var nodes: Dictionary = (p as Dictionary)["nodes"]
+			for i: int in 10:
+				nodes["g1.ornek.u99.n%02d" % i] = {"best_stars": 3, "plays": 1}
+	_app.select_profile(pid)
+	await _show("tree_house", {})
+	await _shot("70_tree_house_shelf")
+	var items: PackedStringArray = progress.decor_unlocked(pid)
+	if not items.is_empty():
+		progress.place_decor(pid, items[0], Vector2(0.3, 0.6))
+	await _show("tree_house", {})
+	await _shot("71_tree_house_placed")
 
 ## Uzun süren bir satırla altyazı balonu ekrandayken görüntü alır, sonra anlatımı keser.
 func _shot_with_subtitle(name: String, line_id: String) -> void:
@@ -233,31 +255,36 @@ const FAZ3_SHOTS: Array = [
 	["40_money_pay", "clock_money", {"mode": "money", "ask": "pay", "unit": "kr", "amount": 75, "wallet": ["kr_50", "kr_25", "kr_10", "kr_5"]}, 1, 0],
 	["41_pizza_split", "fraction_pizza", {"ask": "split", "parts": 4}, 3, 0],
 	["42_pizza_select", "fraction_pizza", {"ask": "select", "parts": 8, "take": 3}, 1, 0],
+	# Faz 5a şablonları
+	["60_sort_bins_two", "sort_bins", {"bins": [{"label": {"type": "item", "value": "item.simge.canli"}, "shape": "heart", "color": "green"}, {"label": {"type": "item", "value": "item.simge.cansiz"}, "shape": "square", "color": "blue"}], "items": [{"token": {"type": "item", "value": "item.hayvan.kedi"}, "bin": 0}, {"token": {"type": "item", "value": "item.esya.top"}, "bin": 1}, {"token": {"type": "item", "value": "item.doga.cicek"}, "bin": 0}, {"token": {"type": "item", "value": "item.esya.kalem"}, "bin": 1}, {"token": {"type": "item", "value": "item.hayvan.kus"}, "bin": 0}, {"token": {"type": "item", "value": "item.esya.kasik"}, "bin": 1}]}, 1, 0],
+	["61_sort_bins_three_hint1", "sort_bins", {"bins": [{"label": {"type": "number", "value": 1}, "shape": "circle"}, {"label": {"type": "number", "value": 2}, "shape": "triangle"}, {"label": {"type": "number", "value": 3}, "shape": "star"}], "items": [{"token": {"type": "text", "value": "|"}, "bin": 0}, {"token": {"type": "text", "value": "||"}, "bin": 1}, {"token": {"type": "text", "value": "|||"}, "bin": 2}, {"token": {"type": "number", "value": 1}, "bin": 0}, {"token": {"type": "number", "value": 2}, "bin": 1}, {"token": {"type": "number", "value": 3}, "bin": 2}, {"token": {"type": "item", "value": "item.meyve.elma"}, "bin": 0}, {"token": {"type": "item", "value": "item.meyve.armut"}, "bin": 1}, {"token": {"type": "item", "value": "item.meyve.muz"}, "bin": 2}]}, 3, 1],
+	["62_scenario", "scenario", {"scene": "item.sahne.yaya_gecidi", "choices": [{"token": {"type": "item", "value": "item.davranis.bekle"}, "correct": true}, {"token": {"type": "item", "value": "item.davranis.kos"}, "correct": false}, {"token": {"type": "item", "value": "item.davranis.top"}, "correct": false}]}, 2, 0],
+	["63_scenario_hint1", "scenario", {"scene": "item.sahne.yaya_gecidi", "choices": [{"token": {"type": "item", "value": "item.davranis.bekle"}, "correct": true}, {"token": {"type": "item", "value": "item.davranis.kos"}, "correct": false}, {"token": {"type": "item", "value": "item.davranis.top"}, "correct": false}]}, 3, 1],
 ]
 
-## Faz 3b kareleri: [ad, şablon, params, zorluk, ipucu, sınıf, eylemler ([metot, argümanlar])].
+## Faz 3b kareleri (80+; 44–55 Faz 4a, 60–63 Faz 5a, 70–71 Faz 7a): [ad, şablon, params, zorluk, ipucu, sınıf, eylemler ([metot, argümanlar])].
 const FAZ3B_SHOTS: Array = [
-	["44_balance_compare_words_g1", "balance", {"mode": "scale", "ask": "compare", "left": [6], "right": [4], "item": "item.meyve.elma"}, 1, 0, 1, []],
-	["45_balance_compare_pairs_hint1", "balance", {"mode": "scale", "ask": "compare", "left": [6], "right": [4], "item": "item.meyve.elma"}, 1, 1, 1, []],
-	["46_count_estimate", "count_choose", {"item": "item.meyve.elma", "count": 12, "estimates": [5, 10, 20]}, 1, 0, 1, []],
-	["47_count_estimate_counting", "count_choose", {"item": "item.meyve.elma", "count": 12, "estimates": [5, 10, 20]}, 1, 0, 1,
+	["80_balance_compare_words_g1", "balance", {"mode": "scale", "ask": "compare", "left": [6], "right": [4], "item": "item.meyve.elma"}, 1, 0, 1, []],
+	["81_balance_compare_pairs_hint1", "balance", {"mode": "scale", "ask": "compare", "left": [6], "right": [4], "item": "item.meyve.elma"}, 1, 1, 1, []],
+	["82_count_estimate", "count_choose", {"item": "item.meyve.elma", "count": 12, "estimates": [5, 10, 20]}, 1, 0, 1, []],
+	["83_count_estimate_counting", "count_choose", {"item": "item.meyve.elma", "count": 12, "estimates": [5, 10, 20]}, 1, 0, 1,
 		[["_debug_estimate", [1]], ["_debug_tap_item", [0]], ["_debug_tap_item", [1]], ["_debug_tap_item", [2]]]],
-	["48_count_estimate_judge_hint1", "count_choose", {"item": "item.meyve.elma", "count": 7, "estimates": [3, 6, 12]}, 1, 1, 1,
+	["84_count_estimate_judge_hint1", "count_choose", {"item": "item.meyve.elma", "count": 7, "estimates": [3, 6, 12]}, 1, 1, 1,
 		[["_debug_estimate", [1]], ["_fast_forward", []]]],
-	["49_balance_estimate_weigh", "balance", {"mode": "scale", "ask": "estimate", "item": "item.oyuncak.ayi", "value": 7, "estimates": [3, 6, 12]}, 1, 0, 1,
+	["85_balance_estimate_weigh", "balance", {"mode": "scale", "ask": "estimate", "item": "item.oyuncak.ayi", "value": 7, "estimates": [3, 6, 12]}, 1, 0, 1,
 		[["_debug_estimate", [1]], ["_debug_add_unit", []], ["_debug_add_unit", []], ["_debug_add_unit", []]]],
-	["50_balance_estimate_calc", "balance", {"mode": "scale", "ask": "estimate", "left": [28, 31], "right": [null], "estimates": [40, 60, 80], "choices": [58, 59, 60]}, 1, 0, 2,
+	["86_balance_estimate_calc", "balance", {"mode": "scale", "ask": "estimate", "left": [28, 31], "right": [null], "estimates": [40, 60, 80], "choices": [58, 59, 60]}, 1, 0, 2,
 		[["_debug_estimate", [1]]]],
-	["51_listen_find_digits", "listen_find", {"answer": "digits", "target": {"type": "number", "value": 305, "voice": "vo.sayi.3"}}, 1, 0, 2,
+	["87_listen_find_digits", "listen_find", {"answer": "digits", "target": {"type": "number", "value": 305, "voice": "vo.sayi.3"}}, 1, 0, 2,
 		[["_debug_key", [3]], ["_debug_key", [0]]]],
-	["52_clock_read_g1_voice", "clock_money", {"mode": "clock", "ask": "read", "hour": 3, "minute": 30, "choices": [{"hour": 3, "minute": 30}, {"hour": 6, "minute": 0}, {"hour": 9, "minute": 30}]}, 1, 0, 1,
+	["88_clock_read_g1_voice", "clock_money", {"mode": "clock", "ask": "read", "hour": 3, "minute": 30, "choices": [{"hour": 3, "minute": 30}, {"hour": 6, "minute": 0}, {"hour": 9, "minute": 30}]}, 1, 0, 1,
 		[["_debug_choose", [1]]]],
 ]
 const FAZ3B_FIXTURES: Array[String] = ["res://tests/fixtures/faz3b/grid.json", "res://tests/fixtures/faz3b/chart_build.json"]
 
 func _faz3b_templates(area: Control, scenes: Dictionary) -> void:
 	var shots: Array = FAZ3B_SHOTS.duplicate(true)
-	var n: int = 53
+	var n: int = 89
 	for path: String in FAZ3B_FIXTURES:
 		if not FileAccess.file_exists(path):
 			continue
@@ -307,13 +334,65 @@ func _faz3_templates() -> void:
 			g.call("show_hint", int(shot[4]))
 			await _frames(60)
 		await _shot(str(shot[0]))
-	# Pizza seçimi: iki dilim seçilmiş hali.
-	var last: Node = area.get_child(area.get_child_count() - 1)
-	last.call("_debug_toggle", 0)
-	last.call("_debug_toggle", 1)
-	await _frames(10)
-	await _shot("43_pizza_select_two")
+		# Pizza seçimi: iki dilim seçilmiş hali.
+		if str(shot[0]) == "42_pizza_select":
+			g.call("_debug_toggle", 0)
+			g.call("_debug_toggle", 1)
+			await _frames(10)
+			await _shot("43_pizza_select_two")
 	await _faz3b_templates(area, scenes)
+
+## Faz 4a şablonları: [ad, örnek params adı (tests/fixtures/faz4a/params.json), zorluk, ipucu,
+## ek adım ("": yok, "trace": bir vuruş izle, "choose": doğru karo, "question": soruya geç)].
+const FAZ4A_FIXTURE: String = "res://tests/fixtures/faz4a/params.json"
+const FAZ4A_SHOTS: Array = [
+	["44_trace_lower_e", "trace_lower", 1, 0, ""],
+	["45_trace_upper_s_cedilla", "trace_upper", 2, 0, ""],
+	["46_trace_digit_5_progress", "trace_digit", 3, 0, "trace"],
+	["47_trace_word_ela", "trace_word", 1, 0, ""],
+	["48_trace_hint1_demo", "trace_lower", 2, 1, ""],
+	["49_syllable_build", "syllable_word", 3, 0, ""],
+	["50_syllable_build_half", "syllable_word", 3, 0, "choose"],
+	["51_syllable_letters_hint1", "syllable_letters", 2, 1, ""],
+	["52_story_page", "story_listen", 1, 0, ""],
+	["53_story_question_text", "story_listen", 1, 0, "question"],
+	["54_story_silent_question_items", "story_silent", 1, 0, "question"],
+	["55_drag_match_silent", "match_silent", 1, 0, ""],
+]
+
+func _faz4a_templates() -> void:
+	var scenes: Dictionary = load("res://scripts/core/template_registry.gd").get("SCENES")
+	var fixtures: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(FAZ4A_FIXTURE))
+	await _show("lesson", {"node_id": "g1.matematik.u01.n01"})
+	await _wait_game()
+	var runner: Node = _app.current_scene()
+	var area: Control = runner.get_node("Host/GameArea") as Control
+	for shot: Array in FAZ4A_SHOTS:
+		for c: Node in area.get_children():
+			c.queue_free()
+		await _frames(2)
+		var entry: Dictionary = fixtures[shot[1]]
+		var g: Control = (load(scenes[entry["template"]]) as PackedScene).instantiate() as Control
+		area.add_child(g)
+		var ctx: RoundContext = RoundContext.new()
+		ctx.rng.seed = 3
+		g.call("setup", entry["params"], int(shot[2]), ctx)
+		await _frames(20)
+		match str(shot[4]):
+			"trace":
+				g.call("_debug_trace")
+			"choose":
+				g.call("_debug_choose", int(g.call("_debug_correct_index")))
+			"question":
+				while str(g.call("phase")) == "read":
+					g.call("_debug_next")
+		if str(shot[4]) != "":
+			await _frames(40)
+		if int(shot[3]) > 0:
+			g.call("show_hint", int(shot[3]))
+			# İz ipucunda kalem yolun ortasındayken.
+			await _frames(12 if entry["template"] == "trace" else 40)
+		await _shot(str(shot[0]))
 
 func _runner_game() -> Node:
 	var runner: Node = _app.current_scene()
