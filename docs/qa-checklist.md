@@ -200,6 +200,28 @@ Ekran görüntüleri: `tools/ui_screenshots.gd` (Faz 3b kareleri). Gerçek cihaz
 1. `char.grid.gezgin`, `ui.grid.hedef`, `ui.grid.duvar` eklenince kodla çizilen piyon, bayrak ve blok yerine geçiyor ve kareden taşmıyor; gezginin yönü oyunun çizdiği okla anlaşılıyor.
 2. `vo.tahmin.*` ve `vo.saat.*` kayıtları geldikten sonra cihazın TTS sesi yerine kayıtlar çalıyor.
 
+# Faz 6 — Fen Bilimleri 3 (Keşif Laboratuvarı)
+
+Sekiz ünite, 20 durak (`content/g3/fen/u01`–`u08.json`). Görseller ve sesler gelene kadar her kart Türkçe adını yazan bir yer tutucu, her satır cihazın Türkçe sesi olarak görünür/duyulur.
+
+## Bölge
+1. 1. ve 2. sınıf profiliyle haritaya gir. Beklenen: Keşif Laboratuvarı soluk, sisli ve kilitli görünür; dokununca Bilge "Üçüncü sınıfta kapıları açılacak" der, patika açılmaz.
+2. 3. sınıf profiliyle lab'a dokun. Beklenen: patikada 20 durak, ünite sırasıyla (Bilimsel Keşif Yolculuğu ilk).
+
+## İçerik akışı
+1. Her ünitenin ilk durağını oyna. Beklenen: Bilge'nin girişi, 3–5 tur, sonuçta yıldız ve Fen albümüne yeni çıkartma.
+2. "Bilim insanları" durağı: hikâye iki sayfa, sorular sayfaya dönerek cevaplanabiliyor; metin seçenekli soruda kartlar okunaklı.
+3. Metin kartlı turlar ("Dokunma", "Mineraller", "Yön değiştirir"): kart yazısı telefonda rahat okunuyor mu? Küçük kalan varsa not al.
+4. `listen_find` metin turlarında hoparlör düğmesi soruyu yeniden okuyor.
+5. "Elektriği tasarruflu kullanalım": sayı kartlı sorularda (4, 12) doğru sayı kabul ediliyor; yanlışta nazik sonuç ve ipucu geliyor.
+6. Güvenlik turlarında (ıslak el, yıpranmış kablo, fişi kablodan çekmek, yola koşmak) yanlış seçim korkutucu değil; sonuç cümlesi okunuyor.
+7. Albümün Fen sayfasında 20 çıkartma yeri var; kazanılanlar renkli görünüyor.
+
+## Asset geldiğinde (parti 090–096)
+1. `item.fen.*` görselleri kartlarda ve kutularda kesilmeden, aynı ışık ve bakış açısıyla görünüyor.
+2. Senaryo sahneleri (093) çerçeveye sığıyor; `alti_lamba` sahnesinde altı ışıklı pencere sayılabiliyor; `tuketim_grafik` sahnesinde sağdaki sütun belirgin kısa.
+3. Seslendirmede (095, 096) bilimsel terimler (paleontolog, mikroskop, mineral) doğru telaffuz ediliyor.
+
 # Faz 5b — Hayat Kasabası (Hayat Bilgisi 1–3)
 
 17 ünite, 53 durak (`content/g1–g3/hayat_bilgisi/`). Görseller ve sesler gelene kadar kartlar yer tutucu rengiyle, satırlar cihazın Türkçe sesiyle gelir; aşağıdaki adımlar asset'ler gelince yeniden yapılır.
