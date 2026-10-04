@@ -199,3 +199,28 @@ Ekran görüntüleri: `tools/ui_screenshots.gd` (Faz 3b kareleri). Gerçek cihaz
 ## Asset geldiğinde (parti 011, 012)
 1. `char.grid.gezgin`, `ui.grid.hedef`, `ui.grid.duvar` eklenince kodla çizilen piyon, bayrak ve blok yerine geçiyor ve kareden taşmıyor; gezginin yönü oyunun çizdiği okla anlaşılıyor.
 2. `vo.tahmin.*` ve `vo.saat.*` kayıtları geldikten sonra cihazın TTS sesi yerine kayıtlar çalıyor.
+
+---
+
+# Faz 3c — 1. sınıf Matematik içeriği
+
+Gerçek cihazda 1. sınıf profiliyle Sayı Ormanı'nda kontrol edilecekler (asset'ler gelmeden yer tutucularla da oynanabilir):
+
+## Sıra ve yol
+1. Sayı Ormanı yolu "Kedi nerede?" ile başlıyor (geometri önce); Faz 1 durakları onu izleyen ünitede, "Tahmin et!" o ünitenin sonunda. Toplam 32 durak.
+2. Faz 1'den kalan bir kayıtla açınca çökme yok (eski `u01` duraklarının yıldızları kaybolabilir; uygulama yayımlanmadığı için beklenen durum).
+
+## Ünite ünite
+1. **Yer, Yön ve Eş Nesneler:** konum seçeneklerinde hedef sesi ("Kedi kutunun içinde.") hoparlörle yeniden dinlenebiliyor. Kareli zeminde gezgin yalnızca ileri / sağa dön / sola dön kartlarıyla yürüyor. "Eşini bul"da sol ve sağ kartlar birebir aynı resim.
+2. **Sayılar ve Nicelikler (1):** "Kaçıncı sırada?" turlarında hayvanlar soldan sağa sabit sırada; yönerge "soldan say" diyor. Terazide seçenekler "daha az / eşit / daha çok" sözcük kartı. Ritmik saymada onar sayma 100'e kadar gidiyor; geriye saymada sayılar azalıyor. "Tahmin et!" turları tahmin → sayma → yakın/uzak akışında.
+3. **Ölçelim:** ölçme aracı sorusu hoparlörle yeniden dinlenebiliyor; tartma turunda küpler eklenince terazi dengeleniyor.
+4. **Toplama ve Çıkarma:** hikâye sayfası okunuyor, resim solda; sayfa hoparlörü Bilge'nin sağında, üstüne binmiyor. İşlem kartlarında `+` ve `−` okunaklı; "3 + 2 = 5" gibi uzun kartlar karoya sığıyor.
+5. **Paralarımız:** her para sesle adlandırılıyor; ödeme turunda tepsideki tutar hedefe eşit olunca onay kabul ediyor, tepsiden para geri alınabiliyor.
+6. **Şekiller:** yuvarlak / köşeli kutularının etiketine dokununca sözcük okunuyor. Dikdörtgen kutusunun rozeti yıldız; kutunun asıl etiketi dikdörtgen resmi.
+7. **Verileri Düzenleyelim:** çetele, tablo ve nesne grafiği turları; sorular sesle soruluyor.
+
+## Asset geldiğinde (parti 030–034)
+1. Konum resimlerinde kedi ve kutu her resimde aynı; sağ ve sol bakana göre doğru.
+2. Şekil resimlerinde kare ile dikdörtgen kolayca ayırt ediliyor; şekillerde yüz ya da süs yok.
+3. Yarışçı hayvanlar sağa bakıyor; küçük ayıcık ve top belirgin biçimde küçük.
+4. Hikâye sahnelerinde nesne sayıları hikâyeyle aynı.
