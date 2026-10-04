@@ -1,0 +1,194 @@
+{
+	"id": "g3.hayat_bilgisi.u01",
+	"grade": 3,
+	"subject": "hayat_bilgisi",
+	"title_key": "unit.g3.hayat_bilgisi.u01",
+	"source": {
+		"program": "TYMM İlkokul Hayat Bilgisi (1–3)",
+		"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+		"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+		"page": 61,
+		"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf",
+		"theme": "1. BEN VE OKULUM"
+	},
+	"nodes": [
+		{
+			"id": "g3.hayat_bilgisi.u01.n01",
+			"outcomes": [
+				"HB.3.1.2"
+			],
+			"title_key": "node.g3.hayat_bilgisi.u01.n01",
+			"intro_voice": "vo.g3.hayat_bilgisi.u01.n01.intro",
+			"sticker": "st.hayat_bilgisi.rozet",
+			"rounds": [
+				{
+					"template": "sort_bins",
+					"difficulty": 1,
+					"voice": "vo.g3.hayat_bilgisi.u01.n01.r01",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "item",
+									"value": "item.simge.hak",
+									"voice": "vo.ad.simge.hak"
+								},
+								"shape": "heart",
+								"color": "purple"
+							},
+							{
+								"label": {
+									"type": "item",
+									"value": "item.simge.sorumluluk",
+									"voice": "vo.ad.simge.sorumluluk"
+								},
+								"shape": "square",
+								"color": "blue"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.hak.egitim"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.hak.oyun"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.hak.saglik"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sorumluluk.odev"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sorumluluk.sinifi_temiz"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sorumluluk.kitabi_koru"
+								},
+								"bin": 1
+							}
+						]
+					}
+				},
+				{
+					"template": "scenario",
+					"difficulty": 2,
+					"voice": "vo.g3.hayat_bilgisi.u01.n01.r02",
+					"params": {
+						"scene": "item.sahne.kutuphane_teslim",
+						"hint": "vo.g3.hayat_bilgisi.u01.n01.r02.ipucu",
+						"choices": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sorumluluk.zamaninda_ver"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sorumluluk.kitabi_unut"
+								},
+								"correct": false
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sorumluluk.kitabi_yirt"
+								},
+								"correct": false
+							}
+						]
+					}
+				},
+				{
+					"template": "scenario",
+					"difficulty": 2,
+					"voice": "vo.g3.hayat_bilgisi.u01.n01.r03",
+					"params": {
+						"scene": "item.sahne.sinif_secimi",
+						"hint": "vo.g3.hayat_bilgisi.u01.n01.r03.ipucu",
+						"choices": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.hak.oy_kullan"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.hak.oyunu_ver"
+								},
+								"correct": false
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.hak.bahceye_cik"
+								},
+								"correct": false
+							}
+						]
+					}
+				},
+				{
+					"template": "scenario",
+					"difficulty": 3,
+					"voice": "vo.g3.hayat_bilgisi.u01.n01.r04",
+					"params": {
+						"scene": "item.sahne.top_paylasilmiyor",
+						"hint": "vo.g3.hayat_bilgisi.u01.n01.r04.ipucu",
+						"choices": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.hak.sirayla_oyna"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.hak.topu_kap"
+								},
+								"correct": false
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.hak.oyunu_birak"
+								},
+								"correct": false
+							}
+						]
+					}
+				}
+			]
+		}
+	]
+}
