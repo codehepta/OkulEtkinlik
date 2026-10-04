@@ -44,6 +44,10 @@ func show_hint(_level: int) -> void:
 static func validate_params(_p: Dictionary) -> Array[String]:
 	return []
 
+## Çok adımlı şablonlar (her doğru adım answered(true) yayar) true döner.
+func _is_multi_step() -> bool:
+	return false
+
 ## Girdiyi verilen süre boyunca kilitler, sonra açar.
 func _lock_input(seconds: float) -> void:
 	input_locked = true
@@ -133,6 +137,7 @@ func _make_result() -> RoundResult:
 	r.wrong = wrong_count
 	r.helped = helped
 	r.outcomes = ctx.outcomes
+	r.multi_step = _is_multi_step()
 	return r
 
 func _wait(seconds: float) -> void:

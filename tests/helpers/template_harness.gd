@@ -16,7 +16,7 @@ func before_each() -> void:
 	fake = FakeServices.new()
 	add_child_autofree(fake)
 
-func make(id: String, params: Dictionary, difficulty: int = 1, rng_seed: int = 7) -> MiniGame:
+func make(id: String, params: Dictionary, difficulty: int = 1, rng_seed: int = 7, grade: int = 1) -> MiniGame:
 	var scene: PackedScene = load(TemplateRegistry.SCENES[id]) as PackedScene
 	var game: MiniGame = scene.instantiate() as MiniGame
 	game.narrator = fake
@@ -26,6 +26,7 @@ func make(id: String, params: Dictionary, difficulty: int = 1, rng_seed: int = 7
 	ctx.rng.seed = rng_seed
 	ctx.voice_id = "vo.test"
 	ctx.outcomes = PackedStringArray(["TEST.1"])
+	ctx.grade = grade
 	game.answered.connect(func(c: bool) -> void: answers.append(c))
 	game.finished.connect(func(r: RoundResult) -> void: results.append(r))
 	game.setup(params, difficulty, ctx)

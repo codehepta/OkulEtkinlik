@@ -15,7 +15,7 @@ func _p_pay() -> Dictionary:
 	return {"mode": "money", "ask": "pay", "unit": "kr", "amount": 75, "wallet": ["kr_50", "kr_25", "kr_10", "kr_5"]}
 
 func test_clock_read_correct_and_wrong() -> void:
-	var g: MiniGame = make("clock_money", _p_read())
+	var g: MiniGame = make("clock_money", _p_read(), 1, 7, 2)
 	assert_eq(g.call("shown_time"), Vector2i(3, 30))
 	var right: int = int(g.call("_debug_correct_index"))
 	assert_eq(g.call("choice_labels")[right], Strings.t("fmt.clock", {"h": "3", "m": "30"}))
@@ -144,3 +144,32 @@ func test_clock_money_debug_answer_paths() -> void:
 		g.call("_debug_answer", true)
 		await wait_for_signal(g.finished, 3.0)
 		assert_eq(answers, [false, true] as Array[bool], str(params["ask"]))
+
+## Faz 3b S2: 1. sınıfta dijital gösterim yok; seçenekler hoparlörlü, onayla denetlenir.
+func test_clock_read_grade_one_voice_choices() -> void:
+	var g: MiniGame = make("clock_money", _p_read(), 1, 7, 1)
+	assert_false(bool(g.call("is_digital_shown")))
+	assert_eq(g.call("choice_labels"), ["", "", ""] as Array[String], "seçeneklerde rakam yok")
+	var right: int = int(g.call("_debug_correct_index"))
+	var wrong: int = (right + 1) % 3
+	g.call("_debug_choose", wrong)
+	assert_eq(answers.size(), 0, "dokunmak seçer, cevap sayılmaz")
+	assert_eq(int(g.call("selected_index")), wrong)
+	assert_eq(fake.said[fake.said.size() - 1].begins_with("vo.saat."), true, "saat sesle okunur")
+	g.call("_debug_check")
+	assert_eq(answers, [false] as Array[bool])
+	await wait_unlocked(g)
+	g.call("_debug_choose", right)
+	assert_true(fake.said.has("vo.saat.3_30"))
+	g.call("_debug_check")
+	await wait_for_signal(g.finished, 3.0)
+	assert_eq(answers, [false, true] as Array[bool])
+	assert_touch_targets(g)
+
+func test_clock_set_grade_one_target_by_voice() -> void:
+	var g: MiniGame = make("clock_money", _p_set(), 1, 7, 1)
+	assert_false(bool(g.call("is_digital_shown")))
+	assert_touch_targets(g)
+	g.call("_debug_answer", true)
+	await wait_for_signal(g.finished, 3.0)
+	assert_eq(answers, [true] as Array[bool])

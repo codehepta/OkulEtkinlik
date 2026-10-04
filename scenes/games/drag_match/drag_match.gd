@@ -191,6 +191,9 @@ func _move_to(view: Control, pos: Vector2, seconds: float = 0.25) -> void:
 func _first_unmatched() -> int:
 	return _matched.find(false)
 
+func _is_multi_step() -> bool:
+	return true
+
 func show_hint(level: int) -> void:
 	if _done or _busy:
 		return

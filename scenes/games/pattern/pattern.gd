@@ -196,6 +196,9 @@ func _correct_index() -> int:
 			return i
 	return -1
 
+func _is_multi_step() -> bool:
+	return true
+
 func show_hint(level: int) -> void:
 	if _done or _busy:
 		return
