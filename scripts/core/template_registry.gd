@@ -12,6 +12,8 @@ const SCENES: Dictionary = {
 	"balance": "res://scenes/games/balance/balance.tscn",
 	"clock_money": "res://scenes/games/clock_money/clock_money.tscn",
 	"fraction_pizza": "res://scenes/games/fraction_pizza/fraction_pizza.tscn",
+	"sort_bins": "res://scenes/games/sort_bins/sort_bins.tscn",
+	"scenario": "res://scenes/games/scenario/scenario.tscn",
 }
 
 static func has(id: String) -> bool:
