@@ -1,0 +1,322 @@
+{
+	"id": "g3.fen.u03",
+	"grade": 3,
+	"subject": "fen",
+	"title_key": "unit.g3.fen.u03",
+	"source": {
+		"program": "TYMM Fen Bilimleri (3–8)",
+		"doc": "Fen Bilimleri Dersi Öğretim Programı",
+		"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+		"page": 26,
+		"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf",
+		"theme": "3. YER BİLİMCİLER İŞ BAŞINDA"
+	},
+	"nodes": [
+		{
+			"id": "g3.fen.u03.n01",
+			"outcomes": [
+				"FB.3.3.1"
+			],
+			"title_key": "node.g3.fen.u03.n01",
+			"intro_voice": "vo.g3.fen.u03.n01.intro",
+			"sticker": "st.fen.kristal",
+			"rounds": [
+				{
+					"template": "listen_find",
+					"difficulty": 1,
+					"voice": "vo.g3.fen.u03.n01.r01",
+					"params": {
+						"target": {
+							"type": "item",
+							"value": "item.fen.mermer",
+							"voice": "vo.g3.fen.u03.n01.r01.hedef"
+						},
+						"options": [
+							{
+								"type": "item",
+								"value": "item.fen.mermer"
+							},
+							{
+								"type": "item",
+								"value": "item.fen.komur"
+							},
+							{
+								"type": "item",
+								"value": "item.fen.granit"
+							}
+						]
+					}
+				},
+				{
+					"template": "listen_find",
+					"difficulty": 2,
+					"voice": "vo.g3.fen.u03.n01.r02",
+					"params": {
+						"target": {
+							"type": "item",
+							"value": "item.fen.kuvars",
+							"voice": "vo.g3.fen.u03.n01.r02.hedef"
+						},
+						"options": [
+							{
+								"type": "item",
+								"value": "item.fen.kuvars"
+							},
+							{
+								"type": "item",
+								"value": "item.fen.komur"
+							},
+							{
+								"type": "item",
+								"value": "item.fen.mermer"
+							},
+							{
+								"type": "item",
+								"value": "item.fen.granit"
+							}
+						]
+					}
+				},
+				{
+					"template": "drag_match",
+					"difficulty": 2,
+					"voice": "vo.g3.fen.u03.n01.r03",
+					"params": {
+						"pairs": [
+							{
+								"left": {
+									"type": "item",
+									"value": "item.fen.komur"
+								},
+								"right": {
+									"type": "item",
+									"value": "item.fen.soba"
+								}
+							},
+							{
+								"left": {
+									"type": "item",
+									"value": "item.fen.mermer"
+								},
+								"right": {
+									"type": "item",
+									"value": "item.fen.heykel"
+								}
+							},
+							{
+								"left": {
+									"type": "item",
+									"value": "item.fen.bakir"
+								},
+								"right": {
+									"type": "item",
+									"value": "item.fen.kablo"
+								}
+							}
+						]
+					}
+				},
+				{
+					"template": "listen_find",
+					"difficulty": 2,
+					"voice": "vo.g3.fen.u03.n01.r04",
+					"params": {
+						"target": {
+							"type": "text",
+							"value": "fen.txt.mineraller",
+							"voice": "vo.g3.fen.u03.n01.r04.hedef"
+						},
+						"options": [
+							{
+								"type": "text",
+								"value": "fen.txt.mineraller",
+								"voice": "vo.fen.txt.mineraller"
+							},
+							{
+								"type": "text",
+								"value": "fen.txt.su",
+								"voice": "vo.fen.txt.su"
+							},
+							{
+								"type": "text",
+								"value": "fen.txt.hava",
+								"voice": "vo.fen.txt.hava"
+							}
+						]
+					}
+				},
+				{
+					"template": "listen_find",
+					"difficulty": 3,
+					"voice": "vo.g3.fen.u03.n01.r05",
+					"params": {
+						"target": {
+							"type": "text",
+							"value": "fen.txt.bir_maden",
+							"voice": "vo.g3.fen.u03.n01.r05.hedef"
+						},
+						"options": [
+							{
+								"type": "text",
+								"value": "fen.txt.bir_maden",
+								"voice": "vo.fen.txt.bir_maden"
+							},
+							{
+								"type": "text",
+								"value": "fen.txt.bir_sivi",
+								"voice": "vo.fen.txt.bir_sivi"
+							},
+							{
+								"type": "text",
+								"value": "fen.txt.bir_hayvan",
+								"voice": "vo.fen.txt.bir_hayvan"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g3.fen.u03.n02",
+			"outcomes": [
+				"FB.3.3.2"
+			],
+			"title_key": "node.g3.fen.u03.n02",
+			"intro_voice": "vo.g3.fen.u03.n02.intro",
+			"sticker": "st.fen.fosil",
+			"rounds": [
+				{
+					"template": "sequence",
+					"difficulty": 1,
+					"voice": "vo.g3.fen.u03.n02.r01",
+					"params": {
+						"items": [
+							{
+								"type": "item",
+								"value": "item.fen.fosil_2_dip"
+							},
+							{
+								"type": "item",
+								"value": "item.fen.fosil_3_camur"
+							},
+							{
+								"type": "item",
+								"value": "item.fen.fosil_5_bulunur"
+							}
+						]
+					}
+				},
+				{
+					"template": "drag_match",
+					"difficulty": 2,
+					"voice": "vo.g3.fen.u03.n02.r02",
+					"params": {
+						"pairs": [
+							{
+								"left": {
+									"type": "item",
+									"value": "item.fen.fosil_3_camur"
+								},
+								"right": {
+									"type": "text",
+									"value": "fen.txt.camur_orter",
+									"voice": "vo.fen.txt.camur_orter"
+								}
+							},
+							{
+								"left": {
+									"type": "item",
+									"value": "item.fen.fosil_4_katman"
+								},
+								"right": {
+									"type": "text",
+									"value": "fen.txt.taslasir",
+									"voice": "vo.fen.txt.taslasir"
+								}
+							},
+							{
+								"left": {
+									"type": "item",
+									"value": "item.fen.fosil_5_bulunur"
+								},
+								"right": {
+									"type": "text",
+									"value": "fen.txt.bulunur",
+									"voice": "vo.fen.txt.bulunur"
+								}
+							}
+						]
+					}
+				},
+				{
+					"template": "drag_match",
+					"difficulty": 2,
+					"voice": "vo.g3.fen.u03.n02.r03",
+					"params": {
+						"pairs": [
+							{
+								"left": {
+									"type": "item",
+									"value": "item.fen.paleontolog"
+								},
+								"right": {
+									"type": "item",
+									"value": "item.fen.fosil_5_bulunur"
+								}
+							},
+							{
+								"left": {
+									"type": "item",
+									"value": "item.fen.bilim_kerem"
+								},
+								"right": {
+									"type": "item",
+									"value": "item.fen.teleskop"
+								}
+							},
+							{
+								"left": {
+									"type": "item",
+									"value": "item.fen.bilim_deniz"
+								},
+								"right": {
+									"type": "item",
+									"value": "item.fen.saksi_bitki"
+								}
+							}
+						]
+					}
+				},
+				{
+					"template": "sequence",
+					"difficulty": 3,
+					"voice": "vo.g3.fen.u03.n02.r04",
+					"params": {
+						"items": [
+							{
+								"type": "item",
+								"value": "item.fen.fosil_1_yasayan"
+							},
+							{
+								"type": "item",
+								"value": "item.fen.fosil_2_dip"
+							},
+							{
+								"type": "item",
+								"value": "item.fen.fosil_3_camur"
+							},
+							{
+								"type": "item",
+								"value": "item.fen.fosil_4_katman"
+							},
+							{
+								"type": "item",
+								"value": "item.fen.fosil_5_bulunur"
+							}
+						]
+					}
+				}
+			]
+		}
+	]
+}

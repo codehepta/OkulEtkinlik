@@ -1,0 +1,565 @@
+{
+	"id": "g3.fen.u06",
+	"grade": 3,
+	"subject": "fen",
+	"title_key": "unit.g3.fen.u06",
+	"source": {
+		"program": "TYMM Fen Bilimleri (3–8)",
+		"doc": "Fen Bilimleri Dersi Öğretim Programı",
+		"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+		"page": 37,
+		"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf",
+		"theme": "6. YAŞAMIMIZI KOLAYLAŞTIRAN ELEKTRİK"
+	},
+	"nodes": [
+		{
+			"id": "g3.fen.u06.n01",
+			"outcomes": [
+				"FB.3.6.1"
+			],
+			"title_key": "node.g3.fen.u06.n01",
+			"intro_voice": "vo.g3.fen.u06.n01.intro",
+			"sticker": "st.fen.ampul",
+			"rounds": [
+				{
+					"template": "sort_bins",
+					"difficulty": 1,
+					"voice": "vo.g3.fen.u06.n01.r01",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "text",
+									"value": "fen.txt.elektrikli",
+									"voice": "vo.fen.txt.elektrikli"
+								},
+								"shape": "star",
+								"color": "yellow"
+							},
+							{
+								"label": {
+									"type": "text",
+									"value": "fen.txt.elektriksiz",
+									"voice": "vo.fen.txt.elektriksiz"
+								},
+								"shape": "square",
+								"color": "blue"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.buzdolabi"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.televizyon"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.el_feneri"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.makas"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.kalem"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.cali_supurgesi"
+								},
+								"bin": 1
+							}
+						]
+					}
+				},
+				{
+					"template": "listen_find",
+					"difficulty": 2,
+					"voice": "vo.g3.fen.u06.n01.r02",
+					"params": {
+						"target": {
+							"type": "item",
+							"value": "item.fen.utu",
+							"voice": "vo.g3.fen.u06.n01.r02.hedef"
+						},
+						"options": [
+							{
+								"type": "item",
+								"value": "item.fen.utu"
+							},
+							{
+								"type": "item",
+								"value": "item.fen.makas"
+							},
+							{
+								"type": "item",
+								"value": "item.fen.kitap"
+							},
+							{
+								"type": "item",
+								"value": "item.fen.cali_supurgesi"
+							}
+						]
+					}
+				},
+				{
+					"template": "sort_bins",
+					"difficulty": 2,
+					"voice": "vo.g3.fen.u06.n01.r03",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "text",
+									"value": "fen.txt.fisle",
+									"voice": "vo.fen.txt.fisle"
+								},
+								"shape": "star",
+								"color": "yellow"
+							},
+							{
+								"label": {
+									"type": "text",
+									"value": "fen.txt.pille",
+									"voice": "vo.fen.txt.pille"
+								},
+								"shape": "diamond",
+								"color": "orange"
+							},
+							{
+								"label": {
+									"type": "text",
+									"value": "fen.txt.elektriksiz",
+									"voice": "vo.fen.txt.elektriksiz"
+								},
+								"shape": "square",
+								"color": "blue"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.utu"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.mikser"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.kumanda"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.el_feneri"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.kitap"
+								},
+								"bin": 2
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.makas"
+								},
+								"bin": 2
+							}
+						]
+					}
+				},
+				{
+					"template": "listen_find",
+					"difficulty": 3,
+					"voice": "vo.g3.fen.u06.n01.r04",
+					"params": {
+						"target": {
+							"type": "text",
+							"value": "fen.txt.elektrikli",
+							"voice": "vo.g3.fen.u06.n01.r04.hedef"
+						},
+						"options": [
+							{
+								"type": "text",
+								"value": "fen.txt.elektrikli",
+								"voice": "vo.fen.txt.elektrikli"
+							},
+							{
+								"type": "text",
+								"value": "fen.txt.elektriksiz",
+								"voice": "vo.fen.txt.elektriksiz"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g3.fen.u06.n02",
+			"outcomes": [
+				"FB.3.6.2"
+			],
+			"title_key": "node.g3.fen.u06.n02",
+			"intro_voice": "vo.g3.fen.u06.n02.intro",
+			"sticker": "st.fen.fis",
+			"rounds": [
+				{
+					"template": "scenario",
+					"difficulty": 1,
+					"voice": "vo.g3.fen.u06.n02.r01",
+					"params": {
+						"scene": "item.fen.sahne.islak_el",
+						"choices": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.davranis_el_kurula"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.davranis_islak_el_priz"
+								},
+								"correct": false,
+								"result_voice": "vo.g3.fen.u06.n02.r01.sonuc2"
+							}
+						],
+						"hint": "vo.g3.fen.u06.n02.r01.ipucu"
+					}
+				},
+				{
+					"template": "scenario",
+					"difficulty": 2,
+					"voice": "vo.g3.fen.u06.n02.r02",
+					"params": {
+						"scene": "item.fen.sahne.yipranmis_kablo",
+						"choices": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.davranis_buyuge_soyle"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.davranis_kablo_tut"
+								},
+								"correct": false,
+								"result_voice": "vo.g3.fen.u06.n02.r02.sonuc2"
+							}
+						],
+						"hint": "vo.g3.fen.u06.n02.r02.ipucu"
+					}
+				},
+				{
+					"template": "scenario",
+					"difficulty": 2,
+					"voice": "vo.g3.fen.u06.n02.r03",
+					"params": {
+						"scene": "item.fen.sahne.fis_cekme",
+						"choices": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.davranis_fisten_tut"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.davranis_kablodan_cek"
+								},
+								"correct": false,
+								"result_voice": "vo.g3.fen.u06.n02.r03.sonuc2"
+							}
+						],
+						"hint": "vo.g3.fen.u06.n02.r03.ipucu"
+					}
+				},
+				{
+					"template": "sort_bins",
+					"difficulty": 3,
+					"voice": "vo.g3.fen.u06.n02.r04",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "text",
+									"value": "fen.txt.guvenli",
+									"voice": "vo.fen.txt.guvenli"
+								},
+								"shape": "heart",
+								"color": "green"
+							},
+							{
+								"label": {
+									"type": "text",
+									"value": "fen.txt.tehlikeli",
+									"voice": "vo.fen.txt.tehlikeli"
+								},
+								"shape": "triangle",
+								"color": "red"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.davranis_el_kurula"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.davranis_buyuge_soyle"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.davranis_fisten_tut"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.davranis_islak_el_priz"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.davranis_kablo_tut"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.davranis_kablodan_cek"
+								},
+								"bin": 1
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g3.fen.u06.n03",
+			"outcomes": [
+				"FB.3.6.3"
+			],
+			"title_key": "node.g3.fen.u06.n03",
+			"intro_voice": "vo.g3.fen.u06.n03.intro",
+			"sticker": "st.fen.pil",
+			"rounds": [
+				{
+					"template": "sort_bins",
+					"difficulty": 1,
+					"voice": "vo.g3.fen.u06.n03.r01",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "text",
+									"value": "fen.txt.tasarruflu",
+									"voice": "vo.fen.txt.tasarruflu"
+								},
+								"shape": "heart",
+								"color": "green"
+							},
+							{
+								"label": {
+									"type": "text",
+									"value": "fen.txt.savurgan",
+									"voice": "vo.fen.txt.savurgan"
+								},
+								"shape": "diamond",
+								"color": "orange"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.tasarruf_isik_kapat"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.tasarruf_perde_ac"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.tasarruf_tv_kapat"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.savurgan_buzdolabi_acik"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.savurgan_bos_oda_isik"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.savurgan_tv_bos"
+								},
+								"bin": 1
+							}
+						]
+					}
+				},
+				{
+					"template": "scenario",
+					"difficulty": 2,
+					"voice": "vo.g3.fen.u06.n03.r02",
+					"params": {
+						"scene": "item.fen.sahne.alti_lamba",
+						"choices": [
+							{
+								"token": {
+									"type": "number",
+									"value": 4
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "number",
+									"value": 6
+								},
+								"correct": false
+							},
+							{
+								"token": {
+									"type": "number",
+									"value": 8
+								},
+								"correct": false
+							}
+						],
+						"hint": "vo.g3.fen.u06.n03.r02.ipucu"
+					}
+				},
+				{
+					"template": "scenario",
+					"difficulty": 3,
+					"voice": "vo.g3.fen.u06.n03.r03",
+					"params": {
+						"scene": "item.fen.sahne.bosa_yanan_lamba",
+						"choices": [
+							{
+								"token": {
+									"type": "number",
+									"value": 12
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "number",
+									"value": 7
+								},
+								"correct": false
+							},
+							{
+								"token": {
+									"type": "number",
+									"value": 3
+								},
+								"correct": false
+							}
+						],
+						"hint": "vo.g3.fen.u06.n03.r03.ipucu"
+					}
+				},
+				{
+					"template": "scenario",
+					"difficulty": 3,
+					"voice": "vo.g3.fen.u06.n03.r04",
+					"params": {
+						"scene": "item.fen.sahne.tuketim_grafik",
+						"choices": [
+							{
+								"token": {
+									"type": "text",
+									"value": "fen.txt.dogru",
+									"voice": "vo.fen.txt.dogru"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "fen.txt.yanlis",
+									"voice": "vo.fen.txt.yanlis"
+								},
+								"correct": false
+							}
+						],
+						"hint": "vo.g3.fen.u06.n03.r04.ipucu"
+					}
+				}
+			]
+		}
+	]
+}
