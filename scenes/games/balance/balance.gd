@@ -1,7 +1,9 @@
 extends MiniGame
 ## Terazi ve sayı doğrusu.
 ## scale/compare: iki kefedeki değerleri karşılaştır (<, =, >). Kefeler destek takozlarıyla düz
-##   durur; doğru cevapta takozlar çekilir ve terazi ağır yana eğilir.
+##   durur; doğru cevapta takozlar çekilir ve terazi ağır yana eğilir. 1. sınıfta seçenekler sembol
+##   yerine "daha az / eşit / daha çok" sözcük kartıdır, üstlerinde ağır kefeyi gösteren minik terazi
+##   ikonu vardır (Faz 3b, S1). `item` gruplarında ipucu bire bir eşleme çizgileridir (MAT.1.1.4).
 ## scale/missing: bir kefedeki eksik değeri ("?") bul; doğru sayı konunca terazi dengelenir.
 ## number_line/find: işaretçinin durduğu çentiğin sayısını seç.
 ## number_line/place: verilen sayının çentiğine dokun.
@@ -20,6 +22,14 @@ const MIN_CHOICES: int = 2
 const MAX_CHOICES: int = 4
 ## Karşılaştırma seçenekleri (sol ? sağ), sabit sırada.
 const RELATIONS: Array[String] = ["<", "=", ">"]
+## 1. sınıf sözcük kartları (RELATIONS ile aynı sıra: sol daha az / eşit / sol daha çok).
+const RELATION_WORD_KEYS: Array[String] = ["bal.word.less", "bal.word.equal", "bal.word.more"]
+## Sembol yerine sözcük kartı kullanan en yüksek sınıf.
+const WORD_GRADE_MAX: int = 1
+const WORD_CHOICE_SIZE: Vector2 = Vector2(320, 200)
+const WORD_FONT: int = 54
+const WORD_ICON_H: float = 74.0
+const PAIR_LINE_COLOR: Color = ClayStyle.COCOA
 
 # --- Terazi ölçüleri ---
 const PIVOT: Vector2 = Vector2(960, 330)
@@ -75,6 +85,10 @@ var _missing_side: int = -1
 var _hint_total: int = -1
 var _tilt_tween: Tween = null
 var _item_count: int = 0
+## Kefe başına nesne görüntüleri (bire bir eşleme ipucu için).
+var _item_views: Array = [[], []]
+var _pairs_view: Control = null
+var _word_choices: bool = false
 # Sayı doğrusu
 var _min: int = 0
 var _max: int = 10
@@ -116,7 +130,16 @@ func _setup_scale(params: Dictionary) -> void:
 		var l: int = _sum(_left)
 		var r: int = _sum(_right)
 		_correct = 0 if l < r else (1 if l == r else 2)
-		_build_choices(RELATIONS)
+		_word_choices = ctx.grade <= WORD_GRADE_MAX
+		if _word_choices:
+			var words: Array[String] = []
+			for k: String in RELATION_WORD_KEYS:
+				words.append(Strings.t(k))
+			_build_choices(words, WORD_CHOICE_SIZE, WORD_FONT)
+			for i: int in _choice_views.size():
+				_add_relation_icon(_choice_views[i], i)
+		else:
+			_build_choices(RELATIONS)
 		_set_angle(0.0)
 	else:
 		_missing_side = 0 if _left.has(null) else 1
@@ -173,6 +196,7 @@ func _make_pan(values: Array, side: int) -> Control:
 			img.size = Vector2(ITEM_SIDE, ITEM_SIDE)
 			var x0: float = (PAN_SIZE.x - in_row * ITEM_SIDE) / 2.0
 			img.position = Vector2(x0 + col * ITEM_SIDE, top_y - (row + 1) * ITEM_SIDE)
+			(_item_views[side] as Array).append(img)
 	else:
 		var w: float = values.size() * BLOCK_SIZE.x + (values.size() - 1) * BLOCK_GAP
 		var x: float = (PAN_SIZE.x - w) / 2.0
@@ -235,6 +259,8 @@ func _set_angle(a: float) -> void:
 		_pans[side].position = Vector2(e.x - PAN_SIZE.x / 2.0, e.y + HANG - PAN_SIZE.y)
 	if _rig != null:
 		_rig.queue_redraw()
+	if _pairs_view != null:
+		_pairs_view.queue_redraw()
 
 func _tilt_to(a: float) -> void:
 	if _tilt_tween != null and _tilt_tween.is_valid():
@@ -373,15 +399,44 @@ func _on_column_input(event: InputEvent, index: int) -> void:
 
 # ================= Ortak seçim =================
 
-func _build_choices(labels: Array[String]) -> void:
-	var total: float = labels.size() * CHOICE_SIZE.x + (labels.size() - 1) * CHOICE_GAP
+func _build_choices(labels: Array[String], tile_size: Vector2 = CHOICE_SIZE, font: int = -1) -> void:
+	var total: float = labels.size() * tile_size.x + (labels.size() - 1) * CHOICE_GAP
 	var x0: float = (BASE_SIZE.x - total) / 2.0
+	var y: float = CHOICE_Y - (tile_size.y - CHOICE_SIZE.y) / 2.0
 	for i: int in labels.size():
-		var t: Control = Widgets.make_tile(self, labels[i], Rect2(Vector2(x0 + i * (CHOICE_SIZE.x + CHOICE_GAP), CHOICE_Y), CHOICE_SIZE),
-			CHOICE_FONT if labels[i].length() < 4 else CHOICE_FONT - 24, ClayStyle.PEACH)
+		var fs: int = font if font > 0 else (CHOICE_FONT if labels[i].length() < 4 else CHOICE_FONT - 24)
+		var t: Control = Widgets.make_tile(self, labels[i], Rect2(Vector2(x0 + i * (tile_size.x + CHOICE_GAP), y), tile_size), fs, ClayStyle.PEACH)
 		t.name = "Choice%d" % i
 		t.gui_input.connect(_on_choice_input.bind(i))
 		_choice_views.append(t)
+
+## Sözcük kartının üstüne minik terazi ikonu: ağır kefe aşağıda ve içinde ağırlık topu var
+## (sözcük okunamasa da ilişki şekilden anlaşılır; renk tek başına anlam taşımaz).
+func _add_relation_icon(tile: Control, relation: int) -> void:
+	var label: Control = tile.get_node_or_null("Label") as Control
+	if label != null:
+		label.offset_top = WORD_ICON_H
+	var icon: Control = Control.new()
+	icon.name = "RelationIcon"
+	icon.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	icon.position = Vector2(0, 14)
+	icon.size = Vector2(tile.size.x, WORD_ICON_H)
+	# 0: sağ ağır (sol daha az), 1: denge, 2: sol ağır.
+	var tilt: float = [0.32, 0.0, -0.32][relation]
+	icon.draw.connect(func() -> void:
+		var c: Vector2 = Vector2(icon.size.x / 2.0, 22.0)
+		var arm: float = 92.0
+		var d: Vector2 = Vector2(arm, 0).rotated(tilt)
+		icon.draw_line(c - d, c + d, ClayStyle.COCOA, 8.0, true)
+		icon.draw_line(c, c + Vector2(0, 46), ClayStyle.COCOA, 8.0, true)
+		icon.draw_circle(c, 9.0, ClayStyle.HONEY, true, -1.0, true)
+		for k: int in 2:
+			var e: Vector2 = c - d if k == 0 else c + d
+			var heavy: bool = (k == 0 and relation == 2) or (k == 1 and relation == 0)
+			icon.draw_arc(e + Vector2(0, 10), 26.0, 0.0, PI, 16, ClayStyle.COCOA, 6.0, true)
+			if heavy or relation == 1:
+				icon.draw_circle(e + Vector2(0, 18), 11.0, ClayStyle.CLAY_EDGE, true, -1.0, true))
+	tile.add_child(icon)
 
 func _on_choice_input(event: InputEvent, index: int) -> void:
 	if is_press(event):
@@ -439,7 +494,9 @@ func show_hint(level: int) -> void:
 		_solve()
 
 func _hint_one() -> void:
-	if _mode == "scale" and _ask == "compare":
+	if _mode == "scale" and _ask == "compare" and _item != "":
+		_show_pairs()
+	elif _mode == "scale" and _ask == "compare":
 		# Takozlar yarıya iner, terazi son açısının yarısı kadar eğilir.
 		_lower_supports(0.5)
 		_tilt_to(_tilt_for(_sum(_left), _sum(_right)) * 0.5)
@@ -461,6 +518,51 @@ func _hint_one() -> void:
 		for i: int in [target - 1, target + 1]:
 			if _label_views.has(i):
 				_glow(_label_views[i])
+
+## Nesne gruplarında ipucu 1: iki kefedeki nesneler bire bir çizgiyle eşlenir, eşi olmayanlar
+## parlar (hangi grubun daha çok olduğu sayı bilmeden görülür).
+func _show_pairs() -> void:
+	if _pairs_view != null:
+		return
+	_pairs_view = Control.new()
+	_pairs_view.name = "Pairs"
+	_pairs_view.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	_pairs_view.size = BASE_SIZE
+	_pairs_view.draw.connect(_draw_pairs)
+	add_child(_pairs_view)
+	var left: Array = _item_views[0]
+	var right: Array = _item_views[1]
+	var n: int = mini(left.size(), right.size())
+	for side: Array in [left, right]:
+		for k: int in range(n, side.size()):
+			_glow(side[k] as Control)
+
+func _draw_pairs() -> void:
+	var left: Array = _item_views[0]
+	var right: Array = _item_views[1]
+	for k: int in pair_count():
+		var a: Control = left[k] as Control
+		var b: Control = right[k] as Control
+		var pa: Vector2 = a.global_position - global_position + a.size / 2.0
+		var pb: Vector2 = b.global_position - global_position + b.size / 2.0
+		_pairs_view.draw_line(pa, pb, Color(PAIR_LINE_COLOR, 0.7), 6.0, true)
+		_pairs_view.draw_circle(pa, 9.0, PAIR_LINE_COLOR, true, -1.0, true)
+		_pairs_view.draw_circle(pb, 9.0, PAIR_LINE_COLOR, true, -1.0, true)
+
+## Bire bir eşleme ipucunda çizilen çizgi sayısı (ipucu yoksa 0).
+func pair_count() -> int:
+	if _pairs_view == null:
+		return 0
+	return mini((_item_views[0] as Array).size(), (_item_views[1] as Array).size())
+
+func choice_labels() -> Array[String]:
+	var res: Array[String] = []
+	for v: Control in _choice_views:
+		res.append(str(v.get("text")))
+	return res
+
+func has_relation_icons() -> bool:
+	return not _choice_views.is_empty() and _choice_views[0].get_node_or_null("RelationIcon") != null
 
 ## İpucu 2: doğru seçenek / çentik parlar ve seçilir.
 func _solve() -> void:
