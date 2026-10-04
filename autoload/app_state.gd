@@ -53,8 +53,9 @@ const SUBTITLE_SCENE: String = "res://scenes/components/subtitle_bubble.tscn"
 func _ready() -> void:
 	# Kayıtlı ses seviyelerini açılışta uygula.
 	audio.apply_volumes(save.data["settings"] as Dictionary)
-	# Yalnızca gerçek autoload tek altyazı balonunu takar; testlerin kurduğu örnekler takmaz.
+	# Yalnızca gerçek autoload kil temasını kurar ve tek altyazı balonunu takar; testlerin kurduğu örnekler bunları yapmaz.
 	if get_tree().root.get_node_or_null("AppState") == self:
+		ClayStyle.install()
 		_mount_subtitle_bubble()
 
 ## Uygulama geneli tek altyazı balonu: alt orta, dokunmaları geçirir (spec §6, sessiz yol).
