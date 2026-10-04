@@ -703,6 +703,860 @@
 		],
 		"note": "d) görselleştirme aracını seçme ve f) hazır nokta grafiğini yorumlama oynanabilir; e) verilen veriyle çetele, sıklık tablosu ve nokta grafiği oluşturma önerilen chart_build gerektirir; a–ç) araştırma durumu ve sorusu belirleme, plan yapma, gerçek veri toplama ile g) değerlendirme sınıf ya da ev etkinliği."
 	},
+	"T.D.1.1": {
+		"fit": "partial",
+		"templates": [
+			"listen_find",
+			"scenario"
+		],
+		"note": "a) öğrendiği sesin geçtiği görseli seçme listen_find ile, b) oyunda verilen amaca uygun dinleyeceğini seçme scenario ile oynanabilir; c) dinleme kurallarına uygun dinleme ve ç) uygun zamanda söz alma gerçek iletişimde gözlenen davranış."
+	},
+	"T.D.1.2": {
+		"fit": "partial",
+		"templates": [
+			"listen_find",
+			"story",
+			"sort_bins"
+		],
+		"note": "a) sese karşılık gelen harfi tanıma ve b) sesin kaynağını tahmin etme listen_find ile; c) görselden metin hakkında tahmin, ç) yaşantı ve ön bilgiyle çıkarım, e–f) olayların öncesi ve sonrası hakkında tahmin story ile; g) iletileri doğruluk ve gerçeklik açısından ayırma ve ğ) nesneleri fiziksel özelliklerine göre sınıflandırma sort_bins ile oynanabilir; d) sesin geçtiği sözcüklere örnek verme serbest sözlü üretim."
+	},
+	"T.D.1.3": {
+		"fit": "full",
+		"templates": [
+			"listen_find",
+			"sort_bins",
+			"story",
+			"drag_match"
+		],
+		"note": "a) doğal ve yapay sesleri ayırt etme sort_bins, b) ses–harf ayırt etme listen_find, c) konuyu bulma ve ç) iletilerin benzerliklerini belirleme story anlama soruları, d) söylem–görsel ilişkisi drag_match ile çalışılır."
+	},
+	"T.D.1.4": {
+		"fit": "none",
+		"templates": [],
+		"note": "Bileşenler (a–c) çocuğun kendi dinleme sürecindeki hatalarını belirlemesi, düzeltmesi ve uygun davranışları sonraki dinlemelerine aktarması; öz değerlendirme oyunda denetlenemez. Yönergeyi tekrar dinleme ve yeniden deneme akışı (§3.3) süreci destekler ama ölçmez."
+	},
+	"T.K.1.1": {
+		"fit": "partial",
+		"templates": [
+			"scenario"
+		],
+		"note": "a) konunun özelliğine uygun konuşma üslubunu (nazik, samimi) verilen durumlarda seçme scenario ile oynanabilir; b) göz teması, c) uygun zamanda söz alma ve ç) konuşmada selamlaşma ve hitap ifadeleri kullanma çocuğun gerçek konuşmasını gerektirir."
+	},
+	"T.K.1.2": {
+		"fit": "partial",
+		"templates": [
+			"story"
+		],
+		"note": "d) görselden dinleyeceği metin hakkında tahmin story ile oynanabilir; a–c), ç) ve e–j) bileşenleri çocuğun kendi konuşmasında gerçekleşir (konuşma, anlatma, konuşmalarında karşılaştırma ve sınıflandırma, kendi cümleleriyle ifade, öneri, görsel ve benzetme kullanma); sözlü üretim."
+	},
+	"T.K.1.3": {
+		"fit": "none",
+		"templates": [],
+		"note": "Bileşenler (a–f) sesli söyleme, konuşma hızı, telaffuz, sözcükleri yerinde kullanma, mimik ve beden dili; hepsi çocuğun kendi konuşmasında gerçekleşir, oyun konuşmayı değerlendirmez (veli ile sesli anlatma önerilebilir)."
+	},
+	"T.K.1.4": {
+		"fit": "none",
+		"templates": [],
+		"note": "Bileşenler (a–c) kendi konuşmasındaki hataları fark edip düzeltme ve olumlu davranışları sonraki konuşmalarına aktarma; kendi konuşması üzerinde öz değerlendirme."
+	},
+	"T.O.1.1": {
+		"fit": "partial",
+		"templates": [
+			"drag_match",
+			"story"
+		],
+		"note": "b) sözcükleri ve c) basit, kısa cümleleri sessiz okuyup görselle eşleştirme drag_match ile; e) metnin başlık ve görsellerini inceleme ve ğ) kısa metinler arasından seçtiği metni okuyup anlama sorularını yanıtlama story ile oynanabilir; a) harf ve heceleri seslendirme, ç) telaffuz, d) işitilebilir sesle okuma, f–g) sesli okuma ve h) noktalamaya dikkat ederek okuma sesli okuma gerektirir (oyun çocuğun sesini değerlendirmez)."
+	},
+	"T.O.1.2": {
+		"fit": "full",
+		"templates": [
+			"story",
+			"drag_match"
+		],
+		"note": "a) ön bilgiyi kullanma ve b) metindeki bilgiyle ön bilgi arasında bağlantı kurma ön bilgi gerektiren anlama sorularıyla, c) başlık ve görselden konu tahmini story ile; ç) okuduğu yönergeyi uygulama (nesneyi istenen yere sürükleme) drag_match ile çalışılır."
+	},
+	"T.O.1.3": {
+		"fit": "full",
+		"templates": [
+			"story"
+		]
+	},
+	"T.O.1.4": {
+		"fit": "none",
+		"templates": [],
+		"note": "Tek bileşen a) okuduğu ortamın fiziksel özelliklerini açıklama; açıklama serbest sözlü üretim ve çocuğun kendi okuma ortamına bağlı."
+	},
+	"T.O.1.5": {
+		"fit": "none",
+		"templates": [],
+		"note": "Bileşenler (a–c) kendi okuma sürecindeki hataları belirleme, düzeltme ve olumlu davranışları sonraki okumalarına aktarma; öz değerlendirme ve sesli okuma gerektirir."
+	},
+	"T.Y.1.1": {
+		"fit": "partial",
+		"templates": [
+			"trace",
+			"syllable_build",
+			"sequence"
+		],
+		"note": "b) çizgi çalışmaları trace ile (boyama kâğıt etkinliği); c) harf yazma trace, hece ve sözcük yazma syllable_build, cümle yazma sözcük kartlarını sıralayarak sequence ile; e) söylenen sözcük ve cümleleri aynı yollarla yazma oynanabilir; a) yazma materyallerini kullanma ve d) verilen metni bakarak yazma kâğıt üzerinde, ç) kısa metin yazma ve f) yazışmayı selamlaşma ve hitapla başlatma serbest yazılı üretim."
+	},
+	"T.Y.1.2": {
+		"fit": "partial",
+		"templates": [
+			"syllable_build",
+			"drag_match"
+		],
+		"note": "a) görselle ilgili sözcüğü hece ve harf karolarıyla yazma syllable_build ile, b) sözcük ve cümlelerde eksik bırakılan harf, hece ya da sözcüğü tamamlama syllable_build ve drag_match ile oynanabilir; c–h) yazıyı devam ettirme, yazılarında karşılaştırma ve sınıflandırma, olayları kendi ifadeleriyle yazma, görsel kullanma, kısa metin yazma, muhataba göre yazma ve benzetme serbest yazılı üretim."
+	},
+	"T.Y.1.3": {
+		"fit": "partial",
+		"templates": [
+			"trace",
+			"sequence",
+			"drag_match"
+		],
+		"note": "a) sözcük kartlarından anlamlı ve kurallı cümle kurma sequence ile; b) harfleri ve c) rakamları temel formuna ve yazım yönüne göre yazma ile h) rakam ve sayıları yazma trace ile (dik temel harf); d) harflerin büyük yazılışını yerinde kullanma ve ı) büyük harfleri kuralına uygun yazma (cümle başı, özel ad) drag_match ve trace ile; j) soru edatını ayrı yazma karoyu doğru yere yerleştirerek drag_match ile oynanabilir; ç) ve i) harf, sözcük ve satır arası boşluk el yazısı düzeni, e) kaynaktan araştırarak yazma, f–g), ğ) ve k) kendi yazılarında sözcük, mesaj, cümle ve noktalama kullanma serbest yazılı üretim."
+	},
+	"T.Y.1.4": {
+		"fit": "none",
+		"templates": [],
+		"note": "Bileşenler (a–c) kendi yazılarındaki hataları bulup düzeltme ve uygun davranışları sonraki yazılarına aktarma; kendi kâğıt yazısı üzerinde öz değerlendirme."
+	},
+	"T.D.2.1": {
+		"fit": "partial",
+		"templates": [
+			"scenario"
+		],
+		"note": "a) oyunda verilen amaca uygun dinleyeceğini seçme scenario ile oynanabilir (ilgi alanına göre tercih doğru/yanlışı olmayan kişisel seçim); b) dinleme kurallarına uygun dinleme ve c) uygun zamanda söz alma gerçek iletişimde gözlenen davranış."
+	},
+	"T.D.2.2": {
+		"fit": "partial",
+		"templates": [
+			"story",
+			"sort_bins"
+		],
+		"note": "a) yaşantı ve ön bilgiyle çıkarım, b) görsellerden konu tahmini, c–ç) olayların öncesi ve sonrası hakkında tahmin ve f) metindeki bilgileri doğruluk açısından karşılaştırma story ile; e) iletileri doğruluk ve gerçeklik açısından ayırma ve g) nesne ve karakterleri özelliklerine göre sınıflandırma sort_bins ile oynanabilir; d) kendi ilgi alanına uygun çıkarım kişiseldir, oyun doğruluğunu denetleyemez; ğ) düşüncelerini ifade etme serbest sözlü üretim."
+	},
+	"T.D.2.3": {
+		"fit": "full",
+		"templates": [
+			"story",
+			"drag_match"
+		],
+		"note": "a) olayları belirleme, b) konuyu bulma ve c) iletilerin benzerlik ve farklılıklarını belirleme story anlama soruları, ç) söylem–görsel ilişkisi drag_match ile çalışılır."
+	},
+	"T.D.2.4": {
+		"fit": "none",
+		"templates": [],
+		"note": "Tek bileşen a) dinleme yapacağı gerçek ortamın uygunluğunu gözden geçirme; çocuğun kendi ortamına bağlı. Uygun ve uygun olmayan ortam görsellerini ayırma içerik olarak pekiştirilebilir ama bileşeni karşılamaz."
+	},
+	"T.D.2.5": {
+		"fit": "none",
+		"templates": [],
+		"note": "Bileşenler (a–c) kendi dinleme sürecindeki hataları belirleme, düzeltme ve uygun davranışları aktarma; öz değerlendirme oyunda denetlenemez."
+	},
+	"T.K.2.1": {
+		"fit": "partial",
+		"templates": [
+			"scenario"
+		],
+		"note": "a) konunun özelliğine uygun konuşma üslubunu verilen durumlarda seçme scenario ile oynanabilir; b–c) konuşmasını tür ve amaca göre belirleme, ç) göz teması, d) uygun zamanda söz alma, e) selamlaşma ve hitap ifadeleri kullanma ve f) konuşma planı hazırlama çocuğun kendi konuşmasını ve sözlü üretimi gerektirir."
+	},
+	"T.K.2.2": {
+		"fit": "partial",
+		"templates": [
+			"sequence"
+		],
+		"note": "b) görsellerden olayların oluş sırası hakkında tahmin sequence ile oynanabilir; a) ve c–h) ifade etme, açıklama, sınıflandırarak anlatma, zıt anlamlı sözcük ve benzetme kullanma, olayları kendi ifadeleriyle anlatma, görüş bildirme, neden-sonuç söyleme ve görsel kullanma sözlü üretim."
+	},
+	"T.K.2.3": {
+		"fit": "none",
+		"templates": [],
+		"note": "Bileşenler (a–h) konuşma hızı, plana uygun konuşma, vurgu ve tonlama, sözcük ve cümle kullanımı, bağlama ögeleri, jest, mimik ve beden dili; hepsi çocuğun kendi konuşmasında gerçekleşir, oyun konuşmayı değerlendirmez."
+	},
+	"T.K.2.4": {
+		"fit": "none",
+		"templates": [],
+		"note": "Tek bileşen a) konuşma yapacağı gerçek ortamın uygunluğunu gözden geçirme; çocuğun kendi ortamına bağlı."
+	},
+	"T.K.2.5": {
+		"fit": "none",
+		"templates": [],
+		"note": "Bileşenler (a–c) kendi konuşmasındaki hataları düzeltme ve olumlu davranışları fark edip sonraki konuşmalarına aktarma; kendi konuşması üzerinde öz değerlendirme."
+	},
+	"T.O.2.1": {
+		"fit": "partial",
+		"templates": [
+			"story"
+		],
+		"note": "a) okuyacağı metnin başlık ve görsellerini inceleme story ile oynanabilir; b) ilgi alanına göre metin seçme doğru/yanlışı olmayan kişisel tercih (oyun seçim sunabilir ama değerlendiremez); c) sesli okuma ve ç) noktalamaya dikkat ederek okuma sesli okuma gerektirir."
+	},
+	"T.O.2.2": {
+		"fit": "partial",
+		"templates": [
+			"story",
+			"sort_bins",
+			"drag_match"
+		],
+		"note": "a) bilgiler ile ön bilgi arasında bağlantı kurma, b–c) başlık ve görsellerden konu ve olay tahmini, ç) verilerden çıkarım story ile; d) iletileri ön bilgiyle karşılaştırma (doğru, yanlış) ve e) nesne ve kişileri sınıflandırma sort_bins ile; f) zıt anlamlı sözcükleri bulma drag_match ile oynanabilir; g) iletilere katılıp katılmadığını ifade etme doğru cevabı olmayan kişisel görüş."
+	},
+	"T.O.2.3": {
+		"fit": "partial",
+		"templates": [
+			"story",
+			"drag_match"
+		],
+		"note": "b) konuyu bulma ve c) iletilerin benzerlik ve farklılıklarını belirleme story ile, ç) içerik ile tablo ve grafik arasındaki ilişkiyi belirleme drag_match ile oynanabilir; a) karakter, olay ve bilgileri açıklama serbest sözlü üretim."
+	},
+	"T.O.2.4": {
+		"fit": "none",
+		"templates": [],
+		"note": "a) okuduğu ortamın okumasına etkisini açıklama serbest sözlü üretim; b) ortamın fiziksel özelliklerini dikkate alarak okuma çocuğun gerçek okuma ortamındaki davranışı."
+	},
+	"T.O.2.5": {
+		"fit": "none",
+		"templates": [],
+		"note": "Bileşenler (a–c) kendi okuma sürecindeki hataları belirleme, düzeltme ve olumlu davranışları sonraki okumalarına aktarma; öz değerlendirme ve sesli okuma gerektirir."
+	},
+	"T.Y.2.1": {
+		"fit": "none",
+		"templates": [],
+		"note": "Bileşenler (a–d) hazırlık yaparak ve yazı türüne göre yazma, yazışmayı selamlaşma ve uygun ifadelerle başlatıp sonlandırma, yazma planı hazırlama; hepsi serbest yazılı üretim."
+	},
+	"T.Y.2.2": {
+		"fit": "none",
+		"templates": [],
+		"note": "Bütün bileşenler (a–m) çocuğun kendi yazısını üretmesini ister: eksik cümle ve metin yazma, tahminini yazma, yazılarında karşılaştırma, sınıflandırma ve sözcük kullanma, olayları kendi ifadeleriyle yazma, yönerge, görüş, istek ve öneri yazma, yazıyı sunma, görsel, benzetme ve örnek kullanma, neden-sonuç yazma; serbest yazılı üretim."
+	},
+	"T.Y.2.3": {
+		"fit": "partial",
+		"templates": [
+			"sequence",
+			"drag_match"
+		],
+		"note": "d) soru edatını ayrı yazma (karoyu cümlede doğru yere yerleştirme) sequence ile, e) kısaltmaları kuralına uygun yazma (doğru yazılmış kısaltmayı açılımıyla eşleme) ve f) büyük harfleri kuralına uygun yazma drag_match ile oynanabilir; a) plana uygun yazma, b) kaynaktan araştırarak yazma, c) sözcükleri yerinde kullanma, ç) mesajı açık ifade etme, g) yazım alanını kullanma ve ğ) noktalama işaretlerini kullanma çocuğun kendi yazısında gerçekleşir, serbest yazılı üretim."
+	},
+	"T.Y.2.4": {
+		"fit": "none",
+		"templates": [],
+		"note": "Tek bileşen a) yazma yapacağı gerçek ortamın uygunluğunu gözden geçirme; çocuğun kendi ortamına bağlı."
+	},
+	"T.Y.2.5": {
+		"fit": "none",
+		"templates": [],
+		"note": "Bileşenler (a–c) kendi yazılarındaki hataları bulup düzeltme ve uygun davranışları sonraki yazılarına aktarma; kendi kâğıt yazısı üzerinde öz değerlendirme."
+	},
+	"T.D.3.1": {
+		"fit": "partial",
+		"templates": [
+			"scenario"
+		],
+		"note": "a) oyunda verilen amaca uygun dinleyeceğini seçme ve b) konuya ve amaca uygun dinleme stratejisini seçme scenario ile oynanabilir (ilgi alanına göre tercih kişisel seçim); c) dinleme kurallarına uygun dinleme ve ç) düşüncelerini belirtmek için söz alma gerçek iletişimde gözlenen davranış."
+	},
+	"T.D.3.2": {
+		"fit": "partial",
+		"templates": [
+			"story",
+			"sort_bins"
+		],
+		"note": "a) konu tahmini, b–c) olayların öncesi ve sonrası hakkında tahmin, ç) bilgiler ile ön bilgi arasında bağlantı kurma, d) oyunda verilen amaca uygun çıkarım ve f) metindeki bilgileri karşılaştırma story ile; e) iletileri doğruluk ve gerçeklik açısından ayırma ve g) durum, nesne ve karakterleri sınıflandırma sort_bins ile oynanabilir; ğ) ve ı) düşüncelerini ifade etme ile h) iletilere ilişkin öneride bulunma serbest sözlü üretim."
+	},
+	"T.D.3.3": {
+		"fit": "partial",
+		"templates": [
+			"story",
+			"sort_bins"
+		],
+		"note": "a) olayları belirleme, b) ana fikri ya da ana duyguyu bulma, c) konuyu bulma ve ç) iletilerin benzerlik ve farklılıklarını belirleme story ile, d) iletileri benzerlik ve farklılık yönüyle ilişkilendirme sort_bins ile oynanabilir; e) söylem ile görsel arasındaki ilişkiyi açıklama serbest sözlü üretim."
+	},
+	"T.D.3.4": {
+		"fit": "none",
+		"templates": [],
+		"note": "a) dinleme yapacağı gerçek ortamın uygunluğunu gözden geçirme çocuğun kendi ortamına bağlı; b) ortamın duygu, düşünce ve davranışlarına etkisini açıklama serbest sözlü üretim."
+	},
+	"T.D.3.5": {
+		"fit": "none",
+		"templates": [],
+		"note": "a) tercih ettiği dinleme stratejilerini açıklama ve b) dinleyeceği türü tercih nedenleriyle belirtme serbest sözlü üretim; c) uygun davranışlarını sonraki dinlemelerine aktarma öz değerlendirme."
+	},
+	"T.K.3.1": {
+		"fit": "partial",
+		"templates": [
+			"scenario"
+		],
+		"note": "a) konunun özelliğine uygun konuşma üslubunu verilen durumlarda seçme scenario ile oynanabilir; b–c) konuşmasını tür ve amaca göre belirleme, ç) kurallara uygun iletişimi sürdürme ve d) konuşma planı hazırlama çocuğun kendi konuşmasını ve sözlü üretimi gerektirir."
+	},
+	"T.K.3.2": {
+		"fit": "partial",
+		"templates": [
+			"story",
+			"sort_bins"
+		],
+		"note": "b) dinlediği konuşmanın nasıl sonuçlanacağını tahmin etme story ile, ç) metinlerdeki nesne ve kişileri karşılaştırma sort_bins ile oynanabilir; a) örnek verme, c) plana uygun konuşma, d–f) konuşmalarında sınıflandırma ve zıt ya da eş anlamlı sözcük kullanma, g) kendi cümleleriyle ifade, ğ–h) görüş ve öneri, ı–k) benzetme, örneklendirme, içerik oluşturma ve sunum, l) neden-sonuç ilişkisini ve m) atasözlerinin anlamını söyleme sözlü üretim."
+	},
+	"T.K.3.3": {
+		"fit": "none",
+		"templates": [],
+		"note": "Bileşenler (a–ı) ses düzeyi, plana uygun konuşma, vurgu ve tonlama, sözcük, atasözü, zaman ifadesi ve bağlama ögesi kullanımı, açık ve kurallı cümle, jest, mimik ve beden dili; hepsi çocuğun kendi konuşmasında gerçekleşir, oyun konuşmayı değerlendirmez."
+	},
+	"T.K.3.4": {
+		"fit": "none",
+		"templates": [],
+		"note": "a) konuşma yapacağı gerçek ortamın uygunluğunu gözden geçirme çocuğun kendi ortamına bağlı; b) ortamın duygu, düşünce ve davranışlarına etkisini açıklama serbest sözlü üretim."
+	},
+	"T.K.3.5": {
+		"fit": "partial",
+		"templates": [
+			"scenario"
+		],
+		"note": "a) başkalarının (oyundaki karakterlerin) konuşmalarındaki hataları fark etme scenario ile oynanabilir; b) kendi konuşmasındaki olumlu davranışları sonraki konuşmalarına aktarma öz değerlendirme."
+	},
+	"T.O.3.1": {
+		"fit": "partial",
+		"templates": [
+			"story",
+			"scenario"
+		],
+		"note": "a) okuyacağı metnin başlık ve görsellerini inceleme ve c) oyunda verilen amaca uygun metni seçme story ile, ç) okuma amacına uygun okuma stratejisine karar verme scenario ile oynanabilir (ilgi alanına göre tercih kişisel seçim); b) noktalama işaretlerine dikkat ederek okuma sesli okuma gerektirir."
+	},
+	"T.O.3.2": {
+		"fit": "partial",
+		"templates": [
+			"story",
+			"sequence",
+			"sort_bins",
+			"drag_match"
+		],
+		"note": "a) bağlantı kurma, b–c) ve d) bilgi ve olayların öncesi ve sonrası hakkında tahmin, e) metnin amacına uygun çıkarım ve g) iletileri metindeki diğer bilgilerle karşılaştırma story ile; ç) olayların sırası hakkında tahmin sequence ile; f) iletileri ön bilgiyle karşılaştırma ve ğ) olay, nesne ve kişileri sınıflandırma sort_bins ile; h) zıt ve eş anlamlı sözcükleri bulma drag_match ile oynanabilir; ı) katılıp katılmadığını nedenleriyle ifade etme, i) öneride bulunma ve j) görüş oluşturma serbest üretim."
+	},
+	"T.O.3.3": {
+		"fit": "partial",
+		"templates": [
+			"story",
+			"sort_bins",
+			"drag_match"
+		],
+		"note": "b) konuyu ve c) ana fikri ya da ana duyguyu bulma ile ç) iletileri benzerlik ve farklılık yönüyle ilişkilendirme story ile; d) gerçek ve mecaz anlamlı sözcükleri metinle ilişkilendirme sort_bins ile; e) noktalama işaretinin içerikle ilişkisini belirleme drag_match ile oynanabilir; a) karakter, olay, bilgi ya da duyguları açıklama serbest sözlü üretim."
+	},
+	"T.O.3.4": {
+		"fit": "none",
+		"templates": [],
+		"note": "a) okuma yapacağı gerçek ortamın uygunluğunu değerlendirme ve b) ortamın fiziksel özelliklerini dikkate alarak okuma çocuğun kendi okuma ortamına bağlı."
+	},
+	"T.O.3.5": {
+		"fit": "none",
+		"templates": [],
+		"note": "a) belirlediği okuma hatalarını düzeltme, b) ve ç) olumlu davranışlarını sonraki ve çevrim içi okumalarına aktarma öz değerlendirme; c) tür veya ilgi alanına göre okuma tercihini belirtme doğru/yanlışı olmayan kişisel tercih."
+	},
+	"T.Y.3.1": {
+		"fit": "none",
+		"templates": [],
+		"note": "Bileşenler (a–f) hazırlıksız ve türüne göre yazma, yazışmayı başlatma, sürdürme ve sonlandırma ifadeleri (çevrim içi dahil), imzada adını kullanma ve yazma planı hazırlama; hepsi serbest yazılı üretim."
+	},
+	"T.Y.3.2": {
+		"fit": "none",
+		"templates": [],
+		"note": "Bütün bileşenler (a–o) çocuğun kendi yazısını üretmesini ister: metni devam ettirme, tahmin ve çıkarım yazma, yazılarında karşılaştırma, sınıflandırma, zıt ve eş anlamlı sözcük, benzetme ve örnek kullanma, kendi ifadeleriyle yazma, yönerge, öneri, istek ve şikâyet yazma, bilginin kaynağını yazma, yazılarını sunma ve neden-sonuç yazma; serbest yazılı üretim."
+	},
+	"T.Y.3.3": {
+		"fit": "partial",
+		"templates": [
+			"drag_match",
+			"syllable_build"
+		],
+		"note": "d) kısaltmalara gelen ekleri kuralına uygun yazma (kesme işareti ve eki doğru karoyla ekleme) ve f) büyük harfleri kuralına uygun yazma drag_match ile, e) pekiştirmeli sözcükleri doğru yazma syllable_build ile oynanabilir; a) plana uygun yazma, b) sözcükleri yerinde kullanma, c) deyim ve atasözü kullanma, ç) mesajı açık ifade etme ve g) noktalama işaretlerini kullanma çocuğun kendi yazısında gerçekleşir, serbest yazılı üretim."
+	},
+	"T.Y.3.4": {
+		"fit": "none",
+		"templates": [],
+		"note": "a) yazma yapacağı gerçek ortamın uygunluğunu gözden geçirme çocuğun kendi ortamına bağlı; b) ortamın duygu, düşünce ve davranışlarına etkisini açıklama serbest sözlü üretim."
+	},
+	"T.Y.3.5": {
+		"fit": "none",
+		"templates": [],
+		"note": "Bileşenler (a–c) kendi yazılarındaki hataları bulup düzeltme ve uygun davranışları sonraki yazılarına aktarma; kendi kâğıt yazısı üzerinde öz değerlendirme."
+	},
+	"HB.1.1.1": {
+		"fit": "none",
+		"templates": [],
+		"note": "Süreç bileşeni yok. Çıktı öğretmen ve arkadaşlarla gerçek tanışma, tanışma ifadeleri ve beden dili kullanma (programda istop, örümcek ağı gibi etkileşim etkinlikleri); sınıf içi sosyal etkinlik."
+	},
+	"HB.1.1.2": {
+		"fit": "partial",
+		"templates": [
+			"listen_find",
+			"drag_match"
+		],
+		"note": "Süreç bileşeni yok. Okulun bölümlerini, okul çalışanlarını ve sınıf araç gereçlerini tanıma (dinle-bul, görselle eşleme) oynanabilir; kendi sınıfını ve okulunu gezip gözlemleme okul etkinliği."
+	},
+	"HB.1.1.3": {
+		"fit": "partial",
+		"templates": [
+			"scenario",
+			"sort_bins"
+		],
+		"note": "Süreç bileşeni yok. Sınıf ve okul kurallarına uygun davranışı verilen durumlarda seçme scenario ile, uygun ve uygun olmayan davranışları ayırma sort_bins ile oynanabilir; kurallara gerçek ortamda uyma okulda gözlenen davranış."
+	},
+	"HB.1.1.4": {
+		"fit": "partial",
+		"templates": [
+			"listen_find"
+		],
+		"note": "Süreç bileşeni yok. Görsellerdeki fiziksel özellikleri ve duyguları tanıma listen_find ile oynanabilir; kendi fiziksel özelliklerini ve duygularını açıklama serbest sözlü üretim (programda ayna, kukla, konuşma halkası)."
+	},
+	"HB.1.2.1": {
+		"fit": "full",
+		"templates": [
+			"sort_bins",
+			"scenario"
+		],
+		"note": "Süreç bileşeni yok. Beslenme, uyku, kişisel bakım, ağız ve diş sağlığı ve temizlik için yapılması gerekenleri verilen örnekler üzerinden belirleme sort_bins ve scenario ile çalışılır."
+	},
+	"HB.1.2.2": {
+		"fit": "partial",
+		"templates": [
+			"scenario"
+		],
+		"note": "Süreç bileşeni yok. Kişisel alanı ihlal eden durumu tanıma ve verilen örnek olaylarda doğru davranışı seçme scenario ile oynanabilir; kişisel alan sınırını gerçek ilişkilerde koruma ve kendi cümleleriyle ifade etme yaşamda ve rol oynamayla gerçekleşir."
+	},
+	"HB.1.2.3": {
+		"fit": "partial",
+		"templates": [
+			"scenario",
+			"sort_bins"
+		],
+		"note": "Süreç bileşeni yok. Yaya ve yolcu olarak uyulacak kuralları (karşıya geçerken sağa ve sola bakma, emniyet kemeri, arka koltuk) verilen durumlarda seçme scenario ile, doğru ve yanlış davranışları ayırma sort_bins ile oynanabilir; trafikte kurala uygun davranma gerçek yaşamda gözlenir."
+	},
+	"HB.1.2.4": {
+		"fit": "full",
+		"templates": [
+			"scenario",
+			"drag_match"
+		],
+		"note": "Süreç bileşeni yok. Çarpma, düşme, kaybolma, gaz kaçağı gibi acil durumlarda yapılması gerekenleri seçme scenario ile, durumu haber verilecek kişi ya da 112 ile eşleme drag_match ile çalışılır."
+	},
+	"HB.1.3.1": {
+		"fit": "full",
+		"templates": [
+			"sort_bins",
+			"drag_match",
+			"story"
+		],
+		"note": "Süreç bileşeni yok. Çekirdek ve geniş aileyi oluşturan bireyleri ayırma sort_bins, aile bireylerini akrabalık adlarıyla eşleme drag_match, aile değerlerine ilişkin hikâye story ile çalışılır; özellikler sesli seçenekler arasından seçilerek ifade edilir."
+	},
+	"HB.1.3.2": {
+		"fit": "partial",
+		"templates": [
+			"scenario"
+		],
+		"note": "Süreç bileşeni yok. Aile yaşamında nezaket ifadesini ve görgü kuralına uygun davranışı verilen durumlarda seçme scenario ile oynanabilir; kurallara evde gerçekten uyma aile yaşamında gözlenir."
+	},
+	"HB.1.3.3": {
+		"fit": "full",
+		"templates": [
+			"sort_bins",
+			"drag_match"
+		],
+		"note": "a) aile içinde çocuğun üstlenebileceği görev ve sorumlulukları belirleme sort_bins ile, b) aile bireylerini görev ve sorumluluklarıyla ilişkilendirme drag_match ile çalışılır."
+	},
+	"HB.1.4.1": {
+		"fit": "partial",
+		"templates": [
+			"listen_find",
+			"drag_match"
+		],
+		"note": "Süreç bileşeni yok. Ülkemizin adını, başkentini, para birimini ve üç tarafındaki denizleri harita ve görsellerde tanıma listen_find ve drag_match ile oynanabilir; yaşadığı yerin özelliklerini açıklama serbest sözlü üretim (cihaz çocuğun yaşadığı yeri bilmez)."
+	},
+	"HB.1.4.2": {
+		"fit": "full",
+		"templates": [
+			"story",
+			"listen_find",
+			"scenario"
+		],
+		"note": "Süreç bileşeni yok. Bayrağın şekil ve rengini, İstiklâl Marşı’nın şairini tanıma listen_find, bağımsızlık sembolü olma önemini sesli seçenekler arasından seçerek ifade etme story, törende saygı davranışını seçme scenario ile çalışılır."
+	},
+	"HB.1.4.3": {
+		"fit": "full",
+		"templates": [
+			"story",
+			"sequence",
+			"listen_find"
+		],
+		"note": "Süreç bileşeni yok. Atatürk’ün doğum yeri, anne ve babasının adı, Anıtkabir gibi bilgileri hikâye ve anlama soruları story, hayatındaki olayları sıralama sequence, ilgili görseli bulma listen_find ile çalışılır."
+	},
+	"HB.1.4.4": {
+		"fit": "none",
+		"templates": [],
+		"note": "Süreç bileşeni yok. Çıktı çocuğun millî gün ve bayramlarda yaşadığı kendi duygularını paylaşması; doğru cevabı olmayan kişisel ifade (programda pano, konuşma halkası). Bayram adlarını tanıma içerik olarak pekiştirilebilir ama çıktıyı karşılamaz."
+	},
+	"HB.1.4.5": {
+		"fit": "none",
+		"templates": [],
+		"note": "Süreç bileşeni yok. Çıktı çocuğun dinî gün ve bayramlarda yaşadığı kendi duygularını paylaşması; doğru cevabı olmayan kişisel ifade (programda pano çalışması). Gün ve bayram adlarını tanıma içerik olarak pekiştirilebilir ama çıktıyı karşılamaz."
+	},
+	"HB.1.5.1": {
+		"fit": "none",
+		"templates": [],
+		"note": "a) gözlem amacını belirleme kişisel karar, b) doğadaki varlıklara ilişkin veri toplama ve c) topladığı verileri sınıflandırarak kaydetme gerçek gözlem; doğa yürüyüşü veli etkinliği olarak önerilebilir."
+	},
+	"HB.1.5.2": {
+		"fit": "partial",
+		"templates": [
+			"drag_match",
+			"listen_find"
+		],
+		"note": "a) modeller üzerinden Güneş, Dünya ve Ay’ın özelliklerini belirleme drag_match ve listen_find ile oynanabilir; b–c) benzerlik ve farklılıkları listeleme serbest üretim."
+	},
+	"HB.1.5.3": {
+		"fit": "full",
+		"templates": [
+			"listen_find",
+			"drag_match"
+		],
+		"note": "Süreç bileşeni yok. Deprem, sel, yangın, heyelan, çığ gibi afet türlerini görselde tanıma listen_find, afeti nedeni ve sonucuyla eşleme drag_match ile çalışılır."
+	},
+	"HB.1.5.4": {
+		"fit": "full",
+		"templates": [
+			"sort_bins",
+			"drag_match"
+		],
+		"note": "a) geri dönüştürülebilen atıkları belirleme, b) ayrıştırma ve c) tasnif etme sort_bins ile, ç) etiketleme drag_match ile çalışılır."
+	},
+	"HB.1.6.1": {
+		"fit": "none",
+		"templates": [],
+		"note": "a) bilimle ilgili merak ettiği konuları belirleme doğru/yanlışı olmayan kişisel seçim, b) soru sorma sözlü üretim; veli için merak sorusu sohbeti önerilebilir."
+	},
+	"HB.1.6.2": {
+		"fit": "none",
+		"templates": [],
+		"note": "a) teknolojiyle ilgili merak ettiği konuları belirleme doğru/yanlışı olmayan kişisel seçim, b) soru sorma sözlü üretim; veli için merak sorusu sohbeti önerilebilir."
+	},
+	"HB.1.6.3": {
+		"fit": "none",
+		"templates": [],
+		"note": "a) sanatla ilgili merak ettiği konuları belirleme doğru/yanlışı olmayan kişisel seçim, b) soru sorma sözlü üretim; veli için merak sorusu sohbeti önerilebilir."
+	},
+	"HB.2.1.1": {
+		"fit": "full",
+		"templates": [
+			"sort_bins",
+			"sequence",
+			"scenario"
+		],
+		"note": "Süreç bileşeni yok. Günlük işleri yapıldıkları zamana göre gruplandırma sort_bins, günlük rutini sıralama sequence, planlı ve plansız günün sonuçlarını karşılaştırıp planlı olmanın etkisini fark etme scenario ile çalışılır."
+	},
+	"HB.2.1.2": {
+		"fit": "partial",
+		"templates": [
+			"scenario"
+		],
+		"note": "Süreç bileşeni yok. İletişim kurallarına (sözü kesmeme, göz teması, ses tonu) uygun davranışı verilen durumlarda seçme scenario ile oynanabilir; öğretmen ve arkadaşlarla gerçek iletişim kurma sınıfta gözlenir."
+	},
+	"HB.2.1.3": {
+		"fit": "partial",
+		"templates": [
+			"sort_bins",
+			"scenario"
+		],
+		"note": "Süreç bileşeni yok. Arkadaşlık ilişkilerini olumlu ve olumsuz etkileyen davranışları ayırma sort_bins, örnek olayda ilişkiyi düzeltecek davranışı seçme scenario ile oynanabilir; gerçek arkadaşlık ilişkilerini düzenleme ve duyguları paylaşma yaşamda gerçekleşir."
+	},
+	"HB.2.1.4": {
+		"fit": "none",
+		"templates": [],
+		"note": "Bileşenler (a–ç) sınıf içi karar alma sürecinde grup iletişimini başlatma, katılma, katkıda bulunma ve değerlendirme; sınıfta grup etkinliği."
+	},
+	"HB.2.2.1": {
+		"fit": "full",
+		"templates": [
+			"sort_bins",
+			"drag_match"
+		],
+		"note": "a) sağlıklı büyüme ve gelişmeye yönelik alışkanlıkları belirleme sort_bins ile, b) alışkanlık ile büyüme ve gelişme arasındaki ilişkiyi belirleme drag_match ile çalışılır."
+	},
+	"HB.2.2.2": {
+		"fit": "partial",
+		"templates": [
+			"sort_bins",
+			"scenario"
+		],
+		"note": "Süreç bileşeni yok. Kişisel bilgilerden paylaşılmaması gerekenleri ayırma sort_bins, çevrim içi örnek olayda güvenli davranışı (tanımadığıyla iletişim kurmama, aile büyüğüne haber verme) seçme scenario ile oynanabilir; gerçek çevrim içi ortamda güvenliğini sağlama yaşamda gerçekleşir (uygulama çevrim içi değildir)."
+	},
+	"HB.2.2.3": {
+		"fit": "full",
+		"templates": [
+			"drag_match",
+			"listen_find"
+		],
+		"note": "Süreç bileşeni yok. Işıklı işaret cihazı, yaya geçidi, okul geçidi, bisiklet yolu gibi levhaları anlamlarıyla eşleme drag_match, adı söylenen levhayı bulma listen_find ile çalışılır."
+	},
+	"HB.2.2.4": {
+		"fit": "partial",
+		"templates": [
+			"sort_bins",
+			"scenario"
+		],
+		"note": "Süreç bileşeni yok. 112’ye verilecek bilgileri (durumun türü, yeri, zamanı, etkilenen kişi sayısı) gereksiz bilgilerden ayırma sort_bins, arama sırasında doğru davranışı (sakin kalma, sözü kesmeme, gereksiz aramama) seçme scenario ile oynanabilir; yetkiliyle gerçek sözlü iletişim canlandırmayla çalışılır."
+	},
+	"HB.2.3.1": {
+		"fit": "partial",
+		"templates": [
+			"story"
+		],
+		"note": "a) ailenin önemine ilişkin verilen örnekleri inceleme story ile oynanabilir; b) örnekleri özgün örneklere dönüştürme ve c) kendi cümleleriyle ifade etme serbest üretim."
+	},
+	"HB.2.3.2": {
+		"fit": "partial",
+		"templates": [
+			"scenario"
+		],
+		"note": "Süreç bileşeni yok. Toplumsal yaşamdaki nezaket ve görgü kurallarına (sıra bekleme, toplu taşımada yer verme, kütüphanede sessizlik) uygun davranışı verilen durumlarda seçme scenario ile oynanabilir; kurallara gerçek ortamda uyma yaşamda gözlenir."
+	},
+	"HB.2.3.3": {
+		"fit": "partial",
+		"templates": [
+			"scenario"
+		],
+		"note": "b) yakın çevresindeki görev ve sorumluluklara ilişkin çıkarımı sesli seçenekler arasından seçme scenario ile oynanabilir; a) kendi görev ve sorumluluklarını gözden geçirme ve c) bunlara ilişkin değerlendirme yapma öz değerlendirme."
+	},
+	"HB.2.4.1": {
+		"fit": "partial",
+		"templates": [
+			"sort_bins",
+			"listen_find"
+		],
+		"note": "Süreç bileşeni yok. Tarihî mekânları (müze, cami, kale) ve doğal güzellikleri ayırma sort_bins, görselde tanıma listen_find ile oynanabilir; kendi yakın çevresindekileri belirleme ve ziyaret gerçek dünya etkinliği (cihaz yaşadığı yeri bilmez)."
+	},
+	"HB.2.4.2": {
+		"fit": "partial",
+		"templates": [
+			"scenario"
+		],
+		"note": "a) yönetim birimleri hakkında bilgi toplanacak uygun kaynakları belirleme scenario ile oynanabilir; b) kaynaklardan bilgi bulma ve ç) kaydetme gerçek araştırma, c) kaynakların uygunluğunu açıklama serbest üretim."
+	},
+	"HB.2.4.3": {
+		"fit": "full",
+		"templates": [
+			"story",
+			"sequence"
+		],
+		"note": "Süreç bileşeni yok. Atatürk’ün okuduğu okullar, öğrencilik yıllarındaki başarı ve tutumları hikâye ve anlama soruları story, okulları sıralama sequence ile çalışılır."
+	},
+	"HB.2.4.4": {
+		"fit": "partial",
+		"templates": [
+			"story"
+		],
+		"note": "a) millî gün ve bayramların önemine ilişkin verilen örnekleri inceleme story ile oynanabilir; b) örnekleri özgün örneklere dönüştürme ve c) kendi cümleleriyle ifade etme serbest üretim."
+	},
+	"HB.2.4.5": {
+		"fit": "partial",
+		"templates": [
+			"story"
+		],
+		"note": "a) dinî gün ve bayramların önemine ilişkin verilen örnekleri inceleme story ile oynanabilir; b) örnekleri özgün örneklere dönüştürme ve c) kendi cümleleriyle ifade etme serbest üretim."
+	},
+	"HB.2.5.1": {
+		"fit": "full",
+		"templates": [
+			"sort_bins",
+			"drag_match"
+		],
+		"note": "a) hava olaylarının ve mevsimlerin özelliklerini belirleme sort_bins ile, b) hava olayları ile mevsimler arasındaki ilişkiyi belirleme drag_match ile çalışılır."
+	},
+	"HB.2.5.2": {
+		"fit": "partial",
+		"templates": [
+			"drag_match",
+			"listen_find"
+		],
+		"note": "Süreç bileşeni yok. Güneş’in konumu, gölge, yosun, karınca yuvası ve Kutup Yıldızı ipuçlarını ana yönlerle eşleme drag_match, sahnede istenen yönü bulma listen_find ile oynanabilir; gerçek ortamda doğadan yararlanarak kendi yönünü belirleme dış etkinlik."
+	},
+	"HB.2.5.3": {
+		"fit": "partial",
+		"templates": [
+			"scenario",
+			"sort_bins"
+		],
+		"note": "a) önlemlere ilişkin bilgi toplamak için uygun araçları belirleme scenario ile, c) oyunda verilen bilgilerin doğruluğunu sınama sort_bins ile oynanabilir; b) araçlarla bilgi bulma ve ç) kaydetme gerçek araştırma."
+	},
+	"HB.2.5.4": {
+		"fit": "partial",
+		"templates": [
+			"scenario"
+		],
+		"note": "b) doğal kaynakları tasarruflu kullanmaya yönelik çıkarımı verilen durumlarda seçme scenario ile oynanabilir; a) kendi davranışlarını gözden geçirme ve c) ulaştığı çıkarımları değerlendirme öz değerlendirme."
+	},
+	"HB.2.6.1": {
+		"fit": "partial",
+		"templates": [
+			"scenario"
+		],
+		"note": "a) bilim insanlarının katkılarına ilişkin bilgi toplanacak uygun kaynakları belirleme scenario ile oynanabilir; b) kaynaklardan bilgi bulma ve ç) kaydetme gerçek araştırma, c) kaynakların uygunluğunu açıklama serbest üretim."
+	},
+	"HB.2.6.2": {
+		"fit": "full",
+		"templates": [
+			"sequence",
+			"scenario"
+		],
+		"note": "a) teknolojik bir ürünün zaman içindeki değişimini görsel kanıtlarla sıralama sequence ile, b) gelecekteki değişimine ilişkin çıkarımı sesli seçenekler arasından seçme scenario ile çalışılır."
+	},
+	"HB.2.6.3": {
+		"fit": "partial",
+		"templates": [
+			"sort_bins",
+			"listen_find"
+		],
+		"note": "Süreç bileşeni yok. Sanat dallarını (müzik, resim, ebru, tiyatro) ayırma sort_bins, günlük yaşam sahnesinde sanat ögesini bulma listen_find ile oynanabilir; sanat unsurlarını listeleme, örnek verme, duygu ve düşünceleri ifade etme ve ürün oluşturma serbest üretim."
+	},
+	"HB.3.1.1": {
+		"fit": "none",
+		"templates": [],
+		"note": "Bileşenler (a–e) çocuğun kendi güçlü ve gelişime açık alanlarına karar vermesi: amaç belirleme, kendisi hakkında bilgi toplama, seçenek oluşturma, denetleme, seçim ve yansıtma; doğru cevabı olmayan kişisel karar ve öz değerlendirme (aynı karar süreci MAT.2.3.6’da oyunun sunduğu bir problemle oynanabilir, burada konu çocuğun kendisi)."
+	},
+	"HB.3.1.2": {
+		"fit": "partial",
+		"templates": [
+			"sort_bins",
+			"scenario"
+		],
+		"note": "Süreç bileşeni yok. Okuldaki hakları ve sorumlulukları ayırma sort_bins, verilen durumlarda hak ve sorumluluğa uygun davranışı seçme scenario ile oynanabilir; okulda uygun davranma, görüşme ve görev paylaşımı okul etkinliği."
+	},
+	"HB.3.1.3": {
+		"fit": "none",
+		"templates": [],
+		"note": "Bileşenler (a–c) çocuk haklarını tanıtmak için plan yapma, planı uygulama ve değerlendirme; gerçek proje etkinliği."
+	},
+	"HB.3.2.1": {
+		"fit": "partial",
+		"templates": [
+			"sort_bins",
+			"scenario"
+		],
+		"note": "Süreç bileşeni yok. Sağlığı koruyan ve bozan davranışları (uyku düzeni, beslenme, mevsime göre giyinme, temizlik) ayırma sort_bins, verilen durumda doğru davranışı seçme scenario ile oynanabilir; kendi davranışlarını izleyip düzenleme (günlük tutma) gerçek yaşamda gerçekleşir."
+	},
+	"HB.3.2.2": {
+		"fit": "partial",
+		"templates": [
+			"listen_find",
+			"sort_bins",
+			"scenario"
+		],
+		"note": "a) güvenliğini tehdit eden durumları tanımlama, verilen görsel ve olaylar arasından tehdit oluşturanları seçme listen_find ile; ç) oyunda verilen bilgilerin doğruluğunu değerlendirme sort_bins ile; d) yapılması gerekenlere ilişkin çıkarımı seçme scenario ile oynanabilir; b) soru sorma sözlü üretim, c) bilgi toplama gerçek araştırma."
+	},
+	"HB.3.2.3": {
+		"fit": "partial",
+		"templates": [
+			"scenario",
+			"drag_match"
+		],
+		"note": "a) trafik kurallarına uymanın önemini belirleme scenario ile, b) kurala uyma ile güvenlik arasında ilişki kurma (kural–sonuç eşleme) drag_match ile oynanabilir; c) özgün ürün oluşturma serbest üretim."
+	},
+	"HB.3.3.1": {
+		"fit": "full",
+		"templates": [
+			"sort_bins",
+			"drag_match"
+		],
+		"note": "a) aile ve toplumun özelliklerini belirleme sort_bins ile, b) aile ile toplum arasındaki ilişkiyi belirleme drag_match ile çalışılır."
+	},
+	"HB.3.3.2": {
+		"fit": "none",
+		"templates": [],
+		"note": "Bileşenler (a–c) yardıma ihtiyacı olan bireylerin yaşamını kolaylaştırmak için plan yapma, planı uygulama ve değerlendirme; gerçek proje etkinliği."
+	},
+	"HB.3.3.3": {
+		"fit": "partial",
+		"templates": [
+			"story"
+		],
+		"note": "a) mesleklerin toplumsal yaşamdaki önemine ilişkin verilen örnekleri inceleme story ile oynanabilir; b) örnekleri özgün örneklere dönüştürme ve c) kendi cümleleriyle ifade etme serbest üretim."
+	},
+	"HB.3.4.1": {
+		"fit": "full",
+		"templates": [
+			"scenario",
+			"sort_bins"
+		],
+		"note": "Süreç bileşeni yok. Tarihî mekân ve doğal güzellikleri koruyan ve zarar veren davranışları ayırma sort_bins, korumanın önemini örnek olaylarda fark edip doğru seçeneği seçme scenario ile çalışılır."
+	},
+	"HB.3.4.2": {
+		"fit": "partial",
+		"templates": [
+			"scenario"
+		],
+		"note": "a) ülkemizin yönetim şekli hakkında bilgi toplanacak uygun kaynakları belirleme scenario ile oynanabilir; b) kaynaklardan bilgi bulma ve ç) kaydetme gerçek araştırma, c) kaynakların uygunluğunu açıklama serbest üretim."
+	},
+	"HB.3.4.3": {
+		"fit": "full",
+		"templates": [
+			"story",
+			"drag_match"
+		],
+		"note": "a) Atatürk’ün kişilik özelliklerini ve başarılarını belirleme story ile, b) kişilik özellikleri ile başarıları arasında ilişki kurma drag_match ile çalışılır."
+	},
+	"HB.3.4.4": {
+		"fit": "partial",
+		"templates": [
+			"sort_bins",
+			"scenario"
+		],
+		"note": "Süreç bileşeni yok. Millî birlik ve beraberliği güçlendiren olayları (millî bayramlar, millî takım müsabakaları, afette dayanışma) ayırma sort_bins, birlikte hareket etmenin sonucuna ilişkin çıkarımı seçme scenario ile oynanabilir; katkıları açıklama serbest sözlü üretim."
+	},
+	"HB.3.5.1": {
+		"fit": "partial",
+		"templates": [
+			"story"
+		],
+		"note": "a) doğadaki varlıkların insan yaşamı için önemine ilişkin verilen örnekleri inceleme story ile oynanabilir; b) örnekleri özgün örneklere dönüştürme ve c) kendi cümleleriyle ifade etme serbest üretim."
+	},
+	"HB.3.5.2": {
+		"fit": "partial",
+		"templates": [
+			"listen_find"
+		],
+		"note": "a) krokiyi kullanarak konumu belirleme oyunda verilen bir krokide (çocuğun kendi çevresinin krokisi değil) listen_find ile oynanabilir; b) bulunduğu yerin konumsal görselleştirmesini (kroki) yapma çocuğun kendi çevresini çizmesini, c) konumsal özellikleri özetleme serbest üretimi gerektirir."
+	},
+	"HB.3.5.3": {
+		"fit": "full",
+		"templates": [
+			"sort_bins",
+			"drag_match"
+		],
+		"note": "a) ölçütleri afet öncesi, afet anı ve afet sonrası olarak belirleme, b) ayrıştırma ve c) tasnif etme sort_bins ile, ç) etiketleme drag_match ile çalışılır."
+	},
+	"HB.3.5.4": {
+		"fit": "partial",
+		"templates": [
+			"scenario"
+		],
+		"note": "a) çevresel sürdürülebilirlik hakkında bilgi toplanacak uygun kaynakları belirleme scenario ile oynanabilir; b) kaynaklardan bilgi bulma ve ç) kaydetme gerçek araştırma, c) kaynakların uygunluğunu açıklama serbest üretim."
+	},
+	"HB.3.6.1": {
+		"fit": "partial",
+		"templates": [
+			"story"
+		],
+		"note": "a) bilimsel gelişmelerin günlük yaşama etkisine ilişkin verilen örnekleri inceleme story ile oynanabilir; b) örnekleri özgün örneklere dönüştürme ve c) kendi cümleleriyle ifade etme serbest üretim."
+	},
+	"HB.3.6.2": {
+		"fit": "full",
+		"templates": [
+			"sort_bins",
+			"drag_match"
+		],
+		"note": "a) teknolojik gelişmelerin günlük yaşama etkisini belirleme sort_bins ile, b) gelişme ile günlük yaşam arasında ilişki kurma (eski ve yeni araç ile etkisini eşleme) drag_match ile çalışılır."
+	},
+	"HB.3.6.3": {
+		"fit": "partial",
+		"templates": [
+			"scenario"
+		],
+		"note": "a) sanatçıların katkılarına ilişkin bilgi toplanacak uygun kaynakları belirleme scenario ile oynanabilir; b) kaynaklardan bilgi bulma ve ç) kaydetme gerçek araştırma, c) kaynakların uygunluğunu açıklama serbest üretim."
+	},
 	"FB.3.1.1": {
 		"fit": "partial",
 		"templates": [
