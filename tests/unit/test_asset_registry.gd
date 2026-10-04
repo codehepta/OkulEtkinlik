@@ -40,8 +40,8 @@ func test_root_override_reset_restores_default() -> void:
 
 func test_asset_image_placeholder_label_is_last_segment() -> void:
 	var img: Control = load("res://scenes/components/asset_image.tscn").instantiate()
-	img.key = "item.meyve.elma"
+	img.key = "item.test_yok.zz_eksik"
 	add_child_autofree(img)
 	var lbl: Label = img.find_child("PlaceholderLabel", true, false) as Label
 	assert_not_null(lbl)
-	assert_eq(lbl.text, "elma")
+	assert_eq(lbl.text, "zz_eksik")
