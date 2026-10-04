@@ -21,6 +21,8 @@ var has_voice: Callable = func(k: String) -> bool:
 
 var _voice_cache: Dictionary = {}
 var _voice_loaded: bool = false
+var _outcomes_cache: Dictionary = {}
+var _outcomes_loaded: bool = false
 ## "g1.matematik" -> Array[Dictionary] (id'ye göre sıralı)
 var _units: Dictionary = {}
 var _nodes: Dictionary = {}
@@ -31,6 +33,7 @@ var _order: Dictionary = {}
 
 func load_all(root: String = "res://content") -> void:
 	errors.clear()
+	_outcomes_loaded = false
 	_units.clear()
 	_nodes.clear()
 	_node_files.clear()
@@ -49,6 +52,16 @@ func load_all(root: String = "res://content") -> void:
 				if n.has("id"):
 					ids.append(str(n["id"]))
 		_order[key] = ids
+
+## Öğrenme çıktısı bilgisi ({"grade","subject","text","source"}); bilinmiyorsa {}.
+func outcome_info(code: String) -> Dictionary:
+	if not _outcomes_loaded:
+		_outcomes_loaded = true
+		var parsed: Variant = JSON.parse_string(FileAccess.get_file_as_string(outcomes_path))
+		if parsed is Dictionary:
+			_outcomes_cache = parsed
+	var e: Variant = _outcomes_cache.get(code)
+	return e if e is Dictionary else {}
 
 func units(grade: int, subject: String) -> Array[Dictionary]:
 	var res: Array[Dictionary] = []

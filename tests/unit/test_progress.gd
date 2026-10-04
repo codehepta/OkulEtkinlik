@@ -128,3 +128,11 @@ func test_stickers_lists_owned_in_order() -> void:
 	_p.record_node(pid, N1, _res([_rr(0)]))
 	assert_eq(_p.stickers(pid).size(), 1)
 	assert_eq(_p.stickers("yok"), PackedStringArray())
+
+func test_last_day_recorded_on_node_and_partial() -> void:
+	var id: String = _p.create_profile("a", "n", 1)
+	_p.record_node(id, N1, _res([_rr(0)]))
+	assert_eq(_save.data["profiles"][0]["outcomes"]["TEST.1"]["last_day"], 100)
+	_p.clock.fixed_day = 105
+	_p.record_partial(id, N1, _res([_rr(0)]))
+	assert_eq(_save.data["profiles"][0]["outcomes"]["TEST.1"]["last_day"], 105)

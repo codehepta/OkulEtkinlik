@@ -21,3 +21,8 @@ var replays: int = 0
 
 func replay_last() -> void:
 	replays += 1
+
+var volumes: Array[Dictionary] = []
+
+func apply_volumes(settings: Dictionary) -> void:
+	volumes.append(settings.duplicate())

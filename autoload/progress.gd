@@ -111,6 +111,7 @@ func record_node(profile_id: String, node_id: String, results: Array[RoundResult
 	var today: int = clock.today()
 	for code: String in touched:
 		var o: Dictionary = outs[code]
+		o["last_day"] = today
 		var box: int = clampi(int(o.get("box", 1)), 1, 5)
 		if helped_codes.has(code):
 			box = Leitner.reset()
@@ -140,6 +141,7 @@ func record_partial(profile_id: String, node_id: String, results: Array[RoundRes
 		for code: String in r.outcomes:
 			var o: Dictionary = outs.get(code, {"mastery": 0.0, "box": 1, "due": 0})
 			o["mastery"] = Mastery.update(float(o.get("mastery", 0.0)), Mastery.result_value(r.wrong + 1, r.helped))
+			o["last_day"] = clock.today()
 			outs[code] = o
 	save.save()
 
