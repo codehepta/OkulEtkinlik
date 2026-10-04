@@ -1,0 +1,1209 @@
+{
+	"id": "g3.matematik.u02",
+	"grade": 3,
+	"subject": "matematik",
+	"title_key": "unit.g3.matematik.u02",
+	"source": {
+		"program": "TYMM İlkokul Matematik (1–4)",
+		"doc": "İlkokul Matematik Dersi Öğretim Programı",
+		"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+		"page": 93,
+		"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf",
+		"theme": "MAT.3.1. Sayılar ve Nicelikler (2)"
+	},
+	"nodes": [
+		{
+			"id": "g3.matematik.u02.n01",
+			"outcomes": [
+				"MAT.3.1.9"
+			],
+			"title_key": "node.g3.matematik.u02.n01",
+			"intro_voice": "vo.g3.matematik.u02.n01.intro",
+			"sticker": "st.matematik.pizza_dilimi",
+			"rounds": [
+				{
+					"template": "fraction_pizza",
+					"difficulty": 1,
+					"voice": "vo.g3.matematik.u02.n01.r01",
+					"params": {
+						"ask": "split",
+						"parts": 2
+					}
+				},
+				{
+					"template": "fraction_pizza",
+					"difficulty": 1,
+					"voice": "vo.g3.matematik.u02.n01.r02",
+					"params": {
+						"ask": "select",
+						"parts": 2,
+						"take": 1
+					}
+				},
+				{
+					"template": "fraction_pizza",
+					"difficulty": 2,
+					"voice": "vo.g3.matematik.u02.n01.r03",
+					"params": {
+						"ask": "split",
+						"parts": 4
+					}
+				},
+				{
+					"template": "fraction_pizza",
+					"difficulty": 2,
+					"voice": "vo.g3.matematik.u02.n01.r04",
+					"params": {
+						"ask": "select",
+						"parts": 4,
+						"take": 1
+					}
+				},
+				{
+					"template": "drag_match",
+					"difficulty": 3,
+					"voice": "vo.g3.matematik.u02.n01.r05",
+					"params": {
+						"pairs": [
+							{
+								"left": {
+									"type": "text",
+									"value": "lbl.g3m.061",
+									"voice": "vo.g3m.yarim"
+								},
+								"right": {
+									"type": "text",
+									"value": "lbl.g3m.062"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "lbl.g3m.063",
+									"voice": "vo.g3m.ceyrek"
+								},
+								"right": {
+									"type": "text",
+									"value": "lbl.g3m.064"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "lbl.g3m.065",
+									"voice": "vo.g3m.butun"
+								},
+								"right": {
+									"type": "number",
+									"value": 1
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g3.matematik.u02.n02",
+			"outcomes": [
+				"MAT.3.1.10"
+			],
+			"title_key": "node.g3.matematik.u02.n02",
+			"intro_voice": "vo.g3.matematik.u02.n02.intro",
+			"sticker": "st.matematik.kek_dilimi",
+			"rounds": [
+				{
+					"template": "fraction_pizza",
+					"difficulty": 1,
+					"voice": "vo.g3.matematik.u02.n02.r01",
+					"params": {
+						"ask": "split",
+						"parts": 3
+					}
+				},
+				{
+					"template": "fraction_pizza",
+					"difficulty": 1,
+					"voice": "vo.g3.matematik.u02.n02.r02",
+					"params": {
+						"ask": "select",
+						"parts": 3,
+						"take": 1
+					}
+				},
+				{
+					"template": "fraction_pizza",
+					"difficulty": 2,
+					"voice": "vo.g3.matematik.u02.n02.r03",
+					"params": {
+						"ask": "split",
+						"parts": 6
+					}
+				},
+				{
+					"template": "fraction_pizza",
+					"difficulty": 2,
+					"voice": "vo.g3.matematik.u02.n02.r04",
+					"params": {
+						"ask": "select",
+						"parts": 8,
+						"take": 1
+					}
+				},
+				{
+					"template": "drag_match",
+					"difficulty": 3,
+					"voice": "vo.g3.matematik.u02.n02.r05",
+					"params": {
+						"pairs": [
+							{
+								"left": {
+									"type": "text",
+									"value": "lbl.g3m.066"
+								},
+								"right": {
+									"type": "number",
+									"value": 3
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "lbl.g3m.067"
+								},
+								"right": {
+									"type": "number",
+									"value": 5
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "lbl.g3m.068"
+								},
+								"right": {
+									"type": "number",
+									"value": 8
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g3.matematik.u02.n03",
+			"outcomes": [
+				"MAT.3.1.11"
+			],
+			"title_key": "node.g3.matematik.u02.n03",
+			"intro_voice": "vo.g3.matematik.u02.n03.intro",
+			"sticker": "st.matematik.pasta",
+			"rounds": [
+				{
+					"template": "fraction_pizza",
+					"difficulty": 1,
+					"voice": "vo.g3.matematik.u02.n03.r01",
+					"params": {
+						"ask": "select",
+						"parts": 4,
+						"take": 3
+					}
+				},
+				{
+					"template": "fraction_pizza",
+					"difficulty": 2,
+					"voice": "vo.g3.matematik.u02.n03.r02",
+					"params": {
+						"ask": "select",
+						"parts": 8,
+						"take": 5
+					}
+				},
+				{
+					"template": "drag_match",
+					"difficulty": 2,
+					"voice": "vo.g3.matematik.u02.n03.r03",
+					"params": {
+						"pairs": [
+							{
+								"left": {
+									"type": "text",
+									"value": "lbl.g3m.069"
+								},
+								"right": {
+									"type": "number",
+									"value": 3
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "lbl.g3m.070"
+								},
+								"right": {
+									"type": "number",
+									"value": 2
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "lbl.g3m.071"
+								},
+								"right": {
+									"type": "number",
+									"value": 4
+								}
+							}
+						]
+					}
+				},
+				{
+					"template": "drag_match",
+					"difficulty": 3,
+					"voice": "vo.g3.matematik.u02.n03.r04",
+					"params": {
+						"pairs": [
+							{
+								"left": {
+									"type": "text",
+									"value": "lbl.g3m.070"
+								},
+								"right": {
+									"type": "number",
+									"value": 7
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "lbl.g3m.072"
+								},
+								"right": {
+									"type": "number",
+									"value": 6
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "lbl.g3m.064"
+								},
+								"right": {
+									"type": "number",
+									"value": 4
+								}
+							}
+						]
+					}
+				},
+				{
+					"template": "fraction_pizza",
+					"difficulty": 3,
+					"voice": "vo.g3.matematik.u02.n03.r05",
+					"params": {
+						"ask": "select",
+						"parts": 10,
+						"take": 7
+					}
+				}
+			]
+		},
+		{
+			"id": "g3.matematik.u02.n04",
+			"outcomes": [
+				"MAT.3.1.12"
+			],
+			"title_key": "node.g3.matematik.u02.n04",
+			"intro_voice": "vo.g3.matematik.u02.n04.intro",
+			"sticker": "st.matematik.cep_saati",
+			"rounds": [
+				{
+					"template": "clock_money",
+					"difficulty": 1,
+					"voice": "vo.g3.matematik.u02.n04.r01",
+					"params": {
+						"mode": "clock",
+						"ask": "read",
+						"hour": 8,
+						"minute": 15,
+						"choices": [
+							{
+								"hour": 8,
+								"minute": 15
+							},
+							{
+								"hour": 3,
+								"minute": 40
+							},
+							{
+								"hour": 9,
+								"minute": 15
+							}
+						]
+					}
+				},
+				{
+					"template": "clock_money",
+					"difficulty": 2,
+					"voice": "vo.g3.matematik.u02.n04.r02",
+					"params": {
+						"mode": "clock",
+						"ask": "read",
+						"hour": 3,
+						"minute": 40,
+						"choices": [
+							{
+								"hour": 8,
+								"minute": 20
+							},
+							{
+								"hour": 3,
+								"minute": 40
+							},
+							{
+								"hour": 4,
+								"minute": 40
+							}
+						]
+					}
+				},
+				{
+					"template": "clock_money",
+					"difficulty": 2,
+					"voice": "vo.g3.matematik.u02.n04.r03",
+					"params": {
+						"mode": "clock",
+						"ask": "set",
+						"hour": 10,
+						"minute": 25
+					}
+				},
+				{
+					"template": "clock_money",
+					"difficulty": 3,
+					"voice": "vo.g3.matematik.u02.n04.r04",
+					"params": {
+						"mode": "clock",
+						"ask": "read",
+						"hour": 11,
+						"minute": 5,
+						"choices": [
+							{
+								"hour": 1,
+								"minute": 55
+							},
+							{
+								"hour": 11,
+								"minute": 5
+							},
+							{
+								"hour": 12,
+								"minute": 5
+							},
+							{
+								"hour": 11,
+								"minute": 25
+							}
+						]
+					}
+				},
+				{
+					"template": "clock_money",
+					"difficulty": 3,
+					"voice": "vo.g3.matematik.u02.n04.r05",
+					"params": {
+						"mode": "clock",
+						"ask": "set",
+						"hour": 6,
+						"minute": 50
+					}
+				}
+			]
+		},
+		{
+			"id": "g3.matematik.u02.n05",
+			"outcomes": [
+				"MAT.3.1.13"
+			],
+			"title_key": "node.g3.matematik.u02.n05",
+			"intro_voice": "vo.g3.matematik.u02.n05.intro",
+			"sticker": "st.matematik.kum_saati",
+			"rounds": [
+				{
+					"template": "sequence",
+					"difficulty": 1,
+					"voice": "vo.g3.matematik.u02.n05.r01",
+					"params": {
+						"items": [
+							{
+								"type": "text",
+								"value": "lbl.g3m.073"
+							},
+							{
+								"type": "text",
+								"value": "lbl.g3m.074"
+							},
+							{
+								"type": "text",
+								"value": "lbl.g3m.075"
+							},
+							{
+								"type": "text",
+								"value": "lbl.g3m.076"
+							}
+						]
+					}
+				},
+				{
+					"template": "drag_match",
+					"difficulty": 1,
+					"voice": "vo.g3.matematik.u02.n05.r02",
+					"params": {
+						"pairs": [
+							{
+								"left": {
+									"type": "text",
+									"value": "lbl.g3m.077"
+								},
+								"right": {
+									"type": "text",
+									"value": "lbl.g3m.078"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "lbl.g3m.079"
+								},
+								"right": {
+									"type": "text",
+									"value": "lbl.g3m.080"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "lbl.g3m.081"
+								},
+								"right": {
+									"type": "text",
+									"value": "lbl.g3m.082"
+								}
+							}
+						]
+					}
+				},
+				{
+					"template": "sequence",
+					"difficulty": 2,
+					"voice": "vo.g3.matematik.u02.n05.r03",
+					"params": {
+						"items": [
+							{
+								"type": "text",
+								"value": "lbl.g3m.076"
+							},
+							{
+								"type": "text",
+								"value": "lbl.g3m.083"
+							},
+							{
+								"type": "text",
+								"value": "lbl.g3m.084"
+							},
+							{
+								"type": "text",
+								"value": "lbl.g3m.085"
+							}
+						]
+					}
+				},
+				{
+					"template": "drag_match",
+					"difficulty": 2,
+					"voice": "vo.g3.matematik.u02.n05.r04",
+					"params": {
+						"pairs": [
+							{
+								"left": {
+									"type": "text",
+									"value": "lbl.g3m.086"
+								},
+								"right": {
+									"type": "text",
+									"value": "lbl.g3m.087"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "lbl.g3m.088"
+								},
+								"right": {
+									"type": "text",
+									"value": "lbl.g3m.089"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "lbl.g3m.081"
+								},
+								"right": {
+									"type": "text",
+									"value": "lbl.g3m.082"
+								}
+							}
+						]
+					}
+				},
+				{
+					"template": "sequence",
+					"difficulty": 3,
+					"voice": "vo.g3.matematik.u02.n05.r05",
+					"params": {
+						"items": [
+							{
+								"type": "text",
+								"value": "lbl.g3m.073"
+							},
+							{
+								"type": "text",
+								"value": "lbl.g3m.074"
+							},
+							{
+								"type": "text",
+								"value": "lbl.g3m.075"
+							},
+							{
+								"type": "text",
+								"value": "lbl.g3m.076"
+							},
+							{
+								"type": "text",
+								"value": "lbl.g3m.083"
+							},
+							{
+								"type": "text",
+								"value": "lbl.g3m.084"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g3.matematik.u02.n06",
+			"outcomes": [
+				"MAT.3.1.14"
+			],
+			"title_key": "node.g3.matematik.u02.n06",
+			"intro_voice": "vo.g3.matematik.u02.n06.intro",
+			"sticker": "st.matematik.kronometre",
+			"rounds": [
+				{
+					"template": "sort_bins",
+					"difficulty": 1,
+					"voice": "vo.g3.matematik.u02.n06.r01",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "text",
+									"value": "lbl.g3m.090",
+									"voice": "vo.g3m.bin.dakika"
+								},
+								"shape": "square",
+								"color": "orange"
+							},
+							{
+								"label": {
+									"type": "text",
+									"value": "lbl.g3m.091",
+									"voice": "vo.g3m.bin.saat"
+								},
+								"shape": "circle",
+								"color": "blue"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.olay.dis_fircalama"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.olay.uyku"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.olay.el_yikama"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.olay.okul_gunu"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.olay.ayakkabi_baglama"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.olay.otobus_yolculugu"
+								},
+								"bin": 1
+							}
+						]
+					}
+				},
+				{
+					"template": "sequence",
+					"difficulty": 1,
+					"voice": "vo.g3.matematik.u02.n06.r02",
+					"params": {
+						"items": [
+							{
+								"type": "item",
+								"value": "item.olay.goz_kirpma"
+							},
+							{
+								"type": "item",
+								"value": "item.olay.dis_fircalama"
+							},
+							{
+								"type": "item",
+								"value": "item.olay.uyku"
+							},
+							{
+								"type": "item",
+								"value": "item.olay.yaz_tatili"
+							}
+						]
+					}
+				},
+				{
+					"template": "sort_bins",
+					"difficulty": 2,
+					"voice": "vo.g3.matematik.u02.n06.r03",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "text",
+									"value": "lbl.g3m.092",
+									"voice": "vo.g3m.bin.saniye"
+								},
+								"shape": "square",
+								"color": "orange"
+							},
+							{
+								"label": {
+									"type": "text",
+									"value": "lbl.g3m.090",
+									"voice": "vo.g3m.bin.dakika"
+								},
+								"shape": "circle",
+								"color": "blue"
+							},
+							{
+								"label": {
+									"type": "text",
+									"value": "lbl.g3m.093",
+									"voice": "vo.g3m.bin.gun"
+								},
+								"shape": "triangle",
+								"color": "green"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.olay.goz_kirpma"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.olay.el_yikama"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.olay.bayram_tatili"
+								},
+								"bin": 2
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.olay.hapsirma"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.olay.yemek_yeme"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.olay.kamp"
+								},
+								"bin": 2
+							}
+						]
+					}
+				},
+				{
+					"template": "sequence",
+					"difficulty": 3,
+					"voice": "vo.g3.matematik.u02.n06.r04",
+					"params": {
+						"items": [
+							{
+								"type": "item",
+								"value": "item.olay.hapsirma"
+							},
+							{
+								"type": "item",
+								"value": "item.olay.yemek_yeme"
+							},
+							{
+								"type": "item",
+								"value": "item.olay.okul_gunu"
+							},
+							{
+								"type": "item",
+								"value": "item.olay.kamp"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g3.matematik.u02.n07",
+			"outcomes": [
+				"MAT.3.1.15"
+			],
+			"title_key": "node.g3.matematik.u02.n07",
+			"intro_voice": "vo.g3.matematik.u02.n07.intro",
+			"sticker": "st.matematik.cetvel",
+			"rounds": [
+				{
+					"template": "drag_match",
+					"difficulty": 1,
+					"voice": "vo.g3.matematik.u02.n07.r01",
+					"params": {
+						"pairs": [
+							{
+								"left": {
+									"type": "text",
+									"value": "lbl.g3m.094"
+								},
+								"right": {
+									"type": "text",
+									"value": "lbl.g3m.095"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "lbl.g3m.096"
+								},
+								"right": {
+									"type": "text",
+									"value": "lbl.g3m.097"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "lbl.g3m.098"
+								},
+								"right": {
+									"type": "text",
+									"value": "lbl.g3m.099"
+								}
+							}
+						]
+					}
+				},
+				{
+					"template": "sort_bins",
+					"difficulty": 1,
+					"voice": "vo.g3.matematik.u02.n07.r02",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "text",
+									"value": "lbl.g3m.100",
+									"voice": "vo.g3m.bin.cm"
+								},
+								"shape": "square",
+								"color": "orange"
+							},
+							{
+								"label": {
+									"type": "text",
+									"value": "lbl.g3m.101",
+									"voice": "vo.g3m.bin.m"
+								},
+								"shape": "circle",
+								"color": "blue"
+							},
+							{
+								"label": {
+									"type": "text",
+									"value": "lbl.g3m.102",
+									"voice": "vo.g3m.bin.km"
+								},
+								"shape": "triangle",
+								"color": "green"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.okul.kalem"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.olcu.kapi"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.olcu.sehirler_arasi_yol"
+								},
+								"bin": 2
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.okul.silgi"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.olcu.otobus"
+								},
+								"bin": 1
+							}
+						]
+					}
+				},
+				{
+					"template": "balance",
+					"difficulty": 2,
+					"voice": "vo.g3.matematik.u02.n07.r03",
+					"params": {
+						"mode": "scale",
+						"ask": "missing",
+						"left": [
+							1000
+						],
+						"right": [
+							600,
+							null
+						],
+						"choices": [
+							300,
+							400,
+							500
+						]
+					}
+				},
+				{
+					"template": "sort_bins",
+					"difficulty": 2,
+					"voice": "vo.g3.matematik.u02.n07.r04",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "text",
+									"value": "lbl.g3m.103",
+									"voice": "vo.g3m.bin.g"
+								},
+								"shape": "square",
+								"color": "orange"
+							},
+							{
+								"label": {
+									"type": "text",
+									"value": "lbl.g3m.104",
+									"voice": "vo.g3m.bin.kg"
+								},
+								"shape": "circle",
+								"color": "blue"
+							},
+							{
+								"label": {
+									"type": "text",
+									"value": "lbl.g3m.105",
+									"voice": "vo.g3m.bin.ton"
+								},
+								"shape": "triangle",
+								"color": "green"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.meyve.elma"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.olcu.karpuz"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.olcu.fil"
+								},
+								"bin": 2
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.okul.silgi"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.olcu.un_cuvali"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.olcu.kamyon"
+								},
+								"bin": 2
+							}
+						]
+					}
+				},
+				{
+					"template": "drag_match",
+					"difficulty": 3,
+					"voice": "vo.g3.matematik.u02.n07.r05",
+					"params": {
+						"pairs": [
+							{
+								"left": {
+									"type": "text",
+									"value": "lbl.g3m.106"
+								},
+								"right": {
+									"type": "text",
+									"value": "lbl.g3m.107"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "lbl.g3m.108"
+								},
+								"right": {
+									"type": "text",
+									"value": "lbl.g3m.109"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "lbl.g3m.110"
+								},
+								"right": {
+									"type": "text",
+									"value": "lbl.g3m.111"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "lbl.g3m.112"
+								},
+								"right": {
+									"type": "text",
+									"value": "lbl.g3m.113"
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g3.matematik.u02.n08",
+			"outcomes": [
+				"MAT.3.1.16"
+			],
+			"title_key": "node.g3.matematik.u02.n08",
+			"intro_voice": "vo.g3.matematik.u02.n08.intro",
+			"sticker": "st.matematik.kumbara",
+			"rounds": [
+				{
+					"template": "clock_money",
+					"difficulty": 1,
+					"voice": "vo.g3.matematik.u02.n08.r01",
+					"params": {
+						"mode": "money",
+						"ask": "count",
+						"unit": "tl",
+						"items": [
+							"tl_100",
+							"tl_50",
+							"tl_20",
+							"tl_5"
+						],
+						"choices": [
+							165,
+							175,
+							185
+						]
+					}
+				},
+				{
+					"template": "drag_match",
+					"difficulty": 1,
+					"voice": "vo.g3.matematik.u02.n08.r02",
+					"params": {
+						"pairs": [
+							{
+								"left": {
+									"type": "text",
+									"value": "lbl.g3m.114"
+								},
+								"right": {
+									"type": "text",
+									"value": "lbl.g3m.115"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "lbl.g3m.116"
+								},
+								"right": {
+									"type": "text",
+									"value": "lbl.g3m.117"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "lbl.g3m.118"
+								},
+								"right": {
+									"type": "text",
+									"value": "lbl.g3m.119"
+								}
+							}
+						]
+					}
+				},
+				{
+					"template": "clock_money",
+					"difficulty": 2,
+					"voice": "vo.g3.matematik.u02.n08.r03",
+					"params": {
+						"mode": "money",
+						"ask": "count",
+						"unit": "kr",
+						"items": [
+							"tl_1",
+							"kr_50",
+							"kr_25",
+							"kr_10"
+						],
+						"choices": [
+							175,
+							185,
+							195
+						]
+					}
+				},
+				{
+					"template": "clock_money",
+					"difficulty": 2,
+					"voice": "vo.g3.matematik.u02.n08.r04",
+					"params": {
+						"mode": "money",
+						"ask": "pay",
+						"unit": "tl",
+						"amount": 85,
+						"wallet": [
+							"tl_50",
+							"tl_20",
+							"tl_10",
+							"tl_5"
+						]
+					}
+				},
+				{
+					"template": "clock_money",
+					"difficulty": 3,
+					"voice": "vo.g3.matematik.u02.n08.r05",
+					"params": {
+						"mode": "money",
+						"ask": "pay",
+						"unit": "tl",
+						"amount": 260,
+						"wallet": [
+							"tl_200",
+							"tl_100",
+							"tl_50",
+							"tl_10"
+						]
+					}
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,565 @@
+{
+	"id": "g3.matematik.u05",
+	"grade": 3,
+	"subject": "matematik",
+	"title_key": "unit.g3.matematik.u05",
+	"source": {
+		"program": "TYMM İlkokul Matematik (1–4)",
+		"doc": "İlkokul Matematik Dersi Öğretim Programı",
+		"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+		"page": 114,
+		"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf",
+		"theme": "MAT.3.3. Nesnelerin Geometrisi (2)"
+	},
+	"nodes": [
+		{
+			"id": "g3.matematik.u05.n01",
+			"outcomes": [
+				"MAT.3.3.6"
+			],
+			"title_key": "node.g3.matematik.u05.n01",
+			"intro_voice": "vo.g3.matematik.u05.n01.intro",
+			"sticker": "st.matematik.kelebek_kanat",
+			"rounds": [
+				{
+					"template": "story",
+					"difficulty": 1,
+					"voice": "vo.g3.matematik.u05.n01.r01",
+					"params": {
+						"pages": [
+							{
+								"text": "txt.g3.matematik.u05.n01.p1",
+								"voice": "vo.g3.matematik.u05.n01.p1",
+								"image": "item.simetri.kare"
+							}
+						],
+						"questions": [
+							{
+								"voice": "vo.g3.matematik.u05.n01.q1",
+								"options": [
+									{
+										"type": "number",
+										"value": 1
+									},
+									{
+										"type": "number",
+										"value": 2
+									},
+									{
+										"type": "number",
+										"value": 4
+									}
+								],
+								"answer": 2,
+								"text": "txt.g3.matematik.u05.n01.q1"
+							}
+						]
+					}
+				},
+				{
+					"template": "story",
+					"difficulty": 1,
+					"voice": "vo.g3.matematik.u05.n01.r02",
+					"params": {
+						"pages": [
+							{
+								"text": "txt.g3.matematik.u05.n01.p2",
+								"voice": "vo.g3.matematik.u05.n01.p2",
+								"image": "item.simetri.dikdortgen"
+							}
+						],
+						"questions": [
+							{
+								"voice": "vo.g3.matematik.u05.n01.q2",
+								"options": [
+									{
+										"type": "number",
+										"value": 1
+									},
+									{
+										"type": "number",
+										"value": 2
+									},
+									{
+										"type": "number",
+										"value": 4
+									}
+								],
+								"answer": 1,
+								"text": "txt.g3.matematik.u05.n01.q2"
+							}
+						]
+					}
+				},
+				{
+					"template": "story",
+					"difficulty": 2,
+					"voice": "vo.g3.matematik.u05.n01.r03",
+					"params": {
+						"pages": [
+							{
+								"text": "txt.g3.matematik.u05.n01.p3",
+								"voice": "vo.g3.matematik.u05.n01.p3",
+								"image": "item.simetri.daire"
+							}
+						],
+						"questions": [
+							{
+								"voice": "vo.g3.matematik.u05.n01.q3",
+								"options": [
+									{
+										"type": "text",
+										"value": "lbl.g3m.177"
+									},
+									{
+										"type": "text",
+										"value": "lbl.g3m.178"
+									},
+									{
+										"type": "text",
+										"value": "lbl.g3m.179"
+									}
+								],
+								"answer": 2,
+								"text": "txt.g3.matematik.u05.n01.q3"
+							}
+						]
+					}
+				},
+				{
+					"template": "drag_match",
+					"difficulty": 2,
+					"voice": "vo.g3.matematik.u05.n01.r04",
+					"params": {
+						"pairs": [
+							{
+								"left": {
+									"type": "item",
+									"value": "item.simetri.kare"
+								},
+								"right": {
+									"type": "number",
+									"value": 4
+								}
+							},
+							{
+								"left": {
+									"type": "item",
+									"value": "item.simetri.dikdortgen"
+								},
+								"right": {
+									"type": "number",
+									"value": 2
+								}
+							},
+							{
+								"left": {
+									"type": "item",
+									"value": "item.simetri.kalp"
+								},
+								"right": {
+									"type": "number",
+									"value": 1
+								}
+							}
+						]
+					}
+				},
+				{
+					"template": "story",
+					"difficulty": 3,
+					"voice": "vo.g3.matematik.u05.n01.r05",
+					"params": {
+						"pages": [
+							{
+								"text": "txt.g3.matematik.u05.n01.p4",
+								"voice": "vo.g3.matematik.u05.n01.p4"
+							}
+						],
+						"questions": [
+							{
+								"voice": "vo.g3.matematik.u05.n01.q4",
+								"options": [
+									{
+										"type": "item",
+										"value": "item.simetri.dikdortgen_kosegen"
+									},
+									{
+										"type": "item",
+										"value": "item.simetri.kare_kosegen"
+									},
+									{
+										"type": "item",
+										"value": "item.simetri.kare_yamuk_cizgi"
+									}
+								],
+								"answer": 1,
+								"text": "txt.g3.matematik.u05.n01.q4"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g3.matematik.u05.n02",
+			"outcomes": [
+				"MAT.3.3.7"
+			],
+			"title_key": "node.g3.matematik.u05.n02",
+			"intro_voice": "vo.g3.matematik.u05.n02.intro",
+			"sticker": "st.matematik.ayna",
+			"rounds": [
+				{
+					"template": "grid",
+					"difficulty": 1,
+					"voice": "vo.g3.matematik.u05.n02.r01",
+					"params": {
+						"mode": "paint",
+						"ask": "symmetry",
+						"cols": 6,
+						"rows": 4,
+						"axis": 3,
+						"given": [
+							[
+								2,
+								0
+							],
+							[
+								1,
+								1
+							],
+							[
+								2,
+								1
+							],
+							[
+								2,
+								2
+							]
+						]
+					}
+				},
+				{
+					"template": "grid",
+					"difficulty": 1,
+					"voice": "vo.g3.matematik.u05.n02.r02",
+					"params": {
+						"mode": "paint",
+						"ask": "symmetry",
+						"axis_dir": "horizontal",
+						"cols": 6,
+						"rows": 6,
+						"axis": 3,
+						"given": [
+							[
+								2,
+								1
+							],
+							[
+								3,
+								1
+							],
+							[
+								1,
+								2
+							],
+							[
+								4,
+								2
+							]
+						]
+					}
+				},
+				{
+					"template": "grid",
+					"difficulty": 2,
+					"voice": "vo.g3.matematik.u05.n02.r03",
+					"params": {
+						"mode": "paint",
+						"ask": "symmetry",
+						"cols": 8,
+						"rows": 5,
+						"axis": 4,
+						"given": [
+							[
+								3,
+								0
+							],
+							[
+								2,
+								1
+							],
+							[
+								3,
+								1
+							],
+							[
+								1,
+								2
+							],
+							[
+								2,
+								2
+							],
+							[
+								3,
+								2
+							],
+							[
+								3,
+								3
+							]
+						]
+					}
+				},
+				{
+					"template": "grid",
+					"difficulty": 3,
+					"voice": "vo.g3.matematik.u05.n02.r04",
+					"params": {
+						"mode": "paint",
+						"ask": "symmetry",
+						"axis_dir": "horizontal",
+						"cols": 7,
+						"rows": 6,
+						"axis": 3,
+						"given": [
+							[
+								0,
+								2
+							],
+							[
+								1,
+								1
+							],
+							[
+								2,
+								0
+							],
+							[
+								3,
+								1
+							],
+							[
+								4,
+								2
+							],
+							[
+								5,
+								1
+							],
+							[
+								6,
+								2
+							]
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g3.matematik.u05.n03",
+			"outcomes": [
+				"MAT.3.3.8"
+			],
+			"title_key": "node.g3.matematik.u05.n03",
+			"intro_voice": "vo.g3.matematik.u05.n03.intro",
+			"sticker": "st.matematik.robot",
+			"rounds": [
+				{
+					"template": "drag_match",
+					"difficulty": 1,
+					"voice": "vo.g3.matematik.u05.n03.r01",
+					"params": {
+						"pairs": [
+							{
+								"left": {
+									"type": "text",
+									"value": "lbl.g3m.180"
+								},
+								"right": {
+									"type": "text",
+									"value": "lbl.g3m.181"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "lbl.g3m.182"
+								},
+								"right": {
+									"type": "text",
+									"value": "lbl.g3m.183"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "lbl.g3m.184"
+								},
+								"right": {
+									"type": "text",
+									"value": "lbl.g3m.185"
+								}
+							}
+						]
+					}
+				},
+				{
+					"template": "grid",
+					"difficulty": 1,
+					"voice": "vo.g3.matematik.u05.n03.r02",
+					"params": {
+						"mode": "paint",
+						"ask": "code",
+						"cols": 8,
+						"rows": 5,
+						"start": [
+							0,
+							1
+						],
+						"code": [
+							[
+								"right",
+								3
+							],
+							[
+								"down",
+								2
+							]
+						]
+					}
+				},
+				{
+					"template": "grid",
+					"difficulty": 2,
+					"voice": "vo.g3.matematik.u05.n03.r03",
+					"params": {
+						"mode": "paint",
+						"ask": "code",
+						"cols": 8,
+						"rows": 5,
+						"start": [
+							3,
+							0
+						],
+						"code": [
+							[
+								"left",
+								2
+							],
+							[
+								"down",
+								3
+							],
+							[
+								"right",
+								2
+							]
+						]
+					}
+				},
+				{
+					"template": "grid",
+					"difficulty": 2,
+					"voice": "vo.g3.matematik.u05.n03.r04",
+					"params": {
+						"mode": "paint",
+						"ask": "symmetry",
+						"cols": 8,
+						"rows": 5,
+						"axis": 4,
+						"given": [
+							[
+								3,
+								0
+							],
+							[
+								2,
+								0
+							],
+							[
+								1,
+								0
+							],
+							[
+								1,
+								1
+							],
+							[
+								1,
+								2
+							],
+							[
+								1,
+								3
+							],
+							[
+								2,
+								3
+							],
+							[
+								3,
+								3
+							]
+						]
+					}
+				},
+				{
+					"template": "story",
+					"difficulty": 3,
+					"voice": "vo.g3.matematik.u05.n03.r05",
+					"params": {
+						"pages": [
+							{
+								"text": "txt.g3.matematik.u05.n03.p1",
+								"voice": "vo.g3.matematik.u05.n03.p1",
+								"image": "item.simetri.ev"
+							},
+							{
+								"text": "txt.g3.matematik.u05.n03.p2",
+								"voice": "vo.g3.matematik.u05.n03.p2",
+								"image": "item.simetri.ruzgar_gulu"
+							}
+						],
+						"questions": [
+							{
+								"voice": "vo.g3.matematik.u05.n03.q1",
+								"options": [
+									{
+										"type": "text",
+										"value": "lbl.g3m.186"
+									},
+									{
+										"type": "text",
+										"value": "lbl.g3m.187"
+									}
+								],
+								"answer": 0,
+								"text": "txt.g3.matematik.u05.n03.q1",
+								"page": 0
+							},
+							{
+								"voice": "vo.g3.matematik.u05.n03.q2",
+								"options": [
+									{
+										"type": "text",
+										"value": "lbl.g3m.186"
+									},
+									{
+										"type": "text",
+										"value": "lbl.g3m.187"
+									}
+								],
+								"answer": 1,
+								"text": "txt.g3.matematik.u05.n03.q2",
+								"page": 1
+							}
+						]
+					}
+				}
+			]
+		}
+	]
+}
