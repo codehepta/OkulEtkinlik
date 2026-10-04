@@ -206,6 +206,9 @@ func _debug_answer(correct: bool) -> void:
 	elif open.size() > 1:
 		_drop(open[1], slot)
 
+func _is_multi_step() -> bool:
+	return true
+
 func show_hint(level: int) -> void:
 	if _done or _busy:
 		return

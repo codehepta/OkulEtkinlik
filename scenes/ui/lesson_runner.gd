@@ -279,6 +279,7 @@ func _load_round(entry: Dictionary) -> void:
 	ctx.rng.seed = _rng.randi()
 	ctx.voice_id = str(rd.get("voice", ""))
 	ctx.outcomes = outcomes
+	ctx.grade = grade_of(_node_id)
 	_area.add_child(game)
 	_game = game
 	game.answered.connect(_on_answered)
@@ -292,6 +293,13 @@ func _load_round(entry: Dictionary) -> void:
 	else:
 		game.setup(rd.get("params", {}), diff, ctx)
 		await _say(ctx.voice_id)
+
+## Düğüm kimliğindeki sınıf (g<N>.…); tanınmazsa 1.
+static func grade_of(node_id: String) -> int:
+	var head: String = node_id.get_slice(".", 0)
+	if head.length() >= 2 and head.begins_with("g") and head.substr(1).is_valid_int():
+		return clampi(int(head.substr(1)), 1, 3)
+	return 1
 
 func _instantiate(template_id: String) -> MiniGame:
 	if not TemplateRegistry.has(template_id):
@@ -371,6 +379,7 @@ func _on_finished(result: RoundResult) -> void:
 	r.wrong = _round_wrong
 	r.helped = _round_helped or result.helped
 	r.outcomes = result.outcomes
+	r.multi_step = result.multi_step
 	_results.append(r)
 	_after_round()
 
