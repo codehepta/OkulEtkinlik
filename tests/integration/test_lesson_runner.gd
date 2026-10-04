@@ -176,12 +176,59 @@ func test_home_requested_without_saving() -> void:
 	assert_eq(_progress.best_stars(_pid, N1), 0)
 
 func test_skipped_round_does_not_affect_mastery_or_stars() -> void:
+	(_db.node(N1)["rounds"][0] as Dictionary)["template"] = "yok_sablon"
+	await _start(N1)
+	await _win_round()
+	await _win_round()
+	var done: bool = await wait_until(func() -> bool: return _done_summary.size() > 0, 4.0)
+	assert_true(done)
+	assert_eq(int(_done_summary.get("stars", 0)), 3, "atlanan tur yanlış sayılmaz")
+	assert_almost_eq(_progress.outcome_mastery(_pid, "TEST.1"), 0.51, 0.001, "yalnızca oynanan iki tur işlenir")
+
+func test_all_rounds_skipped_awards_nothing() -> void:
 	(_db.node(N2)["rounds"][0] as Dictionary)["template"] = "yok_sablon"
 	await _start(N2)
 	var done: bool = await wait_until(func() -> bool: return _done_summary.size() > 0, 4.0)
 	assert_true(done)
-	assert_eq(int(_done_summary.get("stars", 0)), 3)
+	assert_eq(int(_done_summary.get("stars", -1)), 0, "hiç tur oynanmadı: yıldız yok")
+	assert_eq(str(_done_summary.get("new_sticker", "x")), "")
+	assert_eq(str(_done_summary.get("unlocked", "x")), "")
+	assert_eq(_progress.best_stars(_pid, N2), 0, "kayıt yapılmaz")
 	assert_eq(_progress.outcome_mastery(_pid, "TEST.1"), 0.0)
+
+## line_finished'i gecikmeli yayan yavaş anlatıcı (gerçek TTS'e benzer).
+class SlowFake:
+	extends "res://tests/helpers/fake_services.gd"
+	var delay: float = 0.0
+	func say(id: String) -> void:
+		said.append(id)
+		if delay <= 0.0 or not is_inside_tree():
+			line_finished.emit.call_deferred(id)
+			return
+		await get_tree().create_timer(delay).timeout
+		line_finished.emit(id)
+
+func test_tap_during_feedback_narration_is_ignored() -> void:
+	var slow: SlowFake = SlowFake.new()
+	add_child_autofree(slow)
+	_fake = slow
+	await _start()
+	await wait_process_frames(3)
+	var g: MiniGame = _runner.current_game()
+	var right: int = int(g.call("_debug_correct_index"))
+	var wrong: int = (right + 1) % 3
+	slow.delay = 1.5
+	g.call("_debug_choose", wrong)
+	assert_eq(g.attempts, 1)
+	await wait_seconds(0.7)
+	assert_true(_runner.is_feedback_busy(), "geri bildirim hâlâ okunuyor")
+	g.call("_debug_choose", right)
+	assert_eq(g.attempts, 1, "anlatım sürerken dokunma yok sayılır")
+	assert_eq(_runner.current_round_index(), 0)
+	slow.delay = 0.0
+	await _feedback_done()
+	g.call("_debug_choose", right)
+	assert_eq(g.attempts, 2, "geri bildirim bitince giriş açılır")
 
 func test_difficulty_uses_mastery() -> void:
 	var outs: Dictionary = _progress._profile(_pid)["outcomes"]

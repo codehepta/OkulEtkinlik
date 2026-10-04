@@ -35,6 +35,8 @@ var _queue: Array[Dictionary] = []
 var _pos: int = -1
 var _requeued: Dictionary = {}
 var _results: Array[RoundResult] = []
+## Atlanan (şablonu yüklenemeyen) turların _results içindeki sıraları.
+var _skipped: Dictionary = {}
 var _game: MiniGame = null
 var _round_wrong: int = 0
 var _round_helped: bool = false
@@ -90,6 +92,7 @@ func start(profile_id: String, node_id: String, rng_seed: int = -1) -> void:
 	_queue.clear()
 	_requeued.clear()
 	_results.clear()
+	_skipped.clear()
 	_pos = -1
 	_time_up = false
 	_active = true
@@ -212,6 +215,7 @@ func _instantiate(template_id: String) -> MiniGame:
 func _skip_round() -> void:
 	var r: RoundResult = RoundResult.new()
 	r.helped = true
+	_skipped[_results.size()] = true
 	_results.append(r)
 	_game = null
 	_after_round()
@@ -228,7 +232,9 @@ func _on_answered(correct: bool) -> void:
 	var gen: int = _gen
 	var game: MiniGame = _game
 	var round_voice: String = str((_queue[_pos]["round"] as Dictionary).get("voice", ""))
-	game.input_locked = true
+	# Şablon yanlış cevaptan 0.6 sn sonra kendi kilidini açar; geri bildirim satırları
+	# bitene kadar dokunmaları runner tutar (ipucu adımları atlanmasın).
+	game.runner_hold = true
 	if _round_wrong == 1:
 		audio.play_sfx("sfx.wrong")
 		await _say("vo.genel.tekrar_dene_%d" % _rng.randi_range(1, RETRY_VOICE_COUNT))
@@ -255,12 +261,13 @@ func _on_answered(correct: bool) -> void:
 		await _say("vo.genel.cozum")
 		if _stale(gen) or _game != game:
 			return
+		# Çözümü şablon kendisi gösterip turu bitirir; tutma bırakılmaz.
 		game.show_hint(2)
 		_feedback_busy = false
 
 func _release(game: MiniGame) -> void:
 	_feedback_busy = false
-	game.input_locked = false
+	game.runner_hold = false
 
 func _on_finished(result: RoundResult) -> void:
 	if not _active:
@@ -312,8 +319,15 @@ func _complete(time_up: bool, partial: bool) -> void:
 	if partial:
 		if not _results.is_empty():
 			progress.record_partial(_profile_id, _node_id, _results)
-	elif not _results.is_empty():
+	elif _any_played():
 		summary = progress.record_node(_profile_id, _node_id, _results)
 	summary["node_id"] = _node_id
 	summary["time_up"] = time_up
 	lesson_completed.emit(summary)
+
+## En az bir tur gerçekten oynandı mı? (Hepsi atlandıysa yıldız/çıkartma/kilit açma yok.)
+func _any_played() -> bool:
+	for i: int in _results.size():
+		if not _skipped.has(i):
+			return true
+	return false

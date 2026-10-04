@@ -17,6 +17,9 @@ const PRAISE_COUNT: int = 5
 
 ## Girdi kilitliyken şablon dokunmaları yok saymalıdır.
 var input_locked: bool = false
+## Dersi yöneten (LessonRunner) geri bildirim satırlarını okurken tutar; şablonun kendi
+## kilit zamanlayıcısı bunu açamaz. Yalnızca runner değiştirir.
+var runner_hold: bool = false
 ## Anlatıcı ve ses yöneticisi; testlerde sahte düğümle değiştirilir.
 var narrator: Node = Narrator
 var audio: Node = AudioDirector
@@ -66,7 +69,7 @@ func _init_round(difficulty_value: int, context: RoundContext) -> void:
 
 ## Dokunma kabul edilebilir mi?
 func _can_input() -> bool:
-	return not (input_locked or _busy or _done)
+	return not (input_locked or runner_hold or _busy or _done)
 
 func _reduce_motion() -> bool:
 	var settings: Variant = SaveService.data.get("settings", {})
