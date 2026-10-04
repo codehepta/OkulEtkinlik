@@ -15,6 +15,7 @@ AssetRegistry="*res://autoload/asset_registry.gd"
 Strings="*res://autoload/strings.gd"
 AudioDirector="*res://autoload/audio_director.gd"
 Narrator="*res://autoload/narrator.gd"
+ContentDB="*res://autoload/content_db.gd"
 
 [audio]
 
