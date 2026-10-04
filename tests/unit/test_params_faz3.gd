@@ -1,7 +1,7 @@
 extends GutTest
 ## Faz 3 şablonlarının kaydı ve parametre doğrulaması (TemplateRegistry üzerinden).
 
-const FAZ3: PackedStringArray = ["sequence", "balloon_pop", "pattern", "balance"]
+const FAZ3: PackedStringArray = ["sequence", "balloon_pop", "pattern", "balance", "clock_money"]
 
 func _item(v: String) -> Dictionary:
 	return {"type": "item", "value": v}
@@ -125,3 +125,38 @@ func test_balance_invalid() -> void:
 func test_balance_missing_negative_rejected() -> void:
 	var errs: Array[String] = TemplateRegistry.validate("balance", {"mode": "scale", "ask": "missing", "left": [3], "right": [5, null], "choices": [1, 2]})
 	assert_eq(errs, [ContentValidator.msg("err.params.bal_missing_range")] as Array[String], "3 = 5 + ? çözümsüz")
+
+# --- clock_money ---
+func _t(h: int, m: int) -> Dictionary:
+	return {"hour": h, "minute": m}
+
+func test_clock_money_valid() -> void:
+	_ok("clock_money", {"mode": "clock", "ask": "read", "hour": 3, "minute": 30, "choices": [_t(3, 30), _t(6, 15)]})
+	_ok("clock_money", {"mode": "clock", "ask": "set", "hour": 12, "minute": 55})
+	_ok("clock_money", {"mode": "money", "ask": "count", "unit": "tl", "items": ["tl_5", "tl_10"], "choices": [15, 16]})
+	_ok("clock_money", {"mode": "money", "ask": "count", "unit": "kr", "items": ["kr_50", "tl_1"], "choices": [150, 100, 75]})
+	_ok("clock_money", {"mode": "money", "ask": "pay", "unit": "tl", "amount": 35, "wallet": ["tl_20", "tl_10", "tl_5"]})
+
+func test_clock_money_invalid() -> void:
+	_bad("clock_money", {"mode": "time"}, "bilinmeyen mod")
+	_bad("clock_money", {"mode": "clock", "ask": "count", "hour": 3, "minute": 0}, "saatte para sorusu")
+	_bad("clock_money", {"mode": "clock", "ask": "set", "hour": 13, "minute": 0}, "saat 13")
+	_bad("clock_money", {"mode": "clock", "ask": "set", "hour": 0, "minute": 0}, "saat 0")
+	_bad("clock_money", {"mode": "clock", "ask": "set", "hour": 3, "minute": 7}, "5'in katı değil")
+	_bad("clock_money", {"mode": "clock", "ask": "set", "hour": 3, "minute": 60}, "dakika 60")
+	_bad("clock_money", {"mode": "clock", "ask": "read", "hour": 3, "minute": 30, "choices": [_t(4, 30), _t(6, 15)]}, "hedef yok")
+	_bad("clock_money", {"mode": "clock", "ask": "read", "hour": 3, "minute": 30, "choices": [_t(3, 30), _t(3, 30)]}, "yinelenen")
+	_bad("clock_money", {"mode": "clock", "ask": "read", "hour": 3, "minute": 30, "choices": [_t(3, 30)]}, "tek seçenek")
+	_bad("clock_money", {"mode": "money", "ask": "count", "unit": "usd", "items": ["tl_5"], "choices": [5, 6]}, "bilinmeyen birim")
+	_bad("clock_money", {"mode": "money", "ask": "count", "unit": "tl", "items": ["kr_50"], "choices": [5, 6]}, "birime uymayan küpür")
+	_bad("clock_money", {"mode": "money", "ask": "count", "unit": "tl", "items": ["tl_3"], "choices": [3, 6]}, "olmayan küpür")
+	_bad("clock_money", {"mode": "money", "ask": "count", "unit": "tl", "items": [], "choices": [5, 6]}, "boş")
+	_bad("clock_money", {"mode": "money", "ask": "count", "unit": "tl", "items": ["tl_200", "tl_200", "tl_200", "tl_200", "tl_200", "tl_200"], "choices": [1200, 1000]}, "1000'i aşan toplam")
+	_bad("clock_money", {"mode": "money", "ask": "count", "unit": "tl", "items": ["tl_5", "tl_10"], "choices": [14, 16]}, "toplam seçeneklerde yok")
+	_bad("clock_money", {"mode": "money", "ask": "pay", "unit": "tl", "amount": 0, "wallet": ["tl_5"]}, "tutar 0")
+	_bad("clock_money", {"mode": "money", "ask": "pay", "unit": "tl", "amount": 10, "wallet": []}, "boş cüzdan")
+	_bad("clock_money", {"mode": "money", "ask": "pay", "unit": "tl", "amount": 10, "wallet": ["tl_5", "tl_5"]}, "yinelenen cüzdan")
+
+func test_money_pay_unpayable_rejected() -> void:
+	var errs: Array[String] = TemplateRegistry.validate("clock_money", {"mode": "money", "ask": "pay", "unit": "tl", "amount": 7, "wallet": ["tl_5", "tl_10"]})
+	assert_eq(errs, [ContentValidator.msg("err.params.cm_unpayable")] as Array[String])
