@@ -14,6 +14,7 @@ const SCENES: Dictionary = {
 	"parent_gate": "res://scenes/ui/parent_gate.tscn",
 	"parent_panel": "res://scenes/ui/parent_panel.tscn",
 	"session_end": "res://scenes/ui/session_end.tscn",
+	"tree_house": "res://scenes/ui/tree_house.tscn",
 }
 
 ## Testlerde sahne tablosu değiştirilebilir (varsayılan: SCENES).
@@ -80,7 +81,7 @@ func adopt_scene(scene_name: String, node: Node) -> void:
 	_current_name = scene_name
 
 ## Çocuğun oynadığı ekranlar: süre dolduysa buralara girilmez (spec §3.6).
-const PLAY_SCENES: Array[String] = ["world_map", "region_path", "lesson", "result", "album"]
+const PLAY_SCENES: Array[String] = ["world_map", "region_path", "lesson", "result", "album", "tree_house"]
 
 func goto(scene: String, args: Dictionary = {}) -> void:
 	if PLAY_SCENES.has(scene) and profile_id != "" and session_timer.is_locked():

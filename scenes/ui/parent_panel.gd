@@ -1,6 +1,9 @@
 extends Control
 ## Veli paneli (yetişkin ekranı): ilerleme, günlük sınır, ses, anahtarlar, sınıf,
-## profil silme, bugünlük süreyi açma, yedek dışa/içe aktarma. Spec §3.6, §4.8, §6.
+## profil silme, bugünlük süreyi açma, günü sıfırlama, yedek dışa/içe aktarma ve sınıfa
+## göre evde etkinlik önerileri. Spec §3.6, §4.8, §6.
+
+const HomeActivities: GDScript = preload("res://scripts/core/home_activities.gd")
 
 const LIMITS: Array[int] = [0, 10, 15, 20, 30]
 const GRADES: Array[int] = [1, 2, 3]
@@ -24,6 +27,8 @@ var app: Node = AppState
 var args: Dictionary = {}
 ## Yedek dosyasının yazılacağı klasör; testlerde değiştirilir.
 var export_dir: String = ""
+## Evde etkinlik önerileri dosyası; testlerde değiştirilebilir.
+var home_activities_path: String = HomeActivities.DEFAULT_PATH
 
 var _pid: String = ""
 var _status: String = ""
@@ -84,6 +89,17 @@ func outcome_rows() -> Array[Dictionary]:
 		return str(a["subject"]) + str(a["code"]) < str(b["subject"]) + str(b["code"]))
 	return rows
 
+## Seçili profilin sınıfına ait evde etkinlik önerileri: code, subject, outcome, text.
+func home_activity_rows() -> Array[Dictionary]:
+	var grade: int = int(_find_profile(_pid).get("grade", 0))
+	var outcomes: Dictionary = {}
+	var texts: Dictionary = HomeActivities.load_texts(home_activities_path)
+	for code: String in texts:
+		var info: Dictionary = app.content.outcome_info(code)
+		if not info.is_empty():
+			outcomes[code] = info
+	return HomeActivities.rows_for_grade(texts, outcomes, grade)
+
 # --- Eylemler ---
 
 func select_profile_tab(id: String) -> void:
@@ -118,6 +134,11 @@ func unlock_today() -> void:
 		return
 	app.session_timer.parent_unlock_today()
 	_set_status(Strings.t("parent.unlocked"))
+
+## Saat ileri alınıp geri getirildiyse oyun gününü bugüne döndürür (bütün cihaz).
+func reset_day() -> void:
+	app.session_timer.reset_day()
+	_set_status(Strings.t("parent.reset_day_done"))
 
 func request_delete() -> void:
 	if _pid == "":
@@ -246,6 +267,7 @@ func _rebuild() -> void:
 	_build_volumes()
 	_build_toggles()
 	_build_grade()
+	_build_home_activities()
 	_build_actions()
 
 	_exit = _button(Strings.t("parent.exit"))
@@ -376,10 +398,40 @@ func _build_grade() -> void:
 		row.add_child(b)
 	_content.add_child(row)
 
+func _build_home_activities() -> void:
+	_content.add_child(_label(Strings.t("parent.home_activities"), 56))
+	var hint: Label = _label(Strings.t("parent.home_activities_hint"), 32)
+	hint.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	_content.add_child(hint)
+	var rows: Array[Dictionary] = home_activity_rows()
+	if rows.is_empty():
+		_content.add_child(_label(Strings.t("parent.home_activities_none"), 32))
+		return
+	var last_subject: String = "-"
+	for r: Dictionary in rows:
+		var subject: String = str(r["subject"])
+		if subject != last_subject:
+			last_subject = subject
+			var key: String = "subject.%s" % subject
+			_content.add_child(_label(Strings.t(key) if Strings.has(key) else Strings.t("parent.subject_other"), 44))
+		var title: Label = _label("%s  (%s)" % [str(r["outcome"]), str(r["code"])], 32)
+		title.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		title.add_theme_color_override("font_color", ClayStyle.INK_SOFT)
+		_content.add_child(title)
+		var body: Label = _label(str(r["text"]), 34)
+		body.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		_content.add_child(body)
+
 func _build_actions() -> void:
 	var unlock: Button = _button(Strings.t("parent.unlock_today"))
 	unlock.pressed.connect(unlock_today)
 	_content.add_child(unlock)
+	var reset_hint: Label = _label(Strings.t("parent.reset_day_hint"), 32)
+	reset_hint.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	_content.add_child(reset_hint)
+	var reset: Button = _button(Strings.t("parent.reset_day"))
+	reset.pressed.connect(reset_day)
+	_content.add_child(reset)
 	var export_b: Button = _button(Strings.t("parent.export"))
 	export_b.pressed.connect(export_backup)
 	_content.add_child(export_b)

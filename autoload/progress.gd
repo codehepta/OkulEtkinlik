@@ -5,7 +5,7 @@ extends Node
 const MAX_PROFILES: int = 4
 const ReviewPicker: GDScript = preload("res://scripts/core/review_picker.gd")
 ## Tekrar Bulutu'nun giriş satırı.
-const REVIEW_INTRO_VOICE: String = "vo.genel.tekrar_bulutu"
+const REVIEW_INTRO_VOICE: String = "vo.genel.tekrar_giris"
 
 var clock: DayClock = DayClock.new()
 ## Testlerde değiştirilebilir; boşsa _ready'de autoload'lar bağlanır.

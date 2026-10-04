@@ -349,3 +349,28 @@ func test_panel_hides_subtitle_and_marks_selection() -> void:
 		if b.toggle_mode and b.button_pressed and b.icon == AssetRegistry.texture(ClayStyle.CHECK_ICON_KEY):
 			checked += 1
 	assert_eq(checked, 2, "seçili süre ve seçili sınıf onay ikonu taşır")
+
+func test_panel_reset_day_returns_effective_day_to_clock() -> void:
+	_login(1)
+	_timer.clock = DayClock.new()
+	_timer.clock.fixed_day = 200
+	_save.data["last_day_seen"] = 210
+	_save.data["settings"]["daily_limit_min"] = 10
+	_save.data["usage"] = {"day": 210, "seconds": 9999, "unlocked_day": -1}
+	assert_true(_timer.is_locked())
+	var panel: Node = _open_panel()
+	panel.reset_day()
+	assert_eq(_save.data["last_day_seen"], 200)
+	assert_false(_timer.is_locked())
+	assert_eq(panel.status_text(), Strings.t("parent.reset_day_done"))
+
+func test_panel_lists_home_activities_for_profile_grade() -> void:
+	_login(1)
+	var panel: Node = _open_panel()
+	panel.home_activities_path = "res://tests/fixtures/home_activities.json"
+	var rows: Array[Dictionary] = panel.home_activity_rows()
+	assert_eq(rows.size(), 1)
+	assert_eq(rows[0]["code"], "TEST.1")
+	assert_eq(rows[0]["text"], "Evde test önerisi.")
+	_progress.set_grade(_app.profile_id, 2)
+	assert_eq(panel.home_activity_rows().size(), 0, "başka sınıfın önerisi gösterilmez")

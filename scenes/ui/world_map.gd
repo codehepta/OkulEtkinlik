@@ -158,8 +158,14 @@ func tap_region(subject: String) -> void:
 	if is_inside_tree():
 		app.goto("region_path", {"subject": subject})
 
+## Ağaç evinin adını okutur, sonra Bilge'nin Ağaç Evi açılır.
 func tap_tree_house() -> void:
-	app.narrator.say("vo.genel.yakinda")
+	if _busy:
+		return
+	_busy = true
+	await NarrationWait.say(self, app.narrator, "vo.bolge.agac_ev")
+	if is_inside_tree():
+		app.goto("tree_house")
 
 func open_album() -> void:
 	app.goto("album")

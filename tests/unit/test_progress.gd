@@ -178,7 +178,7 @@ func test_review_node_builds_rounds_with_outcomes() -> void:
 	assert_eq(_p.review_node(id, "matematik", rng), {})
 	_p.clock.fixed_day = 101
 	var node: Dictionary = _p.review_node(id, "matematik", rng)
-	assert_eq(node["intro_voice"], "vo.genel.tekrar_bulutu")
+	assert_eq(node["intro_voice"], "vo.genel.tekrar_giris")
 	var rounds: Array = node["rounds"]
 	assert_eq(rounds.size(), 1, "tek tamamlanmış durağın tek turu")
 	assert_eq(rounds[0]["template"], "count_choose")
