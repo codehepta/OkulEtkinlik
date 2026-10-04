@@ -1,7 +1,8 @@
 extends RefCounted
 ## Müfredat matrisi üreticisi (geliştirici aracı, saf mantık).
 ## outcomes.json / themes.json / game_map.json -> docs/curriculum/matrix.md metni.
-## Çıktı deterministiktir: sıralama sözlük sırasına değil, açık anahtarlara dayanır.
+## Çıktı belirli bir outcomes.json için deterministiktir: sıralama açık anahtarlara dayanır;
+## yalnızca "Önerilen yeni şablonlar" kodları outcomes.json'daki kayıt sırasını izler.
 ##   const CurriculumReport := preload("res://tools/curriculum/report.gd")
 ## `class_name` bilerek yok.
 
@@ -100,8 +101,8 @@ static func _theme_section(tid: String, themes: Dictionary, outcomes: Dictionary
 	lines.append("")
 	lines.append("| Kod | Öğrenme çıktısı | s. | Uygunluk | Şablonlar | Not |")
 	lines.append("|---|---|---|---|---|---|")
-	var codes: Array = t.get("outcomes", []) if t.get("outcomes", []) is Array else []
-	for code_v: Variant in codes:
+	var raw_codes: Variant = t.get("outcomes", [])
+	for code_v: Variant in (raw_codes as Array if raw_codes is Array else []):
 		var code: String = str(code_v)
 		if not outcomes.has(code):
 			lines.append("| %s | (outcomes.json'da kayıt yok) | | | | |" % _cell(code))
@@ -110,8 +111,8 @@ static func _theme_section(tid: String, themes: Dictionary, outcomes: Dictionary
 		var gm: Dictionary = _dict(game_map.get(code, {}))
 		var fit_label: String = str(FIT_LABELS.get(str(gm.get("fit", "")), "—"))
 		var tpl: Array[String] = []
-		var raw_tpl: Array = gm.get("templates", []) if gm.get("templates", []) is Array else []
-		for x: Variant in raw_tpl:
+		var raw_tpl: Variant = gm.get("templates", [])
+		for x: Variant in (raw_tpl as Array if raw_tpl is Array else []):
 			tpl.append("`%s`" % str(x))
 		lines.append("| %s | %s | %d | %s | %s | %s |" % [
 			_cell(code),
@@ -130,8 +131,8 @@ static func _proposed(game_map: Dictionary, outcomes: Dictionary) -> Array[Strin
 	## Kodlar outcomes.json sırasıyla (sözlük ekleme sırası) toplanır.
 	for code: String in outcomes.keys():
 		var gm: Dictionary = _dict(game_map.get(code, {}))
-		var props: Array = gm.get("proposed", []) if gm.get("proposed", []) is Array else []
-		for p: Variant in props:
+		var raw_props: Variant = gm.get("proposed", [])
+		for p: Variant in (raw_props as Array if raw_props is Array else []):
 			var pid: String = str(p)
 			if not by_id.has(pid):
 				by_id[pid] = []
