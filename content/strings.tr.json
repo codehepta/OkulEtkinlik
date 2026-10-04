@@ -60,6 +60,7 @@
 	"err.params.est_near": "near 1 ya da daha büyük bir tam sayı olmalı",
 	"err.params.est_judgement": "tahmin seçenekleri arasında hem sonuca yakın hem uzak olan bulunmalı",
 	"err.params.est_weigh": "tartmada item boş olmayan bir anahtar, value 1 ile 15 arasında tam sayı olmalı",
+	"err.params.write_target": "answer yalnızca digits olabilir; hedef 0 ile 9999 arasında bir sayı (type number) olmalı",
 	"err.params.bal_mode": "mode scale ya da number_line olmalı",
 	"err.params.bal_ask": "ask scale için compare, missing ya da estimate, number_line için find ya da place olmalı",
 	"err.params.bal_sides": "left ve right 1 ile 3 arasında tam sayı (0–1000) içermeli; null yalnızca missing sorusunda",
