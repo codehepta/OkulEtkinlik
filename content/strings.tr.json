@@ -1,1 +1,20 @@
-{"app.title": "Bilgi Adası"}
+{
+	"app.title": "Bilgi Adası",
+	"gate.question": "{a} ile {b} çarpın.",
+	"num.11": "on bir",
+	"num.12": "on iki",
+	"num.13": "on üç",
+	"num.14": "on dört",
+	"num.15": "on beş",
+	"num.16": "on altı",
+	"num.17": "on yedi",
+	"num.18": "on sekiz",
+	"num.19": "on dokuz",
+	"num_acc.3": "üçü",
+	"num_acc.4": "dördü",
+	"num_acc.5": "beşi",
+	"num_acc.6": "altıyı",
+	"num_acc.7": "yediyi",
+	"num_acc.8": "sekizi",
+	"num_acc.9": "dokuzu"
+}
