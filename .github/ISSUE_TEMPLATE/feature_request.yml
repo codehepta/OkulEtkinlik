@@ -1,0 +1,41 @@
+name: Özellik önerisi
+description: Yeni bir özellik, mini oyun ya da iyileştirme öner.
+title: "[Öneri] "
+labels: ["öneri"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Hangi ihtiyacı karşılıyor?
+      description: Çocuk, veli ya da öğretmen açısından hangi sorunu çözüyor?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Önerin
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Alan
+      options:
+        - Mini oyun şablonu
+        - Arayüz / erişilebilirlik
+        - Ödül sistemi (çıkartma, ağaç ev)
+        - Veli paneli
+        - Ses / anlatım
+        - Diğer
+    validations:
+      required: true
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Kurallarla uyum
+      description: Öneriler projenin değişmez kurallarına uymalı (CONTRIBUTING.md §1).
+      options:
+        - label: Ağ isteği, reklam, satın alma, hesap ya da veri toplama gerektirmiyor
+          required: true
+        - label: Ceza, süre baskısı, şans kutusu ya da seri baskısı içermiyor
+          required: true

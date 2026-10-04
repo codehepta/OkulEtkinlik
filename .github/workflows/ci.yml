@@ -12,7 +12,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Godot kur
         run: |
@@ -29,7 +29,7 @@ jobs:
 
       - name: JUnit çıktısını yükle
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: junit
           path: build/junit.xml
@@ -40,20 +40,20 @@ jobs:
     if: github.event_name == 'pull_request' || github.event_name == 'workflow_dispatch' || github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-java@v4
+      - uses: actions/setup-java@v6
         with:
           distribution: temurin
           java-version: "17"
 
-      - uses: android-actions/setup-android@v3
+      - uses: android-actions/setup-android@v4
         with:
           # Varsayılan 'tools' paketi artık yok; yalnızca gerekenleri iste.
           packages: "platform-tools build-tools;35.0.1 platforms;android-35"
 
       - name: Export şablonları önbelleği
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: |
             ~/.local/share/godot/export_templates
@@ -82,7 +82,7 @@ jobs:
         run: scripts/ci-check-apk.sh build/android/bilgi-adasi-debug.apk "$ANDROID_HOME/build-tools/35.0.1/aapt2"
 
       - name: APK'yı yükle
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: bilgi-adasi-debug-apk
           path: build/android/bilgi-adasi-debug.apk

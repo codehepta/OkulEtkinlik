@@ -1,0 +1,51 @@
+name: İçerik / müfredat
+description: Ünite içeriğinde, ses satırında ya da öğrenme çıktısı eşlemesinde hata ya da öneri.
+title: "[İçerik] "
+labels: ["içerik"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Öğretmen ve velilerin geri bildirimi çok değerli. İçerik Türkiye Yüzyılı Maarif Modeli (TYMM) öğretim programlarına göre eşlenir.
+  - type: dropdown
+    id: grade
+    attributes:
+      label: Sınıf
+      options: ["1. sınıf", "2. sınıf", "3. sınıf"]
+    validations:
+      required: true
+  - type: dropdown
+    id: subject
+    attributes:
+      label: Ders
+      options: ["Matematik", "Türkçe", "Hayat Bilgisi", "Fen Bilimleri"]
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Ünite / durak
+      placeholder: "Örn. g1.matematik.u01.n03 ya da 'Sayı Ormanı 3. durak'"
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Tür
+      options:
+        - Yanlış ya da kafa karıştırıcı soru
+        - Ses satırı / metin hatası
+        - Öğrenme çıktısı eşlemesi hatalı
+        - Yaşa uygun değil
+        - Eksik konu önerisi
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Ayrıntı
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Kaynak
+      description: Müfredatla ilgiliyse resmi öğretim programı PDF'i ve sayfa numarası.
