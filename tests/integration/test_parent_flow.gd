@@ -253,6 +253,21 @@ func test_session_end_has_replay_voice_button() -> void:
 	btn.pressed.emit()
 	assert_eq(_fake.replays, before + 1, "uygulamanın anlatıcısına gider")
 
+func test_session_end_big_sleepy_bilge_and_call_grownup_button() -> void:
+	_login(1)
+	_app.goto("session_end")
+	var bilge: Control = _screen().bilge_view()
+	assert_eq(str(bilge.get("key")), "char.bilge.sleepy")
+	assert_gte(bilge.custom_minimum_size.y, 420.0, "uykulu Bilge büyük olmalı")
+	var btn: Button = _screen().parent_button()
+	var label: Label = btn.find_child("CallLabel", true, false) as Label
+	assert_not_null(label, "düğmede metin olmalı")
+	if label != null:
+		assert_eq(label.text, Strings.t("session_end.call_grownup"))
+	assert_not_null(btn.find_child("CallIcon", true, false), "düğmede simge olmalı")
+	assert_gte(btn.custom_minimum_size.y, 128.0)
+	assert_not_null(_screen().find_child("NightBackdrop", true, false), "gece zemini")
+
 func test_session_end_not_redirected_when_locked() -> void:
 	var id: String = _login(1)
 	_save.data["settings"]["daily_limit_min"] = 10

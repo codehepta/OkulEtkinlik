@@ -118,5 +118,7 @@
 	"label.cetele.2": "||",
 	"label.cetele.3": "|||",
 	"label.cetele.4": "||||",
-	"label.cetele.5": "|||||"
+	"label.cetele.5": "|||||",
+	"session_end.call_grownup": "Bir büyüğünü çağır",
+	"album.title": "Çıkartma Albümüm"
 }
