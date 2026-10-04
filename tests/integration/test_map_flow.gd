@@ -263,3 +263,24 @@ func test_result_buttons_have_icons() -> void:
 	_app.goto("result", {"stars": 1, "new_sticker": "", "unlocked": "", "node_id": N1, "time_up": false, "subject": "matematik"})
 	assert_ne(str(_screen().continue_button().get("icon_key")), "")
 	assert_ne(str(_screen().replay_button().get("icon_key")), "")
+
+func test_region_labels_fit_inside_cards() -> void:
+	_login(1)
+	_app.goto("world_map")
+	await wait_frames(3)
+	var cards: Array[Button] = []
+	for subject: String in ["matematik", "turkce", "hayat_bilgisi", "fen"]:
+		cards.append(_screen().region_button(subject))
+	for card: Button in cards:
+		var rect: Rect2 = card.get_global_rect()
+		for label: Node in card.find_children("*", "Label", true, false):
+			var l: Label = label as Label
+			if not l.is_visible_in_tree():
+				continue
+			var lr: Rect2 = l.get_global_rect()
+			assert_true(rect.grow(1.0).encloses(lr), "yazı kartın içinde: %s" % l.text)
+			var font: Font = l.get_theme_font("font")
+			var widest: float = 0.0
+			for word: String in l.text.split(" "):
+				widest = maxf(widest, font.get_string_size(word, HORIZONTAL_ALIGNMENT_LEFT, -1, l.get_theme_font_size("font_size")).x)
+			assert_lte(widest, lr.size.x, "en uzun kelime satıra sığar: %s" % l.text)
