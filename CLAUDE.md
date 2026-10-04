@@ -4,7 +4,7 @@ MEB 1–3. sınıf öğretim programlarıyla (Türkiye Yüzyılı Maarif Modeli)
 
 ## Önce oku
 1. **Spec:** `docs/superpowers/specs/2026-10-04-bilgi-adasi-design.md`. Tasarımın tek doğruluk kaynağı budur.
-2. **Uygulama planı:** `docs/superpowers/plans/` altındaki en güncel plan. Görevleri sırayla uygula, tamamlananları `- [x]` olarak işaretle.
+2. **Uygulama planı:** `docs/superpowers/plans/` altındaki en güncel plan (şu an: `2026-10-04-faz0-faz1-dikey-dilim.md`). Görevleri sırayla uygula, tamamlananları `- [x]` olarak işaretle. Yürütme yöntemi: **subagent-driven** (her görev için ayrı uygulayıcı + ayrı gözden geçirici). Superpowers yoksa görevleri kendin sırayla uygula ve her görev sonunda testleri çalıştır.
 3. **Asset kuralları:** `docs/assets/style-guide.md`, `docs/assets/naming.md`, `asset-requests/README.md`.
 
 ## Sahibin kalıcı kuralları (pazarlık konusu değil)

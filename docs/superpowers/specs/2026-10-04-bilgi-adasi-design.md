@@ -89,10 +89,10 @@ Harita → bölge → patika → durak
 3. 3. yanlış: doğru cevap animasyonla gösterilir, tur "yardımlı" olarak işaretlenir ve **aynı beceri durağın sonunda yeniden sorulur**.
 
 ### 3.4 Uyarlanabilir motor
-- Her öğrenme çıktısı için bir **ustalık puanı** (0.0–1.0) tutulur. Güncelleme üstel hareketli ortalamayla yapılır: `m = m*0.7 + sonuç*0.3`. Sonuç değerleri: doğru ilk denemede 1.0, ikinci denemede 0.6, yardımlı 0.0.
+- Her öğrenme çıktısı için bir **ustalık puanı** (0.0–1.0) tutulur. Güncelleme üstel hareketli ortalamayla yapılır: `m = m*0.7 + sonuç*0.3`. Başlangıç değeri 0.0'dır. Sonuç değerleri: doğru ilk denemede 1.0, ikinci denemede 0.6, üçüncü denemede (ipucundan sonra) 0.3, yardımlı (çözüm gösterildi) 0.0.
 - **Aralıklı tekrar (Leitner, 5 kutu):** tekrar aralıkları 0, 1, 3, 7, 14 gün. Durağı ≥2 yıldızla bitiren çıktı bir kutu ilerler; yardımlı tur içeren çıktı 1. kutuya döner.
 - Patikada vadesi gelen çıktılar için **"Tekrar Bulutu"** durağı belirir. Bu durak, karışık sorulardan oluşan 3 turluk bir tekrar oturumudur.
-- **Zorluk seviyesi:** Her şablonun parametrelerinde `difficulty: 1..3` vardır. Ustalık ≥0.8 ise bir sonraki oynayışta seviye yükselir, ≤0.4 ise düşer.
+- **Zorluk seviyesi:** Her turun içerikte bir taban `difficulty: 1..3` değeri vardır. Oynanan seviye = taban + ayar, 1–3 aralığına sıkıştırılır. Ayar, turun ilk öğrenme çıktısının ustalığına göre belirlenir: ≥0.8 ise +1, ≤0.4 ise −1, arada 0. Daha ince ayar Faz 7'de yapılır.
 
 ### 3.5 Ödül sistemi
 - **Çıkartma Albümü:** her ders için bir sayfa. Durak tamamlandığında temaya uygun bir çıkartma kazanılır.
