@@ -1,0 +1,22 @@
+{
+	"chart_tally": { "template": "chart_build", "params": { "kind": "tally",
+		"categories": ["item.meyve.elma", "item.meyve.armut", "item.meyve.muz"], "counts": [3, 7, 2],
+		"questions": [
+			{ "ask": "most", "voice": "vo.test.q1" },
+			{ "ask": "count", "category": 1, "choices": [6, 7, 8], "voice": "vo.test.q2" } ] } },
+	"chart_table": { "template": "chart_build", "params": { "kind": "table",
+		"categories": ["item.meyve.elma", "item.meyve.armut", "item.meyve.muz", "item.meyve.cilek"], "counts": [4, 2, 5, 1],
+		"questions": [
+			{ "ask": "least", "voice": "vo.test.q1" },
+			{ "ask": "total", "choices": [11, 12, 13], "voice": "vo.test.q2" } ] } },
+	"chart_object": { "template": "chart_build", "params": { "kind": "object",
+		"categories": ["item.meyve.elma", "item.meyve.armut", "item.meyve.muz"], "counts": [5, 3, 4],
+		"questions": [
+			{ "ask": "diff", "a": 0, "b": 1, "choices": [1, 2, 3], "voice": "vo.test.q1" } ] } },
+	"chart_dot": { "template": "chart_build", "params": { "kind": "dot",
+		"categories": ["item.meyve.elma", "item.meyve.armut"], "counts": [6, 2],
+		"questions": [
+			{ "ask": "most", "voice": "vo.test.q1" },
+			{ "ask": "least", "voice": "vo.test.q2" },
+			{ "ask": "diff", "a": 0, "b": 1, "choices": [3, 4, 5, 6], "voice": "vo.test.q3" } ] } }
+}

@@ -16,7 +16,7 @@ Stil blokları: `docs/assets/style-guide.md` → `STYLE_ICON` (paralar, kadran) 
 
 | # | Dosya yolu | Oran | Referans | Ne |
 |---|---|---|---|---|
-| 1 | `assets/images/items/para/kr_1.png` | 1:1 | — | Madeni para: 1 kuruş (en küçük, bakır-bronz). |
+| 1 | ~~`assets/images/items/para/kr_1.png`~~ | 1:1 | — | **İptal (Faz 3b, S3):** 1 kuruş oyundan çıkarıldı, üretme. |
 | 2 | `assets/images/items/para/kr_5.png` | 1:1 | — | Madeni para: 5 kuruş (küçük, pirinç sarısı). |
 | 3 | `assets/images/items/para/kr_10.png` | 1:1 | — | Madeni para: 10 kuruş (pirinç sarısı, 5 kuruştan biraz büyük). |
 | 4 | `assets/images/items/para/kr_25.png` | 1:1 | — | Madeni para: 25 kuruş (koyu pirinç, orta boy). |
@@ -33,7 +33,9 @@ Stil blokları: `docs/assets/style-guide.md` → `STYLE_ICON` (paralar, kadran) 
 
 ## Promptlar
 
-### 1. `assets/images/items/para/kr_1.png`
+### 1. `assets/images/items/para/kr_1.png` — İPTAL
+
+> **Üretme.** 1 kuruş tedavülde neredeyse olmadığı için oyundan çıkarıldı (Faz 3b, S3). Kayıt numaralar kaymasın diye duruyor.
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  

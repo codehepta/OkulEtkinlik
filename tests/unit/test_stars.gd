@@ -20,3 +20,12 @@ func test_compute_three_wrong() -> void:
 func test_compute_four_wrong() -> void:
 	# total_wrong = 4 > 3 → 1 yıldız
 	assert_eq(Stars.compute(4), 1)
+
+# S7 (Faz 3b): çok adımlı turlar tur başına en çok 1 yanlış sayılır.
+func test_round_wrong_multi_step_capped_at_one() -> void:
+	assert_eq(Stars.round_wrong(3, true), 1)
+	assert_eq(Stars.round_wrong(0, true), 0)
+
+func test_round_wrong_single_step_unchanged() -> void:
+	assert_eq(Stars.round_wrong(3, false), 3)
+	assert_eq(Stars.round_wrong(1, false), 1)

@@ -1,15 +1,23 @@
 extends MiniGame
 ## Terazi ve sayı doğrusu.
 ## scale/compare: iki kefedeki değerleri karşılaştır (<, =, >). Kefeler destek takozlarıyla düz
-##   durur; doğru cevapta takozlar çekilir ve terazi ağır yana eğilir.
+##   durur; doğru cevapta takozlar çekilir ve terazi ağır yana eğilir. 1. sınıfta seçenekler sembol
+##   yerine "daha az / eşit / daha çok" sözcük kartıdır, üstlerinde ağır kefeyi gösteren minik terazi
+##   ikonu vardır (Faz 3b, S1). `item` gruplarında ipucu bire bir eşleme çizgileridir (MAT.1.1.4).
 ## scale/missing: bir kefedeki eksik değeri ("?") bul; doğru sayı konunca terazi dengelenir.
+## scale/estimate (Faz 3b, "tahmin et → kontrol et → karşılaştır"): önce tahmin seçilir (cevap
+##   sayılmaz), sonra kontrol edilir, en sonda tahminin sonuca "yakın" mı "uzak" mı olduğu seçilir.
+##   - `item` + `value`: sol kefede bir nesne; çocuk sağ kefeye birim küp ekleyerek tartar, terazi
+##     dengelenince sonuç bulunur (standart olmayan birimle kütle, MAT.1.1.8).
+##   - `left` / `right` + tek `null` + `choices`: zihinden işlem; eksik değer seçilerek bulunur
+##     (toplama ve çıkarma tahmini, MAT.1.2.2, 2.2.2, 3.2.1). İşlem + yargı: çok adımlı tur.
 ## number_line/find: işaretçinin durduğu çentiğin sayısını seç.
 ## number_line/place: verilen sayının çentiğine dokun.
 
 const Widgets: GDScript = preload("res://scenes/games/game_widgets.gd")
 const ASSET_IMAGE: PackedScene = preload("res://scenes/components/asset_image.tscn")
 const MODES: PackedStringArray = ["scale", "number_line"]
-const SCALE_ASKS: PackedStringArray = ["compare", "missing"]
+const SCALE_ASKS: PackedStringArray = ["compare", "missing", "estimate"]
 const LINE_ASKS: PackedStringArray = ["find", "place"]
 const MAX_VALUE: int = 1000
 const MAX_SIDE: int = 3
@@ -20,6 +28,28 @@ const MIN_CHOICES: int = 2
 const MAX_CHOICES: int = 4
 ## Karşılaştırma seçenekleri (sol ? sağ), sabit sırada.
 const RELATIONS: Array[String] = ["<", "=", ">"]
+## 1. sınıf sözcük kartları (RELATIONS ile aynı sıra: sol daha az / eşit / sol daha çok).
+const RELATION_WORD_KEYS: Array[String] = ["bal.word.less", "bal.word.equal", "bal.word.more"]
+## Sembol yerine sözcük kartı kullanan en yüksek sınıf.
+const WORD_GRADE_MAX: int = 1
+const WORD_CHOICE_SIZE: Vector2 = Vector2(320, 200)
+const WORD_FONT: int = 54
+const WORD_ICON_H: float = 74.0
+const PAIR_LINE_COLOR: Color = ClayStyle.COCOA
+# --- Tahmin modu ---
+const EstimateFlow: GDScript = preload("res://scenes/games/estimate_flow.gd")
+const Estimate: GDScript = preload("res://scripts/core/estimate.gd")
+const MAX_UNITS: int = 15
+const UNIT_SIDE: float = 64.0
+const UNIT_STEP: float = 70.0
+const UNITS_PER_ROW: int = 5
+const UNIT_COLOR: Color = ClayStyle.SKY
+const WEIGH_ITEM_SIDE: float = 190.0
+const EST_TILE: Vector2 = Vector2(240, 170)
+const EST_SLOT_LEFT: Rect2 = Rect2(300, 760, 240, 170)
+const EST_SLOT_RIGHT: Rect2 = Rect2(1380, 760, 240, 170)
+const ADD_RECT: Rect2 = Rect2(820, 760, 280, 170)
+const EST_DIFF_RECT: Rect2 = Rect2(885, 600, 150, 130)
 
 # --- Terazi ölçüleri ---
 const PIVOT: Vector2 = Vector2(960, 330)
@@ -75,6 +105,26 @@ var _missing_side: int = -1
 var _hint_total: int = -1
 var _tilt_tween: Tween = null
 var _item_count: int = 0
+## Kefe başına nesne görüntüleri (bire bir eşleme ipucu için).
+var _item_views: Array = [[], []]
+var _pairs_view: Control = null
+var _word_choices: bool = false
+# Tahmin modu
+## "" (tahmin modu değil), "estimate", "check" ya da "judge".
+var _phase: String = ""
+var _calc: bool = false
+var _estimates: Array[int] = []
+var _estimate_views: Array[Control] = []
+var _estimate: int = -1
+var _result: int = 0
+var _tol: int = 1
+var _units: int = 0
+var _unit_box: Control = null
+var _add_button: Control = null
+var _counter: Control = null
+var _judge_views: Array[Control] = []
+var _judge_correct: int = -1
+var _diff_tile: Control = null
 # Sayı doğrusu
 var _min: int = 0
 var _max: int = 10
@@ -98,6 +148,9 @@ func setup(params: Dictionary, difficulty_value: int, context: RoundContext) -> 
 # ================= Terazi =================
 
 func _setup_scale(params: Dictionary) -> void:
+	if _ask == "estimate":
+		_setup_estimate(params)
+		return
 	_left = (params["left"] as Array).duplicate()
 	_right = (params["right"] as Array).duplicate()
 	_item = str(params.get("item", ""))
@@ -116,7 +169,16 @@ func _setup_scale(params: Dictionary) -> void:
 		var l: int = _sum(_left)
 		var r: int = _sum(_right)
 		_correct = 0 if l < r else (1 if l == r else 2)
-		_build_choices(RELATIONS)
+		_word_choices = ctx.grade <= WORD_GRADE_MAX
+		if _word_choices:
+			var words: Array[String] = []
+			for k: String in RELATION_WORD_KEYS:
+				words.append(Strings.t(k))
+			_build_choices(words, WORD_CHOICE_SIZE, WORD_FONT)
+			for i: int in _choice_views.size():
+				_add_relation_icon(_choice_views[i], i)
+		else:
+			_build_choices(RELATIONS)
 		_set_angle(0.0)
 	else:
 		_missing_side = 0 if _left.has(null) else 1
@@ -173,6 +235,7 @@ func _make_pan(values: Array, side: int) -> Control:
 			img.size = Vector2(ITEM_SIDE, ITEM_SIDE)
 			var x0: float = (PAN_SIZE.x - in_row * ITEM_SIDE) / 2.0
 			img.position = Vector2(x0 + col * ITEM_SIDE, top_y - (row + 1) * ITEM_SIDE)
+			(_item_views[side] as Array).append(img)
 	else:
 		var w: float = values.size() * BLOCK_SIZE.x + (values.size() - 1) * BLOCK_GAP
 		var x: float = (PAN_SIZE.x - w) / 2.0
@@ -235,6 +298,8 @@ func _set_angle(a: float) -> void:
 		_pans[side].position = Vector2(e.x - PAN_SIZE.x / 2.0, e.y + HANG - PAN_SIZE.y)
 	if _rig != null:
 		_rig.queue_redraw()
+	if _pairs_view != null:
+		_pairs_view.queue_redraw()
 
 func _tilt_to(a: float) -> void:
 	if _tilt_tween != null and _tilt_tween.is_valid():
@@ -257,6 +322,227 @@ func _lower_supports(ratio: float) -> void:
 			var tw: Tween = s.create_tween().set_parallel(true)
 			tw.tween_property(s, "position:y", y, TILT_SECONDS)
 			tw.tween_property(s, "modulate:a", 1.0 - ratio * 0.9, TILT_SECONDS)
+
+# ================= Tahmin modu =================
+
+func _setup_estimate(params: Dictionary) -> void:
+	_phase = "estimate"
+	for e: Variant in params["estimates"] as Array:
+		_estimates.append(int(e))
+	_calc = not params.has("item")
+	_rig = Control.new()
+	_rig.name = "Rig"
+	_rig.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	_rig.size = BASE_SIZE
+	_rig.draw.connect(_draw_rig)
+	add_child(_rig)
+	if _calc:
+		_left = (params["left"] as Array).duplicate()
+		_right = (params["right"] as Array).duplicate()
+		for side: int in 2:
+			_pans.append(_make_pan(_left if side == 0 else _right, side))
+		_missing_side = 0 if _left.has(null) else 1
+		_result = _sum(_right if _missing_side == 0 else _left) - _sum(_left if _missing_side == 0 else _right)
+		for c: Variant in params["choices"] as Array:
+			_choice_values.append(int(c))
+		_correct = _choice_values.find(_result)
+		_set_angle(_tilt_for(_sum(_left), _sum(_right)))
+	else:
+		_item = str(params["item"])
+		_result = int(params["value"])
+		_pans.append(_make_weigh_pan(0))
+		_pans.append(_make_weigh_pan(1))
+		_set_angle(_tilt_for(_result, 0))
+	_tol = int(params["near"]) if params.has("near") else Estimate.tolerance(_result)
+	_estimate_views = EstimateFlow.make_estimate_row(self, _estimates, CHOICE_Y, EST_TILE, CHOICE_GAP)
+	for i: int in _estimate_views.size():
+		_estimate_views[i].gui_input.connect(_on_choice_input.bind(i))
+
+## Tartma kefeleri: sol kefede tartılan nesne, sağ kefede birim küplerin yığılacağı alan.
+func _make_weigh_pan(side: int) -> Control:
+	var pan: Control = Control.new()
+	pan.name = "Pan%d" % side
+	pan.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	pan.size = PAN_SIZE
+	pan.draw.connect(func() -> void:
+		var dish: Rect2 = Rect2(Vector2(0, PAN_SIZE.y - DISH_H), Vector2(PAN_SIZE.x, DISH_H))
+		pan.draw_style_box(ClayStyle.plaque_box(DISH_COLOR, DISH_COLOR.darkened(0.3), 14, 4, 6, 8), dish))
+	add_child(pan)
+	var top_y: float = PAN_SIZE.y - DISH_H - 4.0
+	if side == 0:
+		var img: Control = ASSET_IMAGE.instantiate() as Control
+		img.set("key", _item)
+		img.set("min_side", 0.0)
+		img.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		pan.add_child(img)
+		img.custom_minimum_size = Vector2(WEIGH_ITEM_SIDE, WEIGH_ITEM_SIDE)
+		img.size = Vector2(WEIGH_ITEM_SIDE, WEIGH_ITEM_SIDE)
+		img.position = Vector2((PAN_SIZE.x - WEIGH_ITEM_SIDE) / 2.0, top_y - WEIGH_ITEM_SIDE)
+	else:
+		_unit_box = Control.new()
+		_unit_box.name = "Units"
+		_unit_box.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		_unit_box.size = PAN_SIZE
+		pan.add_child(_unit_box)
+	return pan
+
+## Birim küp: kil kare + ışık lekesi (görsel gerekmez, kodla çizilir).
+func _add_unit_cube() -> void:
+	var k: int = _units
+	var row: int = k / UNITS_PER_ROW
+	var col: int = k % UNITS_PER_ROW
+	var x0: float = (PAN_SIZE.x - UNITS_PER_ROW * UNIT_STEP) / 2.0 + (UNIT_STEP - UNIT_SIDE) / 2.0
+	var cube: Control = Control.new()
+	cube.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	cube.size = Vector2(UNIT_SIDE, UNIT_SIDE)
+	cube.position = Vector2(x0 + col * UNIT_STEP, PAN_SIZE.y - DISH_H - 4.0 - (row + 1) * UNIT_STEP + (UNIT_STEP - UNIT_SIDE))
+	cube.draw.connect(func() -> void:
+		cube.draw_style_box(ClayStyle.plaque_box(UNIT_COLOR, UNIT_COLOR.darkened(0.3), 12, 4, 5, 6), Rect2(Vector2.ZERO, cube.size))
+		cube.draw_circle(Vector2(18, 16), 7.0, Color(1, 1, 1, 0.4), true, -1.0, true))
+	_unit_box.add_child(cube)
+	_units += 1
+
+## Tahmin seçilir (cevap sayılmaz): karo sol yuvaya geçer, kontrol adımı başlar.
+func _pick_estimate(index: int, forced: bool = false) -> void:
+	if _phase != "estimate" or not (forced or _can_input()) or index < 0 or index >= _estimates.size():
+		return
+	_tap_feedback(_estimate_views[index])
+	_estimate = _estimates[index]
+	for i: int in _estimate_views.size():
+		if i != index:
+			_estimate_views[i].queue_free()
+	var chosen: Control = _estimate_views[index]
+	chosen.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	chosen.position = EST_SLOT_LEFT.position
+	chosen.size = EST_SLOT_LEFT.size
+	_estimate_views = [chosen]
+	_phase = "check"
+	if _calc:
+		var labels: Array[String] = []
+		for v: int in _choice_values:
+			labels.append(str(v))
+		_build_choices(labels)
+		narrator.say(EstimateFlow.VOICE_CALC)
+	else:
+		_counter = Widgets.make_tile(self, "0", EST_SLOT_RIGHT, 96, EstimateFlow.RESULT_COLOR)
+		_counter.name = "Counter"
+		_counter.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		_add_button = Widgets.make_tile(self, "+", ADD_RECT, 120, UNIT_COLOR)
+		_add_button.name = "AddUnit"
+		var label: Control = _add_button.get_node_or_null("Label") as Control
+		if label != null:
+			label.offset_left = 110.0
+		var icon: Control = Control.new()
+		icon.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		icon.position = Vector2(34, 46)
+		icon.size = Vector2(UNIT_SIDE, UNIT_SIDE)
+		icon.draw.connect(func() -> void:
+			icon.draw_style_box(ClayStyle.plaque_box(UNIT_COLOR.lightened(0.2), UNIT_COLOR.darkened(0.35), 12, 4, 5, 6), Rect2(Vector2.ZERO, icon.size)))
+		_add_button.add_child(icon)
+		_add_button.gui_input.connect(func(event: InputEvent) -> void:
+			if is_press(event):
+				_add_unit())
+		narrator.say(EstimateFlow.VOICE_WEIGH)
+
+## Kontrol (tartma): bir küp eklenir, terazi yeni duruma eğilir; dengelenince yargıya geçilir.
+## Küp eklemek cevap sayılmaz; terazi dengelenene kadar her dokunuş geçerlidir.
+func _add_unit() -> void:
+	if _phase != "check" or _calc or _busy or _done or _units >= _result:
+		return
+	_tap_feedback(_add_button)
+	_add_unit_cube()
+	_counter.set("text", str(_units))
+	_tilt_to(_tilt_for(_result, _units))
+	if _units == _result:
+		_start_judge()
+
+func _start_judge() -> void:
+	_phase = "judge"
+	if _add_button != null:
+		_add_button.queue_free()
+		_add_button = null
+	for v: Control in _choice_views:
+		v.queue_free()
+	_choice_views.clear()
+	if _calc and _counter == null:
+		_counter = Widgets.make_tile(self, str(_result), EST_SLOT_RIGHT, 96, EstimateFlow.RESULT_COLOR)
+		_counter.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	_judge_correct = Estimate.judge_index(_estimate, _result, _tol)
+	_judge_views = EstimateFlow.make_judge_cards(self, BASE_SIZE.x / 2.0, CHOICE_Y - 10.0)
+	for i: int in _judge_views.size():
+		_judge_views[i].gui_input.connect(_on_choice_input.bind(i))
+	narrator.say(EstimateFlow.VOICE_JUDGE)
+
+## Tahmin modunda dokunma: adıma göre tahmin, işlem sonucu ya da yargı kartı.
+func _choose_estimate_mode(index: int) -> void:
+	if _phase == "estimate":
+		_pick_estimate(index)
+	elif _phase == "check" and _calc:
+		if not _can_input() or index < 0 or index >= _choice_views.size():
+			return
+		_tap_feedback(_choice_views[index])
+		if index == _correct:
+			_resolve_calc()
+			_submit_answer(true, false)
+			_start_judge()
+		else:
+			_submit_answer(false)
+	elif _phase == "judge":
+		if not _can_input() or index < 0 or index >= _judge_views.size():
+			return
+		_tap_feedback(_judge_views[index])
+		_submit_answer(index == _judge_correct)
+
+func _resolve_calc() -> void:
+	_missing_tile.set("text", str(_result))
+	_missing_tile.set("clay_color", ClayStyle.MINT)
+	_missing_tile.modulate.a = 1.0
+	_tilt_to(0.0)
+
+## Tahmin + kontrol adımlarını tamamlar (ipucu 2 ve test yolu); yargıda durur.
+func _fast_forward() -> void:
+	if _phase == "estimate":
+		_pick_estimate(_estimates.size() / 2, true)
+	if _phase == "check":
+		if _calc:
+			_resolve_calc()
+			_start_judge()
+		else:
+			while _units < _result:
+				_add_unit_cube()
+			_counter.set("text", str(_units))
+			_tilt_to(0.0)
+			_start_judge()
+
+func _is_multi_step() -> bool:
+	return _ask == "estimate" and _calc
+
+func _hint_estimate() -> void:
+	if _phase == "judge":
+		if _diff_tile == null:
+			_diff_tile = EstimateFlow.make_diff_tile(self, _estimate, _result, EST_DIFF_RECT)
+			_glow(_diff_tile)
+	elif _phase == "check" and not _calc:
+		_glow(_add_button)
+	elif _phase == "check" and _hint_total < 0:
+		var full_side: int = 1 - _missing_side
+		_hint_total = _sum(_left if full_side == 0 else _right)
+		var pan: Control = _pans[full_side]
+		var t: Control = Widgets.make_tile(pan, str(_hint_total), Rect2(Vector2((PAN_SIZE.x - 170.0) / 2.0 + (-110.0 if full_side == 0 else 110.0), -150.0), Vector2(170, 130)), 72, ClayStyle.BUTTER)
+		t.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		_glow(t)
+
+func _debug_estimate(index: int) -> void:
+	_pick_estimate(index)
+
+func _debug_add_unit() -> void:
+	_add_unit()
+
+func phase() -> String:
+	return _phase
+
+func unit_count() -> int:
+	return _units
 
 # ================= Sayı doğrusu =================
 
@@ -373,21 +659,53 @@ func _on_column_input(event: InputEvent, index: int) -> void:
 
 # ================= Ortak seçim =================
 
-func _build_choices(labels: Array[String]) -> void:
-	var total: float = labels.size() * CHOICE_SIZE.x + (labels.size() - 1) * CHOICE_GAP
+func _build_choices(labels: Array[String], tile_size: Vector2 = CHOICE_SIZE, font: int = -1) -> void:
+	var total: float = labels.size() * tile_size.x + (labels.size() - 1) * CHOICE_GAP
 	var x0: float = (BASE_SIZE.x - total) / 2.0
+	var y: float = CHOICE_Y - (tile_size.y - CHOICE_SIZE.y) / 2.0
 	for i: int in labels.size():
-		var t: Control = Widgets.make_tile(self, labels[i], Rect2(Vector2(x0 + i * (CHOICE_SIZE.x + CHOICE_GAP), CHOICE_Y), CHOICE_SIZE),
-			CHOICE_FONT if labels[i].length() < 4 else CHOICE_FONT - 24, ClayStyle.PEACH)
+		var fs: int = font if font > 0 else (CHOICE_FONT if labels[i].length() < 4 else CHOICE_FONT - 24)
+		var t: Control = Widgets.make_tile(self, labels[i], Rect2(Vector2(x0 + i * (tile_size.x + CHOICE_GAP), y), tile_size), fs, ClayStyle.PEACH)
 		t.name = "Choice%d" % i
 		t.gui_input.connect(_on_choice_input.bind(i))
 		_choice_views.append(t)
+
+## Sözcük kartının üstüne minik terazi ikonu: ağır kefe aşağıda ve içinde ağırlık topu var
+## (sözcük okunamasa da ilişki şekilden anlaşılır; renk tek başına anlam taşımaz).
+func _add_relation_icon(tile: Control, relation: int) -> void:
+	var label: Control = tile.get_node_or_null("Label") as Control
+	if label != null:
+		label.offset_top = WORD_ICON_H
+	var icon: Control = Control.new()
+	icon.name = "RelationIcon"
+	icon.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	icon.position = Vector2(0, 8)
+	icon.size = Vector2(tile.size.x, WORD_ICON_H)
+	# 0: sağ ağır (sol daha az), 1: denge, 2: sol ağır.
+	var tilt: float = [0.26, 0.0, -0.26][relation]
+	icon.draw.connect(func() -> void:
+		var c: Vector2 = Vector2(icon.size.x / 2.0, 30.0)
+		var arm: float = 84.0
+		var d: Vector2 = Vector2(arm, 0).rotated(tilt)
+		icon.draw_line(c - d, c + d, ClayStyle.COCOA, 8.0, true)
+		icon.draw_line(c, c + Vector2(0, 34), ClayStyle.COCOA, 8.0, true)
+		icon.draw_circle(c, 9.0, ClayStyle.HONEY, true, -1.0, true)
+		for k: int in 2:
+			var e: Vector2 = c - d if k == 0 else c + d
+			var heavy: bool = (k == 0 and relation == 2) or (k == 1 and relation == 0)
+			icon.draw_arc(e + Vector2(0, 10), 26.0, 0.0, PI, 16, ClayStyle.COCOA, 6.0, true)
+			if heavy or relation == 1:
+				icon.draw_circle(e + Vector2(0, 18), 11.0, ClayStyle.CLAY_EDGE, true, -1.0, true))
+	tile.add_child(icon)
 
 func _on_choice_input(event: InputEvent, index: int) -> void:
 	if is_press(event):
 		_choose(index)
 
 func _choose(index: int) -> void:
+	if _phase != "":
+		_choose_estimate_mode(index)
+		return
 	var n: int = _columns.size() if _is_place() else _choice_views.size()
 	if not _can_input() or index < 0 or index >= n:
 		return
@@ -439,7 +757,11 @@ func show_hint(level: int) -> void:
 		_solve()
 
 func _hint_one() -> void:
-	if _mode == "scale" and _ask == "compare":
+	if _phase != "":
+		_hint_estimate()
+	elif _mode == "scale" and _ask == "compare" and _item != "":
+		_show_pairs()
+	elif _mode == "scale" and _ask == "compare":
 		# Takozlar yarıya iner, terazi son açısının yarısı kadar eğilir.
 		_lower_supports(0.5)
 		_tilt_to(_tilt_for(_sum(_left), _sum(_right)) * 0.5)
@@ -462,10 +784,63 @@ func _hint_one() -> void:
 			if _label_views.has(i):
 				_glow(_label_views[i])
 
+## Nesne gruplarında ipucu 1: iki kefedeki nesneler bire bir çizgiyle eşlenir, eşi olmayanlar
+## parlar (hangi grubun daha çok olduğu sayı bilmeden görülür).
+func _show_pairs() -> void:
+	if _pairs_view != null:
+		return
+	_pairs_view = Control.new()
+	_pairs_view.name = "Pairs"
+	_pairs_view.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	_pairs_view.size = BASE_SIZE
+	_pairs_view.draw.connect(_draw_pairs)
+	add_child(_pairs_view)
+	var left: Array = _item_views[0]
+	var right: Array = _item_views[1]
+	var n: int = mini(left.size(), right.size())
+	for side: Array in [left, right]:
+		for k: int in range(n, side.size()):
+			_glow(side[k] as Control)
+
+func _draw_pairs() -> void:
+	var left: Array = _item_views[0]
+	var right: Array = _item_views[1]
+	for k: int in pair_count():
+		var a: Control = left[k] as Control
+		var b: Control = right[k] as Control
+		var pa: Vector2 = a.global_position - global_position + a.size / 2.0
+		var pb: Vector2 = b.global_position - global_position + b.size / 2.0
+		_pairs_view.draw_line(pa, pb, Color(PAIR_LINE_COLOR, 0.7), 6.0, true)
+		_pairs_view.draw_circle(pa, 9.0, PAIR_LINE_COLOR, true, -1.0, true)
+		_pairs_view.draw_circle(pb, 9.0, PAIR_LINE_COLOR, true, -1.0, true)
+
+## Bire bir eşleme ipucunda çizilen çizgi sayısı (ipucu yoksa 0).
+func pair_count() -> int:
+	if _pairs_view == null:
+		return 0
+	return mini((_item_views[0] as Array).size(), (_item_views[1] as Array).size())
+
+func choice_labels() -> Array[String]:
+	var res: Array[String] = []
+	for v: Control in _choice_views:
+		res.append(str(v.get("text")))
+	return res
+
+func has_relation_icons() -> bool:
+	return not _choice_views.is_empty() and _choice_views[0].get_node_or_null("RelationIcon") != null
+
 ## İpucu 2: doğru seçenek / çentik parlar ve seçilir.
 func _solve() -> void:
 	_busy = true
 	helped = true
+	if _phase != "":
+		_fast_forward()
+		_glow(_judge_views[_judge_correct])
+		await _wait(0.6)
+		_busy = false
+		if not _done:
+			_submit_answer(true)
+		return
 	var view: Control = _columns[_correct] if _is_place() else _choice_views[_correct]
 	_glow(view)
 	await _wait(0.6)
@@ -481,10 +856,17 @@ func _debug_choose(index: int) -> void:
 	_choose(index)
 
 func _debug_correct_index() -> int:
+	if _phase == "judge":
+		return _judge_correct
 	return _correct
 
 func _debug_answer(correct: bool) -> void:
-	_choose(_correct if correct else (0 if _correct != 0 else 1))
+	if _phase == "estimate":
+		_pick_estimate(0)
+	if _phase == "check" and not _calc:
+		_fast_forward()
+	var right: int = _debug_correct_index()
+	_choose(right if correct else (0 if right != 0 else 1))
 
 func beam_angle() -> float:
 	return _angle
@@ -506,6 +888,13 @@ func labeled_ticks() -> Array[int]:
 	return res
 
 func touch_targets() -> Array[Control]:
+	match _phase:
+		"estimate":
+			return _estimate_views.duplicate()
+		"check":
+			return _choice_views.duplicate() if _calc else ([_add_button] as Array[Control])
+		"judge":
+			return _judge_views.duplicate()
 	return _columns.duplicate() if _is_place() else _choice_views.duplicate()
 
 # ================= Doğrulama =================
@@ -521,6 +910,8 @@ static func validate_params(p: Dictionary) -> Array[String]:
 	if not (ask is String) or not asks.has(ask as String):
 		errs.append(ContentValidator.msg("err.params.bal_ask"))
 		return errs
+	if mode == "scale" and ask == "estimate":
+		return _validate_estimate(p)
 	if mode == "scale":
 		return _validate_scale(p, ask as String)
 	return _validate_line(p, ask as String)
@@ -563,6 +954,37 @@ static func _validate_scale(p: Dictionary, ask: String) -> Array[String]:
 	if not answer_ok:
 		errs.append(ContentValidator.msg("err.params.bal_missing_range"))
 	errs.append_array(_validate_choices(p.get("choices"), answer if answer_ok else -1))
+	return errs
+
+## Tahmin modu: `item` + `value` (1–15 birim küp) ya da eksik değerli işlem (missing kuralları);
+## tahmin seçenekleri arasında hem yakın hem uzak olan bulunmalı.
+static func _validate_estimate(p: Dictionary) -> Array[String]:
+	var errs: Array[String] = []
+	if not Estimate.valid_estimates(p.get("estimates"), MAX_VALUE):
+		errs.append(ContentValidator.msg("err.params.est_values"))
+		return errs
+	if p.has("near") and not (ContentValidator.is_int_like(p["near"]) and int(p["near"]) >= 1):
+		errs.append(ContentValidator.msg("err.params.est_near"))
+		return errs
+	var result: int = -1
+	if p.has("item"):
+		var item: Variant = p["item"]
+		var v: Variant = p.get("value")
+		if not (item is String) or (item as String).is_empty() or not ContentValidator.is_int_like(v) or int(v) < 1 or int(v) > MAX_UNITS:
+			errs.append(ContentValidator.msg("err.params.est_weigh"))
+			return errs
+		result = int(v)
+	else:
+		errs.append_array(_validate_scale(p, "missing"))
+		if not errs.is_empty():
+			return errs
+		var left: Array = p["left"] as Array
+		var right: Array = p["right"] as Array
+		var on_left: bool = left.has(null)
+		result = _sum(right if on_left else left) - _sum(left if on_left else right)
+	var tol: int = int(p["near"]) if p.has("near") else Estimate.tolerance(result)
+	if not Estimate.both_judgements_possible(p["estimates"] as Array, result, tol):
+		errs.append(ContentValidator.msg("err.params.est_judgement"))
 	return errs
 
 static func _validate_line(p: Dictionary, ask: String) -> Array[String]:

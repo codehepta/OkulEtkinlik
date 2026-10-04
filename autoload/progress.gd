@@ -239,7 +239,7 @@ func store_decor(profile_id: String, key: String) -> void:
 func _stars_of(results: Array[RoundResult]) -> int:
 	var total_wrong: int = 0
 	for r: RoundResult in results:
-		total_wrong += r.wrong
+		total_wrong += Stars.round_wrong(r.wrong, r.multi_step)
 	return Stars.compute(total_wrong)
 
 ## Turların ustalığını işler. leitner: kutu ve vade de güncellenir. Kutu değişmiyorsa
