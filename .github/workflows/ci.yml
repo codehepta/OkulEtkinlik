@@ -48,6 +48,9 @@ jobs:
           java-version: "17"
 
       - uses: android-actions/setup-android@v3
+        with:
+          # Varsayılan 'tools' paketi artık yok; yalnızca gerekenleri iste.
+          packages: "platform-tools build-tools;35.0.1 platforms;android-35"
 
       - name: Export şablonları önbelleği
         uses: actions/cache@v4
