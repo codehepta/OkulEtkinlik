@@ -9,7 +9,7 @@ const FONT_SIZE: int = 72
 		text = value
 		if is_node_ready():
 			_label.text = text
-@export var clay_color: Color = Color(0.96, 0.78, 0.55):
+@export var clay_color: Color = ClayStyle.APRICOT:
 	set(value):
 		clay_color = value
 		if is_node_ready():
@@ -21,12 +21,9 @@ func _ready() -> void:
 	custom_minimum_size = Vector2(128, 128)
 	_label.add_theme_font_size_override("font_size", FONT_SIZE)
 	_label.text = text
+	# Yazı kil derinliğinin (kalın alt kenar) üstünde ortalansın.
+	_label.offset_bottom = -float(ClayStyle.DEPTH)
 	_apply_style()
 
 func _apply_style() -> void:
-	var style: StyleBoxFlat = StyleBoxFlat.new()
-	style.bg_color = clay_color
-	style.set_corner_radius_all(CORNER_RADIUS)
-	style.border_color = clay_color.darkened(0.2)
-	style.set_border_width_all(4)
-	add_theme_stylebox_override("panel", style)
+	add_theme_stylebox_override("panel", ClayStyle.box(clay_color, CORNER_RADIUS))

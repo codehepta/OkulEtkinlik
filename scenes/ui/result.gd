@@ -3,7 +3,7 @@ extends Control
 
 const NarrationWait: GDScript = preload("res://scripts/ui/narration_wait.gd")
 
-const BG_COLOR: Color = Color(0.31, 0.7, 0.53)
+const BG_COLOR: Color = ClayStyle.MEADOW
 const STICKER_SIZE: Vector2 = Vector2(256, 256)
 const STEP_SECONDS: float = 0.5
 
@@ -40,6 +40,10 @@ func enter(a: Dictionary) -> void:
 		return
 	_build()
 	_run()
+
+## Altyazı balonu üstte: alttaki düğmelerle çakışmaz.
+func subtitle_placement() -> String:
+	return "top"
 
 func continue_button() -> Button:
 	return _continue
@@ -108,10 +112,10 @@ func _build() -> void:
 	row.alignment = BoxContainer.ALIGNMENT_CENTER
 	row.add_theme_constant_override("separation", 48)
 	col.add_child(row)
-	_replay = _button("result.replay", "ui.back", Color(0.96, 0.78, 0.55))
+	_replay = _button("result.replay", "ui.back", ClayStyle.APRICOT)
 	_replay.pressed.connect(_on_replay)
 	row.add_child(_replay)
-	_continue = _button("result.continue", "ui.check", Color(0.55, 0.85, 0.6))
+	_continue = _button("result.continue", "ui.check", ClayStyle.MINT)
 	_continue.pressed.connect(_on_continue)
 	row.add_child(_continue)
 

@@ -13,7 +13,8 @@ var _panel: Panel
 var _label: Label
 
 func _ready() -> void:
-	custom_minimum_size = Vector2(128, 128)
+	# Eklenmeden önce verilen daha büyük boyut korunur; en az 128×128.
+	custom_minimum_size = custom_minimum_size.max(Vector2(128, 128))
 	expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 	_panel = $Placeholder as Panel
@@ -26,10 +27,7 @@ func _refresh() -> void:
 	_panel.visible = tex == null
 	if tex != null:
 		return
-	var style: StyleBoxFlat = StyleBoxFlat.new()
-	style.bg_color = AssetPaths.placeholder_color(key)
-	style.set_corner_radius_all(CORNER_RADIUS)
-	_panel.add_theme_stylebox_override("panel", style)
+	_panel.add_theme_stylebox_override("panel", ClayStyle.panel_box(AssetPaths.placeholder_color(key), CORNER_RADIUS))
 	_label.text = _label_text()
 
 func _label_text() -> String:
