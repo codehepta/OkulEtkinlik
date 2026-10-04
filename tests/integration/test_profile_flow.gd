@@ -46,11 +46,10 @@ func _screen() -> Node:
 
 func _lock_profile(id: String) -> void:
 	_save.data["settings"]["daily_limit_min"] = 10
-	for p: Variant in _save.data["profiles"]:
-		var d: Dictionary = p
-		if str(d["id"]) == id:
-			d["usage"]["seconds"] = 9999
-			d["usage"]["day"] = _timer._effective_day()
+	# Süre sınırı cihaz başınadır; profil kimliği yalnızca çağrıyı okunur kılmak için.
+	assert_ne(id, "")
+	_save.data["usage"]["seconds"] = 9999
+	_save.data["usage"]["day"] = _timer._effective_day()
 
 func test_splash_without_profiles_goes_to_create() -> void:
 	var splash: Control = (load("res://scenes/ui/splash.tscn") as PackedScene).instantiate() as Control

@@ -1,7 +1,8 @@
 extends Control
 ## Bölge patikası: dersin bütün durakları yatay kaydırılabilir kıvrımlı, kalın kil bir yolda
 ## dizilir. Her durağın üstünde numaralı kil rozet vardır; açık durak hafifçe nabız atar.
-## Ekrana sığmayan duraklar için kenarlarda kaydırma okları görünür.
+## Ekrana sığmayan duraklar için kenarlarda kaydırma okları görünür. Dersin vadesi gelen
+## çıktıları varsa sağ üstte Tekrar Bulutu durağı belirir (spec §3.4).
 
 const NarrationWait: GDScript = preload("res://scripts/ui/narration_wait.gd")
 
@@ -47,6 +48,10 @@ const ARROW_STEP: float = 760.0
 const ARROW_SCROLL_SECONDS: float = 0.45
 const GLOW_COLOR: Color = ClayStyle.GLOW
 const SHAKE_PIXELS: float = 14.0
+## Tekrar Bulutu durağı: ev düğmesinin solunda, durakların üstündeki şeritte.
+const CLOUD_SIZE: Vector2 = Vector2(224, 176)
+const CLOUD_RIGHT: float = 176.0
+const CLOUD_TOP: float = 16.0
 
 var app: Node = AppState
 var args: Dictionary = {}
@@ -64,6 +69,7 @@ var _centers: Dictionary = {}
 var _arrow_left: Button = null
 var _arrow_right: Button = null
 var _navigating: bool = false
+var _review_button: Button = null
 
 func _ready() -> void:
 	app.session_timer.limit_reached.connect(_on_limit_reached)
@@ -87,7 +93,7 @@ func enter(a: Dictionary) -> void:
 	_highlight = highlight if _ids.has(highlight) else ""
 	_build()
 	app.audio.play_music("music." + _region)
-	app.narrator.say("vo.genel.durak_sec")
+	app.narrator.say("vo.genel.tekrar_bulutu" if _review_button != null else "vo.genel.durak_sec")
 
 ## İçeriği olmayan ders: Bilge "yakında" der, harita açılır.
 func _coming_soon() -> void:
@@ -125,6 +131,17 @@ func tap_stop(node_id: String) -> void:
 		return
 	_navigating = true
 	app.goto("lesson", {"node_id": node_id})
+
+## Tekrar Bulutu durağı (vadesi gelen çıktı yoksa null).
+func review_button() -> Button:
+	return _review_button
+
+## Tekrar Bulutu oturumunu başlatır.
+func tap_review() -> void:
+	if _navigating or _review_button == null:
+		return
+	_navigating = true
+	app.goto("lesson", {"review": subject})
 
 func _on_limit_reached() -> void:
 	app.goto("session_end")
@@ -201,6 +218,30 @@ func _build() -> void:
 	home.offset_bottom = 152.0
 	home.pressed.connect(func() -> void: app.goto("world_map"))
 	add_child(home)
+	if not app.progress.review_codes(app.profile_id, subject).is_empty():
+		_review_button = _cloud_button()
+		add_child(_review_button)
+
+## Tekrar Bulutu: hafifçe süzülen kil bulut; hareket azaltılmışsa sabit durur.
+func _cloud_button() -> Button:
+	var b: Button = Button.new()
+	b.name = "ReviewCloud"
+	b.focus_mode = Control.FOCUS_NONE
+	for st: String in ["normal", "hover", "pressed", "focus"]:
+		b.add_theme_stylebox_override(st, StyleBoxEmpty.new())
+	b.set_anchors_preset(Control.PRESET_TOP_RIGHT)
+	b.offset_left = -CLOUD_RIGHT - CLOUD_SIZE.x
+	b.offset_right = -CLOUD_RIGHT
+	b.offset_top = CLOUD_TOP
+	b.offset_bottom = CLOUD_TOP + CLOUD_SIZE.y
+	var img: Control = _image("map.stop_review")
+	img.set_anchors_preset(Control.PRESET_FULL_RECT)
+	img.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	b.add_child(img)
+	img.set("stretch_mode", TextureRect.STRETCH_KEEP_ASPECT_CENTERED)
+	b.pressed.connect(tap_review)
+	_pulse(b)
+	return b
 
 ## Patika eğrisi: ilk duraktan son durağa yumuşak sinüs.
 func _path_points() -> PackedVector2Array:
