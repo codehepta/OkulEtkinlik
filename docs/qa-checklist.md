@@ -50,3 +50,49 @@ Her maddeyi sırayla uygula; "Beklenen" ile uyuşmayan her şeyi not al.
 
 ## 8. Asset yokken
 Gerçek görsel/ses henüz yok. Beklenen: yer tutucular görünür, sesler TTS'e düşer; hiçbir ekran takılmaz ya da çökmez.
+
+---
+
+# Faz 3a — Altı yeni mini oyun şablonu
+
+Bu şablonların henüz ünite içeriği yok (içerik Faz 2 matrisinden sonra yazılacak). Cihazda denemek için geliştirici bir test durağı ekler ya da `tools/ui_screenshots.gd` karelerine (29–43) bakılır. Her şablonda ortak kontroller:
+
+- **Hata akışı:** 1. yanlış → yönerge tekrar; 2. yanlış → şablonun ipucu 1'i; 3. yanlış → çözüm kendiliğinden gösterilir ve tur biter. Hiçbir şablonda tur takılı kalmamalı.
+- **Dokunma:** bütün düğmeler, kartlar, balonlar, çentik şeritleri, dilimler çocuk parmağıyla rahat basılıyor; yanlış hedefe basma olmuyor.
+- **Hareketi azalt** açıkken salınım / zıplama / eğilme animasyonları kapanır ya da anında olur; hiçbir yerde yanıp sönme yok.
+- **Renk körlüğü:** cihazda Ayarlar → Erişilebilirlik → Renk düzeltme (gri tonlama) açılınca da her soru çözülebiliyor.
+
+## sequence (sıraya diz)
+1. Kartı parmakla sürükle, doğru yuvaya bırak. Beklenen: kart yerine oturur; yanlış yuvada geri seker; yuva dışına bırakınca sessizce geri döner (yanlış sayılmaz).
+2. Zorluk 1'de ilk (ve 4+ kartta son) kart baştan yerinde durur.
+3. İpucu 1: sıradaki boş yuva ve ona ait kart parlar. Çözüm: kalan kartlar soldan sağa sırayla yerleşir.
+
+## balloon_pop (balon patlat)
+1. Balonlar yerinde hafifçe salınır; **ekrandan kaçmaz, kaybolmaz, hiçbir sayaç yok.** 1 dakika bekle: aynı balonlar aynı yerde.
+2. Doğru balon yumuşak bir sesle patlar; yanlış balon yalnızca hafifçe sallanır ve yerinde kalır.
+3. İpucu 1 (küçük sayılar): işlemin altında daire + kare modeli; çıkarmada son taneler çizili. Büyük sayılarda yanlış balonların yarısı soluklaşır.
+
+## pattern (örüntüyü tamamla)
+1. Şekil örüntüsü: şekiller (daire, üçgen, yıldız...) renkten bağımsız olarak da ayırt edilebiliyor.
+2. Birden çok boşlukta boşluklar soldan sağa dolar; sayı örüntüsünde her boşlukta seçenekler yenilenir.
+3. İpucu 1: ilk birim çerçevelenir (şekil) ya da terimler arasına "+5" gibi adım karoları gelir (sayı).
+
+## balance (terazi ve sayı doğrusu)
+1. Karşılaştırma: terazi başta mavi takozlar üstünde düz durur; doğru `<`, `=`, `>` seçilince takozlar çekilir ve terazi ağır yana eğilir. İpucu 1: takozlar yarıya iner, terazi biraz eğilir.
+2. 1. sınıf nesne grupları (elma) iki kefede rahat sayılabiliyor.
+3. Eksik değer: terazi başta eğik; doğru sayı "?" yerine oturunca terazi dengelenir.
+4. Sayı doğrusu: işaretçi çentiğin tam üstünde; yerleştirmede doğru çentiğe dokunmak kolay (komşu çentiğe kaymıyor).
+
+## clock_money (saat ve para)
+1. Saat oku: rakamlar okunaklı, akrep kısa-kalın, yelkovan uzun-ince. Dijital seçenekler "3.30" biçiminde (bkz. Açık soru S2).
+2. Saat kur: akrep ve yelkovan −/+ düğmeleri; yelkovan 12'yi geçince akrep de ilerler. Onay düğmesine basmadan cevap sayılmaz; yanlış onayda kurulan saat bozulmaz.
+3. Para say: küpürlerin üstündeki "5 TL", "50 kr" yazıları okunaklı. İpucu 1: paralar büyükten küçüğe dizilir, altlarında ara toplamlar çıkar.
+4. Para öde: cüzdandaki paraya dokununca tepsiye eklenir, tepsideki paraya dokununca geri çıkar; zorluk 1'de toplam canlı görünür.
+
+## fraction_pizza (kesir pizzası)
+1. Böl: "eş parçalara bölünmüş" pizza ile eşit olmayan bölmeler gözle rahat ayırt ediliyor.
+2. Seç: dilime dokununca dilim dışa kayar, kalın kenar ve onay işareti alır; tekrar dokununca geri döner. 12 dilimli pizzada bile doğru dilim seçiliyor.
+3. İpucu 1: dilimler sırayla vurgulanıp sesli sayılır, sonra pay parlar.
+
+## Asset geldiğinde (parti 010)
+1. `item.para.*`, `item.yiyecek.pizza`, `ui.clock_face` dosyaları eklenince yer tutucu çizimlerin yerini alır; değer etiketleri paraların ortasında, pizza dilimleri görselin çemberiyle örtüşüyor, kadran rakamları kenara taşmıyor.

@@ -1,0 +1,29 @@
+{
+	"sequence_numbers": { "template": "sequence", "params": { "items": [
+		{ "type": "number", "value": 2 }, { "type": "number", "value": 4 }, { "type": "number", "value": 6 },
+		{ "type": "number", "value": 8 }, { "type": "number", "value": 10 } ] } },
+	"sequence_story": { "template": "sequence", "params": { "items": [
+		{ "type": "item", "value": "item.doga.tohum" }, { "type": "item", "value": "item.doga.filiz" },
+		{ "type": "item", "value": "item.doga.cicek" } ] } },
+	"balloon_add": { "template": "balloon_pop", "params": { "a": 7, "op": "+", "b": 5, "choices": [12, 11, 13, 14, 10] } },
+	"balloon_sub": { "template": "balloon_pop", "params": { "a": 64, "op": "-", "b": 21, "choices": [43, 42, 53, 33] } },
+	"pattern_shapes": { "template": "pattern", "params": { "kind": "repeat", "length": 9, "unit": [
+		{ "shape": "circle", "color": "red" }, { "shape": "triangle", "color": "blue" }, { "shape": "star", "color": "yellow" } ] } },
+	"pattern_items": { "template": "pattern", "params": { "kind": "repeat", "length": 7, "unit": [
+		{ "type": "item", "value": "item.meyve.elma" }, { "type": "item", "value": "item.meyve.armut" } ] } },
+	"pattern_numbers": { "template": "pattern", "params": { "kind": "number", "start": 5, "step": 5, "length": 7 } },
+	"balance_compare": { "template": "balance", "params": { "mode": "scale", "ask": "compare", "left": [7], "right": [3, 2] } },
+	"balance_compare_items": { "template": "balance", "params": { "mode": "scale", "ask": "compare", "left": [4], "right": [6], "item": "item.meyve.elma" } },
+	"balance_missing": { "template": "balance", "params": { "mode": "scale", "ask": "missing", "left": [3, 4], "right": [5, null], "choices": [1, 2, 3] } },
+	"line_find": { "template": "balance", "params": { "mode": "number_line", "ask": "find", "min": 0, "max": 10, "tick": 1, "value": 6, "choices": [5, 6, 7] } },
+	"line_place": { "template": "balance", "params": { "mode": "number_line", "ask": "place", "min": 0, "max": 100, "tick": 10, "value": 70 } },
+	"clock_read": { "template": "clock_money", "params": { "mode": "clock", "ask": "read", "hour": 3, "minute": 30,
+		"choices": [ { "hour": 3, "minute": 30 }, { "hour": 6, "minute": 15 }, { "hour": 6, "minute": 0 } ] } },
+	"clock_set": { "template": "clock_money", "params": { "mode": "clock", "ask": "set", "hour": 2, "minute": 15 } },
+	"money_count": { "template": "clock_money", "params": { "mode": "money", "ask": "count", "unit": "tl",
+		"items": [ "tl_5", "tl_10", "tl_1", "tl_1" ], "choices": [ 16, 17, 18 ] } },
+	"money_pay": { "template": "clock_money", "params": { "mode": "money", "ask": "pay", "unit": "kr", "amount": 75,
+		"wallet": [ "kr_50", "kr_25", "kr_10", "kr_5" ] } },
+	"pizza_split": { "template": "fraction_pizza", "params": { "ask": "split", "parts": 4 } },
+	"pizza_select": { "template": "fraction_pizza", "params": { "ask": "select", "parts": 8, "take": 3 } }
+}

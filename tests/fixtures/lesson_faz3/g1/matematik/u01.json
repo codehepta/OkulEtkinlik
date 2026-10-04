@@ -1,0 +1,31 @@
+{
+	"id": "g1.matematik.u01",
+	"grade": 1,
+	"subject": "matematik",
+	"title_key": "fx.unit.u01",
+	"source": { "program": "TEST", "doc": "test.pdf", "page": 1 },
+	"nodes": [
+		{
+			"id": "g1.matematik.u01.n01",
+			"outcomes": ["TEST.1"],
+			"title_key": "fx.node.n01",
+			"intro_voice": "fx.vo.n01.intro",
+			"sticker": "st.matematik.elma",
+			"rounds": [
+				{ "template": "sequence", "difficulty": 3, "voice": "fx.vo.r.sequence",
+				  "params": { "items": [ { "type": "number", "value": 10 }, { "type": "number", "value": 20 },
+					{ "type": "number", "value": 30 }, { "type": "number", "value": 40 } ] } },
+				{ "template": "balloon_pop", "difficulty": 2, "voice": "fx.vo.r.balloon_pop",
+				  "params": { "a": 8, "op": "-", "b": 3, "choices": [5, 4, 6, 3] } },
+				{ "template": "pattern", "difficulty": 3, "voice": "fx.vo.r.pattern",
+				  "params": { "kind": "number", "start": 3, "step": 3, "length": 7 } },
+				{ "template": "balance", "difficulty": 1, "voice": "fx.vo.r.balance",
+				  "params": { "mode": "scale", "ask": "compare", "left": [4], "right": [6], "item": "item.meyve.elma" } },
+				{ "template": "clock_money", "difficulty": 1, "voice": "fx.vo.r.clock_money",
+				  "params": { "mode": "money", "ask": "pay", "unit": "tl", "amount": 35, "wallet": ["tl_20", "tl_10", "tl_5"] } },
+				{ "template": "fraction_pizza", "difficulty": 1, "voice": "fx.vo.r.fraction_pizza",
+				  "params": { "ask": "select", "parts": 4, "take": 1 } }
+			]
+		}
+	]
+}
