@@ -1,7 +1,7 @@
 extends GutTest
 ## Faz 3 şablonlarının kaydı ve parametre doğrulaması (TemplateRegistry üzerinden).
 
-const FAZ3: PackedStringArray = ["sequence", "balloon_pop"]
+const FAZ3: PackedStringArray = ["sequence", "balloon_pop", "pattern"]
 
 func _item(v: String) -> Dictionary:
 	return {"type": "item", "value": v}
@@ -60,3 +60,34 @@ func test_balloon_pop_invalid() -> void:
 	_bad("balloon_pop", {"a": 3, "op": "x", "b": 5, "choices": [15, 8]}, "bilinmeyen op")
 	_bad("balloon_pop", {"a": 3.5, "op": "+", "b": 5, "choices": [8, 9]}, "kesirli a")
 	_bad("balloon_pop", {"op": "+", "b": 5, "choices": [8, 9]}, "a yok")
+
+# --- pattern ---
+func _cell(shape: String, color: String) -> Dictionary:
+	return {"shape": shape, "color": color}
+
+func test_pattern_valid() -> void:
+	_ok("pattern", {"kind": "repeat", "unit": [_cell("circle", "red"), _cell("square", "blue")], "length": 5})
+	_ok("pattern", {"kind": "repeat", "unit": [_cell("star", "red"), _cell("star", "red"), _cell("heart", "green")], "length": 12})
+	_ok("pattern", {"kind": "repeat", "unit": [_item("item.meyve.elma"), _item("item.meyve.armut")], "length": 8})
+	_ok("pattern", {"kind": "number", "start": 2, "step": 2, "length": 6})
+	_ok("pattern", {"kind": "number", "start": 100, "step": -10, "length": 10})
+
+func test_pattern_invalid() -> void:
+	_bad("pattern", {"kind": "spiral"}, "bilinmeyen tür")
+	_bad("pattern", {"kind": "repeat", "unit": [_cell("circle", "red")], "length": 5}, "tek hücreli birim")
+	_bad("pattern", {"kind": "repeat", "unit": [_cell("circle", "red"), _cell("circle", "red")], "length": 5}, "hepsi aynı")
+	_bad("pattern", {"kind": "repeat", "unit": [_cell("blob", "red"), _cell("circle", "blue")], "length": 5}, "bilinmeyen şekil")
+	_bad("pattern", {"kind": "repeat", "unit": [_cell("circle", "pink"), _cell("square", "blue")], "length": 5}, "bilinmeyen renk")
+	_bad("pattern", {"kind": "repeat", "unit": [_cell("circle", "red"), _cell("square", "blue")], "length": 4}, "length < 2u+1")
+	_bad("pattern", {"kind": "repeat", "unit": [_cell("circle", "red"), _cell("square", "blue")], "length": 13}, "length > 12")
+	_bad("pattern", {"kind": "repeat", "unit": [_num(1), _num(2)], "length": 5}, "sayı token birimde değil")
+	_bad("pattern", {"kind": "number", "start": 2, "step": 0, "length": 6}, "adım 0")
+	_bad("pattern", {"kind": "number", "start": 2, "step": 2, "length": 3}, "kısa")
+	_bad("pattern", {"kind": "number", "start": 10, "step": -5, "length": 4}, "negatif terim")
+	_bad("pattern", {"kind": "number", "start": 990, "step": 5, "length": 4}, "1000'i aşan terim")
+	_bad("pattern", {"kind": "number", "start": 2, "step": 101, "length": 4}, "büyük adım")
+
+func test_pattern_color_only_rejected() -> void:
+	var errs: Array[String] = TemplateRegistry.validate("pattern", {"kind": "repeat", "unit": [_cell("circle", "red"), _cell("circle", "blue")], "length": 5})
+	assert_eq(errs.size(), 1)
+	assert_eq(errs[0], ContentValidator.msg("err.params.pat_color_only"))
