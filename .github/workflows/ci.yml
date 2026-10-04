@@ -53,7 +53,7 @@ jobs:
           packages: "platform-tools build-tools;35.0.1 platforms;android-35"
 
       - name: Export şablonları önbelleği
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: |
             ~/.local/share/godot/export_templates
