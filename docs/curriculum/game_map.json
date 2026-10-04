@@ -166,7 +166,7 @@
 		"proposed": [
 			"chart_build"
 		],
-		"note": "d) görselleştirme aracını seçme ve f) hazır nesne grafiğini yorumlama oynanabilir; e) verilen veriyle çetele, tablo ve nesne grafiği oluşturma önerilen chart_build gerektirir; a–ç) araştırma durumu ve sorusu belirleme, plan yapma, gerçek veri toplama ile g) değerlendirme sınıf ya da ev etkinliği."
+		"note": "d) görselleştirme aracını seçme, f) hazır nesne grafiğini yorumlama ve g) sonuçları oyunda verilen araştırma sorusuna göre değerlendirme oynanabilir; e) verilen veriyle çetele, tablo ve grafik oluşturma önerilen chart_build gerektirir; a–c) araştırma durumunu ve sorularını belirleme ve plan yapma çocuğun kendi araştırması, ç) veri toplama gerçek dünya etkinliği (sınıf ya da ev)."
 	},
 	"MAT.2.1.1": {
 		"fit": "full",
@@ -403,7 +403,7 @@
 		"proposed": [
 			"chart_build"
 		],
-		"note": "d) görselleştirme aracını seçme ve f) hazır şekil grafiğini yorumlama oynanabilir; e) verilen veriyle çetele, sıklık tablosu ve şekil grafiği oluşturma önerilen chart_build gerektirir; a–ç) araştırma durumu ve sorusu belirleme, plan yapma, gerçek veri toplama ile g) değerlendirme sınıf ya da ev etkinliği."
+		"note": "d) görselleştirme aracını seçme, f) hazır şekil grafiğini yorumlama ve g) sonuçları oyunda verilen araştırma sorusuna göre değerlendirme oynanabilir; e) verilen veriyle çetele, tablo ve grafik oluşturma önerilen chart_build gerektirir; a–c) araştırma durumunu ve sorularını belirleme ve plan yapma çocuğun kendi araştırması, ç) veri toplama gerçek dünya etkinliği (sınıf ya da ev)."
 	},
 	"MAT.3.1.1": {
 		"fit": "full",
@@ -472,7 +472,7 @@
 		"proposed": [
 			"estimate_then_count"
 		],
-		"note": "Tek bileşen a): aralıklı seçenekle tahmin count_choose ile kısmen oynanabilir; parça-bütün ilişkisinden yararlanıp tahmini sayma sonucuyla karşılaştırma önerilen estimate_then_count gerektirir."
+		"note": "Tek bileşen a): çokluğu gruplar hâlinde gösterip bir grubu sayarak bütünü seçme (parça-bütün ilişkisi) count_choose ile kısmen oynanabilir; parça-bütün ve dağılım ilişkisini tahmine bağlayıp sayma sonucuyla karşılaştırma önerilen estimate_then_count gerektirir (MAT.2.1.6 a ile aynı)."
 	},
 	"MAT.3.1.9": {
 		"fit": "full",
@@ -518,7 +518,10 @@
 			"sequence",
 			"sort_bins"
 		],
-		"note": "a–b) olayları sürelerine göre sıralama ve uygun birimi seçme oynanabilir; c) tahmini gerçek eylemin süresini tutarak karşılaştırma gerçek dünya etkinliği (ev etkinliği önerilebilir)."
+		"proposed": [
+			"estimate_then_count"
+		],
+		"note": "a) olayları sürelerine göre ilişkilendirip sıralama sequence ile, b) süreye ilişkin çıkarımı (uygun birim, kısa ya da uzun) seçme sort_bins ile oynanabilir; c) çıkarımı oyunun gösterdiği gerçek süreyle (saat animasyonu) karşılaştırıp yargıda bulunma önerilen estimate_then_count gerektirir; gerçek eylemin süresini tutma ev etkinliği önerilebilir."
 	},
 	"MAT.3.1.15": {
 		"fit": "full",
@@ -701,7 +704,7 @@
 		"proposed": [
 			"chart_build"
 		],
-		"note": "d) görselleştirme aracını seçme ve f) hazır nokta grafiğini yorumlama oynanabilir; e) verilen veriyle çetele, sıklık tablosu ve nokta grafiği oluşturma önerilen chart_build gerektirir; a–ç) araştırma durumu ve sorusu belirleme, plan yapma, gerçek veri toplama ile g) değerlendirme sınıf ya da ev etkinliği."
+		"note": "d) görselleştirme aracını seçme, f) hazır nokta grafiğini yorumlama ve g) sonuçları oyunda verilen araştırma sorusuna göre değerlendirme oynanabilir; e) verilen veriyle çetele, tablo ve grafik oluşturma önerilen chart_build gerektirir; a–c) araştırma durumunu ve sorularını belirleme ve plan yapma çocuğun kendi araştırması, ç) veri toplama gerçek dünya etkinliği (sınıf ya da ev)."
 	},
 	"T.D.1.1": {
 		"fit": "partial",
@@ -765,7 +768,7 @@
 			"drag_match",
 			"story"
 		],
-		"note": "b) sözcükleri ve c) basit, kısa cümleleri sessiz okuyup görselle eşleştirme drag_match ile; e) metnin başlık ve görsellerini inceleme ve ğ) kısa metinler arasından seçtiği metni okuyup anlama sorularını yanıtlama story ile oynanabilir; a) harf ve heceleri seslendirme, ç) telaffuz, d) işitilebilir sesle okuma, f–g) sesli okuma ve h) noktalamaya dikkat ederek okuma sesli okuma gerektirir (oyun çocuğun sesini değerlendirmez)."
+		"note": "b) sözcükleri ve c) basit, kısa cümleleri sessiz okuyup görselle eşleştirme drag_match ile; e) metnin başlık ve görsellerini inceleme ve ğ) kısa metinler arasından seçtiği metni okuyup anlama sorularını yanıtlama story ile oynanabilir; a) harf ve heceleri seslendirme, ç) telaffuz, d) işitilebilir sesle okuma, f–g) sesli okuma ve h) noktalamaya dikkat ederek okuma sesli okuma gerektirir (oyun çocuğun sesini değerlendirmez). Okuma bileşenleri metnin ilk cevaba kadar seslendirilmeden gösterilmesini (sessiz okuma modu) gerektirir (spec Açık sorular, Faz 2: sessiz okuma modu)."
 	},
 	"T.O.1.2": {
 		"fit": "full",
@@ -773,13 +776,14 @@
 			"story",
 			"drag_match"
 		],
-		"note": "a) ön bilgiyi kullanma ve b) metindeki bilgiyle ön bilgi arasında bağlantı kurma ön bilgi gerektiren anlama sorularıyla, c) başlık ve görselden konu tahmini story ile; ç) okuduğu yönergeyi uygulama (nesneyi istenen yere sürükleme) drag_match ile çalışılır."
+		"note": "a) ön bilgiyi kullanma ve b) metindeki bilgiyle ön bilgi arasında bağlantı kurma ön bilgi gerektiren anlama sorularıyla, c) başlık ve görselden konu tahmini story ile; ç) okuduğu yönergeyi uygulama (nesneyi istenen yere sürükleme) drag_match ile çalışılır. Okuma bileşenleri metnin ilk cevaba kadar seslendirilmeden gösterilmesini (sessiz okuma modu) gerektirir (spec Açık sorular, Faz 2: sessiz okuma modu)."
 	},
 	"T.O.1.3": {
 		"fit": "full",
 		"templates": [
 			"story"
-		]
+		],
+		"note": "a) okuduğu metnin konusunu bulma story anlama sorusuyla çalışılır. Okuma bileşenleri metnin ilk cevaba kadar seslendirilmeden gösterilmesini (sessiz okuma modu) gerektirir (spec Açık sorular, Faz 2: sessiz okuma modu)."
 	},
 	"T.O.1.4": {
 		"fit": "none",
@@ -798,7 +802,7 @@
 			"syllable_build",
 			"sequence"
 		],
-		"note": "b) çizgi çalışmaları trace ile (boyama kâğıt etkinliği); c) harf yazma trace, hece ve sözcük yazma syllable_build, cümle yazma sözcük kartlarını sıralayarak sequence ile; e) söylenen sözcük ve cümleleri aynı yollarla yazma oynanabilir; a) yazma materyallerini kullanma ve d) verilen metni bakarak yazma kâğıt üzerinde, ç) kısa metin yazma ve f) yazışmayı selamlaşma ve hitapla başlatma serbest yazılı üretim."
+		"note": "b) çizgi çalışmaları trace ile (boyama kâğıt etkinliği); c) harf yazma trace, hece ve sözcük yazma syllable_build, cümle yazma sözcük kartlarını sıralayarak sequence ile; d) verilen kısa metne bakarak sözcük ve cümleleri karolarla yazma ve e) söylenen sözcük ve cümleleri yazma aynı yollarla oynanabilir; a) yazma materyallerini kullanma kâğıt ve kalem gerektirir, ç) kısa metin yazma ve f) yazışmayı selamlaşma ve hitapla başlatma serbest yazılı üretim."
 	},
 	"T.Y.1.2": {
 		"fit": "partial",
@@ -889,7 +893,7 @@
 		"templates": [
 			"story"
 		],
-		"note": "a) okuyacağı metnin başlık ve görsellerini inceleme story ile oynanabilir; b) ilgi alanına göre metin seçme doğru/yanlışı olmayan kişisel tercih (oyun seçim sunabilir ama değerlendiremez); c) sesli okuma ve ç) noktalamaya dikkat ederek okuma sesli okuma gerektirir."
+		"note": "a) okuyacağı metnin başlık ve görsellerini inceleme story ile oynanabilir; b) ilgi alanına göre metin seçme doğru/yanlışı olmayan kişisel tercih (oyun seçim sunabilir ama değerlendiremez); c) sesli okuma ve ç) noktalamaya dikkat ederek okuma sesli okuma gerektirir. Okuma bileşenleri metnin ilk cevaba kadar seslendirilmeden gösterilmesini (sessiz okuma modu) gerektirir (spec Açık sorular, Faz 2: sessiz okuma modu)."
 	},
 	"T.O.2.2": {
 		"fit": "partial",
@@ -898,7 +902,7 @@
 			"sort_bins",
 			"drag_match"
 		],
-		"note": "a) bilgiler ile ön bilgi arasında bağlantı kurma, b–c) başlık ve görsellerden konu ve olay tahmini, ç) verilerden çıkarım story ile; d) iletileri ön bilgiyle karşılaştırma (doğru, yanlış) ve e) nesne ve kişileri sınıflandırma sort_bins ile; f) zıt anlamlı sözcükleri bulma drag_match ile oynanabilir; g) iletilere katılıp katılmadığını ifade etme doğru cevabı olmayan kişisel görüş."
+		"note": "a) bilgiler ile ön bilgi arasında bağlantı kurma, b–c) başlık ve görsellerden konu ve olay tahmini, ç) verilerden çıkarım story ile; d) iletileri ön bilgiyle karşılaştırma (doğru, yanlış) ve e) nesne ve kişileri sınıflandırma sort_bins ile; f) zıt anlamlı sözcükleri bulma drag_match ile oynanabilir; g) iletilere katılıp katılmadığını ifade etme doğru cevabı olmayan kişisel görüş. Okuma bileşenleri metnin ilk cevaba kadar seslendirilmeden gösterilmesini (sessiz okuma modu) gerektirir (spec Açık sorular, Faz 2: sessiz okuma modu)."
 	},
 	"T.O.2.3": {
 		"fit": "partial",
@@ -906,7 +910,7 @@
 			"story",
 			"drag_match"
 		],
-		"note": "b) konuyu bulma ve c) iletilerin benzerlik ve farklılıklarını belirleme story ile, ç) içerik ile tablo ve grafik arasındaki ilişkiyi belirleme drag_match ile oynanabilir; a) karakter, olay ve bilgileri açıklama serbest sözlü üretim."
+		"note": "b) konuyu bulma ve c) iletilerin benzerlik ve farklılıklarını belirleme story ile, ç) içerik ile tablo ve grafik arasındaki ilişkiyi belirleme drag_match ile oynanabilir; a) karakter, olay ve bilgileri açıklama serbest sözlü üretim. Okuma bileşenleri metnin ilk cevaba kadar seslendirilmeden gösterilmesini (sessiz okuma modu) gerektirir (spec Açık sorular, Faz 2: sessiz okuma modu)."
 	},
 	"T.O.2.4": {
 		"fit": "none",
@@ -926,15 +930,14 @@
 	"T.Y.2.2": {
 		"fit": "none",
 		"templates": [],
-		"note": "Bütün bileşenler (a–m) çocuğun kendi yazısını üretmesini ister: eksik cümle ve metin yazma, tahminini yazma, yazılarında karşılaştırma, sınıflandırma ve sözcük kullanma, olayları kendi ifadeleriyle yazma, yönerge, görüş, istek ve öneri yazma, yazıyı sunma, görsel, benzetme ve örnek kullanma, neden-sonuç yazma; serbest yazılı üretim."
+		"note": "Bütün bileşenler (a–m) çocuğun kendi yazısını üretmesini ister: eksik cümle ve metin yazma, tahminini yazma, yazılarında karşılaştırma, sınıflandırma ve sözcük kullanma, olayları kendi ifadeleriyle yazma, yönerge, görüş, istek ve öneri yazma, yazıyı sunma, görsel, benzetme ve örnek kullanma, neden-sonuç yazma; serbest yazılı üretim. Eksik bir cümleyi ya da metni yazmak bütün bir cümle üretimidir; T.Y.1.2 b’deki harf, hece ya da sözcük tamamlama ise kapalı karo kümesiyle yapılır."
 	},
 	"T.Y.2.3": {
 		"fit": "partial",
 		"templates": [
-			"sequence",
 			"drag_match"
 		],
-		"note": "d) soru edatını ayrı yazma (karoyu cümlede doğru yere yerleştirme) sequence ile, e) kısaltmaları kuralına uygun yazma (doğru yazılmış kısaltmayı açılımıyla eşleme) ve f) büyük harfleri kuralına uygun yazma drag_match ile oynanabilir; a) plana uygun yazma, b) kaynaktan araştırarak yazma, c) sözcükleri yerinde kullanma, ç) mesajı açık ifade etme, g) yazım alanını kullanma ve ğ) noktalama işaretlerini kullanma çocuğun kendi yazısında gerçekleşir, serbest yazılı üretim."
+		"note": "d) soru edatını ayrı yazma (mı/mi karosunu cümlede doğru yere yerleştirme), e) kısaltmaları kuralına uygun yazma (doğru yazılmış kısaltmayı açılımıyla eşleme) ve f) büyük harfleri kuralına uygun yazma drag_match ile oynanabilir; a) plana uygun yazma, b) kaynaktan araştırarak yazma, c) sözcükleri yerinde kullanma, ç) mesajı açık ifade etme, g) yazım alanını kullanma ve ğ) noktalama işaretlerini kullanma çocuğun kendi yazısında gerçekleşir, serbest yazılı üretim."
 	},
 	"T.Y.2.4": {
 		"fit": "none",
@@ -1017,7 +1020,7 @@
 			"story",
 			"scenario"
 		],
-		"note": "a) okuyacağı metnin başlık ve görsellerini inceleme ve c) oyunda verilen amaca uygun metni seçme story ile, ç) okuma amacına uygun okuma stratejisine karar verme scenario ile oynanabilir (ilgi alanına göre tercih kişisel seçim); b) noktalama işaretlerine dikkat ederek okuma sesli okuma gerektirir."
+		"note": "a) okuyacağı metnin başlık ve görsellerini inceleme story ile; c) oyunda verilen amaca uygun metni seçme ve ç) okuma amacına uygun okuma stratejisine karar verme scenario ile oynanabilir (ilgi alanına göre tercih kişisel seçim); b) noktalama işaretlerine dikkat ederek okuma sesli okuma gerektirir. Okuma bileşenleri metnin ilk cevaba kadar seslendirilmeden gösterilmesini (sessiz okuma modu) gerektirir (spec Açık sorular, Faz 2: sessiz okuma modu)."
 	},
 	"T.O.3.2": {
 		"fit": "partial",
@@ -1027,7 +1030,7 @@
 			"sort_bins",
 			"drag_match"
 		],
-		"note": "a) bağlantı kurma, b–c) ve d) bilgi ve olayların öncesi ve sonrası hakkında tahmin, e) metnin amacına uygun çıkarım ve g) iletileri metindeki diğer bilgilerle karşılaştırma story ile; ç) olayların sırası hakkında tahmin sequence ile; f) iletileri ön bilgiyle karşılaştırma ve ğ) olay, nesne ve kişileri sınıflandırma sort_bins ile; h) zıt ve eş anlamlı sözcükleri bulma drag_match ile oynanabilir; ı) katılıp katılmadığını nedenleriyle ifade etme, i) öneride bulunma ve j) görüş oluşturma serbest üretim."
+		"note": "a) bağlantı kurma, b–c) ve d) bilgi ve olayların öncesi ve sonrası hakkında tahmin, e) metnin amacına uygun çıkarım ve g) iletileri metindeki diğer bilgilerle karşılaştırma story ile; ç) olayların sırası hakkında tahmin sequence ile; f) iletileri ön bilgiyle karşılaştırma ve ğ) olay, nesne ve kişileri sınıflandırma sort_bins ile; h) zıt ve eş anlamlı sözcükleri bulma drag_match ile oynanabilir; ı) katılıp katılmadığını nedenleriyle ifade etme, i) öneride bulunma ve j) görüş oluşturma serbest üretim. Okuma bileşenleri metnin ilk cevaba kadar seslendirilmeden gösterilmesini (sessiz okuma modu) gerektirir (spec Açık sorular, Faz 2: sessiz okuma modu)."
 	},
 	"T.O.3.3": {
 		"fit": "partial",
@@ -1036,7 +1039,7 @@
 			"sort_bins",
 			"drag_match"
 		],
-		"note": "b) konuyu ve c) ana fikri ya da ana duyguyu bulma ile ç) iletileri benzerlik ve farklılık yönüyle ilişkilendirme story ile; d) gerçek ve mecaz anlamlı sözcükleri metinle ilişkilendirme sort_bins ile; e) noktalama işaretinin içerikle ilişkisini belirleme drag_match ile oynanabilir; a) karakter, olay, bilgi ya da duyguları açıklama serbest sözlü üretim."
+		"note": "b) konuyu ve c) ana fikri ya da ana duyguyu bulma ile ç) iletileri benzerlik ve farklılık yönüyle ilişkilendirme story ile; d) gerçek ve mecaz anlamlı sözcükleri metinle ilişkilendirme sort_bins ile; e) noktalama işaretinin içerikle ilişkisini belirleme drag_match ile oynanabilir; a) karakter, olay, bilgi ya da duyguları açıklama serbest sözlü üretim. Okuma bileşenleri metnin ilk cevaba kadar seslendirilmeden gösterilmesini (sessiz okuma modu) gerektirir (spec Açık sorular, Faz 2: sessiz okuma modu)."
 	},
 	"T.O.3.4": {
 		"fit": "none",
@@ -1082,12 +1085,9 @@
 		"note": "Süreç bileşeni yok. Çıktı öğretmen ve arkadaşlarla gerçek tanışma, tanışma ifadeleri ve beden dili kullanma (programda istop, örümcek ağı gibi etkileşim etkinlikleri); sınıf içi sosyal etkinlik."
 	},
 	"HB.1.1.2": {
-		"fit": "partial",
-		"templates": [
-			"listen_find",
-			"drag_match"
-		],
-		"note": "Süreç bileşeni yok. Okulun bölümlerini, okul çalışanlarını ve sınıf araç gereçlerini tanıma (dinle-bul, görselle eşleme) oynanabilir; kendi sınıfını ve okulunu gezip gözlemleme okul etkinliği."
+		"fit": "none",
+		"templates": [],
+		"note": "Süreç bileşeni yok. Çıktının konusu çocuğun kendi sınıfı ve okulu (bölümleri, çalışanları, araç gereçleri; programda okul gezisi ve gözlem). Genel okul görselleriyle tanıma bu çevrenin yerine geçmez; okul etkinliği."
 	},
 	"HB.1.1.3": {
 		"fit": "partial",
@@ -1098,11 +1098,9 @@
 		"note": "Süreç bileşeni yok. Sınıf ve okul kurallarına uygun davranışı verilen durumlarda seçme scenario ile, uygun ve uygun olmayan davranışları ayırma sort_bins ile oynanabilir; kurallara gerçek ortamda uyma okulda gözlenen davranış."
 	},
 	"HB.1.1.4": {
-		"fit": "partial",
-		"templates": [
-			"listen_find"
-		],
-		"note": "Süreç bileşeni yok. Görsellerdeki fiziksel özellikleri ve duyguları tanıma listen_find ile oynanabilir; kendi fiziksel özelliklerini ve duygularını açıklama serbest sözlü üretim (programda ayna, kukla, konuşma halkası)."
+		"fit": "none",
+		"templates": [],
+		"note": "Süreç bileşeni yok. Çıktının konusu çocuğun kendi fiziksel özellikleri ve duyguları; açıklama serbest sözlü üretim (programda ayna, kukla, konuşma halkası). Görsellerdeki başka kişilerin özelliklerini tanıma kendi özelliklerinin yerine geçmez."
 	},
 	"HB.1.2.1": {
 		"fit": "full",
@@ -1196,9 +1194,11 @@
 		"note": "Süreç bileşeni yok. Çıktı çocuğun dinî gün ve bayramlarda yaşadığı kendi duygularını paylaşması; doğru cevabı olmayan kişisel ifade (programda pano çalışması). Gün ve bayram adlarını tanıma içerik olarak pekiştirilebilir ama çıktıyı karşılamaz."
 	},
 	"HB.1.5.1": {
-		"fit": "none",
-		"templates": [],
-		"note": "a) gözlem amacını belirleme kişisel karar, b) doğadaki varlıklara ilişkin veri toplama ve c) topladığı verileri sınıflandırarak kaydetme gerçek gözlem; doğa yürüyüşü veli etkinliği olarak önerilebilir."
+		"fit": "partial",
+		"templates": [
+			"sort_bins"
+		],
+		"note": "c) doğadaki varlıklara ilişkin oyunda verilen gözlem kartlarını sınıflandırarak tabloya yerleştirme sort_bins ile oynanabilir; a) gözlem amacını belirleme kişisel karar, b) veri toplama gerçek gözlem (doğa yürüyüşü veli etkinliği olarak önerilebilir)."
 	},
 	"HB.1.5.2": {
 		"fit": "partial",
@@ -1322,12 +1322,9 @@
 		"note": "b) yakın çevresindeki görev ve sorumluluklara ilişkin çıkarımı sesli seçenekler arasından seçme scenario ile oynanabilir; a) kendi görev ve sorumluluklarını gözden geçirme ve c) bunlara ilişkin değerlendirme yapma öz değerlendirme."
 	},
 	"HB.2.4.1": {
-		"fit": "partial",
-		"templates": [
-			"sort_bins",
-			"listen_find"
-		],
-		"note": "Süreç bileşeni yok. Tarihî mekânları (müze, cami, kale) ve doğal güzellikleri ayırma sort_bins, görselde tanıma listen_find ile oynanabilir; kendi yakın çevresindekileri belirleme ve ziyaret gerçek dünya etkinliği (cihaz yaşadığı yeri bilmez)."
+		"fit": "none",
+		"templates": [],
+		"note": "Süreç bileşeni yok. Çıktının konusu çocuğun kendi yakın çevresindeki tarihî mekân ve doğal güzellikler (programda ziyaret ve gezi); cihaz yaşadığı yeri bilmez. Tarihî mekân ve doğal güzellikleri genel görsellerle ayırma içerik olarak pekiştirilebilir ama çıktıyı karşılamaz."
 	},
 	"HB.2.4.2": {
 		"fit": "partial",
@@ -1518,7 +1515,7 @@
 		"templates": [
 			"listen_find"
 		],
-		"note": "a) krokiyi kullanarak konumu belirleme oyunda verilen bir krokide (çocuğun kendi çevresinin krokisi değil) listen_find ile oynanabilir; b) bulunduğu yerin konumsal görselleştirmesini (kroki) yapma çocuğun kendi çevresini çizmesini, c) konumsal özellikleri özetleme serbest üretimi gerektirir."
+		"note": "a) krokiyi kullanarak konum belirleme genel bir beceri olarak oyunun verdiği krokide (“buradasın” işaretiyle) listen_find ile oynanabilir; b) bulunduğu yerin konumsal görselleştirmesini (kendi çevresinin krokisini) yapma çocuğun kendi çevresine bağlı, c) konumsal özellikleri özetleme serbest üretim."
 	},
 	"HB.3.5.3": {
 		"fit": "full",
@@ -1586,9 +1583,10 @@
 		"fit": "partial",
 		"templates": [
 			"drag_match",
-			"listen_find"
+			"listen_find",
+			"sort_bins"
 		],
-		"note": "a) duyu organlarını işlevleri ve algılama biçimleriyle eşleştirme oynanabilir; b–c) duyu organlarıyla deney yapıp veri toplama, kaydetme ve yorumlama gerçek gözlem gerektirir (ev etkinliği önerilebilir)."
+		"note": "a) duyu organlarını işlevleri ve algılama biçimleriyle eşleştirme drag_match ve listen_find ile, c) canlıların algılama biçimlerine ilişkin oyunda verilen verileri (hangi canlı neyi nasıl algılar tablosu) yorumlayıp değerlendirme sort_bins ile oynanabilir; b) duyu organlarıyla veri toplayıp kaydetme gerçek gözlem (ev etkinliği önerilebilir)."
 	},
 	"FB.3.2.3": {
 		"fit": "full",
@@ -1630,7 +1628,7 @@
 			"scenario",
 			"drag_match"
 		],
-		"note": "Yalnızca a)’nın karışıma uygun ayırma yöntemini (mıknatıs, süzme, eleme) seçme kısmı oynanabilir; deneyi tasarlayıp yapma ve b) ölçme ve veri analizi gerçek deney gerektirir."
+		"note": "Yalnızca a)’nın karışıma uygun ayırma yöntemini (mıknatıs, süzme, eleme) seçme kısmı oynanabilir; deneyi tasarlama üretimdir. b) ölçme ve veri analizi bileşeninin çekirdeği gerçek deneyde ölçmedir (veri analizi kısmı verilen ölçümlerle çalışılabilir ama bileşen ölçmeyi ister)."
 	},
 	"FB.3.4.3": {
 		"fit": "partial",
@@ -1650,12 +1648,12 @@
 		"note": "b–c) animasyonla gösterilen varlıkların hareket durumu hakkında çıkarım ve sonuç tahmini oynanabilir; a) kendi gözlem ve deneyimlerini ilişkilendirme gerçek gözlem ister."
 	},
 	"FB.3.5.2": {
-		"fit": "partial",
+		"fit": "full",
 		"templates": [
 			"scenario",
 			"sort_bins"
 		],
-		"note": "a) hareket ve şekil değiştirmenin nedenine ilişkin önermeyi sesli seçenekler arasından seçme scenario ile ve durumları nedenine göre (itme, çekme) ayırma sort_bins ile; ç) gözlemlenmemiş durumda kuvvetin etkisini tahmin etme scenario ile oynanabilir; b–c) gözleme dayalı önermeleri karşılaştırma ve gözlem verisinden sonuç çıkarma ile d) bu tahminlerin geçerliliğini sorgulama gerçek deney ve sözlü tartışma gerektirir."
+		"note": "a) nedene ilişkin önermeyi sesli seçenekler arasından seçme scenario ile ve durumları nedenine göre (itme, çekme) ayırma sort_bins ile; b) oyunda gösterilen gözleme (animasyon) dayalı önermeleri karşılaştırma ve c) bu gözlem verisinden sonuç çıkarma scenario ile; ç) gözlemlenmemiş durumda tahmin ve d) tahminin geçerliliğini gösterilen sonuçla sorgulama scenario ile çalışılır."
 	},
 	"FB.3.6.1": {
 		"fit": "partial",
@@ -1663,7 +1661,7 @@
 			"sort_bins",
 			"listen_find"
 		],
-		"note": "a) araç gereçlerin niteliklerini tanıma ve elektrikli olanları ayırma oynanabilir; b–c) evdeki araç gereçlerle ilgili veri toplama, kaydetme ve değerlendirme gerçek dünya etkinliği (ev etkinliği önerilebilir)."
+		"note": "a) araç gereçlerin niteliklerini tanımlama ve elektrikli olanları ayırma listen_find ve sort_bins ile, c) elektrikli araç gereçlerle ilgili oyunda verilen verileri değerlendirme sort_bins ile oynanabilir; b) evdeki araç gereçlerle ilgili veri toplayıp kaydetme gerçek dünya etkinliği (ev etkinliği önerilebilir)."
 	},
 	"FB.3.6.2": {
 		"fit": "partial",
@@ -1677,9 +1675,10 @@
 		"fit": "partial",
 		"templates": [
 			"scenario",
-			"sort_bins"
+			"sort_bins",
+			"count_choose"
 		],
-		"note": "a) tasarruflu ve savurgan davranışları ayırma ve öneri seçme oynanabilir; b–c) gerçek ölçüm verisiyle gerekçelendirme ve hesaplamaya dayalı tahmin ile ç) geçerliliği sorgulama gerçek veri ve sözlü tartışma gerektirir."
+		"note": "a) tasarruflu ve savurgan davranışları ayırma sort_bins ve veriye dayalı önermeyi seçme scenario ile; c) oyunda verilen tüketim verileriyle hesaplayarak tahmin etme count_choose ile; ç) tahminin geçerliliğini gösterilen sonuçla sorgulama scenario ile oynanabilir; b) önermelerini ölçüm verisiyle gerekçelendirme serbest üretim (gerekçe açıklamadır)."
 	},
 	"FB.3.7.1": {
 		"fit": "partial",
@@ -1699,9 +1698,11 @@
 		"note": "b–c) bitkilerin ortak ve farklı ihtiyaçlarını belirleme sort_bins ve drag_match ile, ç) yapılması gerekenleri sıralama sequence ile oynanabilir; a) çevredeki tarım ürünlerini araştırıp bilgi toplama gerçek dünya etkinliği."
 	},
 	"FB.3.8.1": {
-		"fit": "none",
-		"templates": [],
-		"note": "Bütün bileşenler (a–c) yaşam alanından gerçek veri toplama, veri seti oluşturma ve veriye dayalı açıklama gerektirir; canlı-yaşam alanı eşleştirme içeriği FB.3.8.2 a) ile desteklenir, bahçe ya da park gözlemi veli etkinliği olarak önerilebilir."
+		"fit": "partial",
+		"templates": [
+			"sort_bins"
+		],
+		"note": "b) oyunda verilen gözlem kartlarından yaşam alanlarına ilişkin veri seti (tablo) oluşturma sort_bins ile oynanabilir; a) yaşam alanından veri toplayıp kaydetme gerçek gözlem (bahçe ya da park gözlemi veli etkinliği olarak önerilebilir), c) veriye dayalı açıklama yapma serbest üretim."
 	},
 	"FB.3.8.2": {
 		"fit": "partial",
