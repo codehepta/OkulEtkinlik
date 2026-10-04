@@ -15,6 +15,7 @@ const NUMBERED_VOICES: Dictionary = {
 }
 const MAP_STOP_STATES: PackedStringArray = ["open", "done", "locked", "review"]
 const MAX_NUMBER_VOICE: int = 20
+const CLOCK_VOICE_MINUTES: Array[int] = [0, 30]
 
 ## Görsel önekine göre style-guide.md blok adı.
 const SCENE_KEYS: PackedStringArray = ["map.island"]
@@ -69,6 +70,10 @@ static func dynamic_keys(regions: PackedStringArray) -> PackedStringArray:
 		res.append("vo.bolge.%s" % r)
 	for s: String in MAP_STOP_STATES:
 		res.append("map.stop_%s" % s)
+	# 1. sınıf saat okuma sesleri (clock_money, tam ve yarım saat).
+	for h: int in range(1, 13):
+		for m: int in CLOCK_VOICE_MINUTES:
+			res.append("vo.saat.%d_%02d" % [h, m])
 	return res
 
 ## Grup adı: "image:<önek>", "voice", "music" ya da "sfx".

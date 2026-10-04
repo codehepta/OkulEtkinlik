@@ -2,6 +2,8 @@ extends MiniGame
 ## Saat ve para (tek şablon, iki mod — bkz. Faz 3a planı K1).
 ## clock/read: analog saatin gösterdiği zamanı dijital seçeneklerden seç.
 ## clock/set: akrep ve yelkovanı düğmelerle hedef saate kur, onayla.
+## 1. sınıfta dijital gösterim yoktur (Faz 3b, S2): `read` seçenekleri hoparlörlü karolardır
+## (dokununca saat okunur ve seçilir, onay düğmesi denetler); `set` hedefi sesle verilir.
 ## money/count: tepsideki paraların toplamını seç.
 ## money/pay: cüzdandan küpür ekleyip çıkararak hedef tutarı öde, onayla.
 ## Rakamlar ve para değerleri yazı tipiyle çizilir; görsellerde rakam yoktur (spec §5.1).
@@ -49,10 +51,9 @@ const PIECE_GAP: float = 20.0
 const RUNNING_H: float = 54.0
 const NOTE_SIZE: Vector2 = Vector2(300, 150)
 ## Madeni para çapı (en küçüğü de ≥128 px dokunma hedefi).
-const COIN_DIAMETER: Dictionary = {"kr_1": 128.0, "kr_5": 134.0, "kr_10": 140.0, "kr_25": 148.0, "kr_50": 156.0, "tl_1": 170.0}
+const COIN_DIAMETER: Dictionary = {"kr_5": 134.0, "kr_10": 140.0, "kr_25": 148.0, "kr_50": 156.0, "tl_1": 170.0}
 ## Kod çizimi yer tutucu renkleri: [gövde, kenar]. Değer her zaman yazıyla da yazılır.
 const PIECE_COLORS: Dictionary = {
-	"kr_1": [Color(0.86, 0.6, 0.38), Color(0.62, 0.4, 0.22)],
 	"kr_5": [Color(0.9, 0.72, 0.42), Color(0.66, 0.5, 0.26)],
 	"kr_10": [Color(0.95, 0.8, 0.42), Color(0.72, 0.56, 0.24)],
 	"kr_25": [Color(0.96, 0.84, 0.48), Color(0.74, 0.6, 0.28)],
@@ -70,6 +71,10 @@ const CHOICE_GAP: float = 50.0
 const CHOICE_Y: float = 745.0
 const CHOICE_FONT: int = 72
 const AUTO_STEP_SECONDS: float = 0.25
+## Dijital gösterim kullanmayan en yüksek sınıf.
+const VOICE_ONLY_GRADE_MAX: int = 1
+const READ_CHECK_RECT: Rect2 = Rect2(1650, 745, 220, 170)
+const SPEAKER_INK: Color = ClayStyle.TEAL
 
 var _mode: String = "clock"
 var _ask: String = "read"
@@ -77,6 +82,11 @@ var _correct: int = -1
 var _choice_labels: Array[String] = []
 var _choice_views: Array[Control] = []
 var _check: Control = null
+## 1. sınıf: seçenekler ve hedef sesle verilir.
+var _voice_only: bool = false
+var _selected: int = -1
+var _target_speaker: Control = null
+var _choice_times: Array[Vector2i] = []
 # Saat
 var _target: Vector2i = Vector2i(12, 0)
 var _time: Vector2i = Vector2i(12, 0)
@@ -115,6 +125,10 @@ func setup(params: Dictionary, difficulty_value: int, context: RoundContext) -> 
 static func time_label(t: Vector2i) -> String:
 	return Strings.t("fmt.clock", {"h": str(t.x), "m": "%02d" % t.y})
 
+## Saatin ses satırı: vo.saat.<saat>_<dakika iki haneli> (ör. vo.saat.3_30).
+static func time_voice(t: Vector2i) -> String:
+	return "vo.saat.%d_%02d" % [t.x, t.y]
+
 ## "5 TL" / "50 kr" biçimi.
 static func money_label(unit: String, n: int) -> String:
 	return Strings.t("fmt.money." + unit, {"n": str(n)})
@@ -123,6 +137,7 @@ static func money_label(unit: String, n: int) -> String:
 
 func _setup_clock(params: Dictionary) -> void:
 	_target = Vector2i(int(params["hour"]), int(params["minute"]))
+	_voice_only = ctx.grade <= VOICE_ONLY_GRADE_MAX
 	if _ask == "read":
 		_center = READ_CENTER
 		_time = _target
@@ -130,16 +145,31 @@ func _setup_clock(params: Dictionary) -> void:
 		var times: Array[Vector2i] = []
 		for c: Variant in params["choices"] as Array:
 			times.append(Vector2i(int((c as Dictionary)["hour"]), int((c as Dictionary)["minute"])))
-			_choice_labels.append(time_label(times[-1]))
+			_choice_labels.append("" if _voice_only else time_label(times[-1]))
 		_correct = times.find(_target)
 		_build_choices()
+		if _voice_only:
+			_choice_times = times
+			for v: Control in _choice_views:
+				_add_speaker_icon(v)
+			_check = Widgets.make_check_button(self, READ_CHECK_RECT)
+			_check.gui_input.connect(_on_check_input)
 	else:
 		_center = SET_CENTER
 		_time = ClockTime.start_time(_target)
 		_minute_step = ClockTime.minute_step_for(difficulty, _target.y)
 		_build_face()
-		var t: Control = Widgets.make_tile(self, time_label(_target), TARGET_RECT, 104, ClayStyle.BUTTER)
-		t.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		var t: Control = Widgets.make_tile(self, "" if _voice_only else time_label(_target), TARGET_RECT, 104, ClayStyle.BUTTER)
+		if _voice_only:
+			# Hedef saat yazılmaz; hoparlörlü karo hedefin sesini yeniden okutur.
+			_add_speaker_icon(t)
+			_target_speaker = t
+			t.gui_input.connect(func(event: InputEvent) -> void:
+				if is_press(event) and _can_input():
+					_tap_feedback(t)
+					narrator.say(time_voice(_target)))
+		else:
+			t.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		for row: int in 2:
 			var hand: String = "hour" if row == 0 else "minute"
 			var y: float = STEP_ROWS_Y[row]
@@ -490,7 +520,54 @@ func _choose(index: int) -> void:
 	if not _can_input() or index < 0 or index >= _choice_views.size():
 		return
 	_tap_feedback(_choice_views[index])
+	if _voice_only and _ask == "read":
+		_select(index)
+		narrator.say(time_voice(_choice_times[index]))
+		return
 	_submit_answer(index == _correct)
+
+## 1. sınıf saat okuma: seçili karo yukarı kalkar ve kalın çerçeve alır (renk tek başına değil).
+func _select(index: int) -> void:
+	for i: int in _choice_views.size():
+		var v: Control = _choice_views[i]
+		var on: bool = i == index
+		v.position.y = CHOICE_Y - (24.0 if on else 0.0)
+		v.set("clay_color", ClayStyle.MINT if on else ClayStyle.PEACH)
+		var ring: Control = v.get_node_or_null("SelectRing") as Control
+		if ring != null:
+			ring.visible = on
+	_selected = index
+
+## Hoparlör simgesi (yazı yerine): dokununca ilgili saat sesle okunur.
+func _add_speaker_icon(tile: Control) -> void:
+	var icon: Control = Control.new()
+	icon.name = "SpeakerIcon"
+	icon.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	icon.size = tile.size
+	icon.draw.connect(func() -> void:
+		var c: Vector2 = icon.size / 2.0 + Vector2(-20, -6)
+		var u: float = minf(icon.size.x, icon.size.y) / 260.0
+		var body: PackedVector2Array = PackedVector2Array([
+			c + Vector2(-58, -30) * u, c + Vector2(-22, -30) * u, c + Vector2(26, -72) * u,
+			c + Vector2(26, 72) * u, c + Vector2(-22, 30) * u, c + Vector2(-58, 30) * u])
+		icon.draw_colored_polygon(body, SPEAKER_INK)
+		for k: int in 2:
+			icon.draw_arc(c + Vector2(30, 0) * u, (62.0 + k * 34.0) * u, -0.75, 0.75, 24, SPEAKER_INK, 14.0 * u, true))
+	tile.add_child(icon)
+	var ring: Control = Control.new()
+	ring.name = "SelectRing"
+	ring.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	ring.size = tile.size
+	ring.visible = false
+	ring.draw.connect(func() -> void:
+		ClayStyle.draw_dashed_round_rect(ring, Rect2(Vector2(-10, -10), ring.size + Vector2(20, 20)), 34.0, ClayStyle.COCOA, 8.0, 18.0))
+	tile.add_child(ring)
+
+func selected_index() -> int:
+	return _selected
+
+func is_digital_shown() -> bool:
+	return not _voice_only
 
 func _on_check_input(event: InputEvent) -> void:
 	if is_press(event):
@@ -498,12 +575,14 @@ func _on_check_input(event: InputEvent) -> void:
 
 ## Onay: kurulan saat / tepsideki tutar hedefle karşılaştırılır. Yanlışta durum korunur.
 func _check_answer() -> void:
-	if not _can_input():
+	if not _can_input() or (_ask == "read" and _selected < 0):
 		return
 	_tap_feedback(_check)
 	_submit_answer(_is_state_correct())
 
 func _is_state_correct() -> bool:
+	if _mode == "clock" and _ask == "read":
+		return _selected == _correct
 	if _mode == "clock":
 		return _time == _target
 	return tray_total() == _amount
@@ -555,6 +634,8 @@ func _solve() -> void:
 	match _ask:
 		"read", "count":
 			_glow(_choice_views[_correct])
+			if _voice_only and _ask == "read":
+				_select(_correct)
 			await _wait(0.6)
 		"set":
 			_ghost = true
@@ -607,6 +688,8 @@ func _debug_answer(correct: bool) -> void:
 	match _ask:
 		"read", "count":
 			_choose(_correct if correct else (0 if _correct != 0 else 1))
+			if _voice_only and _ask == "read":
+				_check_answer()
 		"set":
 			if correct:
 				while _time.y != _target.y:
@@ -667,6 +750,8 @@ func touch_targets() -> Array[Control]:
 	res.append_array(_choice_views)
 	res.append_array(_steppers)
 	res.append_array(_wallet_views)
+	if _target_speaker != null:
+		res.append(_target_speaker)
 	if _check != null:
 		res.append(_check)
 	return res
