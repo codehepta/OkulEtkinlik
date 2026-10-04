@@ -1,5 +1,21 @@
-# OkulEtkinlik
+# Bilgi Adası (OkulEtkinlik)
 
-MEB 1., 2. ve 3. sınıf öğretim programlarıyla uyumlu, çocuklara yönelik eğitici ve sürükleyici bir oyun projesi.
+MEB 1., 2. ve 3. sınıf öğretim programlarıyla uyumlu, 6–9 yaş çocuklar için **ücretsiz ve açık kaynak** bir mobil eğitim oyunu.
 
-> Durum: Tasarım aşaması
+Çocuklar, kil görünümlü maskot **Bilge** baykuşla birlikte **Bilgi Adası**'nı keşfeder. Ada dört bölgeden oluşur: Sayı Ormanı (Matematik), Harf Vadisi (Türkçe), Hayat Kasabası (Hayat Bilgisi) ve Keşif Laboratuvarı (Fen Bilimleri). İçerik, profilde seçilen sınıfa göre değişir.
+
+- 🎮 **Motor:** Godot 4.7 (GDScript) · 📱 **Hedef:** Android ve iOS
+- 🧸 **Görsel stil:** 3D kil / oyuncak (claymation)
+- 🔊 Bütün yönergeler seslendirilir; okuma bilmeyen çocuk da tek başına oynayabilir
+- 🔒 İnternet bağlantısı, reklam, satın alma ve veri toplama yok; her şey cihazda kalır
+
+> **Durum:** Tasarım tamamlandı, Faz 0 (altyapı) başlıyor.
+
+## Dokümanlar
+- [Tasarım (spec)](docs/superpowers/specs/2026-10-04-bilgi-adasi-design.md)
+- [Uygulama planları](docs/superpowers/plans/)
+- [Görsel stil rehberi](docs/assets/style-guide.md) · [İsimlendirme](docs/assets/naming.md)
+- [Asset istekleri (Nano Banana / Gemini TTS promptları)](asset-requests/README.md)
+
+## Lisans
+Kod ve içerik lisansı Faz 0'da eklenecek (önerilen: kod için MIT, içerik ve görseller için CC BY 4.0).

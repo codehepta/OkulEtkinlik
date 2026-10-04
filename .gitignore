@@ -1,7 +1,16 @@
-node_modules/
-dist/
+# Godot 4
+.godot/
+/android/
+build/
+*.translation
+export_credentials.cfg
+*.keystore
+*.jks
+
+# Sistem / araçlar
 .DS_Store
 .env
 .env.*
 !.env.example
 *.log
+.superpowers/
