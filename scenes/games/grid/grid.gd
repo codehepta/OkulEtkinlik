@@ -18,7 +18,7 @@ const ARROW_SETS: PackedStringArray = ["relative", "absolute"]
 ## Sütun / satır aralıkları (x: en az, y: en çok).
 const PATH_COLS: Vector2i = Vector2i(3, 8)
 const PATH_ROWS: Vector2i = Vector2i(3, 5)
-const PAINT_COLS: Vector2i = Vector2i(3, 9)
+const PAINT_COLS: Vector2i = Vector2i(3, 8)
 const PAINT_ROWS: Vector2i = Vector2i(3, 6)
 const MIN_CELL: float = 128.0
 const MAX_PROGRAM: int = 12
@@ -32,17 +32,17 @@ const GOAL_KEY: String = "ui.grid.hedef"
 const WALL_KEY: String = "ui.grid.duvar"
 
 # path düzeni
-const PATH_AREA: Rect2 = Rect2(120, 160, 1100, 640)
-const PALETTE_ORIGIN: Vector2 = Vector2(1300, 180)
+const PATH_AREA: Rect2 = Rect2(280, 160, 1030, 640)
+const PALETTE_ORIGIN: Vector2 = Vector2(1330, 180)
 const PALETTE_CARD: float = 150.0
 const PALETTE_GAP: float = 20.0
-const PATH_CHECK_RECT: Rect2 = Rect2(1300, 560, 320, 170)
-const STRIP_ORIGIN: Vector2 = Vector2(120, 830)
+const PATH_CHECK_RECT: Rect2 = Rect2(1330, 560, 320, 170)
+const STRIP_ORIGIN: Vector2 = Vector2(280, 830)
 const STRIP_CARD: float = 128.0
-const STRIP_GAP: float = 10.0
+const STRIP_GAP: float = 8.0
 const CHAR_SCALE: float = 0.84
 # paint düzeni
-const PAINT_AREA: Rect2 = Rect2(120, 160, 1160, 780)
+const PAINT_AREA: Rect2 = Rect2(280, 160, 1030, 780)
 const REF_RECT: Rect2 = Rect2(1330, 170, 540, 380)
 const CODE_ORIGIN: Vector2 = Vector2(1330, 170)
 const CODE_TILE: float = 128.0

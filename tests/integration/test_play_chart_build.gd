@@ -206,3 +206,14 @@ func test_chart_build_multi_step_result() -> void:
 	await wait_for_signal(g.finished, 10.0)
 	assert_eq(results.size(), 1)
 	assert_true(results[0].multi_step)
+
+## Bilge sol alt köşede durur (lesson_runner: x 16–266, y 724–1068); tepsi ve nesneler oraya taşmaz.
+func test_chart_build_keeps_bilge_corner_clear() -> void:
+	var corner: Rect2 = Rect2(16, 724, 250, 344)
+	for kind: String in ["tally", "table", "object", "dot"]:
+		var full: Dictionary = {"kind": kind, "categories": ["item.meyve.elma", "item.meyve.armut", "item.meyve.muz"],
+			"counts": [8, 4, 3], "questions": [{"ask": "most", "voice": "vo.test.q1"}]}
+		var g: MiniGame = make("chart_build", full, 1)
+		for c: Control in g.call("touch_targets") as Array[Control]:
+			assert_false(c.get_global_rect().intersects(corner), "%s Bilge köşesine taşmamalı" % c.name)
+			assert_true(c.size.x >= 128.0, "15 nesnede de ≥128 px")

@@ -101,7 +101,7 @@
 	"err.params.chart_choices_missing": "choices doğru cevabı içermeli",
 	"err.params.grid_mode": "mode path ya da paint olmalı",
 	"err.params.grid_ask": "ask path için build ya da follow, paint için copy, symmetry, code, silhouette ya da pieces olmalı",
-	"err.params.grid_size": "cols ve rows tam sayı olmalı (path: 3–8 × 3–5, paint: 3–9 × 3–6)",
+	"err.params.grid_size": "cols ve rows tam sayı olmalı (path: 3–8 × 3–5, paint: 3–8 × 3–6)",
 	"err.params.grid_cell": "hücreler en az 128 piksel olmalı (sütun ya da satır çok fazla)",
 	"err.params.grid_facing": "facing up, down, left ya da right olmalı",
 	"err.params.grid_arrows": "arrows relative ya da absolute olmalı",

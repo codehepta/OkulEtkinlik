@@ -28,10 +28,10 @@ const MIN_CHOICES: int = 2
 const MAX_CHOICES: int = 4
 const MAX_VOICED_COUNT: int = 20
 
-# --- Tepsi ve grafik alanları (1920×1080 taban; altta altyazı payı) ---
-const TRAY_RECT: Rect2 = Rect2(56, 176, 712, 696)
+# --- Tepsi ve grafik alanları (1920×1080 taban; altta altyazı payı, sol altta Bilge köşesi boş) ---
+const TRAY_RECT: Rect2 = Rect2(290, 176, 652, 696)
 const TRAY_PAD: float = 28.0
-const CHART_RECT: Rect2 = Rect2(808, 176, 1056, 696)
+const CHART_RECT: Rect2 = Rect2(970, 176, 894, 696)
 const CHART_PAD: float = 20.0
 const LANE_GAP: float = 16.0
 const ROW_MAX_H: float = 200.0

@@ -248,7 +248,7 @@ func test_grid_touch_targets() -> void:
 	assert_touch_targets(b)
 	assert_touch_targets(make("grid", _absolute(), 1))
 	assert_touch_targets(make("grid", _follow()))
-	assert_touch_targets(make("grid", {"mode": "paint", "ask": "copy", "cols": 9, "rows": 6, "target": [[1, 1]]}, 1))
+	assert_touch_targets(make("grid", {"mode": "paint", "ask": "copy", "cols": 8, "rows": 6, "target": [[1, 1]]}, 1))
 	assert_touch_targets(make("grid", _sym(), 1))
 	assert_touch_targets(make("grid", _code(), 1))
 
@@ -278,3 +278,14 @@ func test_check_double_press_counts_once() -> void:
 	c.call("_debug_check")
 	c.call("_debug_check")
 	assert_eq(answers.size(), 1)
+
+## Bilge sol alt köşede durur (lesson_runner: x 16–266, y 724–1068); ızgara ve şerit oraya taşmaz.
+func test_grid_keeps_bilge_corner_clear() -> void:
+	var corner: Rect2 = Rect2(16, 724, 250, 344)
+	var widest: Array[Dictionary] = [
+		_build({"cols": 8, "rows": 5, "start": [0, 4], "goal": [7, 0]}),
+		{"mode": "paint", "ask": "copy", "cols": 8, "rows": 6, "target": [[0, 5]]}]
+	for params: Dictionary in _all() + widest:
+		var g: MiniGame = make("grid", params, 1)
+		for c: Control in g.call("touch_targets") as Array[Control]:
+			assert_false(c.get_global_rect().intersects(corner), "%s Bilge köşesine taşmamalı: %s" % [c.name, c.get_global_rect()])

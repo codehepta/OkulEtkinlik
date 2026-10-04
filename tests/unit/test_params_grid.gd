@@ -70,9 +70,9 @@ func test_grid_valid() -> void:
 	_ok(_with(_follow(), {"arrows": "absolute", "program": ["up", "up", "right", "right"]}))
 	_ok(_with(_build(), {"cols": 8, "rows": 5, "start": [0, 4], "goal": [7, 0]}))
 	_ok(_with(_build(), {"cols": 3, "rows": 3, "start": [0, 0], "goal": [2, 2], "walls": []}))
-	_ok(_with(_copy(), {"cols": 9, "rows": 6, "target": [[8, 5]]}))
+	_ok(_with(_copy(), {"cols": 8, "rows": 6, "target": [[7, 5]]}))
 	_ok(_with(_pieces(), {"cols": 3, "rows": 3, "pieces": 9}))
-	_ok(_with(_pieces(), {"cols": 9, "rows": 6, "pieces": 20}))
+	_ok(_with(_pieces(), {"cols": 8, "rows": 6, "pieces": 20}))
 	_ok(_with(_sym(), {"axis": 1, "given": [[0, 0]]}))
 
 func test_grid_invalid() -> void:
@@ -84,7 +84,7 @@ func test_grid_invalid() -> void:
 	_bad(_with(_build(), {"rows": 6}), "path 6 satır")
 	_bad(_with(_build(), {"rows": 2, "start": [0, 1]}), "2 satır")
 	_bad(_with(_build(), {"cols": 4.5}), "kesirli cols")
-	_bad(_with(_copy(), {"cols": 10}), "paint 10 sütun")
+	_bad(_with(_copy(), {"cols": 9}), "paint 9 sütun")
 	_bad(_with(_copy(), {"rows": 7}), "paint 7 satır")
 	_bad(_with(_build(), {"facing": "north"}), "bilinmeyen yön")
 	_bad(_with(_build(), {"arrows": "diagonal"}), "bilinmeyen ok seti")
@@ -148,10 +148,10 @@ func test_grid_error_messages() -> void:
 
 func test_grid_cell_size_rule() -> void:
 	var s: GDScript = load(TemplateRegistry.script_path("grid")) as GDScript
-	# Her izinli boyutta hücre ≥128 px (path 8×5, paint 9×6 en sıkışık durumlar).
+	# Her izinli boyutta hücre ≥128 px (path 8×5, paint 8×6 en sıkışık durumlar; Bilge köşesi boş kalır).
 	assert_gte(float(s.call("cell_size_for", "path", 8, 5)), 128.0)
-	assert_gte(float(s.call("cell_size_for", "paint", 9, 6)), 128.0)
-	assert_lt(float(s.call("cell_size_for", "paint", 10, 6)), 128.0, "10 sütun 128 px'e sığmaz")
+	assert_gte(float(s.call("cell_size_for", "paint", 8, 6)), 128.0)
+	assert_lt(float(s.call("cell_size_for", "paint", 9, 6)), 128.0, "9 sütun 128 px'e sığmaz")
 
 # --- saf mantık ---
 func test_grid_logic_simulate_and_shortest() -> void:
