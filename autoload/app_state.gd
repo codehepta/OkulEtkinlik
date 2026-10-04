@@ -16,6 +16,9 @@ const SCENES: Dictionary = {
 	"session_end": "res://scenes/ui/session_end.tscn",
 }
 
+## Testlerde sahne tablosu değiştirilebilir (varsayılan: SCENES).
+var scenes: Dictionary = SCENES.duplicate()
+
 ## Etkin profil kimliği ("" = seçili profil yok).
 var profile_id: String = ""
 ## Etkin profilin sınıfı (0 = bilinmiyor); SubtitleBubble okur.
@@ -29,6 +32,11 @@ var session_timer: Node = SessionTimer
 var narrator: Node = Narrator
 var audio: Node = AudioDirector
 var save: Node = SaveService
+var content: Node = ContentDB
+## Çıkartma listesi dosyası; testlerde değiştirilir.
+var stickers_path: String = "res://content/stickers.json"
+## Ekran animasyonu ve bekleme çarpanı (1 = normal); testlerde 0.
+var anim_scale: float = 1.0
 ## Ekranların ekleneceği düğüm; boşsa get_tree().root.
 var scene_root: Node = null
 
@@ -54,11 +62,11 @@ func adopt_scene(scene_name: String, node: Node) -> void:
 	_current_name = scene_name
 
 func goto(scene: String, args: Dictionary = {}) -> void:
-	if not SCENES.has(scene):
+	if not scenes.has(scene):
 		push_error("AppState: bilinmeyen sahne: %s" % scene)
 		return
 	last_error = ""
-	var path: String = str(SCENES[scene])
+	var path: String = str(scenes[scene])
 	if not ResourceLoader.exists(path):
 		last_error = "sahne dosyası yok: %s" % path
 		return
@@ -77,6 +85,18 @@ func goto(scene: String, args: Dictionary = {}) -> void:
 	_current_name = scene
 	if node.has_method("enter"):
 		node.call("enter", args)
+
+## Ayarlardaki "hareketi azalt" seçeneği.
+func reduce_motion() -> bool:
+	var settings: Variant = save.data.get("settings", {})
+	return settings is Dictionary and bool((settings as Dictionary).get("reduce_motion", false))
+
+## Etkin profilin sınıfı (kayıttan okunur; bulunamazsa active_grade).
+func current_grade() -> int:
+	for p: Dictionary in progress.profiles():
+		if str(p["id"]) == profile_id:
+			return int(p["grade"])
+	return active_grade
 
 ## Profili etkinleştirir, sınıfını ayarlar ve süre sayacını yeniden başlatır.
 func select_profile(id: String) -> void:

@@ -15,6 +15,7 @@ var _avatar: String = ""
 var _grade: int = 0
 var _pages: Array[Control] = []
 var _edit: LineEdit = null
+var _navigating: bool = false
 
 func _ready() -> void:
 	var bg: ColorRect = ColorRect.new()
@@ -47,8 +48,9 @@ func pick_grade(grade: int) -> void:
 
 ## Profili oluşturur ve etkinleştirir; takma ad alanı boşsa takma ad verilmez.
 func confirm() -> void:
-	if _avatar == "" or _grade == 0:
+	if _avatar == "" or _grade == 0 or _navigating:
 		return
+	_navigating = true
 	var id: String = app.progress.create_profile(_avatar, _edit.text.strip_edges(), _grade)
 	if id == "":
 		app.goto("profile_select")

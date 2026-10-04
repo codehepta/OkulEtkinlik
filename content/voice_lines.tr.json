@@ -242,5 +242,9 @@
 	"vo.genel.takma_ad": {
 		"text": "İstersen kendine bir takma ad yazabilirsin. Bir büyüğünden yardım iste. İstemezsen Geç düğmesine dokun.",
 		"speaker": "BILGE"
+	},
+	"vo.genel.yakinda": {
+		"text": "Burası çok yakında açılacak! Biraz daha bekle.",
+		"speaker": "BILGE"
 	}
 }

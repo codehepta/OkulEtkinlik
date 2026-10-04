@@ -69,6 +69,10 @@ func best_stars(profile_id: String, node_id: String) -> int:
 	var e: Variant = nodes.get(node_id)
 	return int((e as Dictionary).get("best_stars", 0)) if e is Dictionary else 0
 
+## Profilin kazandığı çıkartma anahtarları (kazanma sırasıyla).
+func stickers(profile_id: String) -> PackedStringArray:
+	return PackedStringArray(_profile(profile_id).get("stickers", []))
+
 func outcome_mastery(profile_id: String, code: String) -> float:
 	var outs: Dictionary = _profile(profile_id).get("outcomes", {})
 	var e: Variant = outs.get(code)

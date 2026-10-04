@@ -135,5 +135,24 @@ func test_gear_goes_to_parent_gate_with_next() -> void:
 
 func test_goto_missing_scene_stays() -> void:
 	_app.goto("profile_create")
-	_app.goto("region_path")  # dosyası henüz yok
+	_app.scenes["ghost"] = "res://scenes/ui/ghost_yok.tscn"  # kasıtlı olarak var olmayan sahne
+	_app.goto("ghost")
 	assert_eq(_app.current_scene_name(), "profile_create")
+
+func test_double_tap_on_select_navigates_once() -> void:
+	var id: String = _progress.create_profile("avatar.kedi", "A", 3)
+	_app.goto("profile_select")
+	var sel: Node = _screen()
+	sel.select(id)
+	var first: Node = _screen()
+	sel.select(id)
+	assert_eq(_screen(), first, "ikinci dokunuş yok sayılır")
+
+func test_double_tap_on_confirm_creates_one_profile() -> void:
+	_app.goto("profile_create")
+	var s: Node = _screen()
+	s.pick_avatar("avatar.ayi")
+	s.pick_grade(1)
+	s.confirm()
+	s.confirm()
+	assert_eq(_progress.profiles().size(), 1)

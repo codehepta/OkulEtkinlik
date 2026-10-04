@@ -9,6 +9,7 @@ var app: Node = AppState
 
 var _cards: Array[Button] = []
 var _plus: Button = null
+var _navigating: bool = false
 
 func _ready() -> void:
 	var bg: ColorRect = ColorRect.new()
@@ -60,6 +61,9 @@ func plus_card() -> Button:
 	return _plus
 
 func select(id: String) -> void:
+	if _navigating:
+		return
+	_navigating = true
 	app.select_profile(id)
 	app.enter_after_profile()
 

@@ -57,5 +57,18 @@
 	"label.avatar.tilki": "Tilki",
 	"label.avatar.penguen": "Penguen",
 	"label.avatar.kaplumbaga": "Kaplumbağa",
-	"label.ui.parent": "Veli"
+	"label.ui.parent": "Veli",
+	"subject.matematik": "Matematik",
+	"subject.turkce": "Türkçe",
+	"subject.hayat_bilgisi": "Hayat Bilgisi",
+	"subject.fen": "Fen",
+	"region.sayi_ormani": "Sayı Ormanı",
+	"region.harf_vadisi": "Harf Vadisi",
+	"region.hayat_kasabasi": "Hayat Kasabası",
+	"region.kesif_laboratuvari": "Keşif Laboratuvarı",
+	"region.agac_ev": "Bilge'nin Ağaç Evi",
+	"result.continue": "Devam",
+	"result.replay": "Tekrar oyna",
+	"map.album": "Albüm",
+	"map.back": "Geri"
 }

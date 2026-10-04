@@ -121,3 +121,10 @@ func test_record_partial_updates_mastery_only() -> void:
 	assert_eq((prof["stickers"] as Array).size(), 0)
 	var nodes: Dictionary = prof["nodes"]
 	assert_false(nodes.has(N1), "oynama sayısı artmaz")
+
+func test_stickers_lists_owned_in_order() -> void:
+	var pid: String = _p.create_profile("a", "x", 1)
+	assert_eq(_p.stickers(pid), PackedStringArray())
+	_p.record_node(pid, N1, _res([_rr(0)]))
+	assert_eq(_p.stickers(pid).size(), 1)
+	assert_eq(_p.stickers("yok"), PackedStringArray())

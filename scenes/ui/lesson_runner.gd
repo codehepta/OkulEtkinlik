@@ -21,6 +21,8 @@ var audio: Node = AudioDirector
 var progress: Node = Progress
 var content: Node = ContentDB
 var session_timer: Node = SessionTimer
+## AppState.goto enjekte eder; enter() servisleri buradan alır.
+var app: Node = AppState
 ## Intro ve turlar arası bekleme (sn); testlerde 0.
 var step_delay: float = 0.8
 
@@ -54,6 +56,28 @@ func _ready() -> void:
 func _exit_tree() -> void:
 	if session_timer != null and session_timer.limit_reached.is_connected(_on_limit_reached):
 		session_timer.limit_reached.disconnect(_on_limit_reached)
+
+## AppState.goto("lesson", {"node_id": id}) giriş noktası: servisleri uygulamadan alır,
+## bitişte sonuç ekranına, ev düğmesinde patikaya geçer.
+func enter(args: Dictionary) -> void:
+	narrator = app.narrator
+	audio = app.audio
+	progress = app.progress
+	content = app.content
+	if session_timer != app.session_timer:
+		if session_timer.limit_reached.is_connected(_on_limit_reached):
+			session_timer.limit_reached.disconnect(_on_limit_reached)
+		session_timer = app.session_timer
+		session_timer.limit_reached.connect(_on_limit_reached)
+	step_delay = 0.8 * float(app.anim_scale)
+	var node_id: String = str(args.get("node_id", ""))
+	var subject: String = node_id.get_slice(".", 1)
+	lesson_completed.connect(func(summary: Dictionary) -> void:
+		var result: Dictionary = summary.duplicate()
+		result["subject"] = subject
+		app.goto("result", result))
+	home_requested.connect(func() -> void: app.goto("region_path", {"subject": subject}))
+	start(app.profile_id, node_id)
 
 func start(profile_id: String, node_id: String, rng_seed: int = -1) -> void:
 	_profile_id = profile_id

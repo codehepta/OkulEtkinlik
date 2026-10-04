@@ -5,6 +5,10 @@ signal line_finished(id: String)
 
 var said: Array[String] = []
 var sfx: Array[String] = []
+var music: Array[String] = []
+
+func play_music(key: String) -> void:
+	music.append(key)
 
 func say(id: String) -> void:
 	said.append(id)
