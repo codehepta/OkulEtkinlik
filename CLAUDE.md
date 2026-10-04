@@ -36,12 +36,14 @@ godot --headless --path . --import
 # Testler (GUT)
 godot --headless --path . -s addons/gut/gut_cmdln.gd -gdir=res://tests -ginclude_subdirs -gexit
 
-# Eksik asset raporu (Faz 1'de eklenecek)
+# Eksik asset raporu
 godot --headless --path . -s res://tools/missing_assets.gd
 
 # Android debug APK (şablonlar kurulu olmalı)
 godot --headless --path . --export-debug "Android" build/android/bilgi-adasi-debug.apk
 ```
+Test paketini **sıralı** çalıştır: aynı anda yalnızca bir `godot` süreci (önce `pgrep godot`). Paralel süreçler `user://` test dizinlerini ve import önbelleğini bozar.
+`tools/*` altındaki geliştirici araçlarının çıktısı Türkçe sabit metin içerebilir; "kodda sabit metin yok" kuralı çocuğa ve veliye görünen uygulama metinleri içindir.
 `--import` bayrağı çalışmazsa `godot --headless --path . --editor --quit-after 2` kullan.
 
 Cloud ortamında Godot indirmesi başarısız olursa (ağ kısıtı), ortamın `github.com` ve `objects.githubusercontent.com` adreslerinden indirmeye izin vermesi gerekir. Bunu sahibe bildir; çözüm aramak için başka kaynaklardan ikili dosya indirme.

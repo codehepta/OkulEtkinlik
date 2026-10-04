@@ -77,6 +77,10 @@ func _on_tile_input(event: InputEvent, index: int) -> void:
 func _debug_choose(index: int) -> void:
 	_choose(index)
 
+## Test için: kurulumdaki `count` ile `choices`'tan türetilen doğru seçenek indeksi.
+func _debug_correct_index() -> int:
+	return _choices.find(_count)
+
 func _choose(index: int) -> void:
 	if not _can_input() or index < 0 or index >= _choices.size():
 		return

@@ -111,8 +111,8 @@ func select_subject(subject: String) -> void:
 		tab.pivot_offset = tab.custom_minimum_size / 2.0
 		tab.scale = Vector2(SELECTED_SCALE, SELECTED_SCALE) if s == subject else Vector2.ONE
 	for c: Node in _grid.get_children():
-		c.queue_free()
 		_grid.remove_child(c)
+		c.free()  # hemen serbest bırak: yetim düğüm kalmasın
 	_slots.clear()
 	for key_v: Variant in _data.get(subject, []):
 		var key: String = str(key_v)
