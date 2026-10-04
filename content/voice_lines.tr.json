@@ -268,43 +268,43 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u01.n02.intro": {
-		"text": "Şimdi kulaklarını aç! Duyduğun sayıyı bulalım.",
-		"speaker": "BILGE"
-	},
-	"vo.g1.matematik.u01.n02.r01": {
-		"text": "Dinle ve bul: üç! Üç rakamına dokun.",
-		"speaker": "ANLATICI"
-	},
-	"vo.g1.matematik.u01.n02.r02": {
-		"text": "Dinle ve bul: beş! Beş rakamına dokun.",
-		"speaker": "ANLATICI"
-	},
-	"vo.g1.matematik.u01.n02.r03": {
-		"text": "Dinle ve bul: yedi! Yedi rakamına dokun.",
-		"speaker": "ANLATICI"
-	},
-	"vo.g1.matematik.u01.n02.r04": {
-		"text": "Dinle ve bul: dokuz! Dokuz rakamına dokun.",
-		"speaker": "ANLATICI"
-	},
-	"vo.g1.matematik.u01.n03.intro": {
 		"text": "Bak, bu çubuklar da sayıları gösterir! Çubukları sayıp eşleştirelim.",
 		"speaker": "BILGE"
 	},
-	"vo.g1.matematik.u01.n03.r01": {
+	"vo.g1.matematik.u01.n02.r01": {
 		"text": "Çubukları say. Her birini doğru sayıya sürükle!",
 		"speaker": "ANLATICI"
 	},
-	"vo.g1.matematik.u01.n03.r02": {
-		"text": "Kaç çubuk var? Sürükle ve doğru sayıya bırak!",
+	"vo.g1.matematik.u01.n02.r02": {
+		"text": "Çubuk gruplarını say. Her grubu doğru sayıya bırak!",
 		"speaker": "ANLATICI"
 	},
-	"vo.g1.matematik.u01.n03.r03": {
+	"vo.g1.matematik.u01.n02.r03": {
 		"text": "Çubukları tek tek say, sonra doğru sayıya sürükle!",
 		"speaker": "ANLATICI"
 	},
-	"vo.g1.matematik.u01.n03.r04": {
+	"vo.g1.matematik.u01.n02.r04": {
 		"text": "Hepsini eşleştir! Çubukları say ve doğru sayıya bırak.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.matematik.u01.n03.intro": {
+		"text": "Şimdi kulaklarını aç! Duyduğun sayıyı bulalım.",
+		"speaker": "BILGE"
+	},
+	"vo.g1.matematik.u01.n03.r01": {
+		"text": "Dinle ve bul: iki! İki rakamına dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.matematik.u01.n03.r02": {
+		"text": "Dinle ve bul: üç! Üç rakamına dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.matematik.u01.n03.r03": {
+		"text": "Dinle ve bul: dört! Dört rakamına dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.matematik.u01.n03.r04": {
+		"text": "Dinle ve bul: beş! Beş rakamına dokun.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u01.n04.intro": {
@@ -340,7 +340,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u01.n05.r02": {
-		"text": "Dinle ve bul: on üç! On üç sayısına dokun.",
+		"text": "Dinle ve bul: sekiz! Sekiz rakamına dokun.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u01.n05.r03": {
@@ -348,7 +348,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u01.n05.r04": {
-		"text": "Dinle ve bul: on yedi! On yedi sayısına dokun.",
+		"text": "Dinle ve bul: on beş! On beş sayısına dokun.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u01.n05.r05": {
@@ -356,19 +356,19 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u01.n06.intro": {
-		"text": "Tahmin oyunu zamanı! Önce bak ve tahmin et, sonra say.",
+		"text": "Tahmin oyunu zamanı! Nesnelere iyice bak ve tahmin et.",
 		"speaker": "BILGE"
 	},
 	"vo.g1.matematik.u01.n06.r01": {
-		"text": "Kaç mantar var? Bir bak ve tahmin et! Az mı, çok mu?",
+		"text": "Kaç mantar var? Bir bak, tahmin et, sonra doğru sayıya dokun!",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u01.n06.r02": {
-		"text": "Kaç kitap var? Saymadan önce tahmin et, sonra dokun!",
+		"text": "Kaç kitap var? Tahmin et, sonra doğru sayıya dokun!",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u01.n06.r03": {
-		"text": "Kaç ördek var? Önce tahmin et, sonra sayarak kontrol et!",
+		"text": "Kaç ördek var? İyice bak, tahmin et ve doğru sayıya dokun!",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u01.n06.r04": {

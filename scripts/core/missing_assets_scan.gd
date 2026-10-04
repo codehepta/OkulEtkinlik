@@ -148,7 +148,10 @@ static func report_markdown(missing: Dictionary, voice_lines: Dictionary) -> Str
 			md.append("|---|---|---|---|")
 			for k: String in arr:
 				var line: Dictionary = voice_lines.get(k, {}) if voice_lines.get(k) is Dictionary else {}
-				var wav: String = AssetPaths.audio_candidates(k)[1]
+				var wav: String = ""
+				for c: String in AssetPaths.audio_candidates(k):
+					if c.ends_with(".wav"):
+						wav = c
 				md.append("| `%s` | `%s` | %s | %s |" % [k, _rel(wav), str(line.get("speaker", "?")), str(line.get("text", "?"))])
 		else:
 			md.append("| Kimlik | Dosya yolu |")

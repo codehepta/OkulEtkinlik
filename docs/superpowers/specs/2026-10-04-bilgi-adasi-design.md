@@ -330,3 +330,6 @@ Her faz kendi uygulama planını (`docs/superpowers/plans/`) alır. İlk ayrınt
 | Cihazda Türkçe TTS sesinin bulunmaması | Metin balonu yedeği; gerçek ses dosyaları öncelikli asset partisi |
 | Uygulama boyutu (çok sayıda görsel ve ses) | WebP/lossy içe aktarma, mono 22 kHz OGG, 2048 px üst sınır |
 | Cloud ortamında Godot indirme ağ kısıtı | `scripts/setup-godot.sh`; ortamın GitHub release indirmesine izin vermesi gerekir |
+
+## Açık sorular (Faz 1 uygulaması)
+- **1. sınıf Matematik ünite 1 (MAT.1.1. Sayılar ve Nicelikler (1)) kapsamı:** MAT.1.1.7 (tahmin) yalnızca kısmen karşılanıyor. `count_choose` aralıklı seçeneklerle tahmine yönlendiriyor ama "önce tahmin et, sonra say ve karşılaştır" adımı yok; bunun için ayrı bir tahmin şablonu ya da modu gerekiyor. MAT.1.1.4 (çok/daha çok/az/daha az/eşit karşılaştırma) uygulanmadı, çünkü iki grubu yan yana gösteren bir karşılaştırma şablonu yok. Sahip Faz 3'te karar verecek.

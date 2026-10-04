@@ -12,8 +12,8 @@ Stil bloğu: `docs/assets/style-guide.md` → `STYLE_ICON` (promptların sonunda
 | # | Dosya yolu | Oran | Referans | Ne |
 |---|---|---|---|---|
 | 1 | `assets/images/stickers/matematik/elma.png` | 1:1 | — | Çıkartma: gülümseyen elma (durak 1, 1'den 5'e sayalım). |
-| 2 | `assets/images/stickers/matematik/balon.png` | 1:1 | — | Çıkartma: üç renkli balon demeti (durak 2, Sayıyı dinle, bul). |
-| 3 | `assets/images/stickers/matematik/ayicik.png` | 1:1 | — | Çıkartma: oyuncak ayıcık (durak 3, Çubuklar ve sayılar). |
+| 2 | `assets/images/stickers/matematik/ayicik.png` | 1:1 | — | Çıkartma: oyuncak ayıcık (durak 2, Çubuklar ve sayılar). |
+| 3 | `assets/images/stickers/matematik/balon.png` | 1:1 | — | Çıkartma: üç renkli balon demeti (durak 3, Sayıyı dinle, bul). |
 | 4 | `assets/images/stickers/matematik/kelebek.png` | 1:1 | — | Çıkartma: renkli kelebek (durak 4, 6'dan 10'a sayalım). |
 | 5 | `assets/images/stickers/matematik/cilek.png` | 1:1 | — | Çıkartma: gülümseyen çilek (durak 5, 20'ye kadar sayalım). |
 | 6 | `assets/images/stickers/matematik/mantar.png` | 1:1 | — | Çıkartma: benekli mantar (durak 6, Tahmin et!). |
@@ -31,24 +31,24 @@ Stil bloğu: `docs/assets/style-guide.md` → `STYLE_ICON` (promptların sonunda
 a round sticker badge with a thick white die-cut border, showing a cute smiling shiny red apple with a small green leaf and big friendly eyes. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
 ```
 
-### 2. `assets/images/stickers/matematik/balon.png`
+### 2. `assets/images/stickers/matematik/ayicik.png`
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
-- **Açıklama:** Çıkartma: üç renkli balon demeti (durak 2, Sayıyı dinle, bul).
-
-```
-a round sticker badge with a thick white die-cut border, showing a small bunch of three happy balloons in red, blue and yellow with curly strings. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
-```
-
-### 3. `assets/images/stickers/matematik/ayicik.png`
-
-- **Oran:** 1:1  
-- **Referans görsel:** yok  
-- **Açıklama:** Çıkartma: oyuncak ayıcık (durak 3, Çubuklar ve sayılar).
+- **Açıklama:** Çıkartma: oyuncak ayıcık (durak 2, Çubuklar ve sayılar).
 
 ```
 a round sticker badge with a thick white die-cut border, showing a cute soft brown teddy bear waving one paw. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
+```
+
+### 3. `assets/images/stickers/matematik/balon.png`
+
+- **Oran:** 1:1  
+- **Referans görsel:** yok  
+- **Açıklama:** Çıkartma: üç renkli balon demeti (durak 3, Sayıyı dinle, bul).
+
+```
+a round sticker badge with a thick white die-cut border, showing a small bunch of three happy balloons in red, blue and yellow with curly strings. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
 ```
 
 ### 4. `assets/images/stickers/matematik/kelebek.png`
