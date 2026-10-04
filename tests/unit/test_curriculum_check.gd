@@ -68,6 +68,12 @@ func test_normalize_ignores_whitespace_tabs_and_hyphenation() -> void:
 	assert_true((_cc.normalize("“eşit”") as String).contains("“"))
 	assert_eq(_cc.normalize("a b­c\r"), "abc")
 
+func test_normalize_strips_unicode_space_separators() -> void:
+	# U+2002 EN SPACE, U+3000 IDEOGRAPHIC SPACE, U+200B ZERO WIDTH SPACE, U+202F NARROW NO-BREAK SPACE.
+	var sp: String = String.chr(0x2002) + String.chr(0x3000) + String.chr(0x200B) + String.chr(0x202F)
+	assert_eq(_cc.normalize("a" + sp + "b"), "ab")
+	assert_eq(_cc.normalize("ğ)" + String.chr(0x2002) + "Çözüme" + String.chr(0x2009) + "ulaşır."), _cc.normalize("ğ) Çözüme ulaşır."))
+
 # --- check_outcomes ---
 
 func test_valid_outcome_passes() -> void:
