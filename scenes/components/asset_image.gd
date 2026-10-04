@@ -33,9 +33,6 @@ func _refresh() -> void:
 	_label.text = _label_text()
 
 func _label_text() -> String:
-	var root: Node = (Engine.get_main_loop() as SceneTree).root
-	if root.has_node("Strings"):
-		var strings: Node = root.get_node("Strings")
-		if strings.call("has", "label." + key):
-			return str(strings.call("t", "label." + key))
+	if Strings.has("label." + key):
+		return Strings.t("label." + key)
 	return key.get_slice(".", key.get_slice_count(".") - 1)

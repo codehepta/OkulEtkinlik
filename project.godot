@@ -12,6 +12,13 @@ config/icon="res://icon.svg"
 
 SaveService="*res://autoload/save_service.gd"
 AssetRegistry="*res://autoload/asset_registry.gd"
+Strings="*res://autoload/strings.gd"
+AudioDirector="*res://autoload/audio_director.gd"
+Narrator="*res://autoload/narrator.gd"
+
+[audio]
+
+buses/default_bus_layout="res://default_bus_layout.tres"
 
 [display]
 
