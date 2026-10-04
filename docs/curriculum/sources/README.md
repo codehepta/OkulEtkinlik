@@ -19,7 +19,7 @@ Her PDF'in yanındaki `.txt` dosyası `pypdf` ile çıkarılmış düz metindir.
 - Tablolarda metin çıkarımı bozuk olabilir. Şüpheli durumda kodu ve metni PDF'in kendisinden doğrula.
 
 ## Not: 1. sınıf Matematik tema sırası
-Programdaki tema sırasına göre 1. sınıf Matematik **1. teması `MAT.1.3. Nesnelerin Geometrisi (1)`**, 2. teması `MAT.1.1. Sayılar ve Nicelikler (1)` (bkz. `.txt` ~374. satır). Plan Task 16 "ilk ünite" diyor. Dikey dilim için hangi temanın kullanılacağı sahibin kararıdır; sahip yanıt verene kadar Task 16'nın içerik adımına başlanmaz.
+Programdaki tema sırasına göre 1. sınıf Matematik **1. teması `MAT.1.3. Nesnelerin Geometrisi (1)`**, 2. teması `MAT.1.1. Sayılar ve Nicelikler (1)` (bkz. `.txt` ~374. satır). **Sahip kararı (2026-10-04):** Dikey dilim (plan Task 16) **`MAT.1.1. Sayılar ve Nicelikler (1)`** temasıyla yapılır. Bu tema mevcut üç şablona ve `asset-requests/004` nesnelerine uyuyor. `content/g1/matematik/` içinde dosya adı yine `u01.json` kalabilir; `source` alanı bu temayı göstermelidir. Oyundaki durak sırası Faz 2'de program sırasına göre yeniden düzenlenebilir.
 
 ## Lisans notu
 Bu belgeler T.C. Millî Eğitim Bakanlığı'nın kamuya açık olarak yayımladığı resmi öğretim programlarıdır. Repoda yalnızca müfredat eşlemesinin kaynağı olarak tutulurlar; projenin MIT / CC BY lisansları bu dosyaları kapsamaz.
