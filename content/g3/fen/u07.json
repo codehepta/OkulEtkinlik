@@ -1,0 +1,264 @@
+{
+	"id": "g3.fen.u07",
+	"grade": 3,
+	"subject": "fen",
+	"title_key": "unit.g3.fen.u07",
+	"source": {
+		"program": "TYMM Fen Bilimleri (3–8)",
+		"doc": "Fen Bilimleri Dersi Öğretim Programı",
+		"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+		"page": 41,
+		"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf",
+		"theme": "7. TOPRAĞI TANIYORUM, TARIMI KEŞFEDİYORUM"
+	},
+	"nodes": [
+		{
+			"id": "g3.fen.u07.n01",
+			"outcomes": [
+				"FB.3.7.1"
+			],
+			"title_key": "node.g3.fen.u07.n01",
+			"intro_voice": "vo.g3.fen.u07.n01.intro",
+			"sticker": "st.fen.solucan",
+			"rounds": [
+				{
+					"template": "sequence",
+					"difficulty": 1,
+					"voice": "vo.g3.fen.u07.n01.r01",
+					"params": {
+						"items": [
+							{
+								"type": "item",
+								"value": "item.fen.toprak_1_kaya"
+							},
+							{
+								"type": "item",
+								"value": "item.fen.toprak_3_kum_cakil"
+							},
+							{
+								"type": "item",
+								"value": "item.fen.toprak_4_toprak"
+							}
+						]
+					}
+				},
+				{
+					"template": "sequence",
+					"difficulty": 2,
+					"voice": "vo.g3.fen.u07.n01.r02",
+					"params": {
+						"items": [
+							{
+								"type": "item",
+								"value": "item.fen.toprak_1_kaya"
+							},
+							{
+								"type": "item",
+								"value": "item.fen.toprak_2_catlak"
+							},
+							{
+								"type": "item",
+								"value": "item.fen.toprak_3_kum_cakil"
+							},
+							{
+								"type": "item",
+								"value": "item.fen.toprak_4_toprak"
+							}
+						]
+					}
+				},
+				{
+					"template": "listen_find",
+					"difficulty": 2,
+					"voice": "vo.g3.fen.u07.n01.r03",
+					"params": {
+						"target": {
+							"type": "item",
+							"value": "item.fen.kum",
+							"voice": "vo.g3.fen.u07.n01.r03.hedef"
+						},
+						"options": [
+							{
+								"type": "item",
+								"value": "item.fen.kum"
+							},
+							{
+								"type": "item",
+								"value": "item.fen.cakil"
+							},
+							{
+								"type": "item",
+								"value": "item.fen.bitki_parcalari"
+							},
+							{
+								"type": "item",
+								"value": "item.fen.kil"
+							}
+						]
+					}
+				},
+				{
+					"template": "listen_find",
+					"difficulty": 3,
+					"voice": "vo.g3.fen.u07.n01.r04",
+					"params": {
+						"target": {
+							"type": "item",
+							"value": "item.fen.bitki_parcalari",
+							"voice": "vo.g3.fen.u07.n01.r04.hedef"
+						},
+						"options": [
+							{
+								"type": "item",
+								"value": "item.fen.kum"
+							},
+							{
+								"type": "item",
+								"value": "item.fen.cakil"
+							},
+							{
+								"type": "item",
+								"value": "item.fen.bitki_parcalari"
+							},
+							{
+								"type": "item",
+								"value": "item.fen.kil"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g3.fen.u07.n02",
+			"outcomes": [
+				"FB.3.7.2"
+			],
+			"title_key": "node.g3.fen.u07.n02",
+			"intro_voice": "vo.g3.fen.u07.n02.intro",
+			"sticker": "st.fen.fide",
+			"rounds": [
+				{
+					"template": "sort_bins",
+					"difficulty": 1,
+					"voice": "vo.g3.fen.u07.n02.r01",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "text",
+									"value": "fen.txt.gerekli",
+									"voice": "vo.fen.txt.gerekli"
+								},
+								"shape": "heart",
+								"color": "green"
+							},
+							{
+								"label": {
+									"type": "text",
+									"value": "fen.txt.gerekmez",
+									"voice": "vo.fen.txt.gerekmez"
+								},
+								"shape": "square",
+								"color": "orange"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.sulama_kabi"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.gunes"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.saksi_toprak"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.oyuncak_top"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.sekerleme"
+								},
+								"bin": 1
+							}
+						]
+					}
+				},
+				{
+					"template": "drag_match",
+					"difficulty": 2,
+					"voice": "vo.g3.fen.u07.n02.r02",
+					"params": {
+						"pairs": [
+							{
+								"left": {
+									"type": "item",
+									"value": "item.fen.kaktus"
+								},
+								"right": {
+									"type": "text",
+									"value": "fen.txt.az_su",
+									"voice": "vo.fen.txt.az_su"
+								}
+							},
+							{
+								"left": {
+									"type": "item",
+									"value": "item.fen.celtik"
+								},
+								"right": {
+									"type": "text",
+									"value": "fen.txt.cok_su",
+									"voice": "vo.fen.txt.cok_su"
+								}
+							}
+						]
+					}
+				},
+				{
+					"template": "sequence",
+					"difficulty": 2,
+					"voice": "vo.g3.fen.u07.n02.r03",
+					"params": {
+						"items": [
+							{
+								"type": "item",
+								"value": "item.fen.ekim_tohum_ek"
+							},
+							{
+								"type": "item",
+								"value": "item.fen.ekim_sula"
+							},
+							{
+								"type": "item",
+								"value": "item.fen.ekim_gunesli_yer"
+							},
+							{
+								"type": "item",
+								"value": "item.fen.ekim_filiz"
+							}
+						]
+					}
+				}
+			]
+		}
+	]
+}
