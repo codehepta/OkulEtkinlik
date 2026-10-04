@@ -2,10 +2,12 @@ extends GutTest
 ## Gerçek veri kapısı: docs/curriculum/*.json resmi kaynak dökümüne ve programdaki sayımlara uymalı.
 
 const CurriculumCheck := preload("res://tools/curriculum/curriculum_check.gd")
+const CurriculumReport := preload("res://tools/curriculum/report.gd")
 
 const OUTCOMES_PATH: String = "res://docs/curriculum/outcomes.json"
 const THEMES_PATH: String = "res://docs/curriculum/themes.json"
 const GAME_MAP_PATH: String = "res://docs/curriculum/game_map.json"
+const MATRIX_PATH: String = "res://docs/curriculum/matrix.md"
 
 ## Programdaki "TOPLAM" satırları (sonraki görevler satır ekler).
 const EXPECTED_COUNTS: Dictionary = {
@@ -56,3 +58,17 @@ func test_counts_match_program() -> void:
 func test_game_map_covers_mapped_subjects() -> void:
 	var errs: Array[String] = CurriculumCheck.check_game_map(_load_json(GAME_MAP_PATH), _load_json(OUTCOMES_PATH), MAPPED_SUBJECTS)
 	assert_eq(errs, [] as Array[String], "\n".join(errs))
+
+func _render_matrix() -> String:
+	return CurriculumReport.render(_load_json(OUTCOMES_PATH), _load_json(THEMES_PATH), _load_json(GAME_MAP_PATH))
+
+func test_matrix_md_is_up_to_date() -> void:
+	assert_true(FileAccess.file_exists(MATRIX_PATH), "matrix.md yok: tools/curriculum_report.gd'yi çalıştır")
+	assert_true(_render_matrix() == FileAccess.get_file_as_string(MATRIX_PATH), "matrix.md güncel değil: tools/curriculum_report.gd'yi çalıştır")
+
+func test_render_lists_every_outcome() -> void:
+	var outcomes: Dictionary = _load_json(OUTCOMES_PATH)
+	var md: String = _render_matrix()
+	assert_false(outcomes.is_empty(), "outcomes.json okunamadı")
+	for code: String in outcomes.keys():
+		assert_true(md.contains("| %s |" % code), "matrix.md'de yok: %s" % code)

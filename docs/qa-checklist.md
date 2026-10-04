@@ -41,6 +41,7 @@ Her maddeyi sırayla uygula; "Beklenen" ile uyuşmayan her şeyi not al.
 3. **Yedeği dışa aktar:** Beklenen: "Yedek yazıldı: <yol>" mesajı. Dosya uygulamanın özel klasörüne yazılır (yol mesajda gösterilir); normal dosya yöneticisinden görünmeyebilir.
 4. Bir profili sil, ardından **Yedeği içe aktar**. Beklenen: profil ve ilerleme geri gelir.
 5. Ses seviyeleri (konuşma/müzik/efekt) kaydırıcıları anında etki eder.
+6. **Faz 2 (müfredat verisi):** Veli paneli -> ilerleme: 1. sınıf Matematik çıktı metinleri görünür (`outcomes.json` şema değişikliği sonrası: `theme` yerine `themes`, yeni alanlar). Beklenen: çıktı metinleri eksiksiz ve doğru yazımla (`’`, `â`) listelenir; boş ya da kod görünen satır yok.
 
 ## 7. Dayanıklılık
 1. **Ders ortasında kapat:** bir dersin 2. turunda uygulamayı son uygulamalardan kapat, yeniden aç. Beklenen: profil, tamamlanan duraklar ve çıkartmalar duruyor; kayıt bozulması uyarısı yok (en fazla yarım kalan ders baştan başlar).
