@@ -1,0 +1,862 @@
+{
+	"MAT.1.1.1": {
+		"fit": "full",
+		"templates": [
+			"count_choose",
+			"drag_match",
+			"listen_find",
+			"trace"
+		],
+		"note": "c) rakam ve sayı yazma trace ile çalışılır."
+	},
+	"MAT.1.1.2": {
+		"fit": "full",
+		"templates": [
+			"count_choose",
+			"drag_match",
+			"sort_bins"
+		]
+	},
+	"MAT.1.1.3": {
+		"fit": "full",
+		"templates": [
+			"listen_find",
+			"sequence"
+		]
+	},
+	"MAT.1.1.4": {
+		"fit": "partial",
+		"templates": [
+			"drag_match"
+		],
+		"proposed": [
+			"compare_groups"
+		],
+		"note": "a) iki niceliği çok/daha çok/az/daha az/eşit terimleriyle karşılaştırma önerilen compare_groups ile, bire bir eşleme drag_match ile oynanabilir; b–c) benzerlik ve farklılıkları listeleme sözlü etkinlik."
+	},
+	"MAT.1.1.5": {
+		"fit": "full",
+		"templates": [
+			"sequence",
+			"pattern",
+			"count_choose"
+		]
+	},
+	"MAT.1.1.6": {
+		"fit": "full",
+		"templates": [
+			"pattern",
+			"sequence"
+		]
+	},
+	"MAT.1.1.7": {
+		"fit": "partial",
+		"templates": [
+			"count_choose"
+		],
+		"proposed": [
+			"estimate_then_count"
+		],
+		"note": "b) aralıklı seçeneklerle tahmin count_choose ile oynanabilir; a) 5 ve 10’u referans alarak tahmin ve c) tahmini sayma sonucuyla karşılaştırma önerilen estimate_then_count gerektirir (spec Açık sorular)."
+	},
+	"MAT.1.1.8": {
+		"fit": "partial",
+		"templates": [
+			"listen_find",
+			"balance"
+		],
+		"proposed": [
+			"estimate_then_count"
+		],
+		"note": "a) uzunluk ve kütle için uygun standart olmayan aracı seçme listen_find ile oynanabilir; b–c) birim cinsinden tahmin edip ekranda birim dizerek ya da terazide küp koyarak (balance) sınama önerilen estimate_then_count gerektirir; kütleyi elde tartarak tahmin ve gerçek nesneyle ölçme ev etkinliği."
+	},
+	"MAT.1.1.9": {
+		"fit": "full",
+		"templates": [
+			"clock_money",
+			"drag_match",
+			"listen_find"
+		]
+	},
+	"MAT.1.2.1": {
+		"fit": "full",
+		"templates": [
+			"story",
+			"drag_match",
+			"listen_find"
+		]
+	},
+	"MAT.1.2.2": {
+		"fit": "partial",
+		"templates": [
+			"balloon_pop",
+			"drag_match",
+			"count_choose"
+		],
+		"proposed": [
+			"estimate_then_count"
+		],
+		"note": "a–b) işlem ögelerini ve aralarındaki ilişkileri belirleme oynanabilir; c–ç) tahmini zihinden işlem sonucuyla karşılaştırıp tutarlılığı seçme önerilen estimate_then_count gerektirir."
+	},
+	"MAT.1.2.3": {
+		"fit": "partial",
+		"templates": [
+			"balance",
+			"drag_match"
+		],
+		"note": "a–b) eşit işaretini terazi modeliyle inceleme ve işlemi dönüştürme oynanabilir; c) dönüştürdüğü işlemleri kendi cümleleriyle ifade etme sözlü etkinlik."
+	},
+	"MAT.1.2.4": {
+		"fit": "full",
+		"templates": [
+			"drag_match",
+			"balance"
+		],
+		"note": "c) ilişkiyi yeniden ifade etme, işlem ailesini model ve işlem kartlarıyla eşleştirerek çalışılır."
+	},
+	"MAT.1.3.1": {
+		"fit": "partial",
+		"templates": [
+			"listen_find",
+			"sequence"
+		],
+		"proposed": [
+			"grid_path"
+		],
+		"note": "a) yer, yön ve konum kavramlarını belirleme listen_find ile oynanabilir; b) yönergeleri izleyerek başlangıçtan hedefe gitme önerilen grid_path gerektirir."
+	},
+	"MAT.1.3.2": {
+		"fit": "full",
+		"templates": [
+			"drag_match",
+			"listen_find"
+		],
+		"note": "a) ölçüt (renk, şekil, büyüklük) sesli seçenekler arasından seçilir; b–ç) ölçme, nesnelerin görsel özelliklerini ölçütle karşılaştırma olarak ekranda yapılır."
+	},
+	"MAT.1.3.3": {
+		"fit": "full",
+		"templates": [
+			"sort_bins",
+			"drag_match"
+		]
+	},
+	"MAT.1.3.4": {
+		"fit": "full",
+		"templates": [
+			"listen_find",
+			"count_choose",
+			"drag_match"
+		]
+	},
+	"MAT.1.3.5": {
+		"fit": "full",
+		"templates": [
+			"sort_bins",
+			"drag_match",
+			"listen_find"
+		]
+	},
+	"MAT.1.4.1": {
+		"fit": "partial",
+		"templates": [
+			"listen_find",
+			"count_choose",
+			"sort_bins"
+		],
+		"proposed": [
+			"chart_build"
+		],
+		"note": "d) görselleştirme aracını seçme ve f) hazır nesne grafiğini yorumlama oynanabilir; e) verilen veriyle çetele, tablo ve nesne grafiği oluşturma önerilen chart_build gerektirir; a–ç) araştırma durumu ve sorusu belirleme, plan yapma, gerçek veri toplama ile g) değerlendirme sınıf ya da ev etkinliği."
+	},
+	"MAT.2.1.1": {
+		"fit": "full",
+		"templates": [
+			"count_choose",
+			"drag_match",
+			"listen_find",
+			"trace"
+		],
+		"note": "c) sayı yazma trace ile çalışılır."
+	},
+	"MAT.2.1.2": {
+		"fit": "full",
+		"templates": [
+			"drag_match",
+			"sort_bins",
+			"count_choose"
+		]
+	},
+	"MAT.2.1.3": {
+		"fit": "full",
+		"templates": [
+			"sequence",
+			"balance"
+		]
+	},
+	"MAT.2.1.4": {
+		"fit": "full",
+		"templates": [
+			"pattern",
+			"sequence",
+			"listen_find"
+		],
+		"note": "a) yüzlük tablo listen_find ızgarası olarak verilir; c) genelleme sesli okunan kural seçenekleri arasından seçilir."
+	},
+	"MAT.2.1.5": {
+		"fit": "partial",
+		"templates": [
+			"pattern",
+			"listen_find"
+		],
+		"note": "a–c) ve d) varsayımı seçme, örüntüyü sürdürme, sınama ve değerlendirme oynanabilir; ç) kuralı sözlü olarak ifade etme sözlü etkinlik."
+	},
+	"MAT.2.1.6": {
+		"fit": "partial",
+		"templates": [
+			"count_choose"
+		],
+		"proposed": [
+			"estimate_then_count"
+		],
+		"note": "b) aralıklı seçeneklerle tahmin count_choose ile oynanabilir; a) parça-bütün ilişkisinden yararlanma ve c) tahmini sayma sonucuyla karşılaştırma önerilen estimate_then_count gerektirir."
+	},
+	"MAT.2.1.7": {
+		"fit": "full",
+		"templates": [
+			"fraction_pizza",
+			"drag_match"
+		]
+	},
+	"MAT.2.1.8": {
+		"fit": "full",
+		"templates": [
+			"clock_money",
+			"drag_match",
+			"sort_bins"
+		]
+	},
+	"MAT.2.1.9": {
+		"fit": "full",
+		"templates": [
+			"clock_money",
+			"drag_match",
+			"sort_bins"
+		],
+		"note": "Yazma, dijital saati kurma ve eşleştirmeyle çalışılır."
+	},
+	"MAT.2.1.10": {
+		"fit": "partial",
+		"templates": [
+			"scenario",
+			"listen_find"
+		],
+		"note": "b–c) farklı karışlarla farklı sonuç çıkan durumdan standart birim gereğini çıkarma scenario ile oynanabilir; a) kendi standart olmayan ölçme deneyimlerini gözden geçirme gerçek ölçme deneyimi ister."
+	},
+	"MAT.2.1.11": {
+		"fit": "partial",
+		"templates": [
+			"drag_match",
+			"listen_find"
+		],
+		"proposed": [
+			"estimate_then_count"
+		],
+		"note": "b) nesneyle uygun birimi eşleştirme ve seçenekli tahmin oynanabilir; c) tahmini ekranda cetvel ya da terazi ölçümüyle karşılaştırma önerilen estimate_then_count gerektirir; a) standart birimlerle gerçek ölçme deneyimi ve kütleyi elde tartma ev etkinliği."
+	},
+	"MAT.2.2.1": {
+		"fit": "partial",
+		"templates": [
+			"story",
+			"drag_match",
+			"count_choose",
+			"balloon_pop"
+		],
+		"note": "a–c) verilen ve istenenleri belirleme, işlemi seçme, temsile dönüştürme ile e) çözümü uygulama oynanabilir; ç) kendi ifadeleriyle açıklama, d) ve f–h) strateji geliştirme, gözden geçirme ve genelleme sözlü ya da üstbilişsel etkinlik."
+	},
+	"MAT.2.2.2": {
+		"fit": "partial",
+		"templates": [
+			"balloon_pop",
+			"drag_match",
+			"count_choose"
+		],
+		"proposed": [
+			"estimate_then_count"
+		],
+		"note": "a–b) işlem ögelerini ve aralarındaki ilişkileri belirleme oynanabilir; c–ç) tahmini zihinden işlem sonucuyla karşılaştırıp tutarlılığı seçme önerilen estimate_then_count gerektirir."
+	},
+	"MAT.2.2.3": {
+		"fit": "full",
+		"templates": [
+			"drag_match",
+			"balance"
+		],
+		"note": "c) ilişkiyi yeniden ifade etme, işlem ailesini model ve işlem kartlarıyla eşleştirerek çalışılır."
+	},
+	"MAT.2.2.4": {
+		"fit": "full",
+		"templates": [
+			"drag_match",
+			"count_choose",
+			"sort_bins"
+		]
+	},
+	"MAT.2.2.5": {
+		"fit": "partial",
+		"templates": [
+			"drag_match",
+			"count_choose",
+			"balloon_pop"
+		],
+		"proposed": [
+			"estimate_then_count"
+		],
+		"note": "a–b) çarpma ve bölmenin bileşenlerini ve ilişkilerini belirleme oynanabilir; c) tahmin ve zihinden işlem sonucunu karşılaştırma önerilen estimate_then_count gerektirir; ç) sonuçları açıklama sözlü etkinlik."
+	},
+	"MAT.2.2.6": {
+		"fit": "partial",
+		"templates": [
+			"balance",
+			"drag_match"
+		],
+		"note": "a–b) eşitliği terazi modeliyle inceleme ve aynı sonucu veren farklı işlemleri eşleştirme oynanabilir; c) eşitliğin anlamlarını ifade etme sözlü etkinlik."
+	},
+	"MAT.2.3.1": {
+		"fit": "full",
+		"templates": [
+			"sort_bins",
+			"drag_match",
+			"listen_find"
+		]
+	},
+	"MAT.2.3.2": {
+		"fit": "partial",
+		"templates": [
+			"listen_find",
+			"drag_match"
+		],
+		"proposed": [
+			"free_build"
+		],
+		"note": "a–b) yapılardaki geometrik cisimleri belirleme ve ilişkilendirme oynanabilir; c) cisimleri birleştirerek özgün yapı oluşturma önerilen free_build gerektirir; somut bloklarla kurma ev etkinliği olarak önerilebilir."
+	},
+	"MAT.2.3.3": {
+		"fit": "partial",
+		"templates": [
+			"listen_find",
+			"drag_match"
+		],
+		"proposed": [
+			"free_build"
+		],
+		"note": "a–b) modellerdeki geometrik şekilleri belirleme ve ilişkilendirme oynanabilir; c) şekilleri birleştirerek özgün model oluşturma önerilen free_build gerektirir."
+	},
+	"MAT.2.3.4": {
+		"fit": "partial",
+		"templates": [
+			"sort_bins",
+			"listen_find"
+		],
+		"proposed": [
+			"grid_draw"
+		],
+		"note": "a) ve c) farklı yön ve büyüklükteki şekil ve cisimleri tanıyıp aynı şekil olarak ayırma oynanabilir; b) şekli farklı büyüklük ya da yönde kendisi oluşturma önerilen grid_draw gerektirir (cisimler için somut model ev etkinliği)."
+	},
+	"MAT.2.3.5": {
+		"fit": "partial",
+		"templates": [
+			"count_choose"
+		],
+		"proposed": [
+			"estimate_then_count"
+		],
+		"note": "b) sıvı miktarını seçenekli tahmin etme count_choose ile oynanabilir; c) tahmini ekranda bardakla doldurma sonucuyla karşılaştırma önerilen estimate_then_count gerektirir; a) gerçek kaplarla sıvı ölçme deneyimi ev etkinliği."
+	},
+	"MAT.2.3.6": {
+		"fit": "partial",
+		"templates": [
+			"count_choose",
+			"listen_find"
+		],
+		"proposed": [
+			"grid_path"
+		],
+		"note": "b–e) yolları karşılaştırma, seçenek oluşturma, denetleme, ölçüte (en kısa yol, engelden kaçınma) uygun yolu seçme ve ölçüt değişince yeniden planlama önerilen grid_path ile oynanabilir; a) ölçütü kendisi belirleme oyunda hazır verilir."
+	},
+	"MAT.2.3.7": {
+		"fit": "full",
+		"templates": [
+			"sort_bins",
+			"listen_find"
+		]
+	},
+	"MAT.2.4.1": {
+		"fit": "partial",
+		"templates": [
+			"listen_find",
+			"count_choose",
+			"sort_bins"
+		],
+		"proposed": [
+			"chart_build"
+		],
+		"note": "d) görselleştirme aracını seçme ve f) hazır şekil grafiğini yorumlama oynanabilir; e) verilen veriyle çetele, sıklık tablosu ve şekil grafiği oluşturma önerilen chart_build gerektirir; a–ç) araştırma durumu ve sorusu belirleme, plan yapma, gerçek veri toplama ile g) değerlendirme sınıf ya da ev etkinliği."
+	},
+	"MAT.3.1.1": {
+		"fit": "full",
+		"templates": [
+			"count_choose",
+			"drag_match",
+			"listen_find",
+			"trace"
+		],
+		"note": "c) sayı yazma trace ile çalışılır."
+	},
+	"MAT.3.1.2": {
+		"fit": "full",
+		"templates": [
+			"drag_match",
+			"sort_bins",
+			"count_choose"
+		]
+	},
+	"MAT.3.1.3": {
+		"fit": "full",
+		"templates": [
+			"sequence",
+			"balance",
+			"sort_bins"
+		]
+	},
+	"MAT.3.1.4": {
+		"fit": "full",
+		"templates": [
+			"pattern",
+			"sequence",
+			"listen_find"
+		],
+		"note": "c) genelleme sesli okunan kural seçenekleri arasından seçilir."
+	},
+	"MAT.3.1.5": {
+		"fit": "full",
+		"templates": [
+			"sort_bins",
+			"listen_find"
+		]
+	},
+	"MAT.3.1.6": {
+		"fit": "full",
+		"templates": [
+			"sort_bins",
+			"pattern",
+			"listen_find"
+		],
+		"note": "c) genelleme sesli okunan kural seçenekleri arasından seçilir."
+	},
+	"MAT.3.1.7": {
+		"fit": "partial",
+		"templates": [
+			"pattern",
+			"listen_find"
+		],
+		"note": "a–c) ve d) varsayımı seçme, örüntüyü sürdürme, sınama ve değerlendirme oynanabilir; ç) kuralı sözlü olarak ifade etme sözlü etkinlik."
+	},
+	"MAT.3.1.8": {
+		"fit": "partial",
+		"templates": [
+			"count_choose"
+		],
+		"proposed": [
+			"estimate_then_count"
+		],
+		"note": "Tek bileşen a): aralıklı seçenekle tahmin count_choose ile kısmen oynanabilir; parça-bütün ilişkisinden yararlanıp tahmini sayma sonucuyla karşılaştırma önerilen estimate_then_count gerektirir."
+	},
+	"MAT.3.1.9": {
+		"fit": "full",
+		"templates": [
+			"fraction_pizza",
+			"drag_match",
+			"listen_find"
+		]
+	},
+	"MAT.3.1.10": {
+		"fit": "full",
+		"templates": [
+			"fraction_pizza",
+			"drag_match"
+		]
+	},
+	"MAT.3.1.11": {
+		"fit": "full",
+		"templates": [
+			"fraction_pizza",
+			"drag_match",
+			"count_choose"
+		]
+	},
+	"MAT.3.1.12": {
+		"fit": "full",
+		"templates": [
+			"clock_money",
+			"drag_match"
+		],
+		"note": "Yazma, dijital saati kurma ve analog-dijital eşleştirmeyle çalışılır."
+	},
+	"MAT.3.1.13": {
+		"fit": "full",
+		"templates": [
+			"drag_match",
+			"sequence"
+		]
+	},
+	"MAT.3.1.14": {
+		"fit": "partial",
+		"templates": [
+			"sequence",
+			"sort_bins"
+		],
+		"note": "a–b) olayları sürelerine göre sıralama ve uygun birimi seçme oynanabilir; c) tahmini gerçek eylemin süresini tutarak karşılaştırma gerçek dünya etkinliği (ev etkinliği önerilebilir)."
+	},
+	"MAT.3.1.15": {
+		"fit": "full",
+		"templates": [
+			"drag_match",
+			"balance",
+			"sort_bins"
+		]
+	},
+	"MAT.3.1.16": {
+		"fit": "full",
+		"templates": [
+			"clock_money",
+			"drag_match",
+			"balance"
+		]
+	},
+	"MAT.3.2.1": {
+		"fit": "partial",
+		"templates": [
+			"balloon_pop",
+			"drag_match",
+			"count_choose"
+		],
+		"proposed": [
+			"estimate_then_count"
+		],
+		"note": "a–b) işlem ögelerini ve aralarındaki ilişkileri belirleme oynanabilir; c–ç) tahmini zihinden işlem sonucuyla karşılaştırıp tutarlılığı seçme önerilen estimate_then_count gerektirir."
+	},
+	"MAT.3.2.2": {
+		"fit": "full",
+		"templates": [
+			"sequence",
+			"drag_match",
+			"balloon_pop"
+		]
+	},
+	"MAT.3.2.3": {
+		"fit": "partial",
+		"templates": [
+			"drag_match",
+			"count_choose",
+			"balloon_pop"
+		],
+		"proposed": [
+			"estimate_then_count"
+		],
+		"note": "a–b) çarpma ve bölmenin bileşenlerini ve ilişkilerini belirleme oynanabilir; c) tahmin ve zihinden işlem sonucunu karşılaştırma önerilen estimate_then_count gerektirir; ç) sonuçları kendi cümleleriyle açıklama sözlü etkinlik."
+	},
+	"MAT.3.2.4": {
+		"fit": "full",
+		"templates": [
+			"sequence",
+			"drag_match",
+			"balloon_pop"
+		]
+	},
+	"MAT.3.2.5": {
+		"fit": "full",
+		"templates": [
+			"story",
+			"drag_match",
+			"sequence"
+		]
+	},
+	"MAT.3.2.6": {
+		"fit": "partial",
+		"templates": [
+			"story",
+			"drag_match",
+			"count_choose",
+			"balloon_pop"
+		],
+		"note": "a–c) verilen ve istenenleri belirleme, işlemi seçme, temsile dönüştürme ile e) çözümü uygulama oynanabilir; ç) kendi ifadeleriyle açıklama, d) ve f–h) strateji geliştirme, gözden geçirme ve genelleme sözlü ya da üstbilişsel etkinlik."
+	},
+	"MAT.3.2.7": {
+		"fit": "partial",
+		"templates": [
+			"drag_match",
+			"sequence"
+		],
+		"note": "a) problem durumundaki ilişkileri kurma (durumu soruyla eşleştirme, olayları sıralama) oynanabilir; b) özgün problem oluşturma sözlü ya da yazılı etkinlik."
+	},
+	"MAT.3.2.8": {
+		"fit": "partial",
+		"templates": [
+			"balance",
+			"drag_match"
+		],
+		"note": "a–b) eşitliği terazi modeliyle inceleme ve aynı sonucu veren farklı işlemleri eşleştirme oynanabilir; c) eşitliğin anlamlarını ifade etme sözlü etkinlik."
+	},
+	"MAT.3.3.1": {
+		"fit": "partial",
+		"templates": [
+			"count_choose",
+			"drag_match",
+			"listen_find"
+		],
+		"note": "a–b) cisimlerin köşe, yüz ve ayrıt sayılarını inceleme ve belirleme oynanabilir; c) terimleri kendi ifadeleriyle açıklama sözlü etkinlik."
+	},
+	"MAT.3.3.2": {
+		"fit": "full",
+		"templates": [
+			"sort_bins",
+			"count_choose",
+			"listen_find"
+		]
+	},
+	"MAT.3.3.3": {
+		"fit": "partial",
+		"templates": [
+			"listen_find",
+			"drag_match"
+		],
+		"proposed": [
+			"grid_draw"
+		],
+		"note": "a–b) çizim araçlarını tanıma ve uygun aracı seçme oynanabilir; c) aracı kullanarak çizme önerilen grid_draw ile ekranda yapılabilir; cetvelle kâğıda çizme sınıf ya da ev etkinliği."
+	},
+	"MAT.3.3.4": {
+		"fit": "partial",
+		"templates": [
+			"count_choose"
+		],
+		"proposed": [
+			"estimate_then_count"
+		],
+		"note": "b) kareli zemindeki şeklin çevresini seçenekli tahmin etme count_choose ile oynanabilir; c) tahmini birim kenarları sayarak ölçümle karşılaştırma önerilen estimate_then_count gerektirir; a) gerçek ölçme araçlarıyla deneyim ev etkinliği."
+	},
+	"MAT.3.3.5": {
+		"fit": "partial",
+		"templates": [
+			"count_choose",
+			"drag_match"
+		],
+		"proposed": [
+			"estimate_then_count"
+		],
+		"note": "b) sıvı miktarını standart birimle seçenekli tahmin etme oynanabilir; c) tahmini ekranda ölçü kabıyla doldurma sonucuyla karşılaştırma önerilen estimate_then_count gerektirir; a) gerçek kaplarla sıvı ölçme deneyimi ev etkinliği."
+	},
+	"MAT.3.3.6": {
+		"fit": "full",
+		"templates": [
+			"listen_find",
+			"count_choose",
+			"drag_match"
+		]
+	},
+	"MAT.3.3.7": {
+		"fit": "partial",
+		"templates": [
+			"listen_find",
+			"drag_match"
+		],
+		"proposed": [
+			"grid_draw"
+		],
+		"note": "a) bir parçası verilen şekli inceleyip doğru tamamlanmış şekli ya da ayna parçasını seçme oynanabilir; b) şekli kareli zeminde kendisi tamamlama önerilen grid_draw gerektirir."
+	},
+	"MAT.3.3.8": {
+		"fit": "partial",
+		"templates": [
+			"drag_match",
+			"listen_find"
+		],
+		"proposed": [
+			"grid_draw"
+		],
+		"note": "a) yönergeleri ok kodlarıyla eşleştirerek yeniden ifade etme ve c) oluşan simetri hakkında yargı seçme oynanabilir; b) kodlanmış yönergeyi izleyerek şekli kareli zeminde tamamlama önerilen grid_draw gerektirir."
+	},
+	"MAT.3.4.1": {
+		"fit": "partial",
+		"templates": [
+			"listen_find",
+			"count_choose",
+			"sort_bins"
+		],
+		"proposed": [
+			"chart_build"
+		],
+		"note": "d) görselleştirme aracını seçme ve f) hazır nokta grafiğini yorumlama oynanabilir; e) verilen veriyle çetele, sıklık tablosu ve nokta grafiği oluşturma önerilen chart_build gerektirir; a–ç) araştırma durumu ve sorusu belirleme, plan yapma, gerçek veri toplama ile g) değerlendirme sınıf ya da ev etkinliği."
+	},
+	"FB.3.1.1": {
+		"fit": "partial",
+		"templates": [
+			"scenario",
+			"sort_bins"
+		],
+		"note": "ç–d) bilgiye ulaşma yollarının uygunluğunu değerlendirme ve oyunda verilen bilgilerden çıkarım seçme oynanabilir; a–c) merak ettiği konuyu belirleme, soru sorma ve bilgi toplama gerçek araştırma ve sözlü etkinlik (veli etkinliği önerilebilir)."
+	},
+	"FB.3.1.2": {
+		"fit": "partial",
+		"templates": [
+			"story",
+			"sort_bins",
+			"listen_find"
+		],
+		"note": "b–ç) hikâyede tanıtılan bilim insanlarının ortak ve farklı özelliklerini ayırma ve sesli önermeler arasından seçme oynanabilir; a) bilim insanları hakkında bilgi toplama araştırma etkinliği."
+	},
+	"FB.3.2.1": {
+		"fit": "full",
+		"templates": [
+			"sort_bins",
+			"drag_match",
+			"listen_find"
+		]
+	},
+	"FB.3.2.2": {
+		"fit": "partial",
+		"templates": [
+			"drag_match",
+			"listen_find"
+		],
+		"note": "a) duyu organlarını işlevleri ve algılama biçimleriyle eşleştirme oynanabilir; b–c) duyu organlarıyla deney yapıp veri toplama, kaydetme ve yorumlama gerçek gözlem gerektirir (ev etkinliği önerilebilir)."
+	},
+	"FB.3.2.3": {
+		"fit": "full",
+		"templates": [
+			"sequence",
+			"pattern",
+			"listen_find"
+		],
+		"note": "b) genelleme yeni bir canlının döngüsünü sıralama ve sesli seçenekler arasından seçmeyle çalışılır."
+	},
+	"FB.3.3.1": {
+		"fit": "full",
+		"templates": [
+			"listen_find",
+			"drag_match",
+			"sort_bins"
+		],
+		"note": "c) genelden özele çıkarım sesli seçenekler arasından seçilir."
+	},
+	"FB.3.3.2": {
+		"fit": "full",
+		"templates": [
+			"sequence",
+			"drag_match"
+		]
+	},
+	"FB.3.4.1": {
+		"fit": "full",
+		"templates": [
+			"sort_bins",
+			"drag_match",
+			"listen_find"
+		]
+	},
+	"FB.3.4.2": {
+		"fit": "partial",
+		"templates": [
+			"scenario",
+			"drag_match"
+		],
+		"note": "Yalnızca a)’nın karışıma uygun ayırma yöntemini (mıknatıs, süzme, eleme) seçme kısmı oynanabilir; deneyi tasarlayıp yapma ve b) ölçme ve veri analizi gerçek deney gerektirir."
+	},
+	"FB.3.4.3": {
+		"fit": "partial",
+		"templates": [
+			"sort_bins",
+			"scenario"
+		],
+		"note": "ç) çözüm önerileri üzerinden akıl yürütme scenario ile, atıkları türüne göre ayırma sort_bins ile oynanabilir; a–b) problemi yapılandırma ve özetleme, c) gözleme dayalı tahmin ve d) değerlendirme sözlü ya da gerçek gözlem gerektirir."
+	},
+	"FB.3.5.1": {
+		"fit": "partial",
+		"templates": [
+			"sort_bins",
+			"scenario",
+			"listen_find"
+		],
+		"note": "b–c) animasyonla gösterilen varlıkların hareket durumu hakkında çıkarım ve sonuç tahmini oynanabilir; a) kendi gözlem ve deneyimlerini ilişkilendirme gerçek gözlem ister."
+	},
+	"FB.3.5.2": {
+		"fit": "partial",
+		"templates": [
+			"scenario",
+			"sort_bins"
+		],
+		"note": "a) ve ç) önerme seçme ve gözlemlenmemiş durumda kuvvetin etkisini tahmin etme scenario ile, itme-çekme ayırma sort_bins ile oynanabilir; b–c) gözleme dayalı önermeleri karşılaştırma ve gözlem verisinden sonuç çıkarma ile d) tahminin geçerliliğini sorgulama gerçek deney ve sözlü tartışma gerektirir."
+	},
+	"FB.3.6.1": {
+		"fit": "partial",
+		"templates": [
+			"sort_bins",
+			"listen_find"
+		],
+		"note": "a) araç gereçlerin niteliklerini tanıma ve elektrikli olanları ayırma oynanabilir; b–c) evdeki araç gereçlerle ilgili veri toplama, kaydetme ve değerlendirme gerçek dünya etkinliği (ev etkinliği önerilebilir)."
+	},
+	"FB.3.6.2": {
+		"fit": "partial",
+		"templates": [
+			"scenario",
+			"sort_bins"
+		],
+		"note": "a–b) verilen güvenlik durumlarını sorgulama ve güvenli davranışı seçme oynanabilir; c) çıkarımları yansıtma sözlü etkinlik."
+	},
+	"FB.3.6.3": {
+		"fit": "partial",
+		"templates": [
+			"scenario",
+			"sort_bins"
+		],
+		"note": "a) tasarruflu ve savurgan davranışları ayırma ve öneri seçme oynanabilir; b–c) gerçek ölçüm verisiyle gerekçelendirme ve hesaplamaya dayalı tahmin ile ç) geçerliliği sorgulama gerçek veri ve sözlü tartışma gerektirir."
+	},
+	"FB.3.7.1": {
+		"fit": "partial",
+		"templates": [
+			"sequence",
+			"listen_find"
+		],
+		"note": "a) toprağın oluşum aşamalarını sıralama ve yapısındaki bileşenleri tanıma oynanabilir; b–c) toprak örneği inceleyip veri toplama, kaydetme ve açıklama gerçek gözlem ve sözlü etkinlik (ev etkinliği önerilebilir)."
+	},
+	"FB.3.7.2": {
+		"fit": "partial",
+		"templates": [
+			"sort_bins",
+			"drag_match",
+			"sequence"
+		],
+		"note": "b–c) bitkilerin ortak ve farklı ihtiyaçlarını belirleme sort_bins ve drag_match ile, ç) yapılması gerekenleri sıralama sequence ile oynanabilir; a) çevredeki tarım ürünlerini araştırıp bilgi toplama gerçek dünya etkinliği."
+	},
+	"FB.3.8.1": {
+		"fit": "none",
+		"templates": [],
+		"note": "Bütün bileşenler (a–c) yaşam alanından gerçek veri toplama, veri seti oluşturma ve veriye dayalı açıklama gerektirir; canlı-yaşam alanı eşleştirme içeriği FB.3.8.2 a) ile desteklenir, bahçe ya da park gözlemi veli etkinliği olarak önerilebilir."
+	},
+	"FB.3.8.2": {
+		"fit": "partial",
+		"templates": [
+			"drag_match",
+			"listen_find"
+		],
+		"note": "a) yaşam alanının özelliklerini tanımlama oynanabilir; b) yaşam alanındaki canlı çeşitliliğini ölçme gerçek gözlem, c) tanımı yapma sözlü etkinlik."
+	},
+	"FB.3.8.3": {
+		"fit": "partial",
+		"templates": [
+			"scenario",
+			"sort_bins"
+		],
+		"note": "ç–d) oyunda verilen bilgilerin doğruluğunu değerlendirme ve yaşam alanını korumaya yönelik çıkarım seçme oynanabilir; a–c) merak ettiği konuyu belirleme, soru sorma ve bilgi toplama gerçek araştırma ve sözlü etkinlik."
+	}
+}

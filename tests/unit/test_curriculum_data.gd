@@ -22,7 +22,7 @@ const EXPECTED_COUNTS: Dictionary = {
 }
 
 ## game_map.json kaydı zorunlu olan dersler (Görev 6-7 doldurur).
-const MAPPED_SUBJECTS: PackedStringArray = []
+const MAPPED_SUBJECTS: PackedStringArray = ["matematik", "fen"]
 
 func _load_json(path: String) -> Dictionary:
 	if not FileAccess.file_exists(path):
