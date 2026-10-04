@@ -1,7 +1,7 @@
 extends GutTest
 ## Faz 3 şablonlarının kaydı ve parametre doğrulaması (TemplateRegistry üzerinden).
 
-const FAZ3: PackedStringArray = ["sequence", "balloon_pop", "pattern", "balance", "clock_money"]
+const FAZ3: PackedStringArray = ["sequence", "balloon_pop", "pattern", "balance", "clock_money", "fraction_pizza"]
 
 func _item(v: String) -> Dictionary:
 	return {"type": "item", "value": v}
@@ -160,3 +160,20 @@ func test_clock_money_invalid() -> void:
 func test_money_pay_unpayable_rejected() -> void:
 	var errs: Array[String] = TemplateRegistry.validate("clock_money", {"mode": "money", "ask": "pay", "unit": "tl", "amount": 7, "wallet": ["tl_5", "tl_10"]})
 	assert_eq(errs, [ContentValidator.msg("err.params.cm_unpayable")] as Array[String])
+
+# --- fraction_pizza ---
+func test_fraction_pizza_valid() -> void:
+	_ok("fraction_pizza", {"ask": "split", "parts": 2})
+	_ok("fraction_pizza", {"ask": "split", "parts": 8})
+	_ok("fraction_pizza", {"ask": "select", "parts": 4, "take": 1})
+	_ok("fraction_pizza", {"ask": "select", "parts": 12, "take": 12})
+
+func test_fraction_pizza_invalid() -> void:
+	_bad("fraction_pizza", {"ask": "eat", "parts": 4}, "bilinmeyen soru")
+	_bad("fraction_pizza", {"ask": "split", "parts": 1}, "1 parça")
+	_bad("fraction_pizza", {"ask": "split", "parts": 9}, "split 9 parça")
+	_bad("fraction_pizza", {"ask": "select", "parts": 13, "take": 1}, "13 parça")
+	_bad("fraction_pizza", {"ask": "select", "parts": 4, "take": 0}, "take 0")
+	_bad("fraction_pizza", {"ask": "select", "parts": 4, "take": 5}, "take > parts")
+	_bad("fraction_pizza", {"ask": "select", "parts": 4}, "take yok")
+	_bad("fraction_pizza", {"ask": "select", "parts": 4.5, "take": 1}, "kesirli parts")
