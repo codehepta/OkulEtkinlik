@@ -137,3 +137,11 @@ func test_last_day_recorded_on_node_and_partial() -> void:
 	_p.clock.fixed_day = 105
 	_p.record_partial(id, N1, _res([_rr(0)]))
 	assert_eq(_save.data["profiles"][0]["outcomes"]["TEST.1"]["last_day"], 105)
+
+## S7 (Faz 3b): çok adımlı turun 3 yanlışı yıldızda 1 yanlış sayılır.
+func test_record_node_multi_step_round_counts_one_wrong() -> void:
+	var id: String = _p.create_profile("a", "n", 1)
+	var multi: RoundResult = _rr(3)
+	multi.multi_step = true
+	assert_eq(_p.record_node(id, N1, _res([multi]))["stars"], 3)
+	assert_eq(_p.record_node(id, N1, _res([_rr(3)]))["stars"], 2, "tek adımlı tur değişmez")

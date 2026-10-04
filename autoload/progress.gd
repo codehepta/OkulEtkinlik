@@ -85,7 +85,7 @@ func record_node(profile_id: String, node_id: String, results: Array[RoundResult
 		return out
 	var total_wrong: int = 0
 	for r: RoundResult in results:
-		total_wrong += r.wrong
+		total_wrong += Stars.round_wrong(r.wrong, r.multi_step)
 	var stars: int = Stars.compute(total_wrong)
 	out["stars"] = stars
 	var nodes: Dictionary = p["nodes"]

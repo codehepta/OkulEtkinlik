@@ -265,3 +265,10 @@ func test_bilge_talks_while_line_plays() -> void:
 	assert_true(bool(bilge.call("is_talking")))
 	_runner.call("_set_talking", false)
 	assert_false(bool(bilge.call("is_talking")))
+
+## Faz 3b: içerik sınıfı düğüm kimliğinden RoundContext.grade'e gelir.
+func test_grade_of_node_id() -> void:
+	var runner: GDScript = load("res://scenes/ui/lesson_runner.gd") as GDScript
+	assert_eq(int(runner.call("grade_of", "g1.matematik.u01.n01")), 1)
+	assert_eq(int(runner.call("grade_of", "g3.matematik.u02.n04")), 3)
+	assert_eq(int(runner.call("grade_of", "bozuk")), 1)
