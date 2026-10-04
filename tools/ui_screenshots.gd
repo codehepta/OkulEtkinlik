@@ -71,8 +71,100 @@ func _run() -> void:
 	await _shot("14_parent_panel")
 	await _show("session_end", {})
 	await _shot("15_session_end")
+
+	# --- Ders ekranları: ek kareler (yanlış cevap + ipucu 1, kalabalık sayma, eşleşme ortası) ---
+	await _lesson_extras()
 	print("ui_screenshots: %d görüntü -> %s" % [_shots, ProjectSettings.globalize_path(OUT_DIR)])
 	quit(0)
+
+## Ders şablonlarının ara durumları. Yanlış cevaplar runner'ın gerçek geri bildirim akışından geçer.
+func _lesson_extras() -> void:
+	# count_choose: iki yanlış -> ipucu 1 (nesneler sırayla zıplar).
+	await _show("lesson", {"node_id": "g1.matematik.u01.n01"})
+	await _wait_game()
+	await _wrong_twice()
+	await _frames(20)
+	await _shot("16_lesson_count_choose_hint1")
+	# Kalabalık sayma: 6 ve 11 nesne.
+	await _show("lesson", {"node_id": "g1.matematik.u01.n04"})
+	await _wait_game()
+	await _shot("17_lesson_count_choose_6")
+	await _show("lesson", {"node_id": "g1.matematik.u01.n05"})
+	await _wait_game()
+	await _shot("18_lesson_count_choose_11")
+	# 20 nesne: şablon doğrudan runner'ın oyun alanına kurulur (yalnızca görüntü için).
+	var runner: Node = _app.current_scene()
+	var area: Control = runner.get_node("Host/GameArea") as Control
+	for c: Node in area.get_children():
+		c.queue_free()
+	var cc: Control = (load("res://scenes/games/count_choose/count_choose.tscn") as PackedScene).instantiate() as Control
+	area.add_child(cc)
+	var ctx: RoundContext = RoundContext.new()
+	ctx.rng.seed = 3
+	cc.call("setup", {"item": "item.oyuncak.top", "count": 20, "choices": [18, 19, 20]}, 1, ctx)
+	await _frames(20)
+	await _shot("19_lesson_count_choose_20")
+	# 4 çiftli drag_match, bir çift yerleşmiş (yalnızca görüntü için doğrudan kurulur).
+	cc.queue_free()
+	var dm4: Control = (load("res://scenes/games/drag_match/drag_match.tscn") as PackedScene).instantiate() as Control
+	area.add_child(dm4)
+	var pairs: Array = []
+	for v: int in [2, 3, 4, 5]:
+		pairs.append({"left": {"type": "text", "value": "label.cetele.%d" % v}, "right": {"type": "number", "value": v}})
+	dm4.call("setup", {"pairs": pairs}, 1, ctx)
+	await _frames(5)
+	var s4: Array = dm4.call("_debug_right_slots")
+	dm4.call("_debug_drop", 1, s4.find(1))
+	await _frames(30)
+	await _shot("19b_lesson_drag_match_4_pairs")
+	# drag_match: bir eşleşme yapılmış, sonra iki yanlış -> ipucu 1 (doğru yuva parlar).
+	await _show("lesson", {"node_id": "g1.matematik.u01.n02"})
+	await _wait_game()
+	var dm: Node = _runner_game()
+	var slots: Array = dm.call("_debug_right_slots")
+	await _frames(10)
+	if slots.size() >= 3:
+		dm.call("_debug_drop", 2, slots.find(2))
+		await _frames(30)
+	await _wrong_twice()
+	await _frames(20)
+	await _shot("20_lesson_drag_match_hint1")
+	# listen_find: iki yanlış -> ipucu 1 (bir yanlış seçenek soluklaşır).
+	await _show("lesson", {"node_id": "g1.matematik.u01.n03"})
+	await _wait_game()
+	await _wrong_twice()
+	await _frames(30)
+	await _shot("21_lesson_listen_find_hint1")
+
+func _runner_game() -> Node:
+	var runner: Node = _app.current_scene()
+	return runner.call("current_game") if runner != null and runner.has_method("current_game") else null
+
+## Turun oyunu kurulup girdiye açılana kadar bekler.
+func _wait_game() -> void:
+	for i: int in 600:
+		var g: Node = _runner_game()
+		if g != null and g.has_method("_can_input") and bool(g.call("_can_input")):
+			break
+		await process_frame
+	await _frames(20)
+
+## Şimdiki oyunda iki kez yanlış cevap verir; her seferinde runner'ın geri bildirimini bekler.
+func _wrong_twice() -> void:
+	for k: int in 2:
+		var g: Node = _runner_game()
+		if g == null:
+			return
+		if g.has_method("_debug_correct_index"):
+			var right: int = int(g.call("_debug_correct_index"))
+			g.call("_debug_choose", 0 if right != 0 else 1)
+		elif g.has_method("_debug_right_slots"):
+			var slots: Array = g.call("_debug_right_slots")
+			var left: int = (g.get("_matched") as Array).find(false)
+			var wrong_slot: int = 0 if int(slots[0]) != left else 1
+			g.call("_debug_drop", left, wrong_slot)
+		await _frames(5)
+		await _wait_game()
 
 func _show(scene: String, args: Dictionary) -> void:
 	_app.goto(scene, args)
