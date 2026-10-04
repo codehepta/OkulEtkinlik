@@ -49,6 +49,8 @@ const CODE_PATTERNS: Dictionary = {
 const THEME_ID_RE: String = "^g([1-3])\\.(matematik|turkce|hayat_bilgisi|fen)\\.t(\\d{2})$"
 const PAGE_MARKER_RE: String = "(?m)^===== SAYFA (\\d+) =====[ \\t\\r]*$"
 const PROPOSED_RE: String = "^[a-z][a-z0-9_]*$"
+## Normalize edilmiş metnin başında bir adım işareti (`a)`, `ç)` ...).
+const STEP_MARKER_RE: String = "^[a-zçğıöşü]\\)"
 
 # --- Yardımcılar ---
 
@@ -207,21 +209,65 @@ static func _check_outcome_text(code: String, o: Dictionary, source: Dictionary,
 		errs.append("%s: s.%d dökümde yok" % [code, page])
 		return
 	var page_norm: String = normalize(str(pages[page]))
-	if not page_norm.contains(normalize(printed)):
+	var code_norm: String = normalize(printed)
+	if code_norm.is_empty() or not page_norm.contains(code_norm):
 		errs.append("%s: kod s.%d'de bulunamadı" % [code, page])
-	if manual:
 		return
-	var span: String = page_norm
+	# printed_code zaten hatalıysa (üstte bildirildi) bağlı metin denetimi anlamsız; çifte hata verme.
+	if manual or printed != code + ".":
+		return
+	var tail_next: String = ""
 	if pages.has(page + 1):
-		span += normalize(strip_page_header(str(pages[page + 1])))
+		tail_next = normalize(strip_page_header(str(pages[page + 1])))
 	var span_label: String = "s.%d-%d" % [page, page + 1]
-	if _non_empty_string(o.get("text")) and not span.contains(normalize(str(o["text"]))):
-		errs.append("%s: metin %s'da bulunamadı" % [code, span_label])
+
+	# Beklenen ardışık metin: text + tüm adımlar (sırayla). Boş normalize sonucu reddedilir.
+	var text_norm: String = normalize(str(o.get("text", "")))
+	if text_norm.is_empty():
+		errs.append("%s: metin normalize sonrası boş" % code)
+		return
+	var steps_norm: Array[String] = []
 	var steps: Variant = o.get("steps", [])
 	if steps is Array:
 		for step: Variant in steps:
-			if not (step is String) or not span.contains(normalize(step)):
-				errs.append("%s: süreç bileşeni '%s' %s'da bulunamadı" % [code, str(step), span_label])
+			var sn: String = normalize(step) if step is String else ""
+			if sn.is_empty():
+				errs.append("%s: süreç bileşeni '%s' boş ya da geçersiz" % [code, str(step)])
+				return
+			steps_norm.append(sn)
+
+	# Kod sayfada birden çok kez geçebilir; herhangi bir geçiş kuralı sağlarsa yeter.
+	var best: int = -1
+	var best_msg: String = ""
+	var from: int = 0
+	while true:
+		var idx: int = page_norm.find(code_norm, from)
+		if idx < 0:
+			break
+		from = idx + 1
+		var tail: String = page_norm.substr(idx + code_norm.length()) + tail_next
+		var res: Dictionary = _match_tail(tail, text_norm, steps_norm, o.get("steps", []) as Array)
+		if res["ok"]:
+			return
+		if int(res["progress"]) > best:
+			best = int(res["progress"])
+			best_msg = str(res["msg"])
+	errs.append("%s: %s (%s)" % [code, best_msg, span_label])
+
+## Kodun ardındaki `tail` metninin text + adımlarla BAŞLAYIP BAŞLAMADIĞINI denetler ve
+## adımlar bittikten sonra yeni bir adım işaretinin (`a)`) gelmediğini (eksik adım) doğrular.
+## Dönüş: {ok, progress, msg}; progress: 0 metin, 1+i i. adım, 1000 fazladan adım.
+static func _match_tail(tail: String, text_norm: String, steps_norm: Array[String], raw_steps: Array) -> Dictionary:
+	if not tail.begins_with(text_norm):
+		return {"ok": false, "progress": 0, "msg": "metin kodun hemen ardından bulunamadı"}
+	var pos: int = text_norm.length()
+	for i: int in steps_norm.size():
+		if not tail.substr(pos).begins_with(steps_norm[i]):
+			return {"ok": false, "progress": 1 + i, "msg": "süreç bileşeni '%s' sırayla bulunamadı" % str(raw_steps[i])}
+		pos += steps_norm[i].length()
+	if _regex(STEP_MARKER_RE).search(tail.substr(pos)) != null:
+		return {"ok": false, "progress": 1000, "msg": "sondan sonra yeni bir adım işareti var (eksik adım)"}
+	return {"ok": true, "progress": 1000, "msg": ""}
 
 # --- check_themes ---
 

@@ -112,6 +112,73 @@ func test_wrong_step_rejected() -> void:
 	o["steps"] = ["a) Nesneleri birer birer sayar.", "b) Sayı adını yazar."]
 	assert_eq(_check(o).size(), 1)
 
+func test_dropped_trailing_step_rejected() -> void:
+	# Sayfada a) ve b) var, kayıt yalnızca a)'yı taşıyor: sondaki adım düşmüş.
+	var o: Dictionary = _outcome()
+	o["steps"] = ["a) Nesneleri birer birer sayar."]
+	var e: Array[String] = _check(o)
+	assert_eq(e.size(), 1)
+	assert_true(e[0].contains("MAT.1.1.1"))
+
+func test_dropped_trailing_step_across_page_rejected() -> void:
+	var o: Dictionary = _outcome()
+	o["steps"] = ["a) Nesneleri birer birer sayar."]
+	var p20: String = "MAT.1.1.1. Nesne sayısını belirler.\na) Nesneleri birer birer sayar."
+	var p21: String = "\n208\nX DERSİ ÖĞRETİM PROGRAMI\nb) Sayı adını söyler."
+	assert_eq(_check(o, _pages(p20, p21)).size(), 1)
+
+func test_text_borrowed_from_neighbouring_outcome_rejected() -> void:
+	# Metin aynı sayfada, ama komşu çıktının metni: kodun hemen ardından değil.
+	var p20: String = "MAT.1.1.1. Nesne sayısını belirler.\na) Nesneleri birer birer sayar.\nb) Sayı adını söyler.\nMAT.1.1.2. Sayıları sıralar."
+	var o: Dictionary = _outcome()
+	o["text"] = "Sayıları sıralar."
+	o["steps"] = []
+	var e: Array[String] = _check(o, _pages(p20))
+	assert_eq(e.size(), 1)
+	assert_true(e[0].contains("MAT.1.1.1"))
+
+func test_steps_out_of_order_rejected() -> void:
+	var o: Dictionary = _outcome()
+	o["steps"] = ["b) Sayı adını söyler.", "a) Nesneleri birer birer sayar."]
+	assert_eq(_check(o).size(), 1)
+
+func test_empty_or_dash_step_rejected() -> void:
+	for bad: String in ["", "-", " - "]:
+		var o: Dictionary = _outcome()
+		o["steps"] = ["a) Nesneleri birer birer sayar.", "b) Sayı adını söyler.", bad]
+		assert_eq(_check(o).size(), 1, "adım '%s' reddedilmeliydi" % bad)
+
+func test_non_string_step_rejected() -> void:
+	var o: Dictionary = _outcome()
+	o["steps"] = [5]
+	assert_eq(_check(o).size(), 1)
+
+func test_dash_only_text_rejected() -> void:
+	var o: Dictionary = _outcome()
+	o["text"] = "-"
+	assert_eq(_check(o).size(), 1)
+
+func test_outcome_without_steps_rejects_following_step_marker() -> void:
+	# Kayıt adımsız, sayfada a) adımı var: adım eksik.
+	var o: Dictionary = _outcome()
+	o["steps"] = []
+	assert_eq(_check(o).size(), 1)
+
+func test_outcome_without_steps_passes_when_no_steps_follow() -> void:
+	var p20: String = "MAT.1.1.1. Nesne sayısını belirler.\nMAT.1.1.2. Sayıları sıralar."
+	var o: Dictionary = _outcome()
+	o["steps"] = []
+	assert_eq(_check(o, _pages(p20)), [] as Array[String])
+
+func test_code_occurring_several_times_accepts_any_valid_occurrence() -> void:
+	# İlk geçiş bir gönderme (metin farklı), ikincisi asıl kayıt.
+	var p20: String = "Bkz. MAT.1.1.1. numaralı çıktı.\n" + _page20()
+	assert_eq(_check(_outcome(), _pages(p20)), [] as Array[String])
+
+func test_code_occurring_several_times_all_invalid_rejected() -> void:
+	var p20: String = "Bkz. MAT.1.1.1. numaralı çıktı.\nMAT.1.1.1. Başka bir şey."
+	assert_eq(_check(_outcome(), _pages(p20)).size(), 1)
+
 func test_code_prefix_collision_not_accepted() -> void:
 	var p20: String = "MAT.1.1.10. Nesne sayısını belirler.\na) Nesneleri birer birer sayar.\nb) Sayı adını söyler."
 	var e: Array[String] = _check(_outcome(), _pages(p20))
