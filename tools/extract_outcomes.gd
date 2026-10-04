@@ -8,7 +8,7 @@ const OutcomeExtract := preload("res://tools/curriculum/outcome_extract.gd")
 
 func _init() -> void:
 	var args: PackedStringArray = OS.get_cmdline_user_args()
-	if args.size() != 3 or not CurriculumCheck.SUBJECT_SOURCES.has(args[0]) or not args[1].is_valid_int() or not args[2].is_valid_int():
+	if args.size() != 3 or not CurriculumCheck.SUBJECT_SOURCES.has(args[0]) or not args[1].is_valid_int() or not args[2].is_valid_int() or int(args[1]) > int(args[2]):
 		printerr("Kullanım: -- <ders: %s> <ilk_sayfa> <son_sayfa>" % ", ".join(CurriculumCheck.SUBJECT_SOURCES.keys()))
 		quit(2)
 		return

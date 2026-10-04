@@ -21,9 +21,11 @@ static func _regex(pattern: String) -> RegEx:
 	re.compile(pattern)
 	return re
 
-## Sekme / U+00A0 / boşluk dizilerini tek boşluğa indirir, kenar boşluklarını atar.
+## Sekme / U+00A0 / Unicode boşluk ayırıcıları / boşluk dizilerini tek boşluğa indirir, kenar boşluklarını atar.
 static func _clean(line: String) -> String:
 	var s: String = line.replace("\t", " ").replace("\r", " ").replace("\u00A0", " ")
+	for sp: String in CurriculumCheck.UNICODE_SPACES:
+		s = s.replace(sp, " ")
 	while s.contains("  "):
 		s = s.replace("  ", " ")
 	return s.strip_edges()
@@ -38,10 +40,6 @@ static func _join(base: String, line: String) -> String:
 
 static func _is_digits_only(s: String) -> bool:
 	return not s.is_empty() and s.is_valid_int()
-
-## Sayfa başındaki sayfa numarası ve çalışan başlık (`... ÖĞRETİM PROGRAMI`) satırı mı?
-static func _is_page_header(line: String) -> bool:
-	return line.is_empty() or _is_digits_only(line) or line.contains("PROGRAMI")
 
 ## Büyük harfli bölüm etiketi mi (ör. `KONUŞMA`, `DİNLEME/İZLEME`, `1. SINIF`)?
 static func _is_all_caps_label(line: String, letter_re: RegEx) -> bool:
@@ -81,7 +79,7 @@ static func extract(pages: Dictionary, subject: String, first_page: int, last_pa
 		for raw: String in lines:
 			var line: String = _clean(raw)
 			if at_top:
-				if _is_page_header(line):
+				if CurriculumCheck.is_page_header_line(line):
 					continue
 				at_top = false
 			if line.is_empty() or _is_digits_only(line):

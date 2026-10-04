@@ -68,6 +68,15 @@ func test_first_occurrence_wins() -> void:
 	assert_eq(int(d["MAT.1.1.1"]["source"]["page"]), 20)
 	assert_eq(d["MAT.1.1.1"]["steps"].size(), 1)
 
+func test_unicode_space_after_step_letter_splits_steps() -> void:
+	var page: String = "MAT.2.2.1. Örnek çıktı\n" \
+		+ "g) Uzun bir adım metni burada sürer ve devam eder.\n" \
+		+ "ğ)\u2002 Çözüme ulaşır.\n" \
+		+ "h)\u2002Sonuç yazar.\n"
+	var d: Dictionary = OutcomeExtract.extract({30: page}, "matematik", 1, 60)
+	assert_eq(d["MAT.2.2.1"]["steps"], [
+		"g) Uzun bir adım metni burada sürer ve devam eder.", "ğ) Çözüme ulaşır.", "h) Sonuç yazar."])
+
 func test_page_range_respected() -> void:
 	var pages: Dictionary = {5: "MAT.1.1.1. Aralık dışı\n", 20: "MAT.1.1.2. Aralık içi\n"}
 	var d: Dictionary = OutcomeExtract.extract(pages, "matematik", 10, 60)

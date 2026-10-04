@@ -73,6 +73,16 @@ func test_normalize_ignores_whitespace_tabs_and_hyphenation() -> void:
 func test_valid_outcome_passes() -> void:
 	assert_eq(_check(_outcome()), [] as Array[String])
 
+func test_step_split_across_pages_ignores_running_header() -> void:
+	var o: Dictionary = _outcome()
+	o["steps"] = ["a) Nesneleri birer birer sayar.", "b) Sayı adını söyler ve kısa çizgi) kuralına uygun kullanır."]
+	var p20: String = "MAT.1.1.1. Nesne sayısını belirler.\na) Nesneleri birer birer sayar.\nb) Sayı adını söyler ve kısa\t"
+	var p21: String = "\n208\nTÜRKÇE DERSİ (1, 2, 3 VE 4. SINIFLAR) ÖĞRETİM PROGRAMI\nçizgi)\tkuralına uygun kullanır.\n"
+	assert_eq(_check(o, _pages(p20, p21)), [] as Array[String])
+
+func test_strip_page_header_only_drops_leading_header_lines() -> void:
+	assert_eq(_cc.strip_page_header("\n208\nX DERSİ PROGRAMI\nçizgi)\n209\nmetin"), "çizgi)\n209\nmetin")
+
 func test_text_may_continue_on_next_page() -> void:
 	var p20: String = "MAT.1.1.1. Nesne sayısını belirler.\na) Nesneleri birer birer sayar."
 	var p21: String = "b) Sayı adını söyler."

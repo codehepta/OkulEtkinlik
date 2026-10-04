@@ -68,13 +68,35 @@ static func _is_int_like(v: Variant) -> bool:
 static func _non_empty_string(v: Variant) -> bool:
 	return v is String and not (v as String).strip_edges().is_empty()
 
-## Boşluk karakterlerini (boşluk, sekme, satır sonu, U+00A0), `-` ve yumuşak tireyi (U+00AD) siler.
-## Büyük/küçük harf ve tırnaklar aynen kalır.
+## Unicode boşluk ayırıcıları (U+2000-U+200B, U+202F, U+3000): dökümde adım harfinden sonra
+## U+2002 (EN SPACE) gibi karakterler çıkabiliyor.
+const UNICODE_SPACES: PackedStringArray = [
+	"\u2000", "\u2001", "\u2002", "\u2003", "\u2004", "\u2005", "\u2006", "\u2007",
+	"\u2008", "\u2009", "\u200A", "\u200B", "\u202F", "\u3000",
+]
+
+## Boşluk karakterlerini (boşluk, sekme, satır sonu, U+00A0, Unicode boşluk ayırıcıları), `-` ve
+## yumuşak tireyi (U+00AD) siler. Büyük/küçük harf ve tırnaklar aynen kalır.
 static func normalize(s: String) -> String:
 	var r: String = s
-	for ch: String in [" ", "\t", "\n", "\r", " ", "-", "­"]:
+	for ch: String in [" ", "\t", "\n", "\r", "\u00A0", "-", "\u00AD"]:
+		r = r.replace(ch, "")
+	for ch: String in UNICODE_SPACES:
 		r = r.replace(ch, "")
 	return r
+
+## Sayfa başındaki çalışan başlık satırı mı: boş, yalnızca rakam ya da `PROGRAMI` içeren satır.
+static func is_page_header_line(line: String) -> bool:
+	var t: String = line.strip_edges()
+	return t.is_empty() or t.is_valid_int() or t.contains("PROGRAMI")
+
+## Sayfa metninin başındaki çalışan başlık satırlarını (bkz. is_page_header_line) atar.
+static func strip_page_header(page_text: String) -> String:
+	var lines: PackedStringArray = page_text.split("\n")
+	var i: int = 0
+	while i < lines.size() and is_page_header_line(lines[i]):
+		i += 1
+	return "\n".join(lines.slice(i))
 
 ## `===== SAYFA N =====` işaretlerine göre döküm metnini ayırır: int sayfa -> metin.
 static func split_pages(txt: String) -> Dictionary:
@@ -191,7 +213,7 @@ static func _check_outcome_text(code: String, o: Dictionary, source: Dictionary,
 		return
 	var span: String = page_norm
 	if pages.has(page + 1):
-		span += normalize(str(pages[page + 1]))
+		span += normalize(strip_page_header(str(pages[page + 1])))
 	var span_label: String = "s.%d-%d" % [page, page + 1]
 	if _non_empty_string(o.get("text")) and not span.contains(normalize(str(o["text"]))):
 		errs.append("%s: metin %s'da bulunamadı" % [code, span_label])
