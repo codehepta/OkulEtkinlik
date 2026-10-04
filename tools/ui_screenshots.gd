@@ -71,6 +71,31 @@ func _run() -> void:
 	await _shot("14_parent_panel")
 	await _show("session_end", {})
 	await _shot("15_session_end")
+
+	# --- Harita ve patika ek kareleri (1. ve 3. sınıf haritası, ilk durak bitince patika) ---
+	_app.select_profile(pid)
+	await _show("world_map", {})
+	await _shot("20_world_map_grade1")
+	var g3: String = progress.create_profile("avatar.kedi", "Ali", 3)
+	_app.select_profile(g3)
+	await _show("world_map", {})
+	await _shot("21_world_map_grade3")
+	_app.select_profile(pid)
+	var no_results: Array[RoundResult] = []
+	progress.record_node(pid, "g1.matematik.u01.n01", no_results)
+	await _show("region_path", {"subject": "matematik", "highlight": "g1.matematik.u01.n02"})
+	await _frames(30)
+	await _shot("22_region_path_after_n01")
+	var path_scene: Node = _app.current_scene()
+	var scroll: ScrollContainer = null
+	for c: Node in path_scene.get_children():
+		if c is ScrollContainer:
+			scroll = c as ScrollContainer
+	if scroll != null:
+		scroll.scroll_horizontal = 100000
+		await _frames(30)
+		await _shot("23_region_path_scrolled_end")
+	# --- ek kareler sonu ---
 	print("ui_screenshots: %d görüntü -> %s" % [_shots, ProjectSettings.globalize_path(OUT_DIR)])
 	quit(0)
 
