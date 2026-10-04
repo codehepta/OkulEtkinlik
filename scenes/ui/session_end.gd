@@ -1,5 +1,5 @@
 extends Control
-## Oturum sonu: süre dolduğunda uyuyan Bilge ve tek düğme (veli kapısı -> panel).
+## Oturum sonu: süre dolduğunda uyuyan Bilge, tekrar dinle ve tek düğme (veli kapısı -> panel).
 ## Oyun ekranı değildir; AppState kilit koruması burayı yönlendirmez.
 
 const BG_COLOR: Color = Color(0.2, 0.25, 0.45)
@@ -37,6 +37,12 @@ func _ready() -> void:
 	_parent_button.custom_minimum_size = Vector2(420, 160)
 	_parent_button.pressed.connect(open_parent_gate)
 	holder.add_child(_parent_button)
+
+	# Her yönerge tekrar dinlenebilir: sol üstte "tekrar dinle".
+	var replay: Button = (load("res://scenes/components/replay_voice_button.tscn") as PackedScene).instantiate() as Button
+	replay.set("narrator", app.narrator)
+	replay.position = Vector2(24, 24)
+	add_child(replay)
 
 	app.narrator.say("vo.genel.uyku_zamani")
 

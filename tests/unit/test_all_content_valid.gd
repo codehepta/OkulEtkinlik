@@ -12,6 +12,7 @@ func test_all_content_valid() -> void:
 	assert_true(DirAccess.dir_exists_absolute("res://content"))
 	var files: PackedStringArray = PackedStringArray()
 	_collect("res://content", files)
+	assert_gt(files.size(), 0, "en az bir ünite dosyası doğrulanmalı")
 	var known: PackedStringArray = PackedStringArray(
 		(JSON.parse_string(FileAccess.get_file_as_string("res://docs/curriculum/outcomes.json")) as Dictionary).keys())
 	var voice_lines: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://content/voice_lines.tr.json"))

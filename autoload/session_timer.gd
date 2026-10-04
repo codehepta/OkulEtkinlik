@@ -6,6 +6,8 @@ signal limit_reached
 
 ## Birikmiş süre bu kadar saniyede bir diske yazılır.
 const SAVE_INTERVAL_S: float = 15.0
+## Bir karede sayılacak en uzun süre: askıdan dönüşteki dev kare süresi süreyi şişirmesin.
+const MAX_FRAME_DELTA_S: float = 1.0
 
 var clock: DayClock = DayClock.new()
 ## Testlerde değiştirilebilir; boşsa _ready'de autoload bağlanır.
@@ -24,7 +26,14 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	if _started:
-		tick(delta)
+		tick(minf(delta, MAX_FRAME_DELTA_S))
+
+## Arka plana geçerken ya da kapanırken birikmiş kullanımı diske yazar.
+func _notification(what: int) -> void:
+	if what == NOTIFICATION_APPLICATION_PAUSED or what == NOTIFICATION_WM_CLOSE_REQUEST:
+		if _started and save != null:
+			_since_save = 0.0
+			save.save()
 
 func start(profile_id: String) -> void:
 	_profile_id = profile_id

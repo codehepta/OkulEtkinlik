@@ -241,6 +241,18 @@ func test_session_end_button_goes_to_gate_with_panel_next() -> void:
 	assert_eq(_app.current_scene_name(), "parent_gate")
 	assert_eq(_screen().args["next"]["scene"], "parent_panel")
 
+func test_session_end_has_replay_voice_button() -> void:
+	_login(1)
+	_app.goto("session_end")
+	var btn: Button = _screen().find_child("ReplayVoiceButton", true, false) as Button
+	assert_not_null(btn, "yönerge tekrar dinlenebilir olmalı")
+	if btn == null:
+		return
+	assert_gte(btn.custom_minimum_size.x, 128.0)
+	var before: int = _fake.replays
+	btn.pressed.emit()
+	assert_eq(_fake.replays, before + 1, "uygulamanın anlatıcısına gider")
+
 func test_session_end_not_redirected_when_locked() -> void:
 	var id: String = _login(1)
 	_save.data["settings"]["daily_limit_min"] = 10

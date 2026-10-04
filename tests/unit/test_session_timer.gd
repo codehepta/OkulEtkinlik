@@ -93,3 +93,34 @@ func test_stop_persists_usage() -> void:
 	reloaded.load_or_create()
 	assert_eq(reloaded.data["profiles"][0]["usage"]["seconds"], 5)
 	reloaded.free()
+
+func _saved_seconds() -> int:
+	var s2: Node = load("res://autoload/save_service.gd").new()
+	s2.set_base_dir(SAVE_DIR)
+	s2.load_or_create()
+	var secs: int = -1
+	for p: Dictionary in s2.data["profiles"]:
+		if str(p["id"]) == "p1":
+			secs = int(p["usage"]["seconds"])
+	s2.free()
+	return secs
+
+func test_app_pause_saves_usage() -> void:
+	_set_limit(10)
+	_t.start("p1")
+	_t.tick(5.0)
+	_t._notification(NOTIFICATION_APPLICATION_PAUSED)
+	assert_eq(_saved_seconds(), 5, "uygulama arka plana geçince kullanım diske yazılır")
+
+func test_close_request_saves_usage() -> void:
+	_set_limit(10)
+	_t.start("p1")
+	_t.tick(7.0)
+	_t._notification(NOTIFICATION_WM_CLOSE_REQUEST)
+	assert_eq(_saved_seconds(), 7)
+
+func test_process_caps_large_delta() -> void:
+	_set_limit(10)
+	_t.start("p1")
+	_t._process(600.0)
+	assert_eq(_t.remaining_seconds("p1"), 599, "askıdan dönüşteki dev kare süresi sayılmaz (en çok 1 sn)")

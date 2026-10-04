@@ -45,7 +45,7 @@ Ek not (tur yönergeleri): Sayı adlarını (ör. "üç", "on yedi") biraz vurgu
 | 20 | `vo.g1.matematik.u01.n04.r03` | `assets/audio/voice/g1/matematik/u01/n04/r03.wav` | ANLATICI | Kaç kalem var? Hepsini say ve dokun! |
 | 21 | `vo.g1.matematik.u01.n04.r04` | `assets/audio/voice/g1/matematik/u01/n04/r04.wav` | ANLATICI | Kaç kelebek var? Dikkatle say ve dokun! |
 | 22 | `vo.g1.matematik.u01.n04.r05` | `assets/audio/voice/g1/matematik/u01/n04/r05.wav` | ANLATICI | Kaç küp var? Say ve doğru sayıya dokun! |
-| 23 | `vo.g1.matematik.u01.n05.intro` | `assets/audio/voice/g1/matematik/u01/n05/intro.wav` | BILGE | Şimdi on birden yirmiye kadar sayılarla oynayalım! |
+| 23 | `vo.g1.matematik.u01.n05.intro` | `assets/audio/voice/g1/matematik/u01/n05/intro.wav` | BILGE | Şimdi yirmiye kadar sayılarla oynayalım! |
 | 24 | `vo.g1.matematik.u01.n05.r01` | `assets/audio/voice/g1/matematik/u01/n05/r01.wav` | ANLATICI | Kaç çilek var? Yavaş yavaş say ve dokun! |
 | 25 | `vo.g1.matematik.u01.n05.r02` | `assets/audio/voice/g1/matematik/u01/n05/r02.wav` | ANLATICI | Dinle ve bul: sekiz! Sekiz rakamına dokun. |
 | 26 | `vo.g1.matematik.u01.n05.r03` | `assets/audio/voice/g1/matematik/u01/n05/r03.wav` | ANLATICI | Kaç arı var? Tek tek say ve dokun! |
