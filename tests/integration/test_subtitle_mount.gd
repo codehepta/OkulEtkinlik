@@ -76,13 +76,13 @@ func test_top_placement_anchors_to_top() -> void:
 	assert_true(_bubble.visible)
 	assert_eq(_bubble.anchor_top, 0.0)
 	assert_eq(_bubble.call("placement"), "top")
-	await wait_frames(2)
+	await wait_process_frames(2)
 	assert_lt(_bubble.position.y, 100.0, "üst şeritte")
 
 func test_bubble_sizes_to_text() -> void:
 	_bubble.set("placement_provider", func() -> String: return "bottom")
 	_n.say(LINE_ID)
-	await wait_frames(3)
+	await wait_process_frames(3)
 	var max_w: float = float(_bubble.get("MAX_TEXT_WIDTH"))
 	assert_lt(_bubble.size.x, max_w / 2.0, "kısa metin: dar balon")
 	assert_lt(_bubble.size.y, 140.0, "tek satır: alçak balon")

@@ -13,7 +13,7 @@ func _make(text_key: String, icon_key: String, size: Vector2) -> Button:
 
 func test_icon_and_text_do_not_overlap() -> void:
 	var b: Button = _make("result.replay", "ui.back", Vector2(520, 160))
-	await wait_frames(2)
+	await wait_process_frames(2)
 	assert_true(b.call("has_side_icon"))
 	var icon: Rect2 = b.call("icon_rect")
 	var text_left: float = b.get_theme_stylebox("normal").content_margin_left
@@ -26,7 +26,7 @@ func test_icon_and_text_do_not_overlap() -> void:
 
 func test_icon_only_fills_button() -> void:
 	var b: Button = _make("", "ui.home", Vector2(128, 128))
-	await wait_frames(2)
+	await wait_process_frames(2)
 	assert_false(b.call("has_side_icon"))
 	var icon: Rect2 = b.call("icon_rect")
 	assert_gte(icon.size.x, 80.0)

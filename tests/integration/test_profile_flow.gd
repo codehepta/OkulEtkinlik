@@ -183,7 +183,7 @@ func test_double_tap_on_confirm_creates_one_profile() -> void:
 func test_profile_cards_keep_their_size_with_big_avatar() -> void:
 	_progress.create_profile("avatar.kedi", "A", 1)
 	_app.goto("profile_select")
-	await wait_frames(3)
+	await wait_process_frames(3)
 	var card: Button = _screen().profile_cards()[0]
 	var card_size: Vector2 = _screen().CARD_SIZE
 	assert_almost_eq(card.size.y, card_size.y, 1.0, "kart ekran boyunca uzamaz")

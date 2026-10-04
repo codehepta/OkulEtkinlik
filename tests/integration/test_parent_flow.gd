@@ -329,7 +329,7 @@ func test_import_success_clears_warning_and_refreshes_grade() -> void:
 
 func test_gate_leaves_bottom_band_for_subtitle() -> void:
 	_app.goto("parent_gate", {"next": {"scene": "parent_panel", "args": {}}})
-	await wait_frames(3)
+	await wait_process_frames(3)
 	var gate: Node = _screen()
 	assert_eq(gate.subtitle_placement(), "bottom")
 	var vp: Vector2 = (gate as Control).get_viewport_rect().size
