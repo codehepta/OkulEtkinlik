@@ -58,16 +58,16 @@ func _run() -> void:
 	await _shot_with_subtitle("06b_world_map_subtitle", "vo.bolge.kilitli_lab")
 	await _show("region_path", {"subject": "matematik"})
 	await _shot("07_region_path")
-	await _show("lesson", {"node_id": "g1.matematik.u01.n01"})
+	await _show("lesson", {"node_id": "g1.matematik.u02.n01"})
 	await _frames(240)
 	await _shot("08_lesson_count_choose")
-	await _show("lesson", {"node_id": "g1.matematik.u01.n02"})
+	await _show("lesson", {"node_id": "g1.matematik.u02.n02"})
 	await _frames(240)
 	await _shot("09_lesson_drag_match")
-	await _show("lesson", {"node_id": "g1.matematik.u01.n03"})
+	await _show("lesson", {"node_id": "g1.matematik.u02.n03"})
 	await _frames(300)
 	await _shot("10_lesson_listen_find")
-	await _show("result", {"node_id": "g1.matematik.u01.n01", "stars": 3, "new_sticker": "st.matematik.elma", "unlocked": "g1.matematik.u01.n02", "subject": "matematik"})
+	await _show("result", {"node_id": "g1.matematik.u02.n01", "stars": 3, "new_sticker": "st.matematik.elma", "unlocked": "g1.matematik.u02.n02", "subject": "matematik"})
 	await _frames(240)
 	await _shot("11_result")
 	await _shot_with_subtitle("11b_result_subtitle", "vo.genel.cikartma")
@@ -117,8 +117,8 @@ func _run() -> void:
 	await _shot("19_world_map_grade3")
 	_app.select_profile(pid)
 	var no_results: Array[RoundResult] = []
-	progress.record_node(pid, "g1.matematik.u01.n01", no_results)
-	await _show("region_path", {"subject": "matematik", "highlight": "g1.matematik.u01.n02"})
+	progress.record_node(pid, "g1.matematik.u02.n01", no_results)
+	await _show("region_path", {"subject": "matematik", "highlight": "g1.matematik.u02.n02"})
 	await _frames(30)
 	await _shot("20_region_path_after_n01")
 	var path_scene: Node = _app.current_scene()
@@ -182,16 +182,16 @@ func _find_scroll(n: Node) -> ScrollContainer:
 ## Ders şablonlarının ara durumları. Yanlış cevaplar runner'ın gerçek geri bildirim akışından geçer.
 func _lesson_extras() -> void:
 	# count_choose: iki yanlış -> ipucu 1 (nesneler sırayla zıplar).
-	await _show("lesson", {"node_id": "g1.matematik.u01.n01"})
+	await _show("lesson", {"node_id": "g1.matematik.u02.n01"})
 	await _wait_game()
 	await _wrong_twice()
 	await _frames(20)
 	await _shot("22_lesson_count_choose_hint1")
 	# Kalabalık sayma: 6 ve 11 nesne.
-	await _show("lesson", {"node_id": "g1.matematik.u01.n04"})
+	await _show("lesson", {"node_id": "g1.matematik.u02.n04"})
 	await _wait_game()
 	await _shot("23_lesson_count_choose_6")
-	await _show("lesson", {"node_id": "g1.matematik.u01.n05"})
+	await _show("lesson", {"node_id": "g1.matematik.u02.n05"})
 	await _wait_game()
 	await _shot("24_lesson_count_choose_11")
 	# 20 nesne: şablon doğrudan runner'ın oyun alanına kurulur (yalnızca görüntü için).
@@ -220,7 +220,7 @@ func _lesson_extras() -> void:
 	await _frames(30)
 	await _shot("26_lesson_drag_match_4_pairs")
 	# drag_match: bir eşleşme yapılmış, sonra iki yanlış -> ipucu 1 (doğru yuva parlar).
-	await _show("lesson", {"node_id": "g1.matematik.u01.n02"})
+	await _show("lesson", {"node_id": "g1.matematik.u02.n02"})
 	await _wait_game()
 	var dm: Node = _runner_game()
 	var slots: Array = dm.call("_debug_right_slots")
@@ -232,7 +232,7 @@ func _lesson_extras() -> void:
 	await _frames(20)
 	await _shot("27_lesson_drag_match_hint1")
 	# listen_find: iki yanlış -> ipucu 1 (bir yanlış seçenek soluklaşır).
-	await _show("lesson", {"node_id": "g1.matematik.u01.n03"})
+	await _show("lesson", {"node_id": "g1.matematik.u02.n03"})
 	await _wait_game()
 	await _wrong_twice()
 	await _frames(30)
@@ -316,7 +316,7 @@ func _faz3b_templates(area: Control, scenes: Dictionary) -> void:
 
 func _faz3_templates() -> void:
 	var scenes: Dictionary = load("res://scripts/core/template_registry.gd").get("SCENES")
-	await _show("lesson", {"node_id": "g1.matematik.u01.n01"})
+	await _show("lesson", {"node_id": "g1.matematik.u02.n01"})
 	await _wait_game()
 	var runner: Node = _app.current_scene()
 	var area: Control = runner.get_node("Host/GameArea") as Control
@@ -363,7 +363,7 @@ const FAZ4A_SHOTS: Array = [
 func _faz4a_templates() -> void:
 	var scenes: Dictionary = load("res://scripts/core/template_registry.gd").get("SCENES")
 	var fixtures: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(FAZ4A_FIXTURE))
-	await _show("lesson", {"node_id": "g1.matematik.u01.n01"})
+	await _show("lesson", {"node_id": "g1.matematik.u02.n01"})
 	await _wait_game()
 	var runner: Node = _app.current_scene()
 	var area: Control = runner.get_node("Host/GameArea") as Control

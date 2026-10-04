@@ -7,7 +7,7 @@ const EMPTY_ASSETS: String = "res://tests/fixtures/empty_assets"
 const SAVE_DIR: String = "user://e2e_vertical_slice_test"
 const N1: String = "g1.matematik.u01.n01"
 const N2: String = "g1.matematik.u01.n02"
-const STICKER: String = "st.matematik.elma"
+const STICKER: String = "st.matematik.g1_kedi"
 const WAIT: float = 8.0
 
 var _fake: Node = null
@@ -85,7 +85,9 @@ func test_full_vertical_slice() -> void:
 	var rounds: int = (_db.node(N1)["rounds"] as Array).size()
 	for i: int in rounds:
 		var ok: bool = await wait_until(func() -> bool:
-			return _app.current_scene_name() == "lesson" and _screen().current_game() != null and _screen().current_round_index() == i, WAIT)
+			# Sesle kurulan şablonlar (listen_find) yönerge bitince kurulur; doğru indeks o zaman belli olur.
+			return _app.current_scene_name() == "lesson" and _screen().current_game() != null and _screen().current_round_index() == i \
+				and int(_screen().current_game().call("_debug_correct_index")) >= 0, WAIT)
 		assert_true(ok, "tur %d açılmalı" % i)
 		if not ok:
 			return
