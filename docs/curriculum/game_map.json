@@ -57,18 +57,18 @@
 		"proposed": [
 			"estimate_then_count"
 		],
-		"note": "b) aralıklı seçeneklerle tahmin count_choose ile oynanabilir; a) 5 ve 10’u referans alarak tahmin ve c) tahmini sayma sonucuyla karşılaştırma önerilen estimate_then_count gerektirir (spec Açık sorular)."
+		"note": "b) çokluğun büyüklüğünü aralıklı seçeneklerle tahmin etme count_choose ile oynanabilir; a) verilen çokluktaki ilişkileri ekranda gözleyip tahmine bağlama ve c) tahmini sayma sonucuyla karşılaştırıp yargıda bulunma önerilen estimate_then_count gerektirir (spec Açık sorular)."
 	},
 	"MAT.1.1.8": {
 		"fit": "partial",
 		"templates": [
 			"listen_find",
-			"balance"
+			"count_choose"
 		],
 		"proposed": [
 			"estimate_then_count"
 		],
-		"note": "a) uzunluk ve kütle için uygun standart olmayan aracı seçme listen_find ile oynanabilir; b–c) birim cinsinden tahmin edip ekranda birim dizerek ya da terazide küp koyarak (balance) sınama önerilen estimate_then_count gerektirir; kütleyi elde tartarak tahmin ve gerçek nesneyle ölçme ev etkinliği."
+		"note": "a) uzunluğa ve kütleye uygun standart olmayan ölçme aracını belirleme listen_find ile, b) ölçüm sonucunu belirlenen birim cinsinden aralıklı seçeneklerle tahmin etme count_choose ile oynanabilir; c) tahminin doğruluğunu ekranda birim dizerek ya da terazide sınayıp yargıda bulunma önerilen estimate_then_count gerektirir; kütleyi elde tartarak tahmin ve gerçek nesneyle ölçme ev etkinliği."
 	},
 	"MAT.1.1.9": {
 		"fit": "full",
@@ -208,7 +208,7 @@
 			"pattern",
 			"listen_find"
 		],
-		"note": "a–c) ve d) varsayımı seçme, örüntüyü sürdürme, sınama ve değerlendirme oynanabilir; ç) kuralı sözlü olarak ifade etme sözlü etkinlik."
+		"note": "a) varsayımı sesli seçenekler arasından seçme, c) gösterilen örüntünün varsayımı karşılayıp karşılamadığını sınama ve d) gösterilen örüntüyü değerlendirme pattern ve listen_find ile oynanabilir; b) örüntüleri örnekler üzerinde listeleme ve ç) kuralı sözlü olarak ifade etme serbest üretim."
 	},
 	"MAT.2.1.6": {
 		"fit": "partial",
@@ -255,13 +255,14 @@
 	"MAT.2.1.11": {
 		"fit": "partial",
 		"templates": [
+			"listen_find",
 			"drag_match",
-			"listen_find"
+			"count_choose"
 		],
 		"proposed": [
 			"estimate_then_count"
 		],
-		"note": "b) nesneyle uygun birimi eşleştirme ve seçenekli tahmin oynanabilir; c) tahmini ekranda cetvel ya da terazi ölçümüyle karşılaştırma önerilen estimate_then_count gerektirir; a) standart birimlerle gerçek ölçme deneyimi ve kütleyi elde tartma ev etkinliği."
+		"note": "b) uygun standart birimi seçme listen_find, nesneyle eşleştirme drag_match ve birim cinsinden aralıklı seçeneklerle tahmin count_choose ile oynanabilir; c) tahmini ekranda cetvel ya da terazi ölçümüyle karşılaştırıp yargıda bulunma önerilen estimate_then_count gerektirir; a) standart birimlerle gerçek ölçme deneyimini ilişkilendirme ev etkinliği."
 	},
 	"MAT.2.2.1": {
 		"fit": "partial",
@@ -269,9 +270,10 @@
 			"story",
 			"drag_match",
 			"count_choose",
-			"balloon_pop"
+			"balloon_pop",
+			"sort_bins"
 		],
-		"note": "a–c) verilen ve istenenleri belirleme, işlemi seçme, temsile dönüştürme ile e) çözümü uygulama oynanabilir; ç) kendi ifadeleriyle açıklama, d) ve f–h) strateji geliştirme, gözden geçirme ve genelleme sözlü ya da üstbilişsel etkinlik."
+		"note": "a–c) verilen ve istenenleri belirleme, işlemi seçme, temsile dönüştürme ve e) çözümü uygulama story, drag_match, count_choose ve balloon_pop ile; ğ) çözüm stratejisinin uygulanabileceği problemleri verilen problemler arasından seçme drag_match ile; h) genellemeyi verilen örneklerle sınama sort_bins ile oynanabilir; ç) kendi ifadeleriyle açıklama ve d) strateji geliştirme serbest üretim, f–g) kendi kullandığı stratejiyi kontrol edip değiştirme ve gözden geçirme öz değerlendirme (oyun çocuğun stratejisini göremez)."
 	},
 	"MAT.2.2.2": {
 		"fit": "partial",
@@ -314,12 +316,13 @@
 		"note": "a–b) çarpma ve bölmenin bileşenlerini ve ilişkilerini belirleme oynanabilir; c) tahmin ve zihinden işlem sonucunu karşılaştırma önerilen estimate_then_count gerektirir; ç) sonuçları açıklama sözlü etkinlik."
 	},
 	"MAT.2.2.6": {
-		"fit": "partial",
+		"fit": "full",
 		"templates": [
 			"balance",
-			"drag_match"
+			"drag_match",
+			"listen_find"
 		],
-		"note": "a–b) eşitliği terazi modeliyle inceleme ve aynı sonucu veren farklı işlemleri eşleştirme oynanabilir; c) eşitliğin anlamlarını ifade etme sözlü etkinlik."
+		"note": "c) eşitliğin anlamları (işlemin sonucu; iki tarafın eşit değeri) terazi modelli sesli seçenekler arasından seçilerek ifade edilir."
 	},
 	"MAT.2.3.1": {
 		"fit": "full",
@@ -381,7 +384,7 @@
 		"proposed": [
 			"grid_path"
 		],
-		"note": "b–e) yolları karşılaştırma, seçenek oluşturma, denetleme, ölçüte (en kısa yol, engelden kaçınma) uygun yolu seçme ve ölçüt değişince yeniden planlama önerilen grid_path ile oynanabilir; a) ölçütü kendisi belirleme oyunda hazır verilir."
+		"note": "b) ölçüte uygun bilgiyi toplama (yolların kare sayısını sayma) count_choose ile, d) seçenekler arasından ölçüte uygun yolu seçme listen_find ile oynanabilir; c) yol seçenekleri oluşturma, ç) seçenekleri mantıksal denetleme ve e) ölçüt değişince yeniden planlama önerilen grid_path gerektirir; a) ölçütü kendisi belirleme doğru/yanlışı olmayan kişisel karar, oyunda ölçüt hazır verilir."
 	},
 	"MAT.2.3.7": {
 		"fit": "full",
@@ -459,7 +462,7 @@
 			"pattern",
 			"listen_find"
 		],
-		"note": "a–c) ve d) varsayımı seçme, örüntüyü sürdürme, sınama ve değerlendirme oynanabilir; ç) kuralı sözlü olarak ifade etme sözlü etkinlik."
+		"note": "a) varsayımı sesli seçenekler arasından seçme, c) gösterilen örüntünün varsayımı karşılayıp karşılamadığını sınama ve d) gösterilen örüntüyü değerlendirme pattern ve listen_find ile oynanabilir; b) örüntüleri örnekler üzerinde listeleme ve ç) kuralı sözlü olarak ifade etme serbest üretim."
 	},
 	"MAT.3.1.8": {
 		"fit": "partial",
@@ -587,9 +590,10 @@
 			"story",
 			"drag_match",
 			"count_choose",
-			"balloon_pop"
+			"balloon_pop",
+			"sort_bins"
 		],
-		"note": "a–c) verilen ve istenenleri belirleme, işlemi seçme, temsile dönüştürme ile e) çözümü uygulama oynanabilir; ç) kendi ifadeleriyle açıklama, d) ve f–h) strateji geliştirme, gözden geçirme ve genelleme sözlü ya da üstbilişsel etkinlik."
+		"note": "a–c) verilen ve istenenleri belirleme, işlemi seçme, temsile dönüştürme ve e) çözümü uygulama story, drag_match, count_choose ve balloon_pop ile; ğ) çözüm stratejisinin uygulanabileceği problemleri verilen problemler arasından seçme drag_match ile; h) genellemeyi verilen örneklerle sınama sort_bins ile oynanabilir; ç) kendi ifadeleriyle açıklama ve d) strateji geliştirme serbest üretim, f–g) kendi kullandığı stratejiyi kontrol edip değiştirme ve gözden geçirme öz değerlendirme (oyun çocuğun stratejisini göremez)."
 	},
 	"MAT.3.2.7": {
 		"fit": "partial",
@@ -600,12 +604,13 @@
 		"note": "a) problem durumundaki ilişkileri kurma (durumu soruyla eşleştirme, olayları sıralama) oynanabilir; b) özgün problem oluşturma sözlü ya da yazılı etkinlik."
 	},
 	"MAT.3.2.8": {
-		"fit": "partial",
+		"fit": "full",
 		"templates": [
 			"balance",
-			"drag_match"
+			"drag_match",
+			"listen_find"
 		],
-		"note": "a–b) eşitliği terazi modeliyle inceleme ve aynı sonucu veren farklı işlemleri eşleştirme oynanabilir; c) eşitliğin anlamlarını ifade etme sözlü etkinlik."
+		"note": "c) eşitliğin anlamları (işlemin sonucu; iki tarafın eşit değeri) terazi modelli sesli seçenekler arasından seçilerek ifade edilir."
 	},
 	"MAT.3.3.1": {
 		"fit": "partial",
@@ -762,7 +767,8 @@
 			"sort_bins",
 			"drag_match",
 			"listen_find"
-		]
+		],
+		"note": "a) maddelerin niteliklerini tanımlama, gösterilen maddeye ait nitelikleri (sert, akışkan, kabın şeklini alır vb.) sesli nitelik kartları arasından seçmektir; tanım yapma değildir."
 	},
 	"FB.3.4.2": {
 		"fit": "partial",
@@ -775,10 +781,10 @@
 	"FB.3.4.3": {
 		"fit": "partial",
 		"templates": [
-			"sort_bins",
-			"scenario"
+			"scenario",
+			"sort_bins"
 		],
-		"note": "ç) çözüm önerileri üzerinden akıl yürütme scenario ile, atıkları türüne göre ayırma sort_bins ile oynanabilir; a–b) problemi yapılandırma ve özetleme, c) gözleme dayalı tahmin ve d) değerlendirme sözlü ya da gerçek gözlem gerektirir."
+		"note": "c) oyunda verilen veriye (kutulardaki karışık atıklar) dayalı çözüm önerisini tahmin etme scenario ile; ç) önermeler üzerinden akıl yürütme scenario ile ve önerilen kutu düzenini atıkları ayırarak sınama sort_bins ile oynanabilir; a) problemi yapılandırma ve b) özetleme serbest üretim, d) kendi çözümüne yönelik yansıtma ve değerlendirme öz değerlendirme."
 	},
 	"FB.3.5.1": {
 		"fit": "partial",
@@ -795,7 +801,7 @@
 			"scenario",
 			"sort_bins"
 		],
-		"note": "a) ve ç) önerme seçme ve gözlemlenmemiş durumda kuvvetin etkisini tahmin etme scenario ile, itme-çekme ayırma sort_bins ile oynanabilir; b–c) gözleme dayalı önermeleri karşılaştırma ve gözlem verisinden sonuç çıkarma ile d) tahminin geçerliliğini sorgulama gerçek deney ve sözlü tartışma gerektirir."
+		"note": "a) hareket ve şekil değiştirmenin nedenine ilişkin önermeyi sesli seçenekler arasından seçme scenario ile ve durumları nedenine göre (itme, çekme) ayırma sort_bins ile; ç) gözlemlenmemiş durumda kuvvetin etkisini tahmin etme scenario ile oynanabilir; b–c) gözleme dayalı önermeleri karşılaştırma ve gözlem verisinden sonuç çıkarma ile d) bu tahminlerin geçerliliğini sorgulama gerçek deney ve sözlü tartışma gerektirir."
 	},
 	"FB.3.6.1": {
 		"fit": "partial",
@@ -849,7 +855,7 @@
 			"drag_match",
 			"listen_find"
 		],
-		"note": "a) yaşam alanının özelliklerini tanımlama oynanabilir; b) yaşam alanındaki canlı çeşitliliğini ölçme gerçek gözlem, c) tanımı yapma sözlü etkinlik."
+		"note": "a) yaşam alanının özelliklerini tanımlama, gösterilen yaşam alanına ait özellikleri sesli kartlar arasından seçerek oynanabilir; b) yaşam alanındaki canlı çeşitliliğini ölçme gerçek gözlem, c) canlı çeşitliliğinin tanımını yapma serbest üretim."
 	},
 	"FB.3.8.3": {
 		"fit": "partial",
