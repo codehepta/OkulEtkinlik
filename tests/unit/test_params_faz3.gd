@@ -1,7 +1,7 @@
 extends GutTest
 ## Faz 3 şablonlarının kaydı ve parametre doğrulaması (TemplateRegistry üzerinden).
 
-const FAZ3: PackedStringArray = ["sequence"]
+const FAZ3: PackedStringArray = ["sequence", "balloon_pop"]
 
 func _item(v: String) -> Dictionary:
 	return {"type": "item", "value": v}
@@ -43,3 +43,20 @@ func test_sequence_invalid() -> void:
 	_bad("sequence", {"items": [_num(1), _num(2), _num(2)]}, "yinelenen")
 	_bad("sequence", {"items": [_num(1), _num(2.5), _num(3)]}, "kesirli sayı")
 	_bad("sequence", {"items": [_num(1), {"type": "x", "value": 1}, _num(3)]}, "bozuk token")
+
+# --- balloon_pop ---
+func test_balloon_pop_valid() -> void:
+	_ok("balloon_pop", {"a": 7, "op": "+", "b": 5, "choices": [12, 11]})
+	_ok("balloon_pop", {"a": 9, "op": "-", "b": 9, "choices": [0, 1, 2, 3, 4, 5]})
+	_ok("balloon_pop", {"a": 600.0, "op": "+", "b": 400.0, "choices": [1000.0, 900.0]})
+
+func test_balloon_pop_invalid() -> void:
+	_bad("balloon_pop", {"a": 3, "op": "-", "b": 5, "choices": [2, 8]}, "negatif sonuç")
+	_bad("balloon_pop", {"a": 600, "op": "+", "b": 500, "choices": [1100, 1000]}, "sonuç > 1000")
+	_bad("balloon_pop", {"a": 3, "op": "+", "b": 5, "choices": [7, 9]}, "choices'ta sonuç yok")
+	_bad("balloon_pop", {"a": 3, "op": "+", "b": 5, "choices": [8, 1, 2, 3, 4, 5, 6]}, "7 seçenek")
+	_bad("balloon_pop", {"a": 3, "op": "+", "b": 5, "choices": [8]}, "tek seçenek")
+	_bad("balloon_pop", {"a": 3, "op": "+", "b": 5, "choices": [8, 7, 7]}, "yinelenen seçenek")
+	_bad("balloon_pop", {"a": 3, "op": "x", "b": 5, "choices": [15, 8]}, "bilinmeyen op")
+	_bad("balloon_pop", {"a": 3.5, "op": "+", "b": 5, "choices": [8, 9]}, "kesirli a")
+	_bad("balloon_pop", {"op": "+", "b": 5, "choices": [8, 9]}, "a yok")
