@@ -37,6 +37,7 @@ func test_fresh_install_creates_default() -> void:
 	assert_eq((_svc.data["profiles"] as Array).size(), 0)
 	assert_signal_not_emitted(_svc, "reset_to_fresh")
 	assert_signal_not_emitted(_svc, "recovered_from_backup")
+	assert_eq(_svc.last_load_status, "fresh")
 
 func test_roundtrip_preserves_data() -> void:
 	_svc.load_or_create()
@@ -48,6 +49,7 @@ func test_roundtrip_preserves_data() -> void:
 	other.set_base_dir(_dir)
 	other.load_or_create()
 	assert_eq(other.data, _svc.data)
+	assert_eq(other.last_load_status, "loaded")
 	assert_typeof(other.data["last_day_seen"], TYPE_INT)
 	assert_typeof(other.data["profiles"][0]["grade"], TYPE_INT)
 	assert_eq(other.data["profiles"][0]["nickname"], "Ada")
@@ -78,6 +80,7 @@ func test_corrupt_main_falls_back_to_backup() -> void:
 	assert_signal_emitted(other, "recovered_from_backup")
 	assert_signal_not_emitted(other, "reset_to_fresh")
 	assert_eq(other.data["last_day_seen"], 7)
+	assert_eq(other.last_load_status, "recovered")
 	other.free()
 
 func test_both_corrupt_resets_and_signals() -> void:
@@ -86,6 +89,7 @@ func test_both_corrupt_resets_and_signals() -> void:
 	watch_signals(_svc)
 	_svc.load_or_create()
 	assert_signal_emitted(_svc, "reset_to_fresh")
+	assert_eq(_svc.last_load_status, "reset")
 	assert_eq(_svc.data["schema_version"], SaveSchema.VERSION)
 	assert_eq((_svc.data["profiles"] as Array).size(), 0)
 
@@ -112,3 +116,28 @@ func test_migrate_fills_defaults_and_normalizes_ints() -> void:
 	assert_typeof(m["profiles"][0]["grade"], TYPE_INT)
 	assert_true(m.has("settings"))
 	assert_true(m["profiles"][0].has("outcomes"))
+
+func test_missing_main_with_backup_recovers() -> void:
+	_write("save_v1.bak.json", JSON.stringify({"schema_version": 1, "last_day_seen": 9}))
+	watch_signals(_svc)
+	_svc.load_or_create()
+	assert_signal_emitted(_svc, "recovered_from_backup")
+	assert_eq(_svc.data["last_day_seen"], 9)
+	assert_eq(_svc.last_load_status, "recovered")
+
+func test_missing_main_with_valid_tmp_recovers() -> void:
+	_write("save_v1.tmp.json", JSON.stringify({"schema_version": 1, "last_day_seen": 11}))
+	watch_signals(_svc)
+	_svc.load_or_create()
+	assert_signal_emitted(_svc, "recovered_from_backup")
+	assert_eq(_svc.data["last_day_seen"], 11)
+
+func test_save_after_recovery_keeps_good_backup() -> void:
+	var good: String = JSON.stringify({"schema_version": 1, "last_day_seen": 3})
+	_write("save_v1.json", "{bozuk")
+	_write("save_v1.bak.json", good)
+	_svc.load_or_create()
+	assert_eq(_svc.last_load_status, "recovered")
+	_svc.save()
+	assert_eq(_read("save_v1.bak.json"), good)
+	assert_true(JSON.parse_string(_read("save_v1.json")) is Dictionary)

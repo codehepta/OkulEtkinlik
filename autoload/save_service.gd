@@ -9,6 +9,8 @@ const BAK_FILE: String = "save_v1.bak.json"
 const TMP_FILE: String = "save_v1.tmp.json"
 
 var data: Dictionary = {}
+## Son yüklemenin sonucu: "fresh" | "loaded" | "recovered" | "reset".
+var last_load_status: String = ""
 var _base_dir: String = "user://"
 
 ## Test için kayıt dizinini değiştirir.
@@ -20,20 +22,29 @@ func _ready() -> void:
 
 func load_or_create() -> void:
 	var main_path: String = _base_dir + MAIN_FILE
-	var main_exists: bool = FileAccess.file_exists(main_path)
-	if not main_exists:
+	var bak_path: String = _base_dir + BAK_FILE
+	var tmp_path: String = _base_dir + TMP_FILE
+	var any_exists: bool = FileAccess.file_exists(main_path) \
+		or FileAccess.file_exists(bak_path) or FileAccess.file_exists(tmp_path)
+	if not any_exists:
 		data = SaveSchema.migrate(SaveSchema.new_save())
+		last_load_status = "fresh"
 		return
 	var parsed: Variant = _read_json(main_path)
 	if parsed is Dictionary:
 		data = SaveSchema.migrate(parsed)
+		last_load_status = "loaded"
 		return
-	var bak: Variant = _read_json(_base_dir + BAK_FILE)
-	if bak is Dictionary:
-		data = SaveSchema.migrate(bak)
-		recovered_from_backup.emit()
-		return
+	# Ana dosya yok ya da bozuk: önce yedek, sonra geçerli tmp.
+	for path: String in [bak_path, tmp_path]:
+		var candidate: Variant = _read_json(path)
+		if candidate is Dictionary:
+			data = SaveSchema.migrate(candidate)
+			last_load_status = "recovered"
+			recovered_from_backup.emit()
+			return
 	data = SaveSchema.migrate(SaveSchema.new_save())
+	last_load_status = "reset"
 	reset_to_fresh.emit()
 
 func save() -> void:
@@ -52,7 +63,8 @@ func save() -> void:
 		push_error("SaveService: tmp doğrulaması başarısız")
 		DirAccess.remove_absolute(tmp_path)
 		return
-	if FileAccess.file_exists(main_path):
+	# Yedeği yalnızca ana dosya geçerliyse ez (bozuk dosya iyi yedeği bozmasın).
+	if _read_json(main_path) is Dictionary:
 		DirAccess.copy_absolute(main_path, bak_path)
 	var err: int = DirAccess.rename_absolute(tmp_path, main_path)
 	if err != OK:
