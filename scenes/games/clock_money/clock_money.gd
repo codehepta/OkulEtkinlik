@@ -21,7 +21,7 @@ const MAX_AMOUNT: int = 1000
 const CLOCK_FACE_KEY: String = "ui.clock_face"
 
 # --- Saat ölçüleri ---
-const READ_CENTER: Vector2 = Vector2(960, 400)
+const READ_CENTER: Vector2 = Vector2(960, 432)
 const SET_CENTER: Vector2 = Vector2(620, 470)
 const CLOCK_RADIUS: float = 270.0
 const NUMERAL_FONT: int = 56

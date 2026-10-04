@@ -15,15 +15,15 @@ const OP_GLYPH: Dictionary = {"+": "+", "-": "−"}
 ## Somut model yalnızca küçük sayılarda (spec §2 somuttan soyuta).
 const MODEL_MAX: int = 20
 
-const PLAQUE_Y: float = 150.0
+const PLAQUE_Y: float = 180.0
 const PLAQUE_H: float = 160.0
 const PLAQUE_FONT: int = 96
 const PLAQUE_GAP: float = 22.0
-const MODEL_RECT: Rect2 = Rect2(160, 340, 1600, 110)
+const MODEL_RECT: Rect2 = Rect2(160, 372, 1600, 110)
 const BALLOON_SIZE: Vector2 = Vector2(200, 330)
 const BODY_H: float = 240.0
 const BALLOON_GAP: float = 56.0
-const BALLOON_Y: float = 500.0
+const BALLOON_Y: float = 520.0
 const STAGGER: float = 36.0
 const BOB_AMPLITUDE: float = 10.0
 const NUMBER_FONT: int = 76
