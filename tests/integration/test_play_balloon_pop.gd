@@ -70,3 +70,16 @@ func test_balloon_debug_answer_paths() -> void:
 	g.call("_debug_answer", true)
 	await wait_for_signal(g.finished, 3.0)
 	assert_eq(answers, [false, true] as Array[bool])
+
+func test_balloon_multiply_and_divide() -> void:
+	var mul: MiniGame = make("balloon_pop", {"a": 6, "op": "×", "b": 7, "choices": [42, 36, 48, 49]}, 3)
+	assert_eq(int(mul.call("balloon_values")[int(mul.call("_debug_correct_index"))]), 42)
+	var div: MiniGame = make("balloon_pop", {"a": 56, "op": "÷", "b": 8, "choices": [7, 6, 8, 9]}, 3)
+	assert_eq(int(div.call("balloon_values")[int(div.call("_debug_correct_index"))]), 7)
+
+func test_balloon_hint1_no_model_for_multiply_divide() -> void:
+	var g: MiniGame = make("balloon_pop", {"a": 3, "op": "×", "b": 4, "choices": [12, 7, 10, 16]}, 3)
+	g.show_hint(1)
+	assert_false(bool(g.call("is_model_shown")), "çarpma ve bölmede toplama modeli gösterilmez")
+	assert_eq(int(g.call("faded_count")), 2)
+	assert_eq(answers.size(), 0)

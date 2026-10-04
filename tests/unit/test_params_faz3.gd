@@ -49,6 +49,10 @@ func test_balloon_pop_valid() -> void:
 	_ok("balloon_pop", {"a": 7, "op": "+", "b": 5, "choices": [12, 11]})
 	_ok("balloon_pop", {"a": 9, "op": "-", "b": 9, "choices": [0, 1, 2, 3, 4, 5]})
 	_ok("balloon_pop", {"a": 600.0, "op": "+", "b": 400.0, "choices": [1000.0, 900.0]})
+	_ok("balloon_pop", {"a": 6, "op": "×", "b": 7, "choices": [42, 36, 48]})
+	_ok("balloon_pop", {"a": 0, "op": "×", "b": 9, "choices": [0, 9]})
+	_ok("balloon_pop", {"a": 56, "op": "÷", "b": 8, "choices": [7, 6, 8]})
+	_ok("balloon_pop", {"a": 0, "op": "÷", "b": 5, "choices": [0, 5]})
 
 func test_balloon_pop_invalid() -> void:
 	_bad("balloon_pop", {"a": 3, "op": "-", "b": 5, "choices": [2, 8]}, "negatif sonuç")
@@ -60,6 +64,10 @@ func test_balloon_pop_invalid() -> void:
 	_bad("balloon_pop", {"a": 3, "op": "x", "b": 5, "choices": [15, 8]}, "bilinmeyen op")
 	_bad("balloon_pop", {"a": 3.5, "op": "+", "b": 5, "choices": [8, 9]}, "kesirli a")
 	_bad("balloon_pop", {"op": "+", "b": 5, "choices": [8, 9]}, "a yok")
+	_bad("balloon_pop", {"a": 40, "op": "×", "b": 30, "choices": [1200, 70]}, "çarpım > 1000")
+	_bad("balloon_pop", {"a": 7, "op": "×", "b": 8, "choices": [54, 15]}, "choices'ta çarpım yok")
+	_bad("balloon_pop", {"a": 17, "op": "÷", "b": 5, "choices": [3, 4]}, "kalanlı bölme")
+	_bad("balloon_pop", {"a": 8, "op": "÷", "b": 0, "choices": [0, 8]}, "sıfıra bölme")
 
 # --- pattern ---
 func _cell(shape: String, color: String) -> Dictionary:
