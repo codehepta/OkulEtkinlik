@@ -31,6 +31,11 @@ var _node_files: Dictionary = {}
 ## "g1.matematik" -> Array[String] düğüm kimlikleri, sıralı
 var _order: Dictionary = {}
 
+## Autoload olarak ağaca girince gerçek içeriği yükler (Strings daha önce yüklenir).
+## Testlerin `.new()` ile kurduğu örnekler ağaca eklenmediği için kendi fixture'larını yükler.
+func _ready() -> void:
+	load_all()
+
 func load_all(root: String = "res://content") -> void:
 	errors.clear()
 	_outcomes_loaded = false

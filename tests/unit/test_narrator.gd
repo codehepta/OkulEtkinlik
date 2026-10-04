@@ -74,3 +74,57 @@ func test_replay_last_repeats_line() -> void:
 	_n.replay_last()
 	assert_eq(_tts_calls.size(), 2)
 	_n.stop()
+
+## Müzik kısma çağrılarını kaydeden sahte AudioDirector.
+class FakeAudio:
+	extends Node
+	var ducks: Array[bool] = []
+	func set_ducked(on: bool) -> void:
+		ducks.append(on)
+
+func test_stop_calls_tts_stop_even_after_estimate_elapsed() -> void:
+	var stops: Array[int] = []
+	_n.tts_stop_backend = func() -> void: stops.append(1)
+	_n.say(LINE_ID)
+	await wait_for_signal(_n.line_finished, 3.0)
+	stops.clear()
+	_n.stop()
+	assert_eq(stops.size(), 1, "tahmini süre bitse de TTS hâlâ konuşuyor olabilir: kesilmeli")
+
+func test_tts_line_ducks_music_and_restores() -> void:
+	var fa: FakeAudio = FakeAudio.new()
+	add_child_autofree(fa)
+	_n.audio = fa
+	_n.say(LINE_ID)
+	assert_true(fa.ducks.has(true), "TTS sırasında müzik kısılır")
+	await wait_for_signal(_n.line_finished, 3.0)
+	assert_false(fa.ducks[fa.ducks.size() - 1], "satır bitince müzik geri gelir")
+
+func test_silent_line_does_not_duck() -> void:
+	var fa: FakeAudio = FakeAudio.new()
+	add_child_autofree(fa)
+	_n.audio = fa
+	_n.tts_voice_lookup = func() -> PackedStringArray: return PackedStringArray()
+	_n.say(LINE_ID)
+	assert_false(fa.ducks.has(true))
+	await wait_for_signal(_n.line_finished, 3.0)
+
+func test_utterance_end_finishes_line_once() -> void:
+	_n.duration_scale = 0.1
+	_n.say(LINE_ID)
+	var uid: int = _n.current_utterance_id()
+	_n._on_tts_utterance_event(uid + 1000)
+	assert_eq(_finished.size(), 0, "başka satırın bitişi yok sayılır")
+	_n._on_tts_utterance_event(uid)
+	assert_eq(_finished, [LINE_ID] as Array[String], "TTS bitişi satırı hemen bitirir")
+	await wait_seconds(0.3)
+	assert_eq(_finished.size(), 1, "tahmini süre ikinci kez bitirmez")
+
+func test_utterance_events_extend_fallback_timeout() -> void:
+	_n.tts_events_available = true
+	_n.duration_scale = 0.05
+	_n.say(LINE_ID)
+	await wait_seconds(0.2)
+	assert_eq(_finished.size(), 0, "TTS bitiş olayı varken tahmin yalnızca geniş bir yedek süredir")
+	_n._on_tts_utterance_event(_n.current_utterance_id())
+	assert_eq(_finished, [LINE_ID] as Array[String])

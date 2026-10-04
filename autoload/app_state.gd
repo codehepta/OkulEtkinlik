@@ -46,9 +46,26 @@ var last_error: String = ""
 var _current: Node = null
 var _current_name: String = ""
 
+## Altyazı balonunun katmanı: bütün ekranların (katman 0) üstünde.
+const SUBTITLE_LAYER: int = 10
+const SUBTITLE_SCENE: String = "res://scenes/components/subtitle_bubble.tscn"
+
 func _ready() -> void:
 	# Kayıtlı ses seviyelerini açılışta uygula.
 	audio.apply_volumes(save.data["settings"] as Dictionary)
+	# Yalnızca gerçek autoload tek altyazı balonunu takar; testlerin kurduğu örnekler takmaz.
+	if get_tree().root.get_node_or_null("AppState") == self:
+		_mount_subtitle_bubble()
+
+## Uygulama geneli tek altyazı balonu: alt orta, dokunmaları geçirir (spec §6, sessiz yol).
+func _mount_subtitle_bubble() -> void:
+	var layer: CanvasLayer = CanvasLayer.new()
+	layer.name = "SubtitleLayer"
+	layer.layer = SUBTITLE_LAYER
+	add_child(layer)
+	var bubble: Control = (load(SUBTITLE_SCENE) as PackedScene).instantiate() as Control
+	bubble.name = "SubtitleBubble"
+	layer.add_child(bubble)
 
 func current_scene_name() -> String:
 	return _current_name
