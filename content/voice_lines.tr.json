@@ -374,5 +374,21 @@
 	"vo.g1.matematik.u01.n06.r04": {
 		"text": "Kaç taş var? Tahmin et ve doğru sayıya dokun!",
 		"speaker": "ANLATICI"
+	},
+	"vo.tahmin.say": {
+		"text": "Şimdi sayarak kontrol edelim. Her birine dokun.",
+		"speaker": "BILGE"
+	},
+	"vo.tahmin.tart": {
+		"text": "Şimdi tartalım. Küpleri teraziye koy, terazi düz olunca dur.",
+		"speaker": "BILGE"
+	},
+	"vo.tahmin.islem": {
+		"text": "Şimdi işlemi yap. Terazinin doğru sayısını seç.",
+		"speaker": "BILGE"
+	},
+	"vo.tahmin.karsilastir": {
+		"text": "Tahminin sonuca yakın mı, uzak mı?",
+		"speaker": "BILGE"
 	}
 }
