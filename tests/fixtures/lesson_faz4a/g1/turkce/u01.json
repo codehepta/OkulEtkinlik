@@ -1,0 +1,31 @@
+{
+	"id": "g1.turkce.u01",
+	"grade": 1,
+	"subject": "turkce",
+	"title_key": "fx.unit.u01",
+	"source": { "program": "TEST", "doc": "test.pdf", "page": 1 },
+	"nodes": [
+		{
+			"id": "g1.turkce.u01.n01",
+			"outcomes": ["TEST.1"],
+			"title_key": "fx.node.n01",
+			"intro_voice": "fx.vo.n01.intro",
+			"sticker": "st.turkce.elma",
+			"rounds": [
+				{ "template": "trace", "difficulty": 2, "voice": "fx.vo.r.trace",
+				  "params": { "chars": "t", "item": "item.oyuncak.top" } },
+				{ "template": "syllable_build", "difficulty": 3, "voice": "fx.vo.r.syllable_build",
+				  "params": { "parts": [ "ki", "ta", "pı" ], "distractors": [ "ka" ] } },
+				{ "template": "story", "difficulty": 1, "voice": "fx.vo.r.story",
+				  "params": { "read": "silent",
+					"pages": [ { "text": "fx.story.p1", "voice": "fx.vo.story.p1" }, { "text": "fx.story.p2", "voice": "fx.vo.story.p2" } ],
+					"questions": [ { "voice": "fx.vo.story.q1", "answer": 2, "page": 1, "options": [
+						{ "type": "number", "value": 1 }, { "type": "number", "value": 2 }, { "type": "number", "value": 3 } ] } ] } },
+				{ "template": "drag_match", "difficulty": 1, "voice": "fx.vo.r.drag_match",
+				  "params": { "read": "silent", "pairs": [
+					{ "left": { "type": "text", "value": "fx.word.kalem", "voice": "fx.vo.word.kalem" }, "right": { "type": "item", "value": "item.okul.kalem" } },
+					{ "left": { "type": "text", "value": "fx.word.top", "voice": "fx.vo.word.top" }, "right": { "type": "item", "value": "item.oyuncak.top" } } ] } }
+			]
+		}
+	]
+}

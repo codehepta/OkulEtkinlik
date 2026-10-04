@@ -99,6 +99,38 @@ Bu şablonların henüz ünite içeriği yok (içerik Faz 2 matrisinden sonra ya
 ## Asset geldiğinde (parti 010)
 1. `item.para.*`, `item.yiyecek.pizza`, `ui.clock_face` dosyaları eklenince yer tutucu çizimlerin yerini alır; değer etiketleri paraların ortasında, pizza dilimleri görselin çemberiyle örtüşüyor, kadran rakamları kenara taşmıyor.
 
+# Faz 4a — Türkçe şablonları ve sessiz okuma
+
+Bu şablonların henüz ünite içeriği yok (Faz 4b, 4c). Cihazda denemek için geliştirici bir test durağı ekler ya da `tools/ui_screenshots.gd` karelerine (44–55) bakılır. Faz 3a'daki ortak kontroller (hata akışı, dokunma, hareketi azalt, renk körlüğü) burada da geçerlidir.
+
+## trace (iz sür)
+1. Harfi parmakla izle: numaralı yeşil noktadan başla, iz yolu boyunca kaydır. Beklenen: parmağın arkasından mürekkep çıkar, vuruş bitince boyanır ve sıradaki vuruşun numaralı noktası belirir.
+2. Başka bir yere basmak hiçbir şey yapmaz (yalnızca başlangıç noktası büyüyüp küçülür); yanlış sayılmaz.
+3. Yoldan bilerek çok uzaklaş. Beklenen: yumuşak "boop", kalem vuruşu baştan sona yavaşça çizer; yarım kalan mürekkep silinmez, kalınan yerden devam edilebilir.
+4. Tolerans: 6 yaşında bir çocuğun biraz titrek izi zorluk 1–2'de kabul ediliyor; sondan başa (ters yönde) izlemek kabul edilmiyor.
+5. `i`, `j`, `ö`, `ü`, `İ` gibi noktalı harflerde nokta tek dokunuşla konuyor.
+6. **Öğretmen gözden geçirmesi (açık soru):** 29 küçük, 29 büyük harf ve 10 rakamın vuruş sırası ve yönü sınıfta öğretilenle aynı mı? (`content/trace/glyphs.json`; özellikle `T`, `5`, `k`, `K`, `y`.) Farklı olanları listele.
+
+## syllable_build (hece kur)
+1. Karoya dokun: sıradaki yuvanın hecesiyse yuvaya uçar ve yeşile döner; değilse hafifçe sallanıp yerinde kalır.
+2. Kelime tamamlanınca (ses satırı varsa) kelime okunur.
+3. "baba" gibi aynı heceyi iki kez içeren kelimede iki "ba" karosundan hangisine basılsa da doğru sayılır.
+4. Zorluk 1'de çeldirici karo yok, zorluk 3'te hepsi var; 5 parçalı bir kelimede bile karolar ekrana sığıyor.
+
+## story (hikâye)
+1. Dinleme kipi: her sayfa açılınca okunur; hoparlör sayfayı yeniden okutur; ok sayfayı çevirir (sayfa çevirme sesi).
+2. Son sayfadan sonra soru seslendirilir; kitap düğmesi hikâyeye döndürür (yanlış sayılmaz).
+3. Sayfa metni büyük ve okunaklı; uzun cümleler kutudan taşmıyor.
+4. **Sessiz okuma:** yönerge ve soru okunur ama sayfa okunmaz, hoparlör görünmez. İlk cevaptan sonra hikâyeye dönünce hoparlör çıkar. 2. yanlışta sorunun dayandığı sayfa kendiliğinden okunur.
+
+## drag_match (sessiz okuma kipi)
+1. `read: silent` durakta sözcük kartını tutmak ilk cevaba kadar ses çıkarmaz; ilk cevaptan sonra tutunca sözcük okunur. 2. yanlışta sıradaki çiftin sözcüğü okunur.
+2. Faz 1 ünitesindeki çetele–rakam eşleştirmesi eskisi gibi (kart tutunca ses yok).
+
+## Asset geldiğinde (parti 015, 016)
+1. `ui.trace_pencil` gelince yön ipucunda sarı top yerine kalem görünür; kalemin ucu iz yolunun üstünde ilerliyor.
+2. `ui.page_next`, `ui.book` hikâye düğmelerinde kodla çizilen ok ve kitabın yerini alır; `sfx.page_turn` sayfa çevrilirken çalar.
+
 ## Faz 7a — Ağaç Evi, Tekrar Bulutu, veli paneli
 1. **Ağaç Evi girişi:** haritada ortadaki ağaç eve dokun. Beklenen: "Bilge'nin Ağaç Evi" okunur, oda açılır. Hiç süs yokken Bilge "Ağaç evim şimdilik boş..." der; rafta kilitli bir yuva ve yıldız sayacı (ör. "2 / 5") görünür.
 2. **Süs açılması:** toplam 5 yıldıza ulaşan durağı bitir. Beklenen: sonuç ekranında çıkartmadan sonra süs görseli çıkar ve Bilge "Ağaç evim için yeni bir süs kazandın!" der.

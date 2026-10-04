@@ -123,3 +123,70 @@ static func shape_points(shape: String, r: Rect2) -> PackedVector2Array:
 				var y: float = -(13.0 * cos(t) - 5.0 * cos(2.0 * t) - 2.0 * cos(3.0 * t) - cos(4.0 * t))
 				out.append(c + Vector2(x, y + 1.5) * (s / 16.5))
 	return out
+
+## Simgeli kil düğme: verilen dikdörtgende kil karo; `icon_key` görseli varsa simge olarak,
+## yoksa `fallback(ci, rect)` ile kodla çizilir. Basış `pressed` callable'ına iletilir.
+static func make_icon_button(parent: Control, rect: Rect2, icon_key: String, fallback: Callable,
+		pressed: Callable, color: Color = ClayStyle.IVORY) -> Control:
+	var tile: Control = make_tile(parent, "", rect, 40, color)
+	var tex: Texture2D = AssetRegistry.texture(icon_key)
+	var icon: Control = null
+	if tex != null:
+		var tr: TextureRect = TextureRect.new()
+		tr.texture = tex
+		tr.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+		tr.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+		icon = tr
+	else:
+		icon = Control.new()
+		icon.draw.connect(func() -> void: fallback.call(icon, Rect2(Vector2.ZERO, icon.size)))
+	icon.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	tile.add_child(icon)
+	var pad: float = rect.size.y * 0.18
+	icon.position = Vector2(pad, pad * 0.8)
+	icon.size = rect.size - Vector2(pad * 2.0, pad * 2.0)
+	tile.gui_input.connect(func(event: InputEvent) -> void:
+		if MiniGame.is_press(event):
+			pressed.call())
+	return tile
+
+## Hoparlör ve iki ses dalgası.
+static func draw_speaker(ci: CanvasItem, r: Rect2, color: Color = ClayStyle.TEAL) -> void:
+	var u: float = minf(r.size.x, r.size.y) / 200.0
+	var c: Vector2 = r.get_center() + Vector2(-26, 0) * u
+	var body: PackedVector2Array = PackedVector2Array([
+		c + Vector2(-50, -26) * u, c + Vector2(-18, -26) * u, c + Vector2(22, -62) * u,
+		c + Vector2(22, 62) * u, c + Vector2(-18, 26) * u, c + Vector2(-50, 26) * u,
+	])
+	ci.draw_colored_polygon(body, color)
+	ci.draw_polyline(body + PackedVector2Array([body[0]]), color.darkened(0.25), 5.0 * u, true)
+	for k: int in 2:
+		ci.draw_arc(c + Vector2(26, 0) * u, (52.0 + k * 30.0) * u, -0.75, 0.75, 24, color, 13.0 * u, true)
+
+## Sağa bakan kalın ok (sonraki sayfa).
+static func draw_next_arrow(ci: CanvasItem, r: Rect2, color: Color = ClayStyle.COCOA) -> void:
+	var w: float = minf(r.size.x, r.size.y)
+	var c: Vector2 = r.get_center()
+	var pts: PackedVector2Array = PackedVector2Array([
+		c + Vector2(-0.3, 0.0) * w, c + Vector2(0.28, 0.0) * w])
+	ci.draw_polyline(pts, color, w * 0.13, true)
+	var head: PackedVector2Array = PackedVector2Array([
+		c + Vector2(0.02, -0.26) * w, c + Vector2(0.3, 0.0) * w, c + Vector2(0.02, 0.26) * w])
+	ci.draw_polyline(head, color, w * 0.13, true)
+	for p: Vector2 in [pts[0], head[0], head[1], head[2]]:
+		ci.draw_circle(p, w * 0.065, color, true, -1.0, true)
+
+## Açık kitap (hikâyeye dön).
+static func draw_book(ci: CanvasItem, r: Rect2, color: Color = ClayStyle.TEAL) -> void:
+	var w: float = minf(r.size.x, r.size.y)
+	var c: Vector2 = r.get_center() + Vector2(0, 0.04) * w
+	for side: float in [-1.0, 1.0]:
+		var page: PackedVector2Array = PackedVector2Array([
+			c + Vector2(0.0, -0.22) * w, c + Vector2(side * 0.4, -0.3) * w,
+			c + Vector2(side * 0.4, 0.22) * w, c + Vector2(0.0, 0.3) * w])
+		ci.draw_colored_polygon(page, ClayStyle.PAPER)
+		ci.draw_polyline(page + PackedVector2Array([page[0]]), color, w * 0.05, true)
+		for k: int in 3:
+			var y: float = -0.12 + k * 0.12
+			ci.draw_line(c + Vector2(side * 0.08, y) * w, c + Vector2(side * 0.32, y - 0.03) * w,
+				Color(color, 0.6), w * 0.03, true)

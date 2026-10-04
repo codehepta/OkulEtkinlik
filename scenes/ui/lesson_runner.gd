@@ -12,8 +12,9 @@ const WRONG_FOR_HINT_1: int = 2
 const WRONG_FOR_SOLUTION: int = 3
 ## Bir anlatım satırını beklerken en fazla bu kadar sn beklenir (takılmayı önler).
 const SAY_TIMEOUT_SECONDS: float = 10.0
-## Kurulumda kendi hedef sesini okuyan şablonlar: yönerge önce okunur, sonra kurulur.
-const SPEAKS_ON_SETUP: Array[String] = ["listen_find"]
+## Kurulumda kendi sesini (hedef sesi, hikâye sayfası) okuyan şablonlar: yönerge önce okunur,
+## sonra kurulur.
+const SPEAKS_ON_SETUP: Array[String] = ["listen_find", "story"]
 
 ## Testlerde sahte düğümle değiştirilir.
 var narrator: Node = Narrator

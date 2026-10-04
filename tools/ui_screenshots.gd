@@ -139,6 +139,8 @@ func _run() -> void:
 	await _lesson_extras()
 	# --- Faz 3 şablonları (runner'ın oyun alanına doğrudan kurulur) ---
 	await _faz3_templates()
+	# --- Faz 4a Türkçe şablonları ---
+	await _faz4a_templates()
 	print("ui_screenshots: %d görüntü -> %s" % [_shots, ProjectSettings.globalize_path(OUT_DIR)])
 	quit(0)
 
@@ -286,6 +288,58 @@ func _faz3_templates() -> void:
 			g.call("_debug_toggle", 1)
 			await _frames(10)
 			await _shot("43_pizza_select_two")
+
+## Faz 4a şablonları: [ad, örnek params adı (tests/fixtures/faz4a/params.json), zorluk, ipucu,
+## ek adım ("": yok, "trace": bir vuruş izle, "choose": doğru karo, "question": soruya geç)].
+const FAZ4A_FIXTURE: String = "res://tests/fixtures/faz4a/params.json"
+const FAZ4A_SHOTS: Array = [
+	["44_trace_lower_e", "trace_lower", 1, 0, ""],
+	["45_trace_upper_s_cedilla", "trace_upper", 2, 0, ""],
+	["46_trace_digit_5_progress", "trace_digit", 3, 0, "trace"],
+	["47_trace_word_ela", "trace_word", 1, 0, ""],
+	["48_trace_hint1_demo", "trace_lower", 2, 1, ""],
+	["49_syllable_build", "syllable_word", 3, 0, ""],
+	["50_syllable_build_half", "syllable_word", 3, 0, "choose"],
+	["51_syllable_letters_hint1", "syllable_letters", 2, 1, ""],
+	["52_story_page", "story_listen", 1, 0, ""],
+	["53_story_question_text", "story_listen", 1, 0, "question"],
+	["54_story_silent_question_items", "story_silent", 1, 0, "question"],
+	["55_drag_match_silent", "match_silent", 1, 0, ""],
+]
+
+func _faz4a_templates() -> void:
+	var scenes: Dictionary = load("res://scripts/core/template_registry.gd").get("SCENES")
+	var fixtures: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(FAZ4A_FIXTURE))
+	await _show("lesson", {"node_id": "g1.matematik.u01.n01"})
+	await _wait_game()
+	var runner: Node = _app.current_scene()
+	var area: Control = runner.get_node("Host/GameArea") as Control
+	for shot: Array in FAZ4A_SHOTS:
+		for c: Node in area.get_children():
+			c.queue_free()
+		await _frames(2)
+		var entry: Dictionary = fixtures[shot[1]]
+		var g: Control = (load(scenes[entry["template"]]) as PackedScene).instantiate() as Control
+		area.add_child(g)
+		var ctx: RoundContext = RoundContext.new()
+		ctx.rng.seed = 3
+		g.call("setup", entry["params"], int(shot[2]), ctx)
+		await _frames(20)
+		match str(shot[4]):
+			"trace":
+				g.call("_debug_trace")
+			"choose":
+				g.call("_debug_choose", int(g.call("_debug_correct_index")))
+			"question":
+				while str(g.call("phase")) == "read":
+					g.call("_debug_next")
+		if str(shot[4]) != "":
+			await _frames(40)
+		if int(shot[3]) > 0:
+			g.call("show_hint", int(shot[3]))
+			# İz ipucunda kalem yolun ortasındayken.
+			await _frames(12 if entry["template"] == "trace" else 40)
+		await _shot(str(shot[0]))
 
 func _runner_game() -> Node:
 	var runner: Node = _app.current_scene()
