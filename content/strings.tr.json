@@ -34,5 +34,9 @@
 	"err.params.count": "count 1 ile 20 arasında tam sayı olmalı",
 	"err.params.choices": "choices 2 ile 4 arasında tam sayı içermeli",
 	"err.params.choices_dup": "choices yinelenen değer içeriyor",
-	"err.params.choices_missing_count": "choices doğru cevabı (count) içermeli"
+	"err.params.choices_missing_count": "choices doğru cevabı (count) içermeli",
+	"err.content.unit_mismatch": "{id}: ünite kimliği grade/subject alanlarıyla uyuşmuyor",
+	"err.content.dup_node_global": "{id}: düğüm kimliği başka bir dosyada da tanımlı ({path})",
+	"err.content.json_unreadable": "{path}: JSON okunamadı",
+	"err.content.outcomes_unreadable": "{path}: öğrenme çıktısı dosyası okunamadı"
 }

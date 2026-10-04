@@ -24,27 +24,49 @@ static func msg(code: String, args: Dictionary = {}) -> String:
 	return code + " " + str(args)
 
 static func validate_unit(unit: Dictionary, known_outcomes: PackedStringArray, has_string: Callable, has_voice: Callable) -> Array[String]:
-	var errs: Array[String] = []
+	var res: Array[String] = []
+	for item: Dictionary in validate_unit_detailed(unit, known_outcomes, has_string, has_voice):
+		res.append(item["message"])
+	return res
+
+## Yapısal sonuç: her öğe {node_index: int, node_id: String, message: String}.
+## node_index -1 ise hata ünite düzeyindedir; aksi halde nodes[] içindeki sıradır.
+static func validate_unit_detailed(unit: Dictionary, known_outcomes: PackedStringArray, has_string: Callable, has_voice: Callable) -> Array[Dictionary]:
+	var out: Array[Dictionary] = []
 	var unit_id: String = str(unit.get("id", "?"))
-	if not (unit.get("id") is String) or not _matches(UNIT_ID_RE, unit_id):
+	var errs: Array[String] = []
+	var id_ok: bool = unit.get("id") is String and _matches(UNIT_ID_RE, unit_id)
+	if not id_ok:
 		errs.append(msg("err.content.bad_id", {"id": unit_id}))
-	if not is_int_like(unit.get("grade")) or int(unit["grade"]) < 1 or int(unit["grade"]) > 3:
+	var grade_ok: bool = is_int_like(unit.get("grade")) and int(unit["grade"]) >= 1 and int(unit["grade"]) <= 3
+	if not grade_ok:
 		errs.append(msg("err.content.missing_field", {"id": unit_id, "field": "grade"}))
-	if not (unit.get("subject") is String) or (unit["subject"] as String).is_empty():
+	var subject_ok: bool = unit.get("subject") is String and not (unit["subject"] as String).is_empty()
+	if not subject_ok:
 		errs.append(msg("err.content.missing_field", {"id": unit_id, "field": "subject"}))
+	if id_ok and grade_ok and subject_ok:
+		var parts: PackedStringArray = unit_id.split(".")
+		if parts[0] != "g%d" % int(unit["grade"]) or parts[1] != unit["subject"]:
+			errs.append(msg("err.content.unit_mismatch", {"id": unit_id}))
 	if not (unit.get("source") is Dictionary):
 		errs.append(msg("err.content.missing_field", {"id": unit_id, "field": "source"}))
 	_check_string_key(unit, "title_key", unit_id, has_string, errs)
+	for e: String in errs:
+		out.append({"node_index": -1, "node_id": "", "message": e})
 	if not (unit.get("nodes") is Array) or (unit["nodes"] as Array).is_empty():
-		errs.append(msg("err.content.missing_field", {"id": unit_id, "field": "nodes"}))
-		return errs
+		out.append({"node_index": -1, "node_id": "", "message": msg("err.content.missing_field", {"id": unit_id, "field": "nodes"})})
+		return out
 	var seen: Dictionary = {}
+	var idx: int = -1
 	for node_v: Variant in unit["nodes"]:
+		idx += 1
 		if not (node_v is Dictionary):
-			errs.append(msg("err.content.missing_field", {"id": unit_id, "field": "nodes[]"}))
+			out.append({"node_index": idx, "node_id": "", "message": msg("err.content.missing_field", {"id": unit_id, "field": "nodes[]"})})
 			continue
-		errs.append_array(_validate_node(node_v, unit_id, seen, known_outcomes, has_string, has_voice))
-	return errs
+		var node: Dictionary = node_v
+		for e: String in _validate_node(node, unit_id, seen, known_outcomes, has_string, has_voice):
+			out.append({"node_index": idx, "node_id": str(node.get("id", "")), "message": e})
+	return out
 
 static func _validate_node(node: Dictionary, unit_id: String, seen: Dictionary, known: PackedStringArray, has_string: Callable, has_voice: Callable) -> Array[String]:
 	var errs: Array[String] = []

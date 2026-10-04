@@ -20,12 +20,16 @@ static func script_path(id: String) -> String:
 static func validate(id: String, params: Dictionary) -> Array[String]:
 	if not has(id):
 		return [ContentValidator.msg("err.content.unknown_template", {"id": id, "template": id})]
-	var path: String = script_path(id)
-	if not ResourceLoader.exists(path):
-		return [ContentValidator.msg("err.content.template_script_missing", {"id": id})]
-	var script: Script = load(path) as Script
-	if script == null:
-		return [ContentValidator.msg("err.content.template_script_missing", {"id": id})]
+	return validate_at(script_path(id), id, params)
+
+## Betik yolunu açıkça verir (testlerde sahte yol kullanılabilsin diye).
+static func validate_at(path: String, id: String, params: Dictionary) -> Array[String]:
 	var res: Array[String] = []
+	var script: Script = null
+	if ResourceLoader.exists(path):
+		script = load(path) as Script
+	if script == null:
+		res.append(ContentValidator.msg("err.content.template_script_missing", {"id": id}))
+		return res
 	res.assign(script.call("validate_params", params))
 	return res

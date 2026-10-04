@@ -95,7 +95,7 @@ func test_registry_has() -> void:
 	assert_false(TemplateRegistry.has("yok"))
 
 func test_registry_missing_script_reports_error() -> void:
-	var e: Array[String] = TemplateRegistry.validate("listen_find", {})
+	var e: Array[String] = TemplateRegistry.validate_at("res://yok/yok_sablon.gd", "yok_sablon", {})
 	assert_eq(e.size(), 1)
 
 func test_count_choose_params() -> void:
@@ -107,3 +107,34 @@ func test_count_choose_params() -> void:
 	assert_gt(TemplateRegistry.validate("count_choose", {"item": "a", "count": 3, "choices": [3]}).size(), 0)
 	assert_gt(TemplateRegistry.validate("count_choose", {"item": "a", "count": 3, "choices": [3, 2.5]}).size(), 0)
 	assert_gt(TemplateRegistry.validate("count_choose", {"item": "a", "count": 0, "choices": [0, 1]}).size(), 0)
+
+func test_unit_id_grade_subject_mismatch() -> void:
+	var u: Dictionary = _unit()
+	u["grade"] = 2
+	assert_eq(_validate(u).size(), 1)
+	u = _unit()
+	u["subject"] = "turkce"
+	assert_eq(_validate(u).size(), 1)
+
+func test_detailed_has_structured_node_index() -> void:
+	var u: Dictionary = _unit()
+	u["nodes"][1].erase("id")
+	u["nodes"][1]["outcomes"] = []
+	var d: Array[Dictionary] = ContentValidator.validate_unit_detailed(u, _known, _has_key, _has_key)
+	assert_gt(d.size(), 0)
+	for item: Dictionary in d:
+		assert_eq(item["node_index"], 1)
+		assert_true(item["message"] is String)
+
+func test_detailed_unit_level_index_minus_one() -> void:
+	var u: Dictionary = _unit()
+	u.erase("source")
+	var d: Array[Dictionary] = ContentValidator.validate_unit_detailed(u, _known, _has_key, _has_key)
+	assert_eq(d[0]["node_index"], -1)
+
+func test_non_dict_node_entry_reported() -> void:
+	var u: Dictionary = _unit()
+	u["nodes"] = [1]
+	var d: Array[Dictionary] = ContentValidator.validate_unit_detailed(u, _known, _has_key, _has_key)
+	assert_eq(d.size(), 1)
+	assert_eq(d[0]["node_index"], 0)
