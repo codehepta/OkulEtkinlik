@@ -29,8 +29,15 @@ Kurallar: [`docs/assets/style-guide.md`](../docs/assets/style-guide.md) · [`doc
 | 016 | Faz 4a Türkçe şablonları: sayfa çevirme sesi (`sfx.page_turn`) | Düşük | ⏳ Bekliyor |
 | 023 | Ağaç Evi süs eşyaları (12 `decor.*`) | Orta | ⏳ Bekliyor |
 | 024 | Faz 7a seslendirmesi: Tekrar Bulutu girişi + Ağaç Evi (3 satır) | Orta | ⏳ Bekliyor |
+| 080 | Hayat Bilgisi 1. sınıf: nesne, davranış kartı ve sahne görselleri (`item.*`, 165) | Orta | ⏳ Bekliyor |
+| 081 | Hayat Bilgisi 2. sınıf: nesne, davranış kartı ve sahne görselleri (`item.*`, 223) | Orta | ⏳ Bekliyor |
+| 082 | Hayat Bilgisi 3. sınıf: nesne, davranış kartı, sahne ve kroki görselleri (`item.*`, 182) | Orta | ⏳ Bekliyor |
+| 083 | Hayat Bilgisi durak çıkartmaları (`st.hayat_bilgisi.*`, 53) | Orta | ⏳ Bekliyor |
+| 084 | Hayat Bilgisi 1. sınıf seslendirmesi + nesne adları (148 satır) | Yüksek | ⏳ Bekliyor |
+| 085 | Hayat Bilgisi 2. sınıf seslendirmesi + nesne adları (208 satır) | Yüksek | ⏳ Bekliyor |
+| 086 | Hayat Bilgisi 3. sınıf seslendirmesi + nesne adları (183 satır) | Yüksek | ⏳ Bekliyor |
 
-Önerilen sıra: 001 → 003 → 002 → 004 → 005 → 007 → 006 → 008 → 009 → 010 → 015 → 016 → 023 → 024. Bilge karakter sayfası diğer bütün partilerin stil referansıdır.
+Önerilen sıra: 001 → 003 → 002 → 004 → 005 → 007 → 006 → 008 → 009 → 010 → 015 → 016 → 023 → 024. Hayat Bilgisi: 084 → 080 → 085 → 081 → 086 → 082 → 083 (önce seslendirme ve 1. sınıf, sonra üst sınıflar). Bilge karakter sayfası diğer bütün partilerin stil referansıdır.
 
 ## Geliştiriciler (agent) için
 - Yeni bir içerik ünitesi eklendiğinde eksik asset'ler için `tools/missing_assets.gd` çalıştırılır ve sıradaki numarayla yeni bir parti dosyası açılır.
