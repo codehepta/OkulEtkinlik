@@ -15,6 +15,10 @@ const EXPECTED_COUNTS: Dictionary = {
 	"g1.turkce": 17,
 	"g2.turkce": 20,
 	"g3.turkce": 20,
+	"g1.hayat_bilgisi": 23,
+	"g2.hayat_bilgisi": 23,
+	"g3.hayat_bilgisi": 20,
+	"g3.fen": 20,
 }
 
 ## game_map.json kaydı zorunlu olan dersler (Görev 6-7 doldurur).

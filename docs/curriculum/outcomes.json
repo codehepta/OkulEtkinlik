@@ -3089,5 +3089,1585 @@
 			"page": 212,
 			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
 		}
+	},
+	"HB.1.1.1": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Öğretmeni ve arkadaşlarıyla tanışabilme",
+		"printed_code": "HB.1.1.1.",
+		"themes": [
+			"g1.hayat_bilgisi.t01"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 15,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.1.2": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Sınıf ve okul ortamını tanıyabilme",
+		"printed_code": "HB.1.1.2.",
+		"themes": [
+			"g1.hayat_bilgisi.t01"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 15,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.1.3": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Sınıf ve okul ortamında kurallara uygun davranabilme",
+		"printed_code": "HB.1.1.3.",
+		"themes": [
+			"g1.hayat_bilgisi.t01"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 15,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.1.4": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Bireysel özelliklerini açıklayabilme",
+		"printed_code": "HB.1.1.4.",
+		"themes": [
+			"g1.hayat_bilgisi.t01"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 15,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.2.1": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Sağlıklı büyüme ve gelişme için yapılması gerekenleri belirleyebilme",
+		"printed_code": "HB.1.2.1.",
+		"themes": [
+			"g1.hayat_bilgisi.t02"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 19,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.2.2": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Kişisel alan sınırlarını koruyabilme",
+		"printed_code": "HB.1.2.2.",
+		"themes": [
+			"g1.hayat_bilgisi.t02"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 19,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.2.3": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Temel trafik kurallarına uygun davranabilme",
+		"printed_code": "HB.1.2.3.",
+		"themes": [
+			"g1.hayat_bilgisi.t02"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 19,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.2.4": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Acil durumlarda yapılması gerekenleri belirleyebilme",
+		"printed_code": "HB.1.2.4.",
+		"themes": [
+			"g1.hayat_bilgisi.t02"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 19,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.3.1": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Ailenin özelliklerini ifade edebilme",
+		"printed_code": "HB.1.3.1.",
+		"themes": [
+			"g1.hayat_bilgisi.t03"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 23,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.3.2": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Aile yaşamında nezaket ve görgü kurallarına uygun davranabilme",
+		"printed_code": "HB.1.3.2.",
+		"themes": [
+			"g1.hayat_bilgisi.t03"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 23,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.3.3": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Aile bireylerinin görev ve sorumluluklarını çözümleyebilme",
+		"printed_code": "HB.1.3.3.",
+		"steps": [
+			"a) Aile içindeki görev ve sorumluluklarını belirler.",
+			"b) Aile bireylerinin görev ve sorumlulukları ilişkilendirir."
+		],
+		"themes": [
+			"g1.hayat_bilgisi.t03"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 23,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.4.1": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Yaşadığı yerin ve ülkemizin genel özelliklerini açıklayabilme",
+		"printed_code": "HB.1.4.1.",
+		"themes": [
+			"g1.hayat_bilgisi.t04"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 26,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.4.2": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Türk bayrağı ve İstiklâl Marşı’nın önemini ifade edebilme",
+		"printed_code": "HB.1.4.2.",
+		"themes": [
+			"g1.hayat_bilgisi.t04"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 26,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.4.3": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Mustafa Kemal Atatürk’ün hayatıyla ilgili bilgileri ifade edebilme",
+		"printed_code": "HB.1.4.3.",
+		"themes": [
+			"g1.hayat_bilgisi.t04"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 26,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.4.4": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Millî gün ve bayramlarda yaşadığı duyguları ifade edebilme",
+		"printed_code": "HB.1.4.4.",
+		"themes": [
+			"g1.hayat_bilgisi.t04"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 26,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.4.5": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Dinî gün ve bayramlarda yaşadığı duyguları ifade edebilme",
+		"printed_code": "HB.1.4.5.",
+		"themes": [
+			"g1.hayat_bilgisi.t04"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 26,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.5.1": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Yakın çevresinde bulunan doğadaki varlıkları gözlemleyebilme",
+		"printed_code": "HB.1.5.1.",
+		"steps": [
+			"a) Doğadaki varlıkları gözlemleme amacını belirler.",
+			"b) Doğadaki varlıklara ilişkin veri toplar.",
+			"c) Doğadaki varlıklara ilişkin topladığı verileri sınıflandırarak kaydeder."
+		],
+		"themes": [
+			"g1.hayat_bilgisi.t05"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 30,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.5.2": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Modeller üzerinden gök cisimlerini karşılaştırabilme",
+		"printed_code": "HB.1.5.2.",
+		"steps": [
+			"a) Modeller üzerinden gök cisimlerinin (Güneş, Dünya ve Ay) özelliklerini belirler.",
+			"b) Modeller üzerinden gök cisimlerinin (Güneş, Dünya ve Ay) benzerliklerini listeler.",
+			"c) Modeller üzerinden gök cisimlerinin (Güneş, Dünya ve Ay) farklılıklarını listeler."
+		],
+		"themes": [
+			"g1.hayat_bilgisi.t05"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 30,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.5.3": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Afet türlerini tanıyabilme",
+		"printed_code": "HB.1.5.3.",
+		"themes": [
+			"g1.hayat_bilgisi.t05"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 30,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.5.4": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Geri dönüştürülebilen atıkları sınıflandırabilme",
+		"printed_code": "HB.1.5.4.",
+		"steps": [
+			"a) Geri dönüştürülebilen atıkları belirler.",
+			"b) Geri dönüştürülebilen atıkları ayrıştırır.",
+			"c) Geri dönüştürülebilen atıkları tasnif eder.",
+			"ç) Geri dönüştürülebilen atıkları etiketler."
+		],
+		"themes": [
+			"g1.hayat_bilgisi.t05"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 30,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.6.1": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Bilimle ilgili merak ettiklerini sorabilme",
+		"printed_code": "HB.1.6.1.",
+		"steps": [
+			"a) Bilim ile ilgili merak ettiği konuları belirler.",
+			"b) Bilim ile ilgili merak ettiği konular hakkında sorular sorar."
+		],
+		"themes": [
+			"g1.hayat_bilgisi.t06"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 34,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.6.2": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Teknoloji ile ilgili merak ettiklerini sorabilme",
+		"printed_code": "HB.1.6.2.",
+		"steps": [
+			"a) Teknoloji ile ilgili merak ettiği konuları belirler.",
+			"b) Teknoloji ile merak ettiği konular hakkında sorular sorar."
+		],
+		"themes": [
+			"g1.hayat_bilgisi.t06"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 34,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.6.3": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Sanatla ilgili merak ettiklerini sorabilme",
+		"printed_code": "HB.1.6.3.",
+		"steps": [
+			"a) Sanat ile ilgili merak ettiği konuları belirler.",
+			"b) Sanat ile ilgili merak ettiği konular hakkında sorular sorar."
+		],
+		"themes": [
+			"g1.hayat_bilgisi.t06"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 34,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.1.1": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Planlı olmanın kişisel yaşama etkilerini fark edebilme",
+		"printed_code": "HB.2.1.1.",
+		"themes": [
+			"g2.hayat_bilgisi.t01"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 37,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.1.2": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Öğretmen ve arkadaşlarıyla etkili iletişim kurabilme",
+		"printed_code": "HB.2.1.2.",
+		"themes": [
+			"g2.hayat_bilgisi.t01"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 37,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.1.3": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Arkadaşlık ilişkilerini düzenleyebilme",
+		"printed_code": "HB.2.1.3.",
+		"themes": [
+			"g2.hayat_bilgisi.t01"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 37,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.1.4": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Sınıf içi karar alma süreçlerinde sosyal temas oluşturabilme",
+		"printed_code": "HB.2.1.4.",
+		"steps": [
+			"a) Sınıf içi karar alma süreçlerinde grup iletişimini başlatır.",
+			"b) Sınıf içi karar alma süreçlerinde grup etkileşimine katılır.",
+			"c) Sınıf içi karar alma süreçlerinde grup iletişimine katkıda bulunur.",
+			"ç) Sınıf içi karar alma süreçlerinde grup iletişimini değerlendirir."
+		],
+		"themes": [
+			"g2.hayat_bilgisi.t01"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 37,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.2.1": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Sağlıklı büyüme ve gelişme ile alışkanlıkları arasındaki ilişkiyi çözümleyebilme",
+		"printed_code": "HB.2.2.1.",
+		"steps": [
+			"a) Sağlıklı büyüme ve gelişmeye yönelik alışkanlıkları belirler.",
+			"b) Sağlıklı büyüme ve gelişme ile alışkanlıkları arasındaki ilişkiyi belirler."
+		],
+		"themes": [
+			"g2.hayat_bilgisi.t02"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 41,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.2.2": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Çevrim içi ortamlarda kişisel güvenliğini sağlayabilme",
+		"printed_code": "HB.2.2.2.",
+		"themes": [
+			"g2.hayat_bilgisi.t02"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 41,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.2.3": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Temel trafik işaret levhalarını tanıyabilme",
+		"printed_code": "HB.2.2.3.",
+		"themes": [
+			"g2.hayat_bilgisi.t02"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 41,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.2.4": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Acil bir durumda yetkililerle etkili iletişim kurabilme",
+		"printed_code": "HB.2.2.4.",
+		"themes": [
+			"g2.hayat_bilgisi.t02"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 41,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.3.1": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Ailenin önemini yorumlayabilme",
+		"printed_code": "HB.2.3.1.",
+		"steps": [
+			"a) Ailenin önemine ilişkin verilen örnekleri inceler.",
+			"b) Ailenin önemine ilişkin verilen örnekleri bağlamdan kopmadan özgün örneklere dönüştürür.",
+			"c) Ailenin önemine ilişkin oluşturduğu özgün örnekleri kendi cümleleri ile ifade eder."
+		],
+		"themes": [
+			"g2.hayat_bilgisi.t03"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 45,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.3.2": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Toplumsal yaşamda nezaket ve görgü kurallarına uygun davranabilme",
+		"printed_code": "HB.2.3.2.",
+		"themes": [
+			"g2.hayat_bilgisi.t03"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 45,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.3.3": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Yakın çevresinde üzerine düşen görev ve sorumlulukları günlük yaşamına yansıtabilme",
+		"printed_code": "HB.2.3.3.",
+		"steps": [
+			"a) Yakın çevresinde üzerine düşen görev ve sorumluluklarını gözden geçirir.",
+			"b) Yakın çevresinde üzerine düşen görev ve sorumluluklarına ilişkin çıkarımda bulunur.",
+			"c) Yakın çevresinde üzerine düşen görev ve sorumluluklarına ilişkin değerlendirme yapar."
+		],
+		"themes": [
+			"g2.hayat_bilgisi.t03"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 45,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.4.1": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Yakın çevresinde bulunan tarihî mekân ve doğal güzellikleri belirleyebilme",
+		"printed_code": "HB.2.4.1.",
+		"themes": [
+			"g2.hayat_bilgisi.t04"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 49,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.4.2": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Yaşadığı yerin yönetim birimleri ile ilgili kaynaklardan bilgi toplayabilme",
+		"printed_code": "HB.2.4.2.",
+		"steps": [
+			"a) Yaşadığı yerin yönetim birimleri ile ilgili bilgi toplayacağı kaynakları belirler.",
+			"b) Yaşadığı yerin yönetim birimleri ile ilgili belirlediği kaynaklardan bilgileri bulur.",
+			"c) Yaşadığı yerin yönetim birimleri ile ilgili kullanacağı kaynakların uygunluğunu açıklar.",
+			"ç) Yaşadığı yerin yönetim birimleri ile ilgili kaynaklardan ulaştığı bilgileri kaydeder."
+		],
+		"themes": [
+			"g2.hayat_bilgisi.t04"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 49,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.4.3": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Mustafa Kemal Atatürk’ün öğrencilik hayatını ifade edebilme",
+		"printed_code": "HB.2.4.3.",
+		"themes": [
+			"g2.hayat_bilgisi.t04"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 49,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.4.4": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Millî gün ve bayramların önemini yorumlayabilme",
+		"printed_code": "HB.2.4.4.",
+		"steps": [
+			"a) Millî gün ve bayramların önemine ilişkin verilen örnekleri inceler.",
+			"b) Millî gün ve bayramların önemine ilişkin verilen örnekleri bağlamdan kopmadan özgün örneklere dönüştürür.",
+			"c) Millî gün ve bayramların önemine ilişkin oluşturduğu özgün örnekleri kendi cümleleri ile ifade eder."
+		],
+		"themes": [
+			"g2.hayat_bilgisi.t04"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 49,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.4.5": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Dinî gün ve bayramların önemini yorumlayabilme",
+		"printed_code": "HB.2.4.5.",
+		"steps": [
+			"a) Dinî gün ve bayramların önemine ilişkin verilen örnekleri inceler.",
+			"b) Dinî gün ve bayramların önemine ilişkin verilen örnekleri bağlamdan kopmadan özgün örneklere dönüştürür.",
+			"c) Dinî gün ve bayramların önemine ilişkin oluşturduğu özgün örnekleri kendi cümleleri ile ifade eder."
+		],
+		"themes": [
+			"g2.hayat_bilgisi.t04"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 49,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.5.1": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Hava olayları ve mevsimler arasındaki ilişkiyi çözümleyebilme",
+		"printed_code": "HB.2.5.1.",
+		"steps": [
+			"a) Hava olayları ve mevsimlerin özelliklerini belirler.",
+			"b) Hava olayları ve mevsimler arasındaki ilişkiyi belirler."
+		],
+		"themes": [
+			"g2.hayat_bilgisi.t05"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 53,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.5.2": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Doğadan yararlanarak yönünü belirleyebilme",
+		"printed_code": "HB.2.5.2.",
+		"themes": [
+			"g2.hayat_bilgisi.t05"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 53,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.5.3": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Afetlere karşı alınması gereken önlemlere ilişkin bilgi toplayabilme",
+		"printed_code": "HB.2.5.3.",
+		"steps": [
+			"a) Afetlere karşı alınması gereken önlemlere ilişkin bilgi toplamak için kullanacağı araçları belirler.",
+			"b) Belirlediği araçları kullanarak afetlere karşı alınması gereken önlemlere ilişkin bilgileri bulur.",
+			"c) Afetlere karşı alınması gereken önlemlere ilişkin bulduğu bilgileri doğrular.",
+			"ç) Afetlere karşı alınması gereken önlemlere ilişkin bulduğu bilgileri kaydeder."
+		],
+		"themes": [
+			"g2.hayat_bilgisi.t05"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 53,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.5.4": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Doğal kaynakları tasarruflu kullanma davranışlarını günlük yaşamına yansıtabilme",
+		"printed_code": "HB.2.5.4.",
+		"steps": [
+			"a) Doğal kaynakları kullanırken davranışlarını gözden geçirir.",
+			"b) Doğal kaynakları tasarruflu kullanmaya yönelik çıkarımlarda bulunur.",
+			"c) Doğal kaynakları tasarruflu kullanmaya yönelik ulaştığı çıkarımları değerlendirir."
+		],
+		"themes": [
+			"g2.hayat_bilgisi.t05"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 53,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.6.1": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Bilim insanlarının bilime katkılarına yönelik kaynaklardan bilgi toplayabilme",
+		"printed_code": "HB.2.6.1.",
+		"steps": [
+			"a) Bilim insanlarının bilime katkılarına ilişkin bilgi toplayacağı kaynakları belirler.",
+			"b) Bilim insanlarının bilime katkılarına ilişkin belirlediği kaynaklardan bilgileri bulur.",
+			"c) Bilim insanlarının bilime katkılarına ilişkin ulaştığı kaynakların uygunluğunu açıklar.",
+			"ç) Bilim insanlarının bilime katkılarına ilişkin kaynaklardan ulaştığı bilgileri kaydeder."
+		],
+		"themes": [
+			"g2.hayat_bilgisi.t06"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 57,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.6.2": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Teknolojik bir ürünün değişim ve sürekliliğine dair kanıta dayalı öngörüde bulunabilme",
+		"printed_code": "HB.2.6.2.",
+		"steps": [
+			"a) Teknolojik bir ürünün zaman içindeki değişimini kanıtlara dayalı olarak ilişkilendirir.",
+			"b) Teknolojik bir ürünün gelecekteki değişimine ilişkin çıkarım yapar."
+		],
+		"themes": [
+			"g2.hayat_bilgisi.t06"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 57,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.6.3": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Sanatın günlük yaşamdaki yerini belirleyebilme",
+		"printed_code": "HB.2.6.3.",
+		"themes": [
+			"g2.hayat_bilgisi.t06"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 57,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.1.1": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Güçlü ve gelişime açık olduğu alanlara karar verebilme",
+		"printed_code": "HB.3.1.1.",
+		"steps": [
+			"a) Güçlü ve gelişime açık olduğu alanlara ilişkin karar vermeye yönelik amacını belirler.",
+			"b) Güçlü ve gelişime açık olduğu alanlara ilişkin karar vermeye yönelik bilgi toplar.",
+			"c) Güçlü ve gelişime açık olduğu alanlara ilişkin karar vermeye yönelik seçenekler oluşturur.",
+			"ç) Güçlü ve gelişime açık olduğu alanlara ilişkin karar vermeye yönelik seçenekler üzerinde mantıksal denetleme yapar.",
+			"d) Güçlü ve gelişime açık olduğu alanlara ilişkin karar vermeye yönelik seçenekler arasından seçim yapar.",
+			"e) Güçlü ve gelişime açık olduğu alanlara ilişkin verdiği karara yönelik yansıtma yapar."
+		],
+		"themes": [
+			"g3.hayat_bilgisi.t01"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 61,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.1.2": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Okuldaki hak ve sorumluluklarına uygun davranabilme",
+		"printed_code": "HB.3.1.2.",
+		"themes": [
+			"g3.hayat_bilgisi.t01"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 61,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.1.3": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Çocuk haklarını tanıtmak için fikirlerini eyleme dönüştürebilme",
+		"printed_code": "HB.3.1.3.",
+		"steps": [
+			"a) Çocuk haklarını tanıtmak için plan yapar.",
+			"b) Çocuk haklarını tanıtmak için yaptığı planı uygular.",
+			"c) Çocuk haklarını tanıtmak için uyguladığı planı değerlendirir."
+		],
+		"themes": [
+			"g3.hayat_bilgisi.t01"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 61,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.2.1": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Sağlığını korumaya yönelik davranışlarını düzenleyebilme",
+		"printed_code": "HB.3.2.1.",
+		"themes": [
+			"g3.hayat_bilgisi.t02"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 65,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.2.2": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Güvenliğini tehdit eden bir durumla karşılaştığında yapılması gerekenleri sorgulayabilme",
+		"printed_code": "HB.3.2.2.",
+		"steps": [
+			"a) Güvenliğini tehdit eden durumları tanımlar.",
+			"b) Güvenliğini tehdit eden bir durumla karşılaştığında yapılması gerekenler hakkında sorular sorar.",
+			"c) Güvenliğini tehdit eden bir durumla karşılaştığında yapılması gerekenler hakkında bilgi toplar.",
+			"ç) Güvenliğini tehdit eden bir durumla karşılaştığında yapılması gerekenler hakkında topladığı bilgilerin doğruluğunu değerlendirir.",
+			"d) Güvenliğini tehdit eden bir durumla karşılaştığında yapılması gerekenler hakkında çıkarım yapar."
+		],
+		"themes": [
+			"g3.hayat_bilgisi.t02"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 65,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.2.3": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Trafik kurallarına uymanın önemine ilişkin özgün ürünler sentezleyebilme",
+		"printed_code": "HB.3.2.3.",
+		"steps": [
+			"a) Trafik kurallarına uymanın önemini belirler.",
+			"b) Trafik kurallarına uyma ile güvenliği arasında ilişki kurar.",
+			"c) Trafik kurallarına uymanın önemine ilişkin özgün bir ürün oluşturur."
+		],
+		"themes": [
+			"g3.hayat_bilgisi.t02"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 65,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.3.1": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Aile ve toplum arasındaki ilişkiyi çözümleyebilme",
+		"printed_code": "HB.3.3.1.",
+		"steps": [
+			"a) Aile ve toplumun özelliklerini belirler.",
+			"b) Aile ve toplum arasındaki ilişkiyi belirler."
+		],
+		"themes": [
+			"g3.hayat_bilgisi.t03"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 69,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.3.2": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Yardıma ihtiyacı olan bireylerin yaşamını kolaylaştırmak için fikirlerini eyleme dönüştürebilme",
+		"printed_code": "HB.3.3.2.",
+		"steps": [
+			"a) Yardıma ihtiyacı olan bireylerin yaşamını kolaylaştırmak için plan yapar.",
+			"b) Yardıma ihtiyacı olan bireylerin yaşamını kolaylaştırmak için yaptığı planı uygular.",
+			"c) Yardıma ihtiyacı olan bireylerin yaşamını kolaylaştırmak için yaptığı planı değerlendirir."
+		],
+		"themes": [
+			"g3.hayat_bilgisi.t03"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 69,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.3.3": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Mesleklerin toplumsal yaşamdaki önemini yorumlayabilme",
+		"printed_code": "HB.3.3.3.",
+		"steps": [
+			"a) Mesleklerin toplumsal yaşamdaki önemine ilişkin verilen örnekleri inceler.",
+			"b) Mesleklerin toplumsal yaşamdaki önemine ilişkin verilen örnekleri bağlamdan kopmadan özgün örneklere dönüştürür.",
+			"c) Mesleklerin toplumsal yaşamdaki önemine ilişkin oluşturduğu özgün örnekleri kendi cümleleri ile ifade eder."
+		],
+		"themes": [
+			"g3.hayat_bilgisi.t03"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 69,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.4.1": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Yakın çevresindeki tarihî mekân ve doğal güzelliklerin korunmasının önemini fark edebilme",
+		"printed_code": "HB.3.4.1.",
+		"themes": [
+			"g3.hayat_bilgisi.t04"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 73,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.4.2": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Ülkemizin yönetim şekli ile ilgili kaynaklardan bilgi toplayabilme",
+		"printed_code": "HB.3.4.2.",
+		"steps": [
+			"a) Ülkemizin yönetim şekli ile ilgili bilgi toplayacağı kaynakları belirler.",
+			"b) Ülkemizin yönetim şekli ile ilgili belirlediği kaynaklardan bilgileri bulur.",
+			"c) Ülkemizin yönetim şekli ile ilgili ulaştığı kaynakların uygunluğunu açıklar.",
+			"ç) Ülkemizin yönetim şekli ile ilgili kaynaklardan ulaştığı bilgileri kaydeder."
+		],
+		"themes": [
+			"g3.hayat_bilgisi.t04"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 73,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.4.3": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Mustafa Kemal Atatürk’ün kişilik özelliklerini çözümleyebilme",
+		"printed_code": "HB.3.4.3.",
+		"steps": [
+			"a) Mustafa Kemal Atatürk’ün kişilik özelliklerini ve elde ettiği başarıları belirler.",
+			"b) Mustafa Kemal Atatürk’ün kişilik özellikleri ile başarıları arasında ilişki kurar."
+		],
+		"themes": [
+			"g3.hayat_bilgisi.t04"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 73,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.4.4": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Millî birlik ve beraberliğimizin ülkemize katkılarını açıklayabilme",
+		"printed_code": "HB.3.4.4.",
+		"themes": [
+			"g3.hayat_bilgisi.t04"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 73,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.5.1": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Doğadaki varlıkların insan yaşamı için önemini yorumlayabilme",
+		"printed_code": "HB.3.5.1.",
+		"steps": [
+			"a) Doğadaki varlıkların insan yaşamı için önemine ilişkin verilen örnekleri inceler.",
+			"b) Doğadaki varlıkların insan yaşamı için önemine ilişkin verilen örnekleri bağlamdan kopmadan özgün örneklere dönüştürür.",
+			"c) Doğadaki varlıkların insan yaşamı için önemine ilişkin oluşturduğu özgün örnekleri kendi cümleleri ile ifade eder."
+		],
+		"themes": [
+			"g3.hayat_bilgisi.t05"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 77,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.5.2": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Krokiyi kullanarak bulunduğu yerin konumunu algılayabilme",
+		"printed_code": "HB.3.5.2.",
+		"steps": [
+			"a) Krokiyi kullanarak bulunduğu yerin konumunu belirler.",
+			"b) Bulunduğu yerin konumsal görselleştirmesini yapar.",
+			"c) Bulunduğu yerin konumsal özelliklerini özetler."
+		],
+		"themes": [
+			"g3.hayat_bilgisi.t05"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 77,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.5.3": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Afetlere yönelik yapılması gerekenleri sınıflandırabilme",
+		"printed_code": "HB.3.5.3.",
+		"steps": [
+			"a) Afetlere yönelik yapılması gerekenlere ilişkin ölçütleri afet öncesi, afet anı ve afet sonrası olarak belirler.",
+			"b) Afetlere yönelik yapılması gerekenleri afet öncesi, afet anı ve afet sonrası olarak ayrıştırır.",
+			"c) Afetlere yönelik yapılması gerekenleri afet öncesi, afet anı ve afet sonrası olarak tasnif eder.",
+			"ç) Afetlere yönelik yapılması gerekenleri afet öncesi, afet anı ve afet sonrası olarak etiketler."
+		],
+		"themes": [
+			"g3.hayat_bilgisi.t05"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 77,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.5.4": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Çevresel sürdürülebilirliğe yönelik kaynaklardan bilgi toplayabilme",
+		"printed_code": "HB.3.5.4.",
+		"steps": [
+			"a) Çevresel sürdürülebilirliğe yönelik bilgi toplayacağı kaynakları belirler.",
+			"b) Çevresel sürdürülebilirliğe yönelik belirlediği kaynaklardan bilgileri bulur.",
+			"c) Çevresel sürdürülebilirliğe yönelik ulaştığı kaynakların uygunluğunu açıklar.",
+			"ç) Çevresel sürdürülebilirliğe yönelik kaynaklardan ulaştığı bilgileri kaydeder."
+		],
+		"themes": [
+			"g3.hayat_bilgisi.t05"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 77,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.6.1": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Bilimsel gelişmelerin günlük yaşama etkisini yorumlayabilme",
+		"printed_code": "HB.3.6.1.",
+		"steps": [
+			"a) Bilimsel gelişmelerin günlük yaşama etkisine ilişkin verilen örnekleri inceler.",
+			"b) Bilimsel gelişmelerin günlük yaşama etkisine ilişkin verilen örnekleri bağlamdan kopmadan özgün örneklere dönüştürür.",
+			"c) Bilimsel gelişmelerin günlük yaşama etkisine ilişkin oluşturduğu özgün örnekleri kendi cümleleri ile ifade eder."
+		],
+		"themes": [
+			"g3.hayat_bilgisi.t06"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 82,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.6.2": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Teknolojik gelişmelerin günlük yaşama etkisini çözümleyebilme",
+		"printed_code": "HB.3.6.2.",
+		"steps": [
+			"a) Teknolojik gelişmelerin günlük yaşama etkisini belirler.",
+			"b) Teknolojik gelişmelerle günlük yaşam arasında ilişki kurar."
+		],
+		"themes": [
+			"g3.hayat_bilgisi.t06"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 82,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.6.3": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Sanatçıların sanata katkılarına yönelik kaynaklardan bilgi toplayabilme",
+		"printed_code": "HB.3.6.3.",
+		"steps": [
+			"a) Sanatçıların sanata katkılarına yönelik bilgi toplayacağı kaynakları belirler.",
+			"b) Sanatçıların sanata katkılarına yönelik belirlediği kaynaklardan bilgileri bulur.",
+			"c) Sanatçıların sanata katkılarına yönelik ulaştığı kaynakların uygunluğunu açıklar.",
+			"ç) Sanatçıların sanata katkılarına yönelik kaynaklardan ulaştığı bilgileri kaydeder."
+		],
+		"themes": [
+			"g3.hayat_bilgisi.t06"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 82,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"FB.3.1.1": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Bilimsel bilgiye ulaşma yollarını sorgulayabilme",
+		"printed_code": "FB.3.1.1.",
+		"steps": [
+			"a) Merak ettiği bilimsel bir konuyu tanımlar.",
+			"b) İlgili konu hakkında sorular sorar.",
+			"c) Sorularını cevaplamaya yönelik bilgi toplar.",
+			"ç) Bilimsel bilgiye ulaşma yollarının uygunluğunu değerlendirir.",
+			"d) Toplanan bilgiler üzerinden bilimsel bilgiye ulaşma yollarına ilişkin çıkarım yapar."
+		],
+		"themes": [
+			"g3.fen.t01"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 19,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.1.2": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Bilim insanlarının özelliklerini genelleyebilme",
+		"printed_code": "FB.3.1.2.",
+		"steps": [
+			"a) Bilim insanları hakkında bilgi toplar.",
+			"b) Bilim insanlarının ortak özelliklerini belirler.",
+			"c) Bilim insanlarının ortak olmayan özelliklerini belirler.",
+			"ç) Örüntüler üzerinden bilim insanlarının özellikleri hakkında önermede bulunur."
+		],
+		"themes": [
+			"g3.fen.t01"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 19,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.2.1": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Canlıları; mikroskopla görülebilen canlılar, mantarlar, bitkiler ve hayvanlar olarak sınıflandırabilme",
+		"printed_code": "FB.3.2.1.",
+		"steps": [
+			"a) Canlıların benzer ve farklı niteliklerini belirler.",
+			"b) Canlıları niteliklerine göre ayırır.",
+			"c) Canlıları gruplandırır.",
+			"ç) Canlıları etiketler."
+		],
+		"themes": [
+			"g3.fen.t02"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 22,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.2.2": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Canlıların çevrelerini farklı yollarla algılamaları konusunda bilimsel çıkarım yapabilme",
+		"printed_code": "FB.3.2.2.",
+		"steps": [
+			"a) Canlıların çevrelerini algılama biçimlerine ilişkin nitelikleri tanımlar.",
+			"b) Duyu organlarının işlevleri ile ilgili veri toplayarak kaydeder.",
+			"c) Canlıların çevrelerini farklı biçimlerde algılamalarına ilişkin verileri yorumlayarak değerlendirir."
+		],
+		"themes": [
+			"g3.fen.t02"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 22,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.2.3": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Canlıların yaşam döngülerini açıklamada tümevarımsal akıl yürütebilme",
+		"printed_code": "FB.3.2.3.",
+		"steps": [
+			"a) Canlıların yaşam döngüleri ile ilgili örüntüleri bulur.",
+			"b) Canlıların yaşam döngüleri ile ilgili genelleme yapar."
+		],
+		"themes": [
+			"g3.fen.t02"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 22,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.3.1": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Kayaçlar, madenler ve mineraller ile ilgili tümdengelimsel akıl yürütebilme",
+		"printed_code": "FB.3.3.1.",
+		"steps": [
+			"a) Kayaçlar, madenler ve mineralleri belirler.",
+			"b) Kayaçlar, madenler ve mineraller arasında ilişki kurar.",
+			"c) Kayaçlar, madenler ve mineraller arasında genelden genele veya genelden özele çıkarım yapar."
+		],
+		"themes": [
+			"g3.fen.t03"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 26,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.3.2": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Fosil oluşumu ile ilgili bilgileri sentezleyebilme",
+		"printed_code": "FB.3.3.2.",
+		"steps": [
+			"a) Fosil oluşumunu gösteren sürecin bütün ve parçalarını belirler.",
+			"b) Süreci oluşturan aşamalar arasında ilişki kurar.",
+			"c) Fosillerin oluşum sürecini oluşturan aşamaları uygun sırayla bir bütün hâline getirir."
+		],
+		"themes": [
+			"g3.fen.t03"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 26,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.4.1": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Çevresindeki maddeleri hâllerine göre sınıflandırabilme",
+		"printed_code": "FB.3.4.1.",
+		"steps": [
+			"a) Çevresindeki maddelerin niteliklerini tanımlar.",
+			"b) Çevresindeki maddeleri niteliklerine göre ayırır.",
+			"c) Çevresindeki maddeleri hâllerine göre gruplandırır.",
+			"ç) Maddeleri hâllerine göre katı, sıvı ve gaz olarak etiketler."
+		],
+		"themes": [
+			"g3.fen.t04"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 29,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.4.2": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Günlük yaşamda karşılaştığı karışımların ayrılmasında kullanılabilecek uygun yöntemleri kullanarak deney yapabilme",
+		"printed_code": "FB.3.4.2.",
+		"steps": [
+			"a) Karışımların ayrılmasında kullanılabilecek yöntemlerle ilgili deney tasarlar.",
+			"b) Deneyle ilgili ölçme ve veri analizi yapar."
+		],
+		"themes": [
+			"g3.fen.t04"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 29,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.4.3": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Atıkların ayrıştırılmasına ilişkin problem çözebilme",
+		"printed_code": "FB.3.4.3.",
+		"steps": [
+			"a) Atıkların ayrıştırılmasına ilişkin problemi yapılandırır.",
+			"b) Atıkların ayrıştırılmasına ilişkin problemi özetler.",
+			"c) Atıkların ayrıştırılmasına ilişkin çözüm önerilerini gözleme ya da veriye dayalı tahmin eder.",
+			"ç) Atıkların ayrıştırılmasına ilişkin problemin çözümüne yönelik önermeler üzerinden akıl yürütür.",
+			"d) Atıkların ayrıştırılmasına ilişkin problemin çözümüne yönelik yansıtmada/değerlendirmede bulunur."
+		],
+		"themes": [
+			"g3.fen.t04"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 29,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.5.1": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Varlıkların hareket durumlarını gözleme dayalı tahmin edebilme",
+		"printed_code": "FB.3.5.1.",
+		"steps": [
+			"a) Varlıkların hareket durumlarına ilişkin ön gözlem ve/veya deneyimlerini ilişkilendirir.",
+			"b) Varlıkların hareket durumlarına ilişkin çıkarım yapar.",
+			"c) Varlıkların hareket durumlarının sonuçlarına ilişkin yargıda bulunur."
+		],
+		"themes": [
+			"g3.fen.t05"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 33,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.5.2": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Kuvvetin varlıklar üzerindeki etkilerini bilimsel gözleme dayalı tahmin edebilme",
+		"printed_code": "FB.3.5.2.",
+		"steps": [
+			"a) Varlıkların hareketinin ve şekil değiştirmesinin nedenine ilişkin ön bilgi ve deneyimleriyle önerme oluşturur.",
+			"b) Varlıkların hareketinin ve şekil değiştirmesinin nedenine ilişkin gözleme dayalı olan önermeleri karşılaştırır.",
+			"c) Kuvvetin varlıkların hareketine ve şekil değiştirmesine etkilerine ilişkin tahminlerini temellendirmek için gözlem verilerinden sonuç çıkarır.",
+			"ç) Kuvvetin varlıkların hareketine ve şekil değiştirmesine etkileri ile ilgili gözlemlenmemiş duruma ilişkin tahminde bulunur.",
+			"d) Kuvvetin varlıkların hareketine ve şekil değiştirmesine etkileri ile ilgili tahminlerinin geçerliliğini sorgular."
+		],
+		"themes": [
+			"g3.fen.t05"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 33,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.6.1": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Bazı araç gerecin elektrikli olduğuna ilişkin bilimsel çıkarım yapabilme",
+		"printed_code": "FB.3.6.1.",
+		"steps": [
+			"a) Farklı araç gerecin niteliklerini tanımlar.",
+			"b) Elektrikli araç gereçle ilgili veri toplayarak kaydeder.",
+			"c) Elektrikli araç gereçle ilgili verileri değerlendirir."
+		],
+		"themes": [
+			"g3.fen.t06"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 37,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.6.2": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Elektrikli araç gerecin güvenli kullanımı ile ilgili eleştirel düşünebilme",
+		"printed_code": "FB.3.6.2.",
+		"steps": [
+			"a) Elektrikli araç gerecin güvenli kullanımı ile ilgili verilen bir olay/konu/problem veya durumu sorgular.",
+			"b) Elektrikli araç gerecin kullanımında güvenliğin sağlanabileceğine yönelik akıl yürütür.",
+			"c) Akıl yürütmeyle ulaştığı çıkarımları yansıtır."
+		],
+		"themes": [
+			"g3.fen.t06"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 37,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.6.3": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Elektriği tasarruflu kullanma konusunda bilimsel veriye dayalı tahmin edebilme",
+		"printed_code": "FB.3.6.3.",
+		"steps": [
+			"a) Elektriği tasarruflu kullanma konusunda verilere ve/veya ön bilgilere dayalı önerme oluşturur.",
+			"b) Elektriği tasarruflu kullanma üzerine nicel ölçüm verilerine dayalı önermelerini gerekçelendirir.",
+			"c) Hesaplamalarına dayalı olarak tahmin eder.",
+			"ç) Tahminlerin geçerliliğini sorgular."
+		],
+		"themes": [
+			"g3.fen.t06"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 37,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.7.1": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Toprak oluşumunu ve yapısını bilimsel olarak gözlemleyebilme",
+		"printed_code": "FB.3.7.1.",
+		"steps": [
+			"a) Toprağın oluşumuna ve yapısına ilişkin nitelikleri tanımlar.",
+			"b) Toprağın yapısına ilişkin veri toplayarak kaydeder.",
+			"c) Toprağın yapısına ilişkin topladığı verileri açıklar."
+		],
+		"themes": [
+			"g3.fen.t07"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 41,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.7.2": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Bir bitkinin yetişmesi için gerekenleri genelleyebilme",
+		"printed_code": "FB.3.7.2.",
+		"steps": [
+			"a) Çevresinde bulunan tarım ürünlerinin nasıl yetiştirildiği konusunda araştırma yaparak bilgi toplar.",
+			"b) Bitki yetiştirmek için gerekli ortak özellikleri belirler.",
+			"c) Farklı bitkilerin yetiştirilmesinde ortak olmayan özellikleri belirler.",
+			"ç) Bir bitki yetiştirmek için yapılması gerekenler konusunda önermede bulunur."
+		],
+		"themes": [
+			"g3.fen.t07"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 41,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.8.1": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Canlıların yaşam alanlarının özelliklerini belirlemeye yönelik kanıt kullanabilme",
+		"printed_code": "FB.3.8.1.",
+		"steps": [
+			"a) Canlıların yaşam alanlarının özelliklerine ilişkin veri toplayarak kaydeder.",
+			"b) Canlıların yaşam alanlarına ilişkin veri setleri oluşturur.",
+			"c) Canlıların yaşam alanlarının özelliklerine ilişkin veriye dayalı açıklama yapar."
+		],
+		"themes": [
+			"g3.fen.t08"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 45,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.8.2": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Yaşam alanındaki canlı çeşitliliğini operasyonel olarak tanımlayabilme",
+		"printed_code": "FB.3.8.2.",
+		"steps": [
+			"a) Yaşam alanının özelliklerini tanımlar.",
+			"b) Yaşam alanındaki canlı çeşitliliği ile ilgili ölçüm yapar.",
+			"c) Canlı çeşitliliğinin tanımını yapar."
+		],
+		"themes": [
+			"g3.fen.t08"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 45,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.8.3": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Yaşam alanlarının korunması için yapılacakları sorgulayabilme",
+		"printed_code": "FB.3.8.3.",
+		"steps": [
+			"a) Merak ettiği konuyu tanımlar.",
+			"b) İlgili konu hakkında sorular sorar.",
+			"c) İlgili konu hakkında bilgi toplar.",
+			"ç) Toplanan bilgilerin doğruluğunu değerlendirir.",
+			"d) Toplanan bilgiler üzerinde çıkarım yapar."
+		],
+		"themes": [
+			"g3.fen.t08"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 45,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
 	}
 }

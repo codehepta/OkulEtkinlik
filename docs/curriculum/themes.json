@@ -965,5 +965,429 @@
 			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
 			"page": 149
 		}
+	},
+	"g1.hayat_bilgisi.t01": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"order": 1,
+		"official": "1. BEN VE OKULUM",
+		"declared_count": 4,
+		"outcomes": [
+			"HB.1.1.1",
+			"HB.1.1.2",
+			"HB.1.1.3",
+			"HB.1.1.4"
+		],
+		"source": {
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 15
+		}
+	},
+	"g1.hayat_bilgisi.t02": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"order": 2,
+		"official": "2. SAĞLIĞIM VE GÜVENLİĞİM",
+		"declared_count": 4,
+		"outcomes": [
+			"HB.1.2.1",
+			"HB.1.2.2",
+			"HB.1.2.3",
+			"HB.1.2.4"
+		],
+		"source": {
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 19
+		}
+	},
+	"g1.hayat_bilgisi.t03": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"order": 3,
+		"official": "3. AİLEM VE TOPLUM",
+		"declared_count": 3,
+		"outcomes": [
+			"HB.1.3.1",
+			"HB.1.3.2",
+			"HB.1.3.3"
+		],
+		"source": {
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 23
+		}
+	},
+	"g1.hayat_bilgisi.t04": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"order": 4,
+		"official": "4. YAŞADIĞIM YER VE ÜLKEM",
+		"declared_count": 5,
+		"outcomes": [
+			"HB.1.4.1",
+			"HB.1.4.2",
+			"HB.1.4.3",
+			"HB.1.4.4",
+			"HB.1.4.5"
+		],
+		"source": {
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 26
+		}
+	},
+	"g1.hayat_bilgisi.t05": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"order": 5,
+		"official": "5. DOĞA VE ÇEVRE",
+		"declared_count": 4,
+		"outcomes": [
+			"HB.1.5.1",
+			"HB.1.5.2",
+			"HB.1.5.3",
+			"HB.1.5.4"
+		],
+		"source": {
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 30
+		}
+	},
+	"g1.hayat_bilgisi.t06": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"order": 6,
+		"official": "6. BİLİM, TEKNOLOJİ VE SANAT",
+		"declared_count": 3,
+		"outcomes": [
+			"HB.1.6.1",
+			"HB.1.6.2",
+			"HB.1.6.3"
+		],
+		"source": {
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 34
+		}
+	},
+	"g2.hayat_bilgisi.t01": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"order": 1,
+		"official": "1. BEN VE OKULUM",
+		"declared_count": 4,
+		"outcomes": [
+			"HB.2.1.1",
+			"HB.2.1.2",
+			"HB.2.1.3",
+			"HB.2.1.4"
+		],
+		"source": {
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 37
+		}
+	},
+	"g2.hayat_bilgisi.t02": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"order": 2,
+		"official": "2. SAĞLIĞIM VE GÜVENLİĞİM",
+		"declared_count": 4,
+		"outcomes": [
+			"HB.2.2.1",
+			"HB.2.2.2",
+			"HB.2.2.3",
+			"HB.2.2.4"
+		],
+		"source": {
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 41
+		}
+	},
+	"g2.hayat_bilgisi.t03": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"order": 3,
+		"official": "3. AİLEM VE TOPLUM",
+		"declared_count": 3,
+		"outcomes": [
+			"HB.2.3.1",
+			"HB.2.3.2",
+			"HB.2.3.3"
+		],
+		"source": {
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 45
+		}
+	},
+	"g2.hayat_bilgisi.t04": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"order": 4,
+		"official": "4. YAŞADIĞIM YER VE ÜLKEM",
+		"declared_count": 5,
+		"outcomes": [
+			"HB.2.4.1",
+			"HB.2.4.2",
+			"HB.2.4.3",
+			"HB.2.4.4",
+			"HB.2.4.5"
+		],
+		"source": {
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 49
+		}
+	},
+	"g2.hayat_bilgisi.t05": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"order": 5,
+		"official": "5. DOĞA VE ÇEVRE",
+		"declared_count": 4,
+		"outcomes": [
+			"HB.2.5.1",
+			"HB.2.5.2",
+			"HB.2.5.3",
+			"HB.2.5.4"
+		],
+		"source": {
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 53
+		}
+	},
+	"g2.hayat_bilgisi.t06": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"order": 6,
+		"official": "6. BİLİM, TEKNOLOJİ VE SANAT",
+		"declared_count": 3,
+		"outcomes": [
+			"HB.2.6.1",
+			"HB.2.6.2",
+			"HB.2.6.3"
+		],
+		"source": {
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 57
+		}
+	},
+	"g3.hayat_bilgisi.t01": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"order": 1,
+		"official": "1. BEN VE OKULUM",
+		"declared_count": 3,
+		"outcomes": [
+			"HB.3.1.1",
+			"HB.3.1.2",
+			"HB.3.1.3"
+		],
+		"source": {
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 61
+		}
+	},
+	"g3.hayat_bilgisi.t02": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"order": 2,
+		"official": "2. SAĞLIĞIM VE GÜVENLİĞİM",
+		"declared_count": 3,
+		"outcomes": [
+			"HB.3.2.1",
+			"HB.3.2.2",
+			"HB.3.2.3"
+		],
+		"source": {
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 65
+		}
+	},
+	"g3.hayat_bilgisi.t03": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"order": 3,
+		"official": "3. AİLEM VE TOPLUM",
+		"declared_count": 3,
+		"outcomes": [
+			"HB.3.3.1",
+			"HB.3.3.2",
+			"HB.3.3.3"
+		],
+		"source": {
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 69
+		}
+	},
+	"g3.hayat_bilgisi.t04": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"order": 4,
+		"official": "4. YAŞADIĞIM YER VE ÜLKEM",
+		"declared_count": 4,
+		"outcomes": [
+			"HB.3.4.1",
+			"HB.3.4.2",
+			"HB.3.4.3",
+			"HB.3.4.4"
+		],
+		"source": {
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 73
+		}
+	},
+	"g3.hayat_bilgisi.t05": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"order": 5,
+		"official": "5. DOĞA VE ÇEVRE",
+		"declared_count": 4,
+		"outcomes": [
+			"HB.3.5.1",
+			"HB.3.5.2",
+			"HB.3.5.3",
+			"HB.3.5.4"
+		],
+		"source": {
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 77
+		}
+	},
+	"g3.hayat_bilgisi.t06": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"order": 6,
+		"official": "6. BİLİM, TEKNOLOJİ VE SANAT",
+		"declared_count": 3,
+		"outcomes": [
+			"HB.3.6.1",
+			"HB.3.6.2",
+			"HB.3.6.3"
+		],
+		"source": {
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 82
+		}
+	},
+	"g3.fen.t01": {
+		"grade": 3,
+		"subject": "fen",
+		"order": 1,
+		"official": "1. BİLİMSEL KEŞİF YOLCULUĞU",
+		"declared_count": 2,
+		"outcomes": [
+			"FB.3.1.1",
+			"FB.3.1.2"
+		],
+		"source": {
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 19
+		}
+	},
+	"g3.fen.t02": {
+		"grade": 3,
+		"subject": "fen",
+		"order": 2,
+		"official": "2. CANLILAR DÜNYASINA YOLCULUK",
+		"declared_count": 3,
+		"outcomes": [
+			"FB.3.2.1",
+			"FB.3.2.2",
+			"FB.3.2.3"
+		],
+		"source": {
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 22
+		}
+	},
+	"g3.fen.t03": {
+		"grade": 3,
+		"subject": "fen",
+		"order": 3,
+		"official": "3. YER BİLİMCİLER İŞ BAŞINDA",
+		"declared_count": 2,
+		"outcomes": [
+			"FB.3.3.1",
+			"FB.3.3.2"
+		],
+		"source": {
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 26
+		}
+	},
+	"g3.fen.t04": {
+		"grade": 3,
+		"subject": "fen",
+		"order": 4,
+		"official": "4. MADDEYİ TANIYALIM, KARIŞTIRIP AYIRALIM",
+		"declared_count": 3,
+		"outcomes": [
+			"FB.3.4.1",
+			"FB.3.4.2",
+			"FB.3.4.3"
+		],
+		"source": {
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 29
+		}
+	},
+	"g3.fen.t05": {
+		"grade": 3,
+		"subject": "fen",
+		"order": 5,
+		"official": "5. HAREKETİ KEŞFEDİYORUM",
+		"declared_count": 2,
+		"outcomes": [
+			"FB.3.5.1",
+			"FB.3.5.2"
+		],
+		"source": {
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 33
+		}
+	},
+	"g3.fen.t06": {
+		"grade": 3,
+		"subject": "fen",
+		"order": 6,
+		"official": "6. YAŞAMIMIZI KOLAYLAŞTIRAN ELEKTRİK",
+		"declared_count": 3,
+		"outcomes": [
+			"FB.3.6.1",
+			"FB.3.6.2",
+			"FB.3.6.3"
+		],
+		"source": {
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 37
+		}
+	},
+	"g3.fen.t07": {
+		"grade": 3,
+		"subject": "fen",
+		"order": 7,
+		"official": "7. TOPRAĞI TANIYORUM, TARIMI KEŞFEDİYORUM",
+		"declared_count": 2,
+		"outcomes": [
+			"FB.3.7.1",
+			"FB.3.7.2"
+		],
+		"source": {
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 41
+		}
+	},
+	"g3.fen.t08": {
+		"grade": 3,
+		"subject": "fen",
+		"order": 8,
+		"official": "8. CANLILARIN YAŞAM ALANLARINA YOLCULUK",
+		"declared_count": 3,
+		"outcomes": [
+			"FB.3.8.1",
+			"FB.3.8.2",
+			"FB.3.8.3"
+		],
+		"source": {
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 45
+		}
 	}
 }
