@@ -18,6 +18,20 @@ var _replay: Button = null
 var _burst: Control = null
 var _sticker: Control = null
 var _done: bool = false
+var _limit_hit: bool = false
+
+func _ready() -> void:
+	app.session_timer.limit_reached.connect(_on_limit_reached)
+
+func _exit_tree() -> void:
+	if app != null and app.session_timer.limit_reached.is_connected(_on_limit_reached):
+		app.session_timer.limit_reached.disconnect(_on_limit_reached)
+
+## Süre dolunca: animasyon sürüyorsa bitmesi beklenir, sonra session_end.
+func _on_limit_reached() -> void:
+	_limit_hit = true
+	if _done:
+		app.goto("session_end")
 
 func enter(a: Dictionary) -> void:
 	args = a
@@ -60,6 +74,8 @@ func _run() -> void:
 			return
 	_done = true
 	sequence_finished.emit()
+	if _limit_hit:
+		app.goto("session_end")
 
 func _build() -> void:
 	var bg: ColorRect = ColorRect.new()
@@ -92,10 +108,10 @@ func _build() -> void:
 	row.alignment = BoxContainer.ALIGNMENT_CENTER
 	row.add_theme_constant_override("separation", 48)
 	col.add_child(row)
-	_replay = _button("result.replay", Color(0.96, 0.78, 0.55))
+	_replay = _button("result.replay", "ui.back", Color(0.96, 0.78, 0.55))
 	_replay.pressed.connect(_on_replay)
 	row.add_child(_replay)
-	_continue = _button("result.continue", Color(0.55, 0.85, 0.6))
+	_continue = _button("result.continue", "ui.check", Color(0.55, 0.85, 0.6))
 	_continue.pressed.connect(_on_continue)
 	row.add_child(_continue)
 
@@ -103,11 +119,12 @@ func _build() -> void:
 	voice.position = Vector2(24, 24)
 	add_child(voice)
 
-func _button(text_key: String, color: Color) -> Button:
+func _button(text_key: String, icon_key: String, color: Color) -> Button:
 	var b: Button = (load("res://scenes/components/big_button.tscn") as PackedScene).instantiate() as Button
 	b.set("text_key", text_key)
+	b.set("icon_key", icon_key)
 	b.set("clay_color", color)
-	b.custom_minimum_size = Vector2(420, 160)
+	b.custom_minimum_size = Vector2(520, 160)
 	return b
 
 func _on_continue() -> void:

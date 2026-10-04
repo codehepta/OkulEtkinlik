@@ -39,6 +39,9 @@ func _ready() -> void:
 func say(id: String) -> void:
 	_ensure_loaded()
 	if not _lines.has(id):
+		# Bekleyen ekranlar takılmasın: satır yoksa da bitti sinyali gelir.
+		push_warning("Narrator: bilinmeyen ses satırı: " + id)
+		line_finished.emit.call_deferred(id)
 		return
 	stop()
 	_last_id = id

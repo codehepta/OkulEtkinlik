@@ -60,6 +60,11 @@ func test_unknown_line_id_does_not_crash() -> void:
 	assert_eq(_tts_calls.size(), 0)
 	assert_eq(_subtitles.size(), 0)
 
+func test_unknown_line_id_still_emits_line_finished() -> void:
+	_n.say("vo.yok.yok")
+	await wait_for_signal(_n.line_finished, 2.0)
+	assert_eq(_finished, ["vo.yok.yok"] as Array[String])
+
 func test_estimated_duration() -> void:
 	assert_eq(_n.estimate_duration("abc"), 1.0)
 	assert_almost_eq(_n.estimate_duration("a".repeat(100)), 7.0, 0.001)

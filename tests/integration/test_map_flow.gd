@@ -200,3 +200,65 @@ func test_album_has_fen_tab_for_grade_3() -> void:
 	_login(3)
 	_app.goto("album")
 	assert_true(_screen().tab_subjects().has("fen"))
+
+func _lock(id: String) -> void:
+	_save.data["settings"]["daily_limit_min"] = 10
+	for p: Variant in _save.data["profiles"]:
+		var d: Dictionary = p
+		if str(d["id"]) == id:
+			d["usage"]["seconds"] = 9999
+			d["usage"]["day"] = _timer._effective_day()
+
+func test_locked_profile_cannot_enter_play_scenes() -> void:
+	var pid: String = _login(1)
+	_lock(pid)
+	for scene: String in ["world_map", "region_path", "lesson", "result", "album"]:
+		_app.goto(scene, {"subject": "matematik", "node_id": N1})
+		assert_eq(_app.current_scene_name(), "session_end", scene)
+
+func test_limit_on_result_then_continue_goes_to_session_end() -> void:
+	var pid: String = _login(1)
+	_app.goto("result", {"stars": 3, "new_sticker": "", "unlocked": N2, "node_id": N1, "time_up": false, "subject": "matematik"})
+	await wait_until(func() -> bool: return _screen().is_sequence_done(), 6.0)
+	_lock(pid)
+	_timer.limit_reached.emit()
+	assert_eq(_app.current_scene_name(), "session_end")
+
+func test_limit_during_result_animation_finishes_then_session_end() -> void:
+	var pid: String = _login(1)
+	_app.goto("result", {"stars": 2, "new_sticker": "", "unlocked": N2, "node_id": N1, "time_up": false, "subject": "matematik"})
+	_lock(pid)
+	_timer.limit_reached.emit()
+	await wait_until(func() -> bool: return _app.current_scene_name() == "session_end", 6.0)
+	assert_eq(_app.current_scene_name(), "session_end")
+
+func test_continue_after_lock_goes_to_session_end() -> void:
+	var pid: String = _login(1)
+	_app.goto("result", {"stars": 1, "new_sticker": "", "unlocked": N2, "node_id": N1, "time_up": false, "subject": "matematik"})
+	await wait_until(func() -> bool: return _screen().is_sequence_done(), 6.0)
+	var scr: Node = _screen()
+	_lock(pid)
+	scr.continue_button().pressed.emit()
+	assert_eq(_app.current_scene_name(), "session_end")
+
+func test_album_limit_goes_to_session_end() -> void:
+	_login(1)
+	_app.goto("album")
+	_timer.limit_reached.emit()
+	assert_eq(_app.current_scene_name(), "session_end")
+
+func test_album_selected_tab_has_shape_cue() -> void:
+	_login(1)
+	_app.goto("album")
+	assert_true(_screen().tab_selected("matematik"))
+	assert_false(_screen().tab_selected("turkce"))
+	_screen().select_subject("turkce")
+	assert_true(_screen().tab_selected("turkce"))
+	assert_false(_screen().tab_selected("matematik"))
+	assert_true(_screen().tab_scale("turkce") > _screen().tab_scale("matematik"))
+
+func test_result_buttons_have_icons() -> void:
+	_login(1)
+	_app.goto("result", {"stars": 1, "new_sticker": "", "unlocked": "", "node_id": N1, "time_up": false, "subject": "matematik"})
+	assert_ne(str(_screen().continue_button().get("icon_key")), "")
+	assert_ne(str(_screen().replay_button().get("icon_key")), "")

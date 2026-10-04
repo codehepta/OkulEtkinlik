@@ -61,7 +61,13 @@ func adopt_scene(scene_name: String, node: Node) -> void:
 	_current = node
 	_current_name = scene_name
 
+## Çocuğun oynadığı ekranlar: süre dolduysa buralara girilmez (spec §3.6).
+const PLAY_SCENES: Array[String] = ["world_map", "region_path", "lesson", "result", "album"]
+
 func goto(scene: String, args: Dictionary = {}) -> void:
+	if PLAY_SCENES.has(scene) and profile_id != "" and session_timer.is_locked(profile_id):
+		scene = "session_end"
+		args = {}
 	if not scenes.has(scene):
 		push_error("AppState: bilinmeyen sahne: %s" % scene)
 		return

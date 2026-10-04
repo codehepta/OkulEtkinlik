@@ -147,6 +147,10 @@ func _build() -> void:
 	add_child(home)
 
 func _center_on(x: float) -> void:
+	# ScrollContainer yerleşimi bir kare sonra hazır olur.
+	await get_tree().process_frame
+	if not is_inside_tree():
+		return
 	_scroll.scroll_horizontal = int(x - CANVAS.x / 2.0)
 
 func _stop_button(state: String) -> Button:

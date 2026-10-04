@@ -7,6 +7,7 @@ const CELL_SIZE: Vector2 = Vector2(200, 200)
 const GRID_COLUMNS: int = 7
 const TAB_ON: Color = Color(0.55, 0.85, 0.6)
 const TAB_OFF: Color = Color(0.96, 0.78, 0.55)
+const SELECTED_SCALE: float = 1.12
 const FRAME_KEY: String = "ui.sticker_frame"
 
 var app: Node = AppState
@@ -78,8 +79,22 @@ func _ready() -> void:
 
 	if not _subjects.is_empty():
 		select_subject(_subjects[0])
+	app.session_timer.limit_reached.connect(_on_limit_reached)
 	app.audio.play_music("music.menu")
 	app.narrator.say("vo.genel.album")
+
+func _exit_tree() -> void:
+	if app != null and app.session_timer.limit_reached.is_connected(_on_limit_reached):
+		app.session_timer.limit_reached.disconnect(_on_limit_reached)
+
+func _on_limit_reached() -> void:
+	app.goto("session_end")
+
+func tab_selected(subject: String) -> bool:
+	return subject == _subject
+
+func tab_scale(subject: String) -> float:
+	return (_tabs[subject] as Button).scale.x
 
 func tab_subjects() -> PackedStringArray:
 	return _subjects
@@ -90,7 +105,11 @@ func back_button() -> Button:
 func select_subject(subject: String) -> void:
 	_subject = subject
 	for s: String in _tabs:
-		(_tabs[s] as Button).set("clay_color", TAB_ON if s == subject else TAB_OFF)
+		var tab: Button = _tabs[s] as Button
+		tab.set("clay_color", TAB_ON if s == subject else TAB_OFF)
+		# Renk dışında şekil ipucu: seçili sekme büyük ve yukarıda durur.
+		tab.pivot_offset = tab.custom_minimum_size / 2.0
+		tab.scale = Vector2(SELECTED_SCALE, SELECTED_SCALE) if s == subject else Vector2.ONE
 	for c: Node in _grid.get_children():
 		c.queue_free()
 		_grid.remove_child(c)
