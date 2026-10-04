@@ -233,6 +233,11 @@ const FAZ3_SHOTS: Array = [
 	["40_money_pay", "clock_money", {"mode": "money", "ask": "pay", "unit": "kr", "amount": 75, "wallet": ["kr_50", "kr_25", "kr_10", "kr_5"]}, 1, 0],
 	["41_pizza_split", "fraction_pizza", {"ask": "split", "parts": 4}, 3, 0],
 	["42_pizza_select", "fraction_pizza", {"ask": "select", "parts": 8, "take": 3}, 1, 0],
+	# Faz 5a şablonları
+	["60_sort_bins_two", "sort_bins", {"bins": [{"label": {"type": "item", "value": "item.simge.canli"}, "shape": "heart", "color": "green"}, {"label": {"type": "item", "value": "item.simge.cansiz"}, "shape": "square", "color": "blue"}], "items": [{"token": {"type": "item", "value": "item.hayvan.kedi"}, "bin": 0}, {"token": {"type": "item", "value": "item.esya.top"}, "bin": 1}, {"token": {"type": "item", "value": "item.doga.cicek"}, "bin": 0}, {"token": {"type": "item", "value": "item.esya.kalem"}, "bin": 1}, {"token": {"type": "item", "value": "item.hayvan.kus"}, "bin": 0}, {"token": {"type": "item", "value": "item.esya.kasik"}, "bin": 1}]}, 1, 0],
+	["61_sort_bins_three_hint1", "sort_bins", {"bins": [{"label": {"type": "number", "value": 1}, "shape": "circle"}, {"label": {"type": "number", "value": 2}, "shape": "triangle"}, {"label": {"type": "number", "value": 3}, "shape": "star"}], "items": [{"token": {"type": "text", "value": "|"}, "bin": 0}, {"token": {"type": "text", "value": "||"}, "bin": 1}, {"token": {"type": "text", "value": "|||"}, "bin": 2}, {"token": {"type": "number", "value": 1}, "bin": 0}, {"token": {"type": "number", "value": 2}, "bin": 1}, {"token": {"type": "number", "value": 3}, "bin": 2}, {"token": {"type": "item", "value": "item.meyve.elma"}, "bin": 0}, {"token": {"type": "item", "value": "item.meyve.armut"}, "bin": 1}, {"token": {"type": "item", "value": "item.meyve.muz"}, "bin": 2}]}, 3, 1],
+	["62_scenario", "scenario", {"scene": "item.sahne.yaya_gecidi", "choices": [{"token": {"type": "item", "value": "item.davranis.bekle"}, "correct": true}, {"token": {"type": "item", "value": "item.davranis.kos"}, "correct": false}, {"token": {"type": "item", "value": "item.davranis.top"}, "correct": false}]}, 2, 0],
+	["63_scenario_hint1", "scenario", {"scene": "item.sahne.yaya_gecidi", "choices": [{"token": {"type": "item", "value": "item.davranis.bekle"}, "correct": true}, {"token": {"type": "item", "value": "item.davranis.kos"}, "correct": false}, {"token": {"type": "item", "value": "item.davranis.top"}, "correct": false}]}, 3, 1],
 ]
 
 func _faz3_templates() -> void:
@@ -255,12 +260,12 @@ func _faz3_templates() -> void:
 			g.call("show_hint", int(shot[4]))
 			await _frames(60)
 		await _shot(str(shot[0]))
-	# Pizza seçimi: iki dilim seçilmiş hali.
-	var last: Node = area.get_child(area.get_child_count() - 1)
-	last.call("_debug_toggle", 0)
-	last.call("_debug_toggle", 1)
-	await _frames(10)
-	await _shot("43_pizza_select_two")
+		# Pizza seçimi: iki dilim seçilmiş hali.
+		if str(shot[0]) == "42_pizza_select":
+			g.call("_debug_toggle", 0)
+			g.call("_debug_toggle", 1)
+			await _frames(10)
+			await _shot("43_pizza_select_two")
 
 func _runner_game() -> Node:
 	var runner: Node = _app.current_scene()
