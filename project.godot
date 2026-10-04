@@ -1,0 +1,29 @@
+; Bilgi Adası — Godot 4.7 proje dosyası
+config_version=5
+
+[application]
+
+config/name="Bilgi Adası"
+run/main_scene="res://scenes/ui/splash.tscn"
+config/features=PackedStringArray("4.7", "Mobile")
+config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/handheld/orientation=6
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/gut/plugin.cfg")
+
+[gui]
+
+theme/custom="res://assets/themes/default_theme.tres"
+
+[rendering]
+
+renderer/rendering_method="mobile"

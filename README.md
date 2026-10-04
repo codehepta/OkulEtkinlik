@@ -18,4 +18,7 @@ MEB 1., 2. ve 3. sınıf öğretim programlarıyla uyumlu, 6–9 yaş çocuklar 
 - [Asset istekleri (Nano Banana / Gemini TTS promptları)](asset-requests/README.md)
 
 ## Lisans
-Kod ve içerik lisansı Faz 0'da eklenecek (önerilen: kod için MIT, içerik ve görseller için CC BY 4.0).
+- **Kod:** [MIT](LICENSE)
+- **İçerik, görseller ve dokümanlar** (`content/`, `assets/`, `docs/`): [CC BY 4.0](LICENSE-CONTENT.md)
+- **Yazı tipi Andika:** SIL Open Font License 1.1 ([ayrıntı](assets/fonts/LICENSES.md))
+- **GUT** test eklentisi (`addons/gut/`): MIT, kendi lisansıyla
