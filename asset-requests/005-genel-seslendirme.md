@@ -61,6 +61,7 @@
 | 37 | `vo.genel.surukle` | `assets/audio/voice/genel/surukle.wav` | ANLATICI | Parmağınla sürükle ve doğru yere bırak. |
 | 38 | `vo.genel.hazir_misin` | `assets/audio/voice/genel/hazir_misin.wav` | BILGE | Hazır mısın? Başlıyoruz! |
 | 39 | `vo.genel.bitti_harita` | `assets/audio/voice/genel/bitti_harita.wav` | BILGE | Haritaya dönelim! |
+| 40 | `vo.genel.yakinda` | `assets/audio/voice/genel/yakinda.wav` | BILGE | Burası çok yakında açılacak! Biraz daha bekle. |
 
 ## Rakam ve sayı satırları (sayma oyunları için)
 Sayıları ANLATICI üslubuyla, **tek kelime olarak ve net** oku. Dosya yolu: `assets/audio/voice/sayi/<rakam>.wav`. Kimlik: `vo.sayi.<rakam>`.

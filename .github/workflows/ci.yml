@@ -1,0 +1,89 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+env:
+  GODOT_VERSION: "4.7.2"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Godot kur
+        run: |
+          scripts/setup-godot.sh
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
+      - name: İçe aktar
+        run: godot --headless --path . --import
+
+      - name: Testleri çalıştır (GUT)
+        run: |
+          mkdir -p build
+          godot --headless --path . -s addons/gut/gut_cmdln.gd -gdir=res://tests -ginclude_subdirs -gjunit_xml_file=build/junit.xml -gexit
+
+      - name: JUnit çıktısını yükle
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: junit
+          path: build/junit.xml
+          if-no-files-found: warn
+
+  android-debug:
+    needs: test
+    if: github.event_name == 'pull_request' || github.event_name == 'workflow_dispatch' || github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - uses: android-actions/setup-android@v3
+        with:
+          # Varsayılan 'tools' paketi artık yok; yalnızca gerekenleri iste.
+          packages: "platform-tools build-tools;35.0.1 platforms;android-35"
+
+      - name: Export şablonları önbelleği
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.local/share/godot/export_templates
+            ~/.local/godot
+          key: godot-${{ env.GODOT_VERSION }}-templates-${{ runner.os }}
+
+      - name: Godot ve export şablonlarını kur
+        run: |
+          scripts/setup-godot.sh --with-templates
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
+      - name: Android dışa aktarmayı hazırla
+        run: scripts/ci-android-setup.sh
+
+      - name: İçe aktar
+        run: godot --headless --path . --import
+
+      - name: Debug APK üret
+        run: |
+          mkdir -p build/android
+          godot --headless --path . --export-debug "Android" build/android/bilgi-adasi-debug.apk
+          ls -l build/android/bilgi-adasi-debug.apk
+
+      # Ağ yok kuralının kanıtı (izin yok, INTERNET yok) + içerik pakette + testler/GUT pakette değil.
+      - name: APK izin ve içerik doğrulaması
+        run: scripts/ci-check-apk.sh build/android/bilgi-adasi-debug.apk "$ANDROID_HOME/build-tools/35.0.1/aapt2"
+
+      - name: APK'yı yükle
+        uses: actions/upload-artifact@v4
+        with:
+          name: bilgi-adasi-debug-apk
+          path: build/android/bilgi-adasi-debug.apk
+          if-no-files-found: error

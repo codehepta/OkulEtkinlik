@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scenes/components/replay_voice_button.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/components/asset_image.tscn" id="2"]
+
+[node name="ReplayVoiceButton" type="Button"]
+anchors_preset = 0
+offset_right = 128.0
+offset_bottom = 128.0
+custom_minimum_size = Vector2(128, 128)
+script = ExtResource("1")
+
+[node name="Icon" parent="." instance=ExtResource("2")]
+mouse_filter = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = -16.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 2
+key = "ui.replay"
+min_side = 0.0

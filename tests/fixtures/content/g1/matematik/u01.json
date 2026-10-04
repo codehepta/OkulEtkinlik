@@ -1,0 +1,31 @@
+{
+	"id": "g1.matematik.u01",
+	"grade": 1,
+	"subject": "matematik",
+	"title_key": "fx.unit.u01",
+	"source": { "program": "TEST", "doc": "test.pdf", "page": 1 },
+	"nodes": [
+		{
+			"id": "g1.matematik.u01.n01",
+			"outcomes": ["TEST.1"],
+			"title_key": "fx.node.n01",
+			"intro_voice": "fx.vo.n01.intro",
+			"sticker": "st.matematik.elma",
+			"rounds": [
+				{ "template": "count_choose", "difficulty": 1, "voice": "fx.vo.n01.r01",
+				  "params": { "item": "item.meyve.elma", "count": 3, "choices": [2, 3, 4] } }
+			]
+		},
+		{
+			"id": "g1.matematik.u01.n02",
+			"outcomes": ["TEST.1"],
+			"title_key": "fx.node.n02",
+			"intro_voice": "fx.vo.n02.intro",
+			"sticker": "st.matematik.armut",
+			"rounds": [
+				{ "template": "count_choose", "difficulty": 2, "voice": "fx.vo.n02.r01",
+				  "params": { "item": "item.meyve.armut", "count": 5, "choices": [4, 5, 6] } }
+			]
+		}
+	]
+}

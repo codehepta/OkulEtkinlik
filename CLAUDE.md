@@ -17,6 +17,7 @@ MEB 1–3. sınıf öğretim programlarıyla (Türkiye Yüzyılı Maarif Modeli)
 
 ## Dil ve kod kuralları
 - Kullanıcıya görünen bütün metinler **Türkçe**dir ve `content/strings.tr.json` / `content/voice_lines.tr.json` içinde tutulur. Kodda sabit metin bulunmaz.
+  - **İstisnalar (kullanıcıya görünmez):** yalnızca geliştirici/sahip için çıktı üreten araçlar (`tools/*` ve yalnızca `tools/missing_assets.gd`'yi besleyen `scripts/core/missing_assets_scan.gd`) Türkçe sabit metin içerebilir. `push_error` / `push_warning` geliştirici günlükleri de bu kurala tabi değildir. Uygulama kodunun (sahneler, autoload'lar, diğer `scripts/core/` dosyaları) ekrana ya da sese giden metinleri her zaman JSON'dan gelir.
 - Dokümanlar ve kod yorumları Türkçe, tanımlayıcılar (değişken, fonksiyon, dosya, sınıf adları) İngilizce.
 - GDScript **statik tipli** yazılır: değişken, parametre ve dönüş tipleri belirtilir. `class_name` yalnızca gerçekten paylaşılan tipler için kullanılır.
 - Saf mantık `scripts/core/` altında, sahnesiz ve test edilebilir tutulur. Autoload'lar ince kalır ve bu mantığı çağırır.
@@ -36,12 +37,14 @@ godot --headless --path . --import
 # Testler (GUT)
 godot --headless --path . -s addons/gut/gut_cmdln.gd -gdir=res://tests -ginclude_subdirs -gexit
 
-# Eksik asset raporu (Faz 1'de eklenecek)
+# Eksik asset raporu
 godot --headless --path . -s res://tools/missing_assets.gd
 
 # Android debug APK (şablonlar kurulu olmalı)
 godot --headless --path . --export-debug "Android" build/android/bilgi-adasi-debug.apk
 ```
+Test paketini **sıralı** çalıştır: aynı anda yalnızca bir `godot` süreci (önce `pgrep godot`). Paralel süreçler `user://` test dizinlerini ve import önbelleğini bozar.
+`tools/*` altındaki geliştirici araçlarının çıktısı Türkçe sabit metin içerebilir; "kodda sabit metin yok" kuralı çocuğa ve veliye görünen uygulama metinleri içindir.
 `--import` bayrağı çalışmazsa `godot --headless --path . --editor --quit-after 2` kullan.
 
 Cloud ortamında Godot indirmesi başarısız olursa (ağ kısıtı), ortamın `github.com` ve `objects.githubusercontent.com` adreslerinden indirmeye izin vermesi gerekir. Bunu sahibe bildir; çözüm aramak için başka kaynaklardan ikili dosya indirme.

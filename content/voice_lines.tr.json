@@ -1,0 +1,378 @@
+{
+	"vo.genel.hosgeldin": {
+		"text": "Merhaba! Ben Bilge. Bilgi Adası'na hoş geldin!",
+		"speaker": "BILGE"
+	},
+	"vo.genel.profil_sec": {
+		"text": "Kim oynuyor? Resmine dokun!",
+		"speaker": "BILGE"
+	},
+	"vo.genel.avatar_sec": {
+		"text": "Hangi arkadaş sen olsun? Birini seç!",
+		"speaker": "BILGE"
+	},
+	"vo.genel.sinif_sec": {
+		"text": "Kaçıncı sınıfa gidiyorsun? Birinci, ikinci ya da üçüncü sınıfa dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.genel.harita_giris": {
+		"text": "Bugün nereyi keşfedelim? Bir bölgeye dokun!",
+		"speaker": "BILGE"
+	},
+	"vo.bolge.sayi_ormani": {
+		"text": "Sayı Ormanı",
+		"speaker": "ANLATICI"
+	},
+	"vo.bolge.harf_vadisi": {
+		"text": "Harf Vadisi",
+		"speaker": "ANLATICI"
+	},
+	"vo.bolge.hayat_kasabasi": {
+		"text": "Hayat Kasabası",
+		"speaker": "ANLATICI"
+	},
+	"vo.bolge.kesif_laboratuvari": {
+		"text": "Keşif Laboratuvarı",
+		"speaker": "ANLATICI"
+	},
+	"vo.bolge.agac_ev": {
+		"text": "Bilge'nin Ağaç Evi",
+		"speaker": "ANLATICI"
+	},
+	"vo.bolge.kilitli_lab": {
+		"text": "Burası Keşif Laboratuvarı! Üçüncü sınıfta kapıları açılacak.",
+		"speaker": "BILGE"
+	},
+	"vo.genel.durak_sec": {
+		"text": "Parlayan taşa dokun, başlayalım!",
+		"speaker": "BILGE"
+	},
+	"vo.genel.aferin_1": {
+		"text": "Aferin!",
+		"speaker": "BILGE"
+	},
+	"vo.genel.aferin_2": {
+		"text": "Harikasın!",
+		"speaker": "BILGE"
+	},
+	"vo.genel.aferin_3": {
+		"text": "Süper! Doğru bildin!",
+		"speaker": "BILGE"
+	},
+	"vo.genel.aferin_4": {
+		"text": "Çok güzel!",
+		"speaker": "BILGE"
+	},
+	"vo.genel.aferin_5": {
+		"text": "İşte bu!",
+		"speaker": "BILGE"
+	},
+	"vo.genel.tekrar_dene_1": {
+		"text": "Hımm, bir daha deneyelim mi?",
+		"speaker": "BILGE"
+	},
+	"vo.genel.tekrar_dene_2": {
+		"text": "Olsun! Tekrar dene, yapabilirsin.",
+		"speaker": "BILGE"
+	},
+	"vo.genel.tekrar_dene_3": {
+		"text": "Neredeyse oluyordu! Bir kez daha!",
+		"speaker": "BILGE"
+	},
+	"vo.genel.ipucu": {
+		"text": "Sana bir ipucu vereyim. Parlayan yere bak!",
+		"speaker": "BILGE"
+	},
+	"vo.genel.cozum": {
+		"text": "Gel, birlikte bakalım. Doğru cevap bu!",
+		"speaker": "BILGE"
+	},
+	"vo.genel.sonra_tekrar": {
+		"text": "Bunu birazdan yine soracağım, hazır ol!",
+		"speaker": "BILGE"
+	},
+	"vo.genel.yildiz_1": {
+		"text": "Bitirdin! Bir yıldız kazandın!",
+		"speaker": "BILGE"
+	},
+	"vo.genel.yildiz_2": {
+		"text": "Çok iyi! İki yıldız kazandın!",
+		"speaker": "BILGE"
+	},
+	"vo.genel.yildiz_3": {
+		"text": "Muhteşem! Üç yıldızın hepsi senin!",
+		"speaker": "BILGE"
+	},
+	"vo.genel.cikartma": {
+		"text": "Yeni bir çıkartma kazandın! Albümüne ekledim.",
+		"speaker": "BILGE"
+	},
+	"vo.genel.hediye": {
+		"text": "Ağaç evim için yeni bir süs kazandın! Hadi yerleştirelim!",
+		"speaker": "BILGE"
+	},
+	"vo.genel.yeni_durak": {
+		"text": "Yeni bir taş açıldı!",
+		"speaker": "BILGE"
+	},
+	"vo.genel.tekrar_bulutu": {
+		"text": "Tekrar Bulutu geldi! Öğrendiklerimizi hatırlayalım mı?",
+		"speaker": "BILGE"
+	},
+	"vo.genel.album": {
+		"text": "Çıkartma albümün.",
+		"speaker": "ANLATICI"
+	},
+	"vo.genel.agac_ev_giris": {
+		"text": "Ağaç evime hoş geldin! Süsleri sürükleyip istediğin yere koyabilirsin.",
+		"speaker": "BILGE"
+	},
+	"vo.genel.uyku_zamani": {
+		"text": "Bugünlük bu kadar! Uyku zamanı. Yarın yine oynarız, görüşürüz!",
+		"speaker": "BILGE"
+	},
+	"vo.genel.veli_cagir": {
+		"text": "Burası anne babalar için. Lütfen bir büyüğünü çağır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.genel.dinle": {
+		"text": "Dinle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.genel.dokun": {
+		"text": "Doğru olana dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.genel.surukle": {
+		"text": "Parmağınla sürükle ve doğru yere bırak.",
+		"speaker": "ANLATICI"
+	},
+	"vo.genel.hazir_misin": {
+		"text": "Hazır mısın? Başlıyoruz!",
+		"speaker": "BILGE"
+	},
+	"vo.genel.bitti_harita": {
+		"text": "Haritaya dönelim!",
+		"speaker": "BILGE"
+	},
+	"vo.sayi.0": {
+		"text": "sıfır",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.11": {
+		"text": "on bir",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.1": {
+		"text": "bir",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.12": {
+		"text": "on iki",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.2": {
+		"text": "iki",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.13": {
+		"text": "on üç",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.3": {
+		"text": "üç",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.14": {
+		"text": "on dört",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.4": {
+		"text": "dört",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.15": {
+		"text": "on beş",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.5": {
+		"text": "beş",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.16": {
+		"text": "on altı",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.6": {
+		"text": "altı",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.17": {
+		"text": "on yedi",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.7": {
+		"text": "yedi",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.18": {
+		"text": "on sekiz",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.8": {
+		"text": "sekiz",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.19": {
+		"text": "on dokuz",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.9": {
+		"text": "dokuz",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.20": {
+		"text": "yirmi",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.10": {
+		"text": "on",
+		"speaker": "ANLATICI"
+	},
+	"vo.genel.takma_ad": {
+		"text": "İstersen kendine bir takma ad yazabilirsin. Bir büyüğünden yardım iste. İstemezsen Geç düğmesine dokun.",
+		"speaker": "BILGE"
+	},
+	"vo.genel.yakinda": {
+		"text": "Burası çok yakında açılacak! Biraz daha bekle.",
+		"speaker": "BILGE"
+	},
+	"vo.g1.matematik.u01.n01.intro": {
+		"text": "Merhaba! Haydi birlikte sayalım. Nesneleri parmağınla tek tek say!",
+		"speaker": "BILGE"
+	},
+	"vo.g1.matematik.u01.n01.r01": {
+		"text": "Kaç elma var? Say ve doğru sayıya dokun!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.matematik.u01.n01.r02": {
+		"text": "Kaç top var? Parmağınla tek tek say!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.matematik.u01.n01.r03": {
+		"text": "Kaç civciv var? Say ve doğru sayıya dokun!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.matematik.u01.n01.r04": {
+		"text": "Kaç çiçek var? Dikkatle say ve dokun!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.matematik.u01.n02.intro": {
+		"text": "Bak, bu çubuklar da sayıları gösterir! Çubukları sayıp eşleştirelim.",
+		"speaker": "BILGE"
+	},
+	"vo.g1.matematik.u01.n02.r01": {
+		"text": "Çubukları say. Her birini doğru sayıya sürükle!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.matematik.u01.n02.r02": {
+		"text": "Çubuk gruplarını say. Her grubu doğru sayıya bırak!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.matematik.u01.n02.r03": {
+		"text": "Çubukları tek tek say, sonra doğru sayıya sürükle!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.matematik.u01.n02.r04": {
+		"text": "Hepsini eşleştir! Çubukları say ve doğru sayıya bırak.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.matematik.u01.n03.intro": {
+		"text": "Şimdi kulaklarını aç! Duyduğun sayıyı bulalım.",
+		"speaker": "BILGE"
+	},
+	"vo.g1.matematik.u01.n03.r01": {
+		"text": "Dinle ve bul: iki! İki rakamına dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.matematik.u01.n03.r02": {
+		"text": "Dinle ve bul: üç! Üç rakamına dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.matematik.u01.n03.r03": {
+		"text": "Dinle ve bul: dört! Dört rakamına dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.matematik.u01.n03.r04": {
+		"text": "Dinle ve bul: beş! Beş rakamına dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.matematik.u01.n04.intro": {
+		"text": "Sayılar büyüyor! Bu kez daha çok nesne sayacağız.",
+		"speaker": "BILGE"
+	},
+	"vo.g1.matematik.u01.n04.r01": {
+		"text": "Kaç silgi var? Say ve doğru sayıya dokun!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.matematik.u01.n04.r02": {
+		"text": "Kaç balık var? Parmağınla tek tek say!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.matematik.u01.n04.r03": {
+		"text": "Kaç kalem var? Hepsini say ve dokun!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.matematik.u01.n04.r04": {
+		"text": "Kaç kelebek var? Dikkatle say ve dokun!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.matematik.u01.n04.r05": {
+		"text": "Kaç küp var? Say ve doğru sayıya dokun!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.matematik.u01.n05.intro": {
+		"text": "Şimdi yirmiye kadar sayılarla oynayalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g1.matematik.u01.n05.r01": {
+		"text": "Kaç çilek var? Yavaş yavaş say ve dokun!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.matematik.u01.n05.r02": {
+		"text": "Dinle ve bul: sekiz! Sekiz rakamına dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.matematik.u01.n05.r03": {
+		"text": "Kaç arı var? Tek tek say ve dokun!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.matematik.u01.n05.r04": {
+		"text": "Dinle ve bul: on beş! On beş sayısına dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.matematik.u01.n05.r05": {
+		"text": "Kaç top var? Hepsini say ve doğru sayıya dokun!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.matematik.u01.n06.intro": {
+		"text": "Tahmin oyunu zamanı! Nesnelere iyice bak ve tahmin et.",
+		"speaker": "BILGE"
+	},
+	"vo.g1.matematik.u01.n06.r01": {
+		"text": "Kaç mantar var? Bir bak, tahmin et, sonra doğru sayıya dokun!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.matematik.u01.n06.r02": {
+		"text": "Kaç kitap var? Tahmin et, sonra doğru sayıya dokun!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.matematik.u01.n06.r03": {
+		"text": "Kaç ördek var? İyice bak, tahmin et ve doğru sayıya dokun!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.matematik.u01.n06.r04": {
+		"text": "Kaç taş var? Tahmin et ve doğru sayıya dokun!",
+		"speaker": "ANLATICI"
+	}
+}
