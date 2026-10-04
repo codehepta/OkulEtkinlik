@@ -1,0 +1,569 @@
+{
+	"id": "g1.matematik.u04",
+	"grade": 1,
+	"subject": "matematik",
+	"title_key": "unit.g1.matematik.u04",
+	"source": {
+		"program": "TYMM İlkokul Matematik (1–4)",
+		"doc": "İlkokul Matematik Dersi Öğretim Programı",
+		"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+		"page": 34,
+		"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf",
+		"theme": "MAT.1.2. İşlemlerden Cebirsel Düşünmeye"
+	},
+	"nodes": [
+		{
+			"id": "g1.matematik.u04.n01",
+			"outcomes": [
+				"MAT.1.2.1"
+			],
+			"title_key": "node.g1.matematik.u04.n01",
+			"intro_voice": "vo.g1.matematik.u04.n01.intro",
+			"sticker": "st.matematik.g1_hikaye",
+			"rounds": [
+				{
+					"template": "story",
+					"difficulty": 1,
+					"voice": "vo.g1.matematik.u04.n01.r01",
+					"params": {
+						"pages": [
+							{
+								"text": "label.g1.matematik.u04.n01.h1.p1",
+								"voice": "vo.g1.matematik.u04.n01.h1.p1",
+								"image": "item.sahne.balonlar"
+							},
+							{
+								"text": "label.g1.matematik.u04.n01.h1.p2",
+								"voice": "vo.g1.matematik.u04.n01.h1.p2"
+							}
+						],
+						"questions": [
+							{
+								"voice": "vo.g1.matematik.u04.n01.h1.q1",
+								"text": "label.g1.matematik.u04.n01.h1.q1",
+								"options": [
+									{
+										"type": "text",
+										"value": "label.g1.matematik.isaret.arti",
+										"voice": "vo.g1.matematik.isaret.arti"
+									},
+									{
+										"type": "text",
+										"value": "label.g1.matematik.isaret.eksi",
+										"voice": "vo.g1.matematik.isaret.eksi"
+									}
+								],
+								"answer": 0
+							},
+							{
+								"voice": "vo.g1.matematik.u04.n01.h1.q2",
+								"text": "label.g1.matematik.u04.n01.h1.q2",
+								"options": [
+									{
+										"type": "number",
+										"value": 4,
+										"voice": "vo.sayi.4"
+									},
+									{
+										"type": "number",
+										"value": 5,
+										"voice": "vo.sayi.5"
+									},
+									{
+										"type": "number",
+										"value": 6,
+										"voice": "vo.sayi.6"
+									}
+								],
+								"answer": 1
+							}
+						]
+					}
+				},
+				{
+					"template": "story",
+					"difficulty": 2,
+					"voice": "vo.g1.matematik.u04.n01.r02",
+					"params": {
+						"pages": [
+							{
+								"text": "label.g1.matematik.u04.n01.h2.p1",
+								"voice": "vo.g1.matematik.u04.n01.h2.p1",
+								"image": "item.sahne.kuslar"
+							},
+							{
+								"text": "label.g1.matematik.u04.n01.h2.p2",
+								"voice": "vo.g1.matematik.u04.n01.h2.p2"
+							}
+						],
+						"questions": [
+							{
+								"voice": "vo.g1.matematik.u04.n01.h2.q1",
+								"text": "label.g1.matematik.u04.n01.h2.q1",
+								"options": [
+									{
+										"type": "text",
+										"value": "label.g1.matematik.isaret.arti",
+										"voice": "vo.g1.matematik.isaret.arti"
+									},
+									{
+										"type": "text",
+										"value": "label.g1.matematik.isaret.eksi",
+										"voice": "vo.g1.matematik.isaret.eksi"
+									}
+								],
+								"answer": 1
+							},
+							{
+								"voice": "vo.g1.matematik.u04.n01.h2.q2",
+								"text": "label.g1.matematik.u04.n01.h2.q2",
+								"options": [
+									{
+										"type": "number",
+										"value": 3,
+										"voice": "vo.sayi.3"
+									},
+									{
+										"type": "number",
+										"value": 4,
+										"voice": "vo.sayi.4"
+									},
+									{
+										"type": "number",
+										"value": 5,
+										"voice": "vo.sayi.5"
+									}
+								],
+								"answer": 1
+							}
+						]
+					}
+				},
+				{
+					"template": "story",
+					"difficulty": 2,
+					"voice": "vo.g1.matematik.u04.n01.r03",
+					"params": {
+						"pages": [
+							{
+								"text": "label.g1.matematik.u04.n01.h3.p1",
+								"voice": "vo.g1.matematik.u04.n01.h3.p1",
+								"image": "item.sahne.bilyeler"
+							},
+							{
+								"text": "label.g1.matematik.u04.n01.h3.p2",
+								"voice": "vo.g1.matematik.u04.n01.h3.p2"
+							}
+						],
+						"questions": [
+							{
+								"voice": "vo.g1.matematik.u04.n01.h3.q1",
+								"text": "label.g1.matematik.u04.n01.h3.q1",
+								"options": [
+									{
+										"type": "text",
+										"value": "label.g1.matematik.isaret.arti",
+										"voice": "vo.g1.matematik.isaret.arti"
+									},
+									{
+										"type": "text",
+										"value": "label.g1.matematik.isaret.eksi",
+										"voice": "vo.g1.matematik.isaret.eksi"
+									}
+								],
+								"answer": 0
+							},
+							{
+								"voice": "vo.g1.matematik.u04.n01.h3.q2",
+								"text": "label.g1.matematik.u04.n01.h3.q2",
+								"options": [
+									{
+										"type": "number",
+										"value": 15,
+										"voice": "vo.sayi.15"
+									},
+									{
+										"type": "number",
+										"value": 16,
+										"voice": "vo.sayi.16"
+									},
+									{
+										"type": "number",
+										"value": 17,
+										"voice": "vo.sayi.17"
+									}
+								],
+								"answer": 1
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g1.matematik.u04.n02",
+			"outcomes": [
+				"MAT.1.2.2"
+			],
+			"title_key": "node.g1.matematik.u04.n02",
+			"intro_voice": "vo.g1.matematik.u04.n02.intro",
+			"sticker": "st.matematik.g1_ucan_balon",
+			"rounds": [
+				{
+					"template": "balloon_pop",
+					"difficulty": 1,
+					"voice": "vo.g1.matematik.u04.n02.r01",
+					"params": {
+						"a": 5,
+						"op": "+",
+						"b": 3,
+						"choices": [
+							8,
+							7,
+							9
+						]
+					}
+				},
+				{
+					"template": "balloon_pop",
+					"difficulty": 1,
+					"voice": "vo.g1.matematik.u04.n02.r02",
+					"params": {
+						"a": 9,
+						"op": "-",
+						"b": 4,
+						"choices": [
+							5,
+							6,
+							4
+						]
+					}
+				},
+				{
+					"template": "balloon_pop",
+					"difficulty": 2,
+					"voice": "vo.g1.matematik.u04.n02.r03",
+					"params": {
+						"a": 14,
+						"op": "+",
+						"b": 3,
+						"choices": [
+							17,
+							16,
+							18,
+							15
+						]
+					}
+				},
+				{
+					"template": "balloon_pop",
+					"difficulty": 2,
+					"voice": "vo.g1.matematik.u04.n02.r04",
+					"params": {
+						"a": 18,
+						"op": "-",
+						"b": 5,
+						"choices": [
+							13,
+							12,
+							14,
+							15
+						]
+					}
+				},
+				{
+					"template": "balloon_pop",
+					"difficulty": 3,
+					"voice": "vo.g1.matematik.u04.n02.r05",
+					"params": {
+						"a": 23,
+						"op": "+",
+						"b": 4,
+						"choices": [
+							27,
+							26,
+							28,
+							37
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g1.matematik.u04.n03",
+			"outcomes": [
+				"MAT.1.2.2"
+			],
+			"title_key": "node.g1.matematik.u04.n03",
+			"intro_voice": "vo.g1.matematik.u04.n03.intro",
+			"sticker": "st.matematik.g1_baykus",
+			"rounds": [
+				{
+					"template": "balance",
+					"difficulty": 2,
+					"voice": "vo.g1.matematik.u04.n03.r01",
+					"params": {
+						"mode": "scale",
+						"ask": "estimate",
+						"left": [
+							8,
+							7
+						],
+						"right": [
+							null
+						],
+						"choices": [
+							14,
+							15,
+							16
+						],
+						"estimates": [
+							5,
+							14,
+							20
+						]
+					}
+				},
+				{
+					"template": "balance",
+					"difficulty": 3,
+					"voice": "vo.g1.matematik.u04.n03.r02",
+					"params": {
+						"mode": "scale",
+						"ask": "estimate",
+						"left": [
+							17
+						],
+						"right": [
+							6,
+							null
+						],
+						"choices": [
+							10,
+							11,
+							12
+						],
+						"estimates": [
+							3,
+							10,
+							20
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g1.matematik.u04.n04",
+			"outcomes": [
+				"MAT.1.2.3"
+			],
+			"title_key": "node.g1.matematik.u04.n04",
+			"intro_voice": "vo.g1.matematik.u04.n04.intro",
+			"sticker": "st.matematik.g1_tahterevalli",
+			"rounds": [
+				{
+					"template": "balance",
+					"difficulty": 1,
+					"voice": "vo.g1.matematik.u04.n04.r01",
+					"params": {
+						"mode": "scale",
+						"ask": "compare",
+						"left": [
+							3,
+							2
+						],
+						"right": [
+							5
+						]
+					}
+				},
+				{
+					"template": "balance",
+					"difficulty": 1,
+					"voice": "vo.g1.matematik.u04.n04.r02",
+					"params": {
+						"mode": "scale",
+						"ask": "missing",
+						"left": [
+							3,
+							4
+						],
+						"right": [
+							5,
+							null
+						],
+						"choices": [
+							1,
+							2,
+							3
+						]
+					}
+				},
+				{
+					"template": "balance",
+					"difficulty": 2,
+					"voice": "vo.g1.matematik.u04.n04.r03",
+					"params": {
+						"mode": "scale",
+						"ask": "missing",
+						"left": [
+							6,
+							null
+						],
+						"right": [
+							10
+						],
+						"choices": [
+							3,
+							4,
+							5
+						]
+					}
+				},
+				{
+					"template": "balance",
+					"difficulty": 2,
+					"voice": "vo.g1.matematik.u04.n04.r04",
+					"params": {
+						"mode": "scale",
+						"ask": "missing",
+						"left": [
+							9,
+							3
+						],
+						"right": [
+							null,
+							8
+						],
+						"choices": [
+							3,
+							4,
+							5
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g1.matematik.u04.n05",
+			"outcomes": [
+				"MAT.1.2.4"
+			],
+			"title_key": "node.g1.matematik.u04.n05",
+			"intro_voice": "vo.g1.matematik.u04.n05.intro",
+			"sticker": "st.matematik.g1_aile",
+			"rounds": [
+				{
+					"template": "drag_match",
+					"difficulty": 1,
+					"voice": "vo.g1.matematik.u04.n05.r01",
+					"params": {
+						"pairs": [
+							{
+								"left": {
+									"type": "text",
+									"value": "label.g1.matematik.islem.3_arti_2"
+								},
+								"right": {
+									"type": "text",
+									"value": "label.g1.matematik.islem.5_eksi_2"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "label.g1.matematik.islem.4_arti_5"
+								},
+								"right": {
+									"type": "text",
+									"value": "label.g1.matematik.islem.9_eksi_5"
+								}
+							}
+						]
+					}
+				},
+				{
+					"template": "balance",
+					"difficulty": 1,
+					"voice": "vo.g1.matematik.u04.n05.r02",
+					"params": {
+						"mode": "scale",
+						"ask": "missing",
+						"left": [
+							8
+						],
+						"right": [
+							3,
+							null
+						],
+						"choices": [
+							4,
+							5,
+							6
+						]
+					}
+				},
+				{
+					"template": "drag_match",
+					"difficulty": 2,
+					"voice": "vo.g1.matematik.u04.n05.r03",
+					"params": {
+						"pairs": [
+							{
+								"left": {
+									"type": "text",
+									"value": "label.g1.matematik.islem.6_arti_3"
+								},
+								"right": {
+									"type": "text",
+									"value": "label.g1.matematik.islem.9_eksi_3"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "label.g1.matematik.islem.7_arti_2"
+								},
+								"right": {
+									"type": "text",
+									"value": "label.g1.matematik.islem.9_eksi_2"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "label.g1.matematik.islem.8_arti_4"
+								},
+								"right": {
+									"type": "text",
+									"value": "label.g1.matematik.islem.12_eksi_4"
+								}
+							}
+						]
+					}
+				},
+				{
+					"template": "balance",
+					"difficulty": 2,
+					"voice": "vo.g1.matematik.u04.n05.r04",
+					"params": {
+						"mode": "scale",
+						"ask": "missing",
+						"left": [
+							12
+						],
+						"right": [
+							5,
+							null
+						],
+						"choices": [
+							6,
+							7,
+							8
+						]
+					}
+				}
+			]
+		}
+	]
+}
