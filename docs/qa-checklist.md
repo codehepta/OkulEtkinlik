@@ -165,6 +165,43 @@ Bu şablonların henüz ünite içeriği yok (içerik Faz 5b, 3c–3e ve 6'da ge
 
 ---
 
+# Faz 3b — Matematik için yeni mekanikler
+
+Ekran görüntüleri: `tools/ui_screenshots.gd` (Faz 3b kareleri). Gerçek cihazda kontrol edilecekler:
+
+## Ortak
+1. 1. sınıf profilinde terazi karşılaştırma seçenekleri "daha az / eşit / daha çok" sözcük kartı; her kartın üstündeki minik terazi ikonunda ağır kefe aşağıda ve içinde top var. 2. ve 3. sınıfta `<`, `=`, `>`.
+2. Çok adımlı turlarda (sıraya diz, örüntü, eşleştir, grafik kur) birkaç yanlış yapınca yıldız yine en çok bir yanlış sayılmış gibi geliyor.
+
+## Tahmin modu (count_choose, balance)
+1. Tahmin karoları "≈10" biçiminde; tahmine dokununca cevap sesi (doğru/yanlış) çalmıyor, karo sola geçiyor.
+2. Sayma: her nesneye dokununca üstüne sıra numarası çıkıyor ve sayı okunuyor; aynı nesneye ikinci dokunuş sayılmıyor. Hepsi sayılınca "yakın / uzak" kartları geliyor.
+3. Tartma: "+" düğmesi her basışta sağ kefeye bir küp koyuyor, terazi her küpte biraz düzeliyor ve küp sayısı nesneye eşit olunca dengeleniyor.
+4. İşlem: doğru sonuç "?" yerine oturunca terazi dengeleniyor, sonra yakın/uzak sorusu geliyor. İpucu 1 (yargıda): iki kartın üstünde tahmin ile sonucun farkı görünüyor.
+
+## Rakam karosu girişi (listen_find yazma)
+1. Duyulan sayı hoparlör düğmesiyle tekrar dinlenebiliyor; rakam karoları sıradaki boş kutuyu dolduruyor, dolu kutuya dokununca boşalıyor. Kutular dolmadan onay cevap sayılmıyor; yanlış onaydan sonra rakamlar yerinde kalıyor.
+
+## clock_money (1. sınıf)
+1. Saat okumada seçenek karolarında rakam yok, hoparlör var; dokununca saat sesle okunuyor ve karo yukarı kalkıp kesik çerçeve alıyor. Onay düğmesi seçimi denetliyor.
+2. Saat kurmada hedef saat yazılı değil; hedef karosuna dokununca saat okunuyor. 1 kuruş artık hiçbir yerde çıkmıyor.
+
+## grid (kareli zemin)
+1. Yol kur: ok kartlarına dokununca alttaki programa ekleniyor, programdaki karta dokununca çıkıyor. Oynat düğmesiyle gezgin kare kare yürüyor; duvara ya da kenara çarpınca hafifçe sekip duruyor, başa dönüyor ve program kalıyor. Zorluk 1'de program izi zeminde görünüyor.
+2. Yolu izle: verilen programın bittiği kareye dokunmak kolay; kareler en az 128 px.
+3. Boyama: kareye dokununca boyanıyor, tekrar dokununca siliniyor; boyalı kare renkten başka iç işaretle de ayırt ediliyor. Simetride verilen yarı kilitli ve farklı görünüyor; eksen kalın kesik çizgi.
+4. Silüet ve "N parça": silüet zeminde soluk; N parçada sayaç (zorluk 1) doğru sayıyor, bitişik olmayan kareler kabul edilmiyor.
+
+## chart_build (veri)
+1. Nesneler doğru satıra/sütuna sürüklenince grafikte çetele çizgisi, sayı, küçük resim ya da nokta beliriyor; yanlış yere bırakılan nesne geri dönüyor. Beşli çetelede beşinci çizgi çapraz.
+2. Sorular sesle soruluyor; "en çok / en az" seçenekleri kategori resimleri. Küçük resimler ve noktalar telefonda da seçilebiliyor (dokunma hedefi değiller ama okunaklı olmalılar).
+
+## Asset geldiğinde (parti 011, 012)
+1. `char.grid.gezgin`, `ui.grid.hedef`, `ui.grid.duvar` eklenince kodla çizilen piyon, bayrak ve blok yerine geçiyor ve kareden taşmıyor; gezginin yönü oyunun çizdiği okla anlaşılıyor.
+2. `vo.tahmin.*` ve `vo.saat.*` kayıtları geldikten sonra cihazın TTS sesi yerine kayıtlar çalıyor.
+
+---
+
 # Faz 4c — Türkçe 2. ve 3. sınıf içerikleri
 
 16 ünite (`content/g2/turkce`, `content/g3/turkce`), 80 durak, 274 tur. Profilde sınıfı 2 ya da 3 yapıp Harf Vadisi'ne gir.

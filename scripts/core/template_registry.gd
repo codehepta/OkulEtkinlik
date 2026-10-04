@@ -12,6 +12,8 @@ const SCENES: Dictionary = {
 	"balance": "res://scenes/games/balance/balance.tscn",
 	"clock_money": "res://scenes/games/clock_money/clock_money.tscn",
 	"fraction_pizza": "res://scenes/games/fraction_pizza/fraction_pizza.tscn",
+	"chart_build": "res://scenes/games/chart_build/chart_build.tscn",
+	"grid": "res://scenes/games/grid/grid.tscn",
 	"trace": "res://scenes/games/trace/trace.tscn",
 	"syllable_build": "res://scenes/games/syllable_build/syllable_build.tscn",
 	"story": "res://scenes/games/story/story.tscn",

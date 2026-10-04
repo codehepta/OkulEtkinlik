@@ -261,9 +261,16 @@ Her yeni şablon, gerçek dokunmayla aynı kod yolunu kullanan şu test kancalar
 ## Açık sorular (sahibe)
 
 - **S1 — Karşılaştırma sembolleri:** `balance/compare` seçenekleri `<`, `=`, `>` sembolleri. 1. sınıfta sembol yerine "çok / az / eşit" sözcükleri (ya da ağır kefe ikonu) mı istenir? Şu an 1. sınıf için `item` gruplarıyla somut gösterim var ama seçenekler yine sembol.
+  - **Karar (sahip onayıyla önerilen seçim):** 1. sınıfta "daha az / eşit / daha çok" sözcük kartı + ağır kefe ikonu, 2. sınıftan itibaren sembol (uygulandı, Faz 3b).
 - **S2 — Saat biçimi:** dijital gösterim "3.30" (TDK) mi, okul kitaplarındaki "3:30" mı? (`fmt.clock` değiştirilerek çözülür.) 1. sınıfta dijital gösterim hiç olmasın, yalnızca "saat 3 buçuk" sesi mi olsun?
+  - **Karar (sahip onayıyla önerilen seçim):** `fmt.clock` "3.30" (TDK) kalır; 1. sınıfta dijital gösterim yok: `read` seçenekleri hoparlörlü karo + onay, `set` hedefi sesle (`vo.saat.<h>_<mm>`) (uygulandı, Faz 3b).
 - **S3 — 1 kuruş:** 1 kuruş tedavülde neredeyse yok; küpür listesinde kalsın mı?
+  - **Karar (sahip onayıyla önerilen seçim):** 1 kuruş küpür listesinden çıktı (uygulandı, Faz 3b).
 - **S4 — Banknot görselleri:** gerçek banknotlara benzerlik (renk, boyut) öğretici ama sahte para izlenimi vermemeli; portre ve rakam istemedik. Renk eşlemesi yeterli mi, yoksa yalnızca "oyuncak para" mı olsun?
+  - **Karar (sahip onayıyla önerilen seçim):** "Oyuncak para": gerçek banknot renk ipucu, portre ve rakam yok (010 partisi zaten böyle; değişiklik yok).
 - **S5 — Faz 1 açık sorusu (MAT.1.1.4 karşılaştırma):** `balance/compare` + `item` gruplarıyla iki grubu yan yana karşılaştırma artık mümkün. MAT.1.1.4 bu şablonla karşılansın mı? (İçerik Faz 2 matrisinden sonra.) Tahmin (MAT.1.1.7) için ayrı mod hâlâ yok.
+  - **Karar (sahip onayıyla önerilen seçim):** MAT.1.1.4 `balance/compare` + `item` gruplarıyla karşılanır; ipucu bire bir eşleme çizgileri. MAT.1.1.7 `count_choose` tahmin moduyla (uygulandı, Faz 3b).
 - **S6 — `balloon_pop` kapsamı:** şu an yalnızca toplama/çıkarma işlemi. Spec "doğru cevabı taşıyan balon" diyor; ileride "hedef harfi / sayıyı taşıyan balon" gibi işlem dışı sorular da gerekir mi?
+  - **Karar (sahip onayıyla önerilen seçim):** `balloon_pop` şimdilik yalnızca işlem; ihtiyaç doğunca genişler.
 - **S7 — `pattern` ve `sequence` için çok adımlı turlarda yıldız:** her yanlış adım durak yanlış sayısına ekleniyor (drag_match ile aynı). 3 boşluklu bir örüntüde yıldız eşikleri (≤1 / ≤3 yanlış) sert kalabilir; adım başına değil tur başına mı sayılsın?
+  - **Karar (sahip onayıyla önerilen seçim):** Yıldız hesabında çok adımlı turlar (sequence, pattern, drag_match, chart_build, işlemli tahmin) tur başına en çok 1 yanlış sayılır (`Stars.round_wrong`, uygulandı, Faz 3b). Ustalık hesabı değişmedi.

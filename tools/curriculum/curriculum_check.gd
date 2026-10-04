@@ -29,11 +29,11 @@ const SUBJECT_SOURCES: Dictionary = {
 	},
 }
 
-## Spec §3.7'deki 14 şablon kimliği.
+## Spec §3.7'deki şablon kimlikleri (Faz 3b: grid ve chart_build eklendi).
 const SPEC_TEMPLATES: PackedStringArray = [
 	"drag_match", "count_choose", "sequence", "sort_bins", "trace", "syllable_build",
 	"listen_find", "balloon_pop", "pattern", "balance", "clock_money", "story",
-	"scenario", "fraction_pizza",
+	"scenario", "fraction_pizza", "grid", "chart_build",
 ]
 
 const FITS: PackedStringArray = ["full", "partial", "none"]

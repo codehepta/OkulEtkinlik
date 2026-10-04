@@ -27,12 +27,10 @@
 	"MAT.1.1.4": {
 		"fit": "partial",
 		"templates": [
-			"drag_match"
+			"drag_match",
+			"balance"
 		],
-		"proposed": [
-			"compare_groups"
-		],
-		"note": "a) iki niceliği çok/daha çok/az/daha az/eşit terimleriyle karşılaştırma önerilen compare_groups ile, bire bir eşleme drag_match ile oynanabilir; b–c) benzerlik ve farklılıkları listeleme sözlü etkinlik."
+		"note": "a) iki niceliği çok/daha çok/az/daha az/eşit terimleriyle karşılaştırma balance (scale/compare, item grupları, 1. sınıfta sözcük kartı, bire bir eşleme çizgisi ipucu) ile, bire bir eşleme drag_match ile oynanabilir; b–c) benzerlik ve farklılıkları listeleme sözlü etkinlik."
 	},
 	"MAT.1.1.5": {
 		"fit": "full",
@@ -50,25 +48,23 @@
 		]
 	},
 	"MAT.1.1.7": {
-		"fit": "partial",
+		"fit": "full",
 		"templates": [
 			"count_choose"
 		],
-		"proposed": [
-			"estimate_then_count"
-		],
-		"note": "b) çokluğun büyüklüğünü aralıklı seçeneklerle tahmin etme count_choose ile oynanabilir; a) verilen çokluktaki ilişkileri ekranda gözleyip tahmine bağlama ve c) tahmini sayma sonucuyla karşılaştırıp yargıda bulunma önerilen estimate_then_count gerektirir (spec Açık sorular)."
+		"note": "b) çokluğun büyüklüğünü aralıklı seçeneklerle tahmin etme, a) ekrandaki çokluğu gözleyip tahmine bağlama ve c) tahmini sayma sonucuyla karşılaştırıp yakın/uzak yargısında bulunma count_choose tahmin modu (estimates) ile oynanabilir."
 	},
 	"MAT.1.1.8": {
 		"fit": "partial",
 		"templates": [
 			"listen_find",
-			"count_choose"
+			"count_choose",
+			"balance"
 		],
+		"note": "a) uzunluğa ve kütleye uygun standart olmayan ölçme aracını belirleme listen_find ile, b) ölçüm sonucunu belirlenen birim cinsinden aralıklı seçeneklerle tahmin etme count_choose ile oynanabilir; c) kütle tahminini terazide birim küplerle sınayıp yakın/uzak yargısında bulunma balance tahmin modu (item + value) ile oynanabilir; uzunluk tahminini ekranda birim dizerek sınama için tahmin modunun dizme adımı henüz yok (spec Açık sorular, Faz 3b); kütleyi elde tartarak tahmin ve gerçek nesneyle ölçme ev etkinliği.",
 		"proposed": [
 			"estimate_then_count"
-		],
-		"note": "a) uzunluğa ve kütleye uygun standart olmayan ölçme aracını belirleme listen_find ile, b) ölçüm sonucunu belirlenen birim cinsinden aralıklı seçeneklerle tahmin etme count_choose ile oynanabilir; c) tahminin doğruluğunu ekranda birim dizerek ya da terazide sınayıp yargıda bulunma önerilen estimate_then_count gerektirir; kütleyi elde tartarak tahmin ve gerçek nesneyle ölçme ev etkinliği."
+		]
 	},
 	"MAT.1.1.9": {
 		"fit": "full",
@@ -87,16 +83,14 @@
 		]
 	},
 	"MAT.1.2.2": {
-		"fit": "partial",
+		"fit": "full",
 		"templates": [
 			"balloon_pop",
 			"drag_match",
-			"count_choose"
+			"count_choose",
+			"balance"
 		],
-		"proposed": [
-			"estimate_then_count"
-		],
-		"note": "a–b) işlem ögelerini ve aralarındaki ilişkileri belirleme oynanabilir; c–ç) tahmini zihinden işlem sonucuyla karşılaştırıp tutarlılığı seçme önerilen estimate_then_count gerektirir."
+		"note": "a–b) işlem ögelerini ve aralarındaki ilişkileri belirleme oynanabilir; c–ç) sonucu tahmin edip zihinden işlem sonucuyla karşılaştırma ve tutarlılığı (yakın/uzak) seçme balance tahmin modu (eksik değerli terazi) ile oynanabilir."
 	},
 	"MAT.1.2.3": {
 		"fit": "partial",
@@ -115,15 +109,13 @@
 		"note": "c) ilişkiyi yeniden ifade etme, işlem ailesini model ve işlem kartlarıyla eşleştirerek çalışılır."
 	},
 	"MAT.1.3.1": {
-		"fit": "partial",
+		"fit": "full",
 		"templates": [
 			"listen_find",
-			"sequence"
+			"sequence",
+			"grid"
 		],
-		"proposed": [
-			"grid_path"
-		],
-		"note": "a) yer, yön ve konum kavramlarını belirleme listen_find ile oynanabilir; b) yönergeleri izleyerek başlangıçtan hedefe gitme önerilen grid_path gerektirir."
+		"note": "a) yer, yön ve konum kavramlarını belirleme listen_find ile, b) yönergeleri izleyerek başlangıçtan hedefe gitme grid (path: follow ve build) ile oynanabilir."
 	},
 	"MAT.1.3.2": {
 		"fit": "full",
@@ -161,22 +153,19 @@
 		"templates": [
 			"listen_find",
 			"count_choose",
-			"sort_bins"
-		],
-		"proposed": [
+			"sort_bins",
 			"chart_build"
 		],
-		"note": "d) görselleştirme aracını seçme, f) hazır nesne grafiğini yorumlama ve g) sonuçları oyunda verilen araştırma sorusuna göre değerlendirme oynanabilir; e) verilen veriyle çetele, tablo ve grafik oluşturma önerilen chart_build gerektirir; a–c) araştırma durumunu ve sorularını belirleme ve plan yapma çocuğun kendi araştırması, ç) veri toplama gerçek dünya etkinliği (sınıf ya da ev)."
+		"note": "d) görselleştirme aracını seçme, f) hazır nesne grafiğini yorumlama ve g) sonuçları oyunda verilen araştırma sorusuna göre değerlendirme oynanabilir; e) verilen veriyle çetele, tablo ve grafik oluşturma chart_build ile oynanabilir; a–c) araştırma durumunu ve sorularını belirleme ve plan yapma çocuğun kendi araştırması, ç) veri toplama gerçek dünya etkinliği (sınıf ya da ev)."
 	},
 	"MAT.2.1.1": {
 		"fit": "full",
 		"templates": [
 			"count_choose",
 			"drag_match",
-			"listen_find",
-			"trace"
+			"listen_find"
 		],
-		"note": "c) sayı yazma trace ile çalışılır."
+		"note": "c) sayı yazma 2–3. sınıfta iz sürme yerine rakam karosu girişiyle (listen_find yazma modu, answer: digits) çalışılır."
 	},
 	"MAT.2.1.2": {
 		"fit": "full",
@@ -215,10 +204,10 @@
 		"templates": [
 			"count_choose"
 		],
+		"note": "b) aralıklı seçeneklerle tahmin, a) parça-bütün ilişkisinden yararlanma ve c) tahmini sayma sonucuyla karşılaştırma count_choose tahmin modu (estimates) ile oynanabilir. count_choose en çok 20 nesne gösterdiği için 21–50 aralığındaki çokluklar için tahmin modunun sayma adımı büyütülmeli (spec Açık sorular, Faz 3b).",
 		"proposed": [
 			"estimate_then_count"
-		],
-		"note": "b) aralıklı seçeneklerle tahmin count_choose ile oynanabilir; a) parça-bütün ilişkisinden yararlanma ve c) tahmini sayma sonucuyla karşılaştırma önerilen estimate_then_count gerektirir."
+		]
 	},
 	"MAT.2.1.7": {
 		"fit": "full",
@@ -276,16 +265,14 @@
 		"note": "a–c) verilen ve istenenleri belirleme, işlemi seçme, temsile dönüştürme ve e) çözümü uygulama story, drag_match, count_choose ve balloon_pop ile; ğ) çözüm stratejisinin uygulanabileceği problemleri verilen problemler arasından seçme drag_match ile; h) genellemeyi verilen örneklerle sınama sort_bins ile oynanabilir; ç) kendi ifadeleriyle açıklama ve d) strateji geliştirme serbest üretim, f–g) kendi kullandığı stratejiyi kontrol edip değiştirme ve gözden geçirme öz değerlendirme (oyun çocuğun stratejisini göremez)."
 	},
 	"MAT.2.2.2": {
-		"fit": "partial",
+		"fit": "full",
 		"templates": [
 			"balloon_pop",
 			"drag_match",
-			"count_choose"
+			"count_choose",
+			"balance"
 		],
-		"proposed": [
-			"estimate_then_count"
-		],
-		"note": "a–b) işlem ögelerini ve aralarındaki ilişkileri belirleme oynanabilir; c–ç) tahmini zihinden işlem sonucuyla karşılaştırıp tutarlılığı seçme önerilen estimate_then_count gerektirir."
+		"note": "a–b) işlem ögelerini ve aralarındaki ilişkileri belirleme oynanabilir; c–ç) sonucu tahmin edip zihinden işlem sonucuyla karşılaştırma ve tutarlılığı (yakın/uzak) seçme balance tahmin modu (eksik değerli terazi) ile oynanabilir."
 	},
 	"MAT.2.2.3": {
 		"fit": "full",
@@ -336,34 +323,31 @@
 		"fit": "partial",
 		"templates": [
 			"listen_find",
-			"drag_match"
+			"drag_match",
+			"grid"
 		],
-		"proposed": [
-			"free_build"
-		],
-		"note": "a–b) yapılardaki geometrik cisimleri belirleme ve ilişkilendirme oynanabilir; c) cisimleri birleştirerek özgün yapı oluşturma önerilen free_build gerektirir; somut bloklarla kurma ev etkinliği olarak önerilebilir."
+		"note": "a–b) yapılardaki geometrik cisimleri belirleme ve ilişkilendirme oynanabilir; c) birleştirerek yapı oluşturma denetlenebilir hedefle (silüeti eşle, N parça kullan) grid (paint: silhouette, pieces) ile ekranda kare birimlerle oynanabilir; özgün yapı somut bloklarla kurma ev etkinliği olarak önerilebilir."
 	},
 	"MAT.2.3.3": {
 		"fit": "partial",
 		"templates": [
 			"listen_find",
-			"drag_match"
+			"drag_match",
+			"grid"
 		],
-		"proposed": [
-			"free_build"
-		],
-		"note": "a–b) modellerdeki geometrik şekilleri belirleme ve ilişkilendirme oynanabilir; c) şekilleri birleştirerek özgün model oluşturma önerilen free_build gerektirir."
+		"note": "a–b) modellerdeki geometrik şekilleri belirleme ve ilişkilendirme oynanabilir; c) şekilleri birleştirerek model oluşturma denetlenebilir hedefle (silüeti eşle, N parça kullan) grid (paint: silhouette, pieces) ile oynanabilir; serbest özgün model ustalık hesabına girmediği için ev etkinliği olarak önerilebilir."
 	},
 	"MAT.2.3.4": {
 		"fit": "partial",
 		"templates": [
 			"sort_bins",
-			"listen_find"
+			"listen_find",
+			"grid"
 		],
 		"proposed": [
-			"grid_draw"
+			"grid_transform"
 		],
-		"note": "a) ve c) farklı yön ve büyüklükteki şekil ve cisimleri tanıyıp aynı şekil olarak ayırma oynanabilir; b) şekli farklı büyüklük ya da yönde kendisi oluşturma önerilen grid_draw gerektirir (cisimler için somut model ev etkinliği)."
+		"note": "a) ve c) farklı yön ve büyüklükteki şekil ve cisimleri tanıyıp aynı şekil olarak ayırma oynanabilir; b) şekli kareli zeminde kendisi oluşturma grid (paint/copy) ile oynanabilir, ancak farklı büyüklük ya da yönde oluşturma (büyütme, döndürme) grid'in ilk sürümünde yok (spec Açık sorular, Faz 3b); cisimler için somut model ev etkinliği."
 	},
 	"MAT.2.3.5": {
 		"fit": "partial",
@@ -379,12 +363,10 @@
 		"fit": "partial",
 		"templates": [
 			"count_choose",
-			"listen_find"
+			"listen_find",
+			"grid"
 		],
-		"proposed": [
-			"grid_path"
-		],
-		"note": "b) ölçüte uygun bilgiyi toplama (yolların kare sayısını sayma) count_choose ile, d) seçenekler arasından ölçüte uygun yolu seçme listen_find ile oynanabilir; c) yol seçenekleri oluşturma, ç) seçenekleri mantıksal denetleme ve e) ölçüt değişince yeniden planlama önerilen grid_path gerektirir; a) ölçütü kendisi belirleme doğru/yanlışı olmayan kişisel karar, oyunda ölçüt hazır verilir."
+		"note": "b) ölçüte uygun bilgiyi toplama (yolların kare sayısını sayma) count_choose ile, d) seçenekler arasından ölçüte uygun yolu seçme listen_find ile, c) yol oluşturma, ç) yolu mantıksal denetleme ve e) engel eklenince yeniden planlama grid (path/build, shortest, walls) ile oynanabilir; a) ölçütü kendisi belirleme doğru/yanlışı olmayan kişisel karar, oyunda ölçüt hazır verilir."
 	},
 	"MAT.2.3.7": {
 		"fit": "full",
@@ -398,22 +380,19 @@
 		"templates": [
 			"listen_find",
 			"count_choose",
-			"sort_bins"
-		],
-		"proposed": [
+			"sort_bins",
 			"chart_build"
 		],
-		"note": "d) görselleştirme aracını seçme, f) hazır şekil grafiğini yorumlama ve g) sonuçları oyunda verilen araştırma sorusuna göre değerlendirme oynanabilir; e) verilen veriyle çetele, tablo ve grafik oluşturma önerilen chart_build gerektirir; a–c) araştırma durumunu ve sorularını belirleme ve plan yapma çocuğun kendi araştırması, ç) veri toplama gerçek dünya etkinliği (sınıf ya da ev)."
+		"note": "d) görselleştirme aracını seçme, f) hazır şekil grafiğini yorumlama ve g) sonuçları oyunda verilen araştırma sorusuna göre değerlendirme oynanabilir; e) verilen veriyle çetele, tablo ve grafik oluşturma chart_build ile oynanabilir; a–c) araştırma durumunu ve sorularını belirleme ve plan yapma çocuğun kendi araştırması, ç) veri toplama gerçek dünya etkinliği (sınıf ya da ev)."
 	},
 	"MAT.3.1.1": {
 		"fit": "full",
 		"templates": [
 			"count_choose",
 			"drag_match",
-			"listen_find",
-			"trace"
+			"listen_find"
 		],
-		"note": "c) sayı yazma trace ile çalışılır."
+		"note": "c) sayı yazma 2–3. sınıfta iz sürme yerine rakam karosu girişiyle (listen_find yazma modu, answer: digits) çalışılır."
 	},
 	"MAT.3.1.2": {
 		"fit": "full",
@@ -469,10 +448,10 @@
 		"templates": [
 			"count_choose"
 		],
+		"note": "Tek bileşen a): çokluğu gruplar hâlinde gösterip bir grubu sayarak bütünü seçme (parça-bütün ilişkisi) count_choose ile kısmen oynanabilir; tahmini sayma sonucuyla karşılaştırma count_choose tahmin modu ile yapılır, ancak mod en çok 20 nesne gösterir; 100'e kadar çokluk için sayma adımının gruplu sürümü gerekir (spec Açık sorular, Faz 3b).",
 		"proposed": [
 			"estimate_then_count"
-		],
-		"note": "Tek bileşen a): çokluğu gruplar hâlinde gösterip bir grubu sayarak bütünü seçme (parça-bütün ilişkisi) count_choose ile kısmen oynanabilir; parça-bütün ve dağılım ilişkisini tahmine bağlayıp sayma sonucuyla karşılaştırma önerilen estimate_then_count gerektirir (MAT.2.1.6 a ile aynı)."
+		]
 	},
 	"MAT.3.1.9": {
 		"fit": "full",
@@ -540,16 +519,14 @@
 		]
 	},
 	"MAT.3.2.1": {
-		"fit": "partial",
+		"fit": "full",
 		"templates": [
 			"balloon_pop",
 			"drag_match",
-			"count_choose"
+			"count_choose",
+			"balance"
 		],
-		"proposed": [
-			"estimate_then_count"
-		],
-		"note": "a–b) işlem ögelerini ve aralarındaki ilişkileri belirleme oynanabilir; c–ç) tahmini zihinden işlem sonucuyla karşılaştırıp tutarlılığı seçme önerilen estimate_then_count gerektirir."
+		"note": "a–b) işlem ögelerini ve aralarındaki ilişkileri belirleme oynanabilir; c–ç) sonucu tahmin edip zihinden işlem sonucuyla karşılaştırma ve tutarlılığı (yakın/uzak) seçme balance tahmin modu (eksik değerli terazi) ile oynanabilir."
 	},
 	"MAT.3.2.2": {
 		"fit": "full",
@@ -636,12 +613,10 @@
 		"fit": "partial",
 		"templates": [
 			"listen_find",
-			"drag_match"
+			"drag_match",
+			"grid"
 		],
-		"proposed": [
-			"grid_draw"
-		],
-		"note": "a–b) çizim araçlarını tanıma ve uygun aracı seçme oynanabilir; c) aracı kullanarak çizme önerilen grid_draw ile ekranda yapılabilir; cetvelle kâğıda çizme sınıf ya da ev etkinliği."
+		"note": "a–b) çizim araçlarını tanıma ve uygun aracı seçme oynanabilir; c) aracı kullanarak çizme grid (paint: copy, code) ile ekranda yapılabilir; cetvelle kâğıda çizme sınıf ya da ev etkinliği."
 	},
 	"MAT.3.3.4": {
 		"fit": "partial",
@@ -673,38 +648,32 @@
 		]
 	},
 	"MAT.3.3.7": {
-		"fit": "partial",
+		"fit": "full",
 		"templates": [
 			"listen_find",
-			"drag_match"
+			"drag_match",
+			"grid"
 		],
-		"proposed": [
-			"grid_draw"
-		],
-		"note": "a) bir parçası verilen şekli inceleyip doğru tamamlanmış şekli ya da ayna parçasını seçme oynanabilir; b) şekli kareli zeminde kendisi tamamlama önerilen grid_draw gerektirir."
+		"note": "a) bir parçası verilen şekli inceleyip doğru tamamlanmış şekli ya da ayna parçasını seçme oynanabilir; b) şekli kareli zeminde kendisi tamamlama grid (paint/symmetry) ile oynanabilir."
 	},
 	"MAT.3.3.8": {
-		"fit": "partial",
+		"fit": "full",
 		"templates": [
 			"drag_match",
-			"listen_find"
+			"listen_find",
+			"grid"
 		],
-		"proposed": [
-			"grid_draw"
-		],
-		"note": "a) yönergeleri ok kodlarıyla eşleştirerek yeniden ifade etme ve c) oluşan simetri hakkında yargı seçme oynanabilir; b) kodlanmış yönergeyi izleyerek şekli kareli zeminde tamamlama önerilen grid_draw gerektirir."
+		"note": "a) yönergeleri ok kodlarıyla eşleştirerek yeniden ifade etme ve c) oluşan simetri hakkında yargı seçme oynanabilir; b) kodlanmış yönergeyi izleyerek şekli kareli zeminde tamamlama grid (paint: code, symmetry) ile oynanabilir."
 	},
 	"MAT.3.4.1": {
 		"fit": "partial",
 		"templates": [
 			"listen_find",
 			"count_choose",
-			"sort_bins"
-		],
-		"proposed": [
+			"sort_bins",
 			"chart_build"
 		],
-		"note": "d) görselleştirme aracını seçme, f) hazır nokta grafiğini yorumlama ve g) sonuçları oyunda verilen araştırma sorusuna göre değerlendirme oynanabilir; e) verilen veriyle çetele, tablo ve grafik oluşturma önerilen chart_build gerektirir; a–c) araştırma durumunu ve sorularını belirleme ve plan yapma çocuğun kendi araştırması, ç) veri toplama gerçek dünya etkinliği (sınıf ya da ev)."
+		"note": "d) görselleştirme aracını seçme, f) hazır nokta grafiğini yorumlama ve g) sonuçları oyunda verilen araştırma sorusuna göre değerlendirme oynanabilir; e) verilen veriyle çetele, tablo ve grafik oluşturma chart_build ile oynanabilir; a–c) araştırma durumunu ve sorularını belirleme ve plan yapma çocuğun kendi araştırması, ç) veri toplama gerçek dünya etkinliği (sınıf ya da ev)."
 	},
 	"T.D.1.1": {
 		"fit": "partial",
