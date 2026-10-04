@@ -12,12 +12,18 @@ const BASE_Y: float = 520.0
 const AMPLITUDE: float = 200.0
 const WAVE: float = 1.1
 const CANVAS: Vector2 = Vector2(1920, 1080)
-const STAR_SIZE: float = 90.0
+const STAR_SIZE: float = 68.0
+## Yıldızlar durağın altında küçük bir yay çizer; durağın kendi genişliğinde kalır,
+## komşu durağa ve halesine hiç taşmaz.
+const STAR_STEP: float = 72.0
+const STAR_ARC: float = 14.0
+## Hale dahil bir durağın kapladığı kare.
+const FOOTPRINT: float = STOP_SIZE + 60.0
 ## Kil patika katmanları (alttan üste): gölge, koyu kenar, gövde, üst parlaklık.
-const PATH_SHADOW: Color = Color(0.12, 0.08, 0.02, 0.28)
-const PATH_EDGE: Color = Color(0.62, 0.42, 0.24)
-const PATH_BODY: Color = Color(0.96, 0.83, 0.58)
-const PATH_SHINE: Color = Color(1.0, 0.95, 0.82, 0.85)
+const PATH_SHADOW: Color = ClayStyle.SHADOW
+const PATH_EDGE: Color = ClayStyle.CLAY_EDGE
+const PATH_BODY: Color = ClayStyle.SAND
+const PATH_SHINE: Color = Color(ClayStyle.IVORY, 0.85)
 const PATH_WIDTH: float = 70.0
 const PATH_EDGE_WIDTH: float = 10.0
 const PATH_SHADOW_OFFSET: Vector2 = Vector2(0, 14)
@@ -26,20 +32,20 @@ const PATH_SHINE_WIDTH: float = 14.0
 ## Numara rozeti.
 const NUMBER_SIZE: float = 84.0
 const NUMBER_FONT_SIZE: int = 52
-const NUMBER_FILL: Color = Color(1.0, 0.96, 0.86)
-const NUMBER_EDGE: Color = Color(0.62, 0.42, 0.24)
-const NUMBER_TEXT: Color = Color(0.25, 0.15, 0.08)
+const NUMBER_FILL: Color = ClayStyle.IVORY
+const NUMBER_EDGE: Color = ClayStyle.CLAY_EDGE
+const NUMBER_TEXT: Color = ClayStyle.INK
 ## Açık durağın nabzı.
 const PULSE_SCALE: float = 1.07
 const PULSE_SECONDS: float = 0.9
 ## Kaydırma okları.
 const ARROW_SIZE: float = 136.0
 const ARROW_MARGIN: float = 24.0
-const ARROW_FILL: Color = Color(0.96, 0.78, 0.55)
-const ARROW_INK: Color = Color(0.45, 0.27, 0.12)
+const ARROW_FILL: Color = ClayStyle.APRICOT
+const ARROW_INK: Color = ClayStyle.TITLE_INK
 const ARROW_STEP: float = 760.0
 const ARROW_SCROLL_SECONDS: float = 0.45
-const GLOW_COLOR: Color = Color(1.0, 0.9, 0.3, 0.85)
+const GLOW_COLOR: Color = ClayStyle.GLOW
 const SHAKE_PIXELS: float = 14.0
 
 var app: Node = AppState
@@ -53,6 +59,8 @@ var _buttons: Dictionary = {}
 var _highlight: String = ""
 var _scroll: ScrollContainer = null
 var _pulsing: Dictionary = {}
+var _stars: Dictionary = {}
+var _centers: Dictionary = {}
 var _arrow_left: Button = null
 var _arrow_right: Button = null
 var _navigating: bool = false
@@ -166,7 +174,10 @@ func _build() -> void:
 		if state == "open":
 			_pulsing[id] = _pulse(b)
 		if state != "locked":
-			content.add_child(_star_row(c, int(app.progress.best_stars(app.profile_id, id))))
+			var row: Control = _star_row(c, int(app.progress.best_stars(app.profile_id, id)))
+			content.add_child(row)
+			_stars[id] = row
+		_centers[id] = c
 	if focus_x >= 0.0:
 		_center_on.call_deferred(focus_x)
 
@@ -219,16 +230,7 @@ func _number_badge(n: int) -> Control:
 	badge.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	badge.size = Vector2(NUMBER_SIZE, NUMBER_SIZE)
 	badge.position = Vector2((STOP_SIZE - NUMBER_SIZE) / 2.0, -NUMBER_SIZE * 0.55)
-	var box: StyleBoxFlat = StyleBoxFlat.new()
-	box.bg_color = NUMBER_FILL
-	box.set_corner_radius_all(int(NUMBER_SIZE / 2.0))
-	box.border_color = NUMBER_EDGE
-	box.set_border_width_all(5)
-	box.border_width_bottom = 9
-	box.shadow_color = Color(0.12, 0.08, 0.02, 0.3)
-	box.shadow_size = 6
-	box.shadow_offset = Vector2(0, 5)
-	badge.add_theme_stylebox_override("panel", box)
+	badge.add_theme_stylebox_override("panel", ClayStyle.plaque_box(NUMBER_FILL, NUMBER_EDGE, int(NUMBER_SIZE / 2.0), 5, 4, 6, 0.0, 0.0))
 	var label: Label = Label.new()
 	label.text = str(n)
 	label.set_anchors_preset(Control.PRESET_FULL_RECT)
@@ -267,17 +269,7 @@ func _arrow_button(dir: int) -> Button:
 	else:
 		b.offset_left = ARROW_MARGIN
 		b.offset_right = ARROW_SIZE + ARROW_MARGIN
-	for st: String in ["normal", "hover", "pressed", "focus"]:
-		var box: StyleBoxFlat = StyleBoxFlat.new()
-		box.bg_color = ARROW_FILL.darkened(0.08) if st == "pressed" else ARROW_FILL
-		box.set_corner_radius_all(int(ARROW_SIZE / 2.0))
-		box.border_color = ARROW_FILL.darkened(0.25)
-		box.set_border_width_all(5)
-		box.border_width_bottom = 10
-		box.shadow_color = Color(0.12, 0.08, 0.02, 0.3)
-		box.shadow_size = 8
-		box.shadow_offset = Vector2(0, 6)
-		b.add_theme_stylebox_override(st, box)
+	ClayStyle.style_button(b, ARROW_FILL, int(ARROW_SIZE / 2.0))
 	b.draw.connect(func() -> void:
 		var c: Vector2 = b.size / 2.0 + Vector2(6.0 * dir, -2.0)
 		var w: float = ARROW_SIZE * 0.22
@@ -326,17 +318,38 @@ func _stop_button(state: String) -> Button:
 	img.set("stretch_mode", TextureRect.STRETCH_KEEP_ASPECT_CENTERED)
 	return b
 
+## Üç yıldız durağın alt kenarında yay biçiminde (ortadaki biraz aşağıda).
 func _star_row(center: Vector2, stars: int) -> Control:
-	var row: HBoxContainer = HBoxContainer.new()
-	row.add_theme_constant_override("separation", 8)
+	var row: Control = Control.new()
 	row.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	row.position = Vector2(center.x, center.y + STOP_SIZE / 2.0 - STAR_SIZE * 0.35)
 	for n: int in 3:
 		var s: Control = _image("ui.star" if n < stars else "ui.star_empty")
+		s.set("min_side", 0.0)
+		s.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		row.add_child(s)
 		s.custom_minimum_size = Vector2(STAR_SIZE, STAR_SIZE)
-		s.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	row.position = Vector2(center.x - (3.0 * STAR_SIZE + 16.0) / 2.0, center.y + STOP_SIZE / 2.0 + 8.0)
+		s.size = Vector2(STAR_SIZE, STAR_SIZE)
+		var dx: float = (n - 1) * STAR_STEP
+		var dy: float = STAR_ARC if n == 1 else 0.0
+		s.position = Vector2(dx - STAR_SIZE / 2.0, dy)
 	return row
+
+## Durağın yıldızlarının patika içeriğindeki dikdörtgenleri (kilitli durakta boş).
+func star_rects(node_id: String) -> Array[Rect2]:
+	var out: Array[Rect2] = []
+	var row: Control = _stars.get(node_id, null) as Control
+	if row == null:
+		return out
+	for c: Node in row.get_children():
+		var s: Control = c as Control
+		out.append(Rect2(row.position + s.position, s.size))
+	return out
+
+## Durağın hale dahil kapladığı alan (patika içeriğinde); numara rozeti de bunun içindedir.
+func stop_footprint(node_id: String) -> Rect2:
+	var c: Vector2 = _centers.get(node_id, Vector2.ZERO)
+	return Rect2(c - Vector2(FOOTPRINT, FOOTPRINT) / 2.0, Vector2(FOOTPRINT, FOOTPRINT))
 
 ## Yeni açılan durağın halesi; hareket azaltılmışsa sabit durur.
 func _glow(center: Vector2) -> Control:
@@ -346,10 +359,7 @@ func _glow(center: Vector2) -> Control:
 	ring.position = center - ring.size / 2.0
 	ring.pivot_offset = ring.size / 2.0
 	ring.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	var box: StyleBoxFlat = StyleBoxFlat.new()
-	box.bg_color = GLOW_COLOR
-	box.set_corner_radius_all(int(size_px / 2.0))
-	ring.add_theme_stylebox_override("panel", box)
+	ring.add_theme_stylebox_override("panel", ClayStyle.soft_box(GLOW_COLOR, int(size_px / 2.0)))
 	if not app.reduce_motion():
 		var tw: Tween = ring.create_tween().set_loops()
 		tw.tween_property(ring, "scale", Vector2(1.12, 1.12), 0.6)

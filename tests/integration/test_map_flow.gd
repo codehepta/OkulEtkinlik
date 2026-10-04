@@ -287,7 +287,7 @@ func test_result_buttons_have_icons() -> void:
 func test_region_labels_fit_inside_cards() -> void:
 	_login(1)
 	_app.goto("world_map")
-	await wait_frames(3)
+	await wait_process_frames(3)
 	var cards: Array[Button] = []
 	for subject: String in ["matematik", "turkce", "hayat_bilgisi", "fen"]:
 		cards.append(_screen().region_button(subject))
@@ -341,3 +341,68 @@ func test_open_stop_does_not_pulse_with_reduce_motion() -> void:
 	_save.data["settings"]["reduce_motion"] = true
 	_app.goto("region_path", {"subject": "matematik"})
 	assert_false(_screen().stop_pulsing(N1))
+
+const REPLAY_SCRIPT: String = "res://scenes/components/replay_voice_button.gd"
+
+func _replay_buttons(n: Node) -> Array[Button]:
+	var out: Array[Button] = []
+	for c: Node in n.find_children("*", "Button", true, false):
+		var s: Script = c.get_script() as Script
+		if s != null and s.resource_path == REPLAY_SCRIPT:
+			out.append(c as Button)
+	return out
+
+func test_replay_button_looks_the_same_on_every_screen() -> void:
+	var id: String = _login(1)
+	var screens: Array = [["world_map", {}], ["region_path", {"subject": "matematik"}],
+		["lesson", {"node_id": N1}], ["album", {}], ["session_end", {}]]
+	for entry: Array in screens:
+		_app.goto(str(entry[0]), entry[1] as Dictionary)
+		await wait_process_frames(3)
+		var buttons: Array[Button] = _replay_buttons(_screen())
+		assert_eq(buttons.size(), 1, "%s: tek tekrar dinle düğmesi" % entry[0])
+		if buttons.is_empty():
+			continue
+		var b: Button = buttons[0]
+		assert_eq(b.size, Vector2(128, 128), "%s: 128 px" % entry[0])
+		var box: StyleBoxFlat = b.get_theme_stylebox("normal") as StyleBoxFlat
+		assert_not_null(box, "%s: kil kutusu" % entry[0])
+		if box != null:
+			assert_eq(box.bg_color, ClayStyle.CREAM, "%s: bej kil zemin" % entry[0])
+			assert_gte(box.corner_radius_top_left, 64, "%s: yuvarlak" % entry[0])
+		var icon: Control = b.get_node("Icon") as Control
+		assert_true(Rect2(Vector2.ZERO, b.size).encloses(Rect2(icon.position, icon.size)),
+			"%s: simge düğmenin içinde (zemin görünür)" % entry[0])
+	assert_ne(id, "")
+
+func test_path_stars_never_overlap_neighbour_stops() -> void:
+	var id: String = _login(1)
+	var no_results: Array[RoundResult] = []
+	_progress.record_node(id, N1, no_results)
+	_app.goto("region_path", {"subject": "matematik", "highlight": N2})
+	await wait_process_frames(2)
+	var ids: Array[String] = _screen().stop_ids()
+	for i: int in ids.size():
+		var stars: Array[Rect2] = _screen().star_rects(ids[i])
+		for j: int in ids.size():
+			if j == i:
+				continue
+			var other: Rect2 = _screen().stop_footprint(ids[j])
+			for r: Rect2 in stars:
+				assert_false(r.intersects(other), "durak %d yıldızı durak %d ile çakışmamalı" % [i + 1, j + 1])
+	assert_eq(_screen().star_rects(N1).size(), 3)
+
+func test_every_label_uses_andika() -> void:
+	_login(1)
+	for scene: String in ["world_map", "album", "session_end"]:
+		_app.goto(scene)
+		await wait_process_frames(2)
+		for c: Node in _screen().find_children("*", "", true, false):
+			if c is Label or c is Button:
+				var f: Font = (c as Control).get_theme_font("font")
+				assert_eq(f.get_font_name(), "Andika", "%s: %s Andika" % [scene, c.name])
+	_app.goto("lesson", {"node_id": N1})
+	var ok: bool = await wait_until(func() -> bool: return _screen().current_game() != null, 6.0)
+	assert_true(ok)
+	for c: Node in _screen().find_children("*", "Label", true, false):
+		assert_eq((c as Label).get_theme_font("font").get_font_name(), "Andika", "ders: %s" % c.get_path())
