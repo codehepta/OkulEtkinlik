@@ -127,3 +127,30 @@ func test_show_hint_2_resolves_round() -> void:
 		await wait_for_signal(g.finished, 5.0)
 		assert_eq(_results.size(), 1, id + ": finished yayılmalı")
 		assert_true(_results[0].helped, id + ": helped olmalı")
+
+# --- Görsel düzen: çetele modu, hoparlör düğmesi ---
+
+func test_tally_text_draws_bars_not_label() -> void:
+	var tv: GDScript = load("res://scenes/games/token_view.gd") as GDScript
+	assert_eq(tv.tally_count("|||"), 3)
+	assert_eq(tv.tally_count("|||||"), 5)
+	assert_eq(tv.tally_count("||||||"), 0, "en çok 5")
+	assert_eq(tv.tally_count("1"), 0)
+	assert_eq(tv.tally_count(""), 0)
+	var view: Control = (load("res://scenes/games/token_view.tscn") as PackedScene).instantiate() as Control
+	add_child_autofree(view)
+	view.call("set_token", {"type": "text", "value": "label.cetele.4"})
+	var tile: Node = view.get_child(0)
+	assert_eq(int(tile.get("tally")), 4)
+	assert_false((tile.get_node("Label") as Label).visible, "çetelede yazı gizli")
+
+func test_listen_find_speaker_replays_target_without_answer() -> void:
+	var g: MiniGame = _make("listen_find", _listen_params())
+	var before: int = _fake.said.count("vo.sayi.1")
+	g.call("_debug_replay")
+	assert_eq(_fake.said.count("vo.sayi.1"), before + 1, "hedef sesi yeniden okunur")
+	assert_eq(_answers.size(), 0, "cevap sayılmaz")
+	assert_eq(g.attempts, 0)
+	g.runner_hold = true
+	g.call("_debug_replay")
+	assert_eq(_fake.said.count("vo.sayi.1"), before + 1, "runner geri bildirimi sırasında sessiz")

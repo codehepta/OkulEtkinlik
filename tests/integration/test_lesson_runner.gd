@@ -235,3 +235,33 @@ func test_difficulty_uses_mastery() -> void:
 	outs["TEST.1"] = {"mastery": 0.9, "box": 1, "due": 0}
 	await _start()
 	assert_eq(_runner.current_game().difficulty, 2)
+
+# --- Ders ekranı düzeni: bölge arka planı, tur göstergesi, Bilge ---
+
+func test_region_background_from_subject() -> void:
+	var script: GDScript = load(RUNNER_SCENE.replace(".tscn", ".gd")) as GDScript
+	assert_eq(script.region_bg_key("matematik"), "region.sayi_ormani.bg")
+	assert_eq(script.region_bg_key("fen"), "region.kesif_laboratuvari.bg")
+	assert_eq(script.region_bg_key("yok"), "")
+	await _start()
+	var bg: TextureRect = _runner.get_node("Background") as TextureRect
+	assert_not_null(bg.texture, "Sayı Ormanı arka planı yüklenmeli")
+
+func test_round_dots_follow_progress_and_requeue() -> void:
+	await _start()
+	var dots: Control = _runner.get_node("TopBar/RoundDots") as Control
+	assert_eq(int(dots.call("total_count")), 3)
+	assert_eq(int(dots.call("done_count")), 0)
+	await _win_round()
+	assert_eq(int(dots.call("done_count")), 1)
+	await _wrong_answers(3)
+	assert_eq(int(dots.call("total_count")), 4, "yeniden eklenen tur göstergede de görünür")
+
+func test_bilge_talks_while_line_plays() -> void:
+	await _start()
+	var bilge: Control = _runner.get_node("Bilge") as Control
+	assert_true(bool(bilge.call("has_figure")), "Bilge görseli (poz ya da sayfa kesiti) olmalı")
+	_runner.call("_set_talking", true)
+	assert_true(bool(bilge.call("is_talking")))
+	_runner.call("_set_talking", false)
+	assert_false(bool(bilge.call("is_talking")))

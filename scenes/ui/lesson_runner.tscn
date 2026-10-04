@@ -1,8 +1,10 @@
-[gd_scene load_steps=5 format=3]
+[gd_scene load_steps=7 format=3]
 
 [ext_resource type="Script" path="res://scenes/ui/lesson_runner.gd" id="1"]
 [ext_resource type="PackedScene" path="res://scenes/components/replay_voice_button.tscn" id="2"]
 [ext_resource type="PackedScene" path="res://scenes/components/big_button.tscn" id="3"]
+[ext_resource type="Script" path="res://scenes/components/round_dots.gd" id="4"]
+[ext_resource type="Script" path="res://scenes/components/bilge_corner.gd" id="5"]
 
 [node name="LessonRunner" type="Control"]
 layout_mode = 3
@@ -12,6 +14,50 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1")
+
+[node name="Base" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.99, 0.9, 0.74, 1)
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Wash" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(1, 0.97, 0.9, 0.14)
+
+[node name="Bilge" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = -356.0
+offset_right = 266.0
+offset_bottom = -12.0
+grow_vertical = 0
+mouse_filter = 2
+script = ExtResource("5")
 
 [node name="Host" type="CenterContainer" parent="."]
 layout_mode = 1
@@ -32,6 +78,19 @@ anchor_right = 1.0
 offset_bottom = 160.0
 grow_horizontal = 2
 mouse_filter = 2
+
+[node name="RoundDots" type="Control" parent="TopBar"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -400.0
+offset_top = 30.0
+offset_right = 400.0
+offset_bottom = 130.0
+grow_horizontal = 2
+mouse_filter = 2
+script = ExtResource("4")
 
 [node name="ReplayButton" parent="TopBar" instance=ExtResource("2")]
 layout_mode = 1
