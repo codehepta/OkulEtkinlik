@@ -71,6 +71,17 @@ func _run() -> void:
 	await _shot("14_parent_panel")
 	await _show("session_end", {})
 	await _shot("15_session_end")
+
+	# --- Ek kareler: açılış (animasyon bitmiş), kazanılmış çıkartmalı albüm ---
+	await _show("splash", {})
+	await _frames(150)
+	await _shot("16_splash_settled")
+	for p: Variant in root.get_node("SaveService").data["profiles"]:
+		if str((p as Dictionary)["id"]) == pid:
+			(p as Dictionary)["stickers"] = ["st.matematik.elma", "st.matematik.balon"]
+	await _show("album", {})
+	await _shot("17_album_earned")
+	# --- Ek kareler sonu ---
 	print("ui_screenshots: %d görüntü -> %s" % [_shots, ProjectSettings.globalize_path(OUT_DIR)])
 	quit(0)
 
