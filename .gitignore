@@ -14,6 +14,8 @@ export_credentials.cfg
 !.env.example
 *.log
 .superpowers/
+# Ajan çalışma ağaçları
+.claude/worktrees/
 
 # Sahibin ham AI çıktıları (işlenmiş PNG'ler assets/images altında)
 assets/_raw/

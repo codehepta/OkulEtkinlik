@@ -15,6 +15,10 @@ func _initialize() -> void:
 
 func _run() -> void:
 	DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path(OUT_DIR))
+	# build/ altındaki PNG'ler Godot'ya içe aktarılmasın (import önbelleği şişmesin).
+	var ignore: String = ProjectSettings.globalize_path("res://build/.gdignore")
+	if not FileAccess.file_exists(ignore):
+		FileAccess.open(ignore, FileAccess.WRITE).close()
 	var save: Node = root.get_node("SaveService")
 	save.set_base_dir("user://ui_shots")
 	for f: String in ["save_v1.json", "save_v1.bak.json", "save_v1.tmp.json"]:
