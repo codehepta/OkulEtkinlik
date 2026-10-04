@@ -18,6 +18,14 @@ const CHOICE_Y: float = 716.0
 const CHOICE_FONT_SIZE: int = 108
 const HINT_STEP_SECONDS: float = 0.9
 const MAX_VOICED_COUNT: int = 20
+## 10'dan çok nesne onluk + birlik olarak dizilir (MAT.1.1.2): üstte 10'luk sıra, altında kalanlar.
+const GROUP_SIZE: int = 10
+## Onluk / birlik şeritleri: tepsi içinde iki ayrı açık kil şerit.
+const GROUP_ROW_GAP: float = 52.0
+const GROUP_STRIP_PAD: float = 14.0
+const GROUP_ITEM_RATIO: float = 0.92
+## Onluk şeridi tepsinin neredeyse tam genişliğini kullanır (nesneler büyük kalsın).
+const GROUP_AREA: Rect2 = Rect2(320, 208, 1280, 436)
 
 var _count: int = 0
 var _choices: Array[int] = []
@@ -32,7 +40,10 @@ func setup(params: Dictionary, difficulty_value: int, context: RoundContext) -> 
 	for c: Variant in params["choices"] as Array:
 		_choices.append(int(c))
 	add_child(ClayStyle.make_panel(ClayStyle.tray_box(0.8), TRAY_RECT))
-	_build_items(str(params["item"]))
+	if is_grouped_by_ten():
+		_build_ten_groups(str(params["item"]))
+	else:
+		_build_items(str(params["item"]))
 	_build_choices()
 
 static func item_size_for(count: int) -> Vector2:
@@ -40,6 +51,44 @@ static func item_size_for(count: int) -> Vector2:
 		if count <= step.x:
 			return Vector2(step.y, step.y)
 	return Vector2(ITEM_SIZE_MIN, ITEM_SIZE_MIN)
+
+## 11–20 nesne onluk ve birlik bloklarına ayrılır; daha azı tepside düzenli-dağınık durur.
+func is_grouped_by_ten() -> bool:
+	return _count > GROUP_SIZE
+
+## Nesnelerin ekrandaki dikdörtgenleri (sayma sırasıyla; test ve yerleşim denetimi için).
+func item_rects() -> Array[Rect2]:
+	var out: Array[Rect2] = []
+	for img: Control in _items:
+		out.append(Rect2(img.position, img.size))
+	return out
+
+## Onluk + birlik: üst şeritte 10 nesne yan yana, alt şeritte kalanlar aynı sütunlarda.
+## İki şerit ayrı kil zeminlidir; nesneler eğilmez, sayma sırası soldan sağa, önce onluk.
+func _build_ten_groups(item_key: String) -> void:
+	var cell: float = GROUP_AREA.size.x / float(GROUP_SIZE)
+	var item: float = minf(cell * GROUP_ITEM_RATIO, (GROUP_AREA.size.y - GROUP_ROW_GAP) / 2.0 - GROUP_STRIP_PAD * 2.0)
+	var row_h: float = item + GROUP_STRIP_PAD * 2.0
+	var top: float = GROUP_AREA.get_center().y - (row_h * 2.0 + GROUP_ROW_GAP) / 2.0
+	var rest: int = _count - GROUP_SIZE
+	var counts: Array[int] = [GROUP_SIZE, rest]
+	for r: int in 2:
+		var y: float = top + r * (row_h + GROUP_ROW_GAP)
+		var strip_w: float = counts[r] * cell
+		add_child(ClayStyle.make_panel(ClayStyle.plaque_box(ClayStyle.IVORY, ClayStyle.CREAM.darkened(0.18), int(row_h / 2.0), 4, 4, 0),
+			Rect2(GROUP_AREA.position.x, y, strip_w, row_h)))
+		for k: int in counts[r]:
+			var center: Vector2 = Vector2(GROUP_AREA.position.x + (k + 0.5) * cell, y + row_h / 2.0)
+			var img: Control = ASSET_IMAGE.instantiate() as Control
+			img.set("key", item_key)
+			img.set("min_side", 0.0)
+			img.mouse_filter = Control.MOUSE_FILTER_IGNORE
+			add_child(img)
+			img.custom_minimum_size = Vector2(item, item)
+			img.size = Vector2(item, item)
+			img.position = center - img.size / 2.0
+			img.pivot_offset = img.size / 2.0
+			_items.append(img)
 
 ## Nesneleri ızgara hücrelerine rng ile dağıtır; her nesne kendi hücresinde olduğu için çakışmaz.
 ## Izgara tepsinin ortasına toplanır; hücre nesneden çok büyük olmaz.

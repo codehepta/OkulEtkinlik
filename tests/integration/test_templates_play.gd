@@ -154,3 +154,34 @@ func test_listen_find_speaker_replays_target_without_answer() -> void:
 	g.runner_hold = true
 	g.call("_debug_replay")
 	assert_eq(_fake.said.count("vo.sayi.1"), before + 1, "runner geri bildirimi sırasında sessiz")
+
+# --- count_choose: 11–20 nesne onluk + birlik olarak dizilir (MAT.1.1.2) ---
+
+func _item_centers(g: MiniGame) -> Array[Vector2]:
+	var out: Array[Vector2] = []
+	for r: Rect2 in g.call("item_rects") as Array[Rect2]:
+		out.append(r.get_center())
+	return out
+
+func test_count_choose_over_ten_groups_a_ten_and_the_rest() -> void:
+	var g: MiniGame = _make("count_choose", {"item": "item.elma", "count": 14, "choices": [13, 14, 15]})
+	var c: Array[Vector2] = _item_centers(g)
+	assert_eq(c.size(), 14)
+	assert_true(bool(g.call("is_grouped_by_ten")))
+	# İlk 10 nesne bir satır (onluk), kalan 4 nesne altta ayrı bir satır (birlikler).
+	for i: int in range(1, 10):
+		assert_almost_eq(c[i].y, c[0].y, 0.5, "onluk tek satırda")
+		assert_gt(c[i].x, c[i - 1].x, "onluk soldan sağa sıralı")
+	for i: int in range(10, 14):
+		assert_almost_eq(c[i].y, c[10].y, 0.5, "birlikler tek satırda")
+		assert_almost_eq(c[i].x, c[i - 10].x, 0.5, "birlik, onluğun aynı sütununda")
+	assert_gt(c[10].y - c[0].y, 100.0, "iki blok belirgin ayrı")
+	var rects: Array[Rect2] = g.call("item_rects") as Array[Rect2]
+	for i: int in rects.size():
+		for j: int in range(i + 1, rects.size()):
+			assert_false(rects[i].grow(-2.0).intersects(rects[j].grow(-2.0)), "nesneler çakışmaz")
+
+func test_count_choose_up_to_ten_stays_scattered() -> void:
+	var g: MiniGame = _make("count_choose", {"item": "item.elma", "count": 10, "choices": [9, 10, 11]})
+	assert_false(bool(g.call("is_grouped_by_ten")))
+	assert_eq(_item_centers(g).size(), 10)
