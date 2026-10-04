@@ -86,3 +86,29 @@ func test_make_19_9() -> void:
 	var q: Dictionary = ParentGateQuiz.make(19, 9)
 	assert_eq(q["text"], "on dokuz ile dokuzu çarpın.")
 	assert_eq(q["answer"], 171)
+
+func test_all_required_string_keys_exist() -> void:
+	# Tüm gerekli anahtar metinler strings.tr.json'da mevcuttur
+	var json_path: String = "res://content/strings.tr.json"
+	var file: FileAccess = FileAccess.open(json_path, FileAccess.READ)
+	assert_not_null(file, "strings.tr.json dosyası açılabilir")
+
+	var file_content: String = file.get_as_text()
+	var json: JSON = JSON.new()
+	var error: int = json.parse(file_content)
+	assert_eq(error, OK, "strings.tr.json geçerli JSON'dur")
+
+	var strings: Dictionary = json.get_data() if json.get_data() is Dictionary else {}
+
+	# gate.question şablonu kontrol et
+	assert_true(strings.has("gate.question"), "gate.question anahtarı mevcuttur")
+
+	# num.11-19 kontrol et
+	for num in range(11, 20):
+		var key: String = "num.%d" % num
+		assert_true(strings.has(key), key + " anahtarı mevcuttur")
+
+	# num_acc.3-9 kontrol et
+	for num in range(3, 10):
+		var key: String = "num_acc.%d" % num
+		assert_true(strings.has(key), key + " anahtarı mevcuttur")
