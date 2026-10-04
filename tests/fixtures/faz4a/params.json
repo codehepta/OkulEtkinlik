@@ -1,0 +1,31 @@
+{
+	"trace_lower": { "template": "trace", "params": { "chars": "e", "item": "item.meyve.elma" } },
+	"trace_upper": { "template": "trace", "params": { "chars": "Ş" } },
+	"trace_digit": { "template": "trace", "params": { "chars": "5" } },
+	"trace_word": { "template": "trace", "params": { "chars": "ela" } },
+	"syllable_word": { "template": "syllable_build", "params": {
+		"parts": [ "el", "ma" ], "distractors": [ "al", "me" ], "item": "item.meyve.elma", "voice": "vo.genel.aferin_1" } },
+	"syllable_letters": { "template": "syllable_build", "params": { "parts": [ "a", "t" ], "distractors": [ "e" ] } },
+	"syllable_repeat": { "template": "syllable_build", "params": { "parts": [ "ba", "ba" ], "distractors": [ "da" ] } },
+	"story_listen": { "template": "story", "params": {
+		"pages": [
+			{ "text": "ornek.hikaye.s1", "voice": "vo.genel.dinle", "image": "item.hayvan.civciv" },
+			{ "text": "ornek.hikaye.s2", "voice": "vo.genel.dokun", "image": "item.doga.cicek" } ],
+		"questions": [
+			{ "text": "ornek.hikaye.soru1", "voice": "vo.genel.hazir_misin", "answer": 0, "page": 1, "options": [
+				{ "type": "text", "value": "ornek.hikaye.c1" }, { "type": "text", "value": "ornek.hikaye.c2" },
+				{ "type": "text", "value": "ornek.hikaye.c3" } ] } ] } },
+	"story_silent": { "template": "story", "params": {
+		"read": "silent",
+		"pages": [ { "text": "ornek.hikaye.s1", "voice": "vo.genel.dinle" } ],
+		"questions": [
+			{ "voice": "vo.genel.hazir_misin", "answer": 1, "options": [
+				{ "type": "item", "value": "item.hayvan.ari" }, { "type": "item", "value": "item.hayvan.civciv" } ] },
+			{ "voice": "vo.genel.dokun", "answer": 0, "options": [
+				{ "type": "number", "value": 1 }, { "type": "number", "value": 2 }, { "type": "number", "value": 3 } ] } ] } },
+	"match_silent": { "template": "drag_match", "params": {
+		"read": "silent",
+		"pairs": [
+			{ "left": { "type": "text", "value": "ornek.hikaye.c1", "voice": "vo.genel.dinle" }, "right": { "type": "item", "value": "item.doga.cicek" } },
+			{ "left": { "type": "text", "value": "ornek.hikaye.c2", "voice": "vo.genel.dokun" }, "right": { "type": "item", "value": "item.okul.kitap" } } ] } }
+}

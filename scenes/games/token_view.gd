@@ -9,6 +9,9 @@ const DEFAULT_SIZE: Vector2 = Vector2(200, 200)
 const TALLY_CHAR: String = "|"
 const FONT_RATIO: float = 0.5
 const ITEM_PADDING_RATIO: float = 0.12
+## Yazının karo genişliğinde kaplayabileceği oran ve ortalama harf genişliği (em).
+const TEXT_WIDTH_RATIO: float = 0.84
+const CHAR_EM: float = 0.55
 
 var token: Dictionary = {}
 var framed: bool = false
@@ -56,6 +59,14 @@ static func tally_count(s: String) -> int:
 			return 0
 	return s.length()
 
+## Karo yazısının boyutu: kısa kenarın yarısı; uzun sözcükler karonun genişliğine sığacak
+## kadar küçülür (Andika'da ortalama harf genişliği ≈ 0.55 em).
+static func fit_font_size(label: String, box: Vector2) -> int:
+	var fs: float = minf(box.x, box.y) * FONT_RATIO
+	if label.length() > 0:
+		fs = minf(fs, box.x * TEXT_WIDTH_RATIO / (label.length() * CHAR_EM))
+	return int(fs)
+
 func _add_tile(label: String) -> Control:
 	var tile: Control = CLAY_TILE.instantiate() as Control
 	tile.set("text", label)
@@ -74,7 +85,7 @@ func _notification(what: int) -> void:
 
 func _layout() -> void:
 	if _tile != null and is_instance_valid(_tile):
-		_tile.set("font_size", int(minf(size.x, size.y) * FONT_RATIO))
+		_tile.set("font_size", fit_font_size(str(_tile.get("text")), size))
 	if _image != null and is_instance_valid(_image) and _tile != null:
 		var pad: float = minf(size.x, size.y) * ITEM_PADDING_RATIO
 		_image.offset_left = pad
