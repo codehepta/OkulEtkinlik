@@ -165,6 +165,25 @@ Bu şablonların henüz ünite içeriği yok (içerik Faz 5b, 3c–3e ve 6'da ge
 
 ---
 
+# Faz 4b — 1. sınıf Türkçe (Harf Vadisi)
+
+1. sınıf profilde Harf Vadisi artık açıktır: 9 ünite, 65 durak (`content/g1/turkce/u01–u09.json`). Patika programın işleniş sırasını izler: okumaya hazırlık → harf grupları (a n e t i l / o k u r ı m / ü s ö y d z / ç b g c ş / p h v ğ f j) → bağımsız okuma temaları.
+
+1. **Harita:** 1. sınıf profilde Harf Vadisi'ne dokun. Beklenen: patika açılır, ilk durak "Sesin sahibi kim?" parlar; 2. ve 3. sınıf profillerinde bu duraklar görünmez.
+2. **Hazırlık:** "Sesin sahibi kim?" durağında hoparlöre dokununca ses kaynağının sesi yeniden okunur; "Doğal mı, yapay mı?" kutuları yaprak ve çark simgeleriyle ayrılıyor; "Çizgi çalışması"nda dikey, yatay, eğik çizgi ve yuvarlak izlenebiliyor.
+3. **Harf durağı (ör. "Aa sesi"):** sırasıyla sesi geçen resmi bulma, sesin harfini bulma, küçük harfi izleme, büyük harfi izleme ve (ikinci harften sonra) hece ya da sözcük yazma. Beklenen: yönergeler harfin **sesini** söyler; harf seçeneklerinde yalnızca öğrenilmiş harfler bulunur.
+4. **Ses temelli yöntem:** harf ünitelerindeki okuma ve yazma turlarında (sözcük eşleştirme, hece kurma, cümle kurma) yalnızca o ana kadar öğrenilmiş harfler geçer. Otomatik olarak `tests/unit/test_g1_turkce_content.gd` denetler; cihazda göze çarpan bir tutarsızlık olursa not al.
+5. **Rakamlar:** 1. temada 1–4, 2. temada 5–0 yazılıyor; "Dinle ve duyduğun rakama dokun" turlarında sayı sesi okunuyor.
+6. **Sessiz okuma:** "İlk sözcüklerim", "Cümle kuruyorum", "... grup tamam!" ve "Oku, anla" duraklarında sözcük, cümle ve hikâye sesi ilk cevaba kadar çıkmıyor; yönerge ve sorular okunuyor.
+7. **Okuma üniteleri (5.–8. tema):** dinleme hikâyesi sayfa açılınca okunuyor; sessiz okuma hikâyesinde yalnızca sorular okunuyor. "Nasıl konuşmalı?" durumlarında yanlış seçimde ceza yok, ipucu cümlesi okunuyor.
+8. **Öğretmen gözden geçirmesi (açık soru):** hikâyeler, cümleler ve sözcük seçimleri programın tema içeriğine uygun ve 1. sınıf düzeyinde mi? Uygun olmayanları durak adıyla listele.
+
+## Asset geldiğinde (parti 060–066)
+1. `item.*` sözcük, sahne ve simge görselleri (060–062) yer tutucuların yerini alır; resimler sözcüğü tek bakışta anlatıyor (ör. "nar", "ırmak", "örtü").
+2. Çıkartmalar (063) albümün Türkçe sayfasında görünür.
+3. Harf sesleri (064) harfin adını değil sesini söylüyor ("ne" değil "nnn"); ünlü eklenmemiş.
+4. Durak ve hikâye seslendirmeleri (065, 066) cihaz sesinin yerine çalar.
+
 # Faz 3b — Matematik için yeni mekanikler
 
 Ekran görüntüleri: `tools/ui_screenshots.gd` (Faz 3b kareleri). Gerçek cihazda kontrol edilecekler:
