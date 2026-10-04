@@ -3,7 +3,6 @@ extends MiniGame
 ## Sağdaki her yuva: kesik kenarlı boş bırakma çukuru + yanında düz hedef kartı.
 
 const TOKEN_VIEW: PackedScene = preload("res://scenes/games/token_view.tscn")
-const GameStyle: GDScript = preload("res://scenes/games/game_style.gd")
 ## Çift sayısına göre kart boyu (2–3 çift büyük, 4 çift sığacak kadar).
 const VIEW_SIDE_BY_COUNT: Dictionary = {2: 210.0, 3: 196.0, 4: 160.0}
 const ROW_GAP: float = 28.0
@@ -15,10 +14,10 @@ const LEFT_X: float = 530.0
 const WELL_X: float = 1010.0
 const TARGET_GAP: float = 30.0
 const TRAY_MARGIN: float = 34.0
-const DRAG_COLOR: Color = Color(0.98, 0.72, 0.42)
-const TARGET_COLOR: Color = Color(1.0, 0.95, 0.85)
-const WELL_LINE: Color = Color(0.62, 0.42, 0.25, 0.9)
-const WELL_FILL: Color = Color(0.55, 0.36, 0.2, 0.12)
+const DRAG_COLOR: Color = ClayStyle.PEACH
+const TARGET_COLOR: Color = ClayStyle.IVORY
+const WELL_LINE: Color = Color(ClayStyle.CLAY_EDGE, 0.9)
+const WELL_FILL: Color = Color(ClayStyle.COCOA, 0.12)
 const AUTO_STEP_SECONDS: float = 0.35
 
 var _pairs: Array = []
@@ -49,10 +48,10 @@ func setup(params: Dictionary, difficulty_value: int, context: RoundContext) -> 
 	var block_h: float = n * side + (n - 1) * ROW_GAP
 	var top: float = AREA_TOP + (AREA_BOTTOM - AREA_TOP - block_h) / 2.0
 	var shelf: Rect2 = Rect2(LEFT_X - TRAY_MARGIN, top - TRAY_MARGIN, side + TRAY_MARGIN * 2.0, block_h + TRAY_MARGIN * 2.0)
-	add_child(GameStyle.make_panel(GameStyle.tray_box(0.6), shelf))
+	add_child(ClayStyle.make_panel(ClayStyle.tray_box(0.6), shelf))
 	var board_w: float = side * 2.0 + TARGET_GAP + TRAY_MARGIN * 2.0
 	var board: Rect2 = Rect2(WELL_X - TRAY_MARGIN, top - TRAY_MARGIN, board_w, block_h + TRAY_MARGIN * 2.0)
-	add_child(GameStyle.make_panel(GameStyle.tray_box(0.72), board))
+	add_child(ClayStyle.make_panel(ClayStyle.tray_box(0.72), board))
 	for i: int in n:
 		_matched.append(false)
 		var y: float = top + i * (side + ROW_GAP)
@@ -93,12 +92,8 @@ func _make_slot(token: Dictionary, pos: Vector2) -> Control:
 	well.size = _view_size
 	well.draw.connect(func() -> void:
 		var r: Rect2 = Rect2(Vector2(6, 6), _view_size - Vector2(12, 12))
-		var fill: StyleBoxFlat = StyleBoxFlat.new()
-		fill.bg_color = WELL_FILL
-		fill.set_corner_radius_all(26)
-		fill.anti_aliasing = true
-		well.draw_style_box(fill, r)
-		GameStyle.draw_dashed_round_rect(well, r, 26.0, WELL_LINE, 7.0, 14.0))
+		well.draw_style_box(ClayStyle.soft_box(WELL_FILL, 26), r)
+		ClayStyle.draw_dashed_round_rect(well, r, 26.0, WELL_LINE, 7.0, 14.0))
 	slot.add_child(well)
 	var target: Control = TOKEN_VIEW.instantiate() as Control
 	target.set("framed", true)

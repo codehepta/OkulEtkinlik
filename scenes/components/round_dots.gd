@@ -2,13 +2,13 @@ extends Control
 ## Tur göstergesi: her tur bir kil boncuk. Biten: dolu + parlak; şimdiki: büyük, kalın halkalı;
 ## gelecek: küçük, soluk ve içi boş. Anlam yalnızca renkle değil boyut ve dolulukla da verilir.
 
-const DONE_COLOR: Color = Color(0.98, 0.62, 0.22)
-const CURRENT_RING: Color = Color(0.93, 0.47, 0.16)
+const DONE_COLOR: Color = ClayStyle.TANGERINE
+const CURRENT_RING: Color = ClayStyle.EMBER
 const FUTURE_COLOR: Color = Color(1.0, 0.97, 0.9, 0.75)
 const BASE_RADIUS: float = 20.0
 const CURRENT_RADIUS: float = 28.0
 const GAP: float = 26.0
-const PLAQUE: Color = Color(1.0, 0.96, 0.88, 0.85)
+const PLAQUE_ALPHA: float = 0.85
 
 var _done: int = 0
 var _current: int = -1
@@ -39,15 +39,10 @@ func _draw() -> void:
 	var x0: float = (size.x - width) / 2.0
 	# Kil plaket.
 	var pad: float = CURRENT_RADIUS + 22.0
-	var plaque: StyleBoxFlat = StyleBoxFlat.new()
-	plaque.bg_color = PLAQUE
-	plaque.set_corner_radius_all(int(pad))
-	plaque.border_color = Color(1, 1, 1, 0.9)
+	var plaque: StyleBoxFlat = ClayStyle.tray_box(PLAQUE_ALPHA, int(pad))
 	plaque.set_border_width_all(4)
-	plaque.shadow_color = Color(0.2, 0.1, 0.03, 0.18)
 	plaque.shadow_size = 10
 	plaque.shadow_offset = Vector2(0, 5)
-	plaque.anti_aliasing = true
 	draw_style_box(plaque, Rect2(x0 - pad, cy - pad, width + pad * 2.0, pad * 2.0))
 	for i: int in _total:
 		var c: Vector2 = Vector2(x0 + i * step, cy)

@@ -3,7 +3,6 @@ extends MiniGame
 
 const CLAY_TILE: PackedScene = preload("res://scenes/components/clay_tile.tscn")
 const ASSET_IMAGE: PackedScene = preload("res://scenes/components/asset_image.tscn")
-const GameStyle: GDScript = preload("res://scenes/games/game_style.gd")
 ## Sayma tepsisi: nesneler bunun içinde düzenli-dağınık durur.
 const TRAY_RECT: Rect2 = Rect2(300, 172, 1320, 508)
 const ITEM_AREA: Rect2 = Rect2(336, 208, 1248, 436)
@@ -32,7 +31,7 @@ func setup(params: Dictionary, difficulty_value: int, context: RoundContext) -> 
 	_choices.clear()
 	for c: Variant in params["choices"] as Array:
 		_choices.append(int(c))
-	add_child(GameStyle.make_panel(GameStyle.tray_box(0.8), TRAY_RECT))
+	add_child(ClayStyle.make_panel(ClayStyle.tray_box(0.8), TRAY_RECT))
 	_build_items(str(params["item"]))
 	_build_choices()
 

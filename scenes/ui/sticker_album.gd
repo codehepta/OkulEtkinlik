@@ -2,26 +2,26 @@ extends Control
 ## Çıkartma albümü: ders başına bir sekme, content/stickers.json sırasıyla ızgara.
 ## Kazanılmamış çıkartmalar boş yuva (ui.sticker_frame) olarak görünür.
 
-const BG_TOP: Color = Color(1.0, 0.95, 0.82)
-const BG_BOTTOM: Color = Color(0.98, 0.84, 0.64)
+const BG_TOP: Color = ClayStyle.WARM_TOP
+const BG_BOTTOM: Color = ClayStyle.WARM_BOTTOM
 const CELL_SIZE: Vector2 = Vector2(264, 264)
 const GRID_COLUMNS: int = 3
 ## Boş derste sayfa boş kalmasın diye gösterilen süs yuvası sayısı (sayılmaz, _slots'a girmez).
 const EMPTY_PAGE_SLOTS: int = 6
-const TAB_ON: Color = Color(0.55, 0.85, 0.6)
-const TAB_OFF: Color = Color(0.96, 0.78, 0.55)
+const TAB_ON: Color = ClayStyle.MINT
+const TAB_OFF: Color = ClayStyle.APRICOT
 const SELECTED_SCALE: float = 1.12
 const FRAME_KEY: String = "ui.sticker_frame"
-const TITLE_FONT: String = "res://assets/fonts/Andika-Bold.ttf"
-const PLAQUE_COLOR: Color = Color(0.99, 0.84, 0.55)
-const PLAQUE_BORDER: Color = Color(0.82, 0.52, 0.27)
-const TEXT_COLOR: Color = Color(0.42, 0.22, 0.1)
+const PLAQUE_COLOR: Color = ClayStyle.BUTTER
+const PLAQUE_BORDER: Color = ClayStyle.CARAMEL
+const TEXT_COLOR: Color = ClayStyle.TITLE_INK
 const PAGE_COLOR: Color = Color(1.0, 0.98, 0.92)
-const PAGE_BORDER: Color = Color(0.86, 0.68, 0.46)
-const EARNED_CARD: Color = Color(1.0, 1.0, 1.0)
-const EARNED_BORDER: Color = Color(0.95, 0.66, 0.3)
-const EMPTY_CARD: Color = Color(0.93, 0.87, 0.77)
-const EMPTY_BORDER: Color = Color(0.83, 0.74, 0.62)
+## Palet tonlarından türeyen renkler (sabit ifade olamadıkları için değişken).
+var _page_border: Color = ClayStyle.CARAMEL.lightened(0.3)
+const EARNED_CARD: Color = Color.WHITE
+var _earned_border: Color = ClayStyle.TANGERINE.lightened(0.1)
+var _empty_card: Color = ClayStyle.CREAM.darkened(0.06)
+var _empty_border: Color = ClayStyle.CREAM.darkened(0.16)
 const EMPTY_ALPHA: float = 0.45
 const GRID_GAP: float = 32.0
 
@@ -73,8 +73,7 @@ func _ready() -> void:
 	_title_label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	_title_label.add_theme_font_size_override("font_size", 64)
 	_title_label.add_theme_color_override("font_color", TEXT_COLOR)
-	if ResourceLoader.exists(TITLE_FONT):
-		_title_label.add_theme_font_override("font", load(TITLE_FONT) as Font)
+	ClayStyle.use_bold(_title_label)
 	title_row.add_child(_title_label)
 
 	var tab_row: HBoxContainer = HBoxContainer.new()
@@ -99,7 +98,7 @@ func _ready() -> void:
 	col.add_child(page_holder)
 	var page: PanelContainer = PanelContainer.new()
 	page.name = "AlbumPage"
-	page.add_theme_stylebox_override("panel", _clay_box(PAGE_COLOR, PAGE_BORDER, 44, 8, 36.0, 32.0))
+	page.add_theme_stylebox_override("panel", _clay_box(PAGE_COLOR, _page_border, 44, 8, 36.0, 32.0))
 	page_holder.add_child(page)
 	var scroll: ScrollContainer = ScrollContainer.new()
 	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
@@ -182,9 +181,9 @@ func _add_cell(image_key: String, earned: bool) -> Control:
 	card.custom_minimum_size = CELL_SIZE
 	card.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	if earned:
-		card.add_theme_stylebox_override("panel", _clay_box(EARNED_CARD, EARNED_BORDER, 36, 8, 14.0, 14.0))
+		card.add_theme_stylebox_override("panel", _clay_box(EARNED_CARD, _earned_border, 36, 8, 14.0, 14.0))
 	else:
-		var flat: StyleBoxFlat = _clay_box(EMPTY_CARD, EMPTY_BORDER, 36, 4, 22.0, 22.0)
+		var flat: StyleBoxFlat = _clay_box(_empty_card, _empty_border, 36, 4, 22.0, 22.0)
 		flat.shadow_size = 0
 		card.add_theme_stylebox_override("panel", flat)
 	_grid.add_child(card)
@@ -197,33 +196,11 @@ func _add_cell(image_key: String, earned: bool) -> Control:
 	return img
 
 func _clay_box(color: Color, border: Color, radius: int, border_w: int, pad_x: float, pad_y: float) -> StyleBoxFlat:
-	var style: StyleBoxFlat = StyleBoxFlat.new()
-	style.bg_color = color
-	style.set_corner_radius_all(radius)
-	style.border_color = border
-	style.set_border_width_all(border_w)
-	style.border_width_bottom = border_w + 6  # kil kalınlığı
-	style.shadow_color = Color(0.35, 0.2, 0.05, 0.22)
-	style.shadow_size = 12
-	style.shadow_offset = Vector2(0, 8)
-	style.content_margin_left = pad_x
-	style.content_margin_right = pad_x
-	style.content_margin_top = pad_y
-	style.content_margin_bottom = pad_y
-	style.anti_aliasing = true
-	return style
+	return ClayStyle.plaque_box(color, border, radius, border_w, 6, 12, pad_x, pad_y)
 
 ## Sıcak dikey gradyan zemin + hafif benek deseni.
 func _make_backdrop() -> TextureRect:
-	var g: Gradient = Gradient.new()
-	g.set_color(0, BG_TOP)
-	g.set_color(1, BG_BOTTOM)
-	var tex: GradientTexture2D = GradientTexture2D.new()
-	tex.gradient = g
-	tex.fill_from = Vector2(0.5, 0.0)
-	tex.fill_to = Vector2(0.5, 1.0)
-	tex.width = 64
-	tex.height = 256
+	var tex: GradientTexture2D = ClayStyle.vertical_gradient(BG_TOP, BG_BOTTOM)
 	var bg: TextureRect = TextureRect.new()
 	bg.name = "Backdrop"
 	bg.texture = tex

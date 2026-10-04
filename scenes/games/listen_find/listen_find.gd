@@ -3,15 +3,14 @@ extends MiniGame
 ## Üstte büyük hoparlör düğmesi hedefin sesini yeniden okutur (cevap sayılmaz).
 
 const TOKEN_VIEW: PackedScene = preload("res://scenes/games/token_view.tscn")
-const GameStyle: GDScript = preload("res://scenes/games/game_style.gd")
 const VIEW_SIZE: Vector2 = Vector2(250, 250)
 const GAP: float = 64.0
 const TOP_Y: float = 540.0
 const STAGE_MARGIN: float = 44.0
 const SPEAKER_SIZE: float = 260.0
 const SPEAKER_Y: float = 196.0
-const SPEAKER_DISC: Color = Color(1.0, 0.95, 0.85)
-const SPEAKER_INK: Color = Color(0.16, 0.66, 0.74)
+const SPEAKER_DISC: Color = ClayStyle.IVORY
+const SPEAKER_INK: Color = ClayStyle.TEAL
 
 var _target: Dictionary = {}
 var _options: Array[Dictionary] = []
@@ -34,7 +33,7 @@ func setup(params: Dictionary, difficulty_value: int, context: RoundContext) -> 
 	var total_w: float = _options.size() * VIEW_SIZE.x + (_options.size() - 1) * GAP
 	var x: float = (BASE_SIZE.x - total_w) / 2.0
 	var stage: Rect2 = Rect2(x - STAGE_MARGIN, TOP_Y - STAGE_MARGIN, total_w + STAGE_MARGIN * 2.0, VIEW_SIZE.y + STAGE_MARGIN * 2.0)
-	add_child(GameStyle.make_panel(GameStyle.tray_box(), stage))
+	add_child(ClayStyle.make_panel(ClayStyle.tray_box(), stage))
 	_build_speaker()
 	for i: int in _options.size():
 		var v: Control = TOKEN_VIEW.instantiate() as Control
@@ -53,11 +52,11 @@ func _build_speaker() -> void:
 	_speaker = Button.new()
 	_speaker.name = "SpeakerButton"
 	_speaker.focus_mode = Control.FOCUS_NONE
-	var box: StyleBoxFlat = GameStyle.card_box(SPEAKER_DISC, int(SPEAKER_SIZE / 2.0))
+	var box: StyleBoxFlat = ClayStyle.card_box(SPEAKER_DISC, int(SPEAKER_SIZE / 2.0))
 	_speaker.add_theme_stylebox_override("normal", box)
 	_speaker.add_theme_stylebox_override("hover", box)
 	_speaker.add_theme_stylebox_override("focus", StyleBoxEmpty.new())
-	var pressed_box: StyleBoxFlat = GameStyle.card_box(SPEAKER_DISC.darkened(0.06), int(SPEAKER_SIZE / 2.0))
+	var pressed_box: StyleBoxFlat = ClayStyle.card_box(SPEAKER_DISC.darkened(0.06), int(SPEAKER_SIZE / 2.0))
 	pressed_box.border_width_bottom = 6
 	pressed_box.shadow_offset = Vector2(0, 3)
 	_speaker.add_theme_stylebox_override("pressed", pressed_box)

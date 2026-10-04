@@ -24,15 +24,7 @@ const ZONE_RECT: Dictionary = {
 	"fen": Rect2(0.51, 0.48, 0.39, 0.40),
 }
 const TREE_ZONE: Rect2 = Rect2(0.41, 0.18, 0.18, 0.40)
-## Rozet renkleri (spec §5.1 bölge renkleri): [zemin, kenar].
-const BADGE_COLORS: Dictionary = {
-	"sayi_ormani": [Color(0.82, 0.94, 0.62), Color(0.93, 0.52, 0.18)],
-	"harf_vadisi": [Color(0.91, 0.82, 0.98), Color(0.89, 0.45, 0.68)],
-	"hayat_kasabasi": [Color(1.0, 0.91, 0.52), Color(0.32, 0.56, 0.88)],
-	"kesif_laboratuvari": [Color(0.97, 1.0, 1.0), Color(0.16, 0.70, 0.70)],
-	"agac_ev": [Color(0.97, 0.86, 0.64), Color(0.55, 0.34, 0.18)],
-}
-const TEXT_COLOR: Color = Color(0.25, 0.15, 0.08)
+const TEXT_COLOR: Color = ClayStyle.INK
 const BADGE_FONT_SIZE: int = 36
 const BADGE_ICON: float = 88.0
 const BADGE_MIN_HEIGHT: float = 128.0
@@ -239,33 +231,19 @@ func _zone_button() -> Button:
 func _fog_panel() -> Panel:
 	var p: Panel = Panel.new()
 	p.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	var box: StyleBoxFlat = StyleBoxFlat.new()
-	box.bg_color = FOG_COLOR
-	box.set_corner_radius_all(220)
-	box.shadow_color = FOG_COLOR
-	box.shadow_size = 40
-	p.add_theme_stylebox_override("panel", box)
+	p.add_theme_stylebox_override("panel", ClayStyle.soft_box(FOG_COLOR, 220, 40))
 	return p
 
+## Rozet plaketi: ikon sola yaslı, yazının sağında biraz daha boşluk.
 func _clay_box(fill: Color, edge: Color) -> StyleBoxFlat:
-	var box: StyleBoxFlat = StyleBoxFlat.new()
-	box.bg_color = fill
-	box.set_corner_radius_all(48)
-	box.border_color = edge
-	box.set_border_width_all(6)
-	box.border_width_bottom = 12
-	box.shadow_color = Color(0.15, 0.08, 0.02, 0.35)
-	box.shadow_size = 10
-	box.shadow_offset = Vector2(0, 8)
-	box.content_margin_left = 12.0
+	var box: StyleBoxFlat = ClayStyle.plaque_box(fill, edge, 48, 6, 6, 10, 12.0, 10.0)
 	box.content_margin_right = 26.0
-	box.content_margin_top = 10.0
 	box.content_margin_bottom = 14.0
 	return box
 
 ## Kil plaket rozet: bölge ikonu + bölge adı. Çocuk 0 her zaman plakettir.
 func _badge(region: String) -> Button:
-	var colors: Array = BADGE_COLORS[region]
+	var colors: Array = ClayStyle.REGION_BADGE[region]
 	var fill: Color = colors[0]
 	var edge: Color = colors[1]
 	var b: Button = Button.new()

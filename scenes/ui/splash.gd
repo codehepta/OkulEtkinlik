@@ -11,12 +11,10 @@ const BILGE_SHEET_KEY: String = "char.bilge.sheet"
 const SHEET_FRONT_REGION: Rect2 = Rect2(20, 100, 520, 520)
 const BILGE_SIZE: Vector2 = Vector2(440, 440)
 const TITLE_FONT_SIZE: int = 132
-const TITLE_FONT: String = "res://assets/fonts/Andika-Bold.ttf"
-const PLAQUE_COLOR: Color = Color(0.99, 0.84, 0.55)
-const PLAQUE_BORDER: Color = Color(0.82, 0.52, 0.27)
-const TITLE_COLOR: Color = Color(0.42, 0.22, 0.1)
-const SKY_TOP: Color = Color(0.55, 0.86, 0.9)
-const SKY_BOTTOM: Color = Color(0.99, 0.9, 0.72)
+const PLAQUE_COLOR: Color = ClayStyle.BUTTER
+const PLAQUE_BORDER: Color = ClayStyle.CARAMEL
+const TITLE_COLOR: Color = ClayStyle.TITLE_INK
+const MEDAL_COLOR: Color = Color(0.93, 0.93, 0.93)
 const INTRO_SECONDS: float = 0.9
 const BOB_SECONDS: float = 1.8
 const BOB_PIXELS: float = 10.0
@@ -83,8 +81,7 @@ func _build() -> void:
 	_title.add_theme_color_override("font_shadow_color", Color(1, 1, 1, 0.55))
 	_title.add_theme_constant_override("shadow_offset_x", 0)
 	_title.add_theme_constant_override("shadow_offset_y", 4)
-	if ResourceLoader.exists(TITLE_FONT):
-		_title.add_theme_font_override("font", load(TITLE_FONT) as Font)
+	ClayStyle.use_bold(_title)
 	_plaque.add_child(_title)
 
 	_bilge = _make_bilge()
@@ -112,13 +109,7 @@ func _make_bilge() -> Control:
 	if sheet != null:
 		# Karakter sayfasının arka planı açık gri: yuvarlak kil madalyon içinde gösterilir.
 		var medal: Panel = Panel.new()
-		var style: StyleBoxFlat = StyleBoxFlat.new()
-		style.bg_color = Color(0.93, 0.93, 0.93)
-		style.set_corner_radius_all(int(BILGE_SIZE.x / 2.0))
-		style.border_color = PLAQUE_BORDER
-		style.set_border_width_all(12)
-		style.anti_aliasing = true
-		medal.add_theme_stylebox_override("panel", style)
+		medal.add_theme_stylebox_override("panel", ClayStyle.plaque_box(MEDAL_COLOR, PLAQUE_BORDER, int(BILGE_SIZE.x / 2.0), 12, 0, 0, 0.0, 0.0))
 		medal.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		# Önden görünüş kırpılır ve yuvarlak maskeyle (shader) madalyonun içine oturtulur.
 		var crop: Image = sheet.get_image().get_region(Rect2i(SHEET_FRONT_REGION))
@@ -152,34 +143,14 @@ void fragment() {
 """
 	return sh
 
+## Başlık plaketi: alt kenarı kalın (kil kalınlığı), geniş yan boşluk.
 func _plaque_style() -> StyleBoxFlat:
-	var style: StyleBoxFlat = StyleBoxFlat.new()
-	style.bg_color = PLAQUE_COLOR
-	style.set_corner_radius_all(48)
-	style.border_color = PLAQUE_BORDER
-	style.set_border_width_all(10)
-	style.border_width_bottom = 18  # kil kalınlığı: alt kenar daha kalın
-	style.shadow_color = Color(0.2, 0.1, 0.05, 0.3)
-	style.shadow_size = 20
-	style.shadow_offset = Vector2(0, 12)
-	style.content_margin_left = 72.0
-	style.content_margin_right = 72.0
-	style.content_margin_top = 12.0
+	var style: StyleBoxFlat = ClayStyle.plaque_box(PLAQUE_COLOR, PLAQUE_BORDER, 48, 10, 8, 20, 72.0, 12.0)
 	style.content_margin_bottom = 20.0
-	style.anti_aliasing = true
 	return style
 
 func _sky_gradient() -> GradientTexture2D:
-	var g: Gradient = Gradient.new()
-	g.set_color(0, SKY_TOP)
-	g.set_color(1, SKY_BOTTOM)
-	var tex: GradientTexture2D = GradientTexture2D.new()
-	tex.gradient = g
-	tex.fill_from = Vector2(0.5, 0.0)
-	tex.fill_to = Vector2(0.5, 1.0)
-	tex.width = 64
-	tex.height = 256
-	return tex
+	return ClayStyle.vertical_gradient(ClayStyle.DAY_TOP, ClayStyle.DAY_BOTTOM)
 
 ## Yumuşak giriş: plaket yukarıdan süzülür, Bilge aşağıdan yükselir, ardından hafifçe sallanır.
 func _play_intro() -> void:

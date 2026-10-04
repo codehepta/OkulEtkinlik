@@ -9,13 +9,12 @@ const BILGE_KEY: String = "char.bilge.sleepy"
 ## sleepy.png 799×1024: yükseklik 660 px.
 const BILGE_SIZE: Vector2 = Vector2(516, 660)
 const BUTTON_SIZE: Vector2 = Vector2(760, 200)
-const BUTTON_COLOR: Color = Color(0.99, 0.86, 0.6)
-const BUTTON_TEXT_COLOR: Color = Color(0.3, 0.17, 0.08)
+const BUTTON_COLOR: Color = ClayStyle.BUTTER
+const BUTTON_TEXT_COLOR: Color = ClayStyle.INK
 const BUTTON_FONT_SIZE: int = 52
-const BUTTON_FONT: String = "res://assets/fonts/Andika-Bold.ttf"
-const SKY_TOP: Color = Color(0.1, 0.13, 0.32)
-const SKY_MID: Color = Color(0.2, 0.22, 0.48)
-const SKY_BOTTOM: Color = Color(0.4, 0.34, 0.6)
+const SKY_TOP: Color = ClayStyle.NIGHT_TOP
+const SKY_MID: Color = ClayStyle.NIGHT_MID
+const SKY_BOTTOM: Color = ClayStyle.NIGHT_BOTTOM
 const BREATH_SECONDS: float = 2.6
 
 var app: Node = AppState
@@ -43,7 +42,6 @@ func _ready() -> void:
 	_bilge.name = "SleepyBilge"
 	_bilge.set("key", BILGE_KEY)
 	row.add_child(_bilge)
-	# AssetImage _ready'de en küçük boyutu 128'e çeker: boyut ağaca eklendikten sonra verilir.
 	_bilge.custom_minimum_size = BILGE_SIZE
 	_bilge.size_flags_vertical = Control.SIZE_SHRINK_CENTER
 	_bilge.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -112,8 +110,7 @@ func _make_call_button() -> Button:
 	label.size_flags_vertical = Control.SIZE_SHRINK_CENTER
 	label.add_theme_font_size_override("font_size", BUTTON_FONT_SIZE)
 	label.add_theme_color_override("font_color", BUTTON_TEXT_COLOR)
-	if ResourceLoader.exists(BUTTON_FONT):
-		label.add_theme_font_override("font", load(BUTTON_FONT) as Font)
+	ClayStyle.use_bold(label)
 	label.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	box.add_child(label)
 	return btn
@@ -217,12 +214,7 @@ class GrownupIcon:
 		draw_circle(o + Vector2(84, 108) * s, 7.0 * s, SKIN)
 
 	func _body(pos: Vector2, sz: Vector2, color: Color) -> void:
-		var box: StyleBoxFlat = StyleBoxFlat.new()
-		box.bg_color = color
-		box.set_corner_radius_all(int(sz.x / 2.0))
-		box.border_color = color.darkened(0.25)
-		box.set_border_width_all(3)
-		box.anti_aliasing = true
+		var box: StyleBoxFlat = ClayStyle.plaque_box(color, color.darkened(0.25), int(sz.x / 2.0), 3, 0, 0, 0.0, 0.0)
 		draw_style_box(box, Rect2(pos, sz))
 
 	func _head(center: Vector2, r: float) -> void:

@@ -47,7 +47,7 @@ func _draw_shadow() -> void:
 	for i: int in 32:
 		var a: float = TAU * i / 32.0
 		pts.append(c + Vector2(cos(a) * r.x, sin(a) * r.y))
-	_shadow.draw_colored_polygon(pts, Color(0.15, 0.08, 0.02, 0.22))
+	_shadow.draw_colored_polygon(pts, Color(ClayStyle.SHADOW, 0.22))
 
 func has_figure() -> bool:
 	return _figure != null and _figure.texture != null
@@ -140,5 +140,4 @@ func cheer() -> void:
 	tw.tween_property(_figure, "position:y", 0.0, 0.22).set_trans(Tween.TRANS_BOUNCE).set_ease(Tween.EASE_OUT)
 
 func _reduce_motion() -> bool:
-	var settings: Variant = SaveService.data.get("settings", {})
-	return settings is Dictionary and bool((settings as Dictionary).get("reduce_motion", false))
+	return ClayStyle.reduce_motion()

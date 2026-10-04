@@ -67,3 +67,21 @@ func test_theme_installed_into_project_theme() -> void:
 	var project: Theme = ThemeDB.get_project_theme()
 	assert_not_null(project)
 	assert_true(project.has_stylebox("normal", "Button"), "AppState açılışta kil temasını kurar")
+
+func test_theme_font_is_andika() -> void:
+	var t: Theme = ClayStyle.build_theme()
+	assert_not_null(t.default_font)
+	assert_eq(t.default_font.get_font_name(), "Andika")
+	assert_eq(ClayStyle.bold_font().get_font_name(), "Andika")
+
+func test_shared_plaque_and_card_boxes_are_raised_clay() -> void:
+	var p: StyleBoxFlat = ClayStyle.plaque_box(ClayStyle.BUTTER, ClayStyle.CARAMEL, 48, 10, 8, 20)
+	assert_eq(p.bg_color, ClayStyle.BUTTER)
+	assert_eq(p.border_color, ClayStyle.CARAMEL)
+	assert_eq(p.border_width_bottom, 18, "alt kenar = kenar + derinlik")
+	assert_eq(p.shadow_size, 20)
+	var c: StyleBoxFlat = ClayStyle.card_box(ClayStyle.APRICOT)
+	assert_gt(c.border_width_bottom, c.border_width_top)
+	assert_true(ClayStyle.REGION_BADGE.has("agac_ev"))
+	for region: String in ["sayi_ormani", "harf_vadisi", "hayat_kasabasi", "kesif_laboratuvari"]:
+		assert_true(ClayStyle.REGION_BADGE.has(region), region)

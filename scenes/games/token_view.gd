@@ -12,7 +12,7 @@ const ITEM_PADDING_RATIO: float = 0.12
 
 var token: Dictionary = {}
 var framed: bool = false
-var card_color: Color = Color(0.96, 0.78, 0.55)
+var card_color: Color = ClayStyle.APRICOT
 
 var _tile: Control = null
 var _image: Control = null

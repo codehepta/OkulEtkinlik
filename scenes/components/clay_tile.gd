@@ -2,11 +2,10 @@ extends Panel
 ## Kil renkli, yuvarlak köşeli kabarık kutu; üzerinde büyük Andika yazısı (rakam ve harfler).
 ## Çetele modu (tally > 0): yazı yerine en çok 5 kalın kil çubuk çizilir (5'te çapraz yok).
 
-const GameStyle: GDScript = preload("res://scenes/games/game_style.gd")
 const CORNER_RADIUS: int = 28
 const FONT_SIZE: int = 72
 const MAX_TALLY: int = 5
-const BAR_COLOR: Color = Color(0.55, 0.32, 0.16)
+const BAR_COLOR: Color = ClayStyle.COCOA
 
 @export var text: String = "":
 	set(value):
@@ -49,7 +48,7 @@ func _ready() -> void:
 	_refresh_tally()
 
 func _apply_style() -> void:
-	add_theme_stylebox_override("panel", GameStyle.card_box(clay_color, CORNER_RADIUS))
+	add_theme_stylebox_override("panel", ClayStyle.card_box(clay_color, CORNER_RADIUS))
 
 func _refresh_tally() -> void:
 	_label.visible = tally == 0
@@ -71,7 +70,7 @@ func _draw_tally() -> void:
 		var x: float = x0 + i * (bar_w + gap)
 		var a: Vector2 = Vector2(x, top + bar_w / 2.0)
 		var b: Vector2 = Vector2(x, top + bar_h - bar_w / 2.0)
-		_capsule(a + Vector2(0, 5), b + Vector2(0, 5), bar_w, Color(0.2, 0.1, 0.03, 0.25))
+		_capsule(a + Vector2(0, 5), b + Vector2(0, 5), bar_w, ClayStyle.SHADOW)
 		_capsule(a, b, bar_w, BAR_COLOR)
 		_capsule(a + Vector2(-bar_w * 0.18, 0), b + Vector2(-bar_w * 0.18, -bar_w * 0.3), bar_w * 0.28, BAR_COLOR.lightened(0.35))
 

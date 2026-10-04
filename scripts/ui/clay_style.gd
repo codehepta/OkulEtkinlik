@@ -35,13 +35,44 @@ const BUBBLE_BG: Color = Color(0.24, 0.16, 0.1, 0.8)
 const BUBBLE_TEXT: Color = Color(1.0, 0.97, 0.9)
 ## Kil gölgesi.
 const SHADOW: Color = Color(0.2, 0.12, 0.05, 0.28)
-## Bölge renk çiftleri (spec §5.1): [ana, vurgu].
-const REGION_COLORS: Dictionary = {
-	"sayi_ormani": [Color(0.5, 0.78, 0.38), Color(1.0, 0.64, 0.3)],
-	"harf_vadisi": [Color(0.7, 0.55, 0.88), Color(0.98, 0.6, 0.78)],
-	"hayat_kasabasi": [Color(1.0, 0.84, 0.36), Color(0.45, 0.66, 0.95)],
-	"kesif_laboratuvari": [Color(0.3, 0.8, 0.78), Color(0.97, 0.98, 0.98)],
+## Bölge rozetleri (spec §5.1 bölge renkleri): [açık zemin, vurgu kenarı]. Ağaç ev de burada.
+const REGION_BADGE: Dictionary = {
+	"sayi_ormani": [Color(0.82, 0.94, 0.62), Color(0.93, 0.52, 0.18)],
+	"harf_vadisi": [Color(0.91, 0.82, 0.98), Color(0.89, 0.45, 0.68)],
+	"hayat_kasabasi": [Color(1.0, 0.91, 0.52), Color(0.32, 0.56, 0.88)],
+	"kesif_laboratuvari": [Color(0.97, 1.0, 1.0), Color(0.16, 0.70, 0.70)],
+	"agac_ev": [Color(0.97, 0.86, 0.64), Color(0.55, 0.34, 0.18)],
 }
+## Başlık plaketi (açılış, albüm): tereyağı sarısı zemin, karamel kenar, koyu kahve başlık.
+const BUTTER: Color = Color(0.99, 0.84, 0.55)
+const CARAMEL: Color = Color(0.82, 0.52, 0.27)
+const TITLE_INK: Color = Color(0.42, 0.22, 0.1)
+## Fildişi kart / rozet / tepsi zemini.
+const IVORY: Color = Color(1.0, 0.96, 0.88)
+## Patika ve rozet kenarı: koyu kil.
+const CLAY_EDGE: Color = Color(0.62, 0.42, 0.24)
+## Patika gövdesi: kum.
+const SAND: Color = Color(0.96, 0.83, 0.58)
+## Çetele çubukları: kakao kil.
+const COCOA: Color = Color(0.55, 0.32, 0.16)
+## Sürüklenen kart: şeftali kil.
+const PEACH: Color = Color(0.98, 0.72, 0.42)
+## Tur göstergesi: biten tur ve şimdiki tur halkası.
+const TANGERINE: Color = Color(0.98, 0.62, 0.22)
+const EMBER: Color = Color(0.93, 0.47, 0.16)
+## Hoparlör simgesi.
+const TEAL: Color = Color(0.16, 0.66, 0.74)
+## Yeni açılan durağın halesi.
+const GLOW: Color = Color(1.0, 0.9, 0.3, 0.85)
+## Sıcak zemin gradyanı (albüm) ve açılışın yedek gökyüzü.
+const WARM_TOP: Color = Color(1.0, 0.95, 0.82)
+const WARM_BOTTOM: Color = Color(0.98, 0.84, 0.64)
+const DAY_TOP: Color = Color(0.55, 0.86, 0.9)
+const DAY_BOTTOM: Color = Color(0.99, 0.9, 0.72)
+## Gece gökyüzü (oturum sonu yer tutucusu): üst, orta, alt.
+const NIGHT_TOP: Color = Color(0.1, 0.13, 0.32)
+const NIGHT_MID: Color = Color(0.2, 0.22, 0.48)
+const NIGHT_BOTTOM: Color = Color(0.4, 0.34, 0.6)
 
 # --- Ölçüler ---
 const RADIUS: int = 28
@@ -56,6 +87,9 @@ const ICON_MAX: int = 64
 ## Altyazı balonu için ekranların altta (ya da üstte) boş bıraktığı şerit yüksekliği.
 const SUBTITLE_BAND: float = 200.0
 const CHECK_ICON_KEY: String = "ui.check"
+## Bütün yazılar Andika (spec §5.1); başlıklar kalın.
+const FONT_REGULAR: String = "res://assets/fonts/Andika-Regular.ttf"
+const FONT_BOLD: String = "res://assets/fonts/Andika-Bold.ttf"
 
 ## Kil kutusu: dolu zemin, koyu kenar, kalın alt kenar ve yumuşak gölge.
 static func box(color: Color, radius: int = RADIUS, depth: int = DEPTH) -> StyleBoxFlat:
@@ -119,6 +153,58 @@ static func bubble_box(radius: int, pad_x: float, pad_y: float) -> StyleBoxFlat:
 	s.content_margin_bottom = pad_y
 	return s
 
+## Genel kil plaket: kenar her yanda `border`, altta `border + depth` (kabarık kil), yumuşak gölge.
+## Rozetler, başlık plaketleri, kartlar ve albüm yuvaları bunu kullanır.
+static func plaque_box(fill: Color, edge: Color, radius: int = 48, border: int = 6, depth: int = 6,
+		shadow: int = 10, pad_x: float = 24.0, pad_y: float = 12.0) -> StyleBoxFlat:
+	var s: StyleBoxFlat = StyleBoxFlat.new()
+	s.bg_color = fill
+	s.set_corner_radius_all(radius)
+	s.corner_detail = 12
+	s.anti_aliasing = true
+	s.border_color = edge
+	s.set_border_width_all(border)
+	s.border_width_bottom = border + depth
+	if shadow > 0:
+		s.shadow_color = SHADOW
+		s.shadow_size = shadow
+		s.shadow_offset = Vector2(0, maxf(5.0, shadow * 0.7))
+	s.content_margin_left = pad_x
+	s.content_margin_right = pad_x
+	s.content_margin_top = pad_y
+	s.content_margin_bottom = pad_y
+	return s
+
+## Ders kartı (ClayTile, hoparlör): kalın alt kenar ve belirgin gölgeyle kabarık kil.
+static func card_box(color: Color, radius: int = RADIUS) -> StyleBoxFlat:
+	return plaque_box(color, color.darkened(0.22), radius, BORDER, 8, 14, 0.0, 0.0)
+
+## Yarı saydam fildişi tepsi: oyun alanını arka plandan ayırır, okunurluğu artırır.
+static func tray_box(alpha: float = 0.72, radius: int = 56) -> StyleBoxFlat:
+	var s: StyleBoxFlat = StyleBoxFlat.new()
+	s.bg_color = Color(IVORY, alpha)
+	s.set_corner_radius_all(radius)
+	s.corner_detail = 12
+	s.border_color = Color(1.0, 1.0, 1.0, 0.85)
+	s.set_border_width_all(6)
+	s.shadow_color = Color(SHADOW, 0.18)
+	s.shadow_size = 24
+	s.shadow_offset = Vector2(0, 10)
+	s.anti_aliasing = true
+	return s
+
+## Kenarsız yumuşak leke (hale, sis): isteğe bağlı aynı renkte yumuşak gölge kenarı.
+static func soft_box(color: Color, radius: int, feather: int = 0) -> StyleBoxFlat:
+	var s: StyleBoxFlat = StyleBoxFlat.new()
+	s.bg_color = color
+	s.set_corner_radius_all(radius)
+	s.corner_detail = 16
+	s.anti_aliasing = true
+	if feather > 0:
+		s.shadow_color = color
+		s.shadow_size = feather
+	return s
+
 ## Klavye odağı halkası (dokunmatikte görünmez).
 static func focus_box(radius: int = RADIUS) -> StyleBoxFlat:
 	var s: StyleBoxFlat = StyleBoxFlat.new()
@@ -163,6 +249,11 @@ static func _update_check(b: Button, on: bool) -> void:
 ## Uygulama geneli kil teması (Button, Panel, LineEdit, HSlider, CheckButton, ScrollContainer, Label...).
 static func build_theme() -> Theme:
 	var t: Theme = Theme.new()
+	# Yazı tipi: her denetim Andika ile çizilir (proje temasına bağlı kalmadan).
+	var regular: Font = regular_font()
+	if regular != null:
+		t.default_font = regular
+	t.default_font_size = BUTTON_FONT_SIZE
 	# Düğme
 	t.set_stylebox("normal", "Button", box(CREAM))
 	t.set_stylebox("hover", "Button", box(CREAM.lightened(0.07)))
@@ -326,3 +417,87 @@ static func switch_texture(on: bool) -> ImageTexture:
 			px.a = a
 			img.set_pixel(x, y, px)
 	return ImageTexture.create_from_image(img)
+
+# --- Ortak yardımcılar ---
+
+static func regular_font() -> Font:
+	return load(FONT_REGULAR) as Font if ResourceLoader.exists(FONT_REGULAR) else null
+
+## Başlıklar için Andika Bold (yoksa null: tema yazı tipi kalır).
+static func bold_font() -> Font:
+	return load(FONT_BOLD) as Font if ResourceLoader.exists(FONT_BOLD) else null
+
+## Etikete kalın başlık yazı tipi verir.
+static func use_bold(l: Control) -> void:
+	var f: Font = bold_font()
+	if f != null:
+		l.add_theme_font_override("font", f)
+
+## Dikey iki renkli gradyan dokusu (sıcak zeminler).
+static func vertical_gradient(top: Color, bottom: Color) -> GradientTexture2D:
+	var g: Gradient = Gradient.new()
+	g.set_color(0, top)
+	g.set_color(1, bottom)
+	var tex: GradientTexture2D = GradientTexture2D.new()
+	tex.gradient = g
+	tex.fill_from = Vector2(0.5, 0.0)
+	tex.fill_to = Vector2(0.5, 1.0)
+	tex.width = 64
+	tex.height = 256
+	return tex
+
+## Fareyi yok sayan, verilen kutuyla çizilen Panel.
+static func make_panel(b: StyleBox, rect: Rect2) -> Panel:
+	var p: Panel = Panel.new()
+	p.add_theme_stylebox_override("panel", b)
+	p.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	p.position = rect.position
+	p.size = rect.size
+	return p
+
+## Kesik kenarlı yuvarlak köşeli çerçeve (boş bırakma yuvası). Kenar boyunca eşit aralıklı çizgiler.
+static func draw_dashed_round_rect(ci: CanvasItem, rect: Rect2, radius: float, color: Color, width: float, dash: float) -> void:
+	var pts: PackedVector2Array = _round_rect_points(rect, radius, 10)
+	var total: float = 0.0
+	for i: int in pts.size():
+		total += pts[i].distance_to(pts[(i + 1) % pts.size()])
+	var count: int = maxi(int(total / (dash * 2.0)), 4)
+	var step: float = total / count
+	for k: int in count:
+		var a: Vector2 = _point_at(pts, k * step)
+		var b: Vector2 = _point_at(pts, k * step + step * 0.55)
+		ci.draw_line(a, b, color, width, true)
+		ci.draw_circle(a, width / 2.0, color, true, -1.0, true)
+		ci.draw_circle(b, width / 2.0, color, true, -1.0, true)
+
+static func _round_rect_points(rect: Rect2, radius: float, seg: int) -> PackedVector2Array:
+	var out: PackedVector2Array = PackedVector2Array()
+	var r: float = minf(radius, minf(rect.size.x, rect.size.y) / 2.0)
+	var centers: Array[Vector2] = [
+		Vector2(rect.end.x - r, rect.position.y + r),
+		Vector2(rect.end.x - r, rect.end.y - r),
+		Vector2(rect.position.x + r, rect.end.y - r),
+		Vector2(rect.position.x + r, rect.position.y + r),
+	]
+	for c: int in 4:
+		var start: float = -PI / 2.0 + c * PI / 2.0
+		for i: int in seg + 1:
+			var ang: float = start + (PI / 2.0) * i / seg
+			out.append(centers[c] + Vector2(cos(ang), sin(ang)) * r)
+	return out
+
+static func _point_at(pts: PackedVector2Array, dist: float) -> Vector2:
+	var d: float = dist
+	for i: int in pts.size():
+		var a: Vector2 = pts[i]
+		var b: Vector2 = pts[(i + 1) % pts.size()]
+		var l: float = a.distance_to(b)
+		if d <= l:
+			return a.lerp(b, d / l if l > 0.0 else 0.0)
+		d -= l
+	return pts[0]
+
+## Kayıtlı "hareketi azalt" ayarı (bileşenler AppState'e bağlı olmadan okur).
+static func reduce_motion() -> bool:
+	var settings: Variant = SaveService.data.get("settings", {})
+	return settings is Dictionary and bool((settings as Dictionary).get("reduce_motion", false))
