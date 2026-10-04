@@ -29,6 +29,8 @@ Her maddeyi sırayla uygula; "Beklenen" ile uyuşmayan her şeyi not al.
 2. Çocuk profiliyle oyna ve 10 dakika bekle. Beklenen: süre dolunca **mevcut tur biter**, ardından Bilge'nin uyku ekranı gelir; oyun devam ettirilemez.
 3. Uyku ekranından çıkıp uygulamayı kapat-aç, aynı profili seç. Beklenen: aynı gün yine uyku ekranı.
 4. Panelde "Bugünlük süreyi aç" ile kilit kalkar.
+5. **Cihaz başına sınır (Faz 7a):** süre dolunca profil seçimine dön, başka bir profil seç. Beklenen: o profil de uyku ekranına gider; süre bütün profiller için ortaktır.
+6. **Günü sıfırla (Faz 7a):** cihaz tarihini 2 gün ileri al, oyna, sonra tarihi bugüne geri getir. Veli paneli -> "Günü sıfırla". Beklenen: "Oyun günü bugüne döndürüldü." mesajı; süre sınırı bugünün sayacıyla yeniden işler.
 
 ## 5. Veli kapısı
 1. Profil seçim ekranında dişli simgesine dokun. Beklenen: aritmetik soru çıkar.
@@ -96,6 +98,18 @@ Bu şablonların henüz ünite içeriği yok (içerik Faz 2 matrisinden sonra ya
 
 ## Asset geldiğinde (parti 010)
 1. `item.para.*`, `item.yiyecek.pizza`, `ui.clock_face` dosyaları eklenince yer tutucu çizimlerin yerini alır; değer etiketleri paraların ortasında, pizza dilimleri görselin çemberiyle örtüşüyor, kadran rakamları kenara taşmıyor.
+
+## Faz 7a — Ağaç Evi, Tekrar Bulutu, veli paneli
+1. **Ağaç Evi girişi:** haritada ortadaki ağaç eve dokun. Beklenen: "Bilge'nin Ağaç Evi" okunur, oda açılır. Hiç süs yokken Bilge "Ağaç evim şimdilik boş..." der; rafta kilitli bir yuva ve yıldız sayacı (ör. "2 / 5") görünür.
+2. **Süs açılması:** toplam 5 yıldıza ulaşan durağı bitir. Beklenen: sonuç ekranında çıkartmadan sonra süs görseli çıkar ve Bilge "Ağaç evim için yeni bir süs kazandın!" der.
+3. **Sürükle-düzenle:** Ağaç Evi'nde raftaki süsü parmakla odaya sürükle, bırak. Beklenen: süs bırakılan yerde kalır; parmağın altında hafifçe büyür (hareketi azalt açıkken büyümez). Süsü rafa geri sürükle: rafa döner. Uygulamayı kapat-aç: yerleşim korunur.
+4. **Kilitli yuva:** kilide dokun. Beklenen: Bilge "Bu süs için biraz daha yıldız toplayalım!" der; ceza ya da bekleme yok.
+5. **Tekrar Bulutu:** bir durağı 1 yıldızla bitir (çok yanlış yap) ya da ertesi gün 3 yıldızlı bir durağın patikasına gir. Beklenen: patikanın sağ üstünde Tekrar Bulutu belirir, Bilge "Tekrar Bulutu geldi!" der. Buluta dokun: 3 karışık tur oynanır; sonuçta yıldız görünür, "Tekrar oyna" düğmesi yoktur. "Devam" ile patikaya dönülür; iyi oynandıysa bulut kaybolur.
+6. **Evde etkinlik önerileri:** veli paneli -> "Evde etkinlik önerileri". Beklenen: seçili profilin sınıfına göre ders başlıkları altında çıktı adı ve öneri metni listelenir; sınıf değişince liste değişir. Metinler doğru Türkçe yazımla ve çevrimdışı görünür.
+
+## Asset geldiğinde (parti 023, 024)
+1. `decor.*` görselleri eklenince rafta ve odada yer tutucuların yerini alır; süsler kırpılmadan ve aynı ışıkta görünür.
+2. `vo.genel.tekrar_giris`, `vo.genel.agac_ev_bos`, `vo.genel.agac_ev_kilitli` kayıtları cihaz sesinin yerine çalar.
 
 ---
 

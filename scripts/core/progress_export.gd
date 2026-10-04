@@ -34,7 +34,7 @@ static func prepare_import(text: String) -> Dictionary:
 		if not (p is Dictionary):
 			return bad
 	var data: Dictionary = SaveSchema.migrate(raw)
-	if not (data.get("settings") is Dictionary):
+	if not (data.get("settings") is Dictionary) or not (data.get("usage") is Dictionary):
 		return bad
 	var seen: Dictionary = {}
 	for p: Dictionary in data["profiles"]:
@@ -42,7 +42,7 @@ static func prepare_import(text: String) -> Dictionary:
 		if not (id is String) or (id as String).is_empty() or seen.has(id):
 			return bad
 		seen[id] = true
-		for key: String in ["nodes", "outcomes", "usage"]:
+		for key: String in ["nodes", "outcomes", "decor"]:
 			if not (p.get(key) is Dictionary):
 				return bad
 		if not (p.get("stickers") is Array):

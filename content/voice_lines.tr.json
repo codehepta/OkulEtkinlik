@@ -127,6 +127,18 @@
 		"text": "Ağaç evime hoş geldin! Süsleri sürükleyip istediğin yere koyabilirsin.",
 		"speaker": "BILGE"
 	},
+	"vo.genel.tekrar_giris": {
+		"text": "Tekrar zamanı! Öğrendiklerimizi birlikte hatırlayalım.",
+		"speaker": "BILGE"
+	},
+	"vo.genel.agac_ev_bos": {
+		"text": "Ağaç evim şimdilik boş. Yıldız topladıkça buraya güzel süsler gelecek!",
+		"speaker": "BILGE"
+	},
+	"vo.genel.agac_ev_kilitli": {
+		"text": "Bu süs için biraz daha yıldız toplayalım!",
+		"speaker": "BILGE"
+	},
 	"vo.genel.uyku_zamani": {
 		"text": "Bugünlük bu kadar! Uyku zamanı. Yarın yine oynarız, görüşürüz!",
 		"speaker": "BILGE"

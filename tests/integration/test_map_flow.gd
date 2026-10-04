@@ -107,12 +107,13 @@ func test_region_tap_says_name_then_opens_path() -> void:
 	assert_eq(_app.current_scene_name(), "region_path")
 	assert_eq(_screen().subject, "matematik")
 
-func test_tree_house_says_soon() -> void:
+func test_tree_house_tap_opens_tree_house() -> void:
 	_login(1)
 	_app.goto("world_map")
-	_screen().tap_tree_house()
-	assert_true(_fake.said.has("vo.genel.yakinda"))
-	assert_eq(_app.current_scene_name(), "world_map")
+	await _screen().tap_tree_house()
+	assert_true(_fake.said.has("vo.bolge.agac_ev"))
+	assert_eq(_app.current_scene_name(), "tree_house")
+	assert_true(_fake.said.has("vo.genel.agac_ev_bos"), "süs yokken boş oda satırı")
 
 func test_world_map_limit_goes_to_session_end() -> void:
 	_login(1)
@@ -204,11 +205,10 @@ func test_album_has_fen_tab_for_grade_3() -> void:
 
 func _lock(id: String) -> void:
 	_save.data["settings"]["daily_limit_min"] = 10
-	for p: Variant in _save.data["profiles"]:
-		var d: Dictionary = p
-		if str(d["id"]) == id:
-			d["usage"]["seconds"] = 9999
-			d["usage"]["day"] = _timer._effective_day()
+	# Süre sınırı cihaz başınadır; profil kimliği yalnızca çağrıyı okunur kılmak için.
+	assert_ne(id, "")
+	_save.data["usage"]["seconds"] = 9999
+	_save.data["usage"]["day"] = _timer._effective_day()
 
 func test_locked_profile_cannot_enter_play_scenes() -> void:
 	var pid: String = _login(1)
@@ -406,3 +406,91 @@ func test_every_label_uses_andika() -> void:
 	assert_true(ok)
 	for c: Node in _screen().find_children("*", "Label", true, false):
 		assert_eq((c as Label).get_theme_font("font").get_font_name(), "Andika", "ders: %s" % c.get_path())
+
+func _decor_profile(stars_total: int) -> String:
+	var pid: String = _login(1)
+	_progress.decor_path = "res://tests/fixtures/tree_house.json"
+	var nodes: Dictionary = _save.data["profiles"][0]["nodes"]
+	var left: int = stars_total
+	var i: int = 0
+	while left > 0:
+		nodes["x.y.u01.n%02d" % i] = {"best_stars": mini(3, left), "plays": 1}
+		left -= mini(3, left)
+		i += 1
+	return pid
+
+func test_tree_house_shelf_drag_place_and_store() -> void:
+	var pid: String = _decor_profile(15)
+	_app.goto("tree_house")
+	var th: Node = _screen()
+	assert_eq(th.unlocked_items(), PackedStringArray(["decor.test_a", "decor.test_b"]))
+	assert_eq(th.shelf_items(), PackedStringArray(["decor.test_a", "decor.test_b"]))
+	assert_true(_fake.said.has("vo.genel.agac_ev_giris"))
+	assert_eq(th.counter_text(), "15 / 30")
+	var room: Rect2 = th.room_rect()
+	th.drop_item("decor.test_a", room.get_center())
+	assert_eq(th.placed_items(), PackedStringArray(["decor.test_a"]))
+	var pos: Vector2 = _progress.decor_layout(pid)["decor.test_a"]
+	assert_almost_eq(pos.x, 0.5, 0.01)
+	assert_almost_eq(pos.y, 0.5, 0.01)
+	assert_true(room.has_point((th.item_control("decor.test_a") as Control).position + Vector2(100, 100)))
+	th.drop_item("decor.test_a", th.shelf_rect().get_center())
+	assert_eq(th.placed_items(), PackedStringArray())
+	assert_eq(th.shelf_items().size(), 2)
+
+func test_tree_house_layout_survives_reopen() -> void:
+	_decor_profile(5)
+	_app.goto("tree_house")
+	_screen().drop_item("decor.test_a", _screen().room_rect().position + Vector2(10, 10))
+	_app.goto("world_map")
+	_app.goto("tree_house")
+	assert_eq(_screen().placed_items(), PackedStringArray(["decor.test_a"]))
+	assert_eq(_screen().shelf_items(), PackedStringArray())
+
+func test_tree_house_lock_slot_says_more_stars() -> void:
+	_decor_profile(0)
+	_app.goto("tree_house")
+	assert_eq(_screen().unlocked_items(), PackedStringArray())
+	_screen().lock_slot().pressed.emit()
+	assert_true(_fake.said.has("vo.genel.agac_ev_kilitli"))
+
+func test_tree_house_limit_goes_to_session_end() -> void:
+	_login(1)
+	_app.goto("tree_house")
+	_timer.limit_reached.emit()
+	assert_eq(_app.current_scene_name(), "session_end")
+
+func test_result_shows_new_decor() -> void:
+	_login(1)
+	_app.goto("result", {"stars": 3, "new_sticker": "", "new_decor": "decor.test_a", "unlocked": "", "node_id": N1, "time_up": false, "subject": "matematik"})
+	await wait_until(func() -> bool: return _screen().is_sequence_done(), 6.0)
+	assert_eq(_screen().shown_decor(), "decor.test_a")
+	assert_true(_fake.said.has("vo.genel.hediye"))
+
+func test_review_cloud_appears_when_due_and_runs_review() -> void:
+	var pid: String = _login(1)
+	_app.goto("region_path", {"subject": "matematik"})
+	assert_null(_screen().review_button(), "vadesi gelen çıktı yokken bulut yok")
+	var results: Array[RoundResult] = []
+	var r: RoundResult = RoundResult.new()
+	r.wrong = 5
+	r.outcomes = PackedStringArray(["TEST.1"])
+	results.append(r)
+	_progress.record_node(pid, N1, results)
+	_app.goto("region_path", {"subject": "matematik"})
+	assert_not_null(_screen().review_button(), "1 yıldız: kutu 1, vade bugün")
+	assert_true(_fake.said.has("vo.genel.tekrar_bulutu"))
+	_screen().tap_review()
+	assert_eq(_app.current_scene_name(), "lesson")
+	assert_true(_screen().is_review())
+	assert_eq(_screen().round_count(), 3)
+	await _win_lesson()
+	var ok: bool = await wait_until(func() -> bool: return _app.current_scene_name() == "result", 6.0)
+	assert_true(ok, "tekrar bitince sonuç ekranı")
+	assert_false(_screen().replay_button().visible, "tekrar sonucunda tekrar oyna yok")
+	assert_eq(_progress.best_stars(pid, N1), 1, "tekrar düğüm yıldızını değiştirmez")
+	assert_eq(int(_save.data["profiles"][0]["outcomes"]["TEST.1"]["box"]), 2)
+	await wait_until(func() -> bool: return _screen().is_sequence_done(), 6.0)
+	_screen().continue_button().pressed.emit()
+	assert_eq(_app.current_scene_name(), "region_path")
+	assert_null(_screen().review_button(), "tekrardan sonra vade yarına geçti")
