@@ -89,8 +89,10 @@ static func draw_shape(ci: CanvasItem, shape: String, r: Rect2, color: Color) ->
 	ci.draw_colored_polygon(shadow, ClayStyle.SHADOW)
 	ci.draw_colored_polygon(pts, color)
 	ci.draw_polyline(pts + PackedVector2Array([pts[0]]), color.darkened(0.3), maxf(3.0, r.size.x * 0.035), true)
-	var hl: Vector2 = r.get_center() + Vector2(-0.16, -0.16) * r.size
-	ci.draw_circle(hl, r.size.x * 0.07, Color(1, 1, 1, 0.35), true, -1.0, true)
+	# Işık lekesi yalnızca geniş gövdeli şekillerde (üçgen / yıldız ucunda taşmasın).
+	if shape in ["circle", "square", "heart"]:
+		var hl: Vector2 = r.get_center() + Vector2(-0.16, -0.16) * r.size
+		ci.draw_circle(hl, r.size.x * 0.07, Color(1, 1, 1, 0.35), true, -1.0, true)
 
 ## Şeklin çokgen noktaları (rect içinde, kenarlardan biraz içeride).
 static func shape_points(shape: String, r: Rect2) -> PackedVector2Array:

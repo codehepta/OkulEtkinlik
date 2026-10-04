@@ -9,6 +9,7 @@ const SCENES: Dictionary = {
 	"sequence": "res://scenes/games/sequence/sequence.tscn",
 	"balloon_pop": "res://scenes/games/balloon_pop/balloon_pop.tscn",
 	"pattern": "res://scenes/games/pattern/pattern.tscn",
+	"balance": "res://scenes/games/balance/balance.tscn",
 }
 
 static func has(id: String) -> bool:

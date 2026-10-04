@@ -1,7 +1,7 @@
 extends GutTest
 ## Faz 3 şablonlarının kaydı ve parametre doğrulaması (TemplateRegistry üzerinden).
 
-const FAZ3: PackedStringArray = ["sequence", "balloon_pop", "pattern"]
+const FAZ3: PackedStringArray = ["sequence", "balloon_pop", "pattern", "balance"]
 
 func _item(v: String) -> Dictionary:
 	return {"type": "item", "value": v}
@@ -91,3 +91,37 @@ func test_pattern_color_only_rejected() -> void:
 	var errs: Array[String] = TemplateRegistry.validate("pattern", {"kind": "repeat", "unit": [_cell("circle", "red"), _cell("circle", "blue")], "length": 5})
 	assert_eq(errs.size(), 1)
 	assert_eq(errs[0], ContentValidator.msg("err.params.pat_color_only"))
+
+# --- balance ---
+func test_balance_valid() -> void:
+	_ok("balance", {"mode": "scale", "ask": "compare", "left": [7], "right": [3, 2]})
+	_ok("balance", {"mode": "scale", "ask": "compare", "left": [4], "right": [6], "item": "item.meyve.elma"})
+	_ok("balance", {"mode": "scale", "ask": "missing", "left": [3, 4], "right": [5, null], "choices": [1, 2, 3]})
+	_ok("balance", {"mode": "scale", "ask": "missing", "left": [null], "right": [8, 2], "choices": [10, 9]})
+	_ok("balance", {"mode": "number_line", "ask": "find", "min": 0, "max": 10, "tick": 1, "value": 6, "choices": [5, 6, 7]})
+	_ok("balance", {"mode": "number_line", "ask": "place", "min": 0, "max": 100, "tick": 10, "value": 70})
+	_ok("balance", {"mode": "number_line", "ask": "place", "min": 20, "max": 40, "tick": 10, "value": 30})
+
+func test_balance_invalid() -> void:
+	_bad("balance", {"mode": "seesaw"}, "bilinmeyen mod")
+	_bad("balance", {"mode": "scale", "ask": "guess", "left": [1], "right": [2]}, "bilinmeyen soru")
+	_bad("balance", {"mode": "scale", "ask": "compare", "left": [], "right": [2]}, "boş taraf")
+	_bad("balance", {"mode": "scale", "ask": "compare", "left": [1, 2, 3, 4], "right": [2]}, "4 değer")
+	_bad("balance", {"mode": "scale", "ask": "compare", "left": [1001], "right": [2]}, "1000'den büyük")
+	_bad("balance", {"mode": "scale", "ask": "compare", "left": [4, 1], "right": [6], "item": "item.meyve.elma"}, "item ile çok değer")
+	_bad("balance", {"mode": "scale", "ask": "compare", "left": [11], "right": [6], "item": "item.meyve.elma"}, "item ile 10'dan fazla")
+	_bad("balance", {"mode": "scale", "ask": "compare", "left": [null], "right": [6]}, "compare'da null")
+	_bad("balance", {"mode": "scale", "ask": "missing", "left": [3, 4], "right": [5, 2], "choices": [1, 2]}, "null yok")
+	_bad("balance", {"mode": "scale", "ask": "missing", "left": [null, 4], "right": [5, null], "choices": [1, 2]}, "iki null")
+	_bad("balance", {"mode": "scale", "ask": "missing", "left": [3, 4], "right": [5, null], "choices": [1, 3]}, "choices'ta cevap yok")
+	_bad("balance", {"mode": "scale", "ask": "missing", "left": [3, 4], "right": [5, null]}, "choices yok")
+	_bad("balance", {"mode": "number_line", "ask": "find", "min": 0, "max": 10, "tick": 1, "value": 6}, "find'da choices yok")
+	_bad("balance", {"mode": "number_line", "ask": "place", "min": 0, "max": 20, "tick": 1, "value": 6}, "20 aralık")
+	_bad("balance", {"mode": "number_line", "ask": "place", "min": 0, "max": 10, "tick": 3, "value": 6}, "tick'e bölünmüyor")
+	_bad("balance", {"mode": "number_line", "ask": "place", "min": 0, "max": 10, "tick": 2, "value": 5}, "çentikte değil")
+	_bad("balance", {"mode": "number_line", "ask": "place", "min": 0, "max": 10, "tick": 1, "value": 10}, "uçta")
+	_bad("balance", {"mode": "number_line", "ask": "place", "min": 995, "max": 1005, "tick": 1, "value": 1000}, "1000'i aşan")
+
+func test_balance_missing_negative_rejected() -> void:
+	var errs: Array[String] = TemplateRegistry.validate("balance", {"mode": "scale", "ask": "missing", "left": [3], "right": [5, null], "choices": [1, 2]})
+	assert_eq(errs, [ContentValidator.msg("err.params.bal_missing_range")] as Array[String], "3 = 5 + ? çözümsüz")
