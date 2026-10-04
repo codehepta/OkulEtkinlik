@@ -1,0 +1,425 @@
+{
+	"id": "g3.fen.u01",
+	"grade": 3,
+	"subject": "fen",
+	"title_key": "unit.g3.fen.u01",
+	"source": {
+		"program": "TYMM Fen Bilimleri (3–8)",
+		"doc": "Fen Bilimleri Dersi Öğretim Programı",
+		"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+		"page": 19,
+		"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf",
+		"theme": "1. BİLİMSEL KEŞİF YOLCULUĞU"
+	},
+	"nodes": [
+		{
+			"id": "g3.fen.u01.n01",
+			"outcomes": [
+				"FB.3.1.1"
+			],
+			"title_key": "node.g3.fen.u01.n01",
+			"intro_voice": "vo.g3.fen.u01.n01.intro",
+			"sticker": "st.fen.buyutec",
+			"rounds": [
+				{
+					"template": "scenario",
+					"difficulty": 1,
+					"voice": "vo.g3.fen.u01.n01.r01",
+					"params": {
+						"scene": "item.fen.sahne.dinozor_merak",
+						"choices": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.yol_kaynak"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.yol_deney"
+								},
+								"correct": false
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.yol_gozlem"
+								},
+								"correct": false
+							}
+						],
+						"hint": "vo.g3.fen.u01.n01.r01.ipucu"
+					}
+				},
+				{
+					"template": "scenario",
+					"difficulty": 2,
+					"voice": "vo.g3.fen.u01.n01.r02",
+					"params": {
+						"scene": "item.fen.sahne.yuzen_oyuncaklar",
+						"choices": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.yol_deney"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.yol_kaynak"
+								},
+								"correct": false
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.yol_gozlem"
+								},
+								"correct": false
+							}
+						],
+						"hint": "vo.g3.fen.u01.n01.r02.ipucu"
+					}
+				},
+				{
+					"template": "scenario",
+					"difficulty": 2,
+					"voice": "vo.g3.fen.u01.n01.r03",
+					"params": {
+						"scene": "item.fen.sahne.kus_yemlik",
+						"choices": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.yol_gozlem"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.yol_deney"
+								},
+								"correct": false
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.yol_kaynak"
+								},
+								"correct": false
+							}
+						],
+						"hint": "vo.g3.fen.u01.n01.r03.ipucu"
+					}
+				},
+				{
+					"template": "sort_bins",
+					"difficulty": 3,
+					"voice": "vo.g3.fen.u01.n01.r04",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "item",
+									"value": "item.fen.yol_gozlem",
+									"voice": "vo.fen.ad.yol_gozlem"
+								},
+								"shape": "circle",
+								"color": "orange"
+							},
+							{
+								"label": {
+									"type": "item",
+									"value": "item.fen.yol_deney",
+									"voice": "vo.fen.ad.yol_deney"
+								},
+								"shape": "square",
+								"color": "blue"
+							},
+							{
+								"label": {
+									"type": "item",
+									"value": "item.fen.yol_kaynak",
+									"voice": "vo.fen.ad.yol_kaynak"
+								},
+								"shape": "triangle",
+								"color": "green"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.karinca_yuvasi"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.hilal_ay"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.buz_erime"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.miknatis_atac"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.dinozor"
+								},
+								"bin": 2
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.derin_deniz"
+								},
+								"bin": 2
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g3.fen.u01.n02",
+			"outcomes": [
+				"FB.3.1.2"
+			],
+			"title_key": "node.g3.fen.u01.n02",
+			"intro_voice": "vo.g3.fen.u01.n02.intro",
+			"sticker": "st.fen.mikroskop",
+			"rounds": [
+				{
+					"template": "story",
+					"difficulty": 1,
+					"voice": "vo.g3.fen.u01.n02.r01",
+					"params": {
+						"pages": [
+							{
+								"text": "story.g3.fen.u01.n02.r01.p1",
+								"voice": "vo.g3.fen.u01.n02.r01.p1",
+								"image": "item.fen.bilim_deniz"
+							},
+							{
+								"text": "story.g3.fen.u01.n02.r01.p2",
+								"voice": "vo.g3.fen.u01.n02.r01.p2",
+								"image": "item.fen.bilim_deniz"
+							},
+							{
+								"text": "story.g3.fen.u01.n02.r01.p3",
+								"voice": "vo.g3.fen.u01.n02.r01.p3",
+								"image": "item.fen.bilim_kerem"
+							},
+							{
+								"text": "story.g3.fen.u01.n02.r01.p4",
+								"voice": "vo.g3.fen.u01.n02.r01.p4",
+								"image": "item.fen.bilim_kerem"
+							}
+						],
+						"questions": [
+							{
+								"voice": "vo.g3.fen.u01.n02.r01.q1",
+								"text": "story.g3.fen.u01.n02.r01.q1",
+								"options": [
+									{
+										"type": "item",
+										"value": "item.fen.saksi_bitki"
+									},
+									{
+										"type": "item",
+										"value": "item.fen.teleskop"
+									},
+									{
+										"type": "item",
+										"value": "item.fen.keman"
+									}
+								],
+								"answer": 0,
+								"page": 0
+							},
+							{
+								"voice": "vo.g3.fen.u01.n02.r01.q2",
+								"text": "story.g3.fen.u01.n02.r01.q2",
+								"options": [
+									{
+										"type": "item",
+										"value": "item.fen.resim_fircasi"
+									},
+									{
+										"type": "item",
+										"value": "item.fen.keman"
+									},
+									{
+										"type": "item",
+										"value": "item.fen.saksi_bitki"
+									}
+								],
+								"answer": 1,
+								"page": 3
+							}
+						]
+					}
+				},
+				{
+					"template": "sort_bins",
+					"difficulty": 2,
+					"voice": "vo.g3.fen.u01.n02.r02",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "text",
+									"value": "fen.txt.ortak",
+									"voice": "vo.fen.txt.ortak"
+								},
+								"shape": "heart",
+								"color": "green"
+							},
+							{
+								"label": {
+									"type": "text",
+									"value": "fen.txt.farkli",
+									"voice": "vo.fen.txt.farkli"
+								},
+								"shape": "diamond",
+								"color": "purple"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "text",
+									"value": "fen.txt.merakli",
+									"voice": "vo.fen.txt.merakli"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "fen.txt.sabirli",
+									"voice": "vo.fen.txt.sabirli"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "fen.txt.not_alir",
+									"voice": "vo.fen.txt.not_alir"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.saksi_bitki"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.teleskop"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.keman"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.resim_fircasi"
+								},
+								"bin": 1
+							}
+						]
+					}
+				},
+				{
+					"template": "story",
+					"difficulty": 3,
+					"voice": "vo.g3.fen.u01.n02.r03",
+					"params": {
+						"pages": [
+							{
+								"text": "story.g3.fen.u01.n02.r03.p1",
+								"voice": "vo.g3.fen.u01.n02.r03.p1"
+							}
+						],
+						"questions": [
+							{
+								"voice": "vo.g3.fen.u01.n02.r03.q1",
+								"text": "story.g3.fen.u01.n02.r03.q1",
+								"options": [
+									{
+										"type": "text",
+										"value": "fen.txt.st_hepsi_merakli",
+										"voice": "vo.fen.txt.st_hepsi_merakli"
+									},
+									{
+										"type": "text",
+										"value": "fen.txt.st_hepsi_yildiz",
+										"voice": "vo.fen.txt.st_hepsi_yildiz"
+									},
+									{
+										"type": "text",
+										"value": "fen.txt.st_hic_soru",
+										"voice": "vo.fen.txt.st_hic_soru"
+									}
+								],
+								"answer": 0
+							},
+							{
+								"voice": "vo.g3.fen.u01.n02.r03.q2",
+								"text": "story.g3.fen.u01.n02.r03.q2",
+								"options": [
+									{
+										"type": "text",
+										"value": "fen.txt.st_merak_etmez",
+										"voice": "vo.fen.txt.st_merak_etmez"
+									},
+									{
+										"type": "text",
+										"value": "fen.txt.st_sabirla",
+										"voice": "vo.fen.txt.st_sabirla"
+									},
+									{
+										"type": "text",
+										"value": "fen.txt.st_denemez",
+										"voice": "vo.fen.txt.st_denemez"
+									}
+								],
+								"answer": 1
+							}
+						]
+					}
+				}
+			]
+		}
+	]
+}
