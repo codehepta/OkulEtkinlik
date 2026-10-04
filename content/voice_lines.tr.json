@@ -498,5 +498,969 @@
 	"vo.saat.12_30": {
 		"text": "Saat on iki buçuk.",
 		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u01.n01.intro": {
+		"text": "Merak ettiğimiz bir şeyi nasıl öğreniriz? Gözlem yaparak, deney yaparak ya da kaynaklardan araştırarak! Her soru için en uygun yolu birlikte seçelim.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.fen.u01.n01.r01": {
+		"text": "Can, dinozorların nasıl yaşadığını merak ediyor. Dinozorlar çok uzun zaman önce yaşadı, bugün onları göremeyiz. Can bilgiye nasıl ulaşmalı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u01.n01.r01.ipucu": {
+		"text": "Dinozorları bugün göremeyiz. Onları anlatan kitaplara ve müzelere bakabiliriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u01.n01.r02": {
+		"text": "Ela, hangi oyuncakların suda yüzdüğünü öğrenmek istiyor. Bunun için en uygun yol hangisi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u01.n01.r02.ipucu": {
+		"text": "Oyuncakları tek tek suya koyup denemek en iyi yoldur. Buna deney denir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u01.n01.r03": {
+		"text": "Mert, kuşların yemlikteki hangi yemi en çok yediğini öğrenmek istiyor. Bunun için en uygun yol hangisi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u01.n01.r03.ipucu": {
+		"text": "Kuşları birkaç gün izleyip hangi kaba gittiklerini not almak, yani gözlem yapmak en uygun yoldur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u01.n01.r04": {
+		"text": "Her merak konusunu, onu öğrenmenin en uygun yoluna yerleştir: gözlem, deney ya da kaynaklardan araştırma. Kutulara dokunursan adlarını duyarsın.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u01.n02.intro": {
+		"text": "Bilim insanları kimlerdir, nasıl çalışırlar? İki bilim insanıyla tanışalım ve onlarda ortak olan özellikleri bulalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.fen.u01.n02.r01": {
+		"text": "Bilim insanlarının hikâyesini dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u01.n02.r01.p1": {
+		"text": "Deniz Hanım bir bitki bilimcidir. Bitkileri çok merak eder. Onları büyüteçle inceler ve gördüklerini not alır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u01.n02.r01.p2": {
+		"text": "Deniz Hanım bir tohumun filizlenmesini günlerce sabırla bekler. Boş zamanlarında resim yapar.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u01.n02.r01.p3": {
+		"text": "Kerem Bey bir gök bilimcidir. Gökyüzünü çok merak eder. Geceleri teleskopla yıldızları inceler ve not alır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u01.n02.r01.p4": {
+		"text": "Kerem Bey bir yıldızı görmek için saatlerce sabırla bekler. Boş zamanlarında keman çalar.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u01.n02.r01.q1": {
+		"text": "Deniz Hanım neyi inceliyor?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u01.n02.r01.q2": {
+		"text": "Kerem Bey boş zamanlarında ne yapıyor?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u01.n02.r02": {
+		"text": "Deniz Hanım ile Kerem Bey'i düşün. İkisinde de olan özellikleri Ortak kutusuna, yalnızca birinde olanları Farklı kutusuna koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u01.n02.r03": {
+		"text": "Dinle ve düşün. Bilim insanları hakkında ne söyleyebiliriz?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u01.n02.r03.p1": {
+		"text": "Bilim insanları farklı konuları inceler. Kimi bitkileri, kimi yıldızları, kimi taşları araştırır. Ama hepsi merak eder, soru sorar, dikkatle gözlem yapar ve sabırla çalışır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u01.n02.r03.q1": {
+		"text": "Bilim insanları için hangisi doğrudur?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u01.n02.r03.q2": {
+		"text": "Yeni tanıdığın bir bilim insanı için ne söyleyebilirsin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u02.n01.intro": {
+		"text": "Canlılar dünyasına hoş geldin! Bitkiler, hayvanlar, mantarlar ve mikroskopla görülebilen canlılar var. Bir uyarı: Doğada gördüğün mantarlara dokunma, bazıları zehirli olabilir!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.fen.u02.n01.r01": {
+		"text": "Bitkileri Bitkiler kutusuna, hayvanları Hayvanlar kutusuna koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u02.n01.r02": {
+		"text": "Şimdi üç kutu var: mantarlar, bitkiler ve hayvanlar. Ekmekteki küf de bir mantardır! Her canlıyı kendi grubuna koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u02.n01.r03": {
+		"text": "Bazı canlılar o kadar küçüktür ki onları ancak mikroskopla görebiliriz. Mikroskoplu kutu onlar için. Her canlıyı doğru gruba koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u02.n01.r04": {
+		"text": "Her canlıyı kendi grubunun etiketiyle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u02.n02.intro": {
+		"text": "Canlılar çevrelerini algılar. Biz gözümüzle görür, kulağımızla duyar, burnumuzla koklarız. Ya diğer canlılar? Haydi keşfedelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.fen.u02.n02.r01": {
+		"text": "Her duyu organını, onunla algıladığımız şeyle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u02.n02.r02": {
+		"text": "Her duyu organını, onunla algıladığımız şeyle eşleştir. Limonun ekşi tadını ve tüyün yumuşaklığını unutma!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u02.n02.r03": {
+		"text": "Dinle ve doğru karta dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u02.n02.r03.hedef": {
+		"text": "Küstüm otunun yapraklarına dokununca yaprakları kapandı. Küstüm otu neyi algıladı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u02.n02.r04": {
+		"text": "Ayçiçeği güneşe doğru döner. Kelebek antenleriyle koku alır. Örümcek, ağına konan böceği bacaklarındaki tüylerle hisseder. Her canlıyı, algıladığı şeyin kutusuna koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u02.n03.intro": {
+		"text": "Her canlı doğar, büyür ve çoğalır. Buna yaşam döngüsü denir. Kelebeğin, kurbağanın ve tavuğun döngüsünü sıralayalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.fen.u02.n03.r01": {
+		"text": "Kelebeğin yaşam döngüsünü sırala: yumurta, tırtıl, pupa ve kelebek.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u02.n03.r02": {
+		"text": "Kurbağanın yaşam döngüsünü baştan sona sırala.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u02.n03.r03": {
+		"text": "Yaşam döngüsü hep tekrar eder. Kelebek yumurtlar, döngü yeniden başlar. Boş yere ne gelmeli?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u02.n03.r04": {
+		"text": "Bu kez yeni bir canlı: tavuk. Onun yaşam döngüsünü de sırala.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u02.n03.r05": {
+		"text": "Dinle ve doğru karta dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u02.n03.r05.hedef": {
+		"text": "Kelebek, kurbağa ve fasulyenin yaşam döngüleri aynı değil. Ama üçünde de ortak olan bir şey var. Nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u03.n01.intro": {
+		"text": "Yer bilimciler iş başında! Kayaçlar minerallerden oluşur. Ekonomik değeri olan ve çıkarılıp kullanılan kayaç ve minerallere de maden denir.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.fen.u03.n01.r01": {
+		"text": "Dinle ve doğru taşa dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u03.n01.r01.hedef": {
+		"text": "Mermer",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u03.n01.r02": {
+		"text": "Dinle ve doğru olana dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u03.n01.r02.hedef": {
+		"text": "Kuvars. Kristal gibi parlayan bir mineral.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u03.n01.r03": {
+		"text": "Madenleri, kullanıldıkları yerle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u03.n01.r04": {
+		"text": "Dinle ve doğru karta dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u03.n01.r04.hedef": {
+		"text": "Bütün kayaçlar minerallerden oluşur. Granit de bir kayaçtır. Öyleyse granit neyden oluşur?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u03.n01.r05": {
+		"text": "Dinle ve doğru karta dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u03.n01.r05.hedef": {
+		"text": "Yer altından çıkarılan ve ekonomik değeri olan kayaç ve minerallere maden denir. Kömür yer altından çıkarılır ve ısınmada kullanılır. Öyleyse kömür nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u03.n02.intro": {
+		"text": "Fosiller, çok uzun zaman önce yaşamış canlıların taşlaşmış kalıntılarıdır. Fosilleri inceleyen bilim insanlarına paleontolog denir. Bir fosilin oluşumunu adım adım izleyelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.fen.u03.n02.r01": {
+		"text": "Fosilin oluşumunu sırala: önce iskelet göl dibinde, sonra çamurla örtülür, en sonunda bulunur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u03.n02.r02": {
+		"text": "Fosil oluşumunun her aşamasını, o aşamada olanı anlatan kartla eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u03.n02.r03": {
+		"text": "Fosilleri inceleyen bilim insanına paleontolog denir. Her bilim insanını, incelediği şeyle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u03.n02.r04": {
+		"text": "Şimdi bütün aşamalar var. Fosilin oluşumunu baştan sona sırala.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u04.n01.intro": {
+		"text": "Çevremizdeki her şey maddedir. Maddeler katı, sıvı ya da gaz hâlinde olabilir. Taş katıdır, su sıvıdır, balondaki hava gazdır!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.fen.u04.n01.r01": {
+		"text": "Katı maddeleri Katı kutusuna, sıvı maddeleri Sıvı kutusuna koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u04.n01.r02": {
+		"text": "Dinle ve doğru maddeye dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u04.n01.r02.hedef": {
+		"text": "Akar ve konduğu kabın şeklini alır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u04.n01.r03": {
+		"text": "Şimdi bir de gaz kutusu var. Çaydanlıktan çıkan su buharı ve balondaki hava gazdır. Her maddeyi hâline göre ayır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u04.n01.r04": {
+		"text": "Her maddeyi niteliğiyle eşleştir: sert, esnek, kırılgan ya da yumuşak.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u04.n02.intro": {
+		"text": "Karışımları ayırmanın farklı yolları var: mıknatısla ayırma, eleme, süzme ve dinlendirme. Her karışım için en uygun yöntemi seçelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.fen.u04.n02.r01": {
+		"text": "Demir tozu ile talaş karışmış. Demir tozunu ayırmak için hangisini kullanmalıyız?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u04.n02.r01.ipucu": {
+		"text": "Mıknatıs demiri çeker, talaşı çekmez.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u04.n02.r02": {
+		"text": "Kum ile nohut karışmış. Onları ayırmak için hangi yöntemi kullanmalıyız?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u04.n02.r02.ipucu": {
+		"text": "Elek, küçük kum tanelerini geçirir, iri nohutları üstünde tutar.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u04.n02.r03": {
+		"text": "Su ile kum karışmış. Kumu sudan ayırmak için hangi yöntemi kullanmalıyız?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u04.n02.r03.ipucu": {
+		"text": "Süzgeç kâğıdı suyu geçirir, kumu tutar.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u04.n02.r04": {
+		"text": "Suya zeytinyağı döküldü. Onları ayırmak için hangi yöntemi kullanmalıyız?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u04.n02.r04.ipucu": {
+		"text": "Karışımı bir süre bekletirsek zeytinyağı suyun üstünde toplanır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u04.n02.r05": {
+		"text": "Her karışımı, onu ayırmanın en uygun yöntemiyle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u04.n03.intro": {
+		"text": "Atıkları türlerine göre ayırırsak onlar yeniden kullanılabilir ve doğa korunur. Kâğıt, plastik ve cam atıkları ayıralım!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.fen.u04.n03.r01": {
+		"text": "Kâğıt atıkları Kâğıt kutusuna, plastik atıkları Plastik kutusuna koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u04.n03.r02": {
+		"text": "Şimdi bir de cam kutusu var. Her atığı doğru kutuya koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u04.n03.r03": {
+		"text": "Okulun çöp kutusunda kâğıt, plastik ve cam atıklar hep karışık. Bu sorunu çözmek için hangisini önerirsin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u04.n03.r03.ipucu": {
+		"text": "Atıkları türlerine göre ayrı kutulara koymak, onları yeniden kullanmayı kolaylaştırır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u04.n03.r04": {
+		"text": "Ali, cam şişeyi kâğıt kutusuna attı ve fark etmez dedi. Sence ne olur?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u04.n03.r04.ipucu": {
+		"text": "Karışan atıkları yeniden ayırmak gerekir. Bu da işi zorlaştırır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u05.n01.intro": {
+		"text": "Varlıklar farklı biçimlerde hareket eder. Bazıları döner, bazıları sallanır, bazıları hızlanır ya da yavaşlar. Haydi gözlem yapalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.fen.u05.n01.r01": {
+		"text": "Dönen varlıkları Dönme kutusuna, sallananları Sallanma kutusuna koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u05.n01.r02": {
+		"text": "Kaydıraktan kayan çocuk ve yokuştan inen top hızlanır. Hangileri yavaşlar? Her birini doğru kutuya koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u05.n01.r03": {
+		"text": "Top duvara çarptı. Topun hareketinde ne değişti?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u05.n01.r03.ipucu": {
+		"text": "Top duvara çarpınca geri döndü. Gittiği yön değişti.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u05.n01.r04": {
+		"text": "Top hızla yola doğru yuvarlanıyor. Yolda araçlar var. Ne yapmalısın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u05.n01.r04.sonuc2": {
+		"text": "Yola koşmak tehlikeli! Araçlar hızla gelir ve hemen duramaz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u05.n01.r04.ipucu": {
+		"text": "Hareket eden araçlar tehlikeli olabilir. Yola çıkmadan bir büyüğe haber verelim.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u05.n02.intro": {
+		"text": "Bir varlığı hareket ettirmek ya da şeklini değiştirmek için onu iteriz ya da çekeriz. Buna kuvvet denir. Kuvvetin etkilerini keşfedelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.fen.u05.n02.r01": {
+		"text": "İterek yapılan hareketleri İtme kutusuna, çekerek yapılanları Çekme kutusuna koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u05.n02.r02": {
+		"text": "Elif oyun hamurunu avucuyla bastırdı. Oyun hamurunda ne değişti?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u05.n02.r02.ipucu": {
+		"text": "Kuvvet uygulayınca bazı varlıkların şekli değişir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u05.n02.r03": {
+		"text": "Çimenlerin üstünde bir top duruyor. Kimse ona dokunmazsa ve rüzgâr esmezse ne olur?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u05.n02.r03.ipucu": {
+		"text": "Duran bir varlığın hareket etmesi için onu itmek ya da çekmek gerekir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u05.n02.r04": {
+		"text": "Ece, topa daha güçlü vurursa topun daha uzağa gideceğini tahmin etti. Resme bak: güçlü vurulan top daha uzağa gitti. Ece'nin tahmini doğru muydu?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u05.n02.r04.ipucu": {
+		"text": "Alttaki top güçlü vuruldu ve daha uzağa gitti. Tahmin gözlemle uyuşuyor mu?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u06.n01.intro": {
+		"text": "Evimizdeki birçok araç gereç elektrikle çalışır. Bazıları fişle, bazıları pille çalışır. Pille çalışanlar da elektriklidir!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.fen.u06.n01.r01": {
+		"text": "Elektrikle çalışan araç gereçleri Elektrikli kutusuna, elektrik olmadan kullanılanları Elektriksiz kutusuna koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u06.n01.r02": {
+		"text": "Dinle ve doğru araç gerece dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u06.n01.r02.hedef": {
+		"text": "Fişi prize takılınca ısınır ve kırışık giysileri düzeltir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u06.n01.r03": {
+		"text": "Fişle çalışanları, pille çalışanları ve elektriksiz olanları ayır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u06.n01.r04": {
+		"text": "Dinle ve doğru karta dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u06.n01.r04.hedef": {
+		"text": "Bir oyuncak robotun yuvasına iki pil takıldı ve robot yürümeye başladı. Bu robot elektrikli mi, elektriksiz mi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u06.n02.intro": {
+		"text": "Elektrik çok işimize yarar ama dikkatli kullanmalıyız. Güvenli davranışları birlikte bulalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.fen.u06.n02.r01": {
+		"text": "Elif ellerini yıkadı, elleri hâlâ ıslak. Saç kurutma makinesini prize takmak istiyor. Ne yapmalı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u06.n02.r01.sonuc2": {
+		"text": "Islak elle prize ve elektrikli araç gerece dokunmak tehlikelidir. Önce ellerimizi kurularız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u06.n02.r01.ipucu": {
+		"text": "Su ve elektrik bir araya gelmemeli. Önce ellerimizi kurulayalım.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u06.n02.r02": {
+		"text": "Lambanın kablosu yıpranmış, içindeki teller görünüyor. Ne yapmalısın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u06.n02.r02.sonuc2": {
+		"text": "Yıpranmış kabloya dokunmak elektrik çarpmasına yol açabilir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u06.n02.r02.ipucu": {
+		"text": "Bozuk kablolara dokunmayız. Hemen bir büyüğe haber veririz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u06.n02.r03": {
+		"text": "Masa lambasının fişini prizden çıkaracaksın. Fişi nasıl çekmelisin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u06.n02.r03.sonuc2": {
+		"text": "Kablodan çekersek kablo zarar görür ve tehlikeli olabilir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u06.n02.r03.ipucu": {
+		"text": "Fişi kablosundan değil, kendisinden tutarak çekeriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u06.n02.r04": {
+		"text": "Güvenli davranışları Güvenli kutusuna, tehlikeli olanları Tehlikeli kutusuna koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u06.n03.intro": {
+		"text": "Elektriği boşa harcamazsak hem doğayı hem ülkemizin kaynaklarını korumuş oluruz. Haydi elektrik tasarrufu yapalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.fen.u06.n03.r01": {
+		"text": "Elektriği tasarruflu kullanan davranışları Tasarruflu kutusuna, boşa harcayanları Savurgan kutusuna koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u06.n03.r02": {
+		"text": "Evde altı lamba yanıyor. Boş odalardaki iki lambayı kapatırsak kaç lamba yanmaya devam eder?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u06.n03.r02.ipucu": {
+		"text": "Altı lambadan ikisini kapatıyoruz. Altıdan iki çıkarsa kaç kalır?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u06.n03.r03": {
+		"text": "Koridordaki lamba her gün üç saat boşuna yanıyor. Dört günde toplam kaç saat boşa yanar?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u06.n03.r03.ipucu": {
+		"text": "Her gün üç saat: üç, altı, dokuz, on iki.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u06.n03.r04": {
+		"text": "Ayşe'nin ailesi, boş odalarda ışıkları kapatırsak daha az elektrik harcarız diye tahmin etti. Grafikte soldaki sütun önceki ayı, sağdaki sütun ışıkları kapattıkları ayı gösteriyor. Tahminleri doğru çıktı mı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u06.n03.r04.ipucu": {
+		"text": "Sağdaki sütun daha kısa. Yani o ay daha az elektrik harcandı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u07.n01.intro": {
+		"text": "Toprak, kayaçların çok uzun zamanda ufalanmasıyla oluşur. İçinde kum, küçük taşlar, kil, su ve bitki parçaları vardır. Toprağı yakından tanıyalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.fen.u07.n01.r01": {
+		"text": "Toprağın oluşumunu sırala: önce büyük kaya, sonra küçük parçalar, en sonunda toprak.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u07.n01.r02": {
+		"text": "Kaya çatlar, ufalanır ve toprağa dönüşür. Toprağın oluşumunu baştan sona sırala.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u07.n01.r03": {
+		"text": "Toprağın içinde neler var? Dinle ve doğru olana dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u07.n01.r03.hedef": {
+		"text": "Kum. İnce ve küçük taneler.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u07.n01.r04": {
+		"text": "Toprağın içinde neler var? Dinle ve doğru olana dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u07.n01.r04.hedef": {
+		"text": "Kuru yaprak ve kök parçaları. Bunlar toprağa karışır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u07.n02.intro": {
+		"text": "Bir bitki yetiştirmek için neler gerekir? Su, ışık, uygun sıcaklık ve toprak! Haydi bir fasulye yetiştirelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.fen.u07.n02.r01": {
+		"text": "Bitkinin büyümesi için gerekenleri Gerekli kutusuna, gerekmeyenleri Gerekmez kutusuna koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u07.n02.r02": {
+		"text": "Bitkilerin ihtiyaçları farklıdır. Kaktüs az su ister, çeltik çok su ister. Eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u07.n02.r03": {
+		"text": "Fasulye yetiştirmek için yapılması gerekenleri sırala.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u08.n01.intro": {
+		"text": "Her canlının bir yaşam alanı vardır. Kimi gölde, kimi ormanda, kimi toprağın içinde yaşar. Gözlem kartlarını gruplayıp bir veri tablosu oluşturalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.fen.u08.n01.r01": {
+		"text": "Gölde yaşayan canlıları Göl kutusuna, ormanda yaşayanları Orman kutusuna koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u08.n01.r02": {
+		"text": "Şimdi bir de toprak kutusu var. Her canlıyı yaşadığı yere koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u08.n01.r03": {
+		"text": "Bazı canlılar nemli yerlerde, bazıları kuru yerlerde yaşar. Gözlem kartlarını ayır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u08.n02.intro": {
+		"text": "Göl, orman, çöl... Her yaşam alanının kendine özgü özellikleri var. Bir yerde ne kadar farklı canlı yaşıyorsa, orada canlı çeşitliliği o kadar fazladır.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.fen.u08.n02.r01": {
+		"text": "Her yaşam alanını, ona uygun özellikle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u08.n02.r02": {
+		"text": "Dinle ve doğru yaşam alanına dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u08.n02.r02.hedef": {
+		"text": "Çok sayıda ağacı olan, gölgeli ve serin bir yaşam alanı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u08.n02.r03": {
+		"text": "Dinle ve doğru bahçeye dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u08.n02.r03.hedef": {
+		"text": "Canlı çeşitliliği, bir yerde kaç farklı canlı yaşadığıdır. Canlı çeşitliliği daha fazla olan bahçeyi bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u08.n03.intro": {
+		"text": "Yaşam alanlarını korursak oradaki canlılar da korunur. Doğru bilgiyi bulalım ve yaşam alanlarını koruyalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.fen.u08.n03.r01": {
+		"text": "Yaşam alanlarını koruyan davranışları Korur kutusuna, zarar verenleri Zarar verir kutusuna koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u08.n03.r02": {
+		"text": "Bir arkadaşın, göle atılan çöpler balıklara zarar vermez, diyor. Bu bilgi doğru mu?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u08.n03.r02.ipucu": {
+		"text": "Çöpler suyu kirletir. Balıklar ve su kuşları bundan zarar görür.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u08.n03.r03": {
+		"text": "Bir ormandaki ağaçlar kesildi. Orada yaşayan sincaplar ve kuşlar için ne olur?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u08.n03.r03.ipucu": {
+		"text": "Sincaplar ve kuşlar ağaçlarda yuva yapar. Ağaçlar olmayınca ne olur?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u08.n03.r04": {
+		"text": "Kirli bir göl temizlendi, çevresine fidanlar dikildi. Zamanla burada ne olur?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.fen.u08.n03.r04.ipucu": {
+		"text": "Temiz su ve yeni ağaçlar canlılara yuva ve besin sağlar.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.ortak": {
+		"text": "Ortak: iki bilim insanında da olan özellikler.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.farkli": {
+		"text": "Farklı: yalnızca birinde olan özellikler.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.merakli": {
+		"text": "Meraklı",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.sabirli": {
+		"text": "Sabırlı",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.not_alir": {
+		"text": "Not alır",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.st_hepsi_merakli": {
+		"text": "Hepsi meraklıdır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.st_hepsi_yildiz": {
+		"text": "Hepsi yıldız inceler.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.st_hic_soru": {
+		"text": "Hiçbiri soru sormaz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.st_sabirla": {
+		"text": "Sabırla çalışır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.st_merak_etmez": {
+		"text": "Hiç merak etmez.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.st_denemez": {
+		"text": "Hiç deneme yapmaz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.bitkiler": {
+		"text": "Bitkiler",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.hayvanlar": {
+		"text": "Hayvanlar",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.mantarlar": {
+		"text": "Mantarlar",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.isik": {
+		"text": "Işığı algılar.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.koku": {
+		"text": "Kokuyu algılar.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.dokunma": {
+		"text": "Dokunmayı algılar.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.buyume": {
+		"text": "Büyüme",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.ucma": {
+		"text": "Uçma",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.yumurtlama": {
+		"text": "Yumurtlama",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.mineraller": {
+		"text": "Mineraller",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.hava": {
+		"text": "Hava",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.bir_maden": {
+		"text": "Bir maden.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.bir_sivi": {
+		"text": "Bir sıvı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.bir_hayvan": {
+		"text": "Bir hayvan.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.camur_orter": {
+		"text": "Üstünü çamur ve kum örter.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.taslasir": {
+		"text": "Katmanlar altında taşlaşır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.bulunur": {
+		"text": "Paleontolog fosili bulur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.kati": {
+		"text": "Katı maddeler",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.sivi": {
+		"text": "Sıvı maddeler",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.gaz": {
+		"text": "Gaz maddeler",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.sert": {
+		"text": "Sert",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.esnek": {
+		"text": "Esnek",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.kirilgan": {
+		"text": "Kırılgan",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.yumusak": {
+		"text": "Yumuşak",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.kagit": {
+		"text": "Kâğıt atıklar",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.plastik": {
+		"text": "Plastik atıklar",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.cam": {
+		"text": "Cam atıklar",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.ayri_kutular": {
+		"text": "Ayrı kutular koymak.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.buyuk_kutu": {
+		"text": "Daha büyük bir kutu almak.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.tek_poset": {
+		"text": "Hepsini tek poşete koymak.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.ayirmak_zorlasir": {
+		"text": "Atıkları ayırmak zorlaşır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.fark_etmez": {
+		"text": "Hiç fark etmez.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.kagida_doner": {
+		"text": "Şişe kâğıda dönüşür.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.donme": {
+		"text": "Dönme hareketi",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.sallanma": {
+		"text": "Sallanma hareketi",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.hizlanma": {
+		"text": "Hızlanıyor",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.yavaslama": {
+		"text": "Yavaşlıyor",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.yon_degistirir": {
+		"text": "Yön değiştirir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.hizlanir": {
+		"text": "Hızlanır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.durur": {
+		"text": "Durur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.itme": {
+		"text": "İtme",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.cekme": {
+		"text": "Çekme",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.sekli_degisti": {
+		"text": "Şekli değişti.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.rengi_degisti": {
+		"text": "Rengi değişti.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.ucup_gitti": {
+		"text": "Uçup gitti.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.yerinde_durur": {
+		"text": "Yerinde durur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.kendi_yuvarlanir": {
+		"text": "Kendi kendine yuvarlanır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.ziplar": {
+		"text": "Zıplar.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.dogru": {
+		"text": "Doğru",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.yanlis": {
+		"text": "Yanlış",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.elektrikli": {
+		"text": "Elektrikli araç gereçler",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.elektriksiz": {
+		"text": "Elektriksiz araç gereçler",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.fisle": {
+		"text": "Fişle çalışanlar",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.pille": {
+		"text": "Pille çalışanlar",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.guvenli": {
+		"text": "Güvenli davranışlar",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.tehlikeli": {
+		"text": "Tehlikeli davranışlar",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.tasarruflu": {
+		"text": "Elektriği tasarruflu kullanmak",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.savurgan": {
+		"text": "Elektriği boşa harcamak",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.gerekli": {
+		"text": "Bitkinin büyümesi için gerekli",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.gerekmez": {
+		"text": "Bitkinin büyümesi için gerekmez",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.az_su": {
+		"text": "Az su ister.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.cok_su": {
+		"text": "Çok su ister.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.gol": {
+		"text": "Gölde yaşayanlar",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.orman": {
+		"text": "Ormanda yaşayanlar",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.toprak_alan": {
+		"text": "Toprakta yaşayanlar",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.nemli": {
+		"text": "Nemli yerlerde yaşayanlar",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.kuru": {
+		"text": "Kuru yerlerde yaşayanlar",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.su": {
+		"text": "Su",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.agaclar": {
+		"text": "Ağaçlar",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.kum_ozellik": {
+		"text": "Sıcak kum",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.korur": {
+		"text": "Yaşam alanlarını korur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.zarar_verir": {
+		"text": "Yaşam alanlarına zarar verir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.evsiz_kalir": {
+		"text": "Evsiz kalırlar.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.cogalirlar": {
+		"text": "Çoğalırlar.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.degismez": {
+		"text": "Hiçbir şey değişmez.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.canlilar_artar": {
+		"text": "Canlılar artar.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.canlilar_gider": {
+		"text": "Canlılar gider.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.txt.gol_kurur": {
+		"text": "Göl kurur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.ad.yol_gozlem": {
+		"text": "Gözlem yapmak",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.ad.yol_deney": {
+		"text": "Deney yapmak",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.ad.yol_kaynak": {
+		"text": "Kaynaklardan araştırmak",
+		"speaker": "ANLATICI"
+	},
+	"vo.fen.ad.mikroskop": {
+		"text": "Mikroskopla görülebilen canlılar",
+		"speaker": "ANLATICI"
 	}
 }
