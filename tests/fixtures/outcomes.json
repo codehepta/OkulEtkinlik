@@ -1,0 +1,8 @@
+{
+	"TEST.1": {
+		"grade": 1,
+		"subject": "matematik",
+		"text": "Yalnızca test için yer tutucu çıktı.",
+		"source": { "doc": "test", "page": 0, "url": "" }
+	}
+}

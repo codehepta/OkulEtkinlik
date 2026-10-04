@@ -21,8 +21,10 @@ Kurallar: [`docs/assets/style-guide.md`](../docs/assets/style-guide.md) · [`doc
 | 004 | Sayma ve eşleştirme nesneleri (28 nesne) | Yüksek | ⏳ Bekliyor |
 | 005 | Genel seslendirme (Gemini TTS) + sayılar 0–20 | Yüksek | ⏳ Bekliyor |
 | 006 | Müzik (6 parça) + ses efektleri (12) | Orta | ⏳ Bekliyor |
+| 007 | 1. sınıf Matematik ünite 1 seslendirmesi (32 satır) + `vo.genel.takma_ad` | Yüksek | ⏳ Bekliyor |
+| 008 | 1. sınıf Matematik ünite 1 çıkartmaları (6) + `ui.replay` ikonu | Orta | ⏳ Bekliyor |
 
-Önerilen sıra: 001 → 003 → 002 → 004 → 005 → 006. Bilge karakter sayfası diğer bütün partilerin stil referansıdır.
+Önerilen sıra: 001 → 003 → 002 → 004 → 005 → 007 → 006 → 008. Bilge karakter sayfası diğer bütün partilerin stil referansıdır.
 
 ## Geliştiriciler (agent) için
 - Yeni bir içerik ünitesi eklendiğinde eksik asset'ler için `tools/missing_assets.gd` çalıştırılır ve sıradaki numarayla yeni bir parti dosyası açılır.

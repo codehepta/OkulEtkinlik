@@ -1,8 +1,116 @@
 {
-	"TEST.1": {
+	"MAT.1.1.1": {
 		"grade": 1,
 		"subject": "matematik",
-		"text": "Yalnızca test için yer tutucu çıktı.",
-		"source": { "doc": "test", "page": 0, "url": "" }
+		"text": "Rakamları ve 20’ye kadar olan sayıları (20 dâhil), niceliklerin büyüklüklerini temsil etmek için kullanabilme",
+		"printed_code": "MAT.1.1.1.",
+		"steps": [
+			"a) Niceliklerin büyüklüklerinin farklı temsillerini tanır.",
+			"b) Karşılaştığı niceliklerin büyüklüklerini, farklı temsilleri bağlamında belirler.",
+			"c) Karşılaştığı niceliklerin büyüklüklerini rakam ve sayılarla okur ve yazar."
+		],
+		"theme": "MAT.1.1. Sayılar ve Nicelikler (1)",
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 20,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.1.1.2": {
+		"grade": 1,
+		"subject": "matematik",
+		"text": "Ögeleri dağınık veya düzenli bir şekilde bulunan bir nesne grubunu sayarken parçalar arasında ilişkileri çözümleyebilme",
+		"printed_code": "MAT.1.1.2.",
+		"steps": [
+			"a) Ögeleri dağınık veya düzenli bir şekilde bulunan bir nesne grubunun parçalarını belirler.",
+			"b) Ögeleri dağınık veya düzenli bir şekilde bulunan bir nesne grubunu sayarken parçalar arasındaki ilişkileri belirler."
+		],
+		"theme": "MAT.1.1. Sayılar ve Nicelikler (1)",
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 20,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.1.1.3": {
+		"grade": 1,
+		"subject": "matematik",
+		"text": "Nesnelerin sıra sayısını gösterebilme",
+		"printed_code": "MAT.1.1.3.",
+		"theme": "MAT.1.1. Sayılar ve Nicelikler (1)",
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 20,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.1.1.4": {
+		"grade": 1,
+		"subject": "matematik",
+		"text": "İki niceliğin büyüklüğünü “çok”, “daha çok”, “az”, “daha az” veya “eşit” terimleriyle karşılaştırabilme",
+		"printed_code": "MAT.1.1.4.",
+		"steps": [
+			"a) İki niceliğin büyüklüğünü “çok”, “daha çok”, “az”, “daha az” veya “eşit” terimleriyle ifade eder.",
+			"b) İfade edilen büyüklüklere ilişkin benzerlikleri listeler.",
+			"c) İfade edilen büyüklüklere ilişkin farklılıkları listeler."
+		],
+		"theme": "MAT.1.1. Sayılar ve Nicelikler (1)",
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 20,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.1.1.5": {
+		"grade": 1,
+		"subject": "matematik",
+		"text": "100’e kadar ileriye ve 20’den geriye doğru ritmik sayabilme",
+		"printed_code": "MAT.1.1.5.",
+		"theme": "MAT.1.1. Sayılar ve Nicelikler (1)",
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 20,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.1.1.6": {
+		"grade": 1,
+		"subject": "matematik",
+		"text": "Artan veya azalan sayı ve şekil örüntülerini çözümleyebilme",
+		"printed_code": "MAT.1.1.6.",
+		"steps": [
+			"a) Sayı ve şekil örüntülerinin ardışık ögelerini belirler.",
+			"b) Sayı ve şekil örüntülerinin ardışık ögeleri arasındaki ilişkiyi belirler."
+		],
+		"theme": "MAT.1.1. Sayılar ve Nicelikler (1)",
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 20,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.1.1.7": {
+		"grade": 1,
+		"subject": "matematik",
+		"text": "Verilen bir çokluktaki ilişkilerden yararlanarak 20’ye kadar (20 dâhil) olan nesnelerin sayısını tahmin edebilme",
+		"printed_code": "MAT.1.1.7.",
+		"steps": [
+			"a) Verilen bir çokluktaki ilişkileri gözlem ve deneyimleri ile ilişkilendirir.",
+			"b) Bir çokluğun büyüklüğünü stratejiye dayanarak tahmin eder.",
+			"c) Tahmin edilen sonuç ile sayma sonucunu karşılaştırarak yargıda bulunur."
+		],
+		"theme": "MAT.1.1. Sayılar ve Nicelikler (1)",
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 20,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
 	}
 }

@@ -2,7 +2,7 @@ extends GutTest
 ## ContentDB testleri (fixture içeriğiyle).
 
 const ROOT: String = "res://tests/fixtures/content"
-const OUTCOMES: String = "res://docs/curriculum/outcomes.json"
+const OUTCOMES: String = "res://tests/fixtures/outcomes.json"
 
 const CROSS_DIR: String = "user://content_test"
 

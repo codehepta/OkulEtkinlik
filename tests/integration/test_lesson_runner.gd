@@ -26,6 +26,7 @@ func before_each() -> void:
 	_save.set_base_dir(SAVE_DIR)
 	_save.load_or_create()
 	_db = load("res://autoload/content_db.gd").new()
+	_db.outcomes_path = "res://tests/fixtures/outcomes.json"
 	_db.has_string = func(_k: String) -> bool: return true
 	_db.has_voice = func(_k: String) -> bool: return true
 	_db.load_all(ROOT)

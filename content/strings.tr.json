@@ -106,5 +106,17 @@
 	"parent.import_bad": "Yedek dosyası okunamadı. Mevcut kayıt değişmedi.",
 	"parent.exit": "Çıkış",
 	"parent.profile_default": "Profil {n}",
-	"parent.import_too_many": "Yedek dosyasında en fazla 4 profil olabilir. Mevcut kayıt değişmedi."
+	"parent.import_too_many": "Yedek dosyasında en fazla 4 profil olabilir. Mevcut kayıt değişmedi.",
+	"unit.g1.matematik.u01": "Sayılar ve Nicelikler",
+	"node.g1.matematik.u01.n01": "1'den 5'e sayalım",
+	"node.g1.matematik.u01.n02": "Sayıyı dinle, bul",
+	"node.g1.matematik.u01.n03": "Çubuklar ve sayılar",
+	"node.g1.matematik.u01.n04": "6'dan 10'a sayalım",
+	"node.g1.matematik.u01.n05": "20'ye kadar sayalım",
+	"node.g1.matematik.u01.n06": "Tahmin et!",
+	"label.cetele.1": "|",
+	"label.cetele.2": "||",
+	"label.cetele.3": "|||",
+	"label.cetele.4": "||||",
+	"label.cetele.5": "|||||"
 }
