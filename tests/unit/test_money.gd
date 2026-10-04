@@ -28,3 +28,8 @@ func test_image_keys_cover_all_denoms() -> void:
 	for d: String in Money.KURUS:
 		assert_eq(str(Money.IMAGE_KEYS[d]), "item.para." + d)
 		assert_true(AssetPaths.image_path(str(Money.IMAGE_KEYS[d])).ends_with("/items/para/%s.png" % d))
+
+## Faz 3b S3: 1 kuruş küpür listesinde yok.
+func test_one_kurus_removed() -> void:
+	assert_false(Money.is_denom("kr_1"))
+	assert_false(Money.allowed("kr", "kr_1"))

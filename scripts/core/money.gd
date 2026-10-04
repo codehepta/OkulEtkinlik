@@ -4,15 +4,16 @@ extends RefCounted
 
 const UNITS: PackedStringArray = ["tl", "kr"]
 ## Küpür -> kuruş cinsinden değer. Görsel anahtarı: item.para.<küpür>.
+## 1 kuruş tedavülde neredeyse olmadığı için listede yok (Faz 3b, S3).
 const KURUS: Dictionary = {
-	"kr_1": 1, "kr_5": 5, "kr_10": 10, "kr_25": 25, "kr_50": 50, "tl_1": 100,
+	"kr_5": 5, "kr_10": 10, "kr_25": 25, "kr_50": 50, "tl_1": 100,
 	"tl_5": 500, "tl_10": 1000, "tl_20": 2000, "tl_50": 5000, "tl_100": 10000, "tl_200": 20000,
 }
 ## Madeni paralar; geri kalanı banknot.
-const COINS: PackedStringArray = ["kr_1", "kr_5", "kr_10", "kr_25", "kr_50", "tl_1"]
+const COINS: PackedStringArray = ["kr_5", "kr_10", "kr_25", "kr_50", "tl_1"]
 ## Görsel anahtarları (eksik asset taramasının bulabilmesi için açık yazılır).
 const IMAGE_KEYS: Dictionary = {
-	"kr_1": "item.para.kr_1", "kr_5": "item.para.kr_5", "kr_10": "item.para.kr_10",
+	"kr_5": "item.para.kr_5", "kr_10": "item.para.kr_10",
 	"kr_25": "item.para.kr_25", "kr_50": "item.para.kr_50", "tl_1": "item.para.tl_1",
 	"tl_5": "item.para.tl_5", "tl_10": "item.para.tl_10", "tl_20": "item.para.tl_20",
 	"tl_50": "item.para.tl_50", "tl_100": "item.para.tl_100", "tl_200": "item.para.tl_200",

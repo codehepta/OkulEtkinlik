@@ -387,6 +387,118 @@
 		"text": "Kaç taş var? Tahmin et ve doğru sayıya dokun!",
 		"speaker": "ANLATICI"
 	},
+	"vo.tahmin.say": {
+		"text": "Şimdi sayarak kontrol edelim. Her birine dokun.",
+		"speaker": "BILGE"
+	},
+	"vo.tahmin.tart": {
+		"text": "Şimdi tartalım. Küpleri teraziye koy, terazi düz olunca dur.",
+		"speaker": "BILGE"
+	},
+	"vo.tahmin.islem": {
+		"text": "Şimdi işlemi yap. Terazinin doğru sayısını seç.",
+		"speaker": "BILGE"
+	},
+	"vo.tahmin.karsilastir": {
+		"text": "Tahminin sonuca yakın mı, uzak mı?",
+		"speaker": "BILGE"
+	},
+	"vo.saat.1_00": {
+		"text": "Saat bir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.saat.1_30": {
+		"text": "Saat bir buçuk.",
+		"speaker": "ANLATICI"
+	},
+	"vo.saat.2_00": {
+		"text": "Saat iki.",
+		"speaker": "ANLATICI"
+	},
+	"vo.saat.2_30": {
+		"text": "Saat iki buçuk.",
+		"speaker": "ANLATICI"
+	},
+	"vo.saat.3_00": {
+		"text": "Saat üç.",
+		"speaker": "ANLATICI"
+	},
+	"vo.saat.3_30": {
+		"text": "Saat üç buçuk.",
+		"speaker": "ANLATICI"
+	},
+	"vo.saat.4_00": {
+		"text": "Saat dört.",
+		"speaker": "ANLATICI"
+	},
+	"vo.saat.4_30": {
+		"text": "Saat dört buçuk.",
+		"speaker": "ANLATICI"
+	},
+	"vo.saat.5_00": {
+		"text": "Saat beş.",
+		"speaker": "ANLATICI"
+	},
+	"vo.saat.5_30": {
+		"text": "Saat beş buçuk.",
+		"speaker": "ANLATICI"
+	},
+	"vo.saat.6_00": {
+		"text": "Saat altı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.saat.6_30": {
+		"text": "Saat altı buçuk.",
+		"speaker": "ANLATICI"
+	},
+	"vo.saat.7_00": {
+		"text": "Saat yedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.saat.7_30": {
+		"text": "Saat yedi buçuk.",
+		"speaker": "ANLATICI"
+	},
+	"vo.saat.8_00": {
+		"text": "Saat sekiz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.saat.8_30": {
+		"text": "Saat sekiz buçuk.",
+		"speaker": "ANLATICI"
+	},
+	"vo.saat.9_00": {
+		"text": "Saat dokuz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.saat.9_30": {
+		"text": "Saat dokuz buçuk.",
+		"speaker": "ANLATICI"
+	},
+	"vo.saat.10_00": {
+		"text": "Saat on.",
+		"speaker": "ANLATICI"
+	},
+	"vo.saat.10_30": {
+		"text": "Saat on buçuk.",
+		"speaker": "ANLATICI"
+	},
+	"vo.saat.11_00": {
+		"text": "Saat on bir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.saat.11_30": {
+		"text": "Saat on bir buçuk.",
+		"speaker": "ANLATICI"
+	},
+	"vo.saat.12_00": {
+		"text": "Saat on iki.",
+		"speaker": "ANLATICI"
+	},
+	"vo.saat.12_30": {
+		"text": "Saat on iki buçuk.",
+		"speaker": "ANLATICI"
+	},
 	"vo.g3.fen.u01.n01.intro": {
 		"text": "Merak ettiğimiz bir şeyi nasıl öğreniriz? Gözlem yaparak, deney yaparak ya da kaynaklardan araştırarak! Her soru için en uygun yolu birlikte seçelim.",
 		"speaker": "BILGE"

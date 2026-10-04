@@ -262,6 +262,58 @@ const FAZ3_SHOTS: Array = [
 	["63_scenario_hint1", "scenario", {"scene": "item.sahne.yaya_gecidi", "choices": [{"token": {"type": "item", "value": "item.davranis.bekle"}, "correct": true}, {"token": {"type": "item", "value": "item.davranis.kos"}, "correct": false}, {"token": {"type": "item", "value": "item.davranis.top"}, "correct": false}]}, 3, 1],
 ]
 
+## Faz 3b kareleri (80+; 44–55 Faz 4a, 60–63 Faz 5a, 70–71 Faz 7a): [ad, şablon, params, zorluk, ipucu, sınıf, eylemler ([metot, argümanlar])].
+const FAZ3B_SHOTS: Array = [
+	["80_balance_compare_words_g1", "balance", {"mode": "scale", "ask": "compare", "left": [6], "right": [4], "item": "item.meyve.elma"}, 1, 0, 1, []],
+	["81_balance_compare_pairs_hint1", "balance", {"mode": "scale", "ask": "compare", "left": [6], "right": [4], "item": "item.meyve.elma"}, 1, 1, 1, []],
+	["82_count_estimate", "count_choose", {"item": "item.meyve.elma", "count": 12, "estimates": [5, 10, 20]}, 1, 0, 1, []],
+	["83_count_estimate_counting", "count_choose", {"item": "item.meyve.elma", "count": 12, "estimates": [5, 10, 20]}, 1, 0, 1,
+		[["_debug_estimate", [1]], ["_debug_tap_item", [0]], ["_debug_tap_item", [1]], ["_debug_tap_item", [2]]]],
+	["84_count_estimate_judge_hint1", "count_choose", {"item": "item.meyve.elma", "count": 7, "estimates": [3, 6, 12]}, 1, 1, 1,
+		[["_debug_estimate", [1]], ["_fast_forward", []]]],
+	["85_balance_estimate_weigh", "balance", {"mode": "scale", "ask": "estimate", "item": "item.oyuncak.ayi", "value": 7, "estimates": [3, 6, 12]}, 1, 0, 1,
+		[["_debug_estimate", [1]], ["_debug_add_unit", []], ["_debug_add_unit", []], ["_debug_add_unit", []]]],
+	["86_balance_estimate_calc", "balance", {"mode": "scale", "ask": "estimate", "left": [28, 31], "right": [null], "estimates": [40, 60, 80], "choices": [58, 59, 60]}, 1, 0, 2,
+		[["_debug_estimate", [1]]]],
+	["87_listen_find_digits", "listen_find", {"answer": "digits", "target": {"type": "number", "value": 305, "voice": "vo.sayi.3"}}, 1, 0, 2,
+		[["_debug_key", [3]], ["_debug_key", [0]]]],
+	["88_clock_read_g1_voice", "clock_money", {"mode": "clock", "ask": "read", "hour": 3, "minute": 30, "choices": [{"hour": 3, "minute": 30}, {"hour": 6, "minute": 0}, {"hour": 9, "minute": 30}]}, 1, 0, 1,
+		[["_debug_choose", [1]]]],
+]
+const FAZ3B_FIXTURES: Array[String] = ["res://tests/fixtures/faz3b/grid.json", "res://tests/fixtures/faz3b/chart_build.json"]
+
+func _faz3b_templates(area: Control, scenes: Dictionary) -> void:
+	var shots: Array = FAZ3B_SHOTS.duplicate(true)
+	var n: int = 89
+	for path: String in FAZ3B_FIXTURES:
+		if not FileAccess.file_exists(path):
+			continue
+		var data: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(path))
+		for key: String in data:
+			var e: Dictionary = data[key]
+			shots.append(["%d_%s" % [n, key], e["template"], e["params"], 1, 0, 2, []])
+			n += 1
+	for shot: Array in shots:
+		if not scenes.has(shot[1]):
+			continue
+		for c: Node in area.get_children():
+			c.queue_free()
+		await _frames(2)
+		var g: Control = (load(scenes[shot[1]]) as PackedScene).instantiate() as Control
+		area.add_child(g)
+		var ctx: RoundContext = RoundContext.new()
+		ctx.rng.seed = 3
+		ctx.grade = int(shot[5])
+		g.call("setup", shot[2], int(shot[3]), ctx)
+		await _frames(20)
+		for action: Array in shot[6]:
+			g.callv(str(action[0]), action[1])
+			await _frames(10)
+		if int(shot[4]) > 0:
+			g.call("show_hint", int(shot[4]))
+			await _frames(60)
+		await _shot(str(shot[0]))
+
 func _faz3_templates() -> void:
 	var scenes: Dictionary = load("res://scripts/core/template_registry.gd").get("SCENES")
 	await _show("lesson", {"node_id": "g1.matematik.u01.n01"})
@@ -288,6 +340,7 @@ func _faz3_templates() -> void:
 			g.call("_debug_toggle", 1)
 			await _frames(10)
 			await _shot("43_pizza_select_two")
+	await _faz3b_templates(area, scenes)
 
 ## Faz 4a şablonları: [ad, örnek params adı (tests/fixtures/faz4a/params.json), zorluk, ipucu,
 ## ek adım ("": yok, "trace": bir vuruş izle, "choose": doğru karo, "question": soruya geç)].
