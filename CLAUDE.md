@@ -50,6 +50,7 @@ Test paketini **sıralı** çalıştır: aynı anda yalnızca bir `godot` sürec
 Cloud ortamında Godot indirmesi başarısız olursa (ağ kısıtı), ortamın `github.com` ve `objects.githubusercontent.com` adreslerinden indirmeye izin vermesi gerekir. Bunu sahibe bildir; çözüm aramak için başka kaynaklardan ikili dosya indirme.
 
 ## İş akışı
+- Katkı süreci, dal adları, commit biçimi ve PR kontrol listesi: `CONTRIBUTING.md` ve `.github/pull_request_template.md`. Depo ayarları: `docs/github-ayarlari.md`.
 - Plandaki her görev grubu için `main`'den bir dal aç (`feat/<konu>`), küçük ve anlamlı commit'ler at, PR aç. CI yeşil olmadan birleştirme.
 - TDD: önce başarısız testi yaz, sonra kodu.
 - Bir görev spec'le çelişiyorsa ya da spec bir konuda sessizse, varsayım yapıp ilerleme. Spec'e "Açık soru" olarak ekle ve sahibe sor.

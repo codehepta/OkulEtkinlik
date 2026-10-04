@@ -1,0 +1,25 @@
+name: Etiketler
+
+# .github/labels.tsv'deki etiketleri depoya uygular (ad, renk, açıklama).
+on:
+  push:
+    branches: [main]
+    paths: [".github/labels.tsv", ".github/workflows/labels.yml"]
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Etiketleri uygula
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          while IFS=$'\t' read -r name color desc; do
+            [ -z "$name" ] && continue
+            gh label create "$name" --color "$color" --description "$desc" --force --repo "$GITHUB_REPOSITORY"
+          done < .github/labels.tsv

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Güvenlik ya da gizlilik açığı
+    url: https://github.com/codehepta/OkulEtkinlik/security/advisories/new
+    about: Lütfen herkese açık issue açma; özel olarak bildir.
+  - name: Katkı rehberi
+    url: https://github.com/codehepta/OkulEtkinlik/blob/main/CONTRIBUTING.md
+    about: Başlamadan önce kuralları ve geliştirme ortamını oku.

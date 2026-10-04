@@ -1,0 +1,58 @@
+name: Hata bildirimi
+description: Oyunda ya da araçlarda bozuk bir şey bildir.
+title: "[Hata] "
+labels: ["hata"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Bildirdiğin için teşekkürler! Lütfen çocuğa ait kişisel bilgi (ad, fotoğraf, kayıt dosyası içeriği) paylaşma.
+  - type: textarea
+    id: what
+    attributes:
+      label: Ne oldu?
+      description: Gördüğün hatayı kısaca anlat.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Nasıl tekrarlanır?
+      placeholder: |
+        1. Profil oluştur (1. sınıf)
+        2. Sayı Ormanı → 2. durak
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Ne bekliyordun?
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Android telefon
+        - Android tablet
+        - iOS
+        - Masaüstü (Godot editörü / geliştirme)
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Cihaz ve sistem sürümü
+      placeholder: "Örn. Samsung Galaxy Tab A8, Android 13"
+  - type: input
+    id: version
+    attributes:
+      label: Uygulama sürümü ya da commit
+      placeholder: "Örn. CI artefaktı, PR #12, commit 3ae6ce2"
+  - type: textarea
+    id: media
+    attributes:
+      label: Ekran görüntüsü / video / günlük
+      description: Varsa ekle. Ekran görüntüsünde çocuğun yüzü ya da adı görünmesin.
