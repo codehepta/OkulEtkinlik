@@ -24,7 +24,7 @@
 
 ## Review Focus
 
-1. **Tur asla takılı kalmamalı:** her şablonda 3. yanlıştan sonra `show_hint(2)` turu bitirir (`helped = true`, `finished` yayılır), çok adımlı şablonlarda (sequence, pattern) kalan bütün adımlar otomatik tamamlanır. Test: `test_hint2_finishes_every_template` (her şablonun her modu), `test_lesson_runner_faz3_templates_three_wrong_requeue`.
+1. **Tur asla takılı kalmamalı:** her şablonda 3. yanlıştan sonra `show_hint(2)` turu bitirir (`helped = true`, `finished` yayılır), çok adımlı şablonlarda (sequence, pattern) kalan bütün adımlar otomatik tamamlanır. Test: her şablonun `..._hint2_...` / `..._hints` testleri (her mod), `test_*_debug_answer_paths`, `test_faz3_three_wrong_hint_and_requeue` (LessonRunner).
 2. **Doğrulamadan geçen her params oynanabilir olmalı:** ulaşılamayan cevap (ör. saat kurmada dakika adımına uymayan hedef, cüzdanla ödenemeyen tutar, çözümsüz terazi) doğrulamada reddedilmeli ya da şablon adımı uyarlamalı. Test: `test_clock_set_reachable_for_every_difficulty`, `test_money_pay_unpayable_rejected`, `test_balance_missing_negative_rejected`.
 3. **Kilit ve çift dokunma:** geri bildirim sırasında gelen dokunmalar yok sayılır; "onayla" düğmeli şablonlarda (saat kur, para öde, pizza seç) art arda basış tek cevap sayılır. Test: `test_check_button_double_press_counts_once`.
 4. **Balon oyununda süre baskısı yok:** balonlar ekran içinde kalır, zamanla kaybolmaz; sahnede `Timer` yok. Test: `test_balloons_stay_on_screen_and_never_expire`.
@@ -53,7 +53,7 @@
 | `tests/integration/test_play_<id>.gd` | Şablon başına oynanış testleri |
 | `tests/integration/test_faz3_runner.gd` | LessonRunner ile altı şablonun ipucu / çözüm / yeniden sorma akışı |
 | `tests/fixtures/faz3/params.json` | Örnek params (testler ve ekran görüntüsü aracı) |
-| `tests/fixtures/lesson_faz3/g3/matematik/u01.json` | Runner testi için fixture ünite |
+| `tests/fixtures/lesson_faz3/g1/matematik/u01.json` | Runner testi için fixture ünite |
 | `tools/ui_screenshots.gd` | Yeni şablon kareleri |
 | `asset-requests/010-faz3-sablonlar.md` | Para, pizza, saat kadranı görselleri |
 | `docs/qa-checklist.md` | Altı şablon için manuel kontrol adımları |
@@ -78,8 +78,8 @@ Her yeni şablon, gerçek dokunmayla aynı kod yolunu kullanan şu test kancalar
 - `game_widgets.gd` (statik): `make_tile(parent, text, rect, font_size, color) -> Control`, `make_check_button(parent, rect) -> Control` (nane yeşili kil karo + `ui.check` ikonu; ikon yoksa kodla çizilmiş onay işareti), `shuffle(a: Array, rng) -> void`, `draw_shape(ci, shape, rect, color)` (circle, square, triangle, star, heart, diamond), `draw_well(ci, rect)`.
 - `template_harness.gd`: `make(id, params, difficulty = 1, seed = 7) -> MiniGame`, `answers: Array[bool]`, `results: Array[RoundResult]`.
 
-- [ ] **Step 1:** Kayıt testini yaz (`test_faz3_templates_registered`): altı kimlik kayıtlı, sahne ve betik yüklenir. → FAIL
-- [ ] **Step 2:** Yardımcıları yaz. Commit: `feat(games): faz 3 şablonları için ortak yardımcılar ve test düzeni`
+- [x] **Step 1:** Kayıt testini yaz (`test_faz3_templates_registered`): altı kimlik kayıtlı, sahne ve betik yüklenir. → FAIL
+- [x] **Step 2:** Yardımcıları yaz. Commit: `feat(games): faz 3 şablonları için ortak yardımcılar ve test düzeni`
 
 ### Task 2: `sequence` — kartları sıraya diz
 
@@ -101,7 +101,7 @@ Her yeni şablon, gerçek dokunmayla aynı kod yolunu kullanan şu test kancalar
 
 **Testler:** `test_sequence_valid`, `test_sequence_invalid` (2 öğe, 7 öğe, yinelenen, bozuk token), `test_sequence_correct_drops_finish`, `test_sequence_wrong_slot_bounces_and_answers_false`, `test_sequence_drop_outside_is_not_an_answer`, `test_sequence_difficulty_prefills_anchors`, `test_sequence_hint1_glows_next_slot`, `test_sequence_hint2_completes_all`.
 
-- [ ] Step 1: params testleri → FAIL · Step 2: oyun testleri → FAIL · Step 3: uygula → PASS · Step 4: Commit `feat(games): sequence şablonu`
+- [x] Step 1: params testleri → FAIL · Step 2: oyun testleri → FAIL · Step 3: uygula → PASS · Step 4: Commit `feat(games): sequence şablonu`
 
 ### Task 3: `balloon_pop` — doğru cevaplı balonu patlat
 
@@ -124,7 +124,7 @@ Her yeni şablon, gerçek dokunmayla aynı kod yolunu kullanan şu test kancalar
 
 **Testler:** `test_balloon_pop_valid`, `test_balloon_pop_invalid` (negatif sonuç, choices'ta sonuç yok, 7 seçenek, bilinmeyen op), `test_balloon_correct_pops_and_finishes`, `test_balloon_wrong_stays`, `test_balloon_difficulty_limits_count`, `test_balloons_stay_on_screen_and_never_expire`, `test_balloon_hint1_model_or_fade`, `test_balloon_hint2_pops_correct`.
 
-- [ ] Step 1–4 (TDD) · Commit `feat(games): balloon_pop şablonu`
+- [x] Step 1–4 (TDD) · Commit `feat(games): balloon_pop şablonu`
 
 ### Task 4: `pattern` — örüntüyü tamamla
 
@@ -151,7 +151,7 @@ Her yeni şablon, gerçek dokunmayla aynı kod yolunu kullanan şu test kancalar
 
 **Testler:** `test_pattern_valid`, `test_pattern_invalid`, `test_pattern_color_only_rejected`, `test_pattern_repeat_fill_blanks_in_order`, `test_pattern_number_choices_contain_answer`, `test_pattern_difficulty_sets_blanks`, `test_pattern_wrong_keeps_blank`, `test_pattern_hint1_repeat_and_number`, `test_pattern_hint2_fills_all`.
 
-- [ ] Step 1–4 (TDD) · Commit `feat(games): pattern şablonu`
+- [x] Step 1–4 (TDD) · Commit `feat(games): pattern şablonu`
 
 ### Task 5: `balance` — terazi ve sayı doğrusu
 
@@ -176,7 +176,7 @@ Her yeni şablon, gerçek dokunmayla aynı kod yolunu kullanan şu test kancalar
 
 **Testler:** `test_balance_valid`, `test_balance_invalid`, `test_balance_missing_negative_rejected`, `test_balance_compare_correct_tilts_beam`, `test_balance_missing_correct_levels_beam`, `test_number_line_find_and_place`, `test_number_line_difficulty_labels`, `test_balance_hints`.
 
-- [ ] Step 1–4 (TDD) · Commit `feat(games): balance şablonu (terazi + sayı doğrusu)`
+- [x] Step 1–4 (TDD) · Commit `feat(games): balance şablonu (terazi + sayı doğrusu)`
 
 ### Task 6: `clock_money` — saat oku / kur, para say / öde
 
@@ -207,7 +207,7 @@ Her yeni şablon, gerçek dokunmayla aynı kod yolunu kullanan şu test kancalar
 
 **Testler:** `test_money_*` ve `test_clock_time_*` (saf), `test_clock_money_valid`, `test_clock_money_invalid`, `test_money_pay_unpayable_rejected`, `test_clock_read_correct_and_wrong`, `test_clock_set_steps_and_check`, `test_clock_set_reachable_for_every_difficulty`, `test_money_count_correct`, `test_money_pay_add_remove_check`, `test_check_button_double_press_counts_once`, `test_clock_money_hints`.
 
-- [ ] Step 1–4 (TDD) · Commit `feat(games): clock_money şablonu (saat + para)`
+- [x] Step 1–4 (TDD) · Commit `feat(games): clock_money şablonu (saat + para)`
 
 ### Task 7: `fraction_pizza` — bütünü parçala ve seç
 
@@ -232,15 +232,15 @@ Her yeni şablon, gerçek dokunmayla aynı kod yolunu kullanan şu test kancalar
 
 **Testler:** `test_fraction_pizza_valid`, `test_fraction_pizza_invalid`, `test_pizza_split_correct_and_wrong`, `test_pizza_split_difficulty_option_count`, `test_pizza_select_toggle_and_check`, `test_pizza_slice_hit_test`, `test_pizza_hints`.
 
-- [ ] Step 1–4 (TDD) · Commit `feat(games): fraction_pizza şablonu`
+- [x] Step 1–4 (TDD) · Commit `feat(games): fraction_pizza şablonu`
 
 ### Task 8: Runner entegrasyonu, ekran görüntüleri, asset partisi, QA
 
-- [ ] `tests/integration/test_faz3_runner.gd`: fixture ünitede her şablonun bir turu LessonRunner ile oynanır; 3 yanlış → ipucu 1, çözüm (`show_hint(2)`), tur yardımlı ve bir kez yeniden eklenir; ders tamamlanır.
-- [ ] `tools/ui_screenshots.gd`: her şablon/mod için kare (`29_..` sonrası).
-- [ ] `asset-requests/010-faz3-sablonlar.md` + README durum tablosu; `tools/missing_assets.gd` hatasız.
-- [ ] `docs/qa-checklist.md`: Faz 3a bölümü.
-- [ ] Commit `test: faz 3 şablonları LessonRunner entegrasyonu`, `docs: faz 3a asset partisi ve QA adımları`
+- [x] `tests/integration/test_faz3_runner.gd` (`test_faz3_templates_play_through_runner`, `test_faz3_three_wrong_hint_and_requeue`): fixture ünitede her şablonun bir turu LessonRunner ile oynanır; 3 yanlış → ipucu 1, çözüm (`show_hint(2)`), tur yardımlı ve bir kez yeniden eklenir; ders tamamlanır.
+- [x] `tools/ui_screenshots.gd`: her şablon/mod için kare (`29_..` sonrası).
+- [x] `asset-requests/010-faz3-sablonlar.md` + README durum tablosu; `tools/missing_assets.gd` hatasız.
+- [x] `docs/qa-checklist.md`: Faz 3a bölümü.
+- [x] Commit `test: faz 3 şablonları LessonRunner entegrasyonu`, `docs: faz 3a asset partisi ve QA adımları`
 
 ---
 
