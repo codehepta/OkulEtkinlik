@@ -9,7 +9,9 @@
 			"b) Karşılaştığı niceliklerin büyüklüklerini, farklı temsilleri bağlamında belirler.",
 			"c) Karşılaştığı niceliklerin büyüklüklerini rakam ve sayılarla okur ve yazar."
 		],
-		"theme": "MAT.1.1. Sayılar ve Nicelikler (1)",
+		"themes": [
+			"g1.matematik.t02"
+		],
 		"source": {
 			"doc": "İlkokul Matematik Dersi Öğretim Programı",
 			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
@@ -26,7 +28,9 @@
 			"a) Ögeleri dağınık veya düzenli bir şekilde bulunan bir nesne grubunun parçalarını belirler.",
 			"b) Ögeleri dağınık veya düzenli bir şekilde bulunan bir nesne grubunu sayarken parçalar arasındaki ilişkileri belirler."
 		],
-		"theme": "MAT.1.1. Sayılar ve Nicelikler (1)",
+		"themes": [
+			"g1.matematik.t02"
+		],
 		"source": {
 			"doc": "İlkokul Matematik Dersi Öğretim Programı",
 			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
@@ -39,7 +43,9 @@
 		"subject": "matematik",
 		"text": "Nesnelerin sıra sayısını gösterebilme",
 		"printed_code": "MAT.1.1.3.",
-		"theme": "MAT.1.1. Sayılar ve Nicelikler (1)",
+		"themes": [
+			"g1.matematik.t02"
+		],
 		"source": {
 			"doc": "İlkokul Matematik Dersi Öğretim Programı",
 			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
@@ -57,7 +63,9 @@
 			"b) İfade edilen büyüklüklere ilişkin benzerlikleri listeler.",
 			"c) İfade edilen büyüklüklere ilişkin farklılıkları listeler."
 		],
-		"theme": "MAT.1.1. Sayılar ve Nicelikler (1)",
+		"themes": [
+			"g1.matematik.t02"
+		],
 		"source": {
 			"doc": "İlkokul Matematik Dersi Öğretim Programı",
 			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
@@ -70,7 +78,9 @@
 		"subject": "matematik",
 		"text": "100’e kadar ileriye ve 20’den geriye doğru ritmik sayabilme",
 		"printed_code": "MAT.1.1.5.",
-		"theme": "MAT.1.1. Sayılar ve Nicelikler (1)",
+		"themes": [
+			"g1.matematik.t02"
+		],
 		"source": {
 			"doc": "İlkokul Matematik Dersi Öğretim Programı",
 			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
@@ -87,7 +97,9 @@
 			"a) Sayı ve şekil örüntülerinin ardışık ögelerini belirler.",
 			"b) Sayı ve şekil örüntülerinin ardışık ögeleri arasındaki ilişkiyi belirler."
 		],
-		"theme": "MAT.1.1. Sayılar ve Nicelikler (1)",
+		"themes": [
+			"g1.matematik.t02"
+		],
 		"source": {
 			"doc": "İlkokul Matematik Dersi Öğretim Programı",
 			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
@@ -105,12 +117,4557 @@
 			"b) Bir çokluğun büyüklüğünü stratejiye dayanarak tahmin eder.",
 			"c) Tahmin edilen sonuç ile sayma sonucunu karşılaştırarak yargıda bulunur."
 		],
-		"theme": "MAT.1.1. Sayılar ve Nicelikler (1)",
+		"themes": [
+			"g1.matematik.t02"
+		],
 		"source": {
 			"doc": "İlkokul Matematik Dersi Öğretim Programı",
 			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
 			"page": 20,
 			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.1.1.8": {
+		"grade": 1,
+		"subject": "matematik",
+		"text": "Standart olmayan uygun ölçme araçları ile nesnelerin uzunluğunu ve tartacağı kütlenin ölçüm sonuçlarını tahmin edebilme",
+		"printed_code": "MAT.1.1.8.",
+		"steps": [
+			"a) Ölçeceği uzunluğa ve kütleye uygun standart olmayan ölçme aracını belirler.",
+			"b) Ölçeceği uzunluğun ve tartacağı kütlenin ölçüm sonuçlarını belirlenen standart olmayan ölçü birimi cinsinden tahmin eder.",
+			"c) Tahmininin doğruluğuna ilişkin yargıda bulunur."
+		],
+		"themes": [
+			"g1.matematik.t03"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 26,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.1.1.9": {
+		"grade": 1,
+		"subject": "matematik",
+		"text": "Paraların (1 TL, 5 TL, 10 TL, 20 TL, 50 TL, 100 TL ve 200 TL) temsil ettiği büyüklükleri tanıyabilme",
+		"printed_code": "MAT.1.1.9.",
+		"themes": [
+			"g1.matematik.t05"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 31,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.1.2.1": {
+		"grade": 1,
+		"subject": "matematik",
+		"text": "Günlük yaşamın içerdiği toplama ve çıkarma işlemlerini çözümleyebilme",
+		"printed_code": "MAT.1.2.1.",
+		"steps": [
+			"a) Günlük yaşam durumunun toplama ve çıkarma işlemlerinden hangisini gerektirdiğini fark eder.",
+			"b) Günlük yaşam durumuna karşılık gelen toplama ve çıkarma işlemlerini birbiri ile ilişkilendirir."
+		],
+		"themes": [
+			"g1.matematik.t04"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 34,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.1.2.2": {
+		"grade": 1,
+		"subject": "matematik",
+		"text": "Toplama ve çıkarma işlemlerinin sonuçlarını tahminde bulunarak ve zihinden işlem yaparak muhakeme edebilme",
+		"printed_code": "MAT.1.2.2.",
+		"steps": [
+			"a) Toplama ve çıkarma işlemlerine ilişkin ögeleri belirler.",
+			"b) Toplama ve çıkarma işlemlerine ilişkin ögeler arasındaki ilişkileri belirler.",
+			"c) Toplama ve çıkarma işlemlerine yönelik tahmin ve zihinden işlem sonuçları arasında ilişki kurar.",
+			"ç) Tahmin ve zihinden işlem sonuçlarının tutarlılığını ifade eder."
+		],
+		"themes": [
+			"g1.matematik.t04"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 34,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.1.2.3": {
+		"grade": 1,
+		"subject": "matematik",
+		"text": "Eşit işaretinin anlamını toplama ve çıkarma işlemi bağlamında yorumlayabilme",
+		"printed_code": "MAT.1.2.3.",
+		"steps": [
+			"a) Toplama ve çıkarma işlemlerinde eşit işaretinin kullanımını inceler.",
+			"b) Eşit işaretinin anlamını kullanarak bir toplama ya da çıkarma işlemini dönüştürür.",
+			"c) Dönüştürdüğü toplama ve çıkarma işlemlerini kendi cümleleriyle ifade eder."
+		],
+		"themes": [
+			"g1.matematik.t04"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 34,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.1.2.4": {
+		"grade": 1,
+		"subject": "matematik",
+		"text": "Toplama ve çıkarma işlemlerinin ilişkisini yorumlayabilme",
+		"printed_code": "MAT.1.2.4.",
+		"steps": [
+			"a) Toplama ve çıkarma işlemlerinin ilişkisini inceler.",
+			"b) Toplama ve çıkarma işlemlerini tersine dönüştürür.",
+			"c) Toplama ve çıkarma işlemlerinin ilişkisini yeniden ifade eder."
+		],
+		"themes": [
+			"g1.matematik.t04"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 34,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.1.3.1": {
+		"grade": 1,
+		"subject": "matematik",
+		"text": "Hedefe ulaşmak için mesafeleri ve yönleri içeren yönergeleri çözümleyebilme",
+		"printed_code": "MAT.1.3.1.",
+		"steps": [
+			"a) Yönergede yer alan mesafe ve yönleri içeren kavramları belirler.",
+			"b) Yönergeleri kullanarak başlangıç noktası ve hedef arasında ilişki kurar."
+		],
+		"themes": [
+			"g1.matematik.t01"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 39,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.1.3.2": {
+		"grade": 1,
+		"subject": "matematik",
+		"text": "Nesnelerin eşliğini değerlendirebilme",
+		"printed_code": "MAT.1.3.2.",
+		"steps": [
+			"a) Nesnelerin eşliği için bir ölçüt belirler.",
+			"b) Ölçüte uygun bilgileri kullanarak ölçme yapar.",
+			"c) Yapılan ölçmeye dayalı olarak elde ettiği sonuçları ölçüt ile karşılaştırır.",
+			"ç) Karşılaştırmalarına ilişkin olarak yargıda bulunur."
+		],
+		"themes": [
+			"g1.matematik.t01"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 39,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.1.3.3": {
+		"grade": 1,
+		"subject": "matematik",
+		"text": "Günlük yaşamdaki nesneleri biçimsel özelliklerine göre ayırt edebilme",
+		"printed_code": "MAT.1.3.3.",
+		"themes": [
+			"g1.matematik.t06"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 43,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.1.3.4": {
+		"grade": 1,
+		"subject": "matematik",
+		"text": "Günlük yaşamda karşılaşılan geometrik yapılardaki geometrik şekilleri çözümleyebilme",
+		"printed_code": "MAT.1.3.4.",
+		"steps": [
+			"a) Geometrik yapılardaki şekilleri belirler.",
+			"b) Şekiller arasında ilişki kurar."
+		],
+		"themes": [
+			"g1.matematik.t06"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 43,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.1.3.5": {
+		"grade": 1,
+		"subject": "matematik",
+		"text": "Biçimsel özelliklerine göre geometrik şekilleri sınıflandırabilme",
+		"printed_code": "MAT.1.3.5.",
+		"steps": [
+			"a) Geometrik şekillerin biçimsel özelliklerini belirler.",
+			"b) Geometrik şekilleri biçimsel özelliklerine göre ayırır.",
+			"c) Geometrik şekilleri tasnif eder.",
+			"ç) Geometrik şekilleri adlandırır."
+		],
+		"themes": [
+			"g1.matematik.t06"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 43,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.1.4.1": {
+		"grade": 1,
+		"subject": "matematik",
+		"text": "Kategorik veriye dayalı temel veri grubu ile çalışabilme ve veriye dayalı karar verebilme",
+		"printed_code": "MAT.1.4.1.",
+		"steps": [
+			"a) Kategorik veriye dayalı istatiksel araştırma gerektiren günlük yaşam durumu belirler.",
+			"b) Kategorik veriye dayalı betimleme gerektirebilecek araştırma soruları oluşturur.",
+			"c) Kategorik verileri toplamak için plan yapar.",
+			"ç) Kategorik verileri toplar ve analize hazırlar.",
+			"d) Toplanan verileri analiz etmek için görselleştirme araçlarından çetele, sıklık tablosu ve nesne grafiğini seçer.",
+			"e) Seçtiği araçlarla verileri görselleştirerek analiz eder.",
+			"f) Araştırma sonuçlarını yorumlar.",
+			"g) Araştırma sonuçlarını araştırma sorularına göre değerlendirir."
+		],
+		"themes": [
+			"g1.matematik.t07"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 47,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.2.1.1": {
+		"grade": 2,
+		"subject": "matematik",
+		"text": "100’e kadar olan niceliklerin büyüklüklerini temsil etmede sayıların sembolik temsillerinden yararlanabilme",
+		"printed_code": "MAT.2.1.1.",
+		"steps": [
+			"a) Niceliklerin büyüklüklerinin farklı temsillerini tanır.",
+			"b) Niceliklerin büyüklüklerine uygun sayı temsillerini belirler.",
+			"c) Niceliklerin büyüklüklerine karşılık gelen sayıları okur ve yazar."
+		],
+		"themes": [
+			"g2.matematik.t02"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 51,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.2.1.2": {
+		"grade": 2,
+		"subject": "matematik",
+		"text": "İki basamaklı sayıları çözümleyebilme",
+		"printed_code": "MAT.2.1.2.",
+		"steps": [
+			"a) İki basamaklı sayıların basamak ve basamak değerini belirler.",
+			"b) İki basamaklı sayıların basamak ve basamak değerleri arasındaki ilişkileri belirler."
+		],
+		"themes": [
+			"g2.matematik.t02"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 51,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.2.1.3": {
+		"grade": 2,
+		"subject": "matematik",
+		"text": "Sayıların sırasını belirleyebilme",
+		"printed_code": "MAT.2.1.3.",
+		"themes": [
+			"g2.matematik.t02"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 51,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.2.1.4": {
+		"grade": 2,
+		"subject": "matematik",
+		"text": "İleriye ve geriye doğru ritmik sayabilme",
+		"printed_code": "MAT.2.1.4.",
+		"steps": [
+			"a) Yüzlük tablo üzerinde ileriye ve geriye doğru ritmik saymaya ilişkin gözlem yapar.",
+			"b) 20 içinde ikişer, 30 içinde üçer, 40 içinde dörder, 100 içinde beşer ileriye ve geriye doğru ritmik sayarken örüntü bulur.",
+			"c) İleriye ve geriye doğru ritmik sayarken bulduğu örüntüyü geneller."
+		],
+		"themes": [
+			"g2.matematik.t02"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 51,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.2.1.5": {
+		"grade": 2,
+		"subject": "matematik",
+		"text": "Sayı ve sayı temsiline dönüşen şekil örüntülerine dayalı çıkarım yapabilme",
+		"printed_code": "MAT.2.1.5.",
+		"steps": [
+			"a) Örüntüde kullanılan sayılar ve sayı temsiline dönüşen şekiller arasındaki ilişkiye yönelik varsayımda bulunur.",
+			"b) Belirlediği varsayıma göre sayı ve sayı temsiline dönüşen şekil örüntülerini örnekler üzerinde listeler.",
+			"c) Gösterilen örüntünün, varsayımı karşılayıp karşılamadığını örneklerle sınar.",
+			"ç) Karşılaştırılan sayı ve sayı temsiline dönüşen şekil örüntülerinin kuralını sözlü olarak ifade eder.",
+			"d) Gösterilen örüntü ile ilgili değerlendirmede bulunur."
+		],
+		"themes": [
+			"g2.matematik.t02"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 51,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.2.1.6": {
+		"grade": 2,
+		"subject": "matematik",
+		"text": "Bir çokluktaki ilişkilerden yararlanarak 50’ye kadar olan nesnelerin sayısını tahmin edebilme",
+		"printed_code": "MAT.2.1.6.",
+		"steps": [
+			"a) Bir çokluktaki parça-bütün ve dağılım ilişkisini gözlem ve deneyimleri ile ilişkilendirir.",
+			"b) Bir çokluğun büyüklüğünü stratejiye dayanarak tahmin eder.",
+			"c) Tahmini ile sayma sonucunu karşılaştırarak tahmininin doğruluğuna yönelik bir yargıda bulunur."
+		],
+		"themes": [
+			"g2.matematik.t02"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 51,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.2.1.7": {
+		"grade": 2,
+		"subject": "matematik",
+		"text": "Bütün, yarım ve çeyrek arasındaki ilişkiyi çözümleyebilme",
+		"printed_code": "MAT.2.1.7.",
+		"steps": [
+			"a) Bir bütünün yarım ve çeyrek parçalarını belirler.",
+			"b) Bütün, yarım ve çeyrek arasındaki ilişkileri belirler."
+		],
+		"themes": [
+			"g2.matematik.t04"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 58,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.2.1.8": {
+		"grade": 2,
+		"subject": "matematik",
+		"text": "Paraları değerlerine göre ilişkilendirerek çözümleyebilme",
+		"printed_code": "MAT.2.1.8.",
+		"steps": [
+			"a) Paraları değerlerine göre inceleyerek madenî paraları belirler.",
+			"b) Kuruş ve Türk lirası arasındaki ilişkileri belirler."
+		],
+		"themes": [
+			"g2.matematik.t04"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 58,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.2.1.9": {
+		"grade": 2,
+		"subject": "matematik",
+		"text": "Zaman ölçü birimlerini okuyabilme ve yazabilme",
+		"printed_code": "MAT.2.1.9.",
+		"themes": [
+			"g2.matematik.t04"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 58,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.2.1.10": {
+		"grade": 2,
+		"subject": "matematik",
+		"text": "Standart uzunluk ve kütle ölçme araçlarının ve birimlerinin gerekliliğini yansıtabilme",
+		"printed_code": "MAT.2.1.10.",
+		"steps": [
+			"a) Standart olmayan araçlarla ilgili deneyimlerinden yola çıkarak standart ölçme araçlarına olan ihtiyacı gözden geçirir.",
+			"b) Deneyimlerine dayalı olarak standart ölçme araçlarının gerekliliğine ilişkin çıkarımda bulunur.",
+			"c) Standart ölçme araçlarına ilişkin ulaştığı çıkarımlar doğrultusunda standart ölçü birimlerinin gerekliliğini değerlendirir."
+		],
+		"themes": [
+			"g2.matematik.t04"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 58,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.2.1.11": {
+		"grade": 2,
+		"subject": "matematik",
+		"text": "Standart uzunluk ve kütle ölçü birimleri cinsinden uzunlukları ve kütleleri tahmin edebilme",
+		"printed_code": "MAT.2.1.11.",
+		"steps": [
+			"a) Standart ölçü birimlerine ilişkin deneyimini, tahmine konu olan uzunluk ve kütle ile ilişkilendirir.",
+			"b) Nesnelerin uzunluğunu ve kütlesini standart ölçü birim cinsinden tahmin eder.",
+			"c) Tahminini ölçüm sonuçlarıyla karşılaştırarak tahminine ilişkin yargıda bulunur."
+		],
+		"themes": [
+			"g2.matematik.t04"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 58,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.2.2.1": {
+		"grade": 2,
+		"subject": "matematik",
+		"text": "Toplama ve çıkarma işlemleri gerektiren günlük yaşam problemlerini çözebilme",
+		"printed_code": "MAT.2.2.1.",
+		"steps": [
+			"a) Problemi anlayarak verilen ve istenilenleri belirler.",
+			"b) Problemde verilenler ile istenilenlerin gerektirdiği işlemler arasındaki ilişkiyi belirler.",
+			"c) Probleme ilişkin verilenleri belirleyerek uygun matematiksel temsillere dönüştürür.",
+			"ç) Matematiksel temsillere dönüştürdüğü problemi kendi ifadeleri ile açıklar.",
+			"d) Problemlerin sonucuna ilişkin tahminde bulunarak işlemleri gerçekleştirmek için stratejiler geliştirir.",
+			"e) Belirlenen strateji ya da stratejileri çözüm için uygular.",
+			"f) Çözüm yollarını kontrol ederek çözüme ulaştırmayan stratejiyi değiştirir.",
+			"g) Problemin çözümü için kullandığı veya geliştirdiği stratejileri gözden geçirerek kısa yolları değerlendirir.",
+			"ğ) Çözüme ulaştıran stratejinin/stratejilerin hangi problemlere uygulanabileceğini geneller.",
+			"h) Genellemenin geçerliliğini matematiksel örneklerle değerlendirir."
+		],
+		"themes": [
+			"g2.matematik.t03"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 66,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.2.2.2": {
+		"grade": 2,
+		"subject": "matematik",
+		"text": "Toplama ve çıkarma işlemlerinin sonuçlarını tahminde bulunarak ve zihinden işlem yaparak muhakeme edebilme",
+		"printed_code": "MAT.2.2.2.",
+		"steps": [
+			"a) Toplama ve çıkarma işlemlerine ilişkin ögeleri belirler.",
+			"b) Toplama ve çıkarma işlemlerine ilişkin ögeler arasındaki ilişkileri belirler.",
+			"c) Toplama ve çıkarma işlemine yönelik tahmin ve zihinden işlem sonuçları arasında ilişki kurar.",
+			"ç) Tahmin ve zihinden işlem sonuçlarının tutarlılığını ifade eder."
+		],
+		"themes": [
+			"g2.matematik.t03"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 66,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.2.2.3": {
+		"grade": 2,
+		"subject": "matematik",
+		"text": "Toplama ve çıkarma işlemlerinin ilişkisini yorumlayabilme",
+		"printed_code": "MAT.2.2.3.",
+		"steps": [
+			"a) Toplama ve çıkarma işlemlerinin ilişkisini inceler.",
+			"b) Toplama ve çıkarma işlemlerini tersine dönüştürür.",
+			"c) Toplama ve çıkarma işlemlerinin ilişkisini yeniden ifade eder."
+		],
+		"themes": [
+			"g2.matematik.t03"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 66,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.2.2.4": {
+		"grade": 2,
+		"subject": "matematik",
+		"text": "Çarpma ve bölme işlemlerini toplama ve çıkarma işlemlerine dayalı olarak çözümleyebilme",
+		"printed_code": "MAT.2.2.4.",
+		"steps": [
+			"a) Çarpma ve bölme işlemlerinin anlamlarının toplama ve çıkarma işlemleriyle ilişkili olduğunu fark eder.",
+			"b) Çarpma ve bölme işlemlerini toplama ve çıkarma işlemleriyle ilişkilendirir."
+		],
+		"themes": [
+			"g2.matematik.t03"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 66,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.2.2.5": {
+		"grade": 2,
+		"subject": "matematik",
+		"text": "Çarpma ve bölme işlemlerinin sonuçlarını tahminde bulunarak ve zihinden işlem yaparak muhakeme edebilme",
+		"printed_code": "MAT.2.2.5.",
+		"steps": [
+			"a) Çarpma ve bölme işlemlerine ilişkin bileşenleri belirler.",
+			"b) Çarpma ve bölme işlemlerine ilişkin bileşenler arasındaki ilişkileri belirler.",
+			"c) Çarpma ve bölme işlemine yönelik tahmin ve zihinden işlem sonuçlarını ifade eder.",
+			"ç) Tahmin ve zihinden işlem sonuçlarını açıklar."
+		],
+		"themes": [
+			"g2.matematik.t03"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 66,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.2.2.6": {
+		"grade": 2,
+		"subject": "matematik",
+		"text": "Dört işlem bağlamında eşitliğin farklı anlamlarını yorumlayabilme",
+		"printed_code": "MAT.2.2.6.",
+		"steps": [
+			"a) Dört işlemde eşitliği farklı anlamlarına göre inceler.",
+			"b) Dört işlem bağlamında aynı sonucu veren durumları eşitliğin anlamını kullanarak farklı sayılarla ifade eder.",
+			"c) Eşitliğin anlamlarını dört işlem bağlamında ifade eder."
+		],
+		"themes": [
+			"g2.matematik.t03"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 66,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.2.3.1": {
+		"grade": 2,
+		"subject": "matematik",
+		"text": "Günlük yaşamda kullanılan nesneleri biçimsel özelliklerine göre geometrik cisim olarak sınıflandırabilme",
+		"printed_code": "MAT.2.3.1.",
+		"steps": [
+			"a) Günlük yaşamda kullanılan nesnelerin biçimsel özelliklerini belirler.",
+			"b) Farklı nesneleri biçimsel özelliklerine göre ayırır.",
+			"c) Nesneleri geometrik cisim olarak tasnif eder.",
+			"ç) Geometrik cisimleri adlandırır."
+		],
+		"themes": [
+			"g2.matematik.t01"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 72,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.2.3.2": {
+		"grade": 2,
+		"subject": "matematik",
+		"text": "Geometrik cisim modellerini kullanarak yapılar sentezleyebilme",
+		"printed_code": "MAT.2.3.2.",
+		"steps": [
+			"a) Geometrik yapılardaki geometrik cisimleri belirler.",
+			"b) Geometrik cisimler arasında ilişki kurar.",
+			"c) Geometrik cisimleri birleştirerek özgün bir yapı oluşturur."
+		],
+		"themes": [
+			"g2.matematik.t01"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 72,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.2.3.3": {
+		"grade": 2,
+		"subject": "matematik",
+		"text": "Geometrik şekiller kullanarak modeller sentezleyebilme",
+		"printed_code": "MAT.2.3.3.",
+		"steps": [
+			"a) Geometrik yapılardaki geometrik şekilleri belirler.",
+			"b) Geometrik şekiller arasında ilişki kurar.",
+			"c) Geometrik şekilleri birleştirerek özgün model oluşturur."
+		],
+		"themes": [
+			"g2.matematik.t01"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 72,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.2.3.4": {
+		"grade": 2,
+		"subject": "matematik",
+		"text": "Geometrik şekil ve cisimlerin yön, konum veya büyüklükleri değiştiğinde biçimsel özelliklerinin değişmediğini yorumlayabilme",
+		"printed_code": "MAT.2.3.4.",
+		"steps": [
+			"a) Geometrik şekil ve cisimlerin mevcut yön, konum veya büyüklüklerini inceler.",
+			"b) Geometrik şekil ve cisimlerin mevcut yön, konum veya büyüklüklerini biçimsel özelliklerinden kopmadan farklı büyüklüklere veya farklı yönlere dönüştürerek gösterir.",
+			"c) Geometrik şekil ve cisimlerin yön, konum veya büyüklükleri değişse de geometrik şekil ve cisim olarak aynı kaldığını ifade eder."
+		],
+		"themes": [
+			"g2.matematik.t01"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 72,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.2.3.5": {
+		"grade": 2,
+		"subject": "matematik",
+		"text": "Standart olmayan sıvı ölçme araçları ile sıvı miktarını tahmin edebilme",
+		"printed_code": "MAT.2.3.5.",
+		"steps": [
+			"a) Standart olmayan sıvı ölçme araçlarına ilişkin deneyimini, tahmine konu olan sıvı miktarı ile ilişkilendirir.",
+			"b) Belirlenen standart olmayan sıvı ölçme araçlarına göre sıvının miktarını tahmin eder.",
+			"c) Tahminini ölçüm sonuçlarıyla karşılaştırarak tahminine ilişkin yargıda bulunur."
+		],
+		"themes": [
+			"g2.matematik.t01"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 72,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.2.3.6": {
+		"grade": 2,
+		"subject": "matematik",
+		"text": "Mesafe ve yönleri içerecek şekilde hedefe ulaşmak için uygun stratejilere karar verebilme",
+		"printed_code": "MAT.2.3.6.",
+		"steps": [
+			"a) Hedefe ulaşmak için ölçüt belirler.",
+			"b) Belirlediği ölçüte uygun bilgileri toplar.",
+			"c) Topladığı bilgilerden ölçüte yönelik seçenekler oluşturur.",
+			"ç) Oluşturduğu seçenekler üzerinde mantıksal denetleme yapar.",
+			"d) Seçenekler arasından ölçüte uygun seçim yapar.",
+			"e) Ölçüt değişikliği durumunu sürece yansıtır."
+		],
+		"themes": [
+			"g2.matematik.t05"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 77,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.2.3.7": {
+		"grade": 2,
+		"subject": "matematik",
+		"text": "Verilen şekiller arasından simetrik olanları ayırt edebilme",
+		"printed_code": "MAT.2.3.7.",
+		"themes": [
+			"g2.matematik.t05"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 77,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.2.4.1": {
+		"grade": 2,
+		"subject": "matematik",
+		"text": "Kategorik veriye dayalı en çok iki veri grubu ile çalışabilme ve veriye dayalı karar verebilme",
+		"printed_code": "MAT.2.4.1.",
+		"steps": [
+			"a) Kategorik veriye dayalı istatistiksel araştırma gerektiren günlük yaşam durumu belirler.",
+			"b) Kategorik veriye dayalı betimleme veya karşılaştırma gerektirebilecek araştırma soruları oluşturur.",
+			"c) Kategorik verileri toplamak için plan yapar.",
+			"ç) Kategorik verileri toplar ve analize hazırlar.",
+			"d) Toplanan verileri analiz etmek için görselleştirme araçlarından çetele tablosu, sıklık tablosu ve şekil grafiğini seçer.",
+			"e) Seçtiği araçlarla verileri görselleştirerek analiz eder.",
+			"f) Araştırma sonuçlarını yorumlar.",
+			"g) Araştırma sonuçlarını araştırma sorularına göre değerlendirir."
+		],
+		"themes": [
+			"g2.matematik.t06"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 81,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.3.1.1": {
+		"grade": 3,
+		"subject": "matematik",
+		"text": "Niceliklerin büyüklüklerine karşılık gelen 1000’e kadar olan sayıların temsillerinden yararlanabilme",
+		"printed_code": "MAT.3.1.1.",
+		"steps": [
+			"a) Niceliklerin büyüklüklerinin temsillerini tanır.",
+			"b) Niceliklerin büyüklüklerine uygun sayı temsillerini belirler.",
+			"c) Niceliklerin büyüklüklerine karşılık gelen uygun sayıları okur ve yazar."
+		],
+		"themes": [
+			"g3.matematik.t01"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 85,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.3.1.2": {
+		"grade": 3,
+		"subject": "matematik",
+		"text": "1000’e kadar olan sayıları çözümleyebilme",
+		"printed_code": "MAT.3.1.2.",
+		"steps": [
+			"a) Üç basamaklı sayıların basamaklarını belirler.",
+			"b) Üç basamaklı sayıların basamak ve basamak değerleri arasındaki ilişkileri belirler."
+		],
+		"themes": [
+			"g3.matematik.t01"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 85,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.3.1.3": {
+		"grade": 3,
+		"subject": "matematik",
+		"text": "Sayıları sıralayabilme",
+		"printed_code": "MAT.3.1.3.",
+		"steps": [
+			"a) 1000’e kadar olan sayıları öncelik/sonralık ilişkisine göre belirler.",
+			"b) 1000’e kadar olan sayıları bulundukları onluklara ve yüzlüklere göre ayırır.",
+			"c) 1000’e kadar olan sayıları en yakın onluklara ve yüzlüklere göre tasnif eder.",
+			"ç) 1000’e kadar olan sayıları en yakın onluklara ve yüzlüklere göre ifade eder."
+		],
+		"themes": [
+			"g3.matematik.t01"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 85,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.3.1.4": {
+		"grade": 3,
+		"subject": "matematik",
+		"text": "Sayıları ileriye ve geriye doğru ritmik sayabilme",
+		"printed_code": "MAT.3.1.4.",
+		"steps": [
+			"a) Modeller üzerinde ileriye ve geriye doğru ritmik saymaya ilişkin gözlem yapar.",
+			"b) 60 içinde altışar, 70 içinde yedişer, 80 içinde sekizer, 90 içinde dokuzar; 1000 içinde onar ve yüzer ileriye ve geriye doğru ritmik sayarken örüntü bulur.",
+			"c) İleriye ve geriye doğru ritmik sayarken bulduğu örüntüyü geneller."
+		],
+		"themes": [
+			"g3.matematik.t01"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 85,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.3.1.5": {
+		"grade": 3,
+		"subject": "matematik",
+		"text": "Sayıları tek-çift olarak sınıflandırabilme",
+		"printed_code": "MAT.3.1.5.",
+		"steps": [
+			"a) Sayıları tek-çift ilişkisine göre belirler.",
+			"b) Sayıları tek-çift olma durumlarına göre ayırt eder.",
+			"c) Sayıları tek-çift olma durumlarına göre tasnif eder.",
+			"ç) Sayıları tek-çift sayı olarak ifade eder."
+		],
+		"themes": [
+			"g3.matematik.t01"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 85,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.3.1.6": {
+		"grade": 3,
+		"subject": "matematik",
+		"text": "Tek ve çift sayıların toplamlarının tek ya da çift olma durumu arasındaki ilişkiye yönelik tümevarımsal akıl yürütebilme",
+		"printed_code": "MAT.3.1.6.",
+		"steps": [
+			"a) Tek ve çift sayıların toplamlarına yönelik örnek durumların tek ya da çift olma özelliklerini belirler.",
+			"b) Toplanan sayılar ile elde edilen toplamın tek ya da çift olma durumları arasındaki örüntüyü belirler.",
+			"c) Tek ve çift sayıların toplamlarının tek ya da çift olma durumuna ilişkin genelleme yapar."
+		],
+		"themes": [
+			"g3.matematik.t01"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 85,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.3.1.7": {
+		"grade": 3,
+		"subject": "matematik",
+		"text": "Sayı ve sayı temsiline dönüşen şekil örüntülerine dayalı çıkarım yapabilme",
+		"printed_code": "MAT.3.1.7.",
+		"steps": [
+			"a) Örüntüde kullanılan sayılar ve sayı temsiline dönüşen şekiller arasındaki ilişkiye yönelik varsayımda bulunur.",
+			"b) Belirlediği varsayıma göre sayı ve sayı temsiline dönüşen şekil örüntülerini örnekler üzerinde listeler.",
+			"c) Gösterilen örüntünün varsayımı karşılayıp karşılamadığını örneklerle sınar.",
+			"ç) Karşılaştırılan sayı ve sayı temsiline dönüşen şekil örüntülerinin kuralını sözlü olarak ifade eder.",
+			"d) Gösterilen örüntü ile ilgili değerlendirmede bulunur."
+		],
+		"themes": [
+			"g3.matematik.t01"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 85,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.3.1.8": {
+		"grade": 3,
+		"subject": "matematik",
+		"text": "Bir çokluktaki ilişkilerden yararlanarak 100’e kadar olan nesnelerin sayısını tahmin edebilme",
+		"printed_code": "MAT.3.1.8.",
+		"steps": [
+			"a) Bir çokluktaki parça-bütün ve dağılım ilişkisini gözlem ve deneyimleri ile ilişkilendirir."
+		],
+		"themes": [
+			"g3.matematik.t01"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 85,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.3.1.9": {
+		"grade": 3,
+		"subject": "matematik",
+		"text": "Bütün, yarım ve çeyreğin kesirle gösterimi için modellerden yararlanabilme",
+		"printed_code": "MAT.3.1.9.",
+		"steps": [
+			"a) Bütün, yarım ve çeyrek modellerinin temsillerini tanır.",
+			"b) Bütün, yarım ve çeyrek modellerine uygun kesir temsillerini belirler.",
+			"c) Belirlediği temsili bütün, yarım ve çeyrek modelleri için kullanır."
+		],
+		"themes": [
+			"g3.matematik.t02"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 93,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.3.1.10": {
+		"grade": 3,
+		"subject": "matematik",
+		"text": "Bir bütünü eş parçalar oluşturacak şekilde birim kesir olarak çözümleyebilme",
+		"printed_code": "MAT.3.1.10.",
+		"steps": [
+			"a) Bir bütünü oluşturan eş parçaları belirler.",
+			"b) Bütün ile eş parçaların her biri arasındaki ilişkiyi belirler."
+		],
+		"themes": [
+			"g3.matematik.t02"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 93,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.3.1.11": {
+		"grade": 3,
+		"subject": "matematik",
+		"text": "Bir kesrin payı ile paydası arasındaki ilişkiyi çözümleyebilme",
+		"printed_code": "MAT.3.1.11.",
+		"steps": [
+			"a) Bir kesrin pay ve paydasına ait parçaları belirler.",
+			"b) Bir kesrin pay ve paydasına ait parçalar arasındaki ilişkiyi belirler."
+		],
+		"themes": [
+			"g3.matematik.t02"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 93,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.3.1.12": {
+		"grade": 3,
+		"subject": "matematik",
+		"text": "Analog ve dijital saatlerde zamanı okuyabilme ve yazabilme",
+		"printed_code": "MAT.3.1.12.",
+		"themes": [
+			"g3.matematik.t02"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 93,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.3.1.13": {
+		"grade": 3,
+		"subject": "matematik",
+		"text": "Zaman ölçü birimlerini çözümleyebilme",
+		"printed_code": "MAT.3.1.13.",
+		"steps": [
+			"a) Zaman ölçü birimlerini (yıl, ay, hafta, gün, saat, dakika, saniye) belirler.",
+			"b) Zaman ölçü birimleri arasındaki ilişkileri belirler."
+		],
+		"themes": [
+			"g3.matematik.t02"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 93,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.3.1.14": {
+		"grade": 3,
+		"subject": "matematik",
+		"text": "Olayların oluş sürelerini tahmin ederek yargıda bulunabilme",
+		"printed_code": "MAT.3.1.14.",
+		"steps": [
+			"a) Olayların oluş sürelerini birbirleriyle ilişkilendirir.",
+			"b) Olayların oluş sürelerine ilişkin deneyimlerinden faydalanarak çıkarım yapar.",
+			"c) Olayların oluş sürelerine ilişkin yapılan çıkarımla gerçekte olan sürelerine ilişkin yargıda bulunur."
+		],
+		"themes": [
+			"g3.matematik.t02"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 93,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.3.1.15": {
+		"grade": 3,
+		"subject": "matematik",
+		"text": "Uzunluk ve kütle birimleri arasındaki ilişkileri kullanarak bu birimleri kendi içerisinde çözümleyebilme",
+		"printed_code": "MAT.3.1.15.",
+		"steps": [
+			"a) Standart kütle ve uzunluk birimlerine ilişkin parçaları belirler.",
+			"b) Santimetre, metre, kilometre ve gram, kilogram ve ton arasındaki ilişkileri kendi içerisinde belirler."
+		],
+		"themes": [
+			"g3.matematik.t02"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 93,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.3.1.16": {
+		"grade": 3,
+		"subject": "matematik",
+		"text": "Madenî ve kâğıt paraları değerlerine göre ilişkilendirerek yorumlayabilme",
+		"printed_code": "MAT.3.1.16.",
+		"steps": [
+			"a) Paraları değerlerine göre inceler.",
+			"b) Madenî paraları ve kâğıt paraları değerlerine göre dönüştürür.",
+			"c) Paranın değerini, anlamını değiştirmeyecek şekilde yeniden ifade eder."
+		],
+		"themes": [
+			"g3.matematik.t02"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 93,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.3.2.1": {
+		"grade": 3,
+		"subject": "matematik",
+		"text": "Toplama ve çıkarma işlemlerinin sonuçlarını tahminde bulunarak ve zihinden işlem yaparak muhakeme edebilme",
+		"printed_code": "MAT.3.2.1.",
+		"steps": [
+			"a) Toplama ve çıkarma işlemlerine ilişkin ögeleri belirler.",
+			"b) Toplama ve çıkarma işlemlerine ilişkin ögeler arasındaki ilişkileri belirler.",
+			"c) Toplama ve çıkarma işlemine yönelik tahminî ve zihinden işlem sonuçları arasında ilişki kurar.",
+			"ç) Tahminî ve zihinden işlem sonuçlarının tutarlılığını ifade eder."
+		],
+		"themes": [
+			"g3.matematik.t03"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 100,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.3.2.2": {
+		"grade": 3,
+		"subject": "matematik",
+		"text": "Toplama ve çıkarma işlemlerini çözümleyebilme",
+		"printed_code": "MAT.3.2.2.",
+		"steps": [
+			"a) Toplama ve çıkarma işlemlerinin adımlarını belirler.",
+			"b) Toplama ve çıkarmanın işlem süreçlerini birbiri ile ilişkilendirir."
+		],
+		"themes": [
+			"g3.matematik.t03"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 100,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.3.2.3": {
+		"grade": 3,
+		"subject": "matematik",
+		"text": "Çarpma ve bölme işlemlerinin sonuçlarını tahminde bulunarak ve zihinden işlem yaparak muhakeme edebilme",
+		"printed_code": "MAT.3.2.3.",
+		"steps": [
+			"a) Çarpma ve bölme işlemlerine ilişkin bileşenleri belirler.",
+			"b) Çarpma ve bölme işlemlerine ilişkin bileşenler arasındaki ilişkileri belirler.",
+			"c) Çarpma ve bölme işlemine yönelik tahminî ve zihinden işlem sonuçlarını ifade eder.",
+			"ç) Tahminî ve zihinden işlem sonuçlarını kendi cümleleri ile açıklar."
+		],
+		"themes": [
+			"g3.matematik.t03"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 100,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.3.2.4": {
+		"grade": 3,
+		"subject": "matematik",
+		"text": "Çarpma ve bölme işlemlerini çözümleyebilme",
+		"printed_code": "MAT.3.2.4.",
+		"steps": [
+			"a) Çarpma ve bölme işlemlerinin adımlarını belirler.",
+			"b) Çarpma ve bölme işlemlerini birbiri ile ilişkilendirir."
+		],
+		"themes": [
+			"g3.matematik.t03"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 100,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.3.2.5": {
+		"grade": 3,
+		"subject": "matematik",
+		"text": "Dört işlem gerektiren durumlar için verilen yönergeleri takip ederek yorumlayabilme",
+		"printed_code": "MAT.3.2.5.",
+		"steps": [
+			"a) Dört işleme ait bileşenleri inceler.",
+			"b) İncelediği bileşenleri işlem diline dönüştürür.",
+			"c) Oluşturduğu yapıyı temsillerle yeniden ifade eder."
+		],
+		"themes": [
+			"g3.matematik.t03"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 100,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.3.2.6": {
+		"grade": 3,
+		"subject": "matematik",
+		"text": "Dört işlem gerektiren günlük yaşam problemlerini çözebilme",
+		"printed_code": "MAT.3.2.6.",
+		"steps": [
+			"a) Problemi anlayarak verilenleri ve istenilenleri belirler.",
+			"b) Problemde verilenlerin ve istenilenlerin gerektirdiği işlemler arasındaki ilişkiyi belirler.",
+			"c) Probleme ilişkin verilenleri belirleyerek uygun matematiksel temsillere dönüştürür.",
+			"ç) Matematiksel temsillere dönüştürdüğü problemi kendi ifadeleri ile açıklar.",
+			"d) Problemlerin sonucuna ilişkin tahminde bulunarak işlemleri gerçekleştirmek için stratejiler geliştirir.",
+			"e) Belirlenen strateji ya da stratejileri çözüm için uygular.",
+			"f) Çözüm yollarını kontrol ederek çözüme ulaştırmayan stratejiyi değiştirir.",
+			"g) Problemin çözümü için kullandığı veya geliştirdiği stratejileri gözden geçirerek kısa yolları değerlendirir.",
+			"ğ) Çözüme ulaştıran stratejilerin hangi problemlere uygulanabileceğini geneller.",
+			"h) Genellemenin geçerliliğini matematiksel örneklerle değerlendirir."
+		],
+		"themes": [
+			"g3.matematik.t03"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 100,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.3.2.7": {
+		"grade": 3,
+		"subject": "matematik",
+		"text": "Dört işlem gerektiren problem durumlarını yapılandırabilme",
+		"printed_code": "MAT.3.2.7.",
+		"steps": [
+			"a) Dört işlem gerektiren problem durumlarına yönelik hiyerarşik, nedensel ya da mantıksal ilişkiler ortaya koyar.",
+			"b) Dört işlem yapmayı gerektiren deneyimleriyle elde ettiği ilişkilere dayalı bir problem oluşturur."
+		],
+		"themes": [
+			"g3.matematik.t03"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 100,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.3.2.8": {
+		"grade": 3,
+		"subject": "matematik",
+		"text": "Dört işlem bağlamında eşitliğin farklı anlamlarını yorumlayabilme",
+		"printed_code": "MAT.3.2.8.",
+		"steps": [
+			"a) Dört işlemde eşitliğin kullanımını inceler.",
+			"b) Aynı sonucu veren dört işlemi eşitliğin anlamını kullanarak farklı sayılarla ifade eder.",
+			"c) Eşitliğin anlamlarını dört işlem bağlamında ifade eder."
+		],
+		"themes": [
+			"g3.matematik.t03"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 101,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.3.3.1": {
+		"grade": 3,
+		"subject": "matematik",
+		"text": "Geometrik cisimlerin özelliklerini yorumlayabilme",
+		"printed_code": "MAT.3.3.1.",
+		"steps": [
+			"a) Geometrik cisimlerin özelliklerini inceler.",
+			"b) Geometrik cisimlerin köşe, yüz ve ayrıt özelliklerini ifade eder.",
+			"c) Köşe, yüz ve ayrıt terimlerini kendi ifadeleri ile açıklar."
+		],
+		"themes": [
+			"g3.matematik.t04"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 108,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.3.3.2": {
+		"grade": 3,
+		"subject": "matematik",
+		"text": "Kenar sayılarına göre geometrik şekilleri sınıflandırabilme",
+		"printed_code": "MAT.3.3.2.",
+		"steps": [
+			"a) Geometrik şekillerin kenarlarını belirler.",
+			"b) Geometrik şekilleri kenar sayılarına göre ayırır.",
+			"c) Geometrik şekilleri kenar sayılarına göre tasnif eder.",
+			"ç) Geometrik şekilleri kenar sayılarına göre adlandırır."
+		],
+		"themes": [
+			"g3.matematik.t04"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 108,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.3.3.3": {
+		"grade": 3,
+		"subject": "matematik",
+		"text": "Matematiksel araç ve teknolojileri kullanarak çeşitli geometrik şekilleri ve cisimleri çizebilme",
+		"printed_code": "MAT.3.3.3.",
+		"steps": [
+			"a) Geometrik şekil ve cisim çizmeyi gerektiren matematiksel araç ve teknolojileri tanır.",
+			"b) Geometrik şekil ve cisim çizmek için gerekli araçları ve teknolojiyi belirler.",
+			"c) Belirlenen araç ve teknolojiyi kullanır."
+		],
+		"themes": [
+			"g3.matematik.t04"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 108,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.3.3.4": {
+		"grade": 3,
+		"subject": "matematik",
+		"text": "Standart olmayan ve standart ölçme araçları ile geometrik şekillerin çevre uzunluğunu tahmin edebilme",
+		"printed_code": "MAT.3.3.4.",
+		"steps": [
+			"a) Standart olmayan ve standart uzunluk ölçme araçlarına ilişkin deneyimini, tahmine konu olan şeklin çevre uzunluğu ile ilişkilendirir.",
+			"b) Belirlenen standart olmayan ve standart uzunluk ölçme aracına göre çevre uzunluğuna ilişkin tahminde bulunur.",
+			"c) Tahminini ölçüm sonuçlarıyla karşılaştırarak tahminine ilişkin yargıda bulunur."
+		],
+		"themes": [
+			"g3.matematik.t04"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 108,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.3.3.5": {
+		"grade": 3,
+		"subject": "matematik",
+		"text": "Standart sıvı ölçü birimleri cinsinden sıvı miktarını tahmin edebilme",
+		"printed_code": "MAT.3.3.5.",
+		"steps": [
+			"a) Standart sıvı ölçü birimlerine ilişkin deneyimini tahmine konu olan sıvı miktarı ile ilişkilendirir.",
+			"b) Belirlenen standart sıvı ölçü birimi cinsinden sıvının miktarına ilişkin tahminde bulunur.",
+			"c) Tahminini ölçüm sonuçlarıyla karşılaştırarak tahminine ilişkin yargıda bulunur."
+		],
+		"themes": [
+			"g3.matematik.t04"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 108,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.3.3.6": {
+		"grade": 3,
+		"subject": "matematik",
+		"text": "Birden fazla simetri doğrusu olan şekilleri çözümleyebilme",
+		"printed_code": "MAT.3.3.6.",
+		"steps": [
+			"a) Kare, dikdörtgen ve dairenin birden fazla simetri doğrusu olduğunu belirler.",
+			"b) Simetri doğrusuna göre oluşan parçaların birbirine eş olduğunu belirler."
+		],
+		"themes": [
+			"g3.matematik.t05"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 114,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.3.3.7": {
+		"grade": 3,
+		"subject": "matematik",
+		"text": "Bir parçası verilen simetrik şekli simetri doğrusuna göre yapılandırabilme",
+		"printed_code": "MAT.3.3.7.",
+		"steps": [
+			"a) Bir parçası verilen simetrik şekli inceleyerek mantıksal ilişkiler ortaya koyar.",
+			"b) Bir parçası verilen simetrik şekli yatay ve dikey simetri doğrusuna göre tamamlar."
+		],
+		"themes": [
+			"g3.matematik.t05"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 114,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.3.3.8": {
+		"grade": 3,
+		"subject": "matematik",
+		"text": "Yönerge ile yapılandırılan ve bir parçası verilen bir şekli tamamlayarak simetrisini oluşturmaya ilişkin kodlama stratejilerini kullanarak yargıda bulunabilme",
+		"printed_code": "MAT.3.3.8.",
+		"steps": [
+			"a) Bir parçası verilen şekli tamamlayarak simetrisini oluşturmaya ilişkin yönergeleri yeniden ifade eder.",
+			"b) Yönergeleri takip ederek bir parçası verilen şekli tamamlayarak simetrisini oluşturur.",
+			"c) Bir şeklin simetrisini oluşturmaya ilişkin yargıda bulunur."
+		],
+		"themes": [
+			"g3.matematik.t05"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 114,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"MAT.3.4.1": {
+		"grade": 3,
+		"subject": "matematik",
+		"text": "Kategorik ve sayma ile elde edilen nicel veriye dayalı tek veri grubu ile çalışabilme ve veriye dayalı karar verebilme",
+		"printed_code": "MAT.3.4.1.",
+		"steps": [
+			"a) Kategorik ve nicel veriye dayalı istatistiksel araştırma gerektiren günlük yaşam durumları belirler.",
+			"b) Kategorik ve nicel veriye dayalı betimleme gerektirebilecek araştırma soruları oluşturur.",
+			"c) Kategorik ve nicel verileri toplamak için plan yapar.",
+			"ç) Kategorik verileri toplar ve analize hazırlar.",
+			"d) Toplanan verileri analiz etmek için görselleştirme araçlarından çetele, sıklık tablosu veya nokta grafiğini seçer.",
+			"e) Seçtiği araçlarla verileri görselleştirerek analiz eder.",
+			"f) Araştırma sonuçlarını yorumlar.",
+			"g) Araştırma sonuçlarını araştırma sorularına göre değerlendirir."
+		],
+		"themes": [
+			"g3.matematik.t06"
+		],
+		"source": {
+			"doc": "İlkokul Matematik Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+			"page": 118,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
+		}
+	},
+	"T.D.1.1": {
+		"grade": 1,
+		"subject": "turkce",
+		"text": "Dinlemeyi/izlemeyi yönetebilme",
+		"printed_code": "T.D.1.1.",
+		"steps": [
+			"a) Verilen görseller arasından öğrendiği sesin geçtiği görseli/görselleri seçer.",
+			"b) Dinleyeceklerini/izleyeceklerini amacına uygun olarak seçer.",
+			"c) Dinleme kurallarına uygun olarak dinler.",
+			"ç) Dinleme esnasında konuşmaya dâhil olmak için uygun zamanda söz alır."
+		],
+		"themes": [
+			"g1.turkce.t02",
+			"g1.turkce.t03",
+			"g1.turkce.t04",
+			"g1.turkce.t05",
+			"g1.turkce.t06",
+			"g1.turkce.t07",
+			"g1.turkce.t08",
+			"g1.turkce.t09"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 202,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.D.1.2": {
+		"grade": 1,
+		"subject": "turkce",
+		"text": "Dinledikleri/izledikleri ile ilgili anlam oluşturabilme",
+		"printed_code": "T.D.1.2.",
+		"steps": [
+			"a) Sese karşılık gelen sembolü/harfi tanır.",
+			"b) Dinlediği sesin kaynağını tahmin eder.",
+			"c) Görselden/görsellerden hareketle dinleyeceği/izleyeceği metin hakkında tahminde bulunur.",
+			"ç) Dinlediklerini yaşantı ve ön bilgileriyle karşılaştırarak çıkarımda bulunur.",
+			"d) Dinlediği sesin bulunduğu sözcüklere örnekler verir.",
+			"e) Dinlediklerinde/izlediklerinde geçen olayların öncesi hakkında tahminde bulunur.",
+			"f) Dinlediklerinde/izlediklerinde geçen olayların sonrası hakkında tahminde bulunur.",
+			"g) Dinlediklerindeki/izlediklerindeki iletileri doğruluk, gerçeklik açısından ön bilgileriyle karşılaştırır.",
+			"ğ) Dinlediklerindeki/izlediklerindeki nesneleri fiziksel özelliklerine göre sınıflandırır."
+		],
+		"themes": [
+			"g1.turkce.t01",
+			"g1.turkce.t02",
+			"g1.turkce.t03",
+			"g1.turkce.t04",
+			"g1.turkce.t05",
+			"g1.turkce.t07",
+			"g1.turkce.t08",
+			"g1.turkce.t09"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 202,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.D.1.3": {
+		"grade": 1,
+		"subject": "turkce",
+		"text": "Dinlediklerini/izlediklerini çözümleyebilme",
+		"printed_code": "T.D.1.3.",
+		"steps": [
+			"a) Doğal ve yapay ses kaynaklarından çıkan sesleri ayırt eder.",
+			"b) Seslere karşılık gelen sembolleri/harfleri ayırt eder.",
+			"c) Dinlediği/izlediği metnin konusunu bulur.",
+			"ç) Dinlediği/izlediği farklı metinlerdeki iletilerin benzerliklerini belirler.",
+			"d) Dinlediğindeki/izlediğindeki söylem ve görsel arasındaki ilişkiyi belirler."
+		],
+		"themes": [
+			"g1.turkce.t01",
+			"g1.turkce.t02",
+			"g1.turkce.t03",
+			"g1.turkce.t04",
+			"g1.turkce.t05",
+			"g1.turkce.t06",
+			"g1.turkce.t07",
+			"g1.turkce.t08",
+			"g1.turkce.t09"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 202,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.D.1.4": {
+		"grade": 1,
+		"subject": "turkce",
+		"text": "Dinleme/izleme sürecini değerlendirebilme",
+		"printed_code": "T.D.1.4.",
+		"steps": [
+			"a) Dinleme/izleme sürecindeki hatalarını belirler.",
+			"b) Dinlemesinde/izlemesinde belirlediği hatalarını düzeltir.",
+			"c) Dinlemesindeki/izlemesindeki uygun davranışlarını sonraki dinlemelerine aktarır."
+		],
+		"themes": [
+			"g1.turkce.t02",
+			"g1.turkce.t03",
+			"g1.turkce.t04",
+			"g1.turkce.t05",
+			"g1.turkce.t08",
+			"g1.turkce.t09"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 202,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.K.1.1": {
+		"grade": 1,
+		"subject": "turkce",
+		"text": "Konuşmalarını yönetebilme",
+		"printed_code": "T.K.1.1.",
+		"steps": [
+			"a) Konunun özelliğine göre konuşma üslubunu belirler.",
+			"b) Konuşma sırasında dinleyiciler ile göz teması kurar.",
+			"c) İletişim sırasında uygun zamanda söz alır.",
+			"ç) Konuşmalarında selamlaşma ve hitap ile ilgili ifadeler kullanır."
+		],
+		"themes": [
+			"g1.turkce.t06",
+			"g1.turkce.t07",
+			"g1.turkce.t08",
+			"g1.turkce.t09"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 202,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.K.1.2": {
+		"grade": 1,
+		"subject": "turkce",
+		"text": "Konuşmalarında içerik oluşturabilme",
+		"printed_code": "T.K.1.2.",
+		"steps": [
+			"a) Ön bilgilerinden hareketle dinlediği sesin içinde geçtiği sözcükler hakkında konuşur.",
+			"b) Dinlediği/izlediği metni anlatır.",
+			"c) Kendisi ve ailesi hakkında konuşmalar yapar.",
+			"ç) Dinlediklerini/izlediklerini ifade ederken ön bilgilerini kullanır.",
+			"d) Görselden/görsellerden hareketle dinleyeceği/izleyeceği metin hakkında tahminde bulunur.",
+			"e) Konuşmalarında geçen nesneleri fiziksel özelliklerine göre karşılaştırır.",
+			"f) Konuşmalarında nesneleri fiziksel özelliklerine göre sınıflandırır.",
+			"g) Dinlediklerini, izlediklerini veya okuduklarını kendi cümleleriyle ifade eder.",
+			"ğ) Sözlü iletişimde kabul etmediği konulara ilişkin önerilerde bulunur.",
+			"h) İlgi alanına yönelik seçtiği bir konu hakkında konuşur.",
+			"ı) Konuşmalarını desteklemek için görseller kullanır.",
+			"i) Dinleyicilere ne anlatacağını dikkate alarak konuşur.",
+			"j) Konuşmalarında benzetmelere yer verir."
+		],
+		"themes": [
+			"g1.turkce.t02",
+			"g1.turkce.t03",
+			"g1.turkce.t04",
+			"g1.turkce.t05",
+			"g1.turkce.t06",
+			"g1.turkce.t07",
+			"g1.turkce.t08",
+			"g1.turkce.t09"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 202,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.K.1.3": {
+		"grade": 1,
+		"subject": "turkce",
+		"text": "Konuşma kurallarını uygulayabilme",
+		"printed_code": "T.K.1.3.",
+		"steps": [
+			"a) Öğrendiği ses, hece, sözcük, cümleleri işitilebilir bir ses düzeyinde söyler.",
+			"b) Konuşmalarında konuşma hızını ayarlar.",
+			"c) Dinlediğini/izlediğini telaffuza dikkat ederek anlatır.",
+			"d) Konuşmalarında sözcükleri yerinde ve anlamına uygun kullanır.",
+			"e) Konuşmalarını mimiklerle destekler.",
+			"f) Konuşmalarını desteklemek için beden dilini kullanır."
+		],
+		"themes": [
+			"g1.turkce.t02",
+			"g1.turkce.t03",
+			"g1.turkce.t04",
+			"g1.turkce.t05",
+			"g1.turkce.t06",
+			"g1.turkce.t07",
+			"g1.turkce.t08",
+			"g1.turkce.t09"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 203,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.K.1.4": {
+		"grade": 1,
+		"subject": "turkce",
+		"text": "Konuşma sürecini değerlendirebilme",
+		"printed_code": "T.K.1.4.",
+		"steps": [
+			"a) Konuşmasındaki hatalarını fark eder.",
+			"b) Konuşmasında fark ettiği hataları düzeltir.",
+			"c) Konuşmasındaki olumlu davranışları sonraki konuşmalarına aktarır."
+		],
+		"themes": [
+			"g1.turkce.t08",
+			"g1.turkce.t09"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 203,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.O.1.1": {
+		"grade": 1,
+		"subject": "turkce",
+		"text": "Okuma sürecini yönetebilme",
+		"printed_code": "T.O.1.1.",
+		"steps": [
+			"a) Harf ve heceleri doğru seslendirir.",
+			"b) Sözcükleri doğru okur.",
+			"c) Basit ve kısa cümleleri doğru okur.",
+			"ç) Telaffuza dikkat ederek okur.",
+			"d) Öğrendiği ses, hece, sözcük veya cümleleri işitilebilir bir ses düzeyinde okur.",
+			"e) Okuyacağı metnin başlığı ve görsellerini inceler.",
+			"f) Kuralına uygun sesli ve sessiz okur.",
+			"g) Anlaşılabilir ve uygun bir hızda sesli okur.",
+			"ğ) Bir dizi kısa metin içerisinden seçtiği metni okur.",
+			"h) Noktalama işaretlerine dikkat ederek okur."
+		],
+		"themes": [
+			"g1.turkce.t02",
+			"g1.turkce.t03",
+			"g1.turkce.t04",
+			"g1.turkce.t05",
+			"g1.turkce.t06",
+			"g1.turkce.t07",
+			"g1.turkce.t08",
+			"g1.turkce.t09"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 203,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.O.1.2": {
+		"grade": 1,
+		"subject": "turkce",
+		"text": "Okudukları ile ilgili anlam oluşturabilme",
+		"printed_code": "T.O.1.2.",
+		"steps": [
+			"a) Metni okurken ön bilgilerini kullanır.",
+			"b) Okuduğu metindeki bilgiler ile ön bilgileri arasında bağlantı kurar.",
+			"c) Okuyacağı metnin başlığından ve görsellerinden hareketle metnin konusu hakkında tahminde bulunur.",
+			"ç) Okuduğu metindeki yönergeleri uygular."
+		],
+		"themes": [
+			"g1.turkce.t06",
+			"g1.turkce.t07",
+			"g1.turkce.t08",
+			"g1.turkce.t09"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 203,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.O.1.3": {
+		"grade": 1,
+		"subject": "turkce",
+		"text": "Okuduklarını çözümleyebilme",
+		"printed_code": "T.O.1.3.",
+		"steps": [
+			"a) Okuduğu metnin konusunu bulur."
+		],
+		"themes": [
+			"g1.turkce.t06",
+			"g1.turkce.t07",
+			"g1.turkce.t08",
+			"g1.turkce.t09"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 203,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.O.1.4": {
+		"grade": 1,
+		"subject": "turkce",
+		"text": "Okuma sürecine etki eden durumları gözden geçirebilme",
+		"printed_code": "T.O.1.4.",
+		"steps": [
+			"a) Okuduğu ortamın fiziksel özelliklerini açıklar."
+		],
+		"themes": [
+			"g1.turkce.t08",
+			"g1.turkce.t09"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 203,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.O.1.5": {
+		"grade": 1,
+		"subject": "turkce",
+		"text": "Okuma sürecini değerlendirebilme",
+		"printed_code": "T.O.1.5.",
+		"steps": [
+			"a) Okuma sürecindeki hatalarını belirler.",
+			"b) Okuma sürecinde belirlediği hatalarını düzeltir.",
+			"c) Okuma sürecindeki olumlu davranışlarını sonraki okumalarına aktarır."
+		],
+		"themes": [
+			"g1.turkce.t08",
+			"g1.turkce.t09"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 203,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.Y.1.1": {
+		"grade": 1,
+		"subject": "turkce",
+		"text": "Yazılı anlatım becerilerini yönetebilme",
+		"printed_code": "T.Y.1.1.",
+		"steps": [
+			"a) Yazma materyallerini kurala uygun kullanır.",
+			"b) Boyama ve çizgi çalışmaları yapar.",
+			"c) Hece, sözcük veya cümleler yazar.",
+			"ç) Kısa metinler yazar.",
+			"d) Verilen bir metni metne bakarak yazar.",
+			"e) Söylenen sözcük ve cümleleri yazar.",
+			"f) Yazışmalarını selamlaşma ve hitap ifadeleriyle başlatır."
+		],
+		"themes": [
+			"g1.turkce.t01",
+			"g1.turkce.t02",
+			"g1.turkce.t03",
+			"g1.turkce.t04",
+			"g1.turkce.t05",
+			"g1.turkce.t06",
+			"g1.turkce.t07",
+			"g1.turkce.t08",
+			"g1.turkce.t09"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 204,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.Y.1.2": {
+		"grade": 1,
+		"subject": "turkce",
+		"text": "Yazılarında içerik oluşturabilme",
+		"printed_code": "T.Y.1.2.",
+		"steps": [
+			"a) Görsellerle ilgili sözcük veya cümleler yazar.",
+			"b) Sözcük ve cümlelerde eksik bırakılan yerleri ön bilgileri doğrultusunda yazarak tamamlar.",
+			"c) Yazılarını karşıdakinin iletilerinden yola çıkarak devam ettirir.",
+			"ç) Yazılarında geçen nesneleri fiziksel özelliklerine göre karşılaştırır.",
+			"d) Yazılarında nesneleri fiziksel özelliklerine göre sınıflandırır.",
+			"e) Dinlediği, izlediği veya okuduğu bir metindeki olayları oluş sırasına göre kendi ifadeleriyle yazar.",
+			"f) Yazılı anlatımlarını zenginleştirmek için görseller kullanır.",
+			"g) Seçtiği görselden hareketle kısa bir metin yazar.",
+			"ğ) Muhatabına ne yazacağını dikkate alarak yazma çalışmaları yapar.",
+			"h) Yazılarında benzetmelere yer verir."
+		],
+		"themes": [
+			"g1.turkce.t02",
+			"g1.turkce.t03",
+			"g1.turkce.t04",
+			"g1.turkce.t06",
+			"g1.turkce.t07",
+			"g1.turkce.t08",
+			"g1.turkce.t09"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 204,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.Y.1.3": {
+		"grade": 1,
+		"subject": "turkce",
+		"text": "Yazma kurallarını uygulayabilme",
+		"printed_code": "T.Y.1.3.",
+		"steps": [
+			"a) Anlamlı ve kurallı cümleler yazar.",
+			"b) Harfleri temel formuna ve yazım yönlerine göre yazar.",
+			"c) Rakamları temel formuna ve yazım yönlerine göre yazar.",
+			"ç) Harf, sözcük veya cümleler arasında uygun boşluk bırakır.",
+			"d) Harflerin büyük yazılışını yerinde kullanır.",
+			"e) Anlamını bilmediği sözcüğün anlamını çevrim içi veya basılı kaynaklardan araştırarak yazar.",
+			"f) Yazılarında sözcükleri yerinde ve anlamına uygun kullanır.",
+			"g) Yazışmalarında mesajlarını açık ve anlaşılır şekilde ifade eder.",
+			"ğ) Yazılarında anlamlı ve kurallı cümleler kullanır.",
+			"h) Rakam ve sayıları kuralına uygun yazar.",
+			"ı) Büyük harfleri kuralına uygun yazar.",
+			"i) Yazılarında harfler, sözcükler ve satırlar arasında uygun boşluk bırakır.",
+			"j) Soru edatını (mı, mi) kuralına uygun yazar.",
+			"k) Yazılarında noktalama işaretlerini (nokta, kesme işareti, soru işareti, virgül ve ünlem) kuralına uygun kullanır."
+		],
+		"themes": [
+			"g1.turkce.t02",
+			"g1.turkce.t03",
+			"g1.turkce.t04",
+			"g1.turkce.t05",
+			"g1.turkce.t06",
+			"g1.turkce.t07",
+			"g1.turkce.t08",
+			"g1.turkce.t09"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 204,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.Y.1.4": {
+		"grade": 1,
+		"subject": "turkce",
+		"text": "Yazma sürecini değerlendirebilme",
+		"printed_code": "T.Y.1.4.",
+		"steps": [
+			"a) Yazılarında hatalarını bulur.",
+			"b) Yazılarında belirlediği hataları düzeltir.",
+			"c) Yazılarındaki uygun davranışları sonraki yazılarına aktarır."
+		],
+		"themes": [
+			"g1.turkce.t08",
+			"g1.turkce.t09"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 204,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.D.2.1": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Dinlemeyi/izlemeyi yönetebilme",
+		"printed_code": "T.D.2.1.",
+		"steps": [
+			"a) Dinleyeceklerini/izleyeceklerini amacına ve ilgi alanına uygun olarak seçer.",
+			"b) Dinleme kurallarına uygun olarak dinler.",
+			"c) Dinleme esnasında konuşmaya dâhil olmak için uygun zamanda söz alır."
+		],
+		"themes": [
+			"g2.turkce.t01",
+			"g2.turkce.t02",
+			"g2.turkce.t03",
+			"g2.turkce.t04",
+			"g2.turkce.t05",
+			"g2.turkce.t06",
+			"g2.turkce.t07",
+			"g2.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 205,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.D.2.2": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Dinledikleri/izledikleri ile ilgili anlam oluşturabilme",
+		"printed_code": "T.D.2.2.",
+		"steps": [
+			"a) Dinlediklerini yaşantı ve ön bilgileriyle karşılaştırarak çıkarımda bulunur.",
+			"b) Görsellerden hareketle dinleyeceği/izleyeceği metnin konusunu tahmin eder.",
+			"c) Dinlediklerinde/izlediklerinde geçen olayların öncesi hakkında tahminde bulunur.",
+			"ç) Dinlediklerinde/izlediklerinde geçen olayların sonrası hakkında tahminde bulunur.",
+			"d) Dinlediklerindeki/izlediklerindeki iletilerden ilgi alanına uygun çıkarımlar yapar.",
+			"e) Dinlediklerindeki/izlediklerindeki iletileri doğruluk, gerçeklik açısından ön bilgileriyle karşılaştırır.",
+			"f) Dinlediği/izlediği metnin içindeki bilgileri doğruluk, gerçeklik açısından karşılaştırır.",
+			"g) Dinlediklerindeki/izlediklerindeki farklı nesne ve karakterleri özelliklerine göre sınıflandırır.",
+			"ğ) Dinlediklerine/izlediklerine yönelik düşüncelerini ifade eder."
+		],
+		"themes": [
+			"g2.turkce.t01",
+			"g2.turkce.t02",
+			"g2.turkce.t03",
+			"g2.turkce.t04",
+			"g2.turkce.t05",
+			"g2.turkce.t06",
+			"g2.turkce.t07",
+			"g2.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 205,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.D.2.3": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Dinlediklerini/izlediklerini çözümleyebilme",
+		"printed_code": "T.D.2.3.",
+		"steps": [
+			"a) Dinlediği/izlediği metindeki olayları belirler.",
+			"b) Dinlediği/izlediği metnin konusunu bulur.",
+			"c) Dinlediği/izlediği farklı metinlerdeki iletilerin benzerlik ve farklılıklarını belirler.",
+			"ç) Dinlediğindeki/izlediğindeki söylem ve görsel arasındaki ilişkiyi belirler."
+		],
+		"themes": [
+			"g2.turkce.t01",
+			"g2.turkce.t02",
+			"g2.turkce.t03",
+			"g2.turkce.t04",
+			"g2.turkce.t05",
+			"g2.turkce.t06",
+			"g2.turkce.t07",
+			"g2.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 205,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.D.2.4": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Dinleme/izleme sürecine etki eden durumları gözden geçirebilme",
+		"printed_code": "T.D.2.4.",
+		"steps": [
+			"a) Dinleme/izleme yapacağı ortamın uygunluğunu gözden geçirir."
+		],
+		"themes": [
+			"g2.turkce.t04"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 205,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.D.2.5": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Dinleme/izleme sürecini değerlendirebilme",
+		"printed_code": "T.D.2.5.",
+		"steps": [
+			"a) Dinleme/izleme sürecindeki hatalarını belirler.",
+			"b) Dinlemesinde/izlemesinde belirlediği hataları düzeltir.",
+			"c) Dinlemesindeki/izlemesindeki uygun davranışlarını sonraki dinlemelerine aktarır."
+		],
+		"themes": [
+			"g2.turkce.t04",
+			"g2.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 205,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.K.2.1": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Konuşmalarını yönetebilme",
+		"printed_code": "T.K.2.1.",
+		"steps": [
+			"a) Konunun özelliğine göre konuşma üslubunu belirler.",
+			"b) Konuşma türüne göre konuşmasını belirler.",
+			"c) Konuşma amacına göre konuşmasını belirler.",
+			"ç) Konuşma sırasında dinleyiciler ile göz teması kurar.",
+			"d) İletişim sırasında uygun zamanda söz alır.",
+			"e) Konuşmalarında selamlaşma ve hitap ile ilgili ifadeler kullanır.",
+			"f) Belirlenen bir konuda konuşma planı hazırlar."
+		],
+		"themes": [
+			"g2.turkce.t01",
+			"g2.turkce.t02",
+			"g2.turkce.t03",
+			"g2.turkce.t04",
+			"g2.turkce.t05",
+			"g2.turkce.t06",
+			"g2.turkce.t07",
+			"g2.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 205,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.K.2.2": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Konuşmalarında içerik oluşturabilme",
+		"printed_code": "T.K.2.2.",
+		"steps": [
+			"a) Dinlediklerini/izlediklerini ifade ederken ön bilgilerini kullanır.",
+			"b) Görsellerden hareketle olayların oluş sırası hakkında tahminlerde bulunur.",
+			"c) Dinledikleri, izledikleri veya okudukları metinlerdeki kişilerin benzer ve farklı yönlerini açıklar.",
+			"ç) Verilen görsellerden hareketle karakterleri veya nesneleri benzer özelliklerine göre sınıflandırarak anlatır.",
+			"d) Konuşmalarında zıt anlamlı sözcükleri kullanır.",
+			"e) Dinlediği, izlediği veya okuduğu bir metindeki olayları oluş sırasına göre kendi ifadeleriyle anlatır.",
+			"f) Dinlediği, izlediği veya okuduğu bir metindeki görüşlere katılıp katılmadığını nedenleriyle ifade eder.",
+			"g) Konuşmalarında benzetmelere yer verir.",
+			"ğ) Dinlediği, izlediği veya okuduğu metindeki neden-sonuç ilişkisini söyler.",
+			"h) Konuşmalarını desteklemek için görseller kullanır."
+		],
+		"themes": [
+			"g2.turkce.t01",
+			"g2.turkce.t02",
+			"g2.turkce.t03",
+			"g2.turkce.t04",
+			"g2.turkce.t05",
+			"g2.turkce.t06",
+			"g2.turkce.t07",
+			"g2.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 205,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.K.2.3": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Konuşma kurallarını uygulayabilme",
+		"printed_code": "T.K.2.3.",
+		"steps": [
+			"a) Konuşmalarında konuşma hızını ayarlar.",
+			"b) Dinleyici kitlesi ve konunun özelliğine göre hazırladığı plana uygun konuşur.",
+			"c) Konuşmalarında vurgu ve tonlamaya dikkat eder.",
+			"ç) Konuşmalarında sözcükleri yerinde ve anlamına uygun kullanır.",
+			"d) Günlük hayatta karşılaştığı bir olayla ilgili düşüncelerini açık ve anlaşılır cümlelerle ifade eder.",
+			"e) Konuşmalarında anlamlı ve kurallı cümleler kullanır.",
+			"f) Konuşmalarında bağlama ögelerini (ile, ve, ama, çünkü) doğru kullanır.",
+			"g) Konuşmalarını jest ve mimiklerle destekler.",
+			"ğ) Konuşmalarını desteklemek için beden dilini kullanır.",
+			"h) Konuşma sürecinde beden dilini yerinde kullanır."
+		],
+		"themes": [
+			"g2.turkce.t01",
+			"g2.turkce.t02",
+			"g2.turkce.t03",
+			"g2.turkce.t04",
+			"g2.turkce.t05",
+			"g2.turkce.t06",
+			"g2.turkce.t07",
+			"g2.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 206,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.K.2.4": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Konuşma sürecine etki eden durumları gözden geçirebilme",
+		"printed_code": "T.K.2.4.",
+		"steps": [
+			"a) Konuşma yapacağı ortamın uygunluğunu gözden geçirir."
+		],
+		"themes": [
+			"g2.turkce.t06"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 206,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.K.2.5": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Konuşma sürecini değerlendirebilme",
+		"printed_code": "T.K.2.5.",
+		"steps": [
+			"a) Konuşmasında fark ettiği hataları düzeltir.",
+			"b) Konuşmasındaki olumlu davranışları fark eder.",
+			"c) Konuşmasındaki olumlu davranışları sonraki konuşmalarına aktarır."
+		],
+		"themes": [
+			"g2.turkce.t03",
+			"g2.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 206,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.O.2.1": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Okuma sürecini yönetebilme",
+		"printed_code": "T.O.2.1.",
+		"steps": [
+			"a) Okuyacağı metnin başlığı ve görsellerini inceler.",
+			"b) Okuyacağı metni ilgi alanına göre seçer.",
+			"c) Kuralına uygun sesli ve sessiz okur.",
+			"ç) Noktalama işaretlerine dikkat ederek okur."
+		],
+		"themes": [
+			"g2.turkce.t01",
+			"g2.turkce.t02",
+			"g2.turkce.t03",
+			"g2.turkce.t04",
+			"g2.turkce.t05",
+			"g2.turkce.t06",
+			"g2.turkce.t07",
+			"g2.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 206,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.O.2.2": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Okudukları ile ilgili anlam oluşturabilme",
+		"printed_code": "T.O.2.2.",
+		"steps": [
+			"a) Okuduğu metindeki bilgiler ile ön bilgileri arasında bağlantı kurar.",
+			"b) Okuyacağı metnin başlığından ve görsellerinden hareketle metnin konusu hakkında tahminde bulunur.",
+			"c) Metnin başlığı ve görsellerinden hareketle metinde geçen bilgiler/olaylar hakkında tahminde bulunur.",
+			"ç) Okuduğu metindeki verilerden yararlanarak içeriğe uygun çıkarımlar yapar.",
+			"d) Okuduğu metindeki iletileri ön bilgileri ile karşılaştırır.",
+			"e) Okuduğu metindeki nesne ve kişileri özelliklerine göre sınıflandırır.",
+			"f) Okuduğu metindeki zıt anlamlı sözcükleri bulur.",
+			"g) Okuduğu metindeki iletilere katılıp katılmadığını ifade eder."
+		],
+		"themes": [
+			"g2.turkce.t01",
+			"g2.turkce.t02",
+			"g2.turkce.t03",
+			"g2.turkce.t04",
+			"g2.turkce.t05",
+			"g2.turkce.t06",
+			"g2.turkce.t07",
+			"g2.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 206,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.O.2.3": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Okuduklarını çözümleyebilme",
+		"printed_code": "T.O.2.3.",
+		"steps": [
+			"a) Okuduğu metindeki karakter, olay ve bilgileri açıklar.",
+			"b) Okuduğu metnin konusunu bulur.",
+			"c) Okuduğu metindeki iletilerin benzerlik ve/veya farklılıklarını belirler.",
+			"ç) Okuduğu metindeki içerik ve görsel (tablo, grafik vb.) arasındaki ilişkiyi belirler."
+		],
+		"themes": [
+			"g2.turkce.t01",
+			"g2.turkce.t02",
+			"g2.turkce.t03",
+			"g2.turkce.t04",
+			"g2.turkce.t05",
+			"g2.turkce.t06",
+			"g2.turkce.t07",
+			"g2.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 206,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.O.2.4": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Okuma sürecine etki eden durumları gözden geçirebilme",
+		"printed_code": "T.O.2.4.",
+		"steps": [
+			"a) Okuduğu ortamın okumasına etkisini açıklar.",
+			"b) Okuma yapacağı ortamın fiziksel özelliklerini dikkate alarak okur."
+		],
+		"themes": [
+			"g2.turkce.t04",
+			"g2.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 207,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.O.2.5": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Okuma sürecini değerlendirebilme",
+		"printed_code": "T.O.2.5.",
+		"steps": [
+			"a) Okuma sürecindeki hatalarını belirler.",
+			"b) Okuma sürecinde belirlediği hatalarını düzeltir.",
+			"c) Okuma sürecindeki olumlu davranışlarını sonraki okumalarına aktarır."
+		],
+		"themes": [
+			"g2.turkce.t07",
+			"g2.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 207,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.Y.2.1": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Yazılı anlatım becerilerini yönetebilme",
+		"printed_code": "T.Y.2.1.",
+		"steps": [
+			"a) Verilen bir yazma görevini hazırlık yaparak yazar.",
+			"b) Verilen bir yazma görevini belirlediği yazı türüne göre yazar.",
+			"c) Yazışmalarını selamlaşma ve hitap ifadeleriyle başlatır.",
+			"ç) Yazışmalarını uygun ifadeleri kullanarak sonlandırır.",
+			"d) Belirlenen bir konuda yazma planı hazırlar."
+		],
+		"themes": [
+			"g2.turkce.t01",
+			"g2.turkce.t02",
+			"g2.turkce.t03",
+			"g2.turkce.t04",
+			"g2.turkce.t05",
+			"g2.turkce.t06",
+			"g2.turkce.t07",
+			"g2.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 207,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.Y.2.2": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Yazılarında içerik oluşturabilme",
+		"printed_code": "T.Y.2.2.",
+		"steps": [
+			"a) Bir metinde eksik bırakılan cümleleri ön bilgilerini kullanarak yazar.",
+			"b) Yarım bırakılan bir metni ön bilgilerinden hareketle yazar.",
+			"c) Bir sözcüğün anlamına ilişkin tahminlerini bağlamdan yararlanarak yazar.",
+			"ç) Eksik bırakılan bir metni tahminleri doğrultusunda yazar.",
+			"d) Yazılarında kişi ve nesneleri benzerlik ve/veya farklılık bakımından karşılaştırır.",
+			"e) Verilen görsellerden hareketle karakterleri veya nesneleri benzer özelliklerine göre sınıflandırarak yazar.",
+			"f) Yazılarında sözcükleri anlamına uygun kullanır.",
+			"g) Dinlediği, izlediği veya okuduğu bir metindeki olayları oluş sırasına göre kendi ifadeleriyle yazar.",
+			"ğ) Basit yönergeler yazar.",
+			"h) Dinlediği, izlediği veya okuduğu bir metindeki görüşlere katılıp katılmadığını nedenleriyle yazar.",
+			"ı) İstek ve önerilerini yazarak (tebrik, mektup ve anlık ileti) ifade eder.",
+			"i) Yazılı anlatımlarını desteklemek için görseller kullanır.",
+			"j) Görsellerle destekleyerek oluşturduğu mektup, anlık ileti türlerindeki yazılarını sunar.",
+			"k) Yazılarında benzetmelere yer verir.",
+			"l) Yazılarında örneklendirmeye yer verir.",
+			"m) Dinlediği, izlediği veya okuduğu metindeki neden-sonuç ilişkisini yazar."
+		],
+		"themes": [
+			"g2.turkce.t01",
+			"g2.turkce.t02",
+			"g2.turkce.t03",
+			"g2.turkce.t04",
+			"g2.turkce.t05",
+			"g2.turkce.t06",
+			"g2.turkce.t07",
+			"g2.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 207,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.Y.2.3": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Yazma kurallarını uygulayabilme",
+		"printed_code": "T.Y.2.3.",
+		"steps": [
+			"a) Hedef kitle ve konunun özelliğine göre hazırladığı plana uygun yazar.",
+			"b) Anlamını bilmediği sözcüğün anlamını çevrim içi veya basılı kaynaklardan araştırarak yazar.",
+			"c) Yazılarında sözcükleri yerinde kullanır.",
+			"ç) Yazışmalarında mesajlarını birden çok cümleyle açık ve anlaşılır şekilde ifade eder.",
+			"d) Soru edatını (mı, mi) kuralına uygun yazar.",
+			"e) Kısaltmaları kuralına uygun yazar.",
+			"f) Büyük harfleri kuralına uygun yazar.",
+			"g) Yazılarında yazım alanını uygun şekilde (yazıyı sayfaya hizalama, paragraf başı, satır sonuna sığmayan sözcükler vb.) kullanır.",
+			"ğ) Yazılarında noktalama işaretlerini (nokta, kesme işareti, virgül, iki nokta, ünlem, tırnak işareti, soru işareti ve kısa çizgi) kuralına uygun kullanır."
+		],
+		"themes": [
+			"g2.turkce.t01",
+			"g2.turkce.t02",
+			"g2.turkce.t03",
+			"g2.turkce.t04",
+			"g2.turkce.t05",
+			"g2.turkce.t06",
+			"g2.turkce.t07",
+			"g2.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 207,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.Y.2.4": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Yazma sürecine etki eden durumları gözden geçirebilme",
+		"printed_code": "T.Y.2.4.",
+		"steps": [
+			"a) Yazma yapacağı ortamın uygunluğunu gözden geçirir."
+		],
+		"themes": [
+			"g2.turkce.t05"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 208,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.Y.2.5": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Yazma sürecini değerlendirebilme",
+		"printed_code": "T.Y.2.5.",
+		"steps": [
+			"a) Yazılarında hatalarını bulur.",
+			"b) Yazılarında belirlediği hataları düzeltir.",
+			"c) Yazılarındaki uygun davranışları sonraki yazılarına aktarır."
+		],
+		"themes": [
+			"g2.turkce.t04"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 208,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.D.3.1": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Dinlemeyi/izlemeyi yönetebilme",
+		"printed_code": "T.D.3.1.",
+		"steps": [
+			"a) Dinleyeceklerini/izleyeceklerini amacına ve ilgi alanına uygun olarak seçer.",
+			"b) Konuya ve amacına uygun olarak dinleme/izleme stratejisini seçer.",
+			"c) Dinleme kurallarına uygun olarak dinler.",
+			"ç) Dinlediği konuya ilişkin düşüncelerini belirtmek için uygun zamanda söz alır."
+		],
+		"themes": [
+			"g3.turkce.t01",
+			"g3.turkce.t02",
+			"g3.turkce.t03",
+			"g3.turkce.t04",
+			"g3.turkce.t05",
+			"g3.turkce.t06",
+			"g3.turkce.t07",
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 209,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.D.3.2": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Dinledikleri/izledikleri ile ilgili anlam oluşturabilme",
+		"printed_code": "T.D.3.2.",
+		"steps": [
+			"a) Görsellerden hareketle dinleyeceği/izleyeceği metnin konusunu tahmin eder.",
+			"b) Dinlediklerinde/izlediklerinde geçen olayların öncesi hakkında tahminde bulunur.",
+			"c) Dinlediklerinde/izlediklerinde geçen olayların sonrası hakkında tahminde bulunur.",
+			"ç) Dinlediklerindeki/izlediklerindeki bilgiler ile ön bilgileri arasında bağlantı kurar.",
+			"d) Dinlediklerindeki/izlediklerindeki iletilerden amacına ve ilgi alanına uygun çıkarımlar yapar.",
+			"e) Dinlediklerindeki/izlediklerindeki iletileri doğruluk, gerçeklik açısından ön bilgileriyle karşılaştırır.",
+			"f) Dinlediği/izlediği metnin içindeki bilgileri doğruluk, gerçeklik açısından karşılaştırır.",
+			"g) Dinlediklerindeki/izlediklerindeki farklı durum, nesne ve karakterleri özelliklerine göre sınıflandırır.",
+			"ğ) Dinlediklerine/izlediklerine yönelik düşüncelerini nedenleriyle ifade eder.",
+			"h) Dinlediklerindeki/izlediklerindeki iletilere ilişkin önerilerde bulunur.",
+			"ı) Dinlediklerine/izlediklerine ilişkin düşüncelerini sözlü ve sözsüz iletişim unsurları ile ifade eder."
+		],
+		"themes": [
+			"g3.turkce.t01",
+			"g3.turkce.t02",
+			"g3.turkce.t03",
+			"g3.turkce.t04",
+			"g3.turkce.t05",
+			"g3.turkce.t06",
+			"g3.turkce.t07",
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 209,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.D.3.3": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Dinlediklerini/izlediklerini çözümleyebilme",
+		"printed_code": "T.D.3.3.",
+		"steps": [
+			"a) Dinlediği/izlediği metindeki olayları belirler.",
+			"b) Dinlediği/izlediği metindeki ana fikri/ana duyguyu bulur.",
+			"c) Dinlediği/izlediği metnin konusunu bulur.",
+			"ç) Dinlediği/izlediği farklı metinlerdeki iletilerin benzerlik ve farklılıklarını belirler.",
+			"d) Dinlediği/izlediği farklı metinlerdeki iletileri benzerlik ve farklılık yönüyle ilişkilendirir.",
+			"e) Dinlediğindeki/izlediğindeki söylem ve görsel arasındaki ilişkiyi açıklar."
+		],
+		"themes": [
+			"g3.turkce.t01",
+			"g3.turkce.t02",
+			"g3.turkce.t03",
+			"g3.turkce.t04",
+			"g3.turkce.t05",
+			"g3.turkce.t06",
+			"g3.turkce.t07",
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 209,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.D.3.4": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Dinleme/izleme sürecine etki eden durumları gözden geçirebilme",
+		"printed_code": "T.D.3.4.",
+		"steps": [
+			"a) Dinleme/izleme yapacağı ortamın uygunluğunu gözden geçirir.",
+			"b) Dinleme/izleme ortamının dinleme sürecindeki duygu, düşünce ve davranışlarına etkisini açıklar."
+		],
+		"themes": [
+			"g3.turkce.t06",
+			"g3.turkce.t07",
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 209,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.D.3.5": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Dinleme/izleme sürecini değerlendirebilme",
+		"printed_code": "T.D.3.5.",
+		"steps": [
+			"a) Dinlemelerinde/izlemelerinde tercih ettiği dinleme/izleme stratejilerini açıklar.",
+			"b) Dinleyecekleri/izleyecekleri türü tercih nedenleri ile belirtir.",
+			"c) Dinlemesindeki/izlemesindeki uygun davranışlarını sonraki dinlemelerine aktarır."
+		],
+		"themes": [
+			"g3.turkce.t03",
+			"g3.turkce.t06",
+			"g3.turkce.t07",
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 209,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.K.3.1": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Konuşmalarını yönetebilme",
+		"printed_code": "T.K.3.1.",
+		"steps": [
+			"a) Konunun özelliğine göre konuşma üslubunu belirler.",
+			"b) Konuşma türüne göre konuşmasını belirler.",
+			"c) Konuşma amacına göre konuşmasını belirler.",
+			"ç) Konuşma kurallarına uygun (ses düzeyi, nezaket ifadeleri, göz teması) bir biçimde iletişimi sürdürür.",
+			"d) Belirlenen bir konuda konuşma planı hazırlar."
+		],
+		"themes": [
+			"g3.turkce.t01",
+			"g3.turkce.t02",
+			"g3.turkce.t03",
+			"g3.turkce.t04",
+			"g3.turkce.t05",
+			"g3.turkce.t06",
+			"g3.turkce.t07",
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 209,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.K.3.2": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Konuşmalarında içerik oluşturabilme",
+		"printed_code": "T.K.3.2.",
+		"steps": [
+			"a) Konuşmanın içeriğine uygun olarak yaşantı ve ön bilgilerinden örnekler verir.",
+			"b) Dinlediği bir konuşmanın nasıl sonuçlanacağına dair tahminlerde bulunur.",
+			"c) Bir konu hakkında hazırladığı konuşma planına uygun konuşur.",
+			"ç) Dinledikleri, izledikleri veya okudukları metinlerdeki nesne ve kişileri karşılaştırır.",
+			"d) Konuşmalarında farklı karakter, olay ve nesneleri özelliklerine göre sınıflandırır.",
+			"e) Konuşmalarında zıt anlamlı sözcükleri kullanır.",
+			"f) Konuşmalarında eş anlamlı sözcükleri kullanır.",
+			"g) Dinlediklerini, izlediklerini veya okuduklarını mantıksal ilişkilere bağlı olarak kendi cümleleriyle ifade eder.",
+			"ğ) Sözlü iletişimde katılmadığı görüşlere ilişkin nedenleri ifade eder.",
+			"h) Sözlü iletişimde katılmadığı görüşlere ilişkin önerilerde bulunur.",
+			"ı) Konuşmalarında benzetmelere yer verir.",
+			"i) Konuşmalarında örneklendirmeye yer verir.",
+			"j) Görsellerden hareketle konuşma içeriği oluşturur.",
+			"k) Dinleyici grubunun özelliklerini dikkate alarak belirli bir konuda sunum yapar.",
+			"l) Dinlediği, izlediği veya okuduğu metindeki neden-sonuç ilişkisini söyler.",
+			"m) Sık karşılaşılan atasözlerinin anlamlarını söyler."
+		],
+		"themes": [
+			"g3.turkce.t01",
+			"g3.turkce.t02",
+			"g3.turkce.t03",
+			"g3.turkce.t04",
+			"g3.turkce.t05",
+			"g3.turkce.t06",
+			"g3.turkce.t07",
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 209,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.K.3.3": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Konuşma kurallarını uygulayabilme",
+		"printed_code": "T.K.3.3.",
+		"steps": [
+			"a) Konuşmanın özelliğine uygun olarak ses düzeyini ayarlar.",
+			"b) Dinleyici kitlesi ve konunun özelliğine göre hazırladığı plana uygun konuşur.",
+			"c) Konuşmalarında vurgu ve tonlamaya dikkat eder.",
+			"ç) Konuşmalarında sözcükleri yerinde ve anlamına uygun kullanır.",
+			"d) Sık karşılaşılan atasözlerini konuşma bağlamına uygun kullanır.",
+			"e) Konuşmasındaki mesajları açık ve anlaşılır cümlelerle ifade eder.",
+			"f) Konuşmalarında içeriğe uygun zaman ifadelerini kullanır.",
+			"g) Konuşmalarında anlamlı ve kurallı cümleler kullanır.",
+			"ğ) Konuşmalarında bağlama ögelerini (ile, ve, veya, ya da, ama, çünkü) doğru kullanır.",
+			"h) Konuşmalarını jest ve mimiklerle destekler.",
+			"ı) Konuşma sürecinde beden dilini yerinde kullanır."
+		],
+		"themes": [
+			"g3.turkce.t01",
+			"g3.turkce.t02",
+			"g3.turkce.t03",
+			"g3.turkce.t04",
+			"g3.turkce.t05",
+			"g3.turkce.t06",
+			"g3.turkce.t07",
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 210,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.K.3.4": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Konuşma sürecine etki eden durumları gözden geçirebilme",
+		"printed_code": "T.K.3.4.",
+		"steps": [
+			"a) Konuşma yapacağı ortamın uygunluğunu gözden geçirir.",
+			"b) Konuşma ortamının konuşma sürecindeki duygu, düşünce ve davranışlarına etkisini açıklar."
+		],
+		"themes": [
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 210,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.K.3.5": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Konuşma sürecini değerlendirebilme",
+		"printed_code": "T.K.3.5.",
+		"steps": [
+			"a) Başkalarının konuşmalarındaki hataları fark eder.",
+			"b) Konuşmasındaki olumlu davranışları sonraki konuşmalarına aktarır."
+		],
+		"themes": [
+			"g3.turkce.t03",
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 210,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.O.3.1": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Okuma sürecini yönetebilme",
+		"printed_code": "T.O.3.1.",
+		"steps": [
+			"a) Okuyacağı metnin başlığı ve görsellerini inceler.",
+			"b) Noktalama işaretlerine dikkat ederek okur.",
+			"c) Okuyacağı metni ilgi alanına ve amacına göre seçer.",
+			"ç) Okuyacağı konuya veya okuma amacına göre okuma stratejisine karar verir."
+		],
+		"themes": [
+			"g3.turkce.t01",
+			"g3.turkce.t02",
+			"g3.turkce.t03",
+			"g3.turkce.t04",
+			"g3.turkce.t05",
+			"g3.turkce.t06",
+			"g3.turkce.t07",
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 210,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.O.3.2": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Okudukları ile ilgili anlam oluşturabilme",
+		"printed_code": "T.O.3.2.",
+		"steps": [
+			"a) Okuduğu metindeki bilgiler ile ön bilgileri arasında bağlantı kurar.",
+			"b) Metnin başlığı ve görsellerinden hareketle metinde geçen bilgiler/olaylar hakkında tahminde bulunur.",
+			"c) Okuduğu metinde geçen bilgilerin/olayların öncesi hakkında tahminde bulunur.",
+			"ç) Okuma sırasında metinde verilen bilgilerden ve görsellerden hareketle metinde geçen bilgilerin/olayların sırası hakkında tahminde bulunur.",
+			"d) Okuma sırasında metinde verilen bilgilerden ve görsellerden hareketle metinde geçen bilgilerin/olayların sonrası hakkında tahminde bulunur.",
+			"e) Okuduğu metindeki verilerden yararlanarak metnin amacına uygun çıkarım yapar.",
+			"f) Okuduğu metindeki iletileri ön bilgileri ile karşılaştırır.",
+			"g) Okuduğu metindeki iletileri metnin içindeki diğer bilgilerle karşılaştırır.",
+			"ğ) Okuduğu metindeki olay, nesne ve kişileri özelliklerine göre sınıflandırır.",
+			"h) Okuduğu metindeki zıt anlamlı ve eş anlamlı sözcükleri bulur.",
+			"ı) Okuduğu metindeki iletilere katılıp katılmadığını nedenleriyle ifade eder.",
+			"i) Okuduğu metindeki içeriğe ilişkin farklı önerilerde bulunur.",
+			"j) Okuyacağı metnin başlığı ve görsellerinden hareketle metnin içeriği hakkında görüş oluşturur."
+		],
+		"themes": [
+			"g3.turkce.t01",
+			"g3.turkce.t02",
+			"g3.turkce.t03",
+			"g3.turkce.t04",
+			"g3.turkce.t05",
+			"g3.turkce.t06",
+			"g3.turkce.t07",
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 210,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.O.3.3": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Okuduklarını çözümleyebilme",
+		"printed_code": "T.O.3.3.",
+		"steps": [
+			"a) Okuduğu metindeki karakter, olay, bilgi veya duyguları açıklar.",
+			"b) Okuduğu metnin konusunu bulur.",
+			"c) Okuduğu metindeki ana fikri/ana duyguyu bulur.",
+			"ç) Okuduğu metindeki iletileri benzerlik ve/veya farklılık yönüyle ilişkilendirir.",
+			"d) Gerçek ve mecaz anlamlı sözcüklerin metinle ilişkisini belirler.",
+			"e) Okuduğu metindeki noktalama işaretlerinin içerikle ilişkisini belirler."
+		],
+		"themes": [
+			"g3.turkce.t01",
+			"g3.turkce.t02",
+			"g3.turkce.t03",
+			"g3.turkce.t04",
+			"g3.turkce.t05",
+			"g3.turkce.t06",
+			"g3.turkce.t07",
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 211,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.O.3.4": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Okuma sürecine etki eden durumları gözden geçirebilme",
+		"printed_code": "T.O.3.4.",
+		"steps": [
+			"a) Okuma yapacağı ortamın uygunluğunu değerlendirir.",
+			"b) Okuma yapacağı ortamın fiziksel özelliklerini dikkate alarak okur."
+		],
+		"themes": [
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 211,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.O.3.5": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Okuma sürecini değerlendirebilme",
+		"printed_code": "T.O.3.5.",
+		"steps": [
+			"a) Okuma sürecinde belirlediği hatalarını düzeltir.",
+			"b) Okuma sürecindeki olumlu davranışlarını sonraki okumalarına aktarır.",
+			"c) Tür veya ilgi alanına göre okuma tercihini belirtir.",
+			"ç) Basılı materyali okuma sürecindeki olumlu davranışlarını çevrim içi okuma sürecine aktarır."
+		],
+		"themes": [
+			"g3.turkce.t03",
+			"g3.turkce.t06",
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 211,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.Y.3.1": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Yazılı anlatım becerilerini yönetebilme",
+		"printed_code": "T.Y.3.1.",
+		"steps": [
+			"a) Verilen bir yazma görevine uygun biçimde hazırlıksız yazı yazar.",
+			"b) Verilen bir yazma görevini belirlediği yazı türüne göre yazar.",
+			"c) Yazışmalarını içeriğe ve amacına uygun ifadelerle sürdürür.",
+			"ç) Yazışmayı başlatma, sürdürme ve sonlandırmayla ilgili uygun ifadeler kullanır.",
+			"d) Çevrim içi yazılarında yazışmayı başlatma, sürdürme ve sonlandırmayla ilgili uygun ifadeler kullanır.",
+			"e) İmzasında adını ve soyadını özgün bir şekilde kullanır.",
+			"f) Belirlenen bir konuda yazma planı hazırlar."
+		],
+		"themes": [
+			"g3.turkce.t02",
+			"g3.turkce.t03",
+			"g3.turkce.t04",
+			"g3.turkce.t05",
+			"g3.turkce.t06",
+			"g3.turkce.t07",
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 211,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.Y.3.2": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Yazılarında içerik oluşturabilme",
+		"printed_code": "T.Y.3.2.",
+		"steps": [
+			"a) Metnin eksik bırakılan bölümlerini ön bilgilerinden hareketle devam ettirir.",
+			"b) Bir sözcüğün anlamına ilişkin tahminlerini bağlamdan yararlanarak yazar.",
+			"c) Dinlediği, izlediği veya okuduğu bir metne ilişkin çıkarımlarını planlı biçimde yazar.",
+			"ç) Yazılarında kişi ve nesneleri benzerlik ve/veya farklılık bakımından karşılaştırır.",
+			"d) Yazılarında karakter, olay ve nesneleri özelliklerine göre sınıflandırır.",
+			"e) Yazılarında zıt anlamlı sözcükleri kullanır.",
+			"f) Yazılarında eş anlamlı sözcükleri kullanır.",
+			"g) Dinlediği, izlediği bir olayı veya okuduklarını kendi ifadeleriyle yazar.",
+			"ğ) Ayrıntılı yönergeler yazar.",
+			"h) Yazılı iletişimde katılmadığı görüşlere ilişkin önerilerde bulunur.",
+			"ı) İstek, şikâyet ve önerilerini yazarak (mektup, dilekçe, tebrik, anlık ileti) ifade eder.",
+			"i) Yazılı anlatımlarının içeriğini oluşturmak için görseller kullanır.",
+			"j) Edindiği bilginin kaynağını yazar.",
+			"k) Hedef kitleye görsellerle desteklenmiş açıklayıcı türdeki yazılarını sunar.",
+			"l) Hedef kitleye görsellerle desteklenmiş öyküleyici türdeki yazılarını sunar.",
+			"m) Dijital araçları kullanarak hedef kitleye uygun türde yazılarını sunar.",
+			"n) Yazılarında benzetme ve örneklendirmeye yer verir.",
+			"o) Dinlediği, izlediği veya okuduğu metindeki neden-sonuç ilişkisini yazar."
+		],
+		"themes": [
+			"g3.turkce.t01",
+			"g3.turkce.t02",
+			"g3.turkce.t03",
+			"g3.turkce.t04",
+			"g3.turkce.t05",
+			"g3.turkce.t06",
+			"g3.turkce.t07",
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 211,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.Y.3.3": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Yazma kurallarını uygulayabilme",
+		"printed_code": "T.Y.3.3.",
+		"steps": [
+			"a) Hedef kitle ve konunun özelliğine göre hazırladığı plana uygun yazar.",
+			"b) Yazılarında sözcükleri yerinde ve anlamına uygun kullanır.",
+			"c) Yazılarında sık karşılaşılan deyim ve atasözlerini içeriğe uygun kullanır.",
+			"ç) Yazışmalarında/çevrim içi yazışmalarında mesajlarını birden çok cümleyle açık ve anlaşılır şekilde ifade eder.",
+			"d) Kısaltmalara gelen ekleri kuralına uygun yazar.",
+			"e) Pekiştirmeli sözcükleri doğru yazar.",
+			"f) Büyük harfleri kuralına uygun yazar.",
+			"g) Yazılarında noktalama işaretlerini (nokta, kesme işareti, virgül, iki nokta, ünlem, tırnak işareti, soru işareti, kısa çizgi, konuşma çizgisi, yay ayraç, üç nokta ve eğik çizgi) kuralına uygun kullanır."
+		],
+		"themes": [
+			"g3.turkce.t01",
+			"g3.turkce.t02",
+			"g3.turkce.t03",
+			"g3.turkce.t04",
+			"g3.turkce.t05",
+			"g3.turkce.t06",
+			"g3.turkce.t07",
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 212,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.Y.3.4": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Yazma sürecine etki eden durumları gözden geçirebilme",
+		"printed_code": "T.Y.3.4.",
+		"steps": [
+			"a) Yazma yapacağı ortamın uygunluğunu gözden geçirir.",
+			"b) Yazma ortamının yazma sürecindeki duygu, düşünce ve davranışlarına etkisini açıklar."
+		],
+		"themes": [
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 212,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.Y.3.5": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Yazma sürecini değerlendirebilme",
+		"printed_code": "T.Y.3.5.",
+		"steps": [
+			"a) Yazılarında hatalarını bulur.",
+			"b) Yazılarında belirlediği hataları düzeltir.",
+			"c) Yazılarındaki uygun davranışları sonraki yazılarına aktarır."
+		],
+		"themes": [
+			"g3.turkce.t04"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 212,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"HB.1.1.1": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Öğretmeni ve arkadaşlarıyla tanışabilme",
+		"printed_code": "HB.1.1.1.",
+		"themes": [
+			"g1.hayat_bilgisi.t01"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 15,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.1.2": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Sınıf ve okul ortamını tanıyabilme",
+		"printed_code": "HB.1.1.2.",
+		"themes": [
+			"g1.hayat_bilgisi.t01"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 15,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.1.3": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Sınıf ve okul ortamında kurallara uygun davranabilme",
+		"printed_code": "HB.1.1.3.",
+		"themes": [
+			"g1.hayat_bilgisi.t01"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 15,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.1.4": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Bireysel özelliklerini açıklayabilme",
+		"printed_code": "HB.1.1.4.",
+		"themes": [
+			"g1.hayat_bilgisi.t01"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 15,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.2.1": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Sağlıklı büyüme ve gelişme için yapılması gerekenleri belirleyebilme",
+		"printed_code": "HB.1.2.1.",
+		"themes": [
+			"g1.hayat_bilgisi.t02"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 19,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.2.2": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Kişisel alan sınırlarını koruyabilme",
+		"printed_code": "HB.1.2.2.",
+		"themes": [
+			"g1.hayat_bilgisi.t02"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 19,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.2.3": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Temel trafik kurallarına uygun davranabilme",
+		"printed_code": "HB.1.2.3.",
+		"themes": [
+			"g1.hayat_bilgisi.t02"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 19,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.2.4": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Acil durumlarda yapılması gerekenleri belirleyebilme",
+		"printed_code": "HB.1.2.4.",
+		"themes": [
+			"g1.hayat_bilgisi.t02"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 19,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.3.1": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Ailenin özelliklerini ifade edebilme",
+		"printed_code": "HB.1.3.1.",
+		"themes": [
+			"g1.hayat_bilgisi.t03"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 23,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.3.2": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Aile yaşamında nezaket ve görgü kurallarına uygun davranabilme",
+		"printed_code": "HB.1.3.2.",
+		"themes": [
+			"g1.hayat_bilgisi.t03"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 23,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.3.3": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Aile bireylerinin görev ve sorumluluklarını çözümleyebilme",
+		"printed_code": "HB.1.3.3.",
+		"steps": [
+			"a) Aile içindeki görev ve sorumluluklarını belirler.",
+			"b) Aile bireylerinin görev ve sorumlulukları ilişkilendirir."
+		],
+		"themes": [
+			"g1.hayat_bilgisi.t03"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 23,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.4.1": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Yaşadığı yerin ve ülkemizin genel özelliklerini açıklayabilme",
+		"printed_code": "HB.1.4.1.",
+		"themes": [
+			"g1.hayat_bilgisi.t04"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 26,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.4.2": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Türk bayrağı ve İstiklâl Marşı’nın önemini ifade edebilme",
+		"printed_code": "HB.1.4.2.",
+		"themes": [
+			"g1.hayat_bilgisi.t04"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 26,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.4.3": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Mustafa Kemal Atatürk’ün hayatıyla ilgili bilgileri ifade edebilme",
+		"printed_code": "HB.1.4.3.",
+		"themes": [
+			"g1.hayat_bilgisi.t04"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 26,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.4.4": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Millî gün ve bayramlarda yaşadığı duyguları ifade edebilme",
+		"printed_code": "HB.1.4.4.",
+		"themes": [
+			"g1.hayat_bilgisi.t04"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 26,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.4.5": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Dinî gün ve bayramlarda yaşadığı duyguları ifade edebilme",
+		"printed_code": "HB.1.4.5.",
+		"themes": [
+			"g1.hayat_bilgisi.t04"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 26,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.5.1": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Yakın çevresinde bulunan doğadaki varlıkları gözlemleyebilme",
+		"printed_code": "HB.1.5.1.",
+		"steps": [
+			"a) Doğadaki varlıkları gözlemleme amacını belirler.",
+			"b) Doğadaki varlıklara ilişkin veri toplar.",
+			"c) Doğadaki varlıklara ilişkin topladığı verileri sınıflandırarak kaydeder."
+		],
+		"themes": [
+			"g1.hayat_bilgisi.t05"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 30,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.5.2": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Modeller üzerinden gök cisimlerini karşılaştırabilme",
+		"printed_code": "HB.1.5.2.",
+		"steps": [
+			"a) Modeller üzerinden gök cisimlerinin (Güneş, Dünya ve Ay) özelliklerini belirler.",
+			"b) Modeller üzerinden gök cisimlerinin (Güneş, Dünya ve Ay) benzerliklerini listeler.",
+			"c) Modeller üzerinden gök cisimlerinin (Güneş, Dünya ve Ay) farklılıklarını listeler."
+		],
+		"themes": [
+			"g1.hayat_bilgisi.t05"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 30,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.5.3": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Afet türlerini tanıyabilme",
+		"printed_code": "HB.1.5.3.",
+		"themes": [
+			"g1.hayat_bilgisi.t05"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 30,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.5.4": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Geri dönüştürülebilen atıkları sınıflandırabilme",
+		"printed_code": "HB.1.5.4.",
+		"steps": [
+			"a) Geri dönüştürülebilen atıkları belirler.",
+			"b) Geri dönüştürülebilen atıkları ayrıştırır.",
+			"c) Geri dönüştürülebilen atıkları tasnif eder.",
+			"ç) Geri dönüştürülebilen atıkları etiketler."
+		],
+		"themes": [
+			"g1.hayat_bilgisi.t05"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 30,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.6.1": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Bilimle ilgili merak ettiklerini sorabilme",
+		"printed_code": "HB.1.6.1.",
+		"steps": [
+			"a) Bilim ile ilgili merak ettiği konuları belirler.",
+			"b) Bilim ile ilgili merak ettiği konular hakkında sorular sorar."
+		],
+		"themes": [
+			"g1.hayat_bilgisi.t06"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 34,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.6.2": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Teknoloji ile ilgili merak ettiklerini sorabilme",
+		"printed_code": "HB.1.6.2.",
+		"steps": [
+			"a) Teknoloji ile ilgili merak ettiği konuları belirler.",
+			"b) Teknoloji ile merak ettiği konular hakkında sorular sorar."
+		],
+		"themes": [
+			"g1.hayat_bilgisi.t06"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 34,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.1.6.3": {
+		"grade": 1,
+		"subject": "hayat_bilgisi",
+		"text": "Sanatla ilgili merak ettiklerini sorabilme",
+		"printed_code": "HB.1.6.3.",
+		"steps": [
+			"a) Sanat ile ilgili merak ettiği konuları belirler.",
+			"b) Sanat ile ilgili merak ettiği konular hakkında sorular sorar."
+		],
+		"themes": [
+			"g1.hayat_bilgisi.t06"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 34,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.1.1": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Planlı olmanın kişisel yaşama etkilerini fark edebilme",
+		"printed_code": "HB.2.1.1.",
+		"themes": [
+			"g2.hayat_bilgisi.t01"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 37,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.1.2": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Öğretmen ve arkadaşlarıyla etkili iletişim kurabilme",
+		"printed_code": "HB.2.1.2.",
+		"themes": [
+			"g2.hayat_bilgisi.t01"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 37,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.1.3": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Arkadaşlık ilişkilerini düzenleyebilme",
+		"printed_code": "HB.2.1.3.",
+		"themes": [
+			"g2.hayat_bilgisi.t01"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 37,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.1.4": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Sınıf içi karar alma süreçlerinde sosyal temas oluşturabilme",
+		"printed_code": "HB.2.1.4.",
+		"steps": [
+			"a) Sınıf içi karar alma süreçlerinde grup iletişimini başlatır.",
+			"b) Sınıf içi karar alma süreçlerinde grup etkileşimine katılır.",
+			"c) Sınıf içi karar alma süreçlerinde grup iletişimine katkıda bulunur.",
+			"ç) Sınıf içi karar alma süreçlerinde grup iletişimini değerlendirir."
+		],
+		"themes": [
+			"g2.hayat_bilgisi.t01"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 37,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.2.1": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Sağlıklı büyüme ve gelişme ile alışkanlıkları arasındaki ilişkiyi çözümleyebilme",
+		"printed_code": "HB.2.2.1.",
+		"steps": [
+			"a) Sağlıklı büyüme ve gelişmeye yönelik alışkanlıkları belirler.",
+			"b) Sağlıklı büyüme ve gelişme ile alışkanlıkları arasındaki ilişkiyi belirler."
+		],
+		"themes": [
+			"g2.hayat_bilgisi.t02"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 41,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.2.2": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Çevrim içi ortamlarda kişisel güvenliğini sağlayabilme",
+		"printed_code": "HB.2.2.2.",
+		"themes": [
+			"g2.hayat_bilgisi.t02"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 41,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.2.3": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Temel trafik işaret levhalarını tanıyabilme",
+		"printed_code": "HB.2.2.3.",
+		"themes": [
+			"g2.hayat_bilgisi.t02"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 41,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.2.4": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Acil bir durumda yetkililerle etkili iletişim kurabilme",
+		"printed_code": "HB.2.2.4.",
+		"themes": [
+			"g2.hayat_bilgisi.t02"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 41,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.3.1": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Ailenin önemini yorumlayabilme",
+		"printed_code": "HB.2.3.1.",
+		"steps": [
+			"a) Ailenin önemine ilişkin verilen örnekleri inceler.",
+			"b) Ailenin önemine ilişkin verilen örnekleri bağlamdan kopmadan özgün örneklere dönüştürür.",
+			"c) Ailenin önemine ilişkin oluşturduğu özgün örnekleri kendi cümleleri ile ifade eder."
+		],
+		"themes": [
+			"g2.hayat_bilgisi.t03"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 45,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.3.2": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Toplumsal yaşamda nezaket ve görgü kurallarına uygun davranabilme",
+		"printed_code": "HB.2.3.2.",
+		"themes": [
+			"g2.hayat_bilgisi.t03"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 45,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.3.3": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Yakın çevresinde üzerine düşen görev ve sorumlulukları günlük yaşamına yansıtabilme",
+		"printed_code": "HB.2.3.3.",
+		"steps": [
+			"a) Yakın çevresinde üzerine düşen görev ve sorumluluklarını gözden geçirir.",
+			"b) Yakın çevresinde üzerine düşen görev ve sorumluluklarına ilişkin çıkarımda bulunur.",
+			"c) Yakın çevresinde üzerine düşen görev ve sorumluluklarına ilişkin değerlendirme yapar."
+		],
+		"themes": [
+			"g2.hayat_bilgisi.t03"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 45,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.4.1": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Yakın çevresinde bulunan tarihî mekân ve doğal güzellikleri belirleyebilme",
+		"printed_code": "HB.2.4.1.",
+		"themes": [
+			"g2.hayat_bilgisi.t04"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 49,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.4.2": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Yaşadığı yerin yönetim birimleri ile ilgili kaynaklardan bilgi toplayabilme",
+		"printed_code": "HB.2.4.2.",
+		"steps": [
+			"a) Yaşadığı yerin yönetim birimleri ile ilgili bilgi toplayacağı kaynakları belirler.",
+			"b) Yaşadığı yerin yönetim birimleri ile ilgili belirlediği kaynaklardan bilgileri bulur.",
+			"c) Yaşadığı yerin yönetim birimleri ile ilgili kullanacağı kaynakların uygunluğunu açıklar.",
+			"ç) Yaşadığı yerin yönetim birimleri ile ilgili kaynaklardan ulaştığı bilgileri kaydeder."
+		],
+		"themes": [
+			"g2.hayat_bilgisi.t04"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 49,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.4.3": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Mustafa Kemal Atatürk’ün öğrencilik hayatını ifade edebilme",
+		"printed_code": "HB.2.4.3.",
+		"themes": [
+			"g2.hayat_bilgisi.t04"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 49,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.4.4": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Millî gün ve bayramların önemini yorumlayabilme",
+		"printed_code": "HB.2.4.4.",
+		"steps": [
+			"a) Millî gün ve bayramların önemine ilişkin verilen örnekleri inceler.",
+			"b) Millî gün ve bayramların önemine ilişkin verilen örnekleri bağlamdan kopmadan özgün örneklere dönüştürür.",
+			"c) Millî gün ve bayramların önemine ilişkin oluşturduğu özgün örnekleri kendi cümleleri ile ifade eder."
+		],
+		"themes": [
+			"g2.hayat_bilgisi.t04"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 49,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.4.5": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Dinî gün ve bayramların önemini yorumlayabilme",
+		"printed_code": "HB.2.4.5.",
+		"steps": [
+			"a) Dinî gün ve bayramların önemine ilişkin verilen örnekleri inceler.",
+			"b) Dinî gün ve bayramların önemine ilişkin verilen örnekleri bağlamdan kopmadan özgün örneklere dönüştürür.",
+			"c) Dinî gün ve bayramların önemine ilişkin oluşturduğu özgün örnekleri kendi cümleleri ile ifade eder."
+		],
+		"themes": [
+			"g2.hayat_bilgisi.t04"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 49,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.5.1": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Hava olayları ve mevsimler arasındaki ilişkiyi çözümleyebilme",
+		"printed_code": "HB.2.5.1.",
+		"steps": [
+			"a) Hava olayları ve mevsimlerin özelliklerini belirler.",
+			"b) Hava olayları ve mevsimler arasındaki ilişkiyi belirler."
+		],
+		"themes": [
+			"g2.hayat_bilgisi.t05"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 53,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.5.2": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Doğadan yararlanarak yönünü belirleyebilme",
+		"printed_code": "HB.2.5.2.",
+		"themes": [
+			"g2.hayat_bilgisi.t05"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 53,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.5.3": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Afetlere karşı alınması gereken önlemlere ilişkin bilgi toplayabilme",
+		"printed_code": "HB.2.5.3.",
+		"steps": [
+			"a) Afetlere karşı alınması gereken önlemlere ilişkin bilgi toplamak için kullanacağı araçları belirler.",
+			"b) Belirlediği araçları kullanarak afetlere karşı alınması gereken önlemlere ilişkin bilgileri bulur.",
+			"c) Afetlere karşı alınması gereken önlemlere ilişkin bulduğu bilgileri doğrular.",
+			"ç) Afetlere karşı alınması gereken önlemlere ilişkin bulduğu bilgileri kaydeder."
+		],
+		"themes": [
+			"g2.hayat_bilgisi.t05"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 53,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.5.4": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Doğal kaynakları tasarruflu kullanma davranışlarını günlük yaşamına yansıtabilme",
+		"printed_code": "HB.2.5.4.",
+		"steps": [
+			"a) Doğal kaynakları kullanırken davranışlarını gözden geçirir.",
+			"b) Doğal kaynakları tasarruflu kullanmaya yönelik çıkarımlarda bulunur.",
+			"c) Doğal kaynakları tasarruflu kullanmaya yönelik ulaştığı çıkarımları değerlendirir."
+		],
+		"themes": [
+			"g2.hayat_bilgisi.t05"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 53,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.6.1": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Bilim insanlarının bilime katkılarına yönelik kaynaklardan bilgi toplayabilme",
+		"printed_code": "HB.2.6.1.",
+		"steps": [
+			"a) Bilim insanlarının bilime katkılarına ilişkin bilgi toplayacağı kaynakları belirler.",
+			"b) Bilim insanlarının bilime katkılarına ilişkin belirlediği kaynaklardan bilgileri bulur.",
+			"c) Bilim insanlarının bilime katkılarına ilişkin ulaştığı kaynakların uygunluğunu açıklar.",
+			"ç) Bilim insanlarının bilime katkılarına ilişkin kaynaklardan ulaştığı bilgileri kaydeder."
+		],
+		"themes": [
+			"g2.hayat_bilgisi.t06"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 57,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.6.2": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Teknolojik bir ürünün değişim ve sürekliliğine dair kanıta dayalı öngörüde bulunabilme",
+		"printed_code": "HB.2.6.2.",
+		"steps": [
+			"a) Teknolojik bir ürünün zaman içindeki değişimini kanıtlara dayalı olarak ilişkilendirir.",
+			"b) Teknolojik bir ürünün gelecekteki değişimine ilişkin çıkarım yapar."
+		],
+		"themes": [
+			"g2.hayat_bilgisi.t06"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 57,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.2.6.3": {
+		"grade": 2,
+		"subject": "hayat_bilgisi",
+		"text": "Sanatın günlük yaşamdaki yerini belirleyebilme",
+		"printed_code": "HB.2.6.3.",
+		"themes": [
+			"g2.hayat_bilgisi.t06"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 57,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.1.1": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Güçlü ve gelişime açık olduğu alanlara karar verebilme",
+		"printed_code": "HB.3.1.1.",
+		"steps": [
+			"a) Güçlü ve gelişime açık olduğu alanlara ilişkin karar vermeye yönelik amacını belirler.",
+			"b) Güçlü ve gelişime açık olduğu alanlara ilişkin karar vermeye yönelik bilgi toplar.",
+			"c) Güçlü ve gelişime açık olduğu alanlara ilişkin karar vermeye yönelik seçenekler oluşturur.",
+			"ç) Güçlü ve gelişime açık olduğu alanlara ilişkin karar vermeye yönelik seçenekler üzerinde mantıksal denetleme yapar.",
+			"d) Güçlü ve gelişime açık olduğu alanlara ilişkin karar vermeye yönelik seçenekler arasından seçim yapar.",
+			"e) Güçlü ve gelişime açık olduğu alanlara ilişkin verdiği karara yönelik yansıtma yapar."
+		],
+		"themes": [
+			"g3.hayat_bilgisi.t01"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 61,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.1.2": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Okuldaki hak ve sorumluluklarına uygun davranabilme",
+		"printed_code": "HB.3.1.2.",
+		"themes": [
+			"g3.hayat_bilgisi.t01"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 61,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.1.3": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Çocuk haklarını tanıtmak için fikirlerini eyleme dönüştürebilme",
+		"printed_code": "HB.3.1.3.",
+		"steps": [
+			"a) Çocuk haklarını tanıtmak için plan yapar.",
+			"b) Çocuk haklarını tanıtmak için yaptığı planı uygular.",
+			"c) Çocuk haklarını tanıtmak için uyguladığı planı değerlendirir."
+		],
+		"themes": [
+			"g3.hayat_bilgisi.t01"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 61,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.2.1": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Sağlığını korumaya yönelik davranışlarını düzenleyebilme",
+		"printed_code": "HB.3.2.1.",
+		"themes": [
+			"g3.hayat_bilgisi.t02"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 65,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.2.2": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Güvenliğini tehdit eden bir durumla karşılaştığında yapılması gerekenleri sorgulayabilme",
+		"printed_code": "HB.3.2.2.",
+		"steps": [
+			"a) Güvenliğini tehdit eden durumları tanımlar.",
+			"b) Güvenliğini tehdit eden bir durumla karşılaştığında yapılması gerekenler hakkında sorular sorar.",
+			"c) Güvenliğini tehdit eden bir durumla karşılaştığında yapılması gerekenler hakkında bilgi toplar.",
+			"ç) Güvenliğini tehdit eden bir durumla karşılaştığında yapılması gerekenler hakkında topladığı bilgilerin doğruluğunu değerlendirir.",
+			"d) Güvenliğini tehdit eden bir durumla karşılaştığında yapılması gerekenler hakkında çıkarım yapar."
+		],
+		"themes": [
+			"g3.hayat_bilgisi.t02"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 65,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.2.3": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Trafik kurallarına uymanın önemine ilişkin özgün ürünler sentezleyebilme",
+		"printed_code": "HB.3.2.3.",
+		"steps": [
+			"a) Trafik kurallarına uymanın önemini belirler.",
+			"b) Trafik kurallarına uyma ile güvenliği arasında ilişki kurar.",
+			"c) Trafik kurallarına uymanın önemine ilişkin özgün bir ürün oluşturur."
+		],
+		"themes": [
+			"g3.hayat_bilgisi.t02"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 65,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.3.1": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Aile ve toplum arasındaki ilişkiyi çözümleyebilme",
+		"printed_code": "HB.3.3.1.",
+		"steps": [
+			"a) Aile ve toplumun özelliklerini belirler.",
+			"b) Aile ve toplum arasındaki ilişkiyi belirler."
+		],
+		"themes": [
+			"g3.hayat_bilgisi.t03"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 69,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.3.2": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Yardıma ihtiyacı olan bireylerin yaşamını kolaylaştırmak için fikirlerini eyleme dönüştürebilme",
+		"printed_code": "HB.3.3.2.",
+		"steps": [
+			"a) Yardıma ihtiyacı olan bireylerin yaşamını kolaylaştırmak için plan yapar.",
+			"b) Yardıma ihtiyacı olan bireylerin yaşamını kolaylaştırmak için yaptığı planı uygular.",
+			"c) Yardıma ihtiyacı olan bireylerin yaşamını kolaylaştırmak için yaptığı planı değerlendirir."
+		],
+		"themes": [
+			"g3.hayat_bilgisi.t03"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 69,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.3.3": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Mesleklerin toplumsal yaşamdaki önemini yorumlayabilme",
+		"printed_code": "HB.3.3.3.",
+		"steps": [
+			"a) Mesleklerin toplumsal yaşamdaki önemine ilişkin verilen örnekleri inceler.",
+			"b) Mesleklerin toplumsal yaşamdaki önemine ilişkin verilen örnekleri bağlamdan kopmadan özgün örneklere dönüştürür.",
+			"c) Mesleklerin toplumsal yaşamdaki önemine ilişkin oluşturduğu özgün örnekleri kendi cümleleri ile ifade eder."
+		],
+		"themes": [
+			"g3.hayat_bilgisi.t03"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 69,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.4.1": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Yakın çevresindeki tarihî mekân ve doğal güzelliklerin korunmasının önemini fark edebilme",
+		"printed_code": "HB.3.4.1.",
+		"themes": [
+			"g3.hayat_bilgisi.t04"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 73,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.4.2": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Ülkemizin yönetim şekli ile ilgili kaynaklardan bilgi toplayabilme",
+		"printed_code": "HB.3.4.2.",
+		"steps": [
+			"a) Ülkemizin yönetim şekli ile ilgili bilgi toplayacağı kaynakları belirler.",
+			"b) Ülkemizin yönetim şekli ile ilgili belirlediği kaynaklardan bilgileri bulur.",
+			"c) Ülkemizin yönetim şekli ile ilgili ulaştığı kaynakların uygunluğunu açıklar.",
+			"ç) Ülkemizin yönetim şekli ile ilgili kaynaklardan ulaştığı bilgileri kaydeder."
+		],
+		"themes": [
+			"g3.hayat_bilgisi.t04"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 73,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.4.3": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Mustafa Kemal Atatürk’ün kişilik özelliklerini çözümleyebilme",
+		"printed_code": "HB.3.4.3.",
+		"steps": [
+			"a) Mustafa Kemal Atatürk’ün kişilik özelliklerini ve elde ettiği başarıları belirler.",
+			"b) Mustafa Kemal Atatürk’ün kişilik özellikleri ile başarıları arasında ilişki kurar."
+		],
+		"themes": [
+			"g3.hayat_bilgisi.t04"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 73,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.4.4": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Millî birlik ve beraberliğimizin ülkemize katkılarını açıklayabilme",
+		"printed_code": "HB.3.4.4.",
+		"themes": [
+			"g3.hayat_bilgisi.t04"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 73,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.5.1": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Doğadaki varlıkların insan yaşamı için önemini yorumlayabilme",
+		"printed_code": "HB.3.5.1.",
+		"steps": [
+			"a) Doğadaki varlıkların insan yaşamı için önemine ilişkin verilen örnekleri inceler.",
+			"b) Doğadaki varlıkların insan yaşamı için önemine ilişkin verilen örnekleri bağlamdan kopmadan özgün örneklere dönüştürür.",
+			"c) Doğadaki varlıkların insan yaşamı için önemine ilişkin oluşturduğu özgün örnekleri kendi cümleleri ile ifade eder."
+		],
+		"themes": [
+			"g3.hayat_bilgisi.t05"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 77,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.5.2": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Krokiyi kullanarak bulunduğu yerin konumunu algılayabilme",
+		"printed_code": "HB.3.5.2.",
+		"steps": [
+			"a) Krokiyi kullanarak bulunduğu yerin konumunu belirler.",
+			"b) Bulunduğu yerin konumsal görselleştirmesini yapar.",
+			"c) Bulunduğu yerin konumsal özelliklerini özetler."
+		],
+		"themes": [
+			"g3.hayat_bilgisi.t05"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 77,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.5.3": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Afetlere yönelik yapılması gerekenleri sınıflandırabilme",
+		"printed_code": "HB.3.5.3.",
+		"steps": [
+			"a) Afetlere yönelik yapılması gerekenlere ilişkin ölçütleri afet öncesi, afet anı ve afet sonrası olarak belirler.",
+			"b) Afetlere yönelik yapılması gerekenleri afet öncesi, afet anı ve afet sonrası olarak ayrıştırır.",
+			"c) Afetlere yönelik yapılması gerekenleri afet öncesi, afet anı ve afet sonrası olarak tasnif eder.",
+			"ç) Afetlere yönelik yapılması gerekenleri afet öncesi, afet anı ve afet sonrası olarak etiketler."
+		],
+		"themes": [
+			"g3.hayat_bilgisi.t05"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 77,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.5.4": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Çevresel sürdürülebilirliğe yönelik kaynaklardan bilgi toplayabilme",
+		"printed_code": "HB.3.5.4.",
+		"steps": [
+			"a) Çevresel sürdürülebilirliğe yönelik bilgi toplayacağı kaynakları belirler.",
+			"b) Çevresel sürdürülebilirliğe yönelik belirlediği kaynaklardan bilgileri bulur.",
+			"c) Çevresel sürdürülebilirliğe yönelik ulaştığı kaynakların uygunluğunu açıklar.",
+			"ç) Çevresel sürdürülebilirliğe yönelik kaynaklardan ulaştığı bilgileri kaydeder."
+		],
+		"themes": [
+			"g3.hayat_bilgisi.t05"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 77,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.6.1": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Bilimsel gelişmelerin günlük yaşama etkisini yorumlayabilme",
+		"printed_code": "HB.3.6.1.",
+		"steps": [
+			"a) Bilimsel gelişmelerin günlük yaşama etkisine ilişkin verilen örnekleri inceler.",
+			"b) Bilimsel gelişmelerin günlük yaşama etkisine ilişkin verilen örnekleri bağlamdan kopmadan özgün örneklere dönüştürür.",
+			"c) Bilimsel gelişmelerin günlük yaşama etkisine ilişkin oluşturduğu özgün örnekleri kendi cümleleri ile ifade eder."
+		],
+		"themes": [
+			"g3.hayat_bilgisi.t06"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 82,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.6.2": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Teknolojik gelişmelerin günlük yaşama etkisini çözümleyebilme",
+		"printed_code": "HB.3.6.2.",
+		"steps": [
+			"a) Teknolojik gelişmelerin günlük yaşama etkisini belirler.",
+			"b) Teknolojik gelişmelerle günlük yaşam arasında ilişki kurar."
+		],
+		"themes": [
+			"g3.hayat_bilgisi.t06"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 82,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"HB.3.6.3": {
+		"grade": 3,
+		"subject": "hayat_bilgisi",
+		"text": "Sanatçıların sanata katkılarına yönelik kaynaklardan bilgi toplayabilme",
+		"printed_code": "HB.3.6.3.",
+		"steps": [
+			"a) Sanatçıların sanata katkılarına yönelik bilgi toplayacağı kaynakları belirler.",
+			"b) Sanatçıların sanata katkılarına yönelik belirlediği kaynaklardan bilgileri bulur.",
+			"c) Sanatçıların sanata katkılarına yönelik ulaştığı kaynakların uygunluğunu açıklar.",
+			"ç) Sanatçıların sanata katkılarına yönelik kaynaklardan ulaştığı bilgileri kaydeder."
+		],
+		"themes": [
+			"g3.hayat_bilgisi.t06"
+		],
+		"source": {
+			"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+			"page": 82,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf"
+		}
+	},
+	"FB.3.1.1": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Bilimsel bilgiye ulaşma yollarını sorgulayabilme",
+		"printed_code": "FB.3.1.1.",
+		"steps": [
+			"a) Merak ettiği bilimsel bir konuyu tanımlar.",
+			"b) İlgili konu hakkında sorular sorar.",
+			"c) Sorularını cevaplamaya yönelik bilgi toplar.",
+			"ç) Bilimsel bilgiye ulaşma yollarının uygunluğunu değerlendirir.",
+			"d) Toplanan bilgiler üzerinden bilimsel bilgiye ulaşma yollarına ilişkin çıkarım yapar."
+		],
+		"themes": [
+			"g3.fen.t01"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 19,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.1.2": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Bilim insanlarının özelliklerini genelleyebilme",
+		"printed_code": "FB.3.1.2.",
+		"steps": [
+			"a) Bilim insanları hakkında bilgi toplar.",
+			"b) Bilim insanlarının ortak özelliklerini belirler.",
+			"c) Bilim insanlarının ortak olmayan özelliklerini belirler.",
+			"ç) Örüntüler üzerinden bilim insanlarının özellikleri hakkında önermede bulunur."
+		],
+		"themes": [
+			"g3.fen.t01"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 19,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.2.1": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Canlıları; mikroskopla görülebilen canlılar, mantarlar, bitkiler ve hayvanlar olarak sınıflandırabilme",
+		"printed_code": "FB.3.2.1.",
+		"steps": [
+			"a) Canlıların benzer ve farklı niteliklerini belirler.",
+			"b) Canlıları niteliklerine göre ayırır.",
+			"c) Canlıları gruplandırır.",
+			"ç) Canlıları etiketler."
+		],
+		"themes": [
+			"g3.fen.t02"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 22,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.2.2": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Canlıların çevrelerini farklı yollarla algılamaları konusunda bilimsel çıkarım yapabilme",
+		"printed_code": "FB.3.2.2.",
+		"steps": [
+			"a) Canlıların çevrelerini algılama biçimlerine ilişkin nitelikleri tanımlar.",
+			"b) Duyu organlarının işlevleri ile ilgili veri toplayarak kaydeder.",
+			"c) Canlıların çevrelerini farklı biçimlerde algılamalarına ilişkin verileri yorumlayarak değerlendirir."
+		],
+		"themes": [
+			"g3.fen.t02"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 22,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.2.3": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Canlıların yaşam döngülerini açıklamada tümevarımsal akıl yürütebilme",
+		"printed_code": "FB.3.2.3.",
+		"steps": [
+			"a) Canlıların yaşam döngüleri ile ilgili örüntüleri bulur.",
+			"b) Canlıların yaşam döngüleri ile ilgili genelleme yapar."
+		],
+		"themes": [
+			"g3.fen.t02"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 22,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.3.1": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Kayaçlar, madenler ve mineraller ile ilgili tümdengelimsel akıl yürütebilme",
+		"printed_code": "FB.3.3.1.",
+		"steps": [
+			"a) Kayaçlar, madenler ve mineralleri belirler.",
+			"b) Kayaçlar, madenler ve mineraller arasında ilişki kurar.",
+			"c) Kayaçlar, madenler ve mineraller arasında genelden genele veya genelden özele çıkarım yapar."
+		],
+		"themes": [
+			"g3.fen.t03"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 26,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.3.2": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Fosil oluşumu ile ilgili bilgileri sentezleyebilme",
+		"printed_code": "FB.3.3.2.",
+		"steps": [
+			"a) Fosil oluşumunu gösteren sürecin bütün ve parçalarını belirler.",
+			"b) Süreci oluşturan aşamalar arasında ilişki kurar.",
+			"c) Fosillerin oluşum sürecini oluşturan aşamaları uygun sırayla bir bütün hâline getirir."
+		],
+		"themes": [
+			"g3.fen.t03"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 26,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.4.1": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Çevresindeki maddeleri hâllerine göre sınıflandırabilme",
+		"printed_code": "FB.3.4.1.",
+		"steps": [
+			"a) Çevresindeki maddelerin niteliklerini tanımlar.",
+			"b) Çevresindeki maddeleri niteliklerine göre ayırır.",
+			"c) Çevresindeki maddeleri hâllerine göre gruplandırır.",
+			"ç) Maddeleri hâllerine göre katı, sıvı ve gaz olarak etiketler."
+		],
+		"themes": [
+			"g3.fen.t04"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 29,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.4.2": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Günlük yaşamda karşılaştığı karışımların ayrılmasında kullanılabilecek uygun yöntemleri kullanarak deney yapabilme",
+		"printed_code": "FB.3.4.2.",
+		"steps": [
+			"a) Karışımların ayrılmasında kullanılabilecek yöntemlerle ilgili deney tasarlar.",
+			"b) Deneyle ilgili ölçme ve veri analizi yapar."
+		],
+		"themes": [
+			"g3.fen.t04"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 29,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.4.3": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Atıkların ayrıştırılmasına ilişkin problem çözebilme",
+		"printed_code": "FB.3.4.3.",
+		"steps": [
+			"a) Atıkların ayrıştırılmasına ilişkin problemi yapılandırır.",
+			"b) Atıkların ayrıştırılmasına ilişkin problemi özetler.",
+			"c) Atıkların ayrıştırılmasına ilişkin çözüm önerilerini gözleme ya da veriye dayalı tahmin eder.",
+			"ç) Atıkların ayrıştırılmasına ilişkin problemin çözümüne yönelik önermeler üzerinden akıl yürütür.",
+			"d) Atıkların ayrıştırılmasına ilişkin problemin çözümüne yönelik yansıtmada/değerlendirmede bulunur."
+		],
+		"themes": [
+			"g3.fen.t04"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 29,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.5.1": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Varlıkların hareket durumlarını gözleme dayalı tahmin edebilme",
+		"printed_code": "FB.3.5.1.",
+		"steps": [
+			"a) Varlıkların hareket durumlarına ilişkin ön gözlem ve/veya deneyimlerini ilişkilendirir.",
+			"b) Varlıkların hareket durumlarına ilişkin çıkarım yapar.",
+			"c) Varlıkların hareket durumlarının sonuçlarına ilişkin yargıda bulunur."
+		],
+		"themes": [
+			"g3.fen.t05"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 33,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.5.2": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Kuvvetin varlıklar üzerindeki etkilerini bilimsel gözleme dayalı tahmin edebilme",
+		"printed_code": "FB.3.5.2.",
+		"steps": [
+			"a) Varlıkların hareketinin ve şekil değiştirmesinin nedenine ilişkin ön bilgi ve deneyimleriyle önerme oluşturur.",
+			"b) Varlıkların hareketinin ve şekil değiştirmesinin nedenine ilişkin gözleme dayalı olan önermeleri karşılaştırır.",
+			"c) Kuvvetin varlıkların hareketine ve şekil değiştirmesine etkilerine ilişkin tahminlerini temellendirmek için gözlem verilerinden sonuç çıkarır.",
+			"ç) Kuvvetin varlıkların hareketine ve şekil değiştirmesine etkileri ile ilgili gözlemlenmemiş duruma ilişkin tahminde bulunur.",
+			"d) Kuvvetin varlıkların hareketine ve şekil değiştirmesine etkileri ile ilgili tahminlerinin geçerliliğini sorgular."
+		],
+		"themes": [
+			"g3.fen.t05"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 33,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.6.1": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Bazı araç gerecin elektrikli olduğuna ilişkin bilimsel çıkarım yapabilme",
+		"printed_code": "FB.3.6.1.",
+		"steps": [
+			"a) Farklı araç gerecin niteliklerini tanımlar.",
+			"b) Elektrikli araç gereçle ilgili veri toplayarak kaydeder.",
+			"c) Elektrikli araç gereçle ilgili verileri değerlendirir."
+		],
+		"themes": [
+			"g3.fen.t06"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 37,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.6.2": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Elektrikli araç gerecin güvenli kullanımı ile ilgili eleştirel düşünebilme",
+		"printed_code": "FB.3.6.2.",
+		"steps": [
+			"a) Elektrikli araç gerecin güvenli kullanımı ile ilgili verilen bir olay/konu/problem veya durumu sorgular.",
+			"b) Elektrikli araç gerecin kullanımında güvenliğin sağlanabileceğine yönelik akıl yürütür.",
+			"c) Akıl yürütmeyle ulaştığı çıkarımları yansıtır."
+		],
+		"themes": [
+			"g3.fen.t06"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 37,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.6.3": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Elektriği tasarruflu kullanma konusunda bilimsel veriye dayalı tahmin edebilme",
+		"printed_code": "FB.3.6.3.",
+		"steps": [
+			"a) Elektriği tasarruflu kullanma konusunda verilere ve/veya ön bilgilere dayalı önerme oluşturur.",
+			"b) Elektriği tasarruflu kullanma üzerine nicel ölçüm verilerine dayalı önermelerini gerekçelendirir.",
+			"c) Hesaplamalarına dayalı olarak tahmin eder.",
+			"ç) Tahminlerin geçerliliğini sorgular."
+		],
+		"themes": [
+			"g3.fen.t06"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 37,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.7.1": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Toprak oluşumunu ve yapısını bilimsel olarak gözlemleyebilme",
+		"printed_code": "FB.3.7.1.",
+		"steps": [
+			"a) Toprağın oluşumuna ve yapısına ilişkin nitelikleri tanımlar.",
+			"b) Toprağın yapısına ilişkin veri toplayarak kaydeder.",
+			"c) Toprağın yapısına ilişkin topladığı verileri açıklar."
+		],
+		"themes": [
+			"g3.fen.t07"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 41,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.7.2": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Bir bitkinin yetişmesi için gerekenleri genelleyebilme",
+		"printed_code": "FB.3.7.2.",
+		"steps": [
+			"a) Çevresinde bulunan tarım ürünlerinin nasıl yetiştirildiği konusunda araştırma yaparak bilgi toplar.",
+			"b) Bitki yetiştirmek için gerekli ortak özellikleri belirler.",
+			"c) Farklı bitkilerin yetiştirilmesinde ortak olmayan özellikleri belirler.",
+			"ç) Bir bitki yetiştirmek için yapılması gerekenler konusunda önermede bulunur."
+		],
+		"themes": [
+			"g3.fen.t07"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 41,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.8.1": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Canlıların yaşam alanlarının özelliklerini belirlemeye yönelik kanıt kullanabilme",
+		"printed_code": "FB.3.8.1.",
+		"steps": [
+			"a) Canlıların yaşam alanlarının özelliklerine ilişkin veri toplayarak kaydeder.",
+			"b) Canlıların yaşam alanlarına ilişkin veri setleri oluşturur.",
+			"c) Canlıların yaşam alanlarının özelliklerine ilişkin veriye dayalı açıklama yapar."
+		],
+		"themes": [
+			"g3.fen.t08"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 45,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.8.2": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Yaşam alanındaki canlı çeşitliliğini operasyonel olarak tanımlayabilme",
+		"printed_code": "FB.3.8.2.",
+		"steps": [
+			"a) Yaşam alanının özelliklerini tanımlar.",
+			"b) Yaşam alanındaki canlı çeşitliliği ile ilgili ölçüm yapar.",
+			"c) Canlı çeşitliliğinin tanımını yapar."
+		],
+		"themes": [
+			"g3.fen.t08"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 45,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
+		}
+	},
+	"FB.3.8.3": {
+		"grade": 3,
+		"subject": "fen",
+		"text": "Yaşam alanlarının korunması için yapılacakları sorgulayabilme",
+		"printed_code": "FB.3.8.3.",
+		"steps": [
+			"a) Merak ettiği konuyu tanımlar.",
+			"b) İlgili konu hakkında sorular sorar.",
+			"c) İlgili konu hakkında bilgi toplar.",
+			"ç) Toplanan bilgilerin doğruluğunu değerlendirir.",
+			"d) Toplanan bilgiler üzerinde çıkarım yapar."
+		],
+		"themes": [
+			"g3.fen.t08"
+		],
+		"source": {
+			"doc": "Fen Bilimleri Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+			"page": 45,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf"
 		}
 	}
 }
