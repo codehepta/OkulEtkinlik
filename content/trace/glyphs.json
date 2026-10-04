@@ -1,5 +1,5 @@
 {
-	"_note": "Dik temel harf ve rakam iz yolları (trace şablonu). Birimler: y=0 üst çizgi, y=1 orta çizgi, y=2 taban çizgisi, y=3 alt çizgi; x soldan sağa. Her vuruş sırayla çizilir. Komutlar: M (başla), L (düz çizgi), A (yay: merkez x, merkez y, yarıçap x, yarıçap y, başlangıç açısı, bitiş açısı; derece, 0 sağ, 90 aşağı; bitiş < başlangıç saat yönünün tersi), D (nokta). Sıra ve yönler öğretmen gözden geçirmesine açıktır (docs/qa-checklist.md).",
+	"_note": "Dik temel harf ve rakam iz yolları (trace şablonu). Birimler: y=0 üst çizgi, y=1 orta çizgi, y=2 taban çizgisi, y=3 alt çizgi; x soldan sağa. Her vuruş sırayla çizilir. Komutlar: M (başla), L (düz çizgi), A (yay: merkez x, merkez y, yarıçap x, yarıçap y, başlangıç açısı, bitiş açısı; derece, 0 sağ, 90 aşağı; bitiş < başlangıç saat yönünün tersi), D (nokta). Harf ve rakamların yanında hazırlık dönemi çizgi çalışmaları için dikey (|), yatay (-), eğik (/ ve \\) çizgi ve yuvarlak (○) glifleri de vardır. Sıra ve yönler öğretmen gözden geçirmesine açıktır (docs/qa-checklist.md).",
 	"glyphs": {
 		"a": { "strokes": [
 			[["A", 0.45, 1.5, 0.45, 0.5, -20, -380]],
@@ -195,6 +195,16 @@
 		"8": { "strokes": [
 			[["A", 0.5, 0.5, 0.42, 0.5, -20, -270], ["A", 0.5, 1.5, 0.48, 0.5, -90, 270], ["A", 0.5, 0.5, 0.42, 0.5, 90, -20]] ] },
 		"9": { "strokes": [
-			[["A", 0.48, 0.5, 0.47, 0.5, -10, -370], ["L", 0.95, 0.5], ["L", 0.85, 2.0]] ] }
+			[["A", 0.48, 0.5, 0.47, 0.5, -10, -370], ["L", 0.95, 0.5], ["L", 0.85, 2.0]] ] },
+		"|": { "strokes": [
+			[["M", 0.0, 0.0], ["L", 0.0, 2.0]] ] },
+		"-": { "strokes": [
+			[["M", 0.0, 1.0], ["L", 1.2, 1.0]] ] },
+		"/": { "strokes": [
+			[["M", 0.8, 0.0], ["L", 0.0, 2.0]] ] },
+		"\\": { "strokes": [
+			[["M", 0.0, 0.0], ["L", 0.8, 2.0]] ] },
+		"○": { "strokes": [
+			[["A", 0.9, 1.0, 0.9, 1.0, -90, -450]] ] }
 	}
 }
