@@ -46,8 +46,8 @@ const UNITS_PER_ROW: int = 5
 const UNIT_COLOR: Color = ClayStyle.SKY
 const WEIGH_ITEM_SIDE: float = 190.0
 const EST_TILE: Vector2 = Vector2(240, 170)
-const EST_SLOT_LEFT: Rect2 = Rect2(110, 760, 240, 170)
-const EST_SLOT_RIGHT: Rect2 = Rect2(1570, 760, 240, 170)
+const EST_SLOT_LEFT: Rect2 = Rect2(300, 760, 240, 170)
+const EST_SLOT_RIGHT: Rect2 = Rect2(1380, 760, 240, 170)
 const ADD_RECT: Rect2 = Rect2(820, 760, 280, 170)
 const EST_DIFF_RECT: Rect2 = Rect2(885, 600, 150, 130)
 
@@ -679,16 +679,16 @@ func _add_relation_icon(tile: Control, relation: int) -> void:
 	var icon: Control = Control.new()
 	icon.name = "RelationIcon"
 	icon.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	icon.position = Vector2(0, 14)
+	icon.position = Vector2(0, 8)
 	icon.size = Vector2(tile.size.x, WORD_ICON_H)
 	# 0: sağ ağır (sol daha az), 1: denge, 2: sol ağır.
-	var tilt: float = [0.32, 0.0, -0.32][relation]
+	var tilt: float = [0.26, 0.0, -0.26][relation]
 	icon.draw.connect(func() -> void:
-		var c: Vector2 = Vector2(icon.size.x / 2.0, 22.0)
-		var arm: float = 92.0
+		var c: Vector2 = Vector2(icon.size.x / 2.0, 30.0)
+		var arm: float = 84.0
 		var d: Vector2 = Vector2(arm, 0).rotated(tilt)
 		icon.draw_line(c - d, c + d, ClayStyle.COCOA, 8.0, true)
-		icon.draw_line(c, c + Vector2(0, 46), ClayStyle.COCOA, 8.0, true)
+		icon.draw_line(c, c + Vector2(0, 34), ClayStyle.COCOA, 8.0, true)
 		icon.draw_circle(c, 9.0, ClayStyle.HONEY, true, -1.0, true)
 		for k: int in 2:
 			var e: Vector2 = c - d if k == 0 else c + d
