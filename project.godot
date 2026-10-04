@@ -17,6 +17,7 @@ AudioDirector="*res://autoload/audio_director.gd"
 Narrator="*res://autoload/narrator.gd"
 ContentDB="*res://autoload/content_db.gd"
 Progress="*res://autoload/progress.gd"
+SessionTimer="*res://autoload/session_timer.gd"
 
 [audio]
 

@@ -11,7 +11,7 @@ const _SETTINGS_INTS: Array[String] = ["daily_limit_min"]
 const _PROFILE_INTS: Array[String] = ["grade", "created_day"]
 const _NODE_INTS: Array[String] = ["best_stars", "plays"]
 const _OUTCOME_INTS: Array[String] = ["box", "due"]
-const _USAGE_INTS: Array[String] = ["day", "seconds"]
+const _USAGE_INTS: Array[String] = ["day", "seconds", "unlocked_day"]
 
 static func default_settings() -> Dictionary:
 	return {
@@ -41,7 +41,7 @@ static func new_profile(id: String, avatar: String, nickname: String, grade: int
 		"nodes": {},
 		"outcomes": {},
 		"stickers": [],
-		"usage": {"day": 0, "seconds": 0},
+		"usage": {"day": 0, "seconds": 0, "unlocked_day": -1},
 	}
 
 ## Veriyi güncel sürüme taşır. Gelecek sürüm (> VERSION) olduğu gibi döner.
