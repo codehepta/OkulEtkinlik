@@ -1524,5 +1524,1570 @@
 			"page": 118,
 			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf"
 		}
+	},
+	"T.D.1.1": {
+		"grade": 1,
+		"subject": "turkce",
+		"text": "Dinlemeyi/izlemeyi yönetebilme",
+		"printed_code": "T.D.1.1.",
+		"steps": [
+			"a) Verilen görseller arasından öğrendiği sesin geçtiği görseli/görselleri seçer.",
+			"b) Dinleyeceklerini/izleyeceklerini amacına uygun olarak seçer.",
+			"c) Dinleme kurallarına uygun olarak dinler.",
+			"ç) Dinleme esnasında konuşmaya dâhil olmak için uygun zamanda söz alır."
+		],
+		"themes": [
+			"g1.turkce.t02",
+			"g1.turkce.t03",
+			"g1.turkce.t04",
+			"g1.turkce.t05",
+			"g1.turkce.t06",
+			"g1.turkce.t07",
+			"g1.turkce.t08",
+			"g1.turkce.t09"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 202,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.D.1.2": {
+		"grade": 1,
+		"subject": "turkce",
+		"text": "Dinledikleri/izledikleri ile ilgili anlam oluşturabilme",
+		"printed_code": "T.D.1.2.",
+		"steps": [
+			"a) Sese karşılık gelen sembolü/harfi tanır.",
+			"b) Dinlediği sesin kaynağını tahmin eder.",
+			"c) Görselden/görsellerden hareketle dinleyeceği/izleyeceği metin hakkında tahminde bulunur.",
+			"ç) Dinlediklerini yaşantı ve ön bilgileriyle karşılaştırarak çıkarımda bulunur.",
+			"d) Dinlediği sesin bulunduğu sözcüklere örnekler verir.",
+			"e) Dinlediklerinde/izlediklerinde geçen olayların öncesi hakkında tahminde bulunur.",
+			"f) Dinlediklerinde/izlediklerinde geçen olayların sonrası hakkında tahminde bulunur.",
+			"g) Dinlediklerindeki/izlediklerindeki iletileri doğruluk, gerçeklik açısından ön bilgileriyle karşılaştırır.",
+			"ğ) Dinlediklerindeki/izlediklerindeki nesneleri fiziksel özelliklerine göre sınıflandırır."
+		],
+		"themes": [
+			"g1.turkce.t01",
+			"g1.turkce.t02",
+			"g1.turkce.t03",
+			"g1.turkce.t04",
+			"g1.turkce.t05",
+			"g1.turkce.t07",
+			"g1.turkce.t08",
+			"g1.turkce.t09"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 202,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.D.1.3": {
+		"grade": 1,
+		"subject": "turkce",
+		"text": "Dinlediklerini/izlediklerini çözümleyebilme",
+		"printed_code": "T.D.1.3.",
+		"steps": [
+			"a) Doğal ve yapay ses kaynaklarından çıkan sesleri ayırt eder.",
+			"b) Seslere karşılık gelen sembolleri/harfleri ayırt eder.",
+			"c) Dinlediği/izlediği metnin konusunu bulur.",
+			"ç) Dinlediği/izlediği farklı metinlerdeki iletilerin benzerliklerini belirler.",
+			"d) Dinlediğindeki/izlediğindeki söylem ve görsel arasındaki ilişkiyi belirler."
+		],
+		"themes": [
+			"g1.turkce.t01",
+			"g1.turkce.t02",
+			"g1.turkce.t03",
+			"g1.turkce.t04",
+			"g1.turkce.t05",
+			"g1.turkce.t06",
+			"g1.turkce.t07",
+			"g1.turkce.t08",
+			"g1.turkce.t09"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 202,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.D.1.4": {
+		"grade": 1,
+		"subject": "turkce",
+		"text": "Dinleme/izleme sürecini değerlendirebilme",
+		"printed_code": "T.D.1.4.",
+		"steps": [
+			"a) Dinleme/izleme sürecindeki hatalarını belirler.",
+			"b) Dinlemesinde/izlemesinde belirlediği hatalarını düzeltir.",
+			"c) Dinlemesindeki/izlemesindeki uygun davranışlarını sonraki dinlemelerine aktarır."
+		],
+		"themes": [
+			"g1.turkce.t02",
+			"g1.turkce.t03",
+			"g1.turkce.t04",
+			"g1.turkce.t05",
+			"g1.turkce.t08",
+			"g1.turkce.t09"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 202,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.K.1.1": {
+		"grade": 1,
+		"subject": "turkce",
+		"text": "Konuşmalarını yönetebilme",
+		"printed_code": "T.K.1.1.",
+		"steps": [
+			"a) Konunun özelliğine göre konuşma üslubunu belirler.",
+			"b) Konuşma sırasında dinleyiciler ile göz teması kurar.",
+			"c) İletişim sırasında uygun zamanda söz alır.",
+			"ç) Konuşmalarında selamlaşma ve hitap ile ilgili ifadeler kullanır."
+		],
+		"themes": [
+			"g1.turkce.t06",
+			"g1.turkce.t07",
+			"g1.turkce.t08",
+			"g1.turkce.t09"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 202,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.K.1.2": {
+		"grade": 1,
+		"subject": "turkce",
+		"text": "Konuşmalarında içerik oluşturabilme",
+		"printed_code": "T.K.1.2.",
+		"steps": [
+			"a) Ön bilgilerinden hareketle dinlediği sesin içinde geçtiği sözcükler hakkında konuşur.",
+			"b) Dinlediği/izlediği metni anlatır.",
+			"c) Kendisi ve ailesi hakkında konuşmalar yapar.",
+			"ç) Dinlediklerini/izlediklerini ifade ederken ön bilgilerini kullanır.",
+			"d) Görselden/görsellerden hareketle dinleyeceği/izleyeceği metin hakkında tahminde bulunur.",
+			"e) Konuşmalarında geçen nesneleri fiziksel özelliklerine göre karşılaştırır.",
+			"f) Konuşmalarında nesneleri fiziksel özelliklerine göre sınıflandırır.",
+			"g) Dinlediklerini, izlediklerini veya okuduklarını kendi cümleleriyle ifade eder.",
+			"ğ) Sözlü iletişimde kabul etmediği konulara ilişkin önerilerde bulunur.",
+			"h) İlgi alanına yönelik seçtiği bir konu hakkında konuşur.",
+			"ı) Konuşmalarını desteklemek için görseller kullanır.",
+			"i) Dinleyicilere ne anlatacağını dikkate alarak konuşur.",
+			"j) Konuşmalarında benzetmelere yer verir."
+		],
+		"themes": [
+			"g1.turkce.t02",
+			"g1.turkce.t03",
+			"g1.turkce.t04",
+			"g1.turkce.t05",
+			"g1.turkce.t06",
+			"g1.turkce.t07",
+			"g1.turkce.t08",
+			"g1.turkce.t09"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 202,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.K.1.3": {
+		"grade": 1,
+		"subject": "turkce",
+		"text": "Konuşma kurallarını uygulayabilme",
+		"printed_code": "T.K.1.3.",
+		"steps": [
+			"a) Öğrendiği ses, hece, sözcük, cümleleri işitilebilir bir ses düzeyinde söyler.",
+			"b) Konuşmalarında konuşma hızını ayarlar.",
+			"c) Dinlediğini/izlediğini telaffuza dikkat ederek anlatır.",
+			"d) Konuşmalarında sözcükleri yerinde ve anlamına uygun kullanır.",
+			"e) Konuşmalarını mimiklerle destekler.",
+			"f) Konuşmalarını desteklemek için beden dilini kullanır."
+		],
+		"themes": [
+			"g1.turkce.t02",
+			"g1.turkce.t03",
+			"g1.turkce.t04",
+			"g1.turkce.t05",
+			"g1.turkce.t06",
+			"g1.turkce.t07",
+			"g1.turkce.t08",
+			"g1.turkce.t09"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 203,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.K.1.4": {
+		"grade": 1,
+		"subject": "turkce",
+		"text": "Konuşma sürecini değerlendirebilme",
+		"printed_code": "T.K.1.4.",
+		"steps": [
+			"a) Konuşmasındaki hatalarını fark eder.",
+			"b) Konuşmasında fark ettiği hataları düzeltir.",
+			"c) Konuşmasındaki olumlu davranışları sonraki konuşmalarına aktarır."
+		],
+		"themes": [
+			"g1.turkce.t08",
+			"g1.turkce.t09"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 203,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.O.1.1": {
+		"grade": 1,
+		"subject": "turkce",
+		"text": "Okuma sürecini yönetebilme",
+		"printed_code": "T.O.1.1.",
+		"steps": [
+			"a) Harf ve heceleri doğru seslendirir.",
+			"b) Sözcükleri doğru okur.",
+			"c) Basit ve kısa cümleleri doğru okur.",
+			"ç) Telaffuza dikkat ederek okur.",
+			"d) Öğrendiği ses, hece, sözcük veya cümleleri işitilebilir bir ses düzeyinde okur.",
+			"e) Okuyacağı metnin başlığı ve görsellerini inceler.",
+			"f) Kuralına uygun sesli ve sessiz okur.",
+			"g) Anlaşılabilir ve uygun bir hızda sesli okur.",
+			"ğ) Bir dizi kısa metin içerisinden seçtiği metni okur.",
+			"h) Noktalama işaretlerine dikkat ederek okur."
+		],
+		"themes": [
+			"g1.turkce.t02",
+			"g1.turkce.t03",
+			"g1.turkce.t04",
+			"g1.turkce.t05",
+			"g1.turkce.t06",
+			"g1.turkce.t07",
+			"g1.turkce.t08",
+			"g1.turkce.t09"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 203,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.O.1.2": {
+		"grade": 1,
+		"subject": "turkce",
+		"text": "Okudukları ile ilgili anlam oluşturabilme",
+		"printed_code": "T.O.1.2.",
+		"steps": [
+			"a) Metni okurken ön bilgilerini kullanır.",
+			"b) Okuduğu metindeki bilgiler ile ön bilgileri arasında bağlantı kurar.",
+			"c) Okuyacağı metnin başlığından ve görsellerinden hareketle metnin konusu hakkında tahminde bulunur.",
+			"ç) Okuduğu metindeki yönergeleri uygular."
+		],
+		"themes": [
+			"g1.turkce.t06",
+			"g1.turkce.t07",
+			"g1.turkce.t08",
+			"g1.turkce.t09"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 203,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.O.1.3": {
+		"grade": 1,
+		"subject": "turkce",
+		"text": "Okuduklarını çözümleyebilme",
+		"printed_code": "T.O.1.3.",
+		"steps": [
+			"a) Okuduğu metnin konusunu bulur."
+		],
+		"themes": [
+			"g1.turkce.t06",
+			"g1.turkce.t07",
+			"g1.turkce.t08",
+			"g1.turkce.t09"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 203,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.O.1.4": {
+		"grade": 1,
+		"subject": "turkce",
+		"text": "Okuma sürecine etki eden durumları gözden geçirebilme",
+		"printed_code": "T.O.1.4.",
+		"steps": [
+			"a) Okuduğu ortamın fiziksel özelliklerini açıklar."
+		],
+		"themes": [
+			"g1.turkce.t08",
+			"g1.turkce.t09"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 203,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.O.1.5": {
+		"grade": 1,
+		"subject": "turkce",
+		"text": "Okuma sürecini değerlendirebilme",
+		"printed_code": "T.O.1.5.",
+		"steps": [
+			"a) Okuma sürecindeki hatalarını belirler.",
+			"b) Okuma sürecinde belirlediği hatalarını düzeltir.",
+			"c) Okuma sürecindeki olumlu davranışlarını sonraki okumalarına aktarır."
+		],
+		"themes": [
+			"g1.turkce.t08",
+			"g1.turkce.t09"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 203,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.Y.1.1": {
+		"grade": 1,
+		"subject": "turkce",
+		"text": "Yazılı anlatım becerilerini yönetebilme",
+		"printed_code": "T.Y.1.1.",
+		"steps": [
+			"a) Yazma materyallerini kurala uygun kullanır.",
+			"b) Boyama ve çizgi çalışmaları yapar.",
+			"c) Hece, sözcük veya cümleler yazar.",
+			"ç) Kısa metinler yazar.",
+			"d) Verilen bir metni metne bakarak yazar.",
+			"e) Söylenen sözcük ve cümleleri yazar.",
+			"f) Yazışmalarını selamlaşma ve hitap ifadeleriyle başlatır."
+		],
+		"themes": [
+			"g1.turkce.t01",
+			"g1.turkce.t02",
+			"g1.turkce.t03",
+			"g1.turkce.t04",
+			"g1.turkce.t05",
+			"g1.turkce.t06",
+			"g1.turkce.t07",
+			"g1.turkce.t08",
+			"g1.turkce.t09"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 204,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.Y.1.2": {
+		"grade": 1,
+		"subject": "turkce",
+		"text": "Yazılarında içerik oluşturabilme",
+		"printed_code": "T.Y.1.2.",
+		"steps": [
+			"a) Görsellerle ilgili sözcük veya cümleler yazar.",
+			"b) Sözcük ve cümlelerde eksik bırakılan yerleri ön bilgileri doğrultusunda yazarak tamamlar.",
+			"c) Yazılarını karşıdakinin iletilerinden yola çıkarak devam ettirir.",
+			"ç) Yazılarında geçen nesneleri fiziksel özelliklerine göre karşılaştırır.",
+			"d) Yazılarında nesneleri fiziksel özelliklerine göre sınıflandırır.",
+			"e) Dinlediği, izlediği veya okuduğu bir metindeki olayları oluş sırasına göre kendi ifadeleriyle yazar.",
+			"f) Yazılı anlatımlarını zenginleştirmek için görseller kullanır.",
+			"g) Seçtiği görselden hareketle kısa bir metin yazar.",
+			"ğ) Muhatabına ne yazacağını dikkate alarak yazma çalışmaları yapar.",
+			"h) Yazılarında benzetmelere yer verir."
+		],
+		"themes": [
+			"g1.turkce.t02",
+			"g1.turkce.t03",
+			"g1.turkce.t04",
+			"g1.turkce.t06",
+			"g1.turkce.t07",
+			"g1.turkce.t08",
+			"g1.turkce.t09"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 204,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.Y.1.3": {
+		"grade": 1,
+		"subject": "turkce",
+		"text": "Yazma kurallarını uygulayabilme",
+		"printed_code": "T.Y.1.3.",
+		"steps": [
+			"a) Anlamlı ve kurallı cümleler yazar.",
+			"b) Harfleri temel formuna ve yazım yönlerine göre yazar.",
+			"c) Rakamları temel formuna ve yazım yönlerine göre yazar.",
+			"ç) Harf, sözcük veya cümleler arasında uygun boşluk bırakır.",
+			"d) Harflerin büyük yazılışını yerinde kullanır.",
+			"e) Anlamını bilmediği sözcüğün anlamını çevrim içi veya basılı kaynaklardan araştırarak yazar.",
+			"f) Yazılarında sözcükleri yerinde ve anlamına uygun kullanır.",
+			"g) Yazışmalarında mesajlarını açık ve anlaşılır şekilde ifade eder.",
+			"ğ) Yazılarında anlamlı ve kurallı cümleler kullanır.",
+			"h) Rakam ve sayıları kuralına uygun yazar.",
+			"ı) Büyük harfleri kuralına uygun yazar.",
+			"i) Yazılarında harfler, sözcükler ve satırlar arasında uygun boşluk bırakır.",
+			"j) Soru edatını (mı, mi) kuralına uygun yazar.",
+			"k) Yazılarında noktalama işaretlerini (nokta, kesme işareti, soru işareti, virgül ve ünlem) kuralına uygun kullanır."
+		],
+		"themes": [
+			"g1.turkce.t02",
+			"g1.turkce.t03",
+			"g1.turkce.t04",
+			"g1.turkce.t05",
+			"g1.turkce.t06",
+			"g1.turkce.t07",
+			"g1.turkce.t08",
+			"g1.turkce.t09"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 204,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.Y.1.4": {
+		"grade": 1,
+		"subject": "turkce",
+		"text": "Yazma sürecini değerlendirebilme",
+		"printed_code": "T.Y.1.4.",
+		"steps": [
+			"a) Yazılarında hatalarını bulur.",
+			"b) Yazılarında belirlediği hataları düzeltir.",
+			"c) Yazılarındaki uygun davranışları sonraki yazılarına aktarır."
+		],
+		"themes": [
+			"g1.turkce.t08",
+			"g1.turkce.t09"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 204,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.D.2.1": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Dinlemeyi/izlemeyi yönetebilme",
+		"printed_code": "T.D.2.1.",
+		"steps": [
+			"a) Dinleyeceklerini/izleyeceklerini amacına ve ilgi alanına uygun olarak seçer.",
+			"b) Dinleme kurallarına uygun olarak dinler.",
+			"c) Dinleme esnasında konuşmaya dâhil olmak için uygun zamanda söz alır."
+		],
+		"themes": [
+			"g2.turkce.t01",
+			"g2.turkce.t02",
+			"g2.turkce.t03",
+			"g2.turkce.t04",
+			"g2.turkce.t05",
+			"g2.turkce.t06",
+			"g2.turkce.t07",
+			"g2.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 205,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.D.2.2": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Dinledikleri/izledikleri ile ilgili anlam oluşturabilme",
+		"printed_code": "T.D.2.2.",
+		"steps": [
+			"a) Dinlediklerini yaşantı ve ön bilgileriyle karşılaştırarak çıkarımda bulunur.",
+			"b) Görsellerden hareketle dinleyeceği/izleyeceği metnin konusunu tahmin eder.",
+			"c) Dinlediklerinde/izlediklerinde geçen olayların öncesi hakkında tahminde bulunur.",
+			"ç) Dinlediklerinde/izlediklerinde geçen olayların sonrası hakkında tahminde bulunur.",
+			"d) Dinlediklerindeki/izlediklerindeki iletilerden ilgi alanına uygun çıkarımlar yapar.",
+			"e) Dinlediklerindeki/izlediklerindeki iletileri doğruluk, gerçeklik açısından ön bilgileriyle karşılaştırır.",
+			"f) Dinlediği/izlediği metnin içindeki bilgileri doğruluk, gerçeklik açısından karşılaştırır.",
+			"g) Dinlediklerindeki/izlediklerindeki farklı nesne ve karakterleri özelliklerine göre sınıflandırır.",
+			"ğ) Dinlediklerine/izlediklerine yönelik düşüncelerini ifade eder."
+		],
+		"themes": [
+			"g2.turkce.t01",
+			"g2.turkce.t02",
+			"g2.turkce.t03",
+			"g2.turkce.t04",
+			"g2.turkce.t05",
+			"g2.turkce.t06",
+			"g2.turkce.t07",
+			"g2.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 205,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.D.2.3": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Dinlediklerini/izlediklerini çözümleyebilme",
+		"printed_code": "T.D.2.3.",
+		"steps": [
+			"a) Dinlediği/izlediği metindeki olayları belirler.",
+			"b) Dinlediği/izlediği metnin konusunu bulur.",
+			"c) Dinlediği/izlediği farklı metinlerdeki iletilerin benzerlik ve farklılıklarını belirler.",
+			"ç) Dinlediğindeki/izlediğindeki söylem ve görsel arasındaki ilişkiyi belirler."
+		],
+		"themes": [
+			"g2.turkce.t01",
+			"g2.turkce.t02",
+			"g2.turkce.t03",
+			"g2.turkce.t04",
+			"g2.turkce.t05",
+			"g2.turkce.t06",
+			"g2.turkce.t07",
+			"g2.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 205,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.D.2.4": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Dinleme/izleme sürecine etki eden durumları gözden geçirebilme",
+		"printed_code": "T.D.2.4.",
+		"steps": [
+			"a) Dinleme/izleme yapacağı ortamın uygunluğunu gözden geçirir."
+		],
+		"themes": [
+			"g2.turkce.t04"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 205,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.D.2.5": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Dinleme/izleme sürecini değerlendirebilme",
+		"printed_code": "T.D.2.5.",
+		"steps": [
+			"a) Dinleme/izleme sürecindeki hatalarını belirler.",
+			"b) Dinlemesinde/izlemesinde belirlediği hataları düzeltir.",
+			"c) Dinlemesindeki/izlemesindeki uygun davranışlarını sonraki dinlemelerine aktarır."
+		],
+		"themes": [
+			"g2.turkce.t04",
+			"g2.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 205,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.K.2.1": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Konuşmalarını yönetebilme",
+		"printed_code": "T.K.2.1.",
+		"steps": [
+			"a) Konunun özelliğine göre konuşma üslubunu belirler.",
+			"b) Konuşma türüne göre konuşmasını belirler.",
+			"c) Konuşma amacına göre konuşmasını belirler.",
+			"ç) Konuşma sırasında dinleyiciler ile göz teması kurar.",
+			"d) İletişim sırasında uygun zamanda söz alır.",
+			"e) Konuşmalarında selamlaşma ve hitap ile ilgili ifadeler kullanır.",
+			"f) Belirlenen bir konuda konuşma planı hazırlar."
+		],
+		"themes": [
+			"g2.turkce.t01",
+			"g2.turkce.t02",
+			"g2.turkce.t03",
+			"g2.turkce.t04",
+			"g2.turkce.t05",
+			"g2.turkce.t06",
+			"g2.turkce.t07",
+			"g2.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 205,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.K.2.2": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Konuşmalarında içerik oluşturabilme",
+		"printed_code": "T.K.2.2.",
+		"steps": [
+			"a) Dinlediklerini/izlediklerini ifade ederken ön bilgilerini kullanır.",
+			"b) Görsellerden hareketle olayların oluş sırası hakkında tahminlerde bulunur.",
+			"c) Dinledikleri, izledikleri veya okudukları metinlerdeki kişilerin benzer ve farklı yönlerini açıklar.",
+			"ç) Verilen görsellerden hareketle karakterleri veya nesneleri benzer özelliklerine göre sınıflandırarak anlatır.",
+			"d) Konuşmalarında zıt anlamlı sözcükleri kullanır.",
+			"e) Dinlediği, izlediği veya okuduğu bir metindeki olayları oluş sırasına göre kendi ifadeleriyle anlatır.",
+			"f) Dinlediği, izlediği veya okuduğu bir metindeki görüşlere katılıp katılmadığını nedenleriyle ifade eder.",
+			"g) Konuşmalarında benzetmelere yer verir.",
+			"ğ) Dinlediği, izlediği veya okuduğu metindeki neden-sonuç ilişkisini söyler.",
+			"h) Konuşmalarını desteklemek için görseller kullanır."
+		],
+		"themes": [
+			"g2.turkce.t01",
+			"g2.turkce.t02",
+			"g2.turkce.t03",
+			"g2.turkce.t04",
+			"g2.turkce.t05",
+			"g2.turkce.t06",
+			"g2.turkce.t07",
+			"g2.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 205,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.K.2.3": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Konuşma kurallarını uygulayabilme",
+		"printed_code": "T.K.2.3.",
+		"steps": [
+			"a) Konuşmalarında konuşma hızını ayarlar.",
+			"b) Dinleyici kitlesi ve konunun özelliğine göre hazırladığı plana uygun konuşur.",
+			"c) Konuşmalarında vurgu ve tonlamaya dikkat eder.",
+			"ç) Konuşmalarında sözcükleri yerinde ve anlamına uygun kullanır.",
+			"d) Günlük hayatta karşılaştığı bir olayla ilgili düşüncelerini açık ve anlaşılır cümlelerle ifade eder.",
+			"e) Konuşmalarında anlamlı ve kurallı cümleler kullanır.",
+			"f) Konuşmalarında bağlama ögelerini (ile, ve, ama, çünkü) doğru kullanır.",
+			"g) Konuşmalarını jest ve mimiklerle destekler.",
+			"ğ) Konuşmalarını desteklemek için beden dilini kullanır.",
+			"h) Konuşma sürecinde beden dilini yerinde kullanır."
+		],
+		"themes": [
+			"g2.turkce.t01",
+			"g2.turkce.t02",
+			"g2.turkce.t03",
+			"g2.turkce.t04",
+			"g2.turkce.t05",
+			"g2.turkce.t06",
+			"g2.turkce.t07",
+			"g2.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 206,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.K.2.4": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Konuşma sürecine etki eden durumları gözden geçirebilme",
+		"printed_code": "T.K.2.4.",
+		"steps": [
+			"a) Konuşma yapacağı ortamın uygunluğunu gözden geçirir."
+		],
+		"themes": [
+			"g2.turkce.t06"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 206,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.K.2.5": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Konuşma sürecini değerlendirebilme",
+		"printed_code": "T.K.2.5.",
+		"steps": [
+			"a) Konuşmasında fark ettiği hataları düzeltir.",
+			"b) Konuşmasındaki olumlu davranışları fark eder.",
+			"c) Konuşmasındaki olumlu davranışları sonraki konuşmalarına aktarır."
+		],
+		"themes": [
+			"g2.turkce.t03",
+			"g2.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 206,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.O.2.1": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Okuma sürecini yönetebilme",
+		"printed_code": "T.O.2.1.",
+		"steps": [
+			"a) Okuyacağı metnin başlığı ve görsellerini inceler.",
+			"b) Okuyacağı metni ilgi alanına göre seçer.",
+			"c) Kuralına uygun sesli ve sessiz okur.",
+			"ç) Noktalama işaretlerine dikkat ederek okur."
+		],
+		"themes": [
+			"g2.turkce.t01",
+			"g2.turkce.t02",
+			"g2.turkce.t03",
+			"g2.turkce.t04",
+			"g2.turkce.t05",
+			"g2.turkce.t06",
+			"g2.turkce.t07",
+			"g2.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 206,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.O.2.2": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Okudukları ile ilgili anlam oluşturabilme",
+		"printed_code": "T.O.2.2.",
+		"steps": [
+			"a) Okuduğu metindeki bilgiler ile ön bilgileri arasında bağlantı kurar.",
+			"b) Okuyacağı metnin başlığından ve görsellerinden hareketle metnin konusu hakkında tahminde bulunur.",
+			"c) Metnin başlığı ve görsellerinden hareketle metinde geçen bilgiler/olaylar hakkında tahminde bulunur.",
+			"ç) Okuduğu metindeki verilerden yararlanarak içeriğe uygun çıkarımlar yapar.",
+			"d) Okuduğu metindeki iletileri ön bilgileri ile karşılaştırır.",
+			"e) Okuduğu metindeki nesne ve kişileri özelliklerine göre sınıflandırır.",
+			"f) Okuduğu metindeki zıt anlamlı sözcükleri bulur.",
+			"g) Okuduğu metindeki iletilere katılıp katılmadığını ifade eder."
+		],
+		"themes": [
+			"g2.turkce.t01",
+			"g2.turkce.t02",
+			"g2.turkce.t03",
+			"g2.turkce.t04",
+			"g2.turkce.t05",
+			"g2.turkce.t06",
+			"g2.turkce.t07",
+			"g2.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 206,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.O.2.3": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Okuduklarını çözümleyebilme",
+		"printed_code": "T.O.2.3.",
+		"steps": [
+			"a) Okuduğu metindeki karakter, olay ve bilgileri açıklar.",
+			"b) Okuduğu metnin konusunu bulur.",
+			"c) Okuduğu metindeki iletilerin benzerlik ve/veya farklılıklarını belirler.",
+			"ç) Okuduğu metindeki içerik ve görsel (tablo, grafik vb.) arasındaki ilişkiyi belirler."
+		],
+		"themes": [
+			"g2.turkce.t01",
+			"g2.turkce.t02",
+			"g2.turkce.t03",
+			"g2.turkce.t04",
+			"g2.turkce.t05",
+			"g2.turkce.t06",
+			"g2.turkce.t07",
+			"g2.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 206,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.O.2.4": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Okuma sürecine etki eden durumları gözden geçirebilme",
+		"printed_code": "T.O.2.4.",
+		"steps": [
+			"a) Okuduğu ortamın okumasına etkisini açıklar.",
+			"b) Okuma yapacağı ortamın fiziksel özelliklerini dikkate alarak okur."
+		],
+		"themes": [
+			"g2.turkce.t04",
+			"g2.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 207,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.O.2.5": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Okuma sürecini değerlendirebilme",
+		"printed_code": "T.O.2.5.",
+		"steps": [
+			"a) Okuma sürecindeki hatalarını belirler.",
+			"b) Okuma sürecinde belirlediği hatalarını düzeltir.",
+			"c) Okuma sürecindeki olumlu davranışlarını sonraki okumalarına aktarır."
+		],
+		"themes": [
+			"g2.turkce.t07",
+			"g2.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 207,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.Y.2.1": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Yazılı anlatım becerilerini yönetebilme",
+		"printed_code": "T.Y.2.1.",
+		"steps": [
+			"a) Verilen bir yazma görevini hazırlık yaparak yazar.",
+			"b) Verilen bir yazma görevini belirlediği yazı türüne göre yazar.",
+			"c) Yazışmalarını selamlaşma ve hitap ifadeleriyle başlatır.",
+			"ç) Yazışmalarını uygun ifadeleri kullanarak sonlandırır.",
+			"d) Belirlenen bir konuda yazma planı hazırlar."
+		],
+		"themes": [
+			"g2.turkce.t01",
+			"g2.turkce.t02",
+			"g2.turkce.t03",
+			"g2.turkce.t04",
+			"g2.turkce.t05",
+			"g2.turkce.t06",
+			"g2.turkce.t07",
+			"g2.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 207,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.Y.2.2": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Yazılarında içerik oluşturabilme",
+		"printed_code": "T.Y.2.2.",
+		"steps": [
+			"a) Bir metinde eksik bırakılan cümleleri ön bilgilerini kullanarak yazar.",
+			"b) Yarım bırakılan bir metni ön bilgilerinden hareketle yazar.",
+			"c) Bir sözcüğün anlamına ilişkin tahminlerini bağlamdan yararlanarak yazar.",
+			"ç) Eksik bırakılan bir metni tahminleri doğrultusunda yazar.",
+			"d) Yazılarında kişi ve nesneleri benzerlik ve/veya farklılık bakımından karşılaştırır.",
+			"e) Verilen görsellerden hareketle karakterleri veya nesneleri benzer özelliklerine göre sınıflandırarak yazar.",
+			"f) Yazılarında sözcükleri anlamına uygun kullanır.",
+			"g) Dinlediği, izlediği veya okuduğu bir metindeki olayları oluş sırasına göre kendi ifadeleriyle yazar.",
+			"ğ) Basit yönergeler yazar.",
+			"h) Dinlediği, izlediği veya okuduğu bir metindeki görüşlere katılıp katılmadığını nedenleriyle yazar.",
+			"ı) İstek ve önerilerini yazarak (tebrik, mektup ve anlık ileti) ifade eder.",
+			"i) Yazılı anlatımlarını desteklemek için görseller kullanır.",
+			"j) Görsellerle destekleyerek oluşturduğu mektup, anlık ileti türlerindeki yazılarını sunar.",
+			"k) Yazılarında benzetmelere yer verir.",
+			"l) Yazılarında örneklendirmeye yer verir.",
+			"m) Dinlediği, izlediği veya okuduğu metindeki neden-sonuç ilişkisini yazar."
+		],
+		"themes": [
+			"g2.turkce.t01",
+			"g2.turkce.t02",
+			"g2.turkce.t03",
+			"g2.turkce.t04",
+			"g2.turkce.t05",
+			"g2.turkce.t06",
+			"g2.turkce.t07",
+			"g2.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 207,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.Y.2.3": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Yazma kurallarını uygulayabilme",
+		"printed_code": "T.Y.2.3.",
+		"steps": [
+			"a) Hedef kitle ve konunun özelliğine göre hazırladığı plana uygun yazar.",
+			"b) Anlamını bilmediği sözcüğün anlamını çevrim içi veya basılı kaynaklardan araştırarak yazar.",
+			"c) Yazılarında sözcükleri yerinde kullanır.",
+			"ç) Yazışmalarında mesajlarını birden çok cümleyle açık ve anlaşılır şekilde ifade eder.",
+			"d) Soru edatını (mı, mi) kuralına uygun yazar.",
+			"e) Kısaltmaları kuralına uygun yazar.",
+			"f) Büyük harfleri kuralına uygun yazar.",
+			"g) Yazılarında yazım alanını uygun şekilde (yazıyı sayfaya hizalama, paragraf başı, satır sonuna sığmayan sözcükler vb.) kullanır.",
+			"ğ) Yazılarında noktalama işaretlerini (nokta, kesme işareti, virgül, iki nokta, ünlem, tırnak işareti, soru işareti ve kısa çizgi) kuralına uygun kullanır."
+		],
+		"themes": [
+			"g2.turkce.t01",
+			"g2.turkce.t02",
+			"g2.turkce.t03",
+			"g2.turkce.t04",
+			"g2.turkce.t05",
+			"g2.turkce.t06",
+			"g2.turkce.t07",
+			"g2.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 207,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.Y.2.4": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Yazma sürecine etki eden durumları gözden geçirebilme",
+		"printed_code": "T.Y.2.4.",
+		"steps": [
+			"a) Yazma yapacağı ortamın uygunluğunu gözden geçirir."
+		],
+		"themes": [
+			"g2.turkce.t05"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 208,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.Y.2.5": {
+		"grade": 2,
+		"subject": "turkce",
+		"text": "Yazma sürecini değerlendirebilme",
+		"printed_code": "T.Y.2.5.",
+		"steps": [
+			"a) Yazılarında hatalarını bulur.",
+			"b) Yazılarında belirlediği hataları düzeltir.",
+			"c) Yazılarındaki uygun davranışları sonraki yazılarına aktarır."
+		],
+		"themes": [
+			"g2.turkce.t04"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 208,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.D.3.1": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Dinlemeyi/izlemeyi yönetebilme",
+		"printed_code": "T.D.3.1.",
+		"steps": [
+			"a) Dinleyeceklerini/izleyeceklerini amacına ve ilgi alanına uygun olarak seçer.",
+			"b) Konuya ve amacına uygun olarak dinleme/izleme stratejisini seçer.",
+			"c) Dinleme kurallarına uygun olarak dinler.",
+			"ç) Dinlediği konuya ilişkin düşüncelerini belirtmek için uygun zamanda söz alır."
+		],
+		"themes": [
+			"g3.turkce.t01",
+			"g3.turkce.t02",
+			"g3.turkce.t03",
+			"g3.turkce.t04",
+			"g3.turkce.t05",
+			"g3.turkce.t06",
+			"g3.turkce.t07",
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 209,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.D.3.2": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Dinledikleri/izledikleri ile ilgili anlam oluşturabilme",
+		"printed_code": "T.D.3.2.",
+		"steps": [
+			"a) Görsellerden hareketle dinleyeceği/izleyeceği metnin konusunu tahmin eder.",
+			"b) Dinlediklerinde/izlediklerinde geçen olayların öncesi hakkında tahminde bulunur.",
+			"c) Dinlediklerinde/izlediklerinde geçen olayların sonrası hakkında tahminde bulunur.",
+			"ç) Dinlediklerindeki/izlediklerindeki bilgiler ile ön bilgileri arasında bağlantı kurar.",
+			"d) Dinlediklerindeki/izlediklerindeki iletilerden amacına ve ilgi alanına uygun çıkarımlar yapar.",
+			"e) Dinlediklerindeki/izlediklerindeki iletileri doğruluk, gerçeklik açısından ön bilgileriyle karşılaştırır.",
+			"f) Dinlediği/izlediği metnin içindeki bilgileri doğruluk, gerçeklik açısından karşılaştırır.",
+			"g) Dinlediklerindeki/izlediklerindeki farklı durum, nesne ve karakterleri özelliklerine göre sınıflandırır.",
+			"ğ) Dinlediklerine/izlediklerine yönelik düşüncelerini nedenleriyle ifade eder.",
+			"h) Dinlediklerindeki/izlediklerindeki iletilere ilişkin önerilerde bulunur.",
+			"ı) Dinlediklerine/izlediklerine ilişkin düşüncelerini sözlü ve sözsüz iletişim unsurları ile ifade eder."
+		],
+		"themes": [
+			"g3.turkce.t01",
+			"g3.turkce.t02",
+			"g3.turkce.t03",
+			"g3.turkce.t04",
+			"g3.turkce.t05",
+			"g3.turkce.t06",
+			"g3.turkce.t07",
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 209,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.D.3.3": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Dinlediklerini/izlediklerini çözümleyebilme",
+		"printed_code": "T.D.3.3.",
+		"steps": [
+			"a) Dinlediği/izlediği metindeki olayları belirler.",
+			"b) Dinlediği/izlediği metindeki ana fikri/ana duyguyu bulur.",
+			"c) Dinlediği/izlediği metnin konusunu bulur.",
+			"ç) Dinlediği/izlediği farklı metinlerdeki iletilerin benzerlik ve farklılıklarını belirler.",
+			"d) Dinlediği/izlediği farklı metinlerdeki iletileri benzerlik ve farklılık yönüyle ilişkilendirir.",
+			"e) Dinlediğindeki/izlediğindeki söylem ve görsel arasındaki ilişkiyi açıklar."
+		],
+		"themes": [
+			"g3.turkce.t01",
+			"g3.turkce.t02",
+			"g3.turkce.t03",
+			"g3.turkce.t04",
+			"g3.turkce.t05",
+			"g3.turkce.t06",
+			"g3.turkce.t07",
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 209,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.D.3.4": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Dinleme/izleme sürecine etki eden durumları gözden geçirebilme",
+		"printed_code": "T.D.3.4.",
+		"steps": [
+			"a) Dinleme/izleme yapacağı ortamın uygunluğunu gözden geçirir.",
+			"b) Dinleme/izleme ortamının dinleme sürecindeki duygu, düşünce ve davranışlarına etkisini açıklar."
+		],
+		"themes": [
+			"g3.turkce.t06",
+			"g3.turkce.t07",
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 209,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.D.3.5": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Dinleme/izleme sürecini değerlendirebilme",
+		"printed_code": "T.D.3.5.",
+		"steps": [
+			"a) Dinlemelerinde/izlemelerinde tercih ettiği dinleme/izleme stratejilerini açıklar.",
+			"b) Dinleyecekleri/izleyecekleri türü tercih nedenleri ile belirtir.",
+			"c) Dinlemesindeki/izlemesindeki uygun davranışlarını sonraki dinlemelerine aktarır."
+		],
+		"themes": [
+			"g3.turkce.t03",
+			"g3.turkce.t06",
+			"g3.turkce.t07",
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 209,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.K.3.1": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Konuşmalarını yönetebilme",
+		"printed_code": "T.K.3.1.",
+		"steps": [
+			"a) Konunun özelliğine göre konuşma üslubunu belirler.",
+			"b) Konuşma türüne göre konuşmasını belirler.",
+			"c) Konuşma amacına göre konuşmasını belirler.",
+			"ç) Konuşma kurallarına uygun (ses düzeyi, nezaket ifadeleri, göz teması) bir biçimde iletişimi sürdürür.",
+			"d) Belirlenen bir konuda konuşma planı hazırlar."
+		],
+		"themes": [
+			"g3.turkce.t01",
+			"g3.turkce.t02",
+			"g3.turkce.t03",
+			"g3.turkce.t04",
+			"g3.turkce.t05",
+			"g3.turkce.t06",
+			"g3.turkce.t07",
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 209,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.K.3.2": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Konuşmalarında içerik oluşturabilme",
+		"printed_code": "T.K.3.2.",
+		"steps": [
+			"a) Konuşmanın içeriğine uygun olarak yaşantı ve ön bilgilerinden örnekler verir.",
+			"b) Dinlediği bir konuşmanın nasıl sonuçlanacağına dair tahminlerde bulunur.",
+			"c) Bir konu hakkında hazırladığı konuşma planına uygun konuşur.",
+			"ç) Dinledikleri, izledikleri veya okudukları metinlerdeki nesne ve kişileri karşılaştırır.",
+			"d) Konuşmalarında farklı karakter, olay ve nesneleri özelliklerine göre sınıflandırır.",
+			"e) Konuşmalarında zıt anlamlı sözcükleri kullanır.",
+			"f) Konuşmalarında eş anlamlı sözcükleri kullanır.",
+			"g) Dinlediklerini, izlediklerini veya okuduklarını mantıksal ilişkilere bağlı olarak kendi cümleleriyle ifade eder.",
+			"ğ) Sözlü iletişimde katılmadığı görüşlere ilişkin nedenleri ifade eder.",
+			"h) Sözlü iletişimde katılmadığı görüşlere ilişkin önerilerde bulunur.",
+			"ı) Konuşmalarında benzetmelere yer verir.",
+			"i) Konuşmalarında örneklendirmeye yer verir.",
+			"j) Görsellerden hareketle konuşma içeriği oluşturur.",
+			"k) Dinleyici grubunun özelliklerini dikkate alarak belirli bir konuda sunum yapar.",
+			"l) Dinlediği, izlediği veya okuduğu metindeki neden-sonuç ilişkisini söyler.",
+			"m) Sık karşılaşılan atasözlerinin anlamlarını söyler."
+		],
+		"themes": [
+			"g3.turkce.t01",
+			"g3.turkce.t02",
+			"g3.turkce.t03",
+			"g3.turkce.t04",
+			"g3.turkce.t05",
+			"g3.turkce.t06",
+			"g3.turkce.t07",
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 209,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.K.3.3": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Konuşma kurallarını uygulayabilme",
+		"printed_code": "T.K.3.3.",
+		"steps": [
+			"a) Konuşmanın özelliğine uygun olarak ses düzeyini ayarlar.",
+			"b) Dinleyici kitlesi ve konunun özelliğine göre hazırladığı plana uygun konuşur.",
+			"c) Konuşmalarında vurgu ve tonlamaya dikkat eder.",
+			"ç) Konuşmalarında sözcükleri yerinde ve anlamına uygun kullanır.",
+			"d) Sık karşılaşılan atasözlerini konuşma bağlamına uygun kullanır.",
+			"e) Konuşmasındaki mesajları açık ve anlaşılır cümlelerle ifade eder.",
+			"f) Konuşmalarında içeriğe uygun zaman ifadelerini kullanır.",
+			"g) Konuşmalarında anlamlı ve kurallı cümleler kullanır.",
+			"ğ) Konuşmalarında bağlama ögelerini (ile, ve, veya, ya da, ama, çünkü) doğru kullanır.",
+			"h) Konuşmalarını jest ve mimiklerle destekler.",
+			"ı) Konuşma sürecinde beden dilini yerinde kullanır."
+		],
+		"themes": [
+			"g3.turkce.t01",
+			"g3.turkce.t02",
+			"g3.turkce.t03",
+			"g3.turkce.t04",
+			"g3.turkce.t05",
+			"g3.turkce.t06",
+			"g3.turkce.t07",
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 210,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.K.3.4": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Konuşma sürecine etki eden durumları gözden geçirebilme",
+		"printed_code": "T.K.3.4.",
+		"steps": [
+			"a) Konuşma yapacağı ortamın uygunluğunu gözden geçirir.",
+			"b) Konuşma ortamının konuşma sürecindeki duygu, düşünce ve davranışlarına etkisini açıklar."
+		],
+		"themes": [
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 210,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.K.3.5": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Konuşma sürecini değerlendirebilme",
+		"printed_code": "T.K.3.5.",
+		"steps": [
+			"a) Başkalarının konuşmalarındaki hataları fark eder.",
+			"b) Konuşmasındaki olumlu davranışları sonraki konuşmalarına aktarır."
+		],
+		"themes": [
+			"g3.turkce.t03",
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 210,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.O.3.1": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Okuma sürecini yönetebilme",
+		"printed_code": "T.O.3.1.",
+		"steps": [
+			"a) Okuyacağı metnin başlığı ve görsellerini inceler.",
+			"b) Noktalama işaretlerine dikkat ederek okur.",
+			"c) Okuyacağı metni ilgi alanına ve amacına göre seçer.",
+			"ç) Okuyacağı konuya veya okuma amacına göre okuma stratejisine karar verir."
+		],
+		"themes": [
+			"g3.turkce.t01",
+			"g3.turkce.t02",
+			"g3.turkce.t03",
+			"g3.turkce.t04",
+			"g3.turkce.t05",
+			"g3.turkce.t06",
+			"g3.turkce.t07",
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 210,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.O.3.2": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Okudukları ile ilgili anlam oluşturabilme",
+		"printed_code": "T.O.3.2.",
+		"steps": [
+			"a) Okuduğu metindeki bilgiler ile ön bilgileri arasında bağlantı kurar.",
+			"b) Metnin başlığı ve görsellerinden hareketle metinde geçen bilgiler/olaylar hakkında tahminde bulunur.",
+			"c) Okuduğu metinde geçen bilgilerin/olayların öncesi hakkında tahminde bulunur.",
+			"ç) Okuma sırasında metinde verilen bilgilerden ve görsellerden hareketle metinde geçen bilgilerin/olayların sırası hakkında tahminde bulunur.",
+			"d) Okuma sırasında metinde verilen bilgilerden ve görsellerden hareketle metinde geçen bilgilerin/olayların sonrası hakkında tahminde bulunur.",
+			"e) Okuduğu metindeki verilerden yararlanarak metnin amacına uygun çıkarım yapar.",
+			"f) Okuduğu metindeki iletileri ön bilgileri ile karşılaştırır.",
+			"g) Okuduğu metindeki iletileri metnin içindeki diğer bilgilerle karşılaştırır.",
+			"ğ) Okuduğu metindeki olay, nesne ve kişileri özelliklerine göre sınıflandırır.",
+			"h) Okuduğu metindeki zıt anlamlı ve eş anlamlı sözcükleri bulur.",
+			"ı) Okuduğu metindeki iletilere katılıp katılmadığını nedenleriyle ifade eder.",
+			"i) Okuduğu metindeki içeriğe ilişkin farklı önerilerde bulunur.",
+			"j) Okuyacağı metnin başlığı ve görsellerinden hareketle metnin içeriği hakkında görüş oluşturur."
+		],
+		"themes": [
+			"g3.turkce.t01",
+			"g3.turkce.t02",
+			"g3.turkce.t03",
+			"g3.turkce.t04",
+			"g3.turkce.t05",
+			"g3.turkce.t06",
+			"g3.turkce.t07",
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 210,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.O.3.3": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Okuduklarını çözümleyebilme",
+		"printed_code": "T.O.3.3.",
+		"steps": [
+			"a) Okuduğu metindeki karakter, olay, bilgi veya duyguları açıklar.",
+			"b) Okuduğu metnin konusunu bulur.",
+			"c) Okuduğu metindeki ana fikri/ana duyguyu bulur.",
+			"ç) Okuduğu metindeki iletileri benzerlik ve/veya farklılık yönüyle ilişkilendirir.",
+			"d) Gerçek ve mecaz anlamlı sözcüklerin metinle ilişkisini belirler.",
+			"e) Okuduğu metindeki noktalama işaretlerinin içerikle ilişkisini belirler."
+		],
+		"themes": [
+			"g3.turkce.t01",
+			"g3.turkce.t02",
+			"g3.turkce.t03",
+			"g3.turkce.t04",
+			"g3.turkce.t05",
+			"g3.turkce.t06",
+			"g3.turkce.t07",
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 211,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.O.3.4": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Okuma sürecine etki eden durumları gözden geçirebilme",
+		"printed_code": "T.O.3.4.",
+		"steps": [
+			"a) Okuma yapacağı ortamın uygunluğunu değerlendirir.",
+			"b) Okuma yapacağı ortamın fiziksel özelliklerini dikkate alarak okur."
+		],
+		"themes": [
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 211,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.O.3.5": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Okuma sürecini değerlendirebilme",
+		"printed_code": "T.O.3.5.",
+		"steps": [
+			"a) Okuma sürecinde belirlediği hatalarını düzeltir.",
+			"b) Okuma sürecindeki olumlu davranışlarını sonraki okumalarına aktarır.",
+			"c) Tür veya ilgi alanına göre okuma tercihini belirtir.",
+			"ç) Basılı materyali okuma sürecindeki olumlu davranışlarını çevrim içi okuma sürecine aktarır."
+		],
+		"themes": [
+			"g3.turkce.t03",
+			"g3.turkce.t06",
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 211,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.Y.3.1": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Yazılı anlatım becerilerini yönetebilme",
+		"printed_code": "T.Y.3.1.",
+		"steps": [
+			"a) Verilen bir yazma görevine uygun biçimde hazırlıksız yazı yazar.",
+			"b) Verilen bir yazma görevini belirlediği yazı türüne göre yazar.",
+			"c) Yazışmalarını içeriğe ve amacına uygun ifadelerle sürdürür.",
+			"ç) Yazışmayı başlatma, sürdürme ve sonlandırmayla ilgili uygun ifadeler kullanır.",
+			"d) Çevrim içi yazılarında yazışmayı başlatma, sürdürme ve sonlandırmayla ilgili uygun ifadeler kullanır.",
+			"e) İmzasında adını ve soyadını özgün bir şekilde kullanır.",
+			"f) Belirlenen bir konuda yazma planı hazırlar."
+		],
+		"themes": [
+			"g3.turkce.t02",
+			"g3.turkce.t03",
+			"g3.turkce.t04",
+			"g3.turkce.t05",
+			"g3.turkce.t06",
+			"g3.turkce.t07",
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 211,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.Y.3.2": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Yazılarında içerik oluşturabilme",
+		"printed_code": "T.Y.3.2.",
+		"steps": [
+			"a) Metnin eksik bırakılan bölümlerini ön bilgilerinden hareketle devam ettirir.",
+			"b) Bir sözcüğün anlamına ilişkin tahminlerini bağlamdan yararlanarak yazar.",
+			"c) Dinlediği, izlediği veya okuduğu bir metne ilişkin çıkarımlarını planlı biçimde yazar.",
+			"ç) Yazılarında kişi ve nesneleri benzerlik ve/veya farklılık bakımından karşılaştırır.",
+			"d) Yazılarında karakter, olay ve nesneleri özelliklerine göre sınıflandırır.",
+			"e) Yazılarında zıt anlamlı sözcükleri kullanır.",
+			"f) Yazılarında eş anlamlı sözcükleri kullanır.",
+			"g) Dinlediği, izlediği bir olayı veya okuduklarını kendi ifadeleriyle yazar.",
+			"ğ) Ayrıntılı yönergeler yazar.",
+			"h) Yazılı iletişimde katılmadığı görüşlere ilişkin önerilerde bulunur.",
+			"ı) İstek, şikâyet ve önerilerini yazarak (mektup, dilekçe, tebrik, anlık ileti) ifade eder.",
+			"i) Yazılı anlatımlarının içeriğini oluşturmak için görseller kullanır.",
+			"j) Edindiği bilginin kaynağını yazar.",
+			"k) Hedef kitleye görsellerle desteklenmiş açıklayıcı türdeki yazılarını sunar.",
+			"l) Hedef kitleye görsellerle desteklenmiş öyküleyici türdeki yazılarını sunar.",
+			"m) Dijital araçları kullanarak hedef kitleye uygun türde yazılarını sunar.",
+			"n) Yazılarında benzetme ve örneklendirmeye yer verir.",
+			"o) Dinlediği, izlediği veya okuduğu metindeki neden-sonuç ilişkisini yazar."
+		],
+		"themes": [
+			"g3.turkce.t01",
+			"g3.turkce.t02",
+			"g3.turkce.t03",
+			"g3.turkce.t04",
+			"g3.turkce.t05",
+			"g3.turkce.t06",
+			"g3.turkce.t07",
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 211,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.Y.3.3": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Yazma kurallarını uygulayabilme",
+		"printed_code": "T.Y.3.3.",
+		"steps": [
+			"a) Hedef kitle ve konunun özelliğine göre hazırladığı plana uygun yazar.",
+			"b) Yazılarında sözcükleri yerinde ve anlamına uygun kullanır.",
+			"c) Yazılarında sık karşılaşılan deyim ve atasözlerini içeriğe uygun kullanır.",
+			"ç) Yazışmalarında/çevrim içi yazışmalarında mesajlarını birden çok cümleyle açık ve anlaşılır şekilde ifade eder.",
+			"d) Kısaltmalara gelen ekleri kuralına uygun yazar.",
+			"e) Pekiştirmeli sözcükleri doğru yazar.",
+			"f) Büyük harfleri kuralına uygun yazar.",
+			"g) Yazılarında noktalama işaretlerini (nokta, kesme işareti, virgül, iki nokta, ünlem, tırnak işareti, soru işareti, kısa çizgi, konuşma çizgisi, yay ayraç, üç nokta ve eğik çizgi) kuralına uygun kullanır."
+		],
+		"themes": [
+			"g3.turkce.t01",
+			"g3.turkce.t02",
+			"g3.turkce.t03",
+			"g3.turkce.t04",
+			"g3.turkce.t05",
+			"g3.turkce.t06",
+			"g3.turkce.t07",
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 212,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.Y.3.4": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Yazma sürecine etki eden durumları gözden geçirebilme",
+		"printed_code": "T.Y.3.4.",
+		"steps": [
+			"a) Yazma yapacağı ortamın uygunluğunu gözden geçirir.",
+			"b) Yazma ortamının yazma sürecindeki duygu, düşünce ve davranışlarına etkisini açıklar."
+		],
+		"themes": [
+			"g3.turkce.t08"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 212,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
+	},
+	"T.Y.3.5": {
+		"grade": 3,
+		"subject": "turkce",
+		"text": "Yazma sürecini değerlendirebilme",
+		"printed_code": "T.Y.3.5.",
+		"steps": [
+			"a) Yazılarında hatalarını bulur.",
+			"b) Yazılarında belirlediği hataları düzeltir.",
+			"c) Yazılarındaki uygun davranışları sonraki yazılarına aktarır."
+		],
+		"themes": [
+			"g3.turkce.t04"
+		],
+		"source": {
+			"doc": "İlkokul Türkçe Dersi Öğretim Programı",
+			"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+			"page": 212,
+			"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-turkce-dersi_20260902_111433_940.pdf"
+		}
 	}
 }
