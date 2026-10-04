@@ -29,8 +29,14 @@ Kurallar: [`docs/assets/style-guide.md`](../docs/assets/style-guide.md) · [`doc
 | 016 | Faz 4a Türkçe şablonları: sayfa çevirme sesi (`sfx.page_turn`) | Düşük | ⏳ Bekliyor |
 | 023 | Ağaç Evi süs eşyaları (12 `decor.*`) | Orta | ⏳ Bekliyor |
 | 024 | Faz 7a seslendirmesi: Tekrar Bulutu girişi + Ağaç Evi (3 satır) | Orta | ⏳ Bekliyor |
+| 070 | Faz 4c: 2. sınıf Türkçe seslendirmesi (430 satır, 8 tema) | Yüksek | ⏳ Bekliyor |
+| 071 | Faz 4c: 3. sınıf Türkçe seslendirmesi (515 satır, 8 tema) | Yüksek | ⏳ Bekliyor |
+| 072 | Faz 4c: Türkçe kart sözcükleri seslendirmesi (217 satır, `vo.tk.*`) | Orta | ⏳ Bekliyor |
+| 073 | Faz 4c: 2. sınıf Türkçe hikâye ve durum görselleri | Orta | ⏳ Bekliyor |
+| 074 | Faz 4c: 3. sınıf Türkçe hikâye ve durum görselleri | Orta | ⏳ Bekliyor |
+| 075 | Faz 4c: 2–3. sınıf Türkçe çıkartmaları (80) | Orta | ⏳ Bekliyor |
 
-Önerilen sıra: 001 → 003 → 002 → 004 → 005 → 007 → 006 → 008 → 009 → 010 → 015 → 016 → 023 → 024. Bilge karakter sayfası diğer bütün partilerin stil referansıdır.
+Önerilen sıra: 001 → 003 → 002 → 004 → 005 → 007 → 006 → 008 → 009 → 010 → 015 → 016 → 023 → 024 → 070 → 071 → 072 → 073 → 074 → 075. Bilge karakter sayfası diğer bütün partilerin stil referansıdır.
 
 ## Geliştiriciler (agent) için
 - Yeni bir içerik ünitesi eklendiğinde eksik asset'ler için `tools/missing_assets.gd` çalıştırılır ve sıradaki numarayla yeni bir parti dosyası açılır.
