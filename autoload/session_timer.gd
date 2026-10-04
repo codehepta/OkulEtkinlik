@@ -1,6 +1,10 @@
 extends Node
-## Günlük süre sınırı. Etkin gün = max(saat günü, last_day_seen); saat geri alınsa
-## bile kullanım sıfırlanmaz. Ebeveyn kilidi açması yalnızca o güne geçerlidir.
+## Günlük süre sınırı, cihaz başına: bütün profillerin süresi tek sayaçta toplanır, profil
+## değiştirerek sınır aşılamaz. Etkin gün = max(saat günü, last_day_seen); saat geri alınsa
+## bile kullanım sıfırlanmaz. Ebeveyn kilidi açması yalnızca o güne geçerlidir. Saat ileri
+## alınıp geri getirildiyse veli "günü sıfırla" ile etkin günü saate döndürür.
+
+const DayReset: GDScript = preload("res://scripts/core/day_reset.gd")
 
 signal limit_reached
 
@@ -13,12 +17,11 @@ var clock: DayClock = DayClock.new()
 ## Testlerde değiştirilebilir; boşsa _ready'de autoload bağlanır.
 var save: Node = null
 
-var _profile_id: String = ""
 var _started: bool = false
 var _frac: float = 0.0
 var _since_save: float = 0.0
-## Sinyalin yayıldığı (profil, gün) anahtarı; aynı gün tekrar yayılmaz.
-var _emitted_key: String = ""
+## Sinyalin yayıldığı gün; aynı gün tekrar yayılmaz.
+var _emitted_day: int = -1
 
 func _ready() -> void:
 	if save == null:
@@ -35,8 +38,8 @@ func _notification(what: int) -> void:
 			_since_save = 0.0
 			save.save()
 
-func start(profile_id: String) -> void:
-	_profile_id = profile_id
+## Sayacı başlatır. Profil değişince sayaç sıfırlanmaz (sınır cihaz başınadır).
+func start() -> void:
 	_started = true
 	_frac = 0.0
 	_since_save = 0.0
@@ -49,9 +52,7 @@ func stop() -> void:
 func tick(delta_s: float) -> void:
 	if not _started:
 		return
-	var usage: Dictionary = _usage(_profile_id)
-	if usage.is_empty():
-		return
+	var usage: Dictionary = _usage()
 	_frac += delta_s
 	var whole: int = int(_frac)
 	_frac -= float(whole)
@@ -60,40 +61,48 @@ func tick(delta_s: float) -> void:
 	if _since_save >= SAVE_INTERVAL_S:
 		_since_save = 0.0
 		save.save()
-	if is_locked(_profile_id):
-		var key: String = "%s@%d" % [_profile_id, _effective_day()]
-		if _emitted_key != key:
-			_emitted_key = key
+	if is_locked():
+		var day: int = _effective_day()
+		if _emitted_day != day:
+			_emitted_day = day
 			limit_reached.emit()
 
-func is_locked(profile_id: String) -> bool:
+func is_locked() -> bool:
 	var limit: int = _limit_min()
 	if limit <= 0:
 		return false
-	var usage: Dictionary = _usage(profile_id)
-	if usage.is_empty() or int(usage["unlocked_day"]) == _effective_day():
+	var usage: Dictionary = _usage()
+	if int(usage["unlocked_day"]) == _effective_day():
 		return false
 	return int(usage["seconds"]) >= limit * 60
 
 ## Sınır kapalıysa ya da bugünlük açıldıysa -1.
-func remaining_seconds(profile_id: String) -> int:
+func remaining_seconds() -> int:
 	var limit: int = _limit_min()
-	var usage: Dictionary = _usage(profile_id)
-	if limit <= 0 or usage.is_empty() or int(usage["unlocked_day"]) == _effective_day():
+	var usage: Dictionary = _usage()
+	if limit <= 0 or int(usage["unlocked_day"]) == _effective_day():
 		return -1
 	return maxi(0, limit * 60 - int(usage["seconds"]))
 
-func parent_unlock_today(profile_id: String) -> void:
-	var usage: Dictionary = _usage(profile_id)
-	if usage.is_empty():
-		return
-	usage["unlocked_day"] = _effective_day()
+func parent_unlock_today() -> void:
+	_usage()["unlocked_day"] = _effective_day()
 	save.save()
+
+## Veli "günü sıfırla": etkin gün saatin gösterdiği güne döner; gelecekte kalan
+## kullanım, açma ve tekrar tarihleri bugüne çekilir (scripts/core/day_reset.gd).
+func reset_day() -> void:
+	DayReset.apply(save.data, clock.today())
+	_emitted_day = -1
+	save.save()
+
+## Etkin gün saatin gününden ileride mi (saat ileri alınıp geri getirilmiş)?
+func day_ahead() -> bool:
+	return int(save.data.get("last_day_seen", 0)) > clock.today()
 
 func _limit_min() -> int:
 	return int(save.data["settings"].get("daily_limit_min", 0))
 
-## last_day_seen asla azalmaz.
+## last_day_seen asla azalmaz (yalnızca reset_day ile).
 func _effective_day() -> int:
 	var seen: int = int(save.data.get("last_day_seen", 0))
 	var today: int = clock.today()
@@ -102,18 +111,15 @@ func _effective_day() -> int:
 		seen = today
 	return seen
 
-## Profilin kullanım kaydı; yeni güne geçildiyse sıfırlanmış halde döner.
-func _usage(profile_id: String) -> Dictionary:
+## Cihazın kullanım kaydı; yeni güne geçildiyse sıfırlanmış halde döner.
+func _usage() -> Dictionary:
 	var day: int = _effective_day()
-	for p: Variant in save.data["profiles"]:
-		var d: Dictionary = p
-		if str(d.get("id", "")) != profile_id:
-			continue
-		var usage: Dictionary = d["usage"]
-		if not usage.has("unlocked_day"):
-			usage["unlocked_day"] = -1
-		if int(usage.get("day", 0)) < day:
-			usage["day"] = day
-			usage["seconds"] = 0
-		return usage
-	return {}
+	if not (save.data.get("usage") is Dictionary):
+		save.data["usage"] = SaveSchema.new_usage()
+	var usage: Dictionary = save.data["usage"]
+	if not usage.has("unlocked_day"):
+		usage["unlocked_day"] = -1
+	if int(usage.get("day", 0)) < day:
+		usage["day"] = day
+		usage["seconds"] = 0
+	return usage

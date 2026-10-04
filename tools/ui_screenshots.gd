@@ -132,12 +132,32 @@ func _run() -> void:
 		await _shot("21_region_path_scrolled_end")
 	# --- ek kareler sonu ---
 
+	# --- Faz 7a: Ağaç Evi (raf + odaya yerleştirilmiş süs) ve veli panelindeki öneriler ---
+	await _tree_house_shots(pid)
+
 	# --- Ders ekranları: ek kareler (yanlış cevap + ipucu 1, kalabalık sayma, eşleşme ortası) ---
 	await _lesson_extras()
 	# --- Faz 3 şablonları (runner'ın oyun alanına doğrudan kurulur) ---
 	await _faz3_templates()
 	print("ui_screenshots: %d görüntü -> %s" % [_shots, ProjectSettings.globalize_path(OUT_DIR)])
 	quit(0)
+
+## Ağaç evi: 30 yıldızla üç süs açık, biri odada; sıradaki süsün kilidi rafta.
+func _tree_house_shots(pid: String) -> void:
+	var progress: Node = root.get_node("Progress")
+	for p: Variant in root.get_node("SaveService").data["profiles"]:
+		if str((p as Dictionary)["id"]) == pid:
+			var nodes: Dictionary = (p as Dictionary)["nodes"]
+			for i: int in 10:
+				nodes["g1.ornek.u99.n%02d" % i] = {"best_stars": 3, "plays": 1}
+	_app.select_profile(pid)
+	await _show("tree_house", {})
+	await _shot("70_tree_house_shelf")
+	var items: PackedStringArray = progress.decor_unlocked(pid)
+	if not items.is_empty():
+		progress.place_decor(pid, items[0], Vector2(0.3, 0.6))
+	await _show("tree_house", {})
+	await _shot("71_tree_house_placed")
 
 ## Uzun süren bir satırla altyazı balonu ekrandayken görüntü alır, sonra anlatımı keser.
 func _shot_with_subtitle(name: String, line_id: String) -> void:

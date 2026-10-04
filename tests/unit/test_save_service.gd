@@ -141,3 +141,21 @@ func test_save_after_recovery_keeps_good_backup() -> void:
 	_svc.save()
 	assert_eq(_read("save_v1.bak.json"), good)
 	assert_true(JSON.parse_string(_read("save_v1.json")) is Dictionary)
+
+func test_migrate_v1_moves_usage_to_device() -> void:
+	var v1: Dictionary = {"schema_version": 1, "profiles": [
+		{"id": "p1", "grade": 1, "usage": {"day": 50.0, "seconds": 300.0, "unlocked_day": -1}},
+		{"id": "p2", "grade": 2, "usage": {"day": 50, "seconds": 200, "unlocked_day": 50}},
+		{"id": "p3", "grade": 3, "usage": {"day": 49, "seconds": 999, "unlocked_day": 49}},
+	]}
+	var m: Dictionary = SaveSchema.migrate(v1)
+	assert_eq(m["schema_version"], 2)
+	assert_eq(m["usage"], {"day": 50, "seconds": 500, "unlocked_day": 50}, "en son günün saniyeleri toplanır")
+	for p: Dictionary in m["profiles"]:
+		assert_false(p.has("usage"), "profil kullanım kaydı kalkar")
+		assert_eq(p["decor"], {})
+
+func test_new_save_has_device_usage() -> void:
+	var d: Dictionary = SaveSchema.new_save()
+	assert_eq(d["usage"], SaveSchema.new_usage())
+	assert_eq(SaveSchema.migrate(d)["usage"], SaveSchema.new_usage())
