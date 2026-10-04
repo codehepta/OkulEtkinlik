@@ -77,6 +77,10 @@ jobs:
           godot --headless --path . --export-debug "Android" build/android/bilgi-adasi-debug.apk
           ls -l build/android/bilgi-adasi-debug.apk
 
+      # Ağ yok kuralının kanıtı (izin yok, INTERNET yok) + içerik pakette + testler/GUT pakette değil.
+      - name: APK izin ve içerik doğrulaması
+        run: scripts/ci-check-apk.sh build/android/bilgi-adasi-debug.apk "$ANDROID_HOME/build-tools/35.0.1/aapt2"
+
       - name: APK'yı yükle
         uses: actions/upload-artifact@v4
         with:
