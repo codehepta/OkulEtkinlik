@@ -17,6 +17,7 @@ MEB 1–3. sınıf öğretim programlarıyla (Türkiye Yüzyılı Maarif Modeli)
 
 ## Dil ve kod kuralları
 - Kullanıcıya görünen bütün metinler **Türkçe**dir ve `content/strings.tr.json` / `content/voice_lines.tr.json` içinde tutulur. Kodda sabit metin bulunmaz.
+  - **İstisnalar (kullanıcıya görünmez):** yalnızca geliştirici/sahip için çıktı üreten araçlar (`tools/*` ve yalnızca `tools/missing_assets.gd`'yi besleyen `scripts/core/missing_assets_scan.gd`) Türkçe sabit metin içerebilir. `push_error` / `push_warning` geliştirici günlükleri de bu kurala tabi değildir. Uygulama kodunun (sahneler, autoload'lar, diğer `scripts/core/` dosyaları) ekrana ya da sese giden metinleri her zaman JSON'dan gelir.
 - Dokümanlar ve kod yorumları Türkçe, tanımlayıcılar (değişken, fonksiyon, dosya, sınıf adları) İngilizce.
 - GDScript **statik tipli** yazılır: değişken, parametre ve dönüş tipleri belirtilir. `class_name` yalnızca gerçekten paylaşılan tipler için kullanılır.
 - Saf mantık `scripts/core/` altında, sahnesiz ve test edilebilir tutulur. Autoload'lar ince kalır ve bu mantığı çağırır.
