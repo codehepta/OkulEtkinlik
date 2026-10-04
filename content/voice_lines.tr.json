@@ -238,5 +238,9 @@
 	"vo.sayi.10": {
 		"text": "on",
 		"speaker": "ANLATICI"
+	},
+	"vo.genel.takma_ad": {
+		"text": "İstersen kendine bir takma ad yazabilirsin. Bir büyüğünden yardım iste. İstemezsen Geç düğmesine dokun.",
+		"speaker": "BILGE"
 	}
 }

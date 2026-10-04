@@ -45,5 +45,17 @@
 	"err.content.unit_mismatch": "{id}: ünite kimliği grade/subject alanlarıyla uyuşmuyor",
 	"err.content.dup_node_global": "{id}: düğüm kimliği başka bir dosyada da tanımlı ({path})",
 	"err.content.json_unreadable": "{path}: JSON okunamadı",
-	"err.content.outcomes_unreadable": "{path}: öğrenme çıktısı dosyası okunamadı"
+	"err.content.outcomes_unreadable": "{path}: öğrenme çıktısı dosyası okunamadı",
+	"profile.add": "+",
+	"profile.step3_hint": "Bu adımı bir büyüğünle yap",
+	"profile.nickname_placeholder": "Takma adın (isteğe bağlı)",
+	"profile.skip": "Geç",
+	"profile.confirm": "Tamam",
+	"label.avatar.tavsan": "Tavşan",
+	"label.avatar.kedi": "Kedi",
+	"label.avatar.ayi": "Ayı",
+	"label.avatar.tilki": "Tilki",
+	"label.avatar.penguen": "Penguen",
+	"label.avatar.kaplumbaga": "Kaplumbağa",
+	"label.ui.parent": "Veli"
 }
