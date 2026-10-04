@@ -49,6 +49,11 @@ var _pending_later: bool = false
 
 @onready var _area: Control = $Host/GameArea as Control
 @onready var _home: Button = $TopBar/HomeButton as Button
+@onready var _background: TextureRect = $Background as TextureRect
+@onready var _dots: Control = $TopBar/RoundDots as Control
+@onready var _bilge: Control = $Bilge as Control
+## Bilge'nin konuşma hareketi için dinlenen anlatıcı.
+var _talk_source: Node = null
 
 func _ready() -> void:
 	_home.pressed.connect(_on_home_pressed)
@@ -58,6 +63,7 @@ func _ready() -> void:
 func _exit_tree() -> void:
 	if session_timer != null and session_timer.limit_reached.is_connected(_on_limit_reached):
 		session_timer.limit_reached.disconnect(_on_limit_reached)
+	_listen_narrator(null)
 
 ## AppState.goto("lesson", {"node_id": id}) giriş noktası: servisleri uygulamadan alır,
 ## bitişte sonuç ekranına, ev düğmesinde patikaya geçer.
@@ -101,6 +107,9 @@ func start(profile_id: String, node_id: String, rng_seed: int = -1) -> void:
 	var rounds: Array = _node.get("rounds", [])
 	for i: int in rounds.size():
 		_queue.append({"index": i, "round": rounds[i], "retry": false})
+	_apply_region(node_id.get_slice(".", 1))
+	_listen_narrator(narrator)
+	_update_dots()
 	await _say(str(_node.get("intro_voice", "")))
 	if _stale(gen):
 		return
@@ -117,6 +126,56 @@ func round_count() -> int:
 
 func current_game() -> MiniGame:
 	return _game
+
+## Dersin bölge arka planı anahtarı (konudan); konu tanımsızsa boş.
+static func region_bg_key(subject: String) -> String:
+	if not ContentDB.SUBJECT_REGION.has(subject):
+		return ""
+	return "region.%s.bg" % ContentDB.SUBJECT_REGION[subject]
+
+## Arka plan bölge görseli; görsel yoksa sahnenin sıcak düz zemini kalır.
+func _apply_region(subject: String) -> void:
+	var key: String = region_bg_key(subject)
+	_background.texture = AssetRegistry.texture(key) if key != "" else null
+
+func _update_dots() -> void:
+	if _dots == null:
+		return
+	var current: int = _pos if _pos >= 0 and _pos < _queue.size() else -1
+	_dots.call("set_progress", clampi(_pos, 0, _queue.size()), current, _queue.size())
+
+## Bilge, anlatıcı bir satır okurken sallanır.
+func _listen_narrator(n: Node) -> void:
+	var old: Node = _talk_source
+	if old != null and is_instance_valid(old):
+		if old.has_signal("subtitle_requested") and old.is_connected("subtitle_requested", _on_talk_start):
+			old.disconnect("subtitle_requested", _on_talk_start)
+		if old.has_signal("line_finished") and old.is_connected("line_finished", _on_talk_end):
+			old.disconnect("line_finished", _on_talk_end)
+		if old.has_signal("line_stopped") and old.is_connected("line_stopped", _on_talk_stop):
+			old.disconnect("line_stopped", _on_talk_stop)
+	_talk_source = n
+	if n == null:
+		return
+	if n.has_signal("subtitle_requested"):
+		n.connect("subtitle_requested", _on_talk_start)
+	if n.has_signal("line_finished"):
+		n.connect("line_finished", _on_talk_end)
+	if n.has_signal("line_stopped"):
+		n.connect("line_stopped", _on_talk_stop)
+
+func _on_talk_start(_text: String) -> void:
+	_set_talking(true)
+
+func _on_talk_end(_id: String) -> void:
+	_set_talking(false)
+
+func _on_talk_stop() -> void:
+	_set_talking(false)
+
+func _set_talking(on: bool) -> void:
+	if _bilge != null and is_instance_valid(_bilge):
+		_bilge.call("set_talking", on)
 
 ## Çalışma zamanı sayacı (test için): bu turdaki yanlış sayısı.
 func wrong_count() -> int:
@@ -144,6 +203,7 @@ func _say(id: String) -> void:
 		if finished_id == id:
 			state["done"] = true
 	narrator.line_finished.connect(cb)
+	_set_talking(true)
 	narrator.say(id)
 	var waited: float = 0.0
 	while not bool(state["done"]) and waited < SAY_TIMEOUT_SECONDS and gen == _gen and is_inside_tree():
@@ -151,11 +211,13 @@ func _say(id: String) -> void:
 		waited += get_process_delta_time()
 	if is_instance_valid(narrator) and narrator.line_finished.is_connected(cb):
 		narrator.line_finished.disconnect(cb)
+	_set_talking(false)
 
 func _advance() -> void:
 	if not _active:
 		return
 	_pos += 1
+	_update_dots()
 	if _pos >= _queue.size():
 		_complete(_time_up, false)
 		return
@@ -221,6 +283,8 @@ func _skip_round() -> void:
 	_after_round()
 
 func _on_answered(correct: bool) -> void:
+	if _active and correct and _bilge != null:
+		_bilge.call("cheer")
 	if not _active or correct or _feedback_busy:
 		return
 	var frame: int = Engine.get_process_frames()
@@ -258,6 +322,7 @@ func _on_answered(correct: bool) -> void:
 			_requeued[idx] = true
 			_queue.append({"index": idx, "round": entry["round"], "retry": true})
 			_pending_later = true
+			_update_dots()
 		await _say("vo.genel.cozum")
 		if _stale(gen) or _game != game:
 			return
