@@ -11,6 +11,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 SaveService="*res://autoload/save_service.gd"
+AssetRegistry="*res://autoload/asset_registry.gd"
 
 [display]
 
