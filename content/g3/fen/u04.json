@@ -1,0 +1,667 @@
+{
+	"id": "g3.fen.u04",
+	"grade": 3,
+	"subject": "fen",
+	"title_key": "unit.g3.fen.u04",
+	"source": {
+		"program": "TYMM Fen Bilimleri (3–8)",
+		"doc": "Fen Bilimleri Dersi Öğretim Programı",
+		"file": "docs/curriculum/sources/tymm-fen-bilimleri.pdf",
+		"page": 29,
+		"url": "https://tymm.meb.gov.tr/assets/pdf/fen-bilimleri-dersi_20260902_111309_119.pdf",
+		"theme": "4. MADDEYİ TANIYALIM, KARIŞTIRIP AYIRALIM"
+	},
+	"nodes": [
+		{
+			"id": "g3.fen.u04.n01",
+			"outcomes": [
+				"FB.3.4.1"
+			],
+			"title_key": "node.g3.fen.u04.n01",
+			"intro_voice": "vo.g3.fen.u04.n01.intro",
+			"sticker": "st.fen.su_damlasi",
+			"rounds": [
+				{
+					"template": "sort_bins",
+					"difficulty": 1,
+					"voice": "vo.g3.fen.u04.n01.r01",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "text",
+									"value": "fen.txt.kati",
+									"voice": "vo.fen.txt.kati"
+								},
+								"shape": "circle",
+								"color": "orange"
+							},
+							{
+								"label": {
+									"type": "text",
+									"value": "fen.txt.sivi",
+									"voice": "vo.fen.txt.sivi"
+								},
+								"shape": "square",
+								"color": "blue"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.tas"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.tahta_blok"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.buz_kupu"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.su_bardagi"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.sut"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.zeytinyagi"
+								},
+								"bin": 1
+							}
+						]
+					}
+				},
+				{
+					"template": "listen_find",
+					"difficulty": 2,
+					"voice": "vo.g3.fen.u04.n01.r02",
+					"params": {
+						"target": {
+							"type": "item",
+							"value": "item.fen.su_bardagi",
+							"voice": "vo.g3.fen.u04.n01.r02.hedef"
+						},
+						"options": [
+							{
+								"type": "item",
+								"value": "item.fen.su_bardagi"
+							},
+							{
+								"type": "item",
+								"value": "item.fen.tas"
+							},
+							{
+								"type": "item",
+								"value": "item.fen.tahta_blok"
+							},
+							{
+								"type": "item",
+								"value": "item.fen.buz_kupu"
+							}
+						]
+					}
+				},
+				{
+					"template": "sort_bins",
+					"difficulty": 2,
+					"voice": "vo.g3.fen.u04.n01.r03",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "text",
+									"value": "fen.txt.kati",
+									"voice": "vo.fen.txt.kati"
+								},
+								"shape": "circle",
+								"color": "orange"
+							},
+							{
+								"label": {
+									"type": "text",
+									"value": "fen.txt.sivi",
+									"voice": "vo.fen.txt.sivi"
+								},
+								"shape": "square",
+								"color": "blue"
+							},
+							{
+								"label": {
+									"type": "text",
+									"value": "fen.txt.gaz",
+									"voice": "vo.fen.txt.gaz"
+								},
+								"shape": "triangle",
+								"color": "green"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.tas"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.buz_kupu"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.su_bardagi"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.sut"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.buhar"
+								},
+								"bin": 2
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.balon_hava"
+								},
+								"bin": 2
+							}
+						]
+					}
+				},
+				{
+					"template": "drag_match",
+					"difficulty": 3,
+					"voice": "vo.g3.fen.u04.n01.r04",
+					"params": {
+						"pairs": [
+							{
+								"left": {
+									"type": "item",
+									"value": "item.fen.tas"
+								},
+								"right": {
+									"type": "text",
+									"value": "fen.txt.sert",
+									"voice": "vo.fen.txt.sert"
+								}
+							},
+							{
+								"left": {
+									"type": "item",
+									"value": "item.fen.lastik_bant"
+								},
+								"right": {
+									"type": "text",
+									"value": "fen.txt.esnek",
+									"voice": "vo.fen.txt.esnek"
+								}
+							},
+							{
+								"left": {
+									"type": "item",
+									"value": "item.fen.cam_bardak"
+								},
+								"right": {
+									"type": "text",
+									"value": "fen.txt.kirilgan",
+									"voice": "vo.fen.txt.kirilgan"
+								}
+							},
+							{
+								"left": {
+									"type": "item",
+									"value": "item.fen.sunger"
+								},
+								"right": {
+									"type": "text",
+									"value": "fen.txt.yumusak",
+									"voice": "vo.fen.txt.yumusak"
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g3.fen.u04.n02",
+			"outcomes": [
+				"FB.3.4.2"
+			],
+			"title_key": "node.g3.fen.u04.n02",
+			"intro_voice": "vo.g3.fen.u04.n02.intro",
+			"sticker": "st.fen.miknatis",
+			"rounds": [
+				{
+					"template": "scenario",
+					"difficulty": 1,
+					"voice": "vo.g3.fen.u04.n02.r01",
+					"params": {
+						"scene": "item.fen.karisim_demir_talas",
+						"choices": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.miknatis"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.elek"
+								},
+								"correct": false
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.suzgec"
+								},
+								"correct": false
+							}
+						],
+						"hint": "vo.g3.fen.u04.n02.r01.ipucu"
+					}
+				},
+				{
+					"template": "scenario",
+					"difficulty": 2,
+					"voice": "vo.g3.fen.u04.n02.r02",
+					"params": {
+						"scene": "item.fen.karisim_kum_nohut",
+						"choices": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.elek"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.miknatis"
+								},
+								"correct": false
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.dinlendirme"
+								},
+								"correct": false
+							}
+						],
+						"hint": "vo.g3.fen.u04.n02.r02.ipucu"
+					}
+				},
+				{
+					"template": "scenario",
+					"difficulty": 2,
+					"voice": "vo.g3.fen.u04.n02.r03",
+					"params": {
+						"scene": "item.fen.karisim_su_kum",
+						"choices": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.suzgec"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.miknatis"
+								},
+								"correct": false
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.elek"
+								},
+								"correct": false
+							}
+						],
+						"hint": "vo.g3.fen.u04.n02.r03.ipucu"
+					}
+				},
+				{
+					"template": "scenario",
+					"difficulty": 3,
+					"voice": "vo.g3.fen.u04.n02.r04",
+					"params": {
+						"scene": "item.fen.karisim_su_yag",
+						"choices": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.dinlendirme"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.miknatis"
+								},
+								"correct": false
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.elek"
+								},
+								"correct": false
+							}
+						],
+						"hint": "vo.g3.fen.u04.n02.r04.ipucu"
+					}
+				},
+				{
+					"template": "drag_match",
+					"difficulty": 3,
+					"voice": "vo.g3.fen.u04.n02.r05",
+					"params": {
+						"pairs": [
+							{
+								"left": {
+									"type": "item",
+									"value": "item.fen.karisim_demir_talas"
+								},
+								"right": {
+									"type": "item",
+									"value": "item.fen.miknatis"
+								}
+							},
+							{
+								"left": {
+									"type": "item",
+									"value": "item.fen.karisim_kum_nohut"
+								},
+								"right": {
+									"type": "item",
+									"value": "item.fen.elek"
+								}
+							},
+							{
+								"left": {
+									"type": "item",
+									"value": "item.fen.karisim_su_kum"
+								},
+								"right": {
+									"type": "item",
+									"value": "item.fen.suzgec"
+								}
+							},
+							{
+								"left": {
+									"type": "item",
+									"value": "item.fen.karisim_su_yag"
+								},
+								"right": {
+									"type": "item",
+									"value": "item.fen.dinlendirme"
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g3.fen.u04.n03",
+			"outcomes": [
+				"FB.3.4.3"
+			],
+			"title_key": "node.g3.fen.u04.n03",
+			"intro_voice": "vo.g3.fen.u04.n03.intro",
+			"sticker": "st.fen.geri_donusum_kutusu",
+			"rounds": [
+				{
+					"template": "sort_bins",
+					"difficulty": 1,
+					"voice": "vo.g3.fen.u04.n03.r01",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "text",
+									"value": "fen.txt.kagit",
+									"voice": "vo.fen.txt.kagit"
+								},
+								"shape": "square",
+								"color": "blue"
+							},
+							{
+								"label": {
+									"type": "text",
+									"value": "fen.txt.plastik",
+									"voice": "vo.fen.txt.plastik"
+								},
+								"shape": "circle",
+								"color": "yellow"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.gazete"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.karton_kutu"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.plastik_sise"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.yogurt_kabi"
+								},
+								"bin": 1
+							}
+						]
+					}
+				},
+				{
+					"template": "sort_bins",
+					"difficulty": 2,
+					"voice": "vo.g3.fen.u04.n03.r02",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "text",
+									"value": "fen.txt.kagit",
+									"voice": "vo.fen.txt.kagit"
+								},
+								"shape": "square",
+								"color": "blue"
+							},
+							{
+								"label": {
+									"type": "text",
+									"value": "fen.txt.plastik",
+									"voice": "vo.fen.txt.plastik"
+								},
+								"shape": "circle",
+								"color": "yellow"
+							},
+							{
+								"label": {
+									"type": "text",
+									"value": "fen.txt.cam",
+									"voice": "vo.fen.txt.cam"
+								},
+								"shape": "triangle",
+								"color": "green"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.gazete"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.karton_kutu"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.plastik_sise"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.yogurt_kabi"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.cam_kavanoz"
+								},
+								"bin": 2
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.fen.cam_sise"
+								},
+								"bin": 2
+							}
+						]
+					}
+				},
+				{
+					"template": "scenario",
+					"difficulty": 2,
+					"voice": "vo.g3.fen.u04.n03.r03",
+					"params": {
+						"scene": "item.fen.sahne.karisik_cop",
+						"choices": [
+							{
+								"token": {
+									"type": "text",
+									"value": "fen.txt.ayri_kutular",
+									"voice": "vo.fen.txt.ayri_kutular"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "fen.txt.buyuk_kutu",
+									"voice": "vo.fen.txt.buyuk_kutu"
+								},
+								"correct": false
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "fen.txt.tek_poset",
+									"voice": "vo.fen.txt.tek_poset"
+								},
+								"correct": false
+							}
+						],
+						"hint": "vo.g3.fen.u04.n03.r03.ipucu"
+					}
+				},
+				{
+					"template": "scenario",
+					"difficulty": 3,
+					"voice": "vo.g3.fen.u04.n03.r04",
+					"params": {
+						"scene": "item.fen.sahne.cam_kagit_kutusu",
+						"choices": [
+							{
+								"token": {
+									"type": "text",
+									"value": "fen.txt.ayirmak_zorlasir",
+									"voice": "vo.fen.txt.ayirmak_zorlasir"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "fen.txt.fark_etmez",
+									"voice": "vo.fen.txt.fark_etmez"
+								},
+								"correct": false
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "fen.txt.kagida_doner",
+									"voice": "vo.fen.txt.kagida_doner"
+								},
+								"correct": false
+							}
+						],
+						"hint": "vo.g3.fen.u04.n03.r04.ipucu"
+					}
+				}
+			]
+		}
+	]
+}
