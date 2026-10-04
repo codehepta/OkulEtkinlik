@@ -108,11 +108,35 @@ static func _validate_node(node: Dictionary, unit_id: String, seen: Dictionary, 
 		else:
 			for detail: String in TemplateRegistry.validate(tpl, r["params"]):
 				errs.append(msg("err.content.params", {"id": id, "round": idx, "detail": detail}))
+			_check_param_keys(r["params"], id, has_string, has_voice, errs)
 		var d: Variant = r.get("difficulty")
 		if not is_int_like(d) or int(d) < 1 or int(d) > 3:
 			errs.append(msg("err.content.bad_difficulty", {"id": id}))
 		_check_voice_key(r, "voice", id, has_voice, errs)
 	return errs
+
+## Params içindeki anahtarlar: "voice" alanı ses satırı, "text" alanı ve metin token'ının
+## değeri ({"type": "text", "value": ...}) metin anahtarı olmalıdır (her şablon için ortak).
+static func _check_param_keys(v: Variant, id: String, has_string: Callable, has_voice: Callable, errs: Array[String]) -> void:
+	if v is Array:
+		for x: Variant in v as Array:
+			_check_param_keys(x, id, has_string, has_voice, errs)
+		return
+	if not (v is Dictionary):
+		return
+	var d: Dictionary = v
+	for k: Variant in d:
+		var val: Variant = d[k]
+		if not (val is String):
+			_check_param_keys(val, id, has_string, has_voice, errs)
+			continue
+		var key: String = val as String
+		if key.is_empty():
+			continue
+		if k == "voice" and not has_voice.call(key):
+			errs.append(msg("err.content.missing_voice", {"id": id, "key": key}))
+		elif (k == "text" or (k == "value" and d.get("type") == "text")) and not has_string.call(key):
+			errs.append(msg("err.content.missing_string", {"id": id, "key": key}))
 
 static func _check_string_key(d: Dictionary, field: String, id: String, has_string: Callable, errs: Array[String]) -> void:
 	var k: Variant = d.get(field)
