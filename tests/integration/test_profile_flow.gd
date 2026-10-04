@@ -156,3 +156,17 @@ func test_double_tap_on_confirm_creates_one_profile() -> void:
 	s.confirm()
 	s.confirm()
 	assert_eq(_progress.profiles().size(), 1)
+
+func test_profile_cards_keep_their_size_with_big_avatar() -> void:
+	_progress.create_profile("avatar.kedi", "A", 1)
+	_app.goto("profile_select")
+	await wait_frames(3)
+	var card: Button = _screen().profile_cards()[0]
+	var card_size: Vector2 = _screen().CARD_SIZE
+	assert_almost_eq(card.size.y, card_size.y, 1.0, "kart ekran boyunca uzamaz")
+	var avatar: Control = null
+	for n: Node in card.find_children("*", "TextureRect", true, false):
+		avatar = n as Control
+	assert_not_null(avatar)
+	assert_gte(avatar.size.x, 256.0, "avatar büyük")
+	assert_eq(_screen().plus_card().size.y, card.size.y, "+ kartı da aynı boyda")

@@ -2,7 +2,7 @@ extends Control
 ## Oturum sonu: süre dolduğunda uyuyan Bilge, tekrar dinle ve tek düğme (veli kapısı -> panel).
 ## Oyun ekranı değildir; AppState kilit koruması burayı yönlendirmez.
 
-const BG_COLOR: Color = Color(0.2, 0.25, 0.45)
+const BG_COLOR: Color = ClayStyle.NIGHT
 
 var app: Node = AppState
 var args: Dictionary = {}
@@ -33,7 +33,7 @@ func _ready() -> void:
 	_parent_button = (load("res://scenes/components/big_button.tscn") as PackedScene).instantiate() as Button
 	_parent_button.set("text_key", "label.ui.parent")
 	_parent_button.set("icon_key", "ui.parent")
-	_parent_button.set("clay_color", Color(0.7, 0.78, 0.86))
+	_parent_button.set("clay_color", ClayStyle.SKY)
 	_parent_button.custom_minimum_size = Vector2(420, 160)
 	_parent_button.pressed.connect(open_parent_gate)
 	holder.add_child(_parent_button)

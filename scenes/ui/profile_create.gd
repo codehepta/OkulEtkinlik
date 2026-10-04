@@ -6,7 +6,7 @@ const AVATARS: Array[String] = [
 ]
 const GRADES: Array[int] = [1, 2, 3]
 const MAX_NICKNAME: int = 12
-const CARD_COLOR: Color = Color(0.96, 0.78, 0.55)
+const CARD_COLOR: Color = ClayStyle.APRICOT
 
 var app: Node = AppState
 
@@ -19,7 +19,7 @@ var _navigating: bool = false
 
 func _ready() -> void:
 	var bg: ColorRect = ColorRect.new()
-	bg.color = Color(0.31, 0.7, 0.53)
+	bg.color = ClayStyle.MEADOW
 	bg.set_anchors_preset(Control.PRESET_FULL_RECT)
 	bg.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(bg)
@@ -72,13 +72,7 @@ func _centered(content: Control) -> Control:
 
 func _style(btn: Button) -> void:
 	btn.focus_mode = Control.FOCUS_NONE
-	for state: String in ["normal", "hover", "pressed", "focus"]:
-		var box: StyleBoxFlat = StyleBoxFlat.new()
-		box.bg_color = CARD_COLOR
-		box.set_corner_radius_all(24)
-		box.border_color = CARD_COLOR.darkened(0.2)
-		box.set_border_width_all(4)
-		btn.add_theme_stylebox_override(state, box)
+	ClayStyle.style_button(btn, CARD_COLOR)
 
 func _build_avatar_page() -> Control:
 	var grid: GridContainer = GridContainer.new()
@@ -145,7 +139,7 @@ func _build_nickname_page() -> Control:
 		confirm())
 	var ok: Button = (load("res://scenes/components/big_button.tscn") as PackedScene).instantiate() as Button
 	ok.set("text_key", "profile.confirm")
-	ok.set("clay_color", Color(0.55, 0.85, 0.6))
+	ok.set("clay_color", ClayStyle.MINT)
 	ok.custom_minimum_size = Vector2(320, 128)
 	ok.pressed.connect(confirm)
 	row.add_child(skip)

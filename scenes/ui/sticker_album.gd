@@ -5,8 +5,8 @@ extends Control
 const BG_COLOR: Color = Color(0.99, 0.93, 0.78)
 const CELL_SIZE: Vector2 = Vector2(200, 200)
 const GRID_COLUMNS: int = 7
-const TAB_ON: Color = Color(0.55, 0.85, 0.6)
-const TAB_OFF: Color = Color(0.96, 0.78, 0.55)
+const TAB_ON: Color = ClayStyle.MINT
+const TAB_OFF: Color = ClayStyle.APRICOT
 const SELECTED_SCALE: float = 1.12
 const FRAME_KEY: String = "ui.sticker_frame"
 
