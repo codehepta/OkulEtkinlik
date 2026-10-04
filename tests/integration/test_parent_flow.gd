@@ -311,3 +311,26 @@ func test_import_success_clears_warning_and_refreshes_grade() -> void:
 	assert_true(panel.import_text(ProgressExport.to_json(other)))
 	assert_false(_screen().warning_visible())
 	assert_eq(_app.active_grade, 3)
+
+func test_gate_leaves_bottom_band_for_subtitle() -> void:
+	_app.goto("parent_gate", {"next": {"scene": "parent_panel", "args": {}}})
+	await wait_frames(3)
+	var gate: Node = _screen()
+	assert_eq(gate.subtitle_placement(), "bottom")
+	var vp: Vector2 = (gate as Control).get_viewport_rect().size
+	for b: Node in (gate as Control).find_children("*", "Button", true, false):
+		var r: Rect2 = (b as Control).get_global_rect()
+		assert_lte(r.end.y, vp.y - ClayStyle.SUBTITLE_BAND + 1.0, "düğme altyazı şeridine girmez")
+
+func test_panel_hides_subtitle_and_marks_selection() -> void:
+	_login(1)
+	var panel: Node = _open_panel()
+	assert_eq(panel.subtitle_placement(), "hidden")
+	panel.set_daily_limit(15)
+	panel.call("_rebuild")
+	var checked: int = 0
+	for n: Node in (panel as Control).find_children("*", "Button", true, false):
+		var b: Button = n as Button
+		if b.toggle_mode and b.button_pressed and b.icon == AssetRegistry.texture(ClayStyle.CHECK_ICON_KEY):
+			checked += 1
+	assert_eq(checked, 2, "seçili süre ve seçili sınıf onay ikonu taşır")

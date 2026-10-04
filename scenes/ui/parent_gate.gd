@@ -2,8 +2,9 @@ extends Control
 ## Veli kapısı: çarpım sorusu + 0-9 tuş takımı. Doğru cevapta args.next'e geçilir.
 ## Yanlışta ceza ya da kilit yok; yeni soru gelir.
 
-const BG_COLOR: Color = Color(0.31, 0.7, 0.53)
+const BG_COLOR: Color = ClayStyle.MEADOW
 const KEY_SIZE: Vector2 = Vector2(144, 144)
+const KEY_RADIUS: int = 40
 const MAX_DIGITS: int = 4
 
 var app: Node = AppState
@@ -28,6 +29,10 @@ func _ready() -> void:
 
 func enter(a: Dictionary) -> void:
 	args = a
+
+## Altyazı balonu altta; içerik altta balon şeridini boş bırakır (Sil/Tamam'a binmez).
+func subtitle_placement() -> String:
+	return "bottom"
 
 func question() -> Dictionary:
 	return _question
@@ -88,8 +93,9 @@ func _build() -> void:
 
 	var col: VBoxContainer = VBoxContainer.new()
 	col.set_anchors_preset(Control.PRESET_FULL_RECT)
+	col.offset_bottom = -ClayStyle.SUBTITLE_BAND
 	col.alignment = BoxContainer.ALIGNMENT_CENTER
-	col.add_theme_constant_override("separation", 24)
+	col.add_theme_constant_override("separation", 20)
 	add_child(col)
 
 	_question_label = _label(64)
@@ -116,14 +122,14 @@ func _build() -> void:
 	row.alignment = BoxContainer.ALIGNMENT_CENTER
 	row.add_theme_constant_override("separation", 24)
 	col.add_child(row)
-	var del: Button = _big("gate.delete", Color(0.96, 0.78, 0.55))
+	var del: Button = _big("gate.delete", ClayStyle.APRICOT)
 	del.pressed.connect(backspace)
 	row.add_child(del)
-	var ok: Button = _big("profile.confirm", Color(0.55, 0.85, 0.6))
+	var ok: Button = _big("profile.confirm", ClayStyle.MINT)
 	ok.pressed.connect(submit)
 	row.add_child(ok)
 
-	_back = _big("map.back", Color(0.7, 0.78, 0.86))
+	_back = _big("map.back", ClayStyle.SKY)
 	_back.set_anchors_preset(Control.PRESET_TOP_LEFT)
 	_back.position = Vector2(24, 24)
 	_back.pressed.connect(func() -> void: app.goto(str(args.get("back", "profile_select"))))
@@ -132,7 +138,6 @@ func _build() -> void:
 func _label(font_size: int) -> Label:
 	var l: Label = Label.new()
 	l.add_theme_font_size_override("font_size", font_size)
-	l.add_theme_color_override("font_color", Color(0.15, 0.1, 0.05))
 	l.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	return l
 
@@ -142,6 +147,7 @@ func _key(text: String) -> Button:
 	b.custom_minimum_size = KEY_SIZE
 	b.focus_mode = Control.FOCUS_NONE
 	b.add_theme_font_size_override("font_size", 64)
+	ClayStyle.style_button(b, ClayStyle.CREAM, KEY_RADIUS)
 	return b
 
 func _big(text_key: String, color: Color) -> Button:

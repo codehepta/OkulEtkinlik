@@ -13,8 +13,10 @@ const TOGGLES: Array[Array] = [
 	["show_text_g1", "parent.show_text_g1"],
 	["reduce_motion", "parent.reduce_motion"],
 ]
-const BG_COLOR: Color = Color(0.96, 0.94, 0.88)
-const TEXT_COLOR: Color = Color(0.15, 0.1, 0.05)
+const BG_COLOR: Color = ClayStyle.PAPER
+const TEXT_COLOR: Color = ClayStyle.INK
+## Profil sekmelerindeki avatar simgesinin boyu.
+const TAB_AVATAR: int = 96
 const MIN_TOUCH: float = 128.0
 const BACKUP_PREFIX: String = "bilgi-adasi-yedek-"
 
@@ -43,6 +45,10 @@ func enter(a: Dictionary) -> void:
 	args = a
 
 # --- Sorgular (testler ve arayüz) ---
+
+## Yetişkin ekranı: çocuk altyazı balonu burada gösterilmez.
+func subtitle_placement() -> String:
+	return "hidden"
 
 func exit_button() -> Button:
 	return _exit
@@ -227,7 +233,7 @@ func _rebuild() -> void:
 	_content.add_child(_label(Strings.t("parent.title"), 72))
 	_warning = _label("", 40)
 	_warning.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	_warning.add_theme_color_override("font_color", Color(0.7, 0.15, 0.1))
+	_warning.add_theme_color_override("font_color", ClayStyle.ALERT)
 	var st: String = str(app.save.last_load_status)
 	_warning.visible = st == "reset" or st == "recovered"
 	if _warning.visible:
@@ -243,10 +249,12 @@ func _rebuild() -> void:
 	_build_actions()
 
 	_exit = _button(Strings.t("parent.exit"))
+	ClayStyle.style_button(_exit, ClayStyle.SKY)
 	_exit.pressed.connect(func() -> void: app.goto("profile_select"))
 	_content.add_child(_exit)
 
 	_delete_dialog = ConfirmationDialog.new()
+	_delete_dialog.title = Strings.t("parent.delete_profile")
 	_delete_dialog.ok_button_text = Strings.t("parent.delete_ok")
 	_delete_dialog.cancel_button_text = Strings.t("parent.cancel")
 	_delete_dialog.confirmed.connect(confirm_delete)
@@ -255,6 +263,7 @@ func _rebuild() -> void:
 	add_child(_delete_dialog)
 
 	_import_dialog = FileDialog.new()
+	_import_dialog.title = Strings.t("parent.import")
 	_import_dialog.access = FileDialog.ACCESS_FILESYSTEM
 	_import_dialog.file_mode = FileDialog.FILE_MODE_OPEN_FILE
 	_import_dialog.filters = PackedStringArray(["*.json"])
@@ -273,6 +282,9 @@ func _build_profile_tabs() -> void:
 		var b: Button = _button(_profile_name(p))
 		b.toggle_mode = true
 		b.button_pressed = id == _pid
+		ClayStyle.make_choice(b, false)
+		b.icon = AssetRegistry.texture(str(p.get("avatar", "")))
+		b.add_theme_constant_override("icon_max_width", TAB_AVATAR)
 		b.pressed.connect(select_profile_tab.call_deferred.bind(id))
 		b.button_group = group
 		row.add_child(b)
@@ -317,6 +329,7 @@ func _build_limit() -> void:
 		var b: Button = _button(Strings.t("parent.limit_off") if m == 0 else Strings.t("parent.limit_min", {"n": m}))
 		b.toggle_mode = true
 		b.button_pressed = m == current
+		ClayStyle.make_choice(b)
 		b.button_group = group
 		b.pressed.connect(set_daily_limit.bind(m))
 		row.add_child(b)
@@ -357,6 +370,7 @@ func _build_grade() -> void:
 		var b: Button = _button(Strings.t("parent.grade_n", {"n": g}))
 		b.toggle_mode = true
 		b.button_pressed = g == current
+		ClayStyle.make_choice(b)
 		b.button_group = group
 		b.pressed.connect(set_grade.bind(g))
 		row.add_child(b)
@@ -376,7 +390,7 @@ func _build_actions() -> void:
 	_status_label.autowrap_mode = TextServer.AUTOWRAP_ARBITRARY
 	_content.add_child(_status_label)
 	var del: Button = _button(Strings.t("parent.delete_profile"))
-	del.add_theme_color_override("font_color", Color(0.7, 0.1, 0.1))
+	ClayStyle.style_button(del, ClayStyle.ROSE)
 	del.pressed.connect(request_delete)
 	_content.add_child(del)
 
