@@ -142,3 +142,23 @@ Bu şablonların henüz ünite içeriği yok (Faz 4b, 4c). Cihazda denemek için
 ## Asset geldiğinde (parti 023, 024)
 1. `decor.*` görselleri eklenince rafta ve odada yer tutucuların yerini alır; süsler kırpılmadan ve aynı ışıkta görünür.
 2. `vo.genel.tekrar_giris`, `vo.genel.agac_ev_bos`, `vo.genel.agac_ev_kilitli` kayıtları cihaz sesinin yerine çalar.
+
+---
+
+# Faz 5a — `sort_bins` ve `scenario` şablonları
+
+Bu şablonların henüz ünite içeriği yok (içerik Faz 5b, 3c–3e ve 6'da gelir). Cihazda denemek için geliştirici bir test durağı ekler ya da `tools/ui_screenshots.gd` karelerine (60–63) bakılır. Faz 3a'daki ortak kontroller (hata akışı, dokunma, hareketi azalt, renk körlüğü) burada da geçerlidir.
+
+## sort_bins (kutulara ayır)
+1. Öğeyi parmakla sürükle, doğru kutuya bırak. Beklenen: öğe küçülerek kutunun iç bölmesine oturur; yanlış kutuda geri seker; kutu dışına bırakınca sessizce geri döner (yanlış sayılmaz).
+2. Kutular hem şekil rozetiyle (kalp, kare, yıldız...) hem renkle ayrılıyor; gri tonlamada da hangi kutunun hangisi olduğu anlaşılıyor.
+3. Kutuya (öğe sürüklemeden) dokununca etiketin adı okunur; cevap sayılmaz.
+4. Zorluk 1'de her kutuda bir örnek öğe baştan durur; zorluk 3'te kutular boş başlar.
+5. İpucu 1: sıradaki öğe ve kutusu parlar. Çözüm: kalan öğeler sırayla kutularına yerleşir. 9 öğede bile yerleşen öğeler kutunun içinde kalıyor.
+
+## scenario (durum seç)
+1. Üstte durum görseli, altta 2–3 davranış kartı; soru seslendirilir ve tekrar dinlenebilir.
+2. Yanlış karta dokun. Beklenen: kart hafifçe eğilir, sahne kısa süre sonucu gösterir, (varsa) sonuç cümlesi okunur, sonra sahne geri gelir. Ceza hissi yok: titreşim ya da kırmızı çarpı yok, yalnızca olağan yumuşak "boop" sesi. Denenen kart soluklaşır ve yeniden seçilemez.
+3. Sonuç gösterilirken başka karta dokunmak bir şey yapmaz.
+4. Zorluk 1'de 2 seçenek, zorluk 2–3'te 3 seçenek görünür.
+5. 2. yanlışta ipucu: ipucu cümlesi okunur, sahne parlar; geriye yalnızca doğru kart kalır.

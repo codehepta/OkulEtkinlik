@@ -1,0 +1,37 @@
+{
+	"id": "g1.matematik.u01",
+	"grade": 1,
+	"subject": "matematik",
+	"title_key": "fx.unit.u01",
+	"source": { "program": "TEST", "doc": "test.pdf", "page": 1 },
+	"nodes": [
+		{
+			"id": "g1.matematik.u01.n01",
+			"outcomes": ["TEST.1"],
+			"title_key": "fx.node.n01",
+			"intro_voice": "fx.vo.n01.intro",
+			"sticker": "st.matematik.elma",
+			"rounds": [
+				{ "template": "sort_bins", "difficulty": 3, "voice": "fx.vo.r.sort_bins",
+				  "params": {
+					"bins": [
+						{ "label": { "type": "item", "value": "item.simge.canli" }, "shape": "heart", "color": "green" },
+						{ "label": { "type": "item", "value": "item.simge.cansiz" }, "shape": "square", "color": "blue" } ],
+					"items": [
+						{ "token": { "type": "item", "value": "item.hayvan.kedi" }, "bin": 0 },
+						{ "token": { "type": "item", "value": "item.esya.top" }, "bin": 1 },
+						{ "token": { "type": "item", "value": "item.doga.cicek" }, "bin": 0 },
+						{ "token": { "type": "item", "value": "item.esya.kalem" }, "bin": 1 } ] } },
+				{ "template": "scenario", "difficulty": 3, "voice": "fx.vo.r.scenario",
+				  "params": {
+					"scene": "item.sahne.yaya_gecidi",
+					"hint": "fx.vo.r.scenario.ipucu",
+					"choices": [
+						{ "token": { "type": "item", "value": "item.davranis.bekle" }, "correct": true },
+						{ "token": { "type": "item", "value": "item.davranis.kos" }, "correct": false,
+						  "result": "item.sahne.korna", "result_voice": "fx.vo.r.scenario.sonuc" },
+						{ "token": { "type": "item", "value": "item.davranis.top" }, "correct": false } ] } }
+			]
+		}
+	]
+}

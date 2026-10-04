@@ -15,6 +15,8 @@ const SCENES: Dictionary = {
 	"trace": "res://scenes/games/trace/trace.tscn",
 	"syllable_build": "res://scenes/games/syllable_build/syllable_build.tscn",
 	"story": "res://scenes/games/story/story.tscn",
+	"sort_bins": "res://scenes/games/sort_bins/sort_bins.tscn",
+	"scenario": "res://scenes/games/scenario/scenario.tscn",
 }
 
 static func has(id: String) -> bool:
