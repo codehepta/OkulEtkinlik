@@ -10,6 +10,10 @@ signal home_requested
 const RETRY_VOICE_COUNT: int = 3
 const WRONG_FOR_HINT_1: int = 2
 const WRONG_FOR_SOLUTION: int = 3
+## Bir anlatım satırını beklerken en fazla bu kadar sn beklenir (takılmayı önler).
+const SAY_TIMEOUT_SECONDS: float = 10.0
+## Kurulumda kendi hedef sesini okuyan şablonlar: yönerge önce okunur, sonra kurulur.
+const SPEAKS_ON_SETUP: Array[String] = ["listen_find"]
 
 ## Testlerde sahte düğümle değiştirilir.
 var narrator: Node = Narrator
@@ -36,6 +40,8 @@ var _last_answer_frame: int = -1
 var _time_up: bool = false
 var _active: bool = false
 var _gen: int = 0
+var _feedback_busy: bool = false
+var _pending_later: bool = false
 
 @onready var _area: Control = $Host/GameArea as Control
 @onready var _home: Button = $TopBar/HomeButton as Button
@@ -64,11 +70,16 @@ func start(profile_id: String, node_id: String, rng_seed: int = -1) -> void:
 	_time_up = false
 	_active = true
 	_gen += 1
+	var gen: int = _gen
 	var rounds: Array = _node.get("rounds", [])
 	for i: int in rounds.size():
 		_queue.append({"index": i, "round": rounds[i], "retry": false})
-	narrator.say(str(_node.get("intro_voice", "")))
+	await _say(str(_node.get("intro_voice", "")))
+	if _stale(gen):
+		return
 	await _pause()
+	if _stale(gen):
+		return
 	_advance()
 
 func current_round_index() -> int:
@@ -84,19 +95,45 @@ func current_game() -> MiniGame:
 func wrong_count() -> int:
 	return _round_wrong
 
+## Runner geri bildirim satırlarını okurken true (cevaplar yok sayılır).
+func is_feedback_busy() -> bool:
+	return _feedback_busy
+
+func _stale(gen: int) -> bool:
+	return gen != _gen or not _active
+
 func _pause() -> void:
 	if step_delay > 0.0 and is_inside_tree():
-		var gen: int = _gen
 		await get_tree().create_timer(step_delay).timeout
-		if gen != _gen:
-			return
+
+## Satırı okutur ve bitmesini bekler; satır_bitti gelmezse zaman aşımında devam eder.
+## Ardışık satırlar böylece birbirini kesmez.
+func _say(id: String) -> void:
+	if id == "":
+		return
+	var gen: int = _gen
+	var state: Dictionary = {"done": false}
+	var cb: Callable = func(finished_id: String) -> void:
+		if finished_id == id:
+			state["done"] = true
+	narrator.line_finished.connect(cb)
+	narrator.say(id)
+	var waited: float = 0.0
+	while not bool(state["done"]) and waited < SAY_TIMEOUT_SECONDS and gen == _gen and is_inside_tree():
+		await get_tree().process_frame
+		waited += get_process_delta_time()
+	if is_instance_valid(narrator) and narrator.line_finished.is_connected(cb):
+		narrator.line_finished.disconnect(cb)
 
 func _advance() -> void:
 	if not _active:
 		return
 	_pos += 1
 	if _pos >= _queue.size():
-		_complete(false)
+		_complete(_time_up, false)
+		return
+	if _time_up:
+		_complete(true, true)
 		return
 	_load_round(_queue[_pos])
 
@@ -104,8 +141,12 @@ func _load_round(entry: Dictionary) -> void:
 	_round_wrong = 0
 	_round_helped = false
 	_last_answer_frame = -1
+	_feedback_busy = false
+	_pending_later = false
+	var gen: int = _gen
 	var rd: Dictionary = entry["round"]
-	var game: MiniGame = _instantiate(str(rd.get("template", "")))
+	var template_id: String = str(rd.get("template", ""))
+	var game: MiniGame = _instantiate(template_id)
 	if game == null:
 		_skip_round()
 		return
@@ -124,7 +165,15 @@ func _load_round(entry: Dictionary) -> void:
 	_game = game
 	game.answered.connect(_on_answered)
 	game.finished.connect(_on_finished)
-	game.setup(rd.get("params", {}), diff, ctx)
+	if SPEAKS_ON_SETUP.has(template_id):
+		game.input_locked = true
+		await _say(ctx.voice_id)
+		if _stale(gen) or _game != game:
+			return
+		game.setup(rd.get("params", {}), diff, ctx)
+	else:
+		game.setup(rd.get("params", {}), diff, ctx)
+		await _say(ctx.voice_id)
 
 func _instantiate(template_id: String) -> MiniGame:
 	if not TemplateRegistry.has(template_id):
@@ -135,42 +184,59 @@ func _instantiate(template_id: String) -> MiniGame:
 	var scene: PackedScene = load(path) as PackedScene
 	return scene.instantiate() as MiniGame if scene != null else null
 
-## Şablon yüklenemedi: tur atlanır, yardım almış sayılır.
+## Şablon yüklenemedi: tur atlanır. Çıktı kodu verilmediği için ustalık ve yıldız etkilenmez.
 func _skip_round() -> void:
 	var r: RoundResult = RoundResult.new()
-	r.attempts = 0
-	r.wrong = 0
 	r.helped = true
-	r.outcomes = PackedStringArray(_node.get("outcomes", []))
 	_results.append(r)
 	_game = null
 	_after_round()
 
 func _on_answered(correct: bool) -> void:
-	if not _active or correct:
+	if not _active or correct or _feedback_busy:
 		return
 	var frame: int = Engine.get_process_frames()
 	if frame == _last_answer_frame or _round_wrong >= WRONG_FOR_SOLUTION:
 		return
 	_last_answer_frame = frame
 	_round_wrong += 1
+	_feedback_busy = true
+	var gen: int = _gen
+	var game: MiniGame = _game
+	var round_voice: String = str((_queue[_pos]["round"] as Dictionary).get("voice", ""))
+	game.input_locked = true
 	if _round_wrong == 1:
-		narrator.replay_last()
 		audio.play_sfx("sfx.wrong")
-		narrator.say("vo.genel.tekrar_dene_%d" % _rng.randi_range(1, RETRY_VOICE_COUNT))
+		await _say("vo.genel.tekrar_dene_%d" % _rng.randi_range(1, RETRY_VOICE_COUNT))
+		if _stale(gen) or _game != game:
+			return
+		await _say(round_voice)
+		if _stale(gen) or _game != game:
+			return
+		_release(game)
 	elif _round_wrong == WRONG_FOR_HINT_1:
-		narrator.say("vo.genel.ipucu")
-		_game.show_hint(1)
+		await _say("vo.genel.ipucu")
+		if _stale(gen) or _game != game:
+			return
+		game.show_hint(1)
+		_release(game)
 	else:
 		_round_helped = true
-		narrator.say("vo.genel.cozum")
 		var entry: Dictionary = _queue[_pos]
 		var idx: int = int(entry["index"])
 		if not bool(entry["retry"]) and not _requeued.has(idx):
 			_requeued[idx] = true
 			_queue.append({"index": idx, "round": entry["round"], "retry": true})
-			narrator.say("vo.genel.sonra_tekrar")
-		_game.show_hint(2)
+			_pending_later = true
+		await _say("vo.genel.cozum")
+		if _stale(gen) or _game != game:
+			return
+		game.show_hint(2)
+		_feedback_busy = false
+
+func _release(game: MiniGame) -> void:
+	_feedback_busy = false
+	game.input_locked = false
 
 func _on_finished(result: RoundResult) -> void:
 	if not _active:
@@ -184,13 +250,18 @@ func _on_finished(result: RoundResult) -> void:
 	_after_round()
 
 func _after_round() -> void:
+	var gen: int = _gen
 	if _time_up:
 		_remove_game()
-		_complete(true)
+		_complete(true, _pos + 1 < _queue.size())
 		return
-	var gen: int = _gen
+	if _pending_later:
+		_pending_later = false
+		await _say("vo.genel.sonra_tekrar")
+		if _stale(gen):
+			return
 	await _pause()
-	if gen != _gen:
+	if _stale(gen):
 		return
 	_remove_game()
 	_advance()
@@ -209,10 +280,15 @@ func _on_home_pressed() -> void:
 	_remove_game()
 	home_requested.emit()
 
-func _complete(time_up: bool) -> void:
+## partial: süre dolduğu için kuyruk bitmeden duruldu; yalnızca ustalık kaydedilir.
+func _complete(time_up: bool, partial: bool) -> void:
 	_active = false
+	_gen += 1
 	var summary: Dictionary = {"stars": 0, "new_sticker": "", "unlocked": ""}
-	if not _results.is_empty():
+	if partial:
+		if not _results.is_empty():
+			progress.record_partial(_profile_id, _node_id, _results)
+	elif not _results.is_empty():
 		summary = progress.record_node(_profile_id, _node_id, _results)
 	summary["node_id"] = _node_id
 	summary["time_up"] = time_up

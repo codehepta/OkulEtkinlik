@@ -110,3 +110,14 @@ func test_grade_change_preserves_progress() -> void:
 	_p.set_grade(id, 1)
 	assert_eq(_p.best_stars(id, N1), 3)
 	assert_eq(_p.profiles()[0]["grade"], 1)
+
+func test_record_partial_updates_mastery_only() -> void:
+	var pid: String = _p.create_profile("a", "x", 1)
+	_p.record_partial(pid, N1, _res([_rr(0)]))
+	assert_almost_eq(_p.outcome_mastery(pid, "TEST.1"), 0.3, 0.001)
+	assert_eq(_p.best_stars(pid, N1), 0)
+	assert_eq(_p.node_state(pid, N2), "locked")
+	var prof: Dictionary = _p._profile(pid)
+	assert_eq((prof["stickers"] as Array).size(), 0)
+	var nodes: Dictionary = prof["nodes"]
+	assert_false(nodes.has(N1), "oynama sayısı artmaz")

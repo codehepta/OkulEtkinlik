@@ -125,6 +125,20 @@ func record_node(profile_id: String, node_id: String, results: Array[RoundResult
 	save.save()
 	return out
 
+## Süre dolduğunda yarım kalan ders: yalnızca oynanan turların ustalığı işlenir.
+## Yıldız, oynama sayısı, çıkartma, kilit ve Leitner'e dokunulmaz.
+func record_partial(profile_id: String, node_id: String, results: Array[RoundResult]) -> void:
+	var p: Dictionary = _profile(profile_id)
+	if p.is_empty() or content.node(node_id).is_empty():
+		return
+	var outs: Dictionary = p["outcomes"]
+	for r: RoundResult in results:
+		for code: String in r.outcomes:
+			var o: Dictionary = outs.get(code, {"mastery": 0.0, "box": 1, "due": 0})
+			o["mastery"] = Mastery.update(float(o.get("mastery", 0.0)), Mastery.result_value(r.wrong + 1, r.helped))
+			outs[code] = o
+	save.save()
+
 func due_outcomes(profile_id: String) -> PackedStringArray:
 	var res: PackedStringArray = PackedStringArray()
 	var outs: Dictionary = _profile(profile_id).get("outcomes", {})
