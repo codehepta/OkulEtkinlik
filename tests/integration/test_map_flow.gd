@@ -263,3 +263,40 @@ func test_result_buttons_have_icons() -> void:
 	_app.goto("result", {"stars": 1, "new_sticker": "", "unlocked": "", "node_id": N1, "time_up": false, "subject": "matematik"})
 	assert_ne(str(_screen().continue_button().get("icon_key")), "")
 	assert_ne(str(_screen().replay_button().get("icon_key")), "")
+
+func test_map_badges_sit_inside_island_without_overlap() -> void:
+	_login(1)
+	_app.goto("world_map")
+	var island: Rect2 = _screen().island_rect()
+	var rects: Array[Rect2] = []
+	for s: String in ["matematik", "turkce", "hayat_bilgisi", "fen"]:
+		rects.append(_screen().region_button(s).get_rect())
+	rects.append(_screen().tree_button().get_rect())
+	for i: int in rects.size():
+		assert_true(island.encloses(rects[i]), "rozet %d ada içinde" % i)
+		assert_true(rects[i].size.y >= 128.0, "rozet %d dokunma hedefi" % i)
+		for j: int in range(i + 1, rects.size()):
+			assert_false(rects[i].intersects(rects[j]), "rozet %d ve %d çakışmamalı" % [i, j])
+
+func test_locked_lab_badge_shows_lock_only_when_locked() -> void:
+	_login(1)
+	_app.goto("world_map")
+	assert_true(_screen().region_shows_lock("fen"))
+	assert_false(_screen().region_shows_lock("matematik"))
+	_login(3)
+	_app.goto("world_map")
+	assert_false(_screen().region_shows_lock("fen"))
+
+func test_path_stops_numbered_and_open_stop_pulses() -> void:
+	_login(1)
+	_app.goto("region_path", {"subject": "matematik"})
+	assert_eq(_screen().stop_number(N1), 1)
+	assert_eq(_screen().stop_number(N2), 2)
+	assert_true(_screen().stop_pulsing(N1))
+	assert_false(_screen().stop_pulsing(N2))
+
+func test_open_stop_does_not_pulse_with_reduce_motion() -> void:
+	_login(1)
+	_save.data["settings"]["reduce_motion"] = true
+	_app.goto("region_path", {"subject": "matematik"})
+	assert_false(_screen().stop_pulsing(N1))
