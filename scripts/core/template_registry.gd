@@ -6,6 +6,7 @@ const SCENES: Dictionary = {
 	"count_choose": "res://scenes/games/count_choose/count_choose.tscn",
 	"drag_match": "res://scenes/games/drag_match/drag_match.tscn",
 	"listen_find": "res://scenes/games/listen_find/listen_find.tscn",
+	"sequence": "res://scenes/games/sequence/sequence.tscn",
 }
 
 static func has(id: String) -> bool:
