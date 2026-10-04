@@ -1,0 +1,10 @@
+version: 2
+updates:
+  # GitHub Actions sürümleri (ör. Node 20 kullanımdan kalkma uyarıları)
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    labels: ["ci"]
+    commit-message:
+      prefix: "ci"

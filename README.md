@@ -30,6 +30,9 @@ Sırayla: [001](asset-requests/001-bilge-maskot.md) (Bilge), [003](asset-request
 - [Görsel stil rehberi](docs/assets/style-guide.md) · [İsimlendirme](docs/assets/naming.md)
 - [Asset istekleri (Nano Banana / Gemini TTS promptları)](asset-requests/README.md)
 
+## Katkı
+Katkılarını bekliyoruz! Başlamadan önce [Katkı Rehberi](CONTRIBUTING.md)'ni ve [Davranış Kuralları](CODE_OF_CONDUCT.md)'nı oku. Hata ya da öneri için [issue aç](../../issues/new/choose); güvenlik/gizlilik sorunları için [SECURITY.md](SECURITY.md).
+
 ## Lisans
 - **Kod:** [MIT](LICENSE)
 - **İçerik, görseller ve dokümanlar** (`content/`, `assets/`, `docs/`): [CC BY 4.0](LICENSE-CONTENT.md)
