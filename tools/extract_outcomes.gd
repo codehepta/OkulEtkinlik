@@ -1,6 +1,7 @@
 extends SceneTree
 ## Müfredat taslak çıkarma CLI'si (geliştirici aracı).
 ## Kullanım: godot --headless --path . -s res://tools/extract_outcomes.gd -- <ders> <ilk_sayfa> <son_sayfa>
+## Not: Türkçe, süreç bileşenlerinin tamamı EK 1'de olduğundan EK 1 aralığından çıkarılır: -- turkce 202 <EK 1'in son sayfası>.
 ## Sonuç: res://build/curriculum/<ders>.draft.json (git'te yok sayılır). Taslak elle gözden geçirilir.
 
 const CurriculumCheck := preload("res://tools/curriculum/curriculum_check.gd")

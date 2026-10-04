@@ -30,7 +30,7 @@
 - Dal: `feat/faz2-mufredat-matrisi`. Her görev ayrı commit.
 
 **Komutlar**
-- Tek test dosyası: `godot --headless --path . -s addons/gut/gut_cmdln.gd -gtest=res://tests/unit/<dosya>.gd -gexit`
+- Tek test dosyası: `godot --headless --path . -s addons/gut/gut_cmdln.gd -gselect=<dosya_adı> -gexit`
 - Tüm paket: `godot --headless --path . -s addons/gut/gut_cmdln.gd -gdir=res://tests -ginclude_subdirs -gexit`
 - Taslak çıkarma (Task 2): `godot --headless --path . -s res://tools/extract_outcomes.gd -- <ders> <ilk_sayfa> <son_sayfa>`
 - Rapor (Task 8): `godot --headless --path . -s res://tools/curriculum_report.gd`
@@ -142,7 +142,7 @@
 
 `check_game_map` şunları denetler: kapsamdaki her çıktının kaydı var; `game_map`'te `outcomes`'ta olmayan kod yok; `fit` ∈ `FITS`; `templates` ⊆ `SPEC_TEMPLATES`; `full`/`partial` → `templates` boş değil; `none` → `templates` boş; `partial`/`none` → `note` boş değil; `proposed` varsa her öğe `^[a-z][a-z0-9_]*$`.
 
-- [ ] **Step 1: Testleri yaz** — `tests/unit/test_curriculum_check.gd`, sahte sayfalarla (`{"docs/curriculum/sources/tymm-ilkokul-matematik.pdf": {20: "...", 21: "..."}}`) ve elle kurulmuş küçük sözlüklerle:
+- [x] **Step 1: Testleri yaz** — `tests/unit/test_curriculum_check.gd`, sahte sayfalarla (`{"docs/curriculum/sources/tymm-ilkokul-matematik.pdf": {20: "...", 21: "..."}}`) ve elle kurulmuş küçük sözlüklerle:
   - `test_split_pages_parses_markers`: `"x\n===== SAYFA 1 =====\nA\n===== SAYFA 2 =====\nB"` → `keys == [1, 2]`, `[2]` `"B"` içerir.
   - `test_normalize_ignores_whitespace_tabs_and_hyphenation`: `normalize("Dinlediği\tsesin  kay-\nnağını ör -\nnek")` == `normalize("Dinlediği sesin kaynağını örnek")`; `normalize("“eşit”")` `“` içerir.
   - `test_valid_outcome_passes`: kod `MAT.1.1.1`, s.20'de kod + metin + iki adım → `[]`.
@@ -158,10 +158,10 @@
   - `test_declared_count_mismatch_needs_note`: 2 çıktı, `declared_count: 3` → hata; `declared_count_note` ile → `[]`.
   - `test_game_map_rules`: eksik kayıt, `fit: "maybe"`, spec dışı şablon, `none` + şablon, notsuz `partial`, `proposed: ["Compare"]` → her biri hata; geçerli `full` → `[]`; `subjects` dışındaki dersin eksik kaydı → hata değil.
   - `test_count_by_grade_subject`: iki g1 matematik, bir g3 fen → `{"g1.matematik": 2, "g3.fen": 1}`.
-- [ ] **Step 2: Çalıştır, başarısız olduğunu gör** — `-gtest=res://tests/unit/test_curriculum_check.gd`; beklenen: betik yok / fonksiyon tanımsız.
-- [ ] **Step 3: `tools/curriculum/curriculum_check.gd`'yi yaz** (Interfaces'teki imzalar; regex için `RegEx`).
-- [ ] **Step 4: Testler geçiyor** — aynı komut, hepsi PASS.
-- [ ] **Step 5: Commit** — `git add tools/curriculum tests/unit/test_curriculum_check.gd*` · `tools: müfredat denetleyicisi (kod ve metin kaynak sayfada doğrulanır)`
+- [x] **Step 2: Çalıştır, başarısız olduğunu gör** — `-gselect=test_curriculum_check`; beklenen: betik yok / fonksiyon tanımsız.
+- [x] **Step 3: `tools/curriculum/curriculum_check.gd`'yi yaz** (Interfaces'teki imzalar; regex için `RegEx`).
+- [x] **Step 4: Testler geçiyor** — aynı komut, hepsi PASS.
+- [x] **Step 5: Commit** — `git add tools/curriculum tests/unit/test_curriculum_check.gd*` · `tools: müfredat denetleyicisi (kod ve metin kaynak sayfada doğrulanır)`
 
 ---
 
@@ -179,17 +179,17 @@ Elle 240 çıktı kopyalamak yerine sayfa aralığından taslak üretilir. Tasla
 
 Satır kuralları: bir satırda `<kod>. <metin>` biçimi (satır başında ya da `VE SÜREÇ BİLEŞENLERİ ` gibi tablo etiketinden sonra) bir çıktı başlatır; `code_grade(kod, subject) == 0` olan kod yok sayılır. Başlık metni bir sonraki adım, kod ya da büyük harfli bölüm etiketi (`İÇERİK ÇERÇEVESİ`, `ÖĞRENME`, `Anahtar Kavramlar`, `===== SAYFA`) satırına kadar sürer. `^[a-zçğıöşü]\)\s` ile başlayan satır yeni adımdır; sonraki satırlar aynı bitiş kurallarıyla adıma eklenir. Satırlar tek boşlukla birleştirilir, sekmeler tek boşluğa indirilir, satır sonu tirelemesi (`-` ile biten satır) birleştirilir. Aynı kod ikinci kez görülürse ilk kayıt korunur.
 
-- [ ] **Step 1: Testleri yaz** — `tests/unit/test_outcome_extract.gd`:
+- [x] **Step 1: Testleri yaz** — `tests/unit/test_outcome_extract.gd`:
   - `test_extracts_code_title_and_steps`: Fen biçimli sayfa (s.19: `FB.3.1.1. Bilimsel bilgiye ulaşma yollarını sorgulayabilme`, `a) ...`, `b) ...`, `İÇERİK ÇERÇEVESİ ...`) → `text` doğru, `steps.size() == 2`, `page == 19`, `printed_code == "FB.3.1.1."`.
   - `test_table_label_prefix_and_tabs`: `VE SÜREÇ BİLEŞENLERİ T.D.1.2. Dinledikleri/izledikleri ile ilgili anlam oluşturabilme` + `b)\t Dinlediği\tsesin\tkaynağını\ttahmin\teder.` → `text` etiketsiz, adım `"b) Dinlediği sesin kaynağını tahmin eder."`.
   - `test_wrapped_title_and_hyphenation_joined`: iki satıra bölünmüş, tireli başlık tek metin olur.
   - `test_out_of_scope_codes_skipped`: `MAT.4.1.1.` satırı sonuçta yok.
   - `test_first_occurrence_wins`: aynı kod s.20 ve s.40'ta → `page == 20`.
   - `test_extracted_entry_passes_checker`: çıkarılan kayda `themes` eklenip `check_outcomes`'a verilince (tek temalı sahte `themes` sözlüğüyle) metin/kod hatası yok.
-- [ ] **Step 2: Başarısız olduğunu gör.**
-- [ ] **Step 3: `outcome_extract.gd`'yi yaz; `tools/extract_outcomes.gd` (`extends SceneTree`, `_init`'te `OS.get_cmdline_user_args()` → ders, ilk, son; sonucu `JSON.stringify(d, "\t")` ile `res://build/curriculum/<ders>.draft.json`'a yazar, kod sayısını yazdırır, `quit()`).**
-- [ ] **Step 4: Testler geçer; CLI'yi gerçek veride dene:** `godot --headless --path . -s res://tools/extract_outcomes.gd -- fen 1 60` → `build/curriculum/fen.draft.json` oluşur, `FB.3.*` kodları içerir. (`build/` git'te yok sayılıyor.)
-- [ ] **Step 5: Commit** — `tools: müfredat taslak çıkarıcı`
+- [x] **Step 2: Başarısız olduğunu gör.**
+- [x] **Step 3: `outcome_extract.gd`'yi yaz; `tools/extract_outcomes.gd` (`extends SceneTree`, `_init`'te `OS.get_cmdline_user_args()` → ders, ilk, son; sonucu `JSON.stringify(d, "\t")` ile `res://build/curriculum/<ders>.draft.json`'a yazar, kod sayısını yazdırır, `quit()`).**
+- [x] **Step 4: Testler geçer; CLI'yi gerçek veride dene:** `godot --headless --path . -s res://tools/extract_outcomes.gd -- fen 1 60` → `build/curriculum/fen.draft.json` oluşur, `FB.3.*` kodları içerir. (`build/` git'te yok sayılıyor.)
+- [x] **Step 5: Commit** — `tools: müfredat taslak çıkarıcı`
 
 ---
 
@@ -204,16 +204,16 @@ Satır kuralları: bir satırda `<kod>. <metin>` biçimi (satır başında ya da
 - Consumes: Task 1 `CurriculumCheck`, Task 2 CLI.
 - Produces: `test_curriculum_data.gd` içinde `const EXPECTED_COUNTS: Dictionary` (sonraki görevler satır ekler) ve `const MAPPED_SUBJECTS: PackedStringArray = []` (Task 6–7 doldurur).
 
-- [ ] **Step 1: Kapı testini yaz** — `tests/unit/test_curriculum_data.gd`, gerçek dosyaları okur:
+- [x] **Step 1: Kapı testini yaz** — `tests/unit/test_curriculum_data.gd`, gerçek dosyaları okur:
   - `test_outcomes_match_sources`: `check_outcomes(outcomes, themes, pages)` == `[]` (`pages`, `SUBJECT_SOURCES`'taki her dosya için `load_pages`).
   - `test_themes_consistent`: `check_themes` == `[]`.
   - `test_counts_match_program`: `count_by_grade_subject(outcomes)` içinde `EXPECTED_COUNTS`'taki her anahtar eşit **ve** sonuçta `EXPECTED_COUNTS` dışında anahtar yok. Bu görevde `{"g1.matematik": 19, "g2.matematik": 25, "g3.matematik": 33}` (PDF s.10–11 "TOPLAM" satırları).
   - `test_game_map_covers_mapped_subjects`: `check_game_map(game_map, outcomes, MAPPED_SUBJECTS)` == `[]`; `game_map.json` yoksa boş sözlük kabul edilir.
   - `test_content_db_autoload.gd`'ye `test_vertical_slice_outcomes_still_resolve`: tekil `ContentDB` (gerçek `outcomes.json`) ile `outcome_info("MAT.1.1.1")["text"]` boş değil ve `content/g1/matematik/u01.json`'daki her kod `outcome_info`'da bulunur.
-- [ ] **Step 2: Çalıştır; sayım testi başarısız (7 ≠ 19…), tema testi başarısız (`themes.json` yok).**
-- [ ] **Step 3: Veriyi üret.** `extract_outcomes.gd -- matematik <ilk> <son>` ile 1–3. sınıf bölümünün taslağını al (sayfa aralığını `.txt`'te `MAT.1.`… başlıklarından bul; 4. sınıf kodları zaten atlanır). Taslağı gözden geçir, `.txt` ile karşılaştır. `themes.json`'a 1–3. sınıf temalarını işleniş sırasıyla gir (s.10–11 tabloları; ör. 1. sınıf `t01 = MAT.1.3. Nesnelerin Geometrisi (1)`, `t02 = MAT.1.1. Sayılar ve Nicelikler (1)`). Her çıktının `themes` alanını doldur. Mevcut 7 kaydın metni değişmez.
-- [ ] **Step 4: Tüm paketi çalıştır** — yeni testler ve mevcut 282 test PASS (özellikle `test_all_content_valid`).
-- [ ] **Step 5: Commit** — `docs(curriculum): Matematik 1–3 öğrenme çıktıları ve temaları`
+- [x] **Step 2: Çalıştır; sayım testi başarısız (7 ≠ 19…), tema testi başarısız (`themes.json` yok).**
+- [x] **Step 3: Veriyi üret.** `extract_outcomes.gd -- matematik <ilk> <son>` ile 1–3. sınıf bölümünün taslağını al (sayfa aralığını `.txt`'te `MAT.1.`… başlıklarından bul; 4. sınıf kodları zaten atlanır). Taslağı gözden geçir, `.txt` ile karşılaştır. `themes.json`'a 1–3. sınıf temalarını işleniş sırasıyla gir (s.10–11 tabloları; ör. 1. sınıf `t01 = MAT.1.3. Nesnelerin Geometrisi (1)`, `t02 = MAT.1.1. Sayılar ve Nicelikler (1)`). Her çıktının `themes` alanını doldur. Mevcut 7 kaydın metni değişmez.
+- [x] **Step 4: Tüm paketi çalıştır** — yeni testler ve mevcut 282 test PASS (özellikle `test_all_content_valid`).
+- [x] **Step 5: Commit** — `docs(curriculum): Matematik 1–3 öğrenme çıktıları ve temaları`
 
 ---
 
@@ -221,11 +221,11 @@ Satır kuralları: bir satırda `<kod>. <metin>` biçimi (satır başında ya da
 
 **Files:** Modify `docs/curriculum/outcomes.json`, `docs/curriculum/themes.json`, `tests/unit/test_curriculum_data.gd`
 
-- [ ] **Step 1:** `EXPECTED_COUNTS`'a `"g1.turkce": 17, "g2.turkce": 20, "g3.turkce": 20` ekle (EK 1'deki farklı kod sayıları). Çalıştır → başarısız.
-- [ ] **Step 2:** Taslağı EK 1 sayfalarından çıkar (`-- turkce 202 <3. sınıfın son EK 1 sayfası>`). Bütün süreç bileşenleri (`a)`…`ğ)`) EK 1'deki gibi girer. `source.page` EK 1 sayfasıdır.
-- [ ] **Step 3:** `themes.json`'a 1–3. sınıf temalarını s.19–20 tablosundaki sırayla gir (1. sınıf: `t01` hazırlık, `t02`–`t09` = 1.–8. TEMA; 2. ve 3. sınıf: `t01`–`t08`). Her temanın `outcomes` listesi, o temanın program sayfalarında "ÖĞRENME ÇIKTILARI VE SÜREÇ BİLEŞENLERİ" altında geçen kodlardır. `declared_count` tablodaki sayıdır. Tema gövdesindeki farklı kod sayısı tabloyla uyuşmazsa `declared_count_note` yaz.
-- [ ] **Step 4:** `test_curriculum_data.gd` ve tüm paket PASS.
-- [ ] **Step 5: Commit** — `docs(curriculum): Türkçe 1–3 öğrenme çıktıları ve temaları`
+- [x] **Step 1:** `EXPECTED_COUNTS`'a `"g1.turkce": 17, "g2.turkce": 20, "g3.turkce": 20` ekle (EK 1'deki farklı kod sayıları). Çalıştır → başarısız.
+- [x] **Step 2:** Taslağı EK 1 sayfalarından çıkar (`-- turkce 202 <3. sınıfın son EK 1 sayfası>`). Bütün süreç bileşenleri (`a)`…`ğ)`) EK 1'deki gibi girer. `source.page` EK 1 sayfasıdır.
+- [x] **Step 3:** `themes.json`'a 1–3. sınıf temalarını s.19–20 tablosundaki sırayla gir (1. sınıf: `t01` hazırlık, `t02`–`t09` = 1.–8. TEMA; 2. ve 3. sınıf: `t01`–`t08`). Her temanın `outcomes` listesi, o temanın program sayfalarında "ÖĞRENME ÇIKTILARI VE SÜREÇ BİLEŞENLERİ" altında geçen kodlardır. `declared_count` tablodaki sayıdır. Tema gövdesindeki farklı kod sayısı tabloyla uyuşmazsa `declared_count_note` yaz.
+- [x] **Step 4:** `test_curriculum_data.gd` ve tüm paket PASS.
+- [x] **Step 5: Commit** — `docs(curriculum): Türkçe 1–3 öğrenme çıktıları ve temaları`
 
 ---
 
@@ -233,11 +233,11 @@ Satır kuralları: bir satırda `<kod>. <metin>` biçimi (satır başında ya da
 
 **Files:** Modify `docs/curriculum/outcomes.json`, `docs/curriculum/themes.json`, `tests/unit/test_curriculum_data.gd`
 
-- [ ] **Step 1:** `EXPECTED_COUNTS`'a `"g1.hayat_bilgisi": 23, "g2.hayat_bilgisi": 23, "g3.hayat_bilgisi": 20, "g3.fen": 20` ekle. Bu sayıları öğrenme alanı / tema tablolarıyla karşılaştır. Tablo farklı bir sayı veriyorsa **dur**: sayıyı ve sayfayı rapor et, tahminle değiştirme. Çalıştır → başarısız.
-- [ ] **Step 2:** Hayat Bilgisi taslağı (çıktılar s.15'ten itibaren; süreç bileşeni yok, `steps` alanı girmez). Temalar = her sınıfın 6 öğrenme alanı (`1. BEN VE OKULUM` … `6. BİLİM, TEKNOLOJİ VE SANAT`), `official` dökümdeki yazımla. Döküm bozuk yazdıysa (`Y AŞADIĞIM`) PDF'teki doğru yazım kullanılır (`YAŞADIĞIM`) ve bu `themes.json`'da sorun yaratmaz, çünkü tema başlığı sayfayla denetlenmez.
-- [ ] **Step 3:** Fen taslağı yalnızca 3. sınıf bölümünden. Temalar 3. sınıf tema tablosundan (`TOPLAM 20` olan tablo).
-- [ ] **Step 4:** Kapı testi ve tüm paket PASS.
-- [ ] **Step 5: Commit** — `docs(curriculum): Hayat Bilgisi 1–3 ve Fen Bilimleri 3 öğrenme çıktıları`
+- [x] **Step 1:** `EXPECTED_COUNTS`'a `"g1.hayat_bilgisi": 23, "g2.hayat_bilgisi": 23, "g3.hayat_bilgisi": 20, "g3.fen": 20` ekle. Bu sayıları öğrenme alanı / tema tablolarıyla karşılaştır. Tablo farklı bir sayı veriyorsa **dur**: sayıyı ve sayfayı rapor et, tahminle değiştirme. Çalıştır → başarısız.
+- [x] **Step 2:** Hayat Bilgisi taslağı (çıktılar s.15'ten itibaren; süreç bileşeni yok, `steps` alanı girmez). Temalar = her sınıfın 6 öğrenme alanı (`1. BEN VE OKULUM` … `6. BİLİM, TEKNOLOJİ VE SANAT`), `official` dökümdeki yazımla. Döküm bozuk yazdıysa (`Y AŞADIĞIM`) PDF'teki doğru yazım kullanılır (`YAŞADIĞIM`) ve bu `themes.json`'da sorun yaratmaz, çünkü tema başlığı sayfayla denetlenmez.
+- [x] **Step 3:** Fen taslağı yalnızca 3. sınıf bölümünden. Temalar 3. sınıf tema tablosundan (`TOPLAM 20` olan tablo).
+- [x] **Step 4:** Kapı testi ve tüm paket PASS.
+- [x] **Step 5: Commit** — `docs(curriculum): Hayat Bilgisi 1–3 ve Fen Bilimleri 3 öğrenme çıktıları`
 
 ---
 
@@ -251,10 +251,10 @@ Her çıktının süreç bileşenleri tek tek okunur ve Veri sözleşmesindeki `
 - `MAT.1.1.7` → `partial`, `["count_choose"]`, `proposed: ["estimate_then_count"]` (spec Açık sorular ile tutarlı).
 - `FB.3.1.1` (merak ettiği konuyu sorgulama, bilgi toplama) → büyük olasılıkla `none` ya da `partial`; gerekçeyi `note`'a yaz.
 
-- [ ] **Step 1:** `MAPPED_SUBJECTS = ["matematik", "fen"]` yap; çalıştır → eksik kayıt hataları.
-- [ ] **Step 2:** 97 kaydı yaz.
-- [ ] **Step 3:** Kapı testi PASS.
-- [ ] **Step 4: Commit** — `docs(curriculum): Matematik ve Fen çıktılarının şablon eşlemesi`
+- [x] **Step 1:** `MAPPED_SUBJECTS = ["matematik", "fen"]` yap; çalıştır → eksik kayıt hataları.
+- [x] **Step 2:** 97 kaydı yaz.
+- [x] **Step 3:** Kapı testi PASS.
+- [x] **Step 4: Commit** — `docs(curriculum): Matematik ve Fen çıktılarının şablon eşlemesi`
 
 ---
 
@@ -264,10 +264,10 @@ Her çıktının süreç bileşenleri tek tek okunur ve Veri sözleşmesindeki `
 
 Türkçe'de konuşma (`T.K.*`) ve yazma (`T.Y.*`) çıktılarının çoğu `none` ya da `partial` olur. `trace` dik temel harf yazımını, `syllable_build` hece ve kelime kurmayı, `listen_find` ses-harf ilişkisini karşılar (spec §2: 1. sınıf ses temelli cümle yöntemi). Hayat Bilgisi'nde `scenario` ve `sort_bins` ağırlıklıdır.
 
-- [ ] **Step 1:** `MAPPED_SUBJECTS`'e `"turkce"`, `"hayat_bilgisi"` ekle → başarısız.
-- [ ] **Step 2:** 123 kaydı yaz. Kapı testi PASS.
-- [ ] **Step 3: Spec'i güncelle:** §8 tablosunda Faz 2 çıktısı `docs/curriculum/*` (outcomes, themes, game_map, matrix). Dosyanın sonuna **"Açık sorular (Faz 2)"** bölümü ekle: (a) `game_map`'teki her `proposed` mekanik için bir satır: kimlik, kısa mekanik tanımı, gerektiren kodlar; spec §3.7'ye eklenip eklenmeyeceği sahibe sorulur (tabloya **eklenmez**); (b) `fit: none` olan çıktıların sayısı ve bunların veli paneline "evde etkinlik önerisi" olarak girip girmeyeceği; (c) her `declared_count_note` ve `manual_note`; (d) 1. sınıf Matematik'te program sırası (`t01` geometri) ile Faz 1 dilimindeki sıra farkı: Faz 3'te ünite dosyaları işleniş sırasına göre mi numaralanacak?
-- [ ] **Step 4: Commit** — `docs(curriculum): Türkçe ve Hayat Bilgisi şablon eşlemesi; Faz 2 açık soruları`
+- [x] **Step 1:** `MAPPED_SUBJECTS`'e `"turkce"`, `"hayat_bilgisi"` ekle → başarısız.
+- [x] **Step 2:** 123 kaydı yaz. Kapı testi PASS.
+- [x] **Step 3: Spec'i güncelle:** §8 tablosunda Faz 2 çıktısı `docs/curriculum/*` (outcomes, themes, game_map, matrix). Dosyanın sonuna **"Açık sorular (Faz 2)"** bölümü ekle: (a) `game_map`'teki her `proposed` mekanik için bir satır: kimlik, kısa mekanik tanımı, gerektiren kodlar; spec §3.7'ye eklenip eklenmeyeceği sahibe sorulur (tabloya **eklenmez**); (b) `fit: none` olan çıktıların sayısı ve bunların veli paneline "evde etkinlik önerisi" olarak girip girmeyeceği; (c) her `declared_count_note` ve `manual_note`; (d) 1. sınıf Matematik'te program sırası (`t01` geometri) ile Faz 1 dilimindeki sıra farkı: Faz 3'te ünite dosyaları işleniş sırasına göre mi numaralanacak?
+- [x] **Step 4: Commit** — `docs(curriculum): Türkçe ve Hayat Bilgisi şablon eşlemesi; Faz 2 açık soruları`
 
 ---
 
@@ -282,11 +282,12 @@ Türkçe'de konuşma (`T.K.*`) ve yazma (`T.Y.*`) çıktılarının çoğu `none
 
 `matrix.md` düzeni: başlık ve "bu dosya üretilmiştir, elle düzenleme; `tools/curriculum_report.gd`" uyarısı; özet tablo (sınıf × ders: çıktı sayısı, full / partial / none); sonra sınıf → ders (`matematik`, `turkce`, `hayat_bilgisi`, `fen` sırası) → tema (`order` sırası, başlık `official`) için tablo: `| Kod | Öğrenme çıktısı | s. | Uygunluk | Şablonlar | Not |` (Türkçe'de bir kod her temasında tekrar görünür); sonda "Önerilen yeni şablonlar" (proposed → kodlar) ve "Sahibe notlar" (`manual_note`, `declared_count_note`). Tablo hücrelerinde `|` kaçışlanır. Çıktı deterministiktir (sözlük sırasına değil, açık sıralamaya dayanır) ve `\n` ile biter.
 
-- [ ] **Step 1: Test yaz** — `test_curriculum_data.gd`'ye:
+- [x] **Step 1: Test yaz** — `test_curriculum_data.gd`'ye:
   - `test_matrix_md_is_up_to_date`: `render(...)` == `FileAccess.get_file_as_string("res://docs/curriculum/matrix.md")`; mesaj: "tools/curriculum_report.gd'yi çalıştır".
   - `test_render_lists_every_outcome`: `outcomes`'taki her kod `render` çıktısında `| <kod> |` olarak geçer.
-- [ ] **Step 2: Başarısız olduğunu gör.**
-- [ ] **Step 3:** `report.gd` ve CLI'yi yaz; CLI'yi çalıştırıp `matrix.md`'yi üret.
-- [ ] **Step 4:** `docs/curriculum/README.md` yaz: üç JSON'un sözleşmesi (bu plandaki "Veri sözleşmesi"nin kısa hali), MEB yeni PDF yayımlayınca güncelleme adımları (PDF + `.txt` döküm → taslak çıkarıcı → fark gözden geçirme → kapı testi → rapor). `sources/README.md`'deki "Faz 2'de yeniden düzenlenebilir" notunu `themes.json`'a yönlendir. `docs/qa-checklist.md`'ye Faz 2 maddesi: "Veli paneli → ilerleme: 1. sınıf Matematik çıktı metinleri görünür (outcomes.json şema değişikliği sonrası)".
-- [ ] **Step 5:** Tüm paketi çalıştır, hepsi PASS. `godot --headless --path . -s res://tools/missing_assets.gd` hata vermeden biter.
-- [ ] **Step 6: Commit** — `docs(curriculum): okunur müfredat matrisi ve güncelleme rehberi`; PR aç (başlık: `Faz 2: müfredat matrisi`), açıklamada sayılar ve spec'e eklenen açık sorular; atıf satırı yok.
+- [x] **Step 2: Başarısız olduğunu gör.**
+- [x] **Step 3:** `report.gd` ve CLI'yi yaz; CLI'yi çalıştırıp `matrix.md`'yi üret.
+- [x] **Step 4:** `docs/curriculum/README.md` yaz: üç JSON'un sözleşmesi (bu plandaki "Veri sözleşmesi"nin kısa hali), MEB yeni PDF yayımlayınca güncelleme adımları (PDF + `.txt` döküm → taslak çıkarıcı → fark gözden geçirme → kapı testi → rapor). `sources/README.md`'deki "Faz 2'de yeniden düzenlenebilir" notunu `themes.json`'a yönlendir. `docs/qa-checklist.md`'ye Faz 2 maddesi: "Veli paneli → ilerleme: 1. sınıf Matematik çıktı metinleri görünür (outcomes.json şema değişikliği sonrası)".
+- [x] **Step 5:** Tüm paketi çalıştır, hepsi PASS. `godot --headless --path . -s res://tools/missing_assets.gd` hata vermeden biter.
+- [x] **Step 6: Commit** — `docs(curriculum): okunur müfredat matrisi ve güncelleme rehberi`.
+- [ ] **Step 7: PR aç** — başlık: `Faz 2: müfredat matrisi`; açıklamada sayılar ve spec'e eklenen açık sorular; atıf satırı yok.

@@ -74,9 +74,9 @@ JSON dosyaları tab girintili, UTF-8'dir; metinler dökümden karakteri karakter
 
 1. Yeni PDF'i `sources/` altına koy, `sources/README.md` tablosunu (dosya adı damgası, sayfa sayısı, URL) güncelle. Gerekirse `tools/curriculum/curriculum_check.gd` içindeki `SUBJECT_SOURCES` yollarını ve URL'lerini düzelt.
 2. `.txt` dökümünü `pypdf` ile yeniden çıkar (sayfalar `===== SAYFA N =====` ile ayrılır). Tablolar bozuksa şüpheli yerleri PDF'ten doğrula.
-3. Taslak çıkar: `godot --headless --path . -s res://tools/extract_outcomes.gd -- <ders> <ilk_sayfa> <son_sayfa>`. Sonuç `build/curriculum/<ders>.draft.json` olur (git'e girmez).
+3. Taslak çıkar: `godot --headless --path . -s res://tools/extract_outcomes.gd -- <ders> <ilk_sayfa> <son_sayfa>`. Türkçe için taslak, programın EK 1 bölümünden (bütün süreç bileşenlerinin listelendiği yer) çıkarılır: `-- turkce 202 <EK 1'in son sayfası>`. Sonuç `build/curriculum/<ders>.draft.json` olur (git'e girmez).
 4. Taslağı `outcomes.json` ile karşılaştırıp farkları tek tek gözden geçir: yeni, silinen ve metni değişen çıktılar. Sayfa numaralarını, `themes.json`'daki sırayı ve sayıları (`declared_count`) güncelle. Kodları taslaktan körü körüne alma, dökümden doğrula.
 5. Değişen ya da yeni çıktılar için `game_map.json` kayıtlarını eşleme kuralına göre güncelle.
-6. Kapı testini çalıştır: `godot --headless --path . -s addons/gut/gut_cmdln.gd -gselect=test_curriculum_data -gexit`. `EXPECTED_COUNTS` (programdaki TOPLAM satırları) gerekiyorsa aynı değişiklikte güncellenir.
-7. Matrisi üret: `godot --headless --path . -s res://tools/curriculum_report.gd`. `matrix.md` güncel değilse kapı testi (`test_matrix_md_is_up_to_date`) başarısız olur.
+6. Matrisi üret: `godot --headless --path . -s res://tools/curriculum_report.gd`. Kapı testi `test_matrix_md_is_up_to_date` ile `matrix.md`'nin güncelliğini de denetlediği için matris, kapı testinden önce üretilir.
+7. Kapı testini çalıştır: `godot --headless --path . -s addons/gut/gut_cmdln.gd -gselect=test_curriculum_data -gexit`. `EXPECTED_COUNTS` (programdaki TOPLAM satırları) gerekiyorsa aynı değişiklikte güncellenir.
 8. Tam paketi çalıştır ve `outcomes.json`, `themes.json`, `game_map.json`, `matrix.md` dosyalarını birlikte commit et.
