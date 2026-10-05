@@ -26,7 +26,7 @@ Uygulama sırasında verilen ek kararlar (spec sessiz, önerilen seçimle ilerle
 - **K7 — Şekil sınıflandırmada kutu rozeti.** `sort_bins` kutu rozetleri tekrarsız şekil ister ve dikdörtgen rozeti yok. Dikdörtgen kutusu `star` rozeti kullanır; kutunun asıl etiketi dikdörtgen resmidir. Kare ile karışmasın diye `diamond` kullanılmadı.
 - **K8 — Anahtar önekleri.** Paralel içerik görevleriyle çakışmasın diye yeni ortak satırlar `vo.g1.matematik.*` / `label.g1.matematik.*` altında, çıkartmalar `st.matematik.g1_*` adıyla eklendi.
 - **K9 — `story` hoparlörü Bilge köşesinden çıktı.** İçerik turu testi `story` sayfa hoparlörünün (130, 820) Bilge köşesine (x 16–266, y 724–1068) bindiğini gösterdi; hoparlör (290, 820)'ye kaydı. Başka yerleşim değişmedi.
-- **K10 — Asset partileri.** 030 konum + ölçme araçları, 031 şekiller + yapı parçaları + eşyalar, 032 yarışçı hayvanlar + küçük oyuncaklar + hikâye sahneleri, 033 çıkartmalar, 034 seslendirme. 035–039 kullanılmadı.
+- **K10 — Asset partileri.** 030 konum + ölçme araçları, 031 şekiller + yapı parçaları + eşyalar, 032 yarışçı hayvanlar + küçük oyuncaklar + hikâye sahneleri, 033 çıkartmalar, 034 seslendirme. 035–039 kullanılmadı. Temel üçgen, kare ve dikdörtgen 2. sınıfın 040 partisinde istendiği için 031'den çıkarıldı; 031 yalnızca 1. sınıfın ek çeşitlerini ister.
 
 ## Üniteler
 
