@@ -215,7 +215,7 @@ a round sticker badge with a thick white die-cut border, showing two small heart
 - **Açıklama:** Çıkartma: domuzcuk kumbara (u05 durak 1, Parayı tanı)
 
 ```
-a round sticker badge with a thick white die-cut border, showing a cute pink piggy bank with a coin going into the slot, coin without any marks. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
+a round sticker badge with a thick white die-cut border, showing a cute pink piggy bank with a plain smooth golden coin going into the slot; the coin is completely blank with no symbols, no letters and no marks. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
 ```
 
 ### 19. `assets/images/stickers/matematik/g1_cuzdan.png`
@@ -285,7 +285,7 @@ a round sticker badge with a thick white die-cut border, showing a small mosaic 
 - **Açıklama:** Çıkartma: çetele defteri (u07 durak 1, Çetele tut)
 
 ```
-a round sticker badge with a thick white die-cut border, showing a small notebook with tally marks drawn as groups of short lines, no numbers. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
+a round sticker badge with a thick white die-cut border, showing a small open notebook page with tally marks: two groups of four short vertical lines, each group crossed by one diagonal line, drawn in dark pencil, no numbers, no letters. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
 ```
 
 ### 26. `assets/images/stickers/matematik/g1_grafik.png`
@@ -295,7 +295,7 @@ a round sticker badge with a thick white die-cut border, showing a small noteboo
 - **Açıklama:** Çıkartma: nesne grafiği (u07 durak 2, Nesne grafiği)
 
 ```
-a round sticker badge with a thick white die-cut border, showing three short columns of stacked toy blocks of different heights, like a picture graph. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
+a round sticker badge with a thick white die-cut border, showing a simple picture graph made of square toy blocks standing on one baseline: a left column of exactly 2 red blocks, a middle column of exactly 4 yellow blocks and a right column of exactly 3 blue blocks. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
 ```
 
 

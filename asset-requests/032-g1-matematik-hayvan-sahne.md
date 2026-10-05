@@ -95,7 +95,7 @@ the same colorful toy ball as in item top but drawn noticeably smaller in the fr
 - **Açıklama:** Hikâye: Ece'nin üç balonu, annesi iki balon daha veriyor
 
 ```
-a little girl holding three balloons while her smiling mother hands her two more balloons, in a sunny park. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. Dominant palette: leafy greens, warm orange and honey yellow accents.
+in a sunny park, a little girl on the left holds exactly THREE balloons (red, yellow, blue) on strings in one hand, and her smiling mother on the right holds out exactly TWO more balloons (green, orange) to her; five balloons in total, three with the girl and two with the mother, clearly separated. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. Dominant palette: leafy greens, warm orange and honey yellow accents.
 ```
 
 ### 8. `assets/images/items/sahne/kuslar.png`
@@ -105,7 +105,7 @@ a little girl holding three balloons while her smiling mother hands her two more
 - **Açıklama:** Hikâye: dalda yedi kuş, üçü uçup gidiyor
 
 ```
-a tree branch with four small birds sitting on it and three small birds flying away into the sky. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. Dominant palette: leafy greens, warm orange and honey yellow accents.
+one long horizontal tree branch with exactly FOUR small round birds sitting in a row on it, and exactly THREE small birds flying away in the open sky to the right; seven birds in total, four sitting and three flying, clearly separated. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. Dominant palette: leafy greens, warm orange and honey yellow accents.
 ```
 
 ### 9. `assets/images/items/sahne/bilyeler.png`
@@ -115,7 +115,7 @@ a tree branch with four small birds sitting on it and three small birds flying a
 - **Açıklama:** Hikâye: Can'ın bilyeleri, arkadaşı dört bilye veriyor
 
 ```
-a little boy kneeling next to a small pile of colorful glass marbles while his friend hands him four more marbles, on a school playground. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. Dominant palette: leafy greens, warm orange and honey yellow accents.
+on a school playground, a little boy kneeling next to a small pile of colorful glass marbles on the ground, and his friend holding out an open hand with exactly FOUR big colorful marbles clearly visible on the palm, giving them to him. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. Dominant palette: leafy greens, warm orange and honey yellow accents.
 ```
 
 

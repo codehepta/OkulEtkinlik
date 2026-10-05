@@ -147,7 +147,7 @@ a tiny cute house on the far left and the same small cute orange tabby kitten (i
 - **Açıklama:** Karış: açık el ayası, başparmak ile serçe parmak gergin
 
 ```
-a child's open hand spread wide, thumb and little finger stretched apart as when measuring a hand span. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a child's open right hand seen from the back, fingers spread wide, the thumb and the little finger stretched far apart as when measuring a hand span (karış), realistic five-fingered hand shape, no face. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 13. `assets/images/items/olcu/adim.png`
@@ -187,7 +187,7 @@ a single small green connecting math cube (multilink unit cube) with a little kn
 - **Açıklama:** Misket
 
 ```
-a single glass marble with a colorful swirl inside. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a single small round transparent glass marble with a thin twisted colorful ribbon of color inside, shiny highlight, no face. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 

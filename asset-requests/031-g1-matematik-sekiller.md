@@ -123,7 +123,7 @@ a flat thick clay ring-shaped disc, a perfect circle, small and purple, seen str
 - **Açıklama:** Çatı (üçgen biçimli kırmızı kiremit çatı)
 
 ```
-a red tiled house roof seen from the front, clearly triangle shaped, without the rest of the house. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+only a triangular red tiled house roof seen from the front, a clear triangle shape, no walls, no door, no windows, no face. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 10. `assets/images/items/yapi/kapi.png`
@@ -143,7 +143,7 @@ a wooden front door seen straight from the front, clearly a tall rectangle, with
 - **Açıklama:** Pencere (kare pencere)
 
 ```
-a square house window with a white frame and four square panes, seen straight from the front. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a square house window with a thick white frame and four square light blue glass panes, seen straight from the front, no face. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 12. `assets/images/items/yapi/saat.png`
@@ -173,7 +173,7 @@ a round white dinner plate seen from slightly above. 3D claymation style, handcr
 - **Açıklama:** Simit
 
 ```
-a Turkish simit, a round sesame bread ring. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a Turkish simit: a thin crispy golden-brown twisted bread ring completely covered with small sesame seeds, a large hole in the middle, no sprinkles, no face. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 15. `assets/images/items/esya/duvar_saati.png`
@@ -203,7 +203,7 @@ a single round black rubber wheel with a red hub, seen from the side. 3D claymat
 - **Açıklama:** Düğme
 
 ```
-a single round four-hole sewing button. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a single round sewing button with exactly four small holes in the middle arranged in a square, no face. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 18. `assets/images/items/esya/kutu.png`
