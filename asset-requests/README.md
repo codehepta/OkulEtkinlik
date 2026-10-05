@@ -19,7 +19,7 @@ Yerel üretilen görsellerin kaynağı (model, tohum, prompt): `docs/assets/imag
 |---|---|---|---|
 | 001 | Bilge maskot: karakter sayfası + 9 poz | En yüksek | ✅ Tamam (2–8, 10: yerel klein, 2026-10-05) |
 | 002 | Ada haritası, bölge arka planları, ikonlar, duraklar | Yüksek | ✅ Tamam (Ağaç Evi arka planı yerel klein, 2026-10-05) |
-| 003 | Profil avatarları + arayüz ikonları | Yüksek | 🟡 17/18 (hoparlör ikonu yeniden üretiliyor) |
+| 003 | Profil avatarları + arayüz ikonları | Yüksek | ✅ Tamam (hoparlör tarifi netleştirildi, 2026-10-05) |
 | 004 | Sayma ve eşleştirme nesneleri (28 nesne) | Yüksek | ✅ Tamam (13 nesne yerel klein, 2026-10-05) |
 | 005 | Genel seslendirme (Gemini TTS) + sayılar 0–20 | Yüksek | ⏳ Bekliyor |
 | 006 | Müzik (6 parça) + ses efektleri (12) | Orta | ⏳ Bekliyor |
@@ -49,7 +49,7 @@ Yerel üretilen görsellerin kaynağı (model, tohum, prompt): `docs/assets/imag
 | 052 | Faz 3e: 3. sınıf Matematik seslendirmesi 1, ünite 1–3 + sayılar, nesne adları, etiketler (230 satır) | Orta | ⏳ Bekliyor |
 | 053 | Faz 3e: 3. sınıf Matematik seslendirmesi 2, ünite 4–6 (103 satır) | Orta | ⏳ Bekliyor |
 | 060 | 1. sınıf Türkçe: sözcük ve nesne görselleri (70 `item.*`) | Yüksek | ✅ Tamam (yerel klein, 2026-10-05; robot tarifi netleştirildi) |
-| 061 | 1. sınıf Türkçe: hikâye, cümle, durum ve davranış sahneleri (96 `item.*`) | Orta | ⏳ Bekliyor |
+| 061 | 1. sınıf Türkçe: hikâye, cümle, durum ve davranış sahneleri (96 `item.*`) | Orta | ✅ Tamam (yerel klein; gölge sahneleri Blender, 2026-10-05) |
 | 062 | 1. sınıf Türkçe: kutu simgeleri, duygu yüzleri, ses simgeleri (13 `item.*`) | Orta | ⏳ Bekliyor |
 | 063 | 1. sınıf Türkçe çıkartmaları (65 `st.turkce.g1_*`) | Düşük | ⏳ Bekliyor |
 | 064 | 1. sınıf Türkçe: harf sesleri, heceler, sözcükler, ses kaynakları (77 satır) | En yüksek | ⏳ Bekliyor |
