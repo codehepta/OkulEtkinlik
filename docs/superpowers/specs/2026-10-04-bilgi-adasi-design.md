@@ -444,3 +444,9 @@ Hayat Bilgisi 1–3 içeriği (Hayat Kasabası). Ayrıntı: `docs/superpowers/pl
 - **Karar (önerilen seçim):** APK boyut bütçesi 150 MB (CI'da denetlenir). Ses hedefleri −16 LUFS seslendirme, −23 LUFS müzik, −18 LUFS efekt (`docs/assets/audio-mix.md`); ana kanalda −1 dB tavanlı sınırlayıcı.
 - **Karar (önerilen seçim):** Kontrast hedefi bütün metinlerde WCAG AA gövde metni eşiği 4.5:1 (çocuk ekranlarındaki metin büyük metin sayılsa da).
 
+## Açık sorular (Faz 9)
+- **Karar (sahip onayıyla önerilen seçim, Faz 9):** Önce F-Droid + Play Store (Android); iOS sahibin Mac'i hazır olunca. 3D maskot v1.0 sonrasına ertelendi. Cloud görevi export ön ayarlarını (`Android` APK, `Android AAB`, `iOS`), etiketle çalışan sürüm iş akışını (`.github/workflows/release.yml`, taslak GitHub sürümü), F-Droid/Play mağaza metinlerini (`fastlane/metadata/android/`), gizlilik politikasını (`PRIVACY.md`) ve sürüm notlarını (`CHANGELOG.md`) hazırladı. İmza anahtarı, mağaza hesapları ve iOS derlemesi sahibindir: `docs/release/README.md`.
+- **Karar (önerilen seçim):** İlk sürüm 1.0.0, Android `version/code` 1. Sürüm numarası `project.godot`, iki Android ön ayarı ve iOS ön ayarında aynı tutulur (`tests/unit/test_release_metadata.gd`).
+- **Karar (önerilen seçim):** Play Store paketi gradle derlemesiyle AAB'dir; Android derleme şablonu repoya konmaz, CI her derlemede `--install-android-build-template` ile kurar (`/android/` `.gitignore`'da). F-Droid ve GitHub sürümü gradle'sız APK kullanır.
+- **Açık:** F-Droid, Godot motorunu ve Android şablonunu kaynaktan derleyen bir tarif ister; `fdroiddata` başvurusundaki `Builds` bölümü F-Droid'in güncel Godot örneğine göre sahip tarafından tamamlanır (taslak `docs/release/README.md`).
+

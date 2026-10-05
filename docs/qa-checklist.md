@@ -404,3 +404,11 @@ Otomatik denetimler her PR'da çalışır: dokunma hedefleri bütün ekranlarda 
 - [ ] Öğretmen gözden geçirmeleri (Türkçe metinler, Hayat Bilgisi, harf vuruş sırası) tamamlandı ya da sürüm notunda "bilinen eksik" olarak yazıldı.
 - [ ] En az öncelikli asset partileri (001–006, 064) geldi ya da yer tutucularla yayın kararı verildi.
 
+# Faz 9 — Yayın paketi
+
+1. `v1.0.0` etiketiyle "Sürüm" iş akışı yeşil; taslak GitHub sürümünde `bilgi-adasi.apk` ve `bilgi-adasi.aab` var, notlar `changelogs/1.txt`'den geldi.
+2. İmzalı APK'yı eski debug sürümü kaldırdıktan sonra cihaza kur (imzalar farklı olduğu için üstüne kurulmaz). Uygulama adı "Bilgi Adası", simge doğru, Ayarlar → Uygulamalar → İzinler: "izin istenmedi".
+3. Uçak modunda baştan sona bir durak oyna: hiçbir şey internet beklemiyor.
+4. Play Console dahili testinde AAB'den kurulan sürüm aynı davranıyor; sürüm adı 1.0.0.
+5. iOS (Mac hazır olunca): Xcode'dan gerçek cihazda açılış, bir durak, veli kapısı; App Store Connect'te "Veri Toplanmıyor".
+

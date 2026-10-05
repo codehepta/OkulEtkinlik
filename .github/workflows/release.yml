@@ -1,0 +1,112 @@
+name: Sürüm
+
+# Yayın derlemesi: imzalı APK (F-Droid / GitHub) ve AAB (Play Store).
+# - v* etiketi: imzalı derler, taslak GitHub sürümü açar (yayımlamak sahibin elinde).
+# - Bu dosyaya ya da export ön ayarlarına dokunan PR: kuru çalıştırma; debug imzalı
+#   derler, yalnızca derlemenin çalıştığını ve paketin izinsiz olduğunu doğrular.
+# İmza gizleri (Settings → Secrets → Actions), ayrıntı docs/release/README.md:
+#   ANDROID_KEYSTORE_BASE64, ANDROID_KEYSTORE_ALIAS, ANDROID_KEYSTORE_PASSWORD
+on:
+  push:
+    tags: ["v*"]
+  pull_request:
+    paths:
+      - ".github/workflows/release.yml"
+      - "export_presets.cfg"
+      - "scripts/ci-android-setup.sh"
+      - "scripts/ci-check-apk.sh"
+      - "scripts/ci-check-aab.sh"
+  workflow_dispatch:
+
+env:
+  GODOT_VERSION: "4.7.2"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - uses: android-actions/setup-android@v4
+        with:
+          packages: "platform-tools build-tools;35.0.1 platforms;android-35"
+
+      - name: Export şablonları önbelleği
+        uses: actions/cache@v6
+        with:
+          path: |
+            ~/.local/share/godot/export_templates
+            ~/.local/godot
+          key: godot-${{ env.GODOT_VERSION }}-templates-${{ runner.os }}
+
+      - name: Godot ve export şablonlarını kur
+        run: |
+          scripts/setup-godot.sh --with-templates
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
+      - name: Android dışa aktarmayı hazırla
+        run: scripts/ci-android-setup.sh
+
+      - name: İmza anahtarını hazırla (yalnızca etiket)
+        id: sign
+        if: startsWith(github.ref, 'refs/tags/v')
+        env:
+          KEYSTORE_B64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          KEYSTORE_ALIAS: ${{ secrets.ANDROID_KEYSTORE_ALIAS }}
+          KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+        run: |
+          if [[ -z "$KEYSTORE_B64" || -z "$KEYSTORE_ALIAS" || -z "$KEYSTORE_PASSWORD" ]]; then
+            echo "HATA: imza gizleri tanımlı değil (docs/release/README.md)." >&2
+            exit 1
+          fi
+          KS="$RUNNER_TEMP/release.keystore"
+          base64 -d <<<"$KEYSTORE_B64" > "$KS"
+          {
+            echo "GODOT_ANDROID_KEYSTORE_RELEASE_PATH=$KS"
+            echo "GODOT_ANDROID_KEYSTORE_RELEASE_USER=$KEYSTORE_ALIAS"
+            echo "GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD=$KEYSTORE_PASSWORD"
+          } >> "$GITHUB_ENV"
+          echo "mode=release" >> "$GITHUB_OUTPUT"
+
+      - name: İçe aktar
+        run: godot --headless --path . --import
+
+      - name: APK ve AAB üret
+        run: |
+          mkdir -p build/android
+          MODE="--export-debug"
+          [[ "${{ steps.sign.outputs.mode }}" == "release" ]] && MODE="--export-release"
+          godot --headless --path . "$MODE" "Android" build/android/bilgi-adasi.apk
+          godot --headless --path . --install-android-build-template "$MODE" "Android AAB" build/android/bilgi-adasi.aab
+          ls -l build/android/
+
+      - name: Paket doğrulaması
+        run: |
+          scripts/ci-check-apk.sh build/android/bilgi-adasi.apk "$ANDROID_HOME/build-tools/35.0.1/aapt2"
+          scripts/ci-check-aab.sh build/android/bilgi-adasi.aab
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: bilgi-adasi-android
+          path: |
+            build/android/bilgi-adasi.apk
+            build/android/bilgi-adasi.aab
+          if-no-files-found: error
+
+      - name: Taslak GitHub sürümü
+        if: startsWith(github.ref, 'refs/tags/v')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="${GITHUB_REF_NAME}"
+          NOTES="fastlane/metadata/android/tr-TR/changelogs/$(grep -m1 '^version/code=' export_presets.cfg | cut -d= -f2).txt"
+          gh release create "$TAG" build/android/bilgi-adasi.apk build/android/bilgi-adasi.aab \
+            --draft --title "Bilgi Adası ${TAG}" --notes-file "$NOTES"
