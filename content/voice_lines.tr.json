@@ -2802,5 +2802,2177 @@
 	"vo.fen.ad.mikroskop": {
 		"text": "Mikroskopla görülebilen canlılar",
 		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u01.n01.intro": {
+		"text": "Kulaklarını aç! Çevremizde bir sürü ses var. Bakalım kimin sesi?",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.kaynak.kedi": {
+		"text": "Miyav, miyav!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kaynak.kus": {
+		"text": "Cik cik cik!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kaynak.inek": {
+		"text": "Möö, möö!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kaynak.saat": {
+		"text": "Tik tak, tik tak!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kaynak.horoz": {
+		"text": "Ü-ürü-üüü!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u01.n01.r01": {
+		"text": "Bu ses kimden geliyor? Dinle ve sesin sahibine dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u01.n01.r02": {
+		"text": "Bu ses kimden geliyor? Dinle ve sesin sahibine dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u01.n01.r03": {
+		"text": "Bu ses kimden geliyor? Dinle ve sesin sahibine dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u01.n01.r04": {
+		"text": "Bu ses kimden geliyor? Dinle ve sesin sahibine dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u01.n01.r05": {
+		"text": "Bu ses kimden geliyor? Dinle ve sesin sahibine dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u01.n02.intro": {
+		"text": "Bazı sesler doğadan gelir, bazılarını makineler çıkarır. Haydi ayıralım!",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.kutu.dogal": {
+		"text": "Doğadan gelen sesler",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kutu.yapay": {
+		"text": "İnsanların yaptığı şeylerin sesleri",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u01.n02.r01": {
+		"text": "Bu sesler doğadan mı geliyor, insanların yaptığı şeylerden mi? Her resmi doğru kutuya taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u01.n02.r02": {
+		"text": "Doğadan gelen sesleri yaprak kutusuna, makinelerin seslerini çark kutusuna taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u01.n02.r03": {
+		"text": "Dinle, düşün ve ayır! Doğal sesler bir kutuya, yapay sesler öbür kutuya.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u01.n03.intro": {
+		"text": "Kalemini hazırla! Önce çizgilerle ısınalım.",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.u01.n03.r01": {
+		"text": "Yukarıdan aşağıya düz bir çizgi çiz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u01.n03.r02": {
+		"text": "Soldan sağa yatay bir çizgi çiz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u01.n03.r03": {
+		"text": "Şimdi iki eğik çizgi çiz! Oku izle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u01.n03.r04": {
+		"text": "Kocaman bir yuvarlak çiz! Yeşil noktadan başla, oku izle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u02.n01.intro": {
+		"text": "Yeni bir ses öğreniyoruz: a! Arı sözcüğünde a sesini duyuyor musun?",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.ses.a": {
+		"text": "a",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u02.n01.r01": {
+		"text": "Hangi resmin adında a sesi var? Dinle ve resme dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u02.n01.r02": {
+		"text": "Bir resim daha! Adında a sesi olan resme dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u02.n01.r03": {
+		"text": "Küçük a harfini yaz! Yeşil noktadan başla, oku izle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u02.n01.r04": {
+		"text": "Şimdi büyük A harfini yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u02.n02.intro": {
+		"text": "Yeni bir ses öğreniyoruz: n! Nar sözcüğünde n sesini duyuyor musun?",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.ses.n": {
+		"text": "n",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.hece.an": {
+		"text": "an",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u02.n02.r01": {
+		"text": "Hangi resmin adında n sesi var? Dinle ve resme dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u02.n02.r02": {
+		"text": "Bu ses hangi harf? Dinle ve harfe dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u02.n02.r03": {
+		"text": "Küçük n harfini yaz! Yeşil noktadan başla, oku izle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u02.n02.r04": {
+		"text": "Şimdi büyük N harfini yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u02.n02.r05": {
+		"text": "Harfleri sırayla seç, an hecesini yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u02.n03.intro": {
+		"text": "Rakam yazma zamanı! Bugün bir, iki rakamlarını yazacağız.",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.u02.n03.r01": {
+		"text": "Bir rakamını yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u02.n03.r02": {
+		"text": "İki rakamını yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u02.n03.r03": {
+		"text": "Dinle ve duyduğun rakama dokun!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u02.n03.r04": {
+		"text": "Dinle ve duyduğun rakama dokun!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u02.n04.intro": {
+		"text": "Yeni bir ses öğreniyoruz: e! Ev sözcüğünde e sesini duyuyor musun?",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.ses.e": {
+		"text": "e",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kelime.anne": {
+		"text": "anne",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u02.n04.r01": {
+		"text": "Hangi resmin adında e sesi var? Dinle ve resme dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u02.n04.r02": {
+		"text": "Bu ses hangi harf? Dinle ve harfe dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u02.n04.r03": {
+		"text": "Küçük e harfini yaz! Yeşil noktadan başla, oku izle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u02.n04.r04": {
+		"text": "Şimdi büyük E harfini yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u02.n04.r05": {
+		"text": "Resme bak. Parçaları sırayla seç, anne sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u02.n05.intro": {
+		"text": "Yeni bir ses öğreniyoruz: t! Top sözcüğünde t sesini duyuyor musun?",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.ses.t": {
+		"text": "t",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kelime.at": {
+		"text": "at",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u02.n05.r01": {
+		"text": "Hangi resmin adında t sesi var? Dinle ve resme dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u02.n05.r02": {
+		"text": "Bu ses hangi harf? Dinle ve harfe dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u02.n05.r03": {
+		"text": "Küçük t harfini yaz! Yeşil noktadan başla, oku izle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u02.n05.r04": {
+		"text": "Şimdi büyük T harfini yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u02.n05.r05": {
+		"text": "Resme bak. Parçaları sırayla seç, at sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u02.n06.intro": {
+		"text": "Rakam yazma zamanı! Bugün üç, dört rakamlarını yazacağız.",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.u02.n06.r01": {
+		"text": "Üç rakamını yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u02.n06.r02": {
+		"text": "Dört rakamını yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u02.n06.r03": {
+		"text": "Dinle ve duyduğun rakama dokun!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u02.n06.r04": {
+		"text": "Dinle ve duyduğun rakama dokun!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u02.n07.intro": {
+		"text": "Aferin! Artık a, n, e ve t ile sözcük okuyabiliriz.",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.kelime.et": {
+		"text": "et",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u02.n07.r01": {
+		"text": "Sözcükleri oku. Her sözcüğü resmiyle eşleştir!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u02.n07.r02": {
+		"text": "Harfleri sırayla seç, et sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u02.n07.r03": {
+		"text": "Sözcükleri sessizce oku ve resimlerine taşı!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u02.n07.r04": {
+		"text": "Heceleri sırayla seç, anne sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n01.intro": {
+		"text": "Yeni bir ses öğreniyoruz: i! İnek sözcüğünde i sesini duyuyor musun?",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.ses.i": {
+		"text": "i",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kelime.nine": {
+		"text": "nine",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n01.r01": {
+		"text": "Hangi resmin adında i sesi var? Dinle ve resme dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n01.r02": {
+		"text": "Bu ses hangi harf? Dinle ve harfe dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n01.r03": {
+		"text": "Küçük i harfini yaz! Yeşil noktadan başla, oku izle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n01.r04": {
+		"text": "Şimdi büyük İ harfini yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n01.r05": {
+		"text": "Resme bak. Parçaları sırayla seç, nine sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n02.intro": {
+		"text": "Yeni bir ses öğreniyoruz: l! Limon sözcüğünde l sesini duyuyor musun?",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.ses.l": {
+		"text": "l",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kelime.lale": {
+		"text": "lale",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n02.r01": {
+		"text": "Hangi resmin adında l sesi var? Dinle ve resme dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n02.r02": {
+		"text": "Bu ses hangi harf? Dinle ve harfe dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n02.r03": {
+		"text": "Küçük l harfini yaz! Yeşil noktadan başla, oku izle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n02.r04": {
+		"text": "Şimdi büyük L harfini yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n02.r05": {
+		"text": "Resme bak. Parçaları sırayla seç, lale sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n03.intro": {
+		"text": "Birinci gruptaki bütün sesleri öğrendin! Şimdi sözcük okuyalım.",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.kelime.el": {
+		"text": "el",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n03.r01": {
+		"text": "Sözcükleri oku ve resimleriyle eşleştir!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n03.r02": {
+		"text": "Sessizce oku. Her sözcüğü doğru resme taşı!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n03.r03": {
+		"text": "Harfleri sırayla seç, el sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n03.r04": {
+		"text": "Dört sözcük var! Oku ve resimleriyle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n04.intro": {
+		"text": "Rakam yazma zamanı! Bugün beş, altı, yedi rakamlarını yazacağız.",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.u03.n04.r01": {
+		"text": "Beş rakamını yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n04.r02": {
+		"text": "Altı rakamını yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n04.r03": {
+		"text": "Yedi rakamını yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n04.r04": {
+		"text": "Dinle ve duyduğun rakama dokun!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n04.r05": {
+		"text": "Dinle ve duyduğun rakama dokun!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n05.intro": {
+		"text": "Yeni bir ses öğreniyoruz: o! Otobüs sözcüğünde o sesini duyuyor musun?",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.ses.o": {
+		"text": "o",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kelime.olta": {
+		"text": "olta",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n05.r01": {
+		"text": "Hangi resmin adında o sesi var? Dinle ve resme dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n05.r02": {
+		"text": "Bu ses hangi harf? Dinle ve harfe dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n05.r03": {
+		"text": "Küçük o harfini yaz! Yeşil noktadan başla, oku izle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n05.r04": {
+		"text": "Şimdi büyük O harfini yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n05.r05": {
+		"text": "Resme bak. Parçaları sırayla seç, olta sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n06.intro": {
+		"text": "Yeni bir ses öğreniyoruz: k! Kedi sözcüğünde k sesini duyuyor musun?",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.ses.k": {
+		"text": "k",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kelime.kale": {
+		"text": "kale",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n06.r01": {
+		"text": "Hangi resmin adında k sesi var? Dinle ve resme dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n06.r02": {
+		"text": "Bu ses hangi harf? Dinle ve harfe dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n06.r03": {
+		"text": "Küçük k harfini yaz! Yeşil noktadan başla, oku izle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n06.r04": {
+		"text": "Şimdi büyük K harfini yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n06.r05": {
+		"text": "Resme bak. Parçaları sırayla seç, kale sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n07.intro": {
+		"text": "Yeni bir ses öğreniyoruz: u! Uçak sözcüğünde u sesini duyuyor musun?",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.ses.u": {
+		"text": "u",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kelime.kutu": {
+		"text": "kutu",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n07.r01": {
+		"text": "Hangi resmin adında u sesi var? Dinle ve resme dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n07.r02": {
+		"text": "Bu ses hangi harf? Dinle ve harfe dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n07.r03": {
+		"text": "Küçük u harfini yaz! Yeşil noktadan başla, oku izle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n07.r04": {
+		"text": "Şimdi büyük U harfini yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n07.r05": {
+		"text": "Resme bak. Parçaları sırayla seç, kutu sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n08.intro": {
+		"text": "Rakam yazma zamanı! Bugün sekiz, dokuz, sıfır rakamlarını yazacağız.",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.u03.n08.r01": {
+		"text": "Sekiz rakamını yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n08.r02": {
+		"text": "Dokuz rakamını yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n08.r03": {
+		"text": "Sıfır rakamını yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n08.r04": {
+		"text": "Dinle ve duyduğun rakama dokun!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n08.r05": {
+		"text": "Dinle ve duyduğun rakama dokun!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n09.intro": {
+		"text": "Artık cümle kurabiliriz! Sözcükleri yan yana dizelim.",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.cumle.ela_kek_al": {
+		"text": "Ela kek al.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.cumle.nil_kutu_tut": {
+		"text": "Nil kutu tut.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.cumle.ali_ile_nil_koltukta": {
+		"text": "Ali ile Nil koltukta.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kelime.okul": {
+		"text": "okul",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n09.r01": {
+		"text": "Sözcük kartlarını sırala, cümleyi kur!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n09.r02": {
+		"text": "Sözcükleri doğru sıraya koy, cümleyi kur!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n09.r03": {
+		"text": "Cümleleri sessizce oku. Her cümleyi resmiyle eşleştir!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u03.n09.r04": {
+		"text": "Heceleri sırayla seç, okul sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n01.intro": {
+		"text": "Yeni bir ses öğreniyoruz: r! Robot sözcüğünde r sesini duyuyor musun?",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.ses.r": {
+		"text": "r",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kelime.tarak": {
+		"text": "tarak",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n01.r01": {
+		"text": "Hangi resmin adında r sesi var? Dinle ve resme dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n01.r02": {
+		"text": "Bu ses hangi harf? Dinle ve harfe dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n01.r03": {
+		"text": "Küçük r harfini yaz! Yeşil noktadan başla, oku izle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n01.r04": {
+		"text": "Şimdi büyük R harfini yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n01.r05": {
+		"text": "Resme bak. Parçaları sırayla seç, tarak sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n02.intro": {
+		"text": "Yeni bir ses öğreniyoruz: ı! Irmak sözcüğünde ı sesini duyuyor musun?",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.ses.ii": {
+		"text": "ı",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kelime.ari": {
+		"text": "arı",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n02.r01": {
+		"text": "Hangi resmin adında ı sesi var? Dinle ve resme dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n02.r02": {
+		"text": "Bu ses hangi harf? Dinle ve harfe dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n02.r03": {
+		"text": "Küçük ı harfini yaz! Yeşil noktadan başla, oku izle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n02.r04": {
+		"text": "Şimdi büyük I harfini yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n02.r05": {
+		"text": "Resme bak. Parçaları sırayla seç, arı sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n03.intro": {
+		"text": "Yeni bir ses öğreniyoruz: m! Mantar sözcüğünde m sesini duyuyor musun?",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.ses.m": {
+		"text": "m",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kelime.elma": {
+		"text": "elma",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n03.r01": {
+		"text": "Hangi resmin adında m sesi var? Dinle ve resme dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n03.r02": {
+		"text": "Bu ses hangi harf? Dinle ve harfe dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n03.r03": {
+		"text": "Küçük m harfini yaz! Yeşil noktadan başla, oku izle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n03.r04": {
+		"text": "Şimdi büyük M harfini yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n03.r05": {
+		"text": "Resme bak. Parçaları sırayla seç, elma sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n04.intro": {
+		"text": "İkinci grubu da bitirdin! Haydi okuyalım ve cümle kuralım.",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.u04.n04.r01": {
+		"text": "Sözcükleri sessizce oku ve resimleriyle eşleştir!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n04.r02": {
+		"text": "Sözcük kartlarını sırala, cümleyi kur!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n04.r03": {
+		"text": "Cümleyi kur! İlk sözcük büyük harfle başlar.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n04.r04": {
+		"text": "Dört sözcüğü oku ve doğru resimlere taşı!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n05.intro": {
+		"text": "Yeni bir ses öğreniyoruz: ü! Üzüm sözcüğünde ü sesini duyuyor musun?",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.ses.uu": {
+		"text": "ü",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kelime.utu": {
+		"text": "ütü",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n05.r01": {
+		"text": "Hangi resmin adında ü sesi var? Dinle ve resme dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n05.r02": {
+		"text": "Bu ses hangi harf? Dinle ve harfe dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n05.r03": {
+		"text": "Küçük ü harfini yaz! Yeşil noktadan başla, oku izle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n05.r04": {
+		"text": "Şimdi büyük Ü harfini yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n05.r05": {
+		"text": "Resme bak. Parçaları sırayla seç, ütü sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n06.intro": {
+		"text": "Yeni bir ses öğreniyoruz: s! Saat sözcüğünde s sesini duyuyor musun?",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.ses.s": {
+		"text": "s",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kelime.masa": {
+		"text": "masa",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n06.r01": {
+		"text": "Hangi resmin adında s sesi var? Dinle ve resme dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n06.r02": {
+		"text": "Bu ses hangi harf? Dinle ve harfe dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n06.r03": {
+		"text": "Küçük s harfini yaz! Yeşil noktadan başla, oku izle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n06.r04": {
+		"text": "Şimdi büyük S harfini yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n06.r05": {
+		"text": "Resme bak. Parçaları sırayla seç, masa sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n07.intro": {
+		"text": "Yeni bir ses öğreniyoruz: ö! Ördek sözcüğünde ö sesini duyuyor musun?",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.ses.oo": {
+		"text": "ö",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kelime.ortu": {
+		"text": "örtü",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n07.r01": {
+		"text": "Hangi resmin adında ö sesi var? Dinle ve resme dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n07.r02": {
+		"text": "Bu ses hangi harf? Dinle ve harfe dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n07.r03": {
+		"text": "Küçük ö harfini yaz! Yeşil noktadan başla, oku izle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n07.r04": {
+		"text": "Şimdi büyük Ö harfini yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n07.r05": {
+		"text": "Resme bak. Parçaları sırayla seç, örtü sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n08.intro": {
+		"text": "Yeni bir ses öğreniyoruz: y! Yumurta sözcüğünde y sesini duyuyor musun?",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.ses.y": {
+		"text": "y",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kelime.ayi": {
+		"text": "ayı",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n08.r01": {
+		"text": "Hangi resmin adında y sesi var? Dinle ve resme dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n08.r02": {
+		"text": "Bu ses hangi harf? Dinle ve harfe dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n08.r03": {
+		"text": "Küçük y harfini yaz! Yeşil noktadan başla, oku izle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n08.r04": {
+		"text": "Şimdi büyük Y harfini yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n08.r05": {
+		"text": "Resme bak. Parçaları sırayla seç, ayı sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n09.intro": {
+		"text": "Yeni bir ses öğreniyoruz: d! Davul sözcüğünde d sesini duyuyor musun?",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.ses.d": {
+		"text": "d",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kelime.kedi": {
+		"text": "kedi",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n09.r01": {
+		"text": "Hangi resmin adında d sesi var? Dinle ve resme dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n09.r02": {
+		"text": "Bu ses hangi harf? Dinle ve harfe dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n09.r03": {
+		"text": "Küçük d harfini yaz! Yeşil noktadan başla, oku izle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n09.r04": {
+		"text": "Şimdi büyük D harfini yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n09.r05": {
+		"text": "Resme bak. Parçaları sırayla seç, kedi sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n10.intro": {
+		"text": "Yeni bir ses öğreniyoruz: z! Zürafa sözcüğünde z sesini duyuyor musun?",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.ses.z": {
+		"text": "z",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kelime.uzum": {
+		"text": "üzüm",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n10.r01": {
+		"text": "Hangi resmin adında z sesi var? Dinle ve resme dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n10.r02": {
+		"text": "Bu ses hangi harf? Dinle ve harfe dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n10.r03": {
+		"text": "Küçük z harfini yaz! Yeşil noktadan başla, oku izle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n10.r04": {
+		"text": "Şimdi büyük Z harfini yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n10.r05": {
+		"text": "Resme bak. Parçaları sırayla seç, üzüm sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n11.intro": {
+		"text": "Çok güzel! Şimdi kısa cümleler okuyalım.",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.cumle.ayi_ormanda_uyudu": {
+		"text": "Ayı ormanda uyudu.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.cumle.kuzu_ot_yedi": {
+		"text": "Kuzu ot yedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.cumle.ordek_suda_yuzer": {
+		"text": "Ördek suda yüzer.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kelime.deniz": {
+		"text": "deniz",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n11.r01": {
+		"text": "Cümleleri sessizce oku. Her cümleyi resmiyle eşleştir!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n11.r02": {
+		"text": "Sözcükleri sırala, cümleyi kur!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n11.r03": {
+		"text": "Üç cümle var! Sessizce oku ve resimleriyle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u04.n11.r04": {
+		"text": "Heceleri sırayla seç, deniz sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n01.intro": {
+		"text": "Yeni bir ses öğreniyoruz: ç! Çiçek sözcüğünde ç sesini duyuyor musun?",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.ses.cc": {
+		"text": "ç",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kelime.canta": {
+		"text": "çanta",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n01.r01": {
+		"text": "Hangi resmin adında ç sesi var? Dinle ve resme dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n01.r02": {
+		"text": "Bu ses hangi harf? Dinle ve harfe dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n01.r03": {
+		"text": "Küçük ç harfini yaz! Yeşil noktadan başla, oku izle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n01.r04": {
+		"text": "Şimdi büyük Ç harfini yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n01.r05": {
+		"text": "Resme bak. Parçaları sırayla seç, çanta sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n02.intro": {
+		"text": "Yeni bir ses öğreniyoruz: b! Balık sözcüğünde b sesini duyuyor musun?",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.ses.b": {
+		"text": "b",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kelime.bebek": {
+		"text": "bebek",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n02.r01": {
+		"text": "Hangi resmin adında b sesi var? Dinle ve resme dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n02.r02": {
+		"text": "Bu ses hangi harf? Dinle ve harfe dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n02.r03": {
+		"text": "Küçük b harfini yaz! Yeşil noktadan başla, oku izle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n02.r04": {
+		"text": "Şimdi büyük B harfini yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n02.r05": {
+		"text": "Resme bak. Parçaları sırayla seç, bebek sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n03.intro": {
+		"text": "Yeni bir ses öğreniyoruz: g! Gemi sözcüğünde g sesini duyuyor musun?",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.ses.g": {
+		"text": "g",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kelime.gozluk": {
+		"text": "gözlük",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n03.r01": {
+		"text": "Hangi resmin adında g sesi var? Dinle ve resme dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n03.r02": {
+		"text": "Bu ses hangi harf? Dinle ve harfe dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n03.r03": {
+		"text": "Küçük g harfini yaz! Yeşil noktadan başla, oku izle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n03.r04": {
+		"text": "Şimdi büyük G harfini yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n03.r05": {
+		"text": "Resme bak. Parçaları sırayla seç, gözlük sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n04.intro": {
+		"text": "Yeni bir ses öğreniyoruz: c! Ceket sözcüğünde c sesini duyuyor musun?",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.ses.c": {
+		"text": "c",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kelime.cuzdan": {
+		"text": "cüzdan",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n04.r01": {
+		"text": "Hangi resmin adında c sesi var? Dinle ve resme dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n04.r02": {
+		"text": "Bu ses hangi harf? Dinle ve harfe dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n04.r03": {
+		"text": "Küçük c harfini yaz! Yeşil noktadan başla, oku izle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n04.r04": {
+		"text": "Şimdi büyük C harfini yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n04.r05": {
+		"text": "Resme bak. Parçaları sırayla seç, cüzdan sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n05.intro": {
+		"text": "Yeni bir ses öğreniyoruz: ş! Şemsiye sözcüğünde ş sesini duyuyor musun?",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.ses.ss": {
+		"text": "ş",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kelime.gunes": {
+		"text": "güneş",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n05.r01": {
+		"text": "Hangi resmin adında ş sesi var? Dinle ve resme dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n05.r02": {
+		"text": "Bu ses hangi harf? Dinle ve harfe dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n05.r03": {
+		"text": "Küçük ş harfini yaz! Yeşil noktadan başla, oku izle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n05.r04": {
+		"text": "Şimdi büyük Ş harfini yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n05.r05": {
+		"text": "Resme bak. Parçaları sırayla seç, güneş sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n06.intro": {
+		"text": "Harika gidiyorsun! Yeni cümleler seni bekliyor.",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.cumle.cicek_acti": {
+		"text": "Çiçek açtı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.cumle.kuslar_gokte_ucar": {
+		"text": "Kuşlar gökte uçar.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.cumle.beyaz_gemi_denizde": {
+		"text": "Beyaz gemi denizde.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kelime.cocuk": {
+		"text": "çocuk",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n06.r01": {
+		"text": "Cümleleri sessizce oku ve resimleriyle eşleştir!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n06.r02": {
+		"text": "Sözcükleri sırala, cümleyi kur!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n06.r03": {
+		"text": "Üç cümleyi oku. Her birini doğru resme taşı!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n06.r04": {
+		"text": "Heceleri sırayla seç, çocuk sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n07.intro": {
+		"text": "Yeni bir ses öğreniyoruz: p! Portakal sözcüğünde p sesini duyuyor musun?",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.ses.p": {
+		"text": "p",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kelime.kirpi": {
+		"text": "kirpi",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n07.r01": {
+		"text": "Hangi resmin adında p sesi var? Dinle ve resme dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n07.r02": {
+		"text": "Bu ses hangi harf? Dinle ve harfe dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n07.r03": {
+		"text": "Küçük p harfini yaz! Yeşil noktadan başla, oku izle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n07.r04": {
+		"text": "Şimdi büyük P harfini yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n07.r05": {
+		"text": "Resme bak. Parçaları sırayla seç, kirpi sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n08.intro": {
+		"text": "Yeni bir ses öğreniyoruz: h! Horoz sözcüğünde h sesini duyuyor musun?",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.ses.h": {
+		"text": "h",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kelime.hali": {
+		"text": "halı",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n08.r01": {
+		"text": "Hangi resmin adında h sesi var? Dinle ve resme dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n08.r02": {
+		"text": "Bu ses hangi harf? Dinle ve harfe dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n08.r03": {
+		"text": "Küçük h harfini yaz! Yeşil noktadan başla, oku izle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n08.r04": {
+		"text": "Şimdi büyük H harfini yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n08.r05": {
+		"text": "Resme bak. Parçaları sırayla seç, halı sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n09.intro": {
+		"text": "Yeni bir ses öğreniyoruz: v! Vazo sözcüğünde v sesini duyuyor musun?",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.ses.v": {
+		"text": "v",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kelime.havuc": {
+		"text": "havuç",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n09.r01": {
+		"text": "Hangi resmin adında v sesi var? Dinle ve resme dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n09.r02": {
+		"text": "Bu ses hangi harf? Dinle ve harfe dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n09.r03": {
+		"text": "Küçük v harfini yaz! Yeşil noktadan başla, oku izle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n09.r04": {
+		"text": "Şimdi büyük V harfini yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n09.r05": {
+		"text": "Resme bak. Parçaları sırayla seç, havuç sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n10.intro": {
+		"text": "Yeni bir harf öğreniyoruz: yumuşak g! Dağ sözcüğünün sonunda saklanıyor.",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.ses.gg": {
+		"text": "ğ",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kelime.agac": {
+		"text": "ağaç",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n10.r01": {
+		"text": "Hangi resmin adında yumuşak g var? Dinle ve resme dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n10.r02": {
+		"text": "Yumuşak g hangisi? Dinle ve harfe dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n10.r03": {
+		"text": "Küçük ğ harfini yaz! Yeşil noktadan başla, oku izle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n10.r04": {
+		"text": "Şimdi büyük Ğ harfini yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n10.r05": {
+		"text": "Resme bak. Parçaları sırayla seç, ağaç sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n11.intro": {
+		"text": "Yeni bir ses öğreniyoruz: f! Fil sözcüğünde f sesini duyuyor musun?",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.ses.f": {
+		"text": "f",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kelime.fare": {
+		"text": "fare",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n11.r01": {
+		"text": "Hangi resmin adında f sesi var? Dinle ve resme dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n11.r02": {
+		"text": "Bu ses hangi harf? Dinle ve harfe dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n11.r03": {
+		"text": "Küçük f harfini yaz! Yeşil noktadan başla, oku izle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n11.r04": {
+		"text": "Şimdi büyük F harfini yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n11.r05": {
+		"text": "Resme bak. Parçaları sırayla seç, fare sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n12.intro": {
+		"text": "Yeni bir ses öğreniyoruz: j! Jöle sözcüğünde j sesini duyuyor musun?",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.ses.j": {
+		"text": "j",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kelime.pijama": {
+		"text": "pijama",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n12.r01": {
+		"text": "Hangi resmin adında j sesi var? Dinle ve resme dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n12.r02": {
+		"text": "Bu ses hangi harf? Dinle ve harfe dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n12.r03": {
+		"text": "Küçük j harfini yaz! Yeşil noktadan başla, oku izle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n12.r04": {
+		"text": "Şimdi büyük J harfini yaz! Yeşil noktadan başla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n12.r05": {
+		"text": "Resme bak. Parçaları sırayla seç, pijama sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n13.intro": {
+		"text": "Tebrikler! Bütün harfleri öğrendin. Artık her şeyi okuyabilirsin!",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.cumle.yagmur_yagiyor": {
+		"text": "Yağmur yağıyor.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.cumle.fare_peynir_yedi": {
+		"text": "Fare peynir yedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.cumle.horoz_sabah_oter": {
+		"text": "Horoz sabah öter.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kelime.kaplumbaga": {
+		"text": "kaplumbağa",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n13.r01": {
+		"text": "Cümleleri sessizce oku ve resimleriyle eşleştir!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n13.r02": {
+		"text": "Sözcükleri sırala, cümleyi kur!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n13.r03": {
+		"text": "Üç cümleyi oku. Her birini doğru resme taşı!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u05.n13.r04": {
+		"text": "Heceleri sırayla seç, kaplumbağa sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.n01.intro": {
+		"text": "Bugün yetenekleri anlatan hikâyeler dinleyeceğiz!",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.u06.resim.s1": {
+		"text": "Ece resim yapmayı çok sever. Boyaları ve kâğıdı hazır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.resim.s2": {
+		"text": "Önce mavi bir deniz çizer. Sonra sarı bir güneş ekler.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.resim.s3": {
+		"text": "Resmini ninesine hediye eder. Ninesi çok sevinir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.resim.q1": {
+		"text": "Ece ne yapmayı seviyor?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.resim.q2": {
+		"text": "Ece resmine önce ne çizdi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.resim.q3": {
+		"text": "Ninesi resmi görünce ne hissetti?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.sarki.s1": {
+		"text": "Can şarkı söylemeyi sever. Her sabah bir şarkı mırıldanır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.sarki.s2": {
+		"text": "Okulda bir gösteri var. Can sahnede şarkı söyler.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.sarki.q1": {
+		"text": "Bu hikâye neyi anlatıyor?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.sarki.q2": {
+		"text": "Gösteriden sonra arkadaşları ne yapar sence?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kaynak.davul": {
+		"text": "Dum, dum, dum!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.n01.r01": {
+		"text": "Bir hikâye dinleyelim. Önce resme bak: Sence bu hikâye ne anlatıyor?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.n01.r02": {
+		"text": "Dinle ve düşün: Bu hikâyenin konusu ne?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.n01.r03": {
+		"text": "Bu ses neyin sesi? Dinle ve resme dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.n02.intro": {
+		"text": "Şimdi sıra sende! Hikâyeleri sessizce oku.",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.u06.davul.s1": {
+		"text": "Kaan davul çalar.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.davul.s2": {
+		"text": "Dum, dum, dum! Kedi kaçar.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.davul.s3": {
+		"text": "Kaan yavaş çalar. Kedi gelir, uyur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.davul.q1": {
+		"text": "Kaan ne çalar?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.davul.q2": {
+		"text": "Kedi en sonunda ne yaptı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.davul.q3": {
+		"text": "Bu metnin konusu ne?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.dans.s1": {
+		"text": "Zeynep dans eder. Kolları kuş gibi açılır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.dans.s2": {
+		"text": "Zeynep döner, döner. Etek de döner.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.dans.q1": {
+		"text": "Zeynep ne yapıyor?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.dans.q2": {
+		"text": "Zeynep'in kolları neye benziyor?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.n02.r01": {
+		"text": "Hikâyeyi sessizce oku. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.n02.r02": {
+		"text": "Başlığa ve resme bak. Sonra hikâyeyi oku.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.n03.intro": {
+		"text": "Cümleleri oku ve doğru resmi bul!",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.cumle.ece_resim_yapar": {
+		"text": "Ece resim yapar.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.cumle.can_sarki_soyler": {
+		"text": "Can şarkı söyler.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.cumle.zeynep_dans_eder": {
+		"text": "Zeynep dans eder.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.cumle.topu_sec": {
+		"text": "Topu seç.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.cumle.kalemi_sec": {
+		"text": "Kalemi seç.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.cumle.kitabi_sec": {
+		"text": "Kitabı seç.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.n03.r01": {
+		"text": "Cümleleri sessizce oku. Her cümleyi resmiyle eşleştir!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.n03.r02": {
+		"text": "Üç cümle var! Oku ve resimlerine taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.n03.r03": {
+		"text": "Yönergeyi oku ve doğru resme taşı!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.n04.intro": {
+		"text": "Kalemler hazır! Sözcük ve cümle yazalım.",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.kelime.firca": {
+		"text": "fırça",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kelime.davul": {
+		"text": "davul",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.n04.r01": {
+		"text": "Sözcükleri sırala, cümleyi kur!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.n04.r02": {
+		"text": "Heceleri sırayla seç, fırça sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.n04.r03": {
+		"text": "Cümleyi kur! İlk sözcük büyük harfle başlar.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.n04.r04": {
+		"text": "Heceleri sırayla seç, davul sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.n05.intro": {
+		"text": "Her durumda nasıl konuşacağımızı düşünelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.u06.ipucu.el_kaldir": {
+		"text": "Sınıfta söz almak için elimizi kaldırıp sıramızı bekleriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.ipucu.nazik": {
+		"text": "Arkadaşımıza nazik ve güler yüzle konuşuruz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.ipucu.ninni": {
+		"text": "Uyumadan önce sakin ve yumuşak sesler dinleriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.n05.r01": {
+		"text": "Derste öğretmenine bir soru sormak istiyorsun. Ne yaparsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.n05.r02": {
+		"text": "Arkadaşın resmini sana gösteriyor. Ona nasıl konuşursun?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u06.n05.r03": {
+		"text": "Uyumadan önce dinlemek için ne seçersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.n01.intro": {
+		"text": "Minik kâşif, kulakların hazır mı? Merak dolu hikâyeler geliyor!",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.u07.tirtil.s1": {
+		"text": "Minik tırtıl yaprakları yer, yer, yer.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.tirtil.s2": {
+		"text": "Sonra kendine bir koza örer ve uyur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.tirtil.s3": {
+		"text": "Bir sabah koza açılır. İçinden renkli bir kelebek çıkar!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.tirtil.q1": {
+		"text": "Sence bu hikâye hangi hayvanı anlatıyor?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.tirtil.q2": {
+		"text": "Kelebek olmadan önce tırtıl ne yaptı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.tirtil.q3": {
+		"text": "Kelebek şimdi ne yapacak?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.golge.s1": {
+		"text": "Ada güneşte yürür. Yanında kara bir şekil de yürür.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.golge.s2": {
+		"text": "Ada durur, şekil de durur. Ada zıplar, şekil de zıplar!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.golge.q1": {
+		"text": "Ada'nın yanında yürüyen ne?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.golge.q2": {
+		"text": "Akşam olunca gölge ne olur sence?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.n01.r01": {
+		"text": "Resme bak. Sence bu hikâye hangi hayvanı anlatıyor? Şimdi dinle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.n01.r02": {
+		"text": "Dinle ve düşün: Ada neyi merak ediyor?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.n02.intro": {
+		"text": "Büyüteçler hazır! Şimdi sessizce okuyalım.",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.u07.buyutec.s1": {
+		"text": "Ada'nın bir büyüteci var.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.buyutec.s2": {
+		"text": "Ada büyüteçle karıncaya bakar. Karınca kocaman görünür!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.buyutec.s3": {
+		"text": "Ada karıncanın bacaklarını sayar: tam altı bacak!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.buyutec.q1": {
+		"text": "Ada neye baktı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.buyutec.q2": {
+		"text": "Karıncanın kaç bacağı var?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.buyutec.q3": {
+		"text": "Bu metnin konusu ne?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.tohum.s1": {
+		"text": "Ali saksıya bir tohum eker.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.tohum.s2": {
+		"text": "Her gün su verir. Bir gün minik bir filiz çıkar!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.tohum.q1": {
+		"text": "Ali saksıya ne eker?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.tohum.q2": {
+		"text": "Tohumdan ne çıktı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.n02.r01": {
+		"text": "Hikâyeyi sessizce oku. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.n02.r02": {
+		"text": "Başlığa ve resme bak. Sence ne olacak? Şimdi oku.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.n03.intro": {
+		"text": "Kâşifler nesnelere dikkatle bakar. Haydi özelliklerine göre ayıralım!",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.kutu.yumusak": {
+		"text": "Yumuşak olanlar",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kutu.sert": {
+		"text": "Sert olanlar",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kutu.buyuk": {
+		"text": "Büyük olanlar",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kutu.kucuk": {
+		"text": "Küçük olanlar",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.n03.r01": {
+		"text": "Bilge'nin sepetinde yumuşak ve sert şeyler var. Her birini doğru kutuya koy!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.n03.r02": {
+		"text": "Dokununca yumuşak mı, sert mi? Düşün ve kutulara ayır!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.n03.r03": {
+		"text": "Bu kez büyükleri ve küçükleri ayıralım! Her resmi doğru kutuya koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.n04.intro": {
+		"text": "Cümleleri oku, doğru resmi bul!",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.cumle.tirtil_yaprak_yer": {
+		"text": "Tırtıl yaprak yer.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.cumle.kelebek_cicege_konar": {
+		"text": "Kelebek çiçeğe konar.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.cumle.ali_tohum_eker": {
+		"text": "Ali tohum eker.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.cumle.karincayi_bul": {
+		"text": "Karıncayı bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.cumle.tirtili_bul": {
+		"text": "Tırtılı bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.cumle.kirpiyi_bul": {
+		"text": "Kirpiyi bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.n04.r01": {
+		"text": "Cümleleri sessizce oku ve resimleriyle eşleştir!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.n04.r02": {
+		"text": "Üç cümle var! Oku ve resimlerine taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.n04.r03": {
+		"text": "Yönergeyi oku ve doğru resme taşı!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.n05.intro": {
+		"text": "Keşiflerimizi yazalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.kelime.karinca": {
+		"text": "karınca",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kelime.kelebek": {
+		"text": "kelebek",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.n05.r01": {
+		"text": "Sözcükleri sırala, cümleyi kur!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.n05.r02": {
+		"text": "Heceleri sırayla seç, karınca sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.n05.r03": {
+		"text": "Cümleyi kur! İlk sözcük büyük harfle başlar.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.n05.r04": {
+		"text": "Heceleri sırayla seç, kelebek sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.n06.intro": {
+		"text": "Kâşifler de kibar konuşur! Doğru davranışı seçelim.",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.u07.ipucu.fisilda": {
+		"text": "Kütüphanede başkalarını rahatsız etmemek için alçak sesle konuşuruz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.ipucu.belgesel": {
+		"text": "Bir şeyi öğrenmek istediğimizde onu anlatan bir şey izleriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.ipucu.ilgi": {
+		"text": "Arkadaşımız bir şey anlatırken onu ilgiyle dinler, güzel sözler söyleriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.n06.r01": {
+		"text": "Kütüphanede arkadaşına bir şey söylemek istiyorsun. Nasıl konuşursun?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.n06.r02": {
+		"text": "Hayvanları öğrenmek istiyorsun. Ne izlersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u07.n06.r03": {
+		"text": "Arkadaşın sana bulduğu taşı gösteriyor. Ne dersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.n01.intro": {
+		"text": "Büyüklerimizden kalan güzel şeyleri dinleyelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.u08.sandik.s1": {
+		"text": "Dedem eski bir sandık açtı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.sandik.s2": {
+		"text": "İçinden bir topaç ve misketler çıktı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.sandik.s3": {
+		"text": "Dedem 'Küçükken bunlarla oynardım.' dedi. Birlikte topaç çevirdik.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.sandik.q1": {
+		"text": "Sandıktan hangi oyuncak çıktı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.sandik.q2": {
+		"text": "Bu hikâye neyi anlatıyor?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.sandik.q3": {
+		"text": "Dede çocuğuyla oynarken nasıl hissetti?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.bayram.s1": {
+		"text": "Bayram sabahı erkenden kalktık. Yeni giysilerimizi giydik.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.bayram.s2": {
+		"text": "Büyüklerimizi ziyaret ettik, ellerini öptük.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.bayram.q1": {
+		"text": "Bayramda büyüklerimizi ne yaparız?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.bayram.q2": {
+		"text": "Bayram sabahı ilk ne yaptılar?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.n01.r01": {
+		"text": "Resme bak. Sence sandıkta ne var? Şimdi dinle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.n01.r02": {
+		"text": "Dinle ve düşün. Bayramda neler olur?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.n02.intro": {
+		"text": "Eski oyunları ve güzel eşyaları okuyalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.u08.hali.s1": {
+		"text": "Ninem halı dokur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.hali.s2": {
+		"text": "Halıda kırmızı, mavi ve sarı renkler var.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.hali.s3": {
+		"text": "Bu halı bize ninemden yadigâr kalacak.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.hali.q1": {
+		"text": "Ninem ne dokur?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.hali.q2": {
+		"text": "Halıda hangi renk yok?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.hali.q3": {
+		"text": "Bu metnin konusu ne?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.mendil.s1": {
+		"text": "Ebru ile Kerem bahçede mendil kapmaca oynar.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.mendil.s2": {
+		"text": "Kerem koşar, mendili kapar. Herkes güler.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.mendil.q1": {
+		"text": "Çocuklar hangi oyunu oynar?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.mendil.q2": {
+		"text": "Mendili kim kaptı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.n02.r01": {
+		"text": "Hikâyeyi sessizce oku. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.n02.r02": {
+		"text": "Başlığa ve resme bak. Sonra hikâyeyi oku.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.n03.intro": {
+		"text": "Masal dinlemeyi sever misin? Masallarda gerçek ve hayal karışır!",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.kutu.gercek": {
+		"text": "Gerçek olanlar",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kutu.hayal": {
+		"text": "Hayal olanlar",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.n03.r01": {
+		"text": "Masallarda hayal şeyler olur. Hangisi gerçek, hangisi hayal? Kutulara ayır!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.n03.r02": {
+		"text": "Dikkatle bak! Gerçek olanları ve hayal olanları ayır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.n03.r03": {
+		"text": "Son tur! Gerçek ve hayal olanları dikkatle ayır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.n04.intro": {
+		"text": "Cümleleri oku, doğru resmi bul!",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.cumle.ninem_hali_dokur": {
+		"text": "Ninem halı dokur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.cumle.dedem_sandik_acti": {
+		"text": "Dedem sandık açtı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.cumle.cocuklar_mendil_kapmaca_oynar": {
+		"text": "Çocuklar mendil kapmaca oynar.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.cumle.topaci_sec": {
+		"text": "Topacı seç.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.cumle.sepeti_sec": {
+		"text": "Sepeti seç.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.cumle.haliyi_sec": {
+		"text": "Halıyı seç.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.n04.r01": {
+		"text": "Cümleleri sessizce oku ve resimleriyle eşleştir!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.n04.r02": {
+		"text": "Üç cümleyi oku. Her birini doğru resme taşı!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.n04.r03": {
+		"text": "Yönergeyi oku ve doğru resme taşı!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.n05.intro": {
+		"text": "Büyüklerimizden öğrendiklerimizi yazalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.kelime.topac": {
+		"text": "topaç",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kelime.sandik": {
+		"text": "sandık",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.n05.r01": {
+		"text": "Sözcükleri sırala, cümleyi kur!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.n05.r02": {
+		"text": "Heceleri sırayla seç, topaç sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.n05.r03": {
+		"text": "Cümleyi kur! İlk sözcük büyük harfle başlar.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.n05.r04": {
+		"text": "Heceleri sırayla seç, sandık sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.n06.intro": {
+		"text": "Büyüklerimizle nasıl konuşuruz? Birlikte düşünelim.",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.u08.ipucu.tesekkur": {
+		"text": "Bize bir şey ikram edildiğinde teşekkür ederiz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.ipucu.dinle": {
+		"text": "Dinlerken konuşanın yüzüne bakar, sessizce dinleriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.ipucu.saygi": {
+		"text": "Büyüklerimizle saygılı ve nazik konuşuruz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.n06.r01": {
+		"text": "Bayramda bir büyüğün sana şeker ikram etti. Ne dersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.n06.r02": {
+		"text": "Ninen sana masal anlatmak istiyor. Masalı dinlemek için ne yaparsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u08.n06.r03": {
+		"text": "Komşunuz yaşlı Ayşe Teyze'yle karşılaştın. Ona nasıl konuşursun?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.n01.intro": {
+		"text": "Sorumluluklarımızı anlatan hikâyeler dinleyelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.u09.musluk.s1": {
+		"text": "Ali dişlerini fırçalarken musluğu açık bıraktı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.musluk.s2": {
+		"text": "Bilge 'Su çok değerli!' dedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.musluk.s3": {
+		"text": "Ali hemen musluğu kapattı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.musluk.q1": {
+		"text": "Dişlerimizi fırçalarken musluk nasıl olmalı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.musluk.q2": {
+		"text": "Bu hikâye neyi anlatıyor?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.musluk.q3": {
+		"text": "Ali musluğu kapatınca Bilge nasıl hissetti?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.sofra.s1": {
+		"text": "Akşam yemeği hazır. Annem sofrayı kuruyor.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.sofra.s2": {
+		"text": "Ben de tabakları ve kaşıkları koyuyorum.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.sofra.q1": {
+		"text": "Çocuk sofraya ne koydu?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.sofra.q2": {
+		"text": "Yemekten sonra ne yapabiliriz?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.n01.r01": {
+		"text": "Resme bak. Sence ne olacak? Şimdi hikâyeyi dinle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.n01.r02": {
+		"text": "Dinle ve düşün: Evde nasıl yardım ederiz?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.n02.intro": {
+		"text": "Görevlerimizi anlatan metinleri okuyalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.u09.fidan.s1": {
+		"text": "Okulda fidan diktik.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.fidan.s2": {
+		"text": "Her gün sırayla fidanı suluyoruz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.fidan.s3": {
+		"text": "Fidan büyüdü, ağaç oldu.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.fidan.q1": {
+		"text": "Okulda ne diktik?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.fidan.q2": {
+		"text": "Fidanı ne zaman suluyoruz?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.fidan.q3": {
+		"text": "Bu metnin konusu ne?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.boncuk.s1": {
+		"text": "Boncuk bizim kedimiz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.boncuk.s2": {
+		"text": "Ona her sabah mama veririm. Suyunu da tazelerim.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.boncuk.q1": {
+		"text": "Boncuk nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.boncuk.q2": {
+		"text": "Boncuk'a her sabah ne verilir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.n02.r01": {
+		"text": "Hikâyeyi sessizce oku. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.n02.r02": {
+		"text": "Başlığa ve resme bak. Sonra hikâyeyi oku.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.n03.intro": {
+		"text": "Cümleleri oku, doğru resmi bul!",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.cumle.ali_muslugu_kapatti": {
+		"text": "Ali musluğu kapattı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.cumle.fidani_suluyoruz": {
+		"text": "Fidanı suluyoruz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.cumle.boncuka_mama_verdim": {
+		"text": "Boncuk'a mama verdim.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.cumle.tabagi_sec": {
+		"text": "Tabağı seç.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.cumle.fidani_sec": {
+		"text": "Fidanı seç.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.cumle.mamayi_sec": {
+		"text": "Mamayı seç.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.n03.r01": {
+		"text": "Cümleleri sessizce oku ve resimleriyle eşleştir!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.n03.r02": {
+		"text": "Üç cümleyi oku. Her birini doğru resme taşı!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.n03.r03": {
+		"text": "Yönergeyi oku ve doğru resme taşı!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.n04.intro": {
+		"text": "Görevlerimizi yazalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.kelime.fidan": {
+		"text": "fidan",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.kelime.tabak": {
+		"text": "tabak",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.n04.r01": {
+		"text": "Sözcükleri sırala, cümleyi kur!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.n04.r02": {
+		"text": "Heceleri sırayla seç, fidan sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.n04.r03": {
+		"text": "Cümleyi kur! İlk sözcük büyük harfle başlar.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.n04.r04": {
+		"text": "Heceleri sırayla seç, tabak sözcüğünü yaz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.n05.intro": {
+		"text": "Sorumluluk sahibi çocuklar nasıl konuşur? Doğru davranışı seçelim.",
+		"speaker": "BILGE"
+	},
+	"vo.g1.turkce.u09.ipucu.bekle": {
+		"text": "Biri konuşurken sözünü kesmeyiz, sıramızı bekleriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.ipucu.ogretmen": {
+		"text": "Tatbikatta öğretmenimizin söylediklerini dikkatle dinleriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.ipucu.ozur": {
+		"text": "Bir hata yaptığımızda özür dileriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.n05.r01": {
+		"text": "Sınıfta arkadaşın konuşuyor, senin de söyleyeceğin bir şey var. Ne yaparsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.n05.r02": {
+		"text": "Okulda tatbikat zili çaldı. Kimi dinlersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.u09.n05.r03": {
+		"text": "Arkadaşının kalemini yanlışlıkla kırdın. Ona nasıl konuşursun?",
+		"speaker": "ANLATICI"
 	}
 }
