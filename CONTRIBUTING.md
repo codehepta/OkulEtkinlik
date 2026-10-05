@@ -46,6 +46,8 @@ godot --headless --path . -s addons/gut/gut_cmdln.gd -gdir=res://tests -ginclude
 - Tek test dosyası: komuta `-gselect=test_dosya_adi.gd` ekle.
 - Testleri **sıralı** çalıştır: aynı anda yalnızca bir `godot` süreci (paralel süreçler `user://` test dizinlerini bozar).
 - Eksik asset raporu: `godot --headless --path . -s res://tools/missing_assets.gd`
+- Performans ölçümü (içerik yükleme, şablon kurulum süresi): `godot --headless --path . -s res://tools/perf_probe.gd`
+- Uyarlanabilir zorluk simülasyonu: `godot --headless --path . -s res://tools/adaptive_report.gd`
 - Bütün ekranların görüntüsü (`build/screens/`): `godot --path . -s res://tools/ui_screenshots.gd` (sunucuda: `xvfb-run -a -s "-screen 0 1920x1080x24" godot --path . --rendering-method gl_compatibility --rendering-driver opengl3 --resolution 1920x1080 -s res://tools/ui_screenshots.gd`)
 - Android debug APK (export şablonları gerekir: `scripts/setup-godot.sh --with-templates`):
   `godot --headless --path . --export-debug "Android" build/android/bilgi-adasi-debug.apk`

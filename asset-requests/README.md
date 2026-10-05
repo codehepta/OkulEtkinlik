@@ -9,7 +9,7 @@ Bu klasör, oyunun ihtiyaç duyduğu görsel ve sesleri **sahibin üretmesi** i�
 4. Commit edip push et. Oyun dosyayı otomatik tanır; o ana kadar yer tutucu ve cihaz sesi kullanılır.
 5. Partiyi bitirince aşağıdaki durum tablosunu güncelle.
 
-Kurallar: [`docs/assets/style-guide.md`](../docs/assets/style-guide.md) · [`docs/assets/naming.md`](../docs/assets/naming.md)
+Kurallar: [`docs/assets/style-guide.md`](../docs/assets/style-guide.md) · [`docs/assets/naming.md`](../docs/assets/naming.md) · ses seviyeleri: [`docs/assets/audio-mix.md`](../docs/assets/audio-mix.md)
 
 ## Durum
 
