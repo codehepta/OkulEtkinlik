@@ -276,7 +276,7 @@ a small claymation vignette: a cheerful boy singing with musical note shapes aro
 - **Açıklama:** Hikâye sayfası: Okulda bir gösteri var. Can sahnede şarkı söyler.
 
 ```
-a small claymation vignette: a boy singing on a small school stage, classmates clapping. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a small claymation vignette: a boy with short brown hair, a blue t-shirt and blue trousers singing on a small school stage, classmates clapping. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 18. `assets/images/items/davranis/alkis.png`
@@ -476,7 +476,7 @@ a small claymation vignette: a colorful butterfly flying over flowers. 3D clayma
 - **Açıklama:** Sahne: balik yuzer
 
 ```
-a small claymation vignette: a fish swimming underwater. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a small round claymation underwater diorama: a fish swimming in clear blue water with green seaweed and a few bubbles around it. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 38. `assets/images/items/sahne/ada_golge.png`
@@ -486,7 +486,7 @@ a small claymation vignette: a fish swimming underwater. 3D claymation style, ha
 - **Açıklama:** Hikâye sayfası: Ada güneşte yürür. Yanında kara bir şekil de yürür.
 
 ```
-a small claymation vignette: a girl walking in sunlight with her long shadow beside her. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a small claymation vignette: a girl with brown hair and a lilac dress walking on a small round patch of green grass, low late-afternoon sun from the left, her long dark grey shadow stretching far across the grass to the right, the shadow is clearly visible and much longer than the girl. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 39. `assets/images/items/sahne/ada_zipla.png`
@@ -496,7 +496,7 @@ a small claymation vignette: a girl walking in sunlight with her long shadow bes
 - **Açıklama:** Hikâye sayfası: Ada durur, şekil de durur. Ada zıplar, şekil de zıplar!
 
 ```
-a small claymation vignette: a girl jumping and her shadow jumping too. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a small claymation vignette: the same girl jumping above a small round patch of green grass, her dark shadow clearly visible on the grass below her. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 40. `assets/images/items/sahne/gece.png`
@@ -516,7 +516,7 @@ a small claymation vignette: a calm night sky with moon over a dark street. 3D c
 - **Açıklama:** Hikâye sayfası: Ada'nın bir büyüteci var.
 
 ```
-a small claymation vignette: a curious girl holding a big magnifying glass. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a small claymation vignette: a curious little girl with shoulder-length brown hair, a lilac short-sleeved dress and dark brown shoes, holding a big magnifying glass, full body. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 42. `assets/images/items/sahne/karinca_buyuk.png`
@@ -1056,7 +1056,7 @@ a small claymation vignette: a child hiding under a desk alone. 3D claymation st
 - **Açıklama:** Durum sahnesi
 
 ```
-a small claymation vignette: a broken pencil on a desk between two children. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a small claymation vignette: two children sitting at a small wooden desk, both looking down sadly at a yellow pencil lying on the desk that is broken into two separate pieces. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 96. `assets/images/items/davranis/ozur_dile.png`

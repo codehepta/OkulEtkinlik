@@ -1,0 +1,18 @@
+[project]
+name = "bilgi-adasi-imagegen"
+version = "0.1.0"
+description = "Bilgi Adası için yerel görsel aday üretimi (yalnızca geliştirici aracı; uygulamaya girmez)"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "mflux==0.20.0",
+    "torch>=2.5",
+    "torchvision",
+    "transformers",
+    "timm",
+    "kornia",
+    "einops",
+    "pillow",
+]
+
+[tool.uv]
+package = false

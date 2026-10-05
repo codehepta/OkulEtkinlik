@@ -117,7 +117,7 @@ a plump five-pointed star made of pale grey matte clay, slightly flat. 3D clayma
 - **Açıklama:** Tekrar dinle (hoparlör) ikonu.
 
 ```
-a chunky clay loudspeaker with two curved sound waves, bright blue. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
+a chunky clay loudspeaker icon that clearly reads as a speaker: a small rounded box with one big round speaker cone on its front, turned slightly to the right, and two curved sound-wave arcs floating to its right, bright blue. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
 ```
 
 ### 10. `assets/images/ui/home.png`

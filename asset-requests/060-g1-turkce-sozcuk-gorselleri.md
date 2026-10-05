@@ -220,7 +220,7 @@ a friendly yellow city bus seen from the side. 3D claymation style, handcrafted 
 - **Açıklama:** robot
 
 ```
-a friendly toy robot with round head and antenna. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a friendly toy robot that clearly looks like a robot: a boxy square body in light metallic silver-grey clay with a few colored round buttons on the chest, a square head with a short antenna topped by a small ball, round button eyes, tube arms with simple claw hands, and short block legs. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 15. `assets/images/items/esya/anahtar.png`

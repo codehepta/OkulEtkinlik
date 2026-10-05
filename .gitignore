@@ -19,3 +19,7 @@ export_credentials.cfg
 
 # Sahibin ham AI çıktıları (işlenmiş PNG'ler assets/images altında)
 assets/_raw/
+
+# Yerel görsel üretim ortamı
+tools/imagegen/.venv/
+tools/imagegen/**/__pycache__/
