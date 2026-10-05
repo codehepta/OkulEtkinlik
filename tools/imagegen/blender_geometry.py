@@ -317,6 +317,160 @@ def unit_blocks(name: str, nx: int, ny: int, mat: bpy.types.Material, rot_z: flo
     sm.iterations = 3
 
 
+# ---------- bileşik öğeler: zar, bloklardan yapılar, kâğıt kesme modeller ----------
+def rotate_all_z(deg: float) -> None:
+    """Sahnedeki bütün nesneleri orijin etrafında birlikte döndürür (ebeveyn kullanmadan)."""
+    from mathutils import Matrix
+    rot = Matrix.Rotation(math.radians(deg), 4, "Z")
+    for ob in [o for o in bpy.context.scene.objects if o.type == "MESH"]:
+        ob.location = rot @ ob.location
+        ob.rotation_euler.z += math.radians(deg)
+
+
+def block(name: str, kind: str, dims: tuple, loc: tuple, color: str, axis: str = "Z") -> None:
+    """Tek bir kil blok: box (x,y,z), cyl (yarıçap, uzunluk), tri (genişlik, derinlik, yükseklik)."""
+    mat = clay_material(name, srgb(color))
+    if kind == "box":
+        bm = bmesh.new()
+        bmesh.ops.create_cube(bm, size=1.0)
+        bmesh.ops.scale(bm, vec=dims, verts=bm.verts)
+        smallest = min(dims)
+    elif kind == "cyl":
+        bm = bmesh.new()
+        bmesh.ops.create_cone(bm, cap_ends=True, segments=64, radius1=dims[0], radius2=dims[0], depth=dims[1])
+        smallest = min(dims[0] * 2, dims[1])
+    else:  # tri: üçgen prizma, üçgen yüzler ±Y'de
+        w, dep, h = dims
+        bm = bmesh.new()
+        vs = [bm.verts.new(v) for v in [(-w / 2, -dep / 2, -h / 2), (w / 2, -dep / 2, -h / 2), (0, -dep / 2, h / 2),
+                                        (-w / 2, dep / 2, -h / 2), (w / 2, dep / 2, -h / 2), (0, dep / 2, h / 2)]]
+        for f in [(0, 2, 1), (3, 4, 5), (0, 1, 4, 3), (1, 2, 5, 4), (2, 0, 3, 5)]:
+            bm.faces.new([vs[i] for i in f])
+        smallest = min(w, dep, h)
+    me = bpy.data.meshes.new(name)
+    bm.to_mesh(me)
+    ob = link(bpy.data.objects.new(name, me))
+    ob.location = loc
+    if axis == "X":
+        ob.rotation_euler.y = math.radians(90)
+    elif axis == "Y":
+        ob.rotation_euler.x = math.radians(90)
+    ob.data.materials.append(mat)
+    soften(ob, bevel=smallest * 0.08, voxel=min(0.011, smallest / 30), lump=min(0.02, smallest * 0.02),
+           angle_limit=(kind == "cyl"))
+
+
+def dice(name: str, _mat: bpy.types.Material) -> None:
+    """Görünen yüzlerde doğru nokta dizilimi: üstte 1, önde 2, sağda 3 (karşı yüzler toplamı 7)."""
+    e = 1.3
+    block(name, "box", (e, e, e), (0, 0, 0), "#F7F4EE")
+    pip_mat = clay_material(name + "_nokta", srgb("#E5534B"))
+    d = e * 0.27
+    faces = {
+        (0, 0, 1): [(0, 0)],
+        (0, -1, 0): [(-d, d), (d, -d)],
+        (1, 0, 0): [(-d, d), (0, 0), (d, -d)],
+    }
+    for normal, pips in faces.items():
+        n = Vector(normal)
+        # yüz düzleminde iki eksen
+        u = Vector((1, 0, 0)) if abs(n.x) < 0.5 else Vector((0, 1, 0))
+        v = n.cross(u)
+        for a, b in pips:
+            bpy.ops.mesh.primitive_uv_sphere_add(segments=32, ring_count=16, radius=e * 0.085)
+            pip = bpy.context.active_object
+            pip.scale = (1, 1, 0.45)
+            pip.rotation_euler = n.to_track_quat("Z", "Y").to_euler()
+            pip.location = n * (e / 2 + 0.005) + u * a + v * b
+            pip.data.materials.append(pip_mat)
+            bpy.ops.object.shade_smooth()
+    rotate_all_z(-28)
+
+
+def toy_castle(name: str, _mat: bpy.types.Material) -> None:
+    for x, c in ((-1.0, "#9FD0F2"), (1.0, "#F5B3C8")):
+        block(f"{name}_kule{x}", "cyl", (0.3, 1.5), (x, 0, 0.75), c)
+    colors = ["#F8DA74", "#A8DDB5", "#F7B57A", "#B79FE8", "#F8DA74", "#A8DDB5"]
+    k = 0
+    for row in range(2):
+        for i in range(3):
+            block(f"{name}_duvar{k}", "box", (0.46, 0.46, 0.46), ((i - 1) * 0.48, 0, 0.23 + row * 0.48), colors[k])
+            k += 1
+    rotate_all_z(-18)
+
+
+def toy_robot(name: str, _mat: bpy.types.Material) -> None:
+    block(f"{name}_bas", "box", (0.55, 0.55, 0.55), (0, 0, 1.95), "#F8DA74")
+    block(f"{name}_govde", "box", (0.75, 0.45, 0.95), (0, 0, 1.15), "#9FD0F2")
+    for x in (-0.52, 0.52):
+        block(f"{name}_kol{x}", "cyl", (0.12, 0.8), (x, 0, 1.2), "#F5B3C8")
+    for x in (-0.2, 0.2):
+        block(f"{name}_bacak{x}", "cyl", (0.14, 0.65), (x, 0, 0.33), "#A8DDB5")
+    rotate_all_z(60)  # ön yüz kameraya dönük: iki kol da görünür (deneyerek bulundu)
+
+
+def toy_train(name: str, _mat: bpy.types.Material) -> None:
+    block(f"{name}_lokomotif", "box", (0.9, 0.6, 0.45), (0.55, 0, 0.42), "#F5B3C8")
+    block(f"{name}_kazan", "cyl", (0.24, 0.62), (0.7, 0, 0.88), "#9FD0F2", axis="X")
+    block(f"{name}_kabin", "box", (0.38, 0.6, 0.5), (0.25, 0, 0.9), "#F8DA74")
+    block(f"{name}_vagon", "box", (0.95, 0.6, 0.55), (-0.6, 0, 0.47), "#A8DDB5")
+    for x in (0.25, 0.85, -0.9, -0.3):
+        for y in (-0.33, 0.33):
+            block(f"{name}_teker{x}{y}", "cyl", (0.17, 0.1), (x, y, 0.2), "#B79FE8", axis="Y")
+    rotate_all_z(-22)
+
+
+def toy_block_house(name: str, _mat: bpy.types.Material) -> None:
+    block(f"{name}_kup", "box", (1.1, 1.1, 1.1), (0, 0, 0.55), "#F8DA74")
+    block(f"{name}_cati", "tri", (1.3, 1.2, 0.7), (0, 0, 1.45), "#F2846F")
+    rotate_all_z(-30)
+
+
+def paper_model(name: str, parts: list) -> None:
+    """Kâğıt kesme model: (tür, geometri, renk) katmanları üst üste, sırayla biraz yükseltilerek dizilir."""
+    for layer, (kind, geo, color) in enumerate(parts):
+        mat = clay_material(f"{name}_{layer}", srgb(color))
+        if kind == "poly":
+            pts = geo
+        else:  # circle: (cx, cy, r)
+            cx, cy, r = geo
+            pts = [(cx + p[0], cy + p[1]) for p in regular(64, r)]
+        me = bpy.data.meshes.new(f"{name}_{layer}")
+        me.from_pydata([(x, y, 0.0) for x, y in pts], [], [list(range(len(pts)))])
+        ob = link(bpy.data.objects.new(me.name, me))
+        ob.location.z = layer * 0.06
+        sol = ob.modifiers.new("solid", "SOLIDIFY")
+        sol.thickness = 0.12
+        sol.offset = 0.0
+        ob.data.materials.append(mat)
+        soften(ob, bevel=0.025, voxel=0.007, lump=0.008)
+
+
+def rect_at(cx: float, cy: float, w: float, h: float) -> list:
+    return [(cx - w / 2, cy - h / 2), (cx + w / 2, cy - h / 2), (cx + w / 2, cy + h / 2), (cx - w / 2, cy + h / 2)]
+
+
+MODELS_2D = {
+    "item.model.ev": [("poly", rect_at(0, -0.35, 1.4, 1.3), "#F8DA74"),
+                      ("poly", [(-0.9, 0.3), (0.9, 0.3), (0, 1.15)], "#F2846F"),
+                      ("poly", rect_at(-0.25, -0.7, 0.38, 0.6), "#9FD0F2"),
+                      ("circle", (0.35, -0.2, 0.2), "#A8DDB5")],
+    "item.model.araba": [("poly", rect_at(0, -0.15, 2.4, 0.62), "#F2846F"),
+                         ("poly", rect_at(-0.1, 0.42, 1.15, 0.55), "#9FD0F2"),
+                         ("circle", (-0.7, -0.5, 0.3), "#B79FE8"),
+                         ("circle", (0.7, -0.5, 0.3), "#B79FE8")],
+    "item.model.gemi": [("poly", rect_at(0, -0.75, 2.2, 0.5), "#74A9E8"),
+                        ("poly", [(0.05, -0.45), (0.05, 1.0), (0.95, -0.45)], "#F8DA74"),
+                        ("poly", [(-0.05, -0.45), (-0.05, 0.75), (-0.8, -0.45)], "#F5B3C8")],
+    "item.model.robot": [("poly", rect_at(0, -0.3, 0.95, 1.3), "#9FD0F2"),
+                         ("poly", rect_at(0, 0.75, 0.72, 0.72), "#F8DA74"),
+                         ("poly", rect_at(-0.68, -0.25, 0.28, 0.95), "#F5B3C8"),
+                         ("poly", rect_at(0.68, -0.25, 0.28, 0.95), "#F5B3C8"),
+                         ("circle", (-0.16, 0.8, 0.09), "#FFFFFF"),
+                         ("circle", (0.16, 0.8, 0.09), "#FFFFFF")],
+}
+
+
 # ---------- öğe tanımları: (aile, kurucu, renk) ----------
 def F(pts: list) -> callable:
     return lambda name, mat: flat_tile(name, pts, mat)
@@ -368,6 +522,13 @@ ITEMS: dict[str, tuple[str, callable, str]] = {
     "item.blok.birlik": ("block_unit", lambda n, m: unit_blocks(n, 1, 1, m, rot_z=-28), "#F7CF4A"),
     "item.blok.onluk": ("block", lambda n, m: unit_blocks(n, 10, 1, m), "#F6973F"),
     "item.blok.yuzluk": ("block", lambda n, m: unit_blocks(n, 10, 10, m, rot_z=-20), "#9FD0F2"),
+    # 041 · cisim örneği zar, bloklardan yapılar, kâğıt kesme modeller (şekiller tarifle birebir)
+    "item.nesne.zar": ("solid", dice, "#F7F4EE"),
+    "item.yapi.blok_kale": ("solid", toy_castle, "#F8DA74"),
+    "item.yapi.robot": ("solid", toy_robot, "#F8DA74"),
+    "item.yapi.tren": ("solid", toy_train, "#F8DA74"),
+    "item.yapi.blok_ev": ("solid", toy_block_house, "#F8DA74"),
+    **{k: ("flat", (lambda parts: lambda n, m: paper_model(n, parts))(v), "#FFFFFF") for k, v in MODELS_2D.items()},
 }
 
 # Aile kameraları: sabit yön ve ölçek (görseller arası boyut karşılaştırılabilir kalır)
