@@ -13,9 +13,11 @@ Kurallar: [`docs/assets/style-guide.md`](../docs/assets/style-guide.md) · [`doc
 
 ## Durum
 
+Yerel üretilen görsellerin kaynağı (model, tohum, prompt): `docs/assets/image-provenance.jsonl`.
+
 | Parti | Konu | Öncelik | Durum |
 |---|---|---|---|
-| 001 | Bilge maskot: karakter sayfası + 9 poz | En yüksek | ⏳ Bekliyor |
+| 001 | Bilge maskot: karakter sayfası + 9 poz | En yüksek | ✅ Tamam (2–8, 10: yerel klein, 2026-10-05) |
 | 002 | Ada haritası, bölge arka planları, ikonlar, duraklar | Yüksek | ⏳ Bekliyor |
 | 003 | Profil avatarları + arayüz ikonları | Yüksek | ⏳ Bekliyor |
 | 004 | Sayma ve eşleştirme nesneleri (28 nesne) | Yüksek | ⏳ Bekliyor |
@@ -32,21 +34,21 @@ Kurallar: [`docs/assets/style-guide.md`](../docs/assets/style-guide.md) · [`doc
 | 023 | Ağaç Evi süs eşyaları (12 `decor.*`) | Orta | ⏳ Bekliyor |
 | 024 | Faz 7a seslendirmesi: Tekrar Bulutu girişi + Ağaç Evi (3 satır) | Orta | ⏳ Bekliyor |
 | 030 | Faz 3c 1. sınıf Matematik: konum resimleri (`item.konum.*`, 11) + ölçme araçları (`item.olcu.*`, 5) | Orta | ⏳ Bekliyor |
-| 031 | Faz 3c: geometrik şekil çeşitleri (`item.sekil.*`, 8; temel üçgen/kare/dikdörtgen 040'ta), yapı parçaları (`item.yapi.*`, 4), yuvarlak/köşeli eşyalar (`item.esya.*`, 8) | Orta | ⏳ Bekliyor |
+| 031 | Faz 3c: geometrik şekil çeşitleri (`item.sekil.*`, 8; temel üçgen/kare/dikdörtgen 040'ta), yapı parçaları (`item.yapi.*`, 4), yuvarlak/köşeli eşyalar (`item.esya.*`, 8) | Orta | 🟡 10/20 (8 şekil Blender'da; `yapi`/`esya` bekliyor) |
 | 032 | Faz 3c: yarışçı hayvanlar (4), küçük ayıcık ve top (2), hikâye sahneleri (`item.sahne.*`, 3) | Orta | ⏳ Bekliyor |
 | 033 | Faz 3c: 1. sınıf Matematik çıkartmaları (`st.matematik.g1_*`, 26) | Orta | ⏳ Bekliyor |
 | 034 | Faz 3c: 1. sınıf Matematik seslendirmesi (187 satır) | Orta | ⏳ Bekliyor |
-| 040 | 2. sınıf Matematik: geometrik cisim ve şekiller (`item.cisim.*`, `item.sekil.*`; 1. ve 3. sınıfla ortak) | Yüksek | ⏳ Bekliyor |
+| 040 | 2. sınıf Matematik: geometrik cisim ve şekiller (`item.cisim.*`, `item.sekil.*`; 1. ve 3. sınıfla ortak) | Yüksek | ✅ Tamam (Blender, 2026-10-05) |
 | 041 | 2. sınıf Matematik: cisim örneği nesneler, yapılar ve modeller (`item.nesne.*`, `item.yapi.*`, `item.model.*`) | Yüksek | ⏳ Bekliyor |
 | 042 | 2. sınıf Matematik: sıvı ve ölçme birimleri, sahneler, simetri nesneleri, kutu simgeleri | Orta | ⏳ Bekliyor |
 | 043 | 2. sınıf Matematik durak çıkartmaları (42 `st.matematik.g2_*`) | Orta | ⏳ Bekliyor |
 | 044 | 2. sınıf Matematik: sayılar 21–100 + kart sesleri (`vo.sayi.*`, `vo.mat2.*`) | Yüksek | ⏳ Bekliyor |
 | 045 | 2. sınıf Matematik ünite 1–6 seslendirmesi (`vo.g2.matematik.*`) | Yüksek | ⏳ Bekliyor |
-| 050 | Faz 3e: 3. sınıf Matematik nesne görselleri (55: taban blokları, olay kartları, ölçü nesneleri, şekiller, araçlar, kaplar, simetri kartları) | Orta | ⏳ Bekliyor |
+| 050 | Faz 3e: 3. sınıf Matematik nesne görselleri (55: taban blokları, olay kartları, ölçü nesneleri, şekiller, araçlar, kaplar, simetri kartları) | Orta | 🟡 11/55 (taban blokları + şekiller Blender'da) |
 | 051 | Faz 3e: 3. sınıf Matematik çıkartmaları (36 `st.matematik.*`) | Orta | ⏳ Bekliyor |
 | 052 | Faz 3e: 3. sınıf Matematik seslendirmesi 1, ünite 1–3 + sayılar, nesne adları, etiketler (230 satır) | Orta | ⏳ Bekliyor |
 | 053 | Faz 3e: 3. sınıf Matematik seslendirmesi 2, ünite 4–6 (103 satır) | Orta | ⏳ Bekliyor |
-| 060 | 1. sınıf Türkçe: sözcük ve nesne görselleri (70 `item.*`) | Yüksek | ⏳ Bekliyor |
+| 060 | 1. sınıf Türkçe: sözcük ve nesne görselleri (70 `item.*`) | Yüksek | ✅ Tamam (yerel klein, 2026-10-05; robot tarifi netleştirildi) |
 | 061 | 1. sınıf Türkçe: hikâye, cümle, durum ve davranış sahneleri (96 `item.*`) | Orta | ⏳ Bekliyor |
 | 062 | 1. sınıf Türkçe: kutu simgeleri, duygu yüzleri, ses simgeleri (13 `item.*`) | Orta | ⏳ Bekliyor |
 | 063 | 1. sınıf Türkçe çıkartmaları (65 `st.turkce.g1_*`) | Düşük | ⏳ Bekliyor |
