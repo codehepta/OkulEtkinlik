@@ -1,0 +1,514 @@
+{
+	"id": "g2.matematik.u05",
+	"grade": 2,
+	"subject": "matematik",
+	"title_key": "unit.g2.matematik.u05",
+	"source": {
+		"program": "TYMM İlkokul Matematik (1–4)",
+		"doc": "İlkokul Matematik Dersi Öğretim Programı",
+		"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+		"page": 77,
+		"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf",
+		"theme": "MAT.2.3. Nesnelerin Geometrisi (2)"
+	},
+	"nodes": [
+		{
+			"id": "g2.matematik.u05.n01",
+			"outcomes": [
+				"MAT.2.3.6"
+			],
+			"title_key": "node.g2.matematik.u05.n01",
+			"intro_voice": "vo.g2.matematik.u05.n01.intro",
+			"sticker": "st.matematik.g2_bayrak",
+			"rounds": [
+				{
+					"template": "grid",
+					"difficulty": 1,
+					"voice": "vo.g2.matematik.u05.n01.r01",
+					"params": {
+						"mode": "path",
+						"ask": "build",
+						"cols": 5,
+						"rows": 3,
+						"start": [
+							0,
+							2
+						],
+						"goal": [
+							4,
+							0
+						],
+						"arrows": "absolute"
+					}
+				},
+				{
+					"template": "grid",
+					"difficulty": 2,
+					"voice": "vo.g2.matematik.u05.n01.r02",
+					"params": {
+						"mode": "path",
+						"ask": "build",
+						"cols": 6,
+						"rows": 4,
+						"start": [
+							0,
+							3
+						],
+						"goal": [
+							5,
+							0
+						],
+						"walls": [
+							[
+								2,
+								3
+							],
+							[
+								2,
+								2
+							],
+							[
+								4,
+								0
+							],
+							[
+								4,
+								1
+							]
+						],
+						"arrows": "absolute"
+					}
+				},
+				{
+					"template": "grid",
+					"difficulty": 2,
+					"voice": "vo.g2.matematik.u05.n01.r03",
+					"params": {
+						"mode": "path",
+						"ask": "build",
+						"cols": 6,
+						"rows": 4,
+						"start": [
+							0,
+							3
+						],
+						"facing": "right",
+						"goal": [
+							4,
+							1
+						],
+						"arrows": "relative"
+					}
+				}
+			]
+		},
+		{
+			"id": "g2.matematik.u05.n02",
+			"outcomes": [
+				"MAT.2.3.6"
+			],
+			"title_key": "node.g2.matematik.u05.n02",
+			"intro_voice": "vo.g2.matematik.u05.n02.intro",
+			"sticker": "st.matematik.g2_pusula",
+			"rounds": [
+				{
+					"template": "grid",
+					"difficulty": 2,
+					"voice": "vo.g2.matematik.u05.n02.r01",
+					"params": {
+						"mode": "path",
+						"ask": "build",
+						"cols": 6,
+						"rows": 4,
+						"start": [
+							0,
+							0
+						],
+						"goal": [
+							5,
+							3
+						],
+						"walls": [
+							[
+								2,
+								0
+							],
+							[
+								2,
+								1
+							],
+							[
+								4,
+								2
+							],
+							[
+								4,
+								3
+							]
+						],
+						"arrows": "absolute",
+						"shortest": true
+					}
+				},
+				{
+					"template": "grid",
+					"difficulty": 3,
+					"voice": "vo.g2.matematik.u05.n02.r02",
+					"params": {
+						"mode": "path",
+						"ask": "build",
+						"cols": 7,
+						"rows": 5,
+						"start": [
+							0,
+							4
+						],
+						"goal": [
+							6,
+							0
+						],
+						"walls": [
+							[
+								1,
+								3
+							],
+							[
+								2,
+								3
+							],
+							[
+								3,
+								3
+							],
+							[
+								3,
+								1
+							],
+							[
+								4,
+								1
+							],
+							[
+								5,
+								1
+							],
+							[
+								5,
+								3
+							]
+						],
+						"arrows": "absolute",
+						"shortest": true
+					}
+				},
+				{
+					"template": "grid",
+					"difficulty": 2,
+					"voice": "vo.g2.matematik.u05.n02.r03",
+					"params": {
+						"mode": "path",
+						"ask": "follow",
+						"cols": 6,
+						"rows": 4,
+						"start": [
+							0,
+							3
+						],
+						"program": [
+							"up",
+							"up",
+							"right",
+							"right",
+							"right"
+						],
+						"arrows": "absolute"
+					}
+				},
+				{
+					"template": "grid",
+					"difficulty": 3,
+					"voice": "vo.g2.matematik.u05.n02.r04",
+					"params": {
+						"mode": "path",
+						"ask": "follow",
+						"cols": 6,
+						"rows": 4,
+						"start": [
+							0,
+							3
+						],
+						"facing": "up",
+						"program": [
+							"forward",
+							"turn_right",
+							"forward",
+							"forward",
+							"turn_left",
+							"forward"
+						],
+						"arrows": "relative"
+					}
+				}
+			]
+		},
+		{
+			"id": "g2.matematik.u05.n03",
+			"outcomes": [
+				"MAT.2.3.6"
+			],
+			"title_key": "node.g2.matematik.u05.n03",
+			"intro_voice": "vo.g2.matematik.u05.n03.intro",
+			"sticker": "st.matematik.g2_ayak_izi",
+			"rounds": [
+				{
+					"template": "count_choose",
+					"difficulty": 1,
+					"voice": "vo.g2.matematik.u05.n03.r01",
+					"params": {
+						"item": "item.yol.ayak_izi",
+						"count": 7,
+						"choices": [
+							6,
+							7,
+							9
+						]
+					}
+				},
+				{
+					"template": "count_choose",
+					"difficulty": 2,
+					"voice": "vo.g2.matematik.u05.n03.r02",
+					"params": {
+						"item": "item.yol.ayak_izi",
+						"count": 11,
+						"choices": [
+							10,
+							11,
+							13
+						]
+					}
+				},
+				{
+					"template": "listen_find",
+					"difficulty": 2,
+					"voice": "vo.g2.matematik.u05.n03.r03",
+					"params": {
+						"target": {
+							"type": "number",
+							"value": 7,
+							"voice": "vo.g2.matematik.u05.n03.r03.hedef"
+						},
+						"options": [
+							{
+								"type": "number",
+								"value": 7,
+								"voice": "vo.sayi.7"
+							},
+							{
+								"type": "number",
+								"value": 11,
+								"voice": "vo.sayi.11"
+							},
+							{
+								"type": "number",
+								"value": 18,
+								"voice": "vo.sayi.18"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g2.matematik.u05.n04",
+			"outcomes": [
+				"MAT.2.3.7"
+			],
+			"title_key": "node.g2.matematik.u05.n04",
+			"intro_voice": "vo.g2.matematik.u05.n04.intro",
+			"sticker": "st.matematik.g2_kelebek",
+			"rounds": [
+				{
+					"template": "sort_bins",
+					"difficulty": 1,
+					"voice": "vo.g2.matematik.u05.n04.r01",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "item",
+									"value": "item.simge.simetrik"
+								},
+								"shape": "circle",
+								"color": "orange"
+							},
+							{
+								"label": {
+									"type": "item",
+									"value": "item.simge.simetrik_degil"
+								},
+								"shape": "square",
+								"color": "blue"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.simetri.kelebek"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.simetri.bulut"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.simetri.kalp"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.simetri.salyangoz"
+								},
+								"bin": 1
+							}
+						]
+					}
+				},
+				{
+					"template": "sort_bins",
+					"difficulty": 2,
+					"voice": "vo.g2.matematik.u05.n04.r02",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "item",
+									"value": "item.simge.simetrik"
+								},
+								"shape": "circle",
+								"color": "orange"
+							},
+							{
+								"label": {
+									"type": "item",
+									"value": "item.simge.simetrik_degil"
+								},
+								"shape": "square",
+								"color": "blue"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.simetri.yildiz"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.simetri.ayakkabi"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.simetri.yaprak"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.simetri.cay_demligi"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sekil.kare"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.simetri.bulut"
+								},
+								"bin": 1
+							}
+						]
+					}
+				},
+				{
+					"template": "listen_find",
+					"difficulty": 2,
+					"voice": "vo.g2.matematik.u05.n04.r03",
+					"params": {
+						"target": {
+							"type": "item",
+							"value": "item.simetri.kalp",
+							"voice": "vo.g2.matematik.u05.n04.r03.hedef"
+						},
+						"options": [
+							{
+								"type": "item",
+								"value": "item.simetri.kalp"
+							},
+							{
+								"type": "item",
+								"value": "item.simetri.salyangoz"
+							},
+							{
+								"type": "item",
+								"value": "item.simetri.ayakkabi"
+							}
+						]
+					}
+				},
+				{
+					"template": "listen_find",
+					"difficulty": 3,
+					"voice": "vo.g2.matematik.u05.n04.r04",
+					"params": {
+						"target": {
+							"type": "item",
+							"value": "item.simetri.cay_demligi",
+							"voice": "vo.g2.matematik.u05.n04.r04.hedef"
+						},
+						"options": [
+							{
+								"type": "item",
+								"value": "item.simetri.kelebek"
+							},
+							{
+								"type": "item",
+								"value": "item.simetri.yildiz"
+							},
+							{
+								"type": "item",
+								"value": "item.simetri.cay_demligi"
+							},
+							{
+								"type": "item",
+								"value": "item.sekil.daire"
+							}
+						]
+					}
+				}
+			]
+		}
+	]
+}
