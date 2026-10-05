@@ -1,0 +1,891 @@
+{
+	"id": "g2.turkce.u08",
+	"grade": 2,
+	"subject": "turkce",
+	"title_key": "unit.g2.turkce.u08",
+	"source": {
+		"program": "TYMM İlkokul Türkçe (1–4)",
+		"doc": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1, 2, 3, 4, 5, 6, 7 ve 8. Sınıflar)",
+		"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+		"page": 108,
+		"theme": "8. TEMA: HAKLARIMIZI BİLİYORUZ",
+		"theme_id": "g2.turkce.t08"
+	},
+	"nodes": [
+		{
+			"id": "g2.turkce.u08.n01",
+			"outcomes": [
+				"T.D.2.3",
+				"T.D.2.2"
+			],
+			"title_key": "node.g2.turkce.u08.n01",
+			"intro_voice": "vo.g2.turkce.u08.n01.intro",
+			"sticker": "st.turkce.g2_dis_fircasi",
+			"rounds": [
+				{
+					"template": "story",
+					"difficulty": 1,
+					"voice": "vo.g2.turkce.u08.n01.r01",
+					"params": {
+						"read": "listen",
+						"pages": [
+							{
+								"text": "story.g2.turkce.u08.n01.r01.p1",
+								"voice": "vo.g2.turkce.u08.n01.r01.p1",
+								"image": "item.hikaye.g2_dis_doktoru"
+							},
+							{
+								"text": "story.g2.turkce.u08.n01.r01.p2",
+								"voice": "vo.g2.turkce.u08.n01.r01.p2",
+								"image": "item.hikaye.g2_dis_doktoru"
+							},
+							{
+								"text": "story.g2.turkce.u08.n01.r01.p3",
+								"voice": "vo.g2.turkce.u08.n01.r01.p3",
+								"image": "item.hikaye.g2_dis_doktoru"
+							}
+						],
+						"questions": [
+							{
+								"voice": "vo.g2.turkce.u08.n01.r01.q1",
+								"text": "story.g2.turkce.u08.n01.r01.q1",
+								"options": [
+									{
+										"type": "text",
+										"value": "tk.disi"
+									},
+									{
+										"type": "text",
+										"value": "tk.kolu"
+									},
+									{
+										"type": "text",
+										"value": "tk.kulagi"
+									}
+								],
+								"answer": 0,
+								"page": 0
+							},
+							{
+								"voice": "vo.g2.turkce.u08.n01.r01.q2",
+								"text": "story.g2.turkce.u08.n01.r01.q2",
+								"options": [
+									{
+										"type": "text",
+										"value": "tk.sagligimizi_korumak"
+									},
+									{
+										"type": "text",
+										"value": "tk.parkta_oyun_oynamak"
+									},
+									{
+										"type": "text",
+										"value": "tk.pazara_gitmek"
+									}
+								],
+								"answer": 0
+							},
+							{
+								"voice": "vo.g2.turkce.u08.n01.r01.q3",
+								"text": "story.g2.turkce.u08.n01.r01.q3",
+								"options": [
+									{
+										"type": "text",
+										"value": "tk.evet_dislerini_fircaliyor"
+									},
+									{
+										"type": "text",
+										"value": "tk.hayir_fircasini_atti"
+									},
+									{
+										"type": "text",
+										"value": "tk.hayir_doktora_kizdi"
+									}
+								],
+								"answer": 0,
+								"page": 2
+							}
+						]
+					}
+				},
+				{
+					"template": "story",
+					"difficulty": 2,
+					"voice": "vo.g2.turkce.u08.n01.r02",
+					"params": {
+						"read": "listen",
+						"pages": [
+							{
+								"text": "story.g2.turkce.u08.n01.r02.p1",
+								"voice": "vo.g2.turkce.u08.n01.r02.p1",
+								"image": "item.hikaye.g2_teneffus"
+							},
+							{
+								"text": "story.g2.turkce.u08.n01.r02.p2",
+								"voice": "vo.g2.turkce.u08.n01.r02.p2",
+								"image": "item.hikaye.g2_teneffus"
+							},
+							{
+								"text": "story.g2.turkce.u08.n01.r02.p3",
+								"voice": "vo.g2.turkce.u08.n01.r02.p3",
+								"image": "item.hikaye.g2_teneffus"
+							}
+						],
+						"questions": [
+							{
+								"voice": "vo.g2.turkce.u08.n01.r02.q1",
+								"text": "story.g2.turkce.u08.n01.r02.q1",
+								"options": [
+									{
+										"type": "text",
+										"value": "tk.okul_bahcesine"
+									},
+									{
+										"type": "text",
+										"value": "tk.evlerine"
+									},
+									{
+										"type": "text",
+										"value": "tk.markete"
+									}
+								],
+								"answer": 0,
+								"page": 0
+							},
+							{
+								"voice": "vo.g2.turkce.u08.n01.r02.q2",
+								"text": "story.g2.turkce.u08.n01.r02.q2",
+								"options": [
+									{
+										"type": "text",
+										"value": "tk.siniflarina_donduler"
+									},
+									{
+										"type": "text",
+										"value": "tk.eve_gittiler"
+									},
+									{
+										"type": "text",
+										"value": "tk.bahcede_uyudular"
+									}
+								],
+								"answer": 0,
+								"page": 2
+							},
+							{
+								"voice": "vo.g2.turkce.u08.n01.r02.q3",
+								"text": "story.g2.turkce.u08.n01.r02.q3",
+								"options": [
+									{
+										"type": "text",
+										"value": "tk.teneffuste_oyun"
+									},
+									{
+										"type": "text",
+										"value": "tk.doktor_ziyareti"
+									},
+									{
+										"type": "text",
+										"value": "tk.bayram_sabahi"
+									}
+								],
+								"answer": 0
+							}
+						]
+					}
+				},
+				{
+					"template": "sort_bins",
+					"difficulty": 2,
+					"voice": "vo.g2.turkce.u08.n01.r03",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "text",
+									"value": "tk.elif",
+									"voice": "vo.tk.elif"
+								},
+								"shape": "heart"
+							},
+							{
+								"label": {
+									"type": "text",
+									"value": "tk.oyku",
+									"voice": "vo.tk.oyku"
+								},
+								"shape": "star"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.dis"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.doktor"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.firca"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.zil"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.bahce"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.ip"
+								},
+								"bin": 1
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g2.turkce.u08.n02",
+			"outcomes": [
+				"T.K.2.1",
+				"T.D.2.1"
+			],
+			"title_key": "node.g2.turkce.u08.n02",
+			"intro_voice": "vo.g2.turkce.u08.n02.intro",
+			"sticker": "st.turkce.g2_steteskop",
+			"rounds": [
+				{
+					"template": "scenario",
+					"difficulty": 2,
+					"voice": "vo.g2.turkce.u08.n02.r01",
+					"params": {
+						"scene": "item.durum.g2_doktor_muayene",
+						"hint": "vo.g2.turkce.u08.n02.r01.hint",
+						"choices": [
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.acik_ve_sakin"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.hic_konusmadan"
+								},
+								"correct": false,
+								"result_voice": "vo.g2.turkce.u08.n02.r01.c2"
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.bagirarak"
+								},
+								"correct": false,
+								"result_voice": "vo.g2.turkce.u08.n02.r01.c3"
+							}
+						]
+					}
+				},
+				{
+					"template": "scenario",
+					"difficulty": 2,
+					"voice": "vo.g2.turkce.u08.n02.r02",
+					"params": {
+						"scene": "item.durum.g2_oyuna_katil",
+						"hint": "vo.g2.turkce.u08.n02.r02.hint",
+						"choices": [
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.oynayabilir_miyim"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.oyununuzu_bozarim"
+								},
+								"correct": false,
+								"result_voice": "vo.g2.turkce.u08.n02.r02.c2"
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.sizinle_kusum"
+								},
+								"correct": false,
+								"result_voice": "vo.g2.turkce.u08.n02.r02.c3"
+							}
+						]
+					}
+				},
+				{
+					"template": "scenario",
+					"difficulty": 2,
+					"voice": "vo.g2.turkce.u08.n02.r03",
+					"params": {
+						"scene": "item.durum.g2_tatbikat",
+						"hint": "vo.g2.turkce.u08.n02.r03.hint",
+						"choices": [
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.guvende_olmak_icin"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.uyumak_icin"
+								},
+								"correct": false,
+								"result_voice": "vo.g2.turkce.u08.n02.r03.c2"
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.gulmek_icin"
+								},
+								"correct": false,
+								"result_voice": "vo.g2.turkce.u08.n02.r03.c3"
+							}
+						]
+					}
+				},
+				{
+					"template": "scenario",
+					"difficulty": 2,
+					"voice": "vo.g2.turkce.u08.n02.r04",
+					"params": {
+						"scene": "item.durum.g2_izinsiz_defter",
+						"hint": "vo.g2.turkce.u08.n02.r04.hint",
+						"choices": [
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.once_izin_iste_lutfen"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.hemen_ver_onu"
+								},
+								"correct": false,
+								"result_voice": "vo.g2.turkce.u08.n02.r04.c2"
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.hicbir_sey_demem"
+								},
+								"correct": false,
+								"result_voice": "vo.g2.turkce.u08.n02.r04.c3"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g2.turkce.u08.n03",
+			"outcomes": [
+				"T.O.2.2",
+				"T.O.2.1",
+				"T.O.2.3"
+			],
+			"title_key": "node.g2.turkce.u08.n03",
+			"intro_voice": "vo.g2.turkce.u08.n03.intro",
+			"sticker": "st.turkce.g2_okul_cantasi",
+			"rounds": [
+				{
+					"template": "story",
+					"difficulty": 1,
+					"voice": "vo.g2.turkce.u08.n03.r01",
+					"params": {
+						"read": "silent",
+						"pages": [
+							{
+								"text": "story.g2.turkce.u08.n03.r01.p1",
+								"voice": "vo.g2.turkce.u08.n03.r01.p1",
+								"image": "item.hikaye.g2_adimiz"
+							},
+							{
+								"text": "story.g2.turkce.u08.n03.r01.p2",
+								"voice": "vo.g2.turkce.u08.n03.r01.p2",
+								"image": "item.hikaye.g2_adimiz"
+							}
+						],
+						"questions": [
+							{
+								"voice": "vo.g2.turkce.u08.n03.r01.q1",
+								"text": "story.g2.turkce.u08.n03.r01.q1",
+								"options": [
+									{
+										"type": "text",
+										"value": "tk.adimiz_onemli"
+									},
+									{
+										"type": "text",
+										"value": "tk.yagmurlu_gun"
+									},
+									{
+										"type": "text",
+										"value": "tk.kayip_top"
+									}
+								],
+								"answer": 0
+							},
+							{
+								"voice": "vo.g2.turkce.u08.n03.r01.q2",
+								"text": "story.g2.turkce.u08.n03.r01.q2",
+								"options": [
+									{
+										"type": "text",
+										"value": "tk.adlariyla"
+									},
+									{
+										"type": "text",
+										"value": "tk.lakaplariyla"
+									},
+									{
+										"type": "text",
+										"value": "tk.bagirarak"
+									}
+								],
+								"answer": 0,
+								"page": 1
+							}
+						]
+					}
+				},
+				{
+					"template": "drag_match",
+					"difficulty": 1,
+					"voice": "vo.g2.turkce.u08.n03.r02",
+					"params": {
+						"read": "silent",
+						"pairs": [
+							{
+								"left": {
+									"type": "text",
+									"value": "tk.hasta",
+									"voice": "vo.tk.hasta"
+								},
+								"right": {
+									"type": "text",
+									"value": "tk.saglikli",
+									"voice": "vo.tk.saglikli"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "tk.dogru_2",
+									"voice": "vo.tk.dogru_2"
+								},
+								"right": {
+									"type": "text",
+									"value": "tk.yanlis_2",
+									"voice": "vo.tk.yanlis_2"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "tk.temiz",
+									"voice": "vo.tk.temiz"
+								},
+								"right": {
+									"type": "text",
+									"value": "tk.kirli",
+									"voice": "vo.tk.kirli"
+								}
+							}
+						]
+					}
+				},
+				{
+					"template": "story",
+					"difficulty": 2,
+					"voice": "vo.g2.turkce.u08.n03.r03",
+					"params": {
+						"read": "silent",
+						"pages": [
+							{
+								"text": "story.g2.turkce.u08.n03.r03.p1",
+								"voice": "vo.g2.turkce.u08.n03.r03.p1",
+								"image": "item.hikaye.g2_kerem_canta"
+							},
+							{
+								"text": "story.g2.turkce.u08.n03.r03.p2",
+								"voice": "vo.g2.turkce.u08.n03.r03.p2",
+								"image": "item.hikaye.g2_kerem_canta"
+							}
+						],
+						"questions": [
+							{
+								"voice": "vo.g2.turkce.u08.n03.r03.q1",
+								"text": "story.g2.turkce.u08.n03.r03.q1",
+								"options": [
+									{
+										"type": "text",
+										"value": "tk.okul_ve_sorumluluk"
+									},
+									{
+										"type": "text",
+										"value": "tk.tatil_ve_deniz"
+									},
+									{
+										"type": "text",
+										"value": "tk.hayvan_bakimi"
+									}
+								],
+								"answer": 0
+							},
+							{
+								"voice": "vo.g2.turkce.u08.n03.r03.q2",
+								"text": "story.g2.turkce.u08.n03.r03.q2",
+								"options": [
+									{
+										"type": "text",
+										"value": "tk.cantasini_hazirlar"
+									},
+									{
+										"type": "text",
+										"value": "tk.kitaplarini_yirtar"
+									},
+									{
+										"type": "text",
+										"value": "tk.okulu_unutur"
+									}
+								],
+								"answer": 0,
+								"page": 1
+							}
+						]
+					}
+				},
+				{
+					"template": "sort_bins",
+					"difficulty": 2,
+					"voice": "vo.g2.turkce.u08.n03.r04",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "text",
+									"value": "tk.hak",
+									"voice": "vo.tk.hak"
+								},
+								"shape": "star"
+							},
+							{
+								"label": {
+									"type": "text",
+									"value": "tk.gorev",
+									"voice": "vo.tk.gorev"
+								},
+								"shape": "square"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.oyun_oynamak"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.sevgi_gormek"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.bir_adi_olmak"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.odev_yapmak"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.yatagi_yapmak"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.cicegi_sulamak"
+								},
+								"bin": 1
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g2.turkce.u08.n04",
+			"outcomes": [
+				"T.K.2.2"
+			],
+			"title_key": "node.g2.turkce.u08.n04",
+			"intro_voice": "vo.g2.turkce.u08.n04.intro",
+			"sticker": "st.turkce.g2_okul_zili",
+			"rounds": [
+				{
+					"template": "sequence",
+					"difficulty": 1,
+					"voice": "vo.g2.turkce.u08.n04.r01",
+					"params": {
+						"items": [
+							{
+								"type": "text",
+								"value": "tk.disi_agridi"
+							},
+							{
+								"type": "text",
+								"value": "tk.doktora_gitti"
+							},
+							{
+								"type": "text",
+								"value": "tk.tedavi_oldu"
+							}
+						]
+					}
+				},
+				{
+					"template": "sequence",
+					"difficulty": 2,
+					"voice": "vo.g2.turkce.u08.n04.r02",
+					"params": {
+						"items": [
+							{
+								"type": "text",
+								"value": "tk.zil_caldi"
+							},
+							{
+								"type": "text",
+								"value": "tk.bahceye_cikti"
+							},
+							{
+								"type": "text",
+								"value": "tk.oyun_oynadi"
+							},
+							{
+								"type": "text",
+								"value": "tk.sinifa_dondu"
+							}
+						]
+					}
+				},
+				{
+					"template": "sequence",
+					"difficulty": 2,
+					"voice": "vo.g2.turkce.u08.n04.r03",
+					"params": {
+						"items": [
+							{
+								"type": "text",
+								"value": "tk.odevini_yapti"
+							},
+							{
+								"type": "text",
+								"value": "tk.cantasini_hazirladi"
+							},
+							{
+								"type": "text",
+								"value": "tk.yatagina_yatti"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g2.turkce.u08.n05",
+			"outcomes": [
+				"T.Y.2.3"
+			],
+			"title_key": "node.g2.turkce.u08.n05",
+			"intro_voice": "vo.g2.turkce.u08.n05.intro",
+			"sticker": "st.turkce.g2_defter_kalem",
+			"rounds": [
+				{
+					"template": "drag_match",
+					"difficulty": 1,
+					"voice": "vo.g2.turkce.u08.n05.r01",
+					"params": {
+						"pairs": [
+							{
+								"left": {
+									"type": "text",
+									"value": "tk.oyun_bitti",
+									"voice": "vo.tk.oyun_bitti"
+								},
+								"right": {
+									"type": "text",
+									"value": "tk.mi_2",
+									"voice": "vo.tk.mi_2"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "tk.kapi_acik",
+									"voice": "vo.tk.kapi_acik"
+								},
+								"right": {
+									"type": "text",
+									"value": "tk.mi",
+									"voice": "vo.tk.mi"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "tk.odev_uzun",
+									"voice": "vo.tk.odev_uzun"
+								},
+								"right": {
+									"type": "text",
+									"value": "tk.mu",
+									"voice": "vo.tk.mu"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "tk.bu_duduk",
+									"voice": "vo.tk.bu_duduk"
+								},
+								"right": {
+									"type": "text",
+									"value": "tk.mu_2",
+									"voice": "vo.tk.mu_2"
+								}
+							}
+						]
+					}
+				},
+				{
+					"template": "drag_match",
+					"difficulty": 2,
+					"voice": "vo.g2.turkce.u08.n05.r02",
+					"params": {
+						"pairs": [
+							{
+								"left": {
+									"type": "text",
+									"value": "tk.km",
+									"voice": "vo.tk.km"
+								},
+								"right": {
+									"type": "text",
+									"value": "tk.kilometre",
+									"voice": "vo.tk.kilometre"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "tk.dr",
+									"voice": "vo.tk.dr"
+								},
+								"right": {
+									"type": "text",
+									"value": "tk.doktor",
+									"voice": "vo.tk.doktor"
+								}
+							}
+						]
+					}
+				},
+				{
+					"template": "drag_match",
+					"difficulty": 2,
+					"voice": "vo.g2.turkce.u08.n05.r03",
+					"params": {
+						"pairs": [
+							{
+								"left": {
+									"type": "text",
+									"value": "tk.kisi_adi",
+									"voice": "vo.tk.kisi_adi"
+								},
+								"right": {
+									"type": "text",
+									"value": "tk.kerem",
+									"voice": "vo.tk.kerem"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "tk.sehir_adi",
+									"voice": "vo.tk.sehir_adi"
+								},
+								"right": {
+									"type": "text",
+									"value": "tk.trabzon",
+									"voice": "vo.tk.trabzon"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "tk.ulke_adi",
+									"voice": "vo.tk.ulke_adi"
+								},
+								"right": {
+									"type": "text",
+									"value": "tk.italya",
+									"voice": "vo.tk.italya"
+								}
+							}
+						]
+					}
+				}
+			]
+		}
+	]
+}
