@@ -563,7 +563,7 @@
 					"difficulty": 1,
 					"voice": "vo.g2.matematik.u01.n04.r01",
 					"params": {
-						"scene": "item.yapi.kale",
+						"scene": "item.yapi.blok_kale",
 						"hint": "vo.g2.matematik.u01.n04.r01.ipucu",
 						"choices": [
 							{
@@ -633,7 +633,7 @@
 					"difficulty": 2,
 					"voice": "vo.g2.matematik.u01.n04.r03",
 					"params": {
-						"scene": "item.yapi.ev",
+						"scene": "item.yapi.blok_ev",
 						"hint": "vo.g2.matematik.u01.n04.r03.ipucu",
 						"choices": [
 							{

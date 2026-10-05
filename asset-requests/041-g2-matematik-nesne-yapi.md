@@ -23,10 +23,10 @@ Stil bloğu: `docs/assets/style-guide.md` → `STYLE_SPRITE` (promptların sonun
 | 6 | `assets/images/items/nesne/konserve.png` | 1:1 | — | Konserve kutusu |
 | 7 | `assets/images/items/nesne/davul.png` | 1:1 | — | Davul |
 | 8 | `assets/images/items/nesne/mum.png` | 1:1 | — | Mum |
-| 9 | `assets/images/items/yapi/kale.png` | 1:1 | — | Kale |
+| 9 | `assets/images/items/yapi/blok_kale.png` | 1:1 | — | Kale |
 | 10 | `assets/images/items/yapi/robot.png` | 1:1 | — | Robot |
 | 11 | `assets/images/items/yapi/tren.png` | 1:1 | — | Tren |
-| 12 | `assets/images/items/yapi/ev.png` | 1:1 | — | Blok ev |
+| 12 | `assets/images/items/yapi/blok_ev.png` | 1:1 | — | Blok ev |
 | 13 | `assets/images/items/model/ev.png` | 1:1 | — | Şekillerden ev |
 | 14 | `assets/images/items/model/araba.png` | 1:1 | — | Şekillerden araba |
 | 15 | `assets/images/items/model/gemi.png` | 1:1 | — | Şekillerden gemi |
@@ -114,7 +114,7 @@ a small toy drum shaped like a cylinder, red sides with zigzag cords, white drum
 a thick round pillar candle shaped like a cylinder with a small flame. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
-### 9. `assets/images/items/yapi/kale.png`
+### 9. `assets/images/items/yapi/blok_kale.png`
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
@@ -144,7 +144,7 @@ a toy robot built from geometric blocks: a cube head, a long rectangular prism b
 a toy train built from geometric blocks: rectangular prism wagons, a cylinder boiler on the engine and round cylinder wheels, chunky toy blocks. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
-### 12. `assets/images/items/yapi/ev.png`
+### 12. `assets/images/items/yapi/blok_ev.png`
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  

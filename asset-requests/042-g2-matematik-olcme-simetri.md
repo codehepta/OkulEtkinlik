@@ -1,6 +1,6 @@
 # 042 · 2. sınıf Matematik: sıvı, ölçme, simetri ve veri nesneleri
 
-**Öncelik: ORTA** (Faz 3d, `content/g2/matematik/u01`, `u02`, `u04`, `u05`). Tahmin turlarında sayılan ölçme birimleri (bardak, kova, metre çubuğu, kilogramlık ağırlık, santimetre küpü), ölçme araçları, `scenario` sahneleri (16:9), simetrik / simetrik olmayan nesneler, kutu simgeleri ve iki yeni meyve.
+**Öncelik: ORTA** (Faz 3d, `content/g2/matematik/u01`, `u02`, `u04`, `u05`). Tahmin turlarında sayılan ölçme birimleri (bardak, kova, metre çubuğu, kilogramlık ağırlık, santimetre küpü), ölçme araçları, `scenario` sahneleri (16:9), simetrik / simetrik olmayan nesneler, kutu simgeleri ve kiraz. Üzüm (`item.meyve.uzum`) 060 partisinde istendi.
 
 Bu görseller gelene kadar oyun renkli yer tutucu kartın üstüne nesnenin adını yazar (`label.<anahtar>` metni); dosyayı tablodaki yola koymak yeterlidir, kod değişikliği gerekmez.
 
@@ -43,8 +43,7 @@ Stil blokları: `docs/assets/style-guide.md` → `STYLE_SPRITE` (nesneler), `STY
 | 24 | `assets/images/items/simge/simetrik_degil.png` | 1:1 | — | Kutu simgesi: Simetrik değil |
 | 25 | `assets/images/items/simge/madeni_para.png` | 1:1 | — | Kutu simgesi: Madenî para |
 | 26 | `assets/images/items/simge/kagit_para.png` | 1:1 | — | Kutu simgesi: Kâğıt para |
-| 27 | `assets/images/items/meyve/uzum.png` | 1:1 | — | Üzüm |
-| 28 | `assets/images/items/meyve/kiraz.png` | 1:1 | — | Kiraz |
+| 27 | `assets/images/items/meyve/kiraz.png` | 1:1 | — | Kiraz |
 
 ## Promptlar
 
@@ -308,17 +307,7 @@ an icon of a stack of three plain round metal coins without any markings. 3D cla
 an icon of a few plain paper banknotes fanned out, no portraits, no numbers, no text. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
 ```
 
-### 27. `assets/images/items/meyve/uzum.png`
-
-- **Oran:** 1:1  
-- **Referans görsel:** yok  
-- **Açıklama:** Üzüm
-
-```
-a bunch of purple grapes. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
-```
-
-### 28. `assets/images/items/meyve/kiraz.png`
+### 27. `assets/images/items/meyve/kiraz.png`
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
