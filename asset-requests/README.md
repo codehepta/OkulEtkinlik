@@ -39,7 +39,7 @@ Yerel üretilen görsellerin kaynağı (model, tohum, prompt): `docs/assets/imag
 | 033 | Faz 3c: 1. sınıf Matematik çıkartmaları (`st.matematik.g1_*`, 26) | Orta | ⏳ Bekliyor |
 | 034 | Faz 3c: 1. sınıf Matematik seslendirmesi (187 satır) | Orta | ⏳ Bekliyor |
 | 040 | 2. sınıf Matematik: geometrik cisim ve şekiller (`item.cisim.*`, `item.sekil.*`; 1. ve 3. sınıfla ortak) | Yüksek | ✅ Tamam (Blender, 2026-10-05) |
-| 041 | 2. sınıf Matematik: cisim örneği nesneler, yapılar ve modeller (`item.nesne.*`, `item.yapi.*`, `item.model.*`) | Yüksek | ⏳ Bekliyor |
+| 041 | 2. sınıf Matematik: cisim örneği nesneler, yapılar ve modeller (`item.nesne.*`, `item.yapi.*`, `item.model.*`) | Yüksek | ✅ Tamam (klein 7 + Blender 9, 2026-10-05) |
 | 042 | 2. sınıf Matematik: sıvı ve ölçme birimleri, sahneler, simetri nesneleri, kutu simgeleri | Orta | ⏳ Bekliyor |
 | 043 | 2. sınıf Matematik durak çıkartmaları (42 `st.matematik.g2_*`) | Orta | ⏳ Bekliyor |
 | 044 | 2. sınıf Matematik: sayılar 21–100 + kart sesleri (`vo.sayi.*`, `vo.mat2.*`) | Yüksek | ⏳ Bekliyor |
