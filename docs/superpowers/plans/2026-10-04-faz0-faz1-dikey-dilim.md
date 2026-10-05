@@ -85,7 +85,7 @@
 - [x] **Step 2:** GUT v9.7.1'i `addons/gut/` altına koy (release zip'inden yalnızca `addons/gut`). Sürüm notlarında Godot 4.7 uyumluluğunu kontrol et; uyumsuzsa 9.7.x serisinin uyumlu en son sürümünü seç ve sürümü commit mesajına yaz.
 - [x] **Step 3:** `project.godot` dosyasını oluştur:
   - `application/config/name="Bilgi Adası"`, `run/main_scene="res://scenes/ui/splash.tscn"`
-  - `display/window/size/viewport_width=1920`, `viewport_height=1080`, `stretch/mode="canvas_items"`, `stretch/aspect="expand"`, `handheld/orientation=6` (sensor_landscape)
+  - `display/window/size/viewport_width=1920`, `viewport_height=1080`, `stretch/mode="canvas_items"`, `stretch/aspect="expand"`, `handheld/orientation=4` (sensor_landscape)
   - `rendering/renderer/rendering_method="mobile"`
   - GUT eklentisi etkin
   - Varsayılan tema yazı tipi Andika
