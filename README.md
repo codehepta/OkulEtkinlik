@@ -9,7 +9,7 @@ MEB 1., 2. ve 3. sınıf öğretim programlarıyla uyumlu, 6–9 yaş çocuklar 
 - 🔊 Bütün yönergeler seslendirilir; okuma bilmeyen çocuk da tek başına oynayabilir
 - 🔒 İnternet bağlantısı, reklam, satın alma ve veri toplama yok; her şey cihazda kalır
 
-> **Durum:** Faz 1 tamam — oynanabilir dikey dilim (1. sınıf Matematik, Ünite 1: 6 durak, 3 mini oyun). Görsel ve sesler yer tutucu/TTS ile çalışır; gerçek asset'ler sahibin üretimini bekler.
+> **Durum:** 1.0.0 sürüm adayı. Bütün dersler oynanabilir (1–3. sınıf Matematik, Türkçe, Hayat Bilgisi; 3. sınıf Fen Bilimleri: 328 durak). Görsel ve seslerin çoğu hâlâ yer tutucu/TTS ile çalışır; gerçek asset'ler sahibin üretimini bekler. Yayın adımları: [docs/release/README.md](docs/release/README.md).
 
 ## Çalıştırma ve test
 ```bash
@@ -27,6 +27,7 @@ Sırayla: [001](asset-requests/001-bilge-maskot.md) (Bilge), [003](asset-request
 - [Tasarım (spec)](docs/superpowers/specs/2026-10-04-bilgi-adasi-design.md)
 - [Uygulama planları](docs/superpowers/plans/)
 - [QA kontrol listesi (gerçek cihaz)](docs/qa-checklist.md)
+- [Yayın rehberi](docs/release/README.md) · [Gizlilik politikası](PRIVACY.md) · [Sürüm notları](CHANGELOG.md)
 - [Görsel stil rehberi](docs/assets/style-guide.md) · [İsimlendirme](docs/assets/naming.md)
 - [Asset istekleri (Nano Banana / Gemini TTS promptları)](asset-requests/README.md)
 
