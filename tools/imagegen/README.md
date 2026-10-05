@@ -25,18 +25,31 @@ Model ağırlıkları ilk kullanımda Hugging Face önbelleğine (`~/.cache/hugg
 # 060 partisinin 1–5. öğeleri, öğe başına 2 aday
 uv run --project tools/imagegen python tools/imagegen/generate.py 060 --items 1-5
 
-# Referanslı öğeler (ör. Bilge pozları) ya da stil referansıyla üretim
+# Nesne ve sahne görselleri: klein, referanssız (önerilen; ~10 sn/görsel)
+uv run --project tools/imagegen python tools/imagegen/generate.py 060 --model klein
+
+# Referanslı öğeler (ör. Bilge pozları, karakter sayfası referans olur)
 uv run --project tools/imagegen python tools/imagegen/generate.py 001 --items 2-10 --model klein
-uv run --project tools/imagegen python tools/imagegen/generate.py 040 --model klein --style-ref assets/images/items/oyuncak/kup.png
+
+# Isınmayı sınırlamak için iş/dinlenme döngüsü (model molada bellekte kalır)
+uv run --project tools/imagegen python tools/imagegen/generate.py 060 --model klein --work-minutes 12 --rest-minutes 18
+
+# Geometrik öğeler (sekil/cisim/blok) difüzyona gönderilmez; Blender'da üretilir:
+/Applications/Blender.app/Contents/MacOS/Blender -b --factory-startup -P tools/imagegen/blender_geometry.py -- --pause 20
 
 # Seçilenleri yerleştir: öğe=tohum[:model]
-uv run --project tools/imagegen python tools/imagegen/approve.py 060 1=1000 3=1001:klein
+uv run --project tools/imagegen python tools/imagegen/approve.py 060 1=1000:klein 3=1001:klein
+uv run --project tools/imagegen python tools/imagegen/approve.py 040 9=0:blender
 
 # Testler
 cd tools/imagegen && uv run python -m unittest discover -s tests -t .
 ```
 
 Çıktılar `build/imagegen/<parti>/<anahtar>/` altına gider: `s<tohum>_<model>.png` ham görsel, `_cut.png` arka planı silinmiş hâli, `.json` üretim kaydı. Her parti için `sheet_<model>.png` seçim sayfası oluşur.
+
+**Stil referansı uyarısı:** klein'ın düzenleme modu referans görseli "düzenlenecek görsel" sayar. İlgisiz onaylı görselleri stil referansı olarak vermek içeriğe sızar: ırmak, rüzgâr ve robot görsellerine elma ve civciv girdi, "yalnızca stil" talimatı da bunu engellemedi. Nesneler referanssız üretilir; ev stilinin tutarlılığı için onaylı görsellerle LoRA eğitilir.
+
+Blender öğeleri sabit kamera ölçeğiyle çekilir ve `approve.py` bunları kırpmaz. Böylece "küçük kare / büyük kare" ve onluk/yüzlük arasındaki boyut farkı görselde korunur.
 
 `assets/` içinde zaten bulunan öğeler atlanır (`--force` ile yeniden üretilir). Referans görseli henüz olmayan öğeler (ör. `sheet.png` yokken Bilge pozları) atlanır.
 

@@ -2,7 +2,6 @@
 
 Kullanım (repo kökünden):
     uv run --project tools/imagegen python tools/imagegen/generate.py 060 --items 1-5 --seeds 2
-    uv run --project tools/imagegen python tools/imagegen/generate.py 040 --model klein --style-ref assets/images/items/oyuncak/kup.png
 
 Çıktı: build/imagegen/<parti>/<anahtar>/s<tohum>.png (ham) + s<tohum>_cut.png (arka planı silinmiş)
        + s<tohum>.json (model, sürüm, tohum, prompt) + build/imagegen/<parti>/sheet.png (seçim sayfası).
@@ -42,6 +41,13 @@ MODELS: dict[str, dict] = {
     "klein": {"registry": "flux2-klein-4b", "license": "Apache-2.0", "steps": 4},
 }
 
+
+# klein, stil referanslarındaki nesneleri içerik sanıp çizebiliyor (ör. ırmağın ortasına elma);
+# referans yalnızca stil için verildiğinde prompt'un başına bu talimat eklenir.
+STYLE_REF_INSTRUCTION = (
+    "The reference images are ONLY a style guide for the clay material, colors, lighting and eye style. "
+    "Do not draw any object, character or shape from the reference images. Draw only this subject: "
+)
 
 # Sayma/geometri kesinliği gereken öğeler difüzyonda yanlış çıkar; Blender'da modellenir.
 GEOMETRIC_PREFIXES = ("item.sekil.", "item.cisim.", "item.blok.")
@@ -92,10 +98,11 @@ def select_items(items: list[BatchItem], spec: str | None) -> list[BatchItem]:
 
 
 class Generator:
-    def __init__(self, model: str, quantize: int | None, lora: list[str]) -> None:
+    def __init__(self, model: str, quantize: int | None, lora: list[str], needs_refs: bool = False) -> None:
         from mflux.models.common.resolution.config_resolution import ConfigResolution
 
         self.model = model
+        self.needs_refs = needs_refs
         lora_paths = [l.split(":")[0] for l in lora] or None
         lora_scales = [float(l.split(":")[1]) if ":" in l else 1.0 for l in lora] or None
         registry = MODELS[model]["registry"]
@@ -103,6 +110,16 @@ class Generator:
             from mflux.models.z_image.variants.z_image import ZImage
 
             self.pipe = ZImage(
+                model_config=ConfigResolution.resolve_restricted(registry, registry),
+                quantize=quantize,
+                lora_paths=lora_paths,
+                lora_scales=lora_scales,
+            )
+        elif not needs_refs:
+            # referanssız: düzenleme sınıfı image_paths=None ile çöker, metinden görsel sınıfı kullanılır
+            from mflux.models.flux2.variants import Flux2Klein
+
+            self.pipe = Flux2Klein(
                 model_config=ConfigResolution.resolve_restricted(registry, registry),
                 quantize=quantize,
                 lora_paths=lora_paths,
@@ -122,10 +139,12 @@ class Generator:
         w, h = size
         if self.model == "zimage":
             result = self.pipe.generate_image(seed=seed, prompt=prompt, width=w, height=h, num_inference_steps=steps)
+        elif not self.needs_refs:
+            result = self.pipe.generate_image(seed=seed, prompt=prompt, width=w, height=h, num_inference_steps=steps)
         else:
             result = self.pipe.generate_image(
                 seed=seed, prompt=prompt, width=w, height=h, num_inference_steps=steps,
-                image_paths=[str(r) for r in refs] or None,
+                image_paths=[str(r) for r in refs],
             )
         return result.image
 
@@ -192,12 +211,16 @@ def main() -> None:
     ap.add_argument("--steps", type=int)
     ap.add_argument("--quantize", type=int, default=8, choices=[4, 6, 8])
     ap.add_argument("--lora", action="append", default=[], help="yol[:ölçek]")
-    ap.add_argument("--style-ref", action="append", default=[], help="klein için ek stil referansı (repo yolu)")
+    ap.add_argument("--style-ref", action="append", default=[],
+                    help="klein için ek referans. DİKKAT: düzenleme modu referansı içerik sanar; yalnızca aynı "
+                         "nesnenin/karakterin görselleri için kullan, ilgisiz 'stil' görselleri için kullanma")
     ap.add_argument("--force", action="store_true", help="assets/ içinde zaten olan öğeleri de üret")
     ap.add_argument("--no-cut", action="store_true", help="arka plan silmeyi atla")
     ap.add_argument("--work-minutes", type=float, default=0, help="bu kadar üretimden sonra dinlen (0: kapalı)")
     ap.add_argument("--rest-minutes", type=float, default=15, help="dinlenme süresi")
     ap.add_argument("--include-geometric", action="store_true", help="sekil/cisim/blok öğelerini de üret")
+    ap.add_argument("--no-style-instruction", action="store_true",
+                    help="stil referansı varken prompt'a 'yalnızca stil' talimatını ekleme")
     args = ap.parse_args()
 
     batch_file = find_batch(args.batch)
@@ -225,7 +248,10 @@ def main() -> None:
 
     mx.set_cache_limit(2 * 1024**3)
     t0 = time.time()
-    gen = Generator(args.model, args.quantize, args.lora)
+    needs_refs = args.model == "klein" and (bool(style_refs) or any(i.reference for i in items))
+    if needs_refs and not style_refs and not all(i.reference for i in items):
+        sys.exit("Referanslı ve referanssız öğeler karışık: --items ile ayrı çalıştır.")
+    gen = Generator(args.model, args.quantize, args.lora, needs_refs=needs_refs)
     print(f"Model yüklendi: {time.time() - t0:.0f} sn")
 
     cycle = DutyCycle(args.work_minutes * 60, args.rest_minutes * 60)
@@ -244,6 +270,9 @@ def main() -> None:
             refs.append(ref)
         if args.model == "klein":
             refs += style_refs
+        prompt = item.prompt
+        if args.model == "klein" and style_refs and not args.no_style_instruction:
+            prompt = STYLE_REF_INSTRUCTION + prompt
         size = SIZES.get(item.ratio, SIZES["1:1"])
         item_dir = out_dir / item.key
         item_dir.mkdir(parents=True, exist_ok=True)
@@ -260,14 +289,14 @@ def main() -> None:
                 shown.append(cut_path if cut_requested else raw)
                 continue
             t = time.time()
-            image = gen.generate(item.prompt, seed, size, steps, refs)
+            image = gen.generate(prompt, seed, size, steps, refs)
             image.save(raw)
             mx.clear_cache()
             meta = {
                 "key": item.key, "target": item.path, "batch": batch_file.name, "number": item.number,
                 "model": MODELS[args.model]["registry"], "model_license": MODELS[args.model]["license"],
                 "mflux": MFLUX_VERSION, "quantize": args.quantize, "steps": steps, "seed": seed,
-                "size": list(size), "prompt": item.prompt, "lora": args.lora,
+                "size": list(size), "prompt": prompt, "lora": args.lora,
                 "references": [str(r.relative_to(REPO)) for r in refs],
                 "background_removed": cut_requested,
                 "birefnet": f"{BIREFNET_REPO}@{BIREFNET_REVISION}" if cut_requested else None,
