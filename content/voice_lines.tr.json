@@ -10326,5 +10326,2161 @@
 	"vo.tk.misir": {
 		"text": "Mısır",
 		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u01.n01.intro": {
+		"text": "Okulumuzun kuralları hepimizi mutlu eder. Haydi, okulda nasıl davranacağımızı birlikte bulalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g1.hayat_bilgisi.u01.n01.r01.ipucu": {
+		"text": "Sınıfta söz almak için önce parmak kaldırırız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u01.n01.r01": {
+		"text": "Öğretmenin ders anlatıyor. Sen de bir şey söylemek istiyorsun. Ne yapmalısın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.simge.uygun": {
+		"text": "Uygun davranış (gülen yüz)",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.simge.uygun_degil": {
+		"text": "Uygun olmayan davranış (üzgün yüz)",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u01.n01.r02": {
+		"text": "Okulda hangisi uygun bir davranış? Uygun olanları gülen yüze, uygun olmayanları üzgün yüze koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u01.n01.r03": {
+		"text": "Bu davranışları ayır. Okul kurallarına uygun olanlar gülen yüze, uygun olmayanlar üzgün yüze.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u01.n01.r04.ipucu": {
+		"text": "Zil çalınca derse dönme zamanıdır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u01.n01.r04": {
+		"text": "Zil çaldı, teneffüs bitti. Ne yapmalısın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u02.n01.intro": {
+		"text": "Sağlıklı büyümek için iyi beslenir, uyur ve temiz oluruz. Hadi bakalım, neler yapmalıyız?",
+		"speaker": "BILGE"
+	},
+	"vo.ad.simge.saglikli": {
+		"text": "Sağlıklı",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.simge.sagliksiz": {
+		"text": "Sağlıksız",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u02.n01.r01": {
+		"text": "Hangi yiyecekler sağlıklı? Sağlıklı olanları güçlü kalbe, sağlıksız olanları yorgun kalbe koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u02.n01.r02": {
+		"text": "Dişlerimizi nasıl fırçalarız? Önce fırçaya macun sür, sonra dişlerini fırçala, en son ağzını çalkala. Resimleri sıraya diz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u02.n01.r03.ipucu": {
+		"text": "İyi uyumak büyümemize yardım eder.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u02.n01.r03": {
+		"text": "Hava karardı, uyku vakti geldi. Ne yapmalısın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u02.n01.r04.ipucu": {
+		"text": "Mikroplardan korunmak için ellerimizi sabunla yıkarız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u02.n01.r04": {
+		"text": "Sofra hazır, ama ellerin kirli. Yemekten önce ne yapmalısın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u02.n02.intro": {
+		"text": "Bedenimiz bize aittir. Rahatsız olduğumuzda hayır deriz ve güvendiğimiz bir büyüğe anlatırız.",
+		"speaker": "BILGE"
+	},
+	"vo.g1.hayat_bilgisi.u02.n02.r01.ipucu": {
+		"text": "Hoşlanmadığında nazikçe hayır diyebilirsin.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u02.n02.r01": {
+		"text": "Bir arkadaşın sana sormadan sarılmak istiyor, sen de bundan hoşlanmıyorsun. Ne yapabilirsin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u02.n02.r02.ipucu": {
+		"text": "Tanımadığın kişilerle hiçbir yere gitmeyiz. Hemen ailemizin yanına gideriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u02.n02.r02": {
+		"text": "Parkta tanımadığın biri sana şeker uzatıyor ve benimle gel diyor. Ne yapmalısın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u02.n02.r03.ipucu": {
+		"text": "Bizi rahatsız eden sırlar saklanmaz. Güvendiğimiz bir büyüğe anlatırız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u02.n02.r03": {
+		"text": "Biri sana rahatsız olduğun bir şekilde dokundu ve bu bir sır, kimseye söyleme dedi. Ne yapmalısın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u02.n03.intro": {
+		"text": "Trafikte kurallara uyarsak güvende oluruz. Haydi, trafik kurallarını öğrenelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g1.hayat_bilgisi.u02.n03.r01.ipucu": {
+		"text": "Kırmızı ışıkta durur, yeşil ışığı bekleriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u02.n03.r01": {
+		"text": "Yaya ışığı kırmızı yanıyor. Ne yapmalısın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u02.n03.r02": {
+		"text": "Trafikte hangi davranış doğru? Doğru olanları gülen yüze, yanlış olanları üzgün yüze koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u02.n03.r03.ipucu": {
+		"text": "Arabada her zaman emniyet kemerimizi takarız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u02.n03.r03": {
+		"text": "Arabaya bindin ve arka koltuğa oturdun. Araba hareket etmeden önce ne yapmalısın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u02.n04.intro": {
+		"text": "Acil bir durumda sakin kalır ve yardım isteriz. Kimden yardım isteyeceğimizi birlikte öğrenelim.",
+		"speaker": "BILGE"
+	},
+	"vo.ad.acil.yangin": {
+		"text": "Yangın",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.acil.kaybolma": {
+		"text": "Kaybolmak",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u02.n04.r01": {
+		"text": "Her durumu yardım isteyeceğin kişiyle eşleştir. Yangında yüz on ikiyi ararız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u02.n04.r02.ipucu": {
+		"text": "Gaz kokusunda ışıklara dokunmayız. Pencereleri açar, hemen bir büyüğe haber veririz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u02.n04.r02": {
+		"text": "Evde gaz kokusu var. Ne yapmalısın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u02.n04.r03.ipucu": {
+		"text": "Kaybolursak olduğumuz yerde kalır, görevliye adımızı söyleriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u02.n04.r03": {
+		"text": "Alışveriş merkezinde aileni göremiyorsun. Ne yapmalısın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.acil.dusme": {
+		"text": "Okulda düşmek",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u02.n04.r04": {
+		"text": "Her durumu doğru kişiyle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u03.n01.intro": {
+		"text": "Ailemiz bizi sever ve korur. Haydi, aile bireylerini tanıyalım!",
+		"speaker": "BILGE"
+	},
+	"vo.ad.aile.dede": {
+		"text": "Dede",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u03.n01.r01": {
+		"text": "Dinle ve bul: Dede! Dedeye dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.aile.buyukanne": {
+		"text": "Büyükanne",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u03.n01.r02": {
+		"text": "Dinle ve bul: Büyükanne! Büyükanneye dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.simge.cekirdek_aile": {
+		"text": "Çekirdek aile",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.simge.genis_aile": {
+		"text": "Geniş aile",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u03.n01.r03": {
+		"text": "Anne, baba ve kardeşler çekirdek aileyi oluşturur. Büyükanne, dede, teyze ve amca da katılınca geniş aile olur. Kartları ayır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u03.n01.r04.p1": {
+		"text": "Elif'in ailesi her akşam aynı sofrada buluşur. Herkes gününü anlatır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u03.n01.r04.p2": {
+		"text": "Bir gün Elif'in kardeşi hastalandı. Annesi çorba yaptı, babası ona masal okudu, Elif de oyuncaklarını paylaştı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u03.n01.r04.p3": {
+		"text": "Elif'in ailesi birbirini sever ve birbirine yardım eder.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u03.n01.r04.s1": {
+		"text": "Elif'in kardeşi hastalanınca aile ne yaptı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u03.n01.r04.s2": {
+		"text": "Ailesi yanındayken kardeşi kendini nasıl hissetti?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u03.n01.r04": {
+		"text": "Hikâyeyi dinle, sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u03.n02.intro": {
+		"text": "Lütfen, teşekkür ederim, hoş geldin gibi sözler herkesi mutlu eder. Evde nazik olalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g1.hayat_bilgisi.u03.n02.r01.ipucu": {
+		"text": "Biri bize bir şey verdiğinde teşekkür ederiz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u03.n02.r01": {
+		"text": "Annen sana bir bardak su verdi. Ne yaparsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u03.n02.r02.ipucu": {
+		"text": "Lütfen, tuzu verir misin, diye rica ederiz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u03.n02.r02": {
+		"text": "Sofrada tuz senden çok uzakta. Tuzu nasıl istersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u03.n02.r03.ipucu": {
+		"text": "Misafirlerimizi gülümseyerek karşılarız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u03.n02.r03": {
+		"text": "Evinize misafir geldi. Ne yaparsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u03.n03.intro": {
+		"text": "Ailede herkesin görevleri var. Sen de evde yardım edebilirsin! Hangi görevler senin?",
+		"speaker": "BILGE"
+	},
+	"vo.ad.simge.cocuk_gorevi": {
+		"text": "Benim yapabileceğim görev",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.simge.buyuk_gorevi": {
+		"text": "Büyüklerin görevi",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u03.n03.r01": {
+		"text": "Bu görevlerden hangilerini sen yapabilirsin? Senin görevlerini çocuk eline, büyüklerin görevlerini büyük ele koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u03.n03.r02": {
+		"text": "Görevleri ayır: Senin yapabileceklerin çocuk eline, büyüklerin yapması gerekenler büyük ele.",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.gorev.oyuncak_topla": {
+		"text": "Oyuncakları toplamak",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.gorev.cicek_sula": {
+		"text": "Çiçekleri sulamak",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.gorev.sofra_kur": {
+		"text": "Sofrayı kurmak",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u03.n03.r03": {
+		"text": "Her görevi ona yarayan eşyayla eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u03.n03.r04.ipucu": {
+		"text": "Ailede herkes bir işin ucundan tutar.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u03.n03.r04": {
+		"text": "Yemekten sonra ailece sofrayı topluyorsunuz. Kardeşin bardakları kuruluyor. Sen ne yaparsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u04.n01.intro": {
+		"text": "Ülkemizin adı Türkiye. Başkentimiz Ankara, paramız Türk lirası. Ülkemizi tanıyalım!",
+		"speaker": "BILGE"
+	},
+	"vo.ad.ulke.turk_lirasi": {
+		"text": "Türk lirası",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u04.n01.r01": {
+		"text": "Paramızın adı Türk lirası. Dinle ve bul: Türk lirası!",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.ataturk.anitkabir": {
+		"text": "Anıtkabir",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u04.n01.r02": {
+		"text": "Başkentimiz Ankara. Ankara'da Anıtkabir vardır. Dinle ve bul: Anıtkabir!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u04.n01.r03.ipucu": {
+		"text": "Kuzeyde Karadeniz, batıda Ege Denizi, güneyde Akdeniz var. Mavi denizleri say.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u04.n01.r03": {
+		"text": "Haritaya bak. Ülkemizin kaç tarafı denizlerle çevrili? Sayıya dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u04.n02.intro": {
+		"text": "Bayrağımız ve İstiklâl Marşı'mız bağımsızlığımızın sembolüdür. Onları çok severiz!",
+		"speaker": "BILGE"
+	},
+	"vo.ad.ulke.turk_bayragi": {
+		"text": "Türk bayrağı",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u04.n02.r01": {
+		"text": "Dinle ve bul: Türk bayrağı!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u04.n02.r02.p1": {
+		"text": "Bayrağımız kırmızı ve beyazdır. Üzerinde beyaz bir ay ve yıldız vardır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u04.n02.r02.p2": {
+		"text": "İstiklâl Marşı'mızı Mehmet Akif Ersoy yazdı. Marşımız bağımsızlığımızı anlatır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u04.n02.r02.p3": {
+		"text": "Bayrağımız ve marşımız bağımsızlığımızın sembolüdür. Onlara saygı gösteririz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u04.n02.r02.s1": {
+		"text": "Bayrağımızın renkleri hangileri?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u04.n02.r02.s2": {
+		"text": "Bayrağımızda hangi şekiller var?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u04.n02.r02": {
+		"text": "Dinle, sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u04.n02.r03.ipucu": {
+		"text": "İstiklâl Marşı okunurken hazırol durur, saygıyla dinleriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u04.n02.r03": {
+		"text": "Bayrak töreninde İstiklâl Marşı okunuyor. Ne yapmalısın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u04.n03.intro": {
+		"text": "Mustafa Kemal Atatürk, Cumhuriyetimizin kurucusudur. Onun hayatını birlikte dinleyelim.",
+		"speaker": "BILGE"
+	},
+	"vo.g1.hayat_bilgisi.u04.n03.r01.p1": {
+		"text": "Mustafa Kemal Atatürk, 1881 yılında Selanik'te bu evde doğdu.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u04.n03.r01.p2": {
+		"text": "Annesinin adı Zübeyde Hanım, babasının adı Ali Rıza Efendi'dir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u04.n03.r01.p3": {
+		"text": "Atatürk 10 Kasım 1938'de İstanbul'da öldü. Şimdi Ankara'daki Anıtkabir'de yatıyor.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u04.n03.r01.s1": {
+		"text": "Atatürk'ün doğduğu evi bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u04.n03.r01.s2": {
+		"text": "Atatürk'ün yattığı Anıtkabir hangisi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u04.n03.r01": {
+		"text": "Atatürk'ün hayatını dinle, sonra soruyu cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.zubeyde": {
+		"text": "Zübeyde Hanım",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.ayse": {
+		"text": "Ayşe Hanım",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.ahmet": {
+		"text": "Ahmet Efendi",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.ali_riza": {
+		"text": "Ali Rıza Efendi",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u04.n03.r02.p1": {
+		"text": "Mustafa Kemal'in annesinin adı Zübeyde Hanım'dır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u04.n03.r02.p2": {
+		"text": "Babasının adı Ali Rıza Efendi'dir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u04.n03.r02.s1": {
+		"text": "Atatürk'ün annesinin adı neydi? Zübeyde Hanım mı, Ayşe Hanım mı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u04.n03.r02.s2": {
+		"text": "Babasının adı neydi? Ahmet Efendi mi, Ali Rıza Efendi mi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u04.n03.r02": {
+		"text": "Dinle, sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u04.n03.r03": {
+		"text": "Atatürk'ün hayatını sıraya diz. Önce Selanik'te doğdu, sonra okula başladı, büyüyünce Cumhuriyet'i kurdu. Şimdi Anıtkabir'de yatıyor.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u05.n01.intro": {
+		"text": "Doğada neler var? Gözlerimizi açalım, gördüklerimizi gruplara ayıralım!",
+		"speaker": "BILGE"
+	},
+	"vo.ad.simge.canli": {
+		"text": "Canlı",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.simge.cansiz": {
+		"text": "Cansız",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u05.n01.r01": {
+		"text": "Doğada gözlem yaptık! Canlıları filize, cansızları taşa koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u05.n01.r02": {
+		"text": "Gözlem kartlarını ayır: Canlılar filize, cansızlar taşa.",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.simge.hayvan": {
+		"text": "Hayvan",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.simge.bitki": {
+		"text": "Bitki",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u05.n01.r03": {
+		"text": "Gözlem tablomuzu dolduralım: hayvanlar pati izine, bitkiler filize, cansızlar taşa.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u05.n02.intro": {
+		"text": "Gökyüzüne bakalım! Güneş, Dünya ve Ay'ın modelleriyle onları tanıyalım.",
+		"speaker": "BILGE"
+	},
+	"vo.ad.gok.gunes": {
+		"text": "Güneş",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u05.n02.r01": {
+		"text": "Dinle ve bul: Güneş!",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.gok.ay": {
+		"text": "Ay",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u05.n02.r02": {
+		"text": "Dinle ve bul: Ay!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u05.n02.r03.ipucu": {
+		"text": "Gündüz bizi ısıtan ve aydınlatan gök cismini düşün.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u05.n02.r03": {
+		"text": "Modellere bak. Bize ısı ve ışık veren gök cismi hangisi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u05.n02.r04.ipucu": {
+		"text": "Mavi denizleri ve yeşil karaları olan gök cismini düşün.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u05.n02.r04": {
+		"text": "Üzerinde yaşadığımız gök cismi hangisi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u05.n02.r05": {
+		"text": "Modelleri büyükten küçüğe sırala. En büyüğü Güneş, en küçüğü Ay.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u05.n03.intro": {
+		"text": "Deprem, sel, yangın ve çığ birer afettir. Afetleri tanırsak onlara hazırlanabiliriz.",
+		"speaker": "BILGE"
+	},
+	"vo.ad.afet.deprem": {
+		"text": "Deprem",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u05.n03.r01": {
+		"text": "Dinle ve bul: Deprem!",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.afet.sel": {
+		"text": "Sel",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u05.n03.r02": {
+		"text": "Dinle ve bul: Sel!",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.afet.cig": {
+		"text": "Çığ",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u05.n03.r03": {
+		"text": "Dinle ve bul: Çığ!",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.afet.yangin": {
+		"text": "Orman yangını",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u05.n03.r04": {
+		"text": "Her afeti onun nedeniyle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u05.n04.intro": {
+		"text": "Kâğıt, plastik, cam ve metal atıklar geri dönüşebilir. Atıkları ayıralım, doğayı koruyalım!",
+		"speaker": "BILGE"
+	},
+	"vo.ad.simge.geri_donusum": {
+		"text": "Geri dönüşüm",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.simge.cop": {
+		"text": "Çöp kutusu",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u05.n04.r01": {
+		"text": "Hangi atıklar geri dönüşür? Geri dönüşenleri oklu kutuya, dönüşmeyenleri gri çöp kutusuna koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.kutu.kagit": {
+		"text": "Kâğıt kutusu",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.kutu.plastik": {
+		"text": "Plastik kutusu",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.kutu.cam": {
+		"text": "Cam kutusu",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u05.n04.r02": {
+		"text": "Atıkları doğru kutulara ayır: kâğıtlar mavi kutuya, plastikler sarı kutuya, camlar yeşil kutuya.",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.atik.plastik_sise": {
+		"text": "Plastik şişe",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.atik.gazete": {
+		"text": "Gazete",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.atik.cam_sise": {
+		"text": "Cam şişe",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.atik.pil": {
+		"text": "Pil",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.hayat_bilgisi.u05.n04.r03": {
+		"text": "Her atığı kendi geri dönüşüm kutusuyla eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u01.n01.intro": {
+		"text": "Günümüzü planlarsak her işe zaman kalır. Haydi, planlı bir gün nasıl olur görelim!",
+		"speaker": "BILGE"
+	},
+	"vo.ad.simge.sabah": {
+		"text": "Sabah",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.simge.aksam": {
+		"text": "Akşam",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u01.n01.r01": {
+		"text": "Bu işleri ne zaman yaparız? Sabah yaptıklarımızı doğan güneşe, akşam yaptıklarımızı aya koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u01.n01.r02": {
+		"text": "Defne'nin gününü sıraya diz. Sabah uyanır, kahvaltı yapar, okula gider, ödevini yapar ve uyur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u01.n01.r03.ipucu": {
+		"text": "Eşyalarını arayan biri okula yetişebilir mi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u01.n01.r03": {
+		"text": "Ali çantasını akşamdan hazırlamadı. Sabah ne olur?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u01.n01.r04.ipucu": {
+		"text": "İşlerini önceden planlayan kişi sabah rahat eder.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u01.n01.r04": {
+		"text": "Ali sabahları telaşlanmak istemiyor. Bunun için ne yapmalı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u01.n02.intro": {
+		"text": "İyi iletişim için önce dinler, sonra konuşuruz. Haydi, nasıl iletişim kurduğumuzu görelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.hayat_bilgisi.u01.n02.r01.ipucu": {
+		"text": "Arkadaşımızın sözünü kesmeyiz, bitirmesini bekleriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u01.n02.r01": {
+		"text": "Arkadaşın konuşuyor. Sen de bir şey söylemek istiyorsun. Ne yaparsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u01.n02.r02.ipucu": {
+		"text": "Konuşan kişinin yüzüne bakarak dinleriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u01.n02.r02": {
+		"text": "Öğretmenin seninle konuşuyor. Onu nasıl dinlersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u01.n02.r03.ipucu": {
+		"text": "Ortama uygun ses tonuyla konuşuruz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u01.n02.r03": {
+		"text": "Kütüphanedesin ve arkadaşına bir şey sormak istiyorsun. Nasıl konuşursun?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u01.n03.intro": {
+		"text": "İyi arkadaşlar paylaşır, özür diler ve birbirini oyuna katar. Arkadaşlığımızı güçlendirelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.hayat_bilgisi.u01.n03.r01": {
+		"text": "Hangi davranışlar arkadaşlığı güçlendirir? Güçlendirenleri gülen yüze, üzenleri üzgün yüze koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u01.n03.r02": {
+		"text": "Davranışları ayır: Arkadaşlığı güçlendirenler gülen yüze, üzenler üzgün yüze.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u01.n03.r03.ipucu": {
+		"text": "Bir hata yaptığımızda özür dileriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u01.n03.r03": {
+		"text": "Yanlışlıkla arkadaşının kulesini yıktın. Ne yaparsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u01.n03.r04.ipucu": {
+		"text": "Sırayla oynarsak ikimiz de eğleniriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u01.n03.r04": {
+		"text": "Arkadaşınla ikiniz de aynı salıncağa binmek istiyorsunuz. Ne yaparsınız?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u02.n01.intro": {
+		"text": "Her gün yaptığımız şeyler büyümemizi etkiler. Sağlıklı alışkanlıkları keşfedelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.hayat_bilgisi.u02.n01.r01": {
+		"text": "Hangi alışkanlıklar sağlıklı? Sağlıklı olanları güçlü kalbe, sağlıksız olanları yorgun kalbe koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.aliskanlik.spor": {
+		"text": "Spor yapmak",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.aliskanlik.erken_yat": {
+		"text": "Erken yatmak",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.aliskanlik.dis_fircala": {
+		"text": "Diş fırçalamak",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u02.n01.r02": {
+		"text": "Her alışkanlığı vücudumuza yararıyla eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u02.n01.r03.ipucu": {
+		"text": "Yeterince uyumayan biri sabah nasıl hisseder?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u02.n01.r03": {
+		"text": "Zeynep her gece çok geç yatıyor. Sabah okulda nasıl olur?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u02.n02.intro": {
+		"text": "İnternette de dikkatli oluruz. Kişisel bilgilerimizi korur, bir şey olursa büyüğümüze söyleriz.",
+		"speaker": "BILGE"
+	},
+	"vo.ad.simge.gizli": {
+		"text": "Gizli kalmalı",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.simge.paylasilir": {
+		"text": "Paylaşılabilir",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u02.n02.r01": {
+		"text": "Hangi bilgileri internette paylaşmayız? Gizli kalması gerekenleri kilide, paylaşılabilenleri kalbe koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u02.n02.r02": {
+		"text": "Bilgileri ayır: Gizli kalması gerekenler kilide, paylaşılabilenler kalbe.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u02.n02.r03.ipucu": {
+		"text": "Tanımadığımız kişilerle yazışmaz, hemen bir büyüğümüze gösteririz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u02.n02.r03": {
+		"text": "Tanımadığın biri tablette sana yazdı: Arkadaş olalım, adresini yazar mısın? Ne yaparsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u02.n02.r04.ipucu": {
+		"text": "Tanımadığımız pencerelere dokunmadan önce bir büyüğümüze sorarız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u02.n02.r04": {
+		"text": "Oyun oynarken ekranda kocaman bir hediye kutusu çıktı: Hediye kazandın, dokun! Ne yaparsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u02.n03.intro": {
+		"text": "Trafik levhaları bize yolda ne yapacağımızı söyler. Levhaları tanıyalım!",
+		"speaker": "BILGE"
+	},
+	"vo.ad.levha.yaya_gecidi": {
+		"text": "Yaya geçidi levhası",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u02.n03.r01": {
+		"text": "Dinle ve bul: Yaya geçidi levhası!",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.levha.okul_gecidi": {
+		"text": "Okul geçidi levhası",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u02.n03.r02": {
+		"text": "Dinle ve bul: Okul geçidi levhası!",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.levha.bisiklet_yolu": {
+		"text": "Bisiklet yolu levhası",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u02.n03.r03": {
+		"text": "Dinle ve bul: Bisiklet yolu levhası!",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.levha.isikli_isaret": {
+		"text": "Işıklı işaret cihazı levhası",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u02.n03.r04": {
+		"text": "Her levhayı anlamıyla eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u02.n04.intro": {
+		"text": "Acil durumlarda yüz on ikiyi ararız. Görevliye doğru bilgileri sakin bir sesle veririz.",
+		"speaker": "BILGE"
+	},
+	"vo.ad.simge.soyle": {
+		"text": "112'ye söylenir",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.simge.gereksiz": {
+		"text": "Gereksiz bilgi",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u02.n04.r01": {
+		"text": "Yüz on ikiyi aradığımızda hangi bilgileri söyleriz? Söylenecekleri telefona, gereksizleri boş balona koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u02.n04.r02.ipucu": {
+		"text": "Sakin ve anlaşılır konuşursak görevli bize daha hızlı yardım eder.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u02.n04.r02": {
+		"text": "Yüz on ikiyi aradın. Görevli seninle konuşuyor. Nasıl konuşursun?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u02.n04.r03.ipucu": {
+		"text": "Gereksiz aramalar, gerçekten yardıma ihtiyacı olanları bekletir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u02.n04.r03": {
+		"text": "Arkadaşın şaka olsun diye yüz on ikiyi aramak istiyor. Ne yaparsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u03.n01.intro": {
+		"text": "Ailemiz bize sevgi verir, bizi korur ve bize birçok şey öğretir. Hikâyeleri dinleyelim.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.hayat_bilgisi.u03.n01.r01.p1": {
+		"text": "Can bisikletten düştü ve dizi kanadı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u03.n01.r01.p2": {
+		"text": "Babası yarasını temizledi. Ablası ona en sevdiği masalı okudu.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u03.n01.r01.p3": {
+		"text": "Can, ailesinin yanında kendini güvende hissetti.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u03.n01.r01.s1": {
+		"text": "Can düştüğünde ailesi ne yaptı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u03.n01.r01.s2": {
+		"text": "Can, ailesinin yanında nasıl hissetti?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u03.n01.r01": {
+		"text": "Hikâyeyi dinle, sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.sevgi_destek": {
+		"text": "Sevgi ve destek",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.yalnizlik": {
+		"text": "Yalnızlık",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u03.n01.r02.p1": {
+		"text": "Defne'nin dedesi ona bahçede fidan dikmeyi öğretti.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u03.n01.r02.p2": {
+		"text": "Annesi ona sabırlı olmayı, babası paylaşmayı öğretti.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u03.n01.r02.p3": {
+		"text": "Ailemiz bize sevgi verir ve yeni şeyler öğretir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u03.n01.r02.s1": {
+		"text": "Defne dedesinden ne öğrendi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u03.n01.r02.s2": {
+		"text": "Ailemiz bize neler verir? Sevgi ve destek mi, yalnızlık mı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u03.n01.r02": {
+		"text": "Hikâyeyi dinle, sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u03.n01.r03.ipucu": {
+		"text": "Ailede birbirimize destek oluruz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u03.n01.r03": {
+		"text": "Annen hasta ve yatakta dinleniyor. Ailene destek olmak için ne yaparsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u03.n02.intro": {
+		"text": "Sırada beklemek, yer vermek ve sessiz olmak nezakettir. Toplum içinde nasıl davranırız?",
+		"speaker": "BILGE"
+	},
+	"vo.g2.hayat_bilgisi.u03.n02.r01.ipucu": {
+		"text": "Sıramızı bekleriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u03.n02.r01": {
+		"text": "Fırında ekmek almak için sıra var. Ne yaparsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u03.n02.r02.ipucu": {
+		"text": "Yaşlılara, hastalara ve hamilelere yer veririz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u03.n02.r02": {
+		"text": "Otobüste yaşlı bir teyze ayakta duruyor, sen oturuyorsun. Ne yaparsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u03.n02.r03.ipucu": {
+		"text": "Kütüphanede başkalarını rahatsız etmemek için sessiz oluruz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u03.n02.r03": {
+		"text": "Kütüphanedesin. Nasıl davranırsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u03.n03.intro": {
+		"text": "Evimizde, okulumuzda ve mahallemizde de sorumluluklarımız var. Neler yapabiliriz?",
+		"speaker": "BILGE"
+	},
+	"vo.g2.hayat_bilgisi.u03.n03.r01.ipucu": {
+		"text": "Ortak alanları temiz tutmak hepimizin sorumluluğudur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u03.n03.r01": {
+		"text": "Parkta yerde bir çöp gördün. Ne yaparsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u03.n03.r02.ipucu": {
+		"text": "Üstlendiğimiz görevi yerine getiririz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u03.n03.r02": {
+		"text": "Sınıfça okul bahçesindeki çiçeklerin bakımını üstlendiniz. Çiçekler susuz kalmış. Ne yaparsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u03.n03.r03.ipucu": {
+		"text": "Komşularımıza, ailemizle birlikte yardım edebiliriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u03.n03.r03": {
+		"text": "Yaşlı komşunuz ağır poşetlerle merdivenleri çıkıyor. Ne yaparsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n01.intro": {
+		"text": "Mahallemizi ve ilimizi kimler yönetir? Bunu öğrenmek için doğru kaynakları seçelim.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.hayat_bilgisi.u04.n01.r01.ipucu": {
+		"text": "Mahalleyi muhtar yönetir. Muhtarın çalıştığı yeri düşün.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n01.r01": {
+		"text": "Mahallemizin muhtarı kim? Bunu öğrenmek için nereye gidebilirsin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n01.r02.ipucu": {
+		"text": "Bilgi veren kitaplar doğru kaynaktır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n01.r02": {
+		"text": "İlimizi kimin yönettiğini araştırıyorsun. Hangi kaynak işine yarar?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n01.r03.ipucu": {
+		"text": "Belediyenin kendi internet sitesine ailemizle birlikte bakabiliriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n01.r03": {
+		"text": "Belediyenin yeni parkı ne zaman yapacağını öğrenmek istiyorsun. Nereden bakarsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n02.intro": {
+		"text": "Mustafa Kemal çok çalışkan bir öğrenciydi. Onun okul yıllarını dinleyelim.",
+		"speaker": "BILGE"
+	},
+	"vo.ad.etiket.mat_ogretmeni": {
+		"text": "Matematik öğretmeni",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.sinif_arkadasi": {
+		"text": "Sınıf arkadaşı",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.tembel": {
+		"text": "Tembel",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.caliskan": {
+		"text": "Çalışkan",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n02.r01.p1": {
+		"text": "Mustafa, okula önce mahalle mektebinde başladı. Sonra babası onu Şemsi Efendi Okulu'na yazdırdı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n02.r01.p2": {
+		"text": "Daha sonra Selanik Askerî Rüştiyesi'ne girdi. Matematik öğretmeni onun başarısını görünce ona Kemal adını verdi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n02.r01.p3": {
+		"text": "Mustafa Kemal derslerine çok çalışan, başarılı ve kararlı bir öğrenciydi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n02.r01.s1": {
+		"text": "Mustafa'ya Kemal adını kim verdi? Matematik öğretmeni mi, sınıf arkadaşı mı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n02.r01.s2": {
+		"text": "Mustafa Kemal nasıl bir öğrenciydi? Tembel mi, çalışkan mı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n02.r01": {
+		"text": "Hikâyeyi dinle, sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.mahalle_mektebi": {
+		"text": "Mahalle Mektebi",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.semsi_efendi": {
+		"text": "Şemsi Efendi Okulu",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.askeri_rustiye": {
+		"text": "Askerî Rüştiye",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.askeri_idadi": {
+		"text": "Askerî İdadi",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n02.r02": {
+		"text": "Mustafa Kemal'in okullarını sıraya diz. İlk okulu mahalle mektebiydi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.harp_okulu": {
+		"text": "Harp Okulu",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n02.r03": {
+		"text": "Mustafa Kemal'in okullarını baştan sona sıraya diz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n03.intro": {
+		"text": "Millî bayramlarımız bize tarihimizi hatırlatır. Bu bayramlar neden önemli? Dinleyelim.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.hayat_bilgisi.u04.n03.r01.p1": {
+		"text": "23 Nisan 1920'de Ankara'da Türkiye Büyük Millet Meclisi açıldı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n03.r01.p2": {
+		"text": "Atatürk bu günü bayram olarak çocuklara armağan etti. 23 Nisan'da dünyanın birçok yerinden çocuklar ülkemize gelir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n03.r01.s1": {
+		"text": "Atatürk 23 Nisan'ı kimlere armağan etti?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n03.r01.s2": {
+		"text": "23 Nisan'da hangisi açıldı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n03.r01": {
+		"text": "Hikâyeyi dinle, sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.tatil": {
+		"text": "Tatil",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.cumhuriyet": {
+		"text": "Cumhuriyet",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n03.r02.p1": {
+		"text": "29 Ekim 1923'te Cumhuriyet ilan edildi. Cumhuriyette halk, kendini yönetecek kişileri seçer.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n03.r02.p2": {
+		"text": "Her yıl 29 Ekim'de evleri ve sokakları bayraklarla süsler, Cumhuriyet Bayramı'nı coşkuyla kutlarız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n03.r02.s1": {
+		"text": "29 Ekim'de ne ilan edildi? Cumhuriyet mi, tatil mi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n03.r02.s2": {
+		"text": "Cumhuriyet Bayramı'nda sokakları en çok neyle süsleriz?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n03.r02": {
+		"text": "Hikâyeyi dinle, sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.23_nisan": {
+		"text": "23 Nisan",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.19_mayis": {
+		"text": "19 Mayıs",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.29_ekim": {
+		"text": "29 Ekim",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.30_agustos": {
+		"text": "30 Ağustos",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n03.r03": {
+		"text": "Her millî bayramı kendi kutlamasıyla eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n04.intro": {
+		"text": "Ramazan Bayramı ve Kurban Bayramı'nda büyüklerimizi ziyaret eder, paylaşırız. Dinleyelim.",
+		"speaker": "BILGE"
+	},
+	"vo.ad.etiket.sevgi_dostluk": {
+		"text": "Sevgi ve dostluk",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.kusluk": {
+		"text": "Küslük",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n04.r01.p1": {
+		"text": "Ramazan Bayramı sabahı Elif ve ailesi büyüklerini ziyarete gitti.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n04.r01.p2": {
+		"text": "Elif dedesinin elini öptü. Küs olan iki komşu da bayramda barıştı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n04.r01.s1": {
+		"text": "Elif bayramda kimleri ziyaret etti?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n04.r01.s2": {
+		"text": "Bayramlar insanlar arasında neyi güçlendirir? Sevgi ve dostluğu mu, küslüğü mü?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n04.r01": {
+		"text": "Hikâyeyi dinle, sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.yaklastirir": {
+		"text": "Yaklaştırır",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.uzaklastirir": {
+		"text": "Uzaklaştırır",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n04.r02.p1": {
+		"text": "Kurban Bayramı'nda Ali'nin ailesi, ihtiyacı olan komşularıyla yiyeceklerini paylaştı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n04.r02.p2": {
+		"text": "Paylaşmak insanları birbirine yaklaştırır ve herkesi mutlu eder.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n04.r02.s1": {
+		"text": "Ali'nin ailesi bayramda ne yaptı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n04.r02.s2": {
+		"text": "Paylaşmak insanları ne yapar? Birbirine yaklaştırır mı, uzaklaştırır mı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n04.r02": {
+		"text": "Hikâyeyi dinle, sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n04.r03.ipucu": {
+		"text": "Bayramda büyüklerimizle bayramlaşırız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n04.r03": {
+		"text": "Bayramda dedeni ziyarete gittiniz. Dedeni görünce ne yaparsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u05.n01.intro": {
+		"text": "Her mevsimin havası farklıdır. Kış karlı, yaz sıcak! Hava olaylarını mevsimlerle eşleştirelim.",
+		"speaker": "BILGE"
+	},
+	"vo.ad.simge.kis": {
+		"text": "Kış",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.simge.yaz": {
+		"text": "Yaz",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u05.n01.r01": {
+		"text": "Bu resimler hangi mevsimi anlatıyor? Kışa ait olanları karlı ağaca, yaza ait olanları güneşe koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.simge.ilkbahar": {
+		"text": "İlkbahar",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.simge.sonbahar": {
+		"text": "Sonbahar",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u05.n01.r02": {
+		"text": "İlkbahar mı, sonbahar mı? İlkbahara ait olanları çiçekli ağaca, sonbahara ait olanları sararan ağaca koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.kis": {
+		"text": "Kış",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.ilkbahar": {
+		"text": "İlkbahar",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.yaz": {
+		"text": "Yaz",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.sonbahar": {
+		"text": "Sonbahar",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u05.n01.r03": {
+		"text": "Her mevsimi onun hava olayıyla eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u05.n02.intro": {
+		"text": "Güneş doğudan doğar, batıdan batar. Doğa bize yönümüzü bulmada ipuçları verir!",
+		"speaker": "BILGE"
+	},
+	"vo.ad.yon.gunes_dogusu": {
+		"text": "Güneşin doğuşu",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.dogu": {
+		"text": "Doğu",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.yon.gunes_batisi": {
+		"text": "Güneşin batışı",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.bati": {
+		"text": "Batı",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u05.n02.r01": {
+		"text": "Güneş doğudan doğar, batıdan batar. Her resmi doğru yönle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.yon.kutup_yildizi": {
+		"text": "Kutup Yıldızı",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.kuzey": {
+		"text": "Kuzey",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u05.n02.r02": {
+		"text": "Her ipucunu doğru yönle eşleştir. Kutup Yıldızı kuzeyi gösterir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u05.n02.r03.ipucu": {
+		"text": "Güneş her sabah aynı yönden doğar.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u05.n02.r03": {
+		"text": "Sabah güneş tepelerin arkasından doğuyor. Güneşin doğduğu yön hangisi? Doğu mu, batı mı, kuzey mi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.guney": {
+		"text": "Güney",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u05.n02.r04.ipucu": {
+		"text": "Yosunlar genellikle ağaçların güneş almayan, kuzeye bakan yüzünde yetişir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u05.n02.r04": {
+		"text": "Ormanda bir ağaç gördün. Yosunlar ağacın tek bir yüzünde. Yosunlu yüz hangi yönü gösterir? Kuzey mi, güney mi, doğu mu?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u05.n03.intro": {
+		"text": "Afetlere karşı ne yapmamız gerektiğini doğru kaynaklardan öğreniriz. Haydi araştıralım!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.hayat_bilgisi.u05.n03.r01.ipucu": {
+		"text": "Bu konuyu en iyi afetlerde çalışan görevliler bilir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u05.n03.r01": {
+		"text": "Depreme karşı neler yapmamız gerektiğini öğrenmek istiyorsun. Kime sorabilirsin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u05.n03.r02.ipucu": {
+		"text": "Resmî kurumların hazırladığı bilgi broşürleri güvenilir kaynaktır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u05.n03.r02": {
+		"text": "Sel hakkında doğru bilgiyi nereden bulursun?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u05.n03.r03": {
+		"text": "Bu bilgiler doğru mu? Depremde doğru olan davranışları gülen yüze, yanlış olanları üzgün yüze koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u05.n04.intro": {
+		"text": "Su, elektrik ve kâğıt değerlidir. Onları tasarruflu kullanırsak doğayı koruruz.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.hayat_bilgisi.u05.n04.r01.ipucu": {
+		"text": "Kullanmadığımız suyu boşa akıtmayız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u05.n04.r01": {
+		"text": "Dişlerini fırçalarken musluk açık kalmış. Ne yaparsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u05.n04.r02.ipucu": {
+		"text": "Boş odada ışık yakmayız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u05.n04.r02": {
+		"text": "Odadan çıkıyorsun ama ışık açık. Ne yaparsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.simge.tasarruf": {
+		"text": "Tasarruflu",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.simge.israf": {
+		"text": "İsraf",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u05.n04.r03": {
+		"text": "Hangi davranışlar tasarruflu? Tasarruflu olanları yaprağa, israf olanları damlayan musluğa koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u06.n01.intro": {
+		"text": "Bilim insanları dünyamızı değiştiren buluşlar yapar. Onları hangi kaynaklardan öğrenebiliriz?",
+		"speaker": "BILGE"
+	},
+	"vo.g2.hayat_bilgisi.u06.n01.r01.ipucu": {
+		"text": "Kitapların olduğu yeri düşün.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u06.n01.r01": {
+		"text": "Ünlü bir bilim insanının hayatını öğrenmek istiyorsun. Nereye gidersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u06.n01.r02.ipucu": {
+		"text": "Bilgi veren kitaplar bilim insanlarını anlatır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u06.n01.r02": {
+		"text": "Bilim insanımız Aziz Sancar'ın çalışmalarını araştırıyorsun. Hangi kaynak işine yarar?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u06.n01.r03.ipucu": {
+		"text": "İnternette ailemizle birlikte, güvenilir sitelerde araştırırız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u06.n01.r03": {
+		"text": "İnternette bilim insanlarını araştıracaksın. Nasıl araştırırsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u06.n02.intro": {
+		"text": "Telefonlar ve lambalar zamanla değişti. Eskiden yeniye nasıl değiştiklerini görelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.hayat_bilgisi.u06.n02.r01": {
+		"text": "Telefonları eskiden yeniye sırala.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u06.n02.r02": {
+		"text": "Aydınlatma araçlarını eskiden yeniye sırala.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u06.n02.r03.ipucu": {
+		"text": "Telefonlar hep küçülüp daha akıllı hâle geldi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u06.n02.r03": {
+		"text": "Telefonlar zamanla küçüldü, hafifledi ve daha çok iş yapmaya başladı. Gelecekte telefonlar nasıl olabilir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u06.n03.intro": {
+		"text": "Müzik, resim, ebru ve tiyatro birer sanattır. Sanat günlük hayatımızın her yerinde!",
+		"speaker": "BILGE"
+	},
+	"vo.ad.sanat.muzik_yapan": {
+		"text": "Müzik yapan çocuk",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u06.n03.r01": {
+		"text": "Sanat hayatımızda! Dinle ve bul: Müzik yapan çocuk!",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.simge.muzik": {
+		"text": "Müzik",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.simge.resim": {
+		"text": "Resim",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u06.n03.r02": {
+		"text": "Sanat eşyalarını ayır: Müzik eşyalarını notaya, resim eşyalarını palete koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.simge.tiyatro": {
+		"text": "Tiyatro",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u06.n03.r03": {
+		"text": "Sanat dallarını ayır: müzik notaya, resim palete, tiyatro maskelere.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u01.n01.intro": {
+		"text": "Okulda haklarımız da var, sorumluluklarımız da. Haklarımızı bilir, sorumluluklarımızı yerine getiririz.",
+		"speaker": "BILGE"
+	},
+	"vo.ad.simge.hak": {
+		"text": "Hak",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.simge.sorumluluk": {
+		"text": "Sorumluluk",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u01.n01.r01": {
+		"text": "Okulda hangileri hakkımız, hangileri sorumluluğumuz? Hakları kalbe, sorumlulukları çantaya koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u01.n01.r02.ipucu": {
+		"text": "Aldığımız kitabı özenle kullanır, zamanında teslim ederiz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u01.n01.r02": {
+		"text": "Okul kütüphanesinden aldığın kitabı teslim etme günü geldi. Ne yaparsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u01.n01.r03.ipucu": {
+		"text": "Oy kullanmak hepimizin hakkıdır, bu hakkı kendimiz kullanırız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u01.n01.r03": {
+		"text": "Sınıf başkanlığı seçimi var. Senin de oy kullanma hakkın var. Ne yaparsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u01.n01.r04.ipucu": {
+		"text": "Herkesin hakkına saygı gösteren çözümü düşün.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u01.n01.r04": {
+		"text": "Teneffüste bir arkadaşın tek topu kimseye vermiyor. Herkesin oyun hakkı var. Ne önerirsin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u02.n01.intro": {
+		"text": "Uykumuz, beslenmemiz, temizliğimiz ve giysilerimiz sağlığımızı etkiler. Davranışlarımızı düzenleyelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.hayat_bilgisi.u02.n01.r01": {
+		"text": "Hangi davranışlar sağlığımızı korur? Koruyanları güçlü kalbe, bozanları yorgun kalbe koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u02.n01.r02.ipucu": {
+		"text": "Mevsime uygun giyinirsek hastalanmayız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u02.n01.r02": {
+		"text": "Dışarıda kar yağıyor ve okula gideceksin. Nasıl giyinirsin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u02.n01.r03.ipucu": {
+		"text": "Gözlerimizi dinlendirmek ve hareket etmek sağlığımızı korur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u02.n01.r03": {
+		"text": "Uzun süre ekran başında kaldın, gözlerin yoruldu. Sağlığını korumak için ne yaparsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u02.n02.intro": {
+		"text": "Güvenliğimizi tehdit eden durumları tanır, ne yapmamız gerektiğini düşünürüz. Haydi, dikkatli olalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.hayat_bilgisi.u02.n02.r01.ipucu": {
+		"text": "Elektrik prizleri çok tehlikelidir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u02.n02.r01": {
+		"text": "Bu resimlerden hangisi güvenliğini tehdit eden bir durum?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u02.n02.r02": {
+		"text": "Bu bilgiler doğru mu? Güvenli davranışları gülen yüze, tehlikeli olanları üzgün yüze koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u02.n02.r03.ipucu": {
+		"text": "Evde yalnızken kapıyı açmayız, ailemize haber veririz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u02.n02.r03": {
+		"text": "Evde yalnızsın ve kapı çaldı. Kapıdaki kişi kargo getirdim, aç diyor. Ne yapmalısın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u02.n03.intro": {
+		"text": "Trafik kuralları hepimizi korur. Kurala uyunca neler olduğunu birlikte düşünelim.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.hayat_bilgisi.u02.n03.r01.ipucu": {
+		"text": "Kurallar, araçlar ve yayalar güvende olsun diye vardır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u02.n03.r01": {
+		"text": "Neden kırmızı ışıkta bekler, yeşil ışıkta geçeriz?",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.trafik.emniyet_kemeri": {
+		"text": "Emniyet kemerini takmak",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.trafik.kask_tak": {
+		"text": "Kask takmak",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.trafik.yaya_gecidi": {
+		"text": "Yaya geçidinden geçmek",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u02.n03.r02": {
+		"text": "Her trafik kuralını sağladığı güvenlikle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.trafik.yelek": {
+		"text": "Yansıtıcı yelek giymek",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u02.n03.r03": {
+		"text": "Her trafik kuralını sağladığı güvenlikle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u03.n01.intro": {
+		"text": "Aileler bir araya gelince toplum oluşur. Ailede öğrendiklerimizi toplumda da yaşarız.",
+		"speaker": "BILGE"
+	},
+	"vo.ad.simge.aile": {
+		"text": "Aile",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.simge.toplum": {
+		"text": "Toplum",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u03.n01.r01": {
+		"text": "Bu resimler ailede mi, toplumda mı? Aile resimlerini eve, toplum resimlerini mahalleye koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.aile.evde_paylas": {
+		"text": "Evde paylaşmak",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.aile.evi_temizle": {
+		"text": "Evi birlikte temizlemek",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.aile.buyuge_saygi": {
+		"text": "Evde büyüklere saygı",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u03.n01.r02": {
+		"text": "Ailede öğrendiğimiz her davranışı, toplumdaki karşılığıyla eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u03.n01.r03.ipucu": {
+		"text": "Ailelerin bir araya gelmesiyle toplum oluşur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u03.n01.r03": {
+		"text": "Birçok aile bir araya gelince ne oluşur?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u03.n02.intro": {
+		"text": "Her meslek toplum için çok önemlidir. Meslekleri ve topluma katkılarını keşfedelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.hayat_bilgisi.u03.n02.r01.p1": {
+		"text": "Sabah fırıncı ekmeklerimizi pişirdi. Şoför bizi okula götürdü.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u03.n02.r01.p2": {
+		"text": "Öğretmen bize okumayı öğretti. Akşam doktor, hasta komşumuzu muayene etti.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u03.n02.r01.s1": {
+		"text": "Ekmeklerimizi kim pişirdi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u03.n02.r01.s2": {
+		"text": "Hasta komşumuzu kim muayene etti?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u03.n02.r01": {
+		"text": "Hikâyeyi dinle, sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.her_meslek": {
+		"text": "Her meslek önemlidir",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.bazi_meslek": {
+		"text": "Bazı meslekler gereksizdir",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u03.n02.r02.p1": {
+		"text": "Hayat Kasabası'nda temizlik işçileri her sabah çöpleri toplar.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u03.n02.r02.p2": {
+		"text": "Bir hafta temizlik işçileri gelemedi. Sokaklar çöple doldu, kötü kokular yayıldı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u03.n02.r02.p3": {
+		"text": "Kasabadakiler, her mesleğin toplum için ne kadar önemli olduğunu anladı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u03.n02.r02.s1": {
+		"text": "Temizlik işçileri gelemeyince ne oldu?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u03.n02.r02.s2": {
+		"text": "Bu hikâye bize ne anlatıyor? Her meslek önemlidir mi, bazı meslekler gereksizdir mi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u03.n02.r02": {
+		"text": "Hikâyeyi dinle, sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.meslek.ciftci": {
+		"text": "Çiftçi",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.meslek.doktor": {
+		"text": "Doktor",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.meslek.itfaiyeci": {
+		"text": "İtfaiyeci",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.meslek.ogretmen": {
+		"text": "Öğretmen",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u03.n02.r03": {
+		"text": "Her mesleği topluma katkısıyla eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u04.n01.intro": {
+		"text": "Tarihî mekânlar ve doğal güzellikler hepimizindir. Onları korursak gelecekte de görebiliriz.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.hayat_bilgisi.u04.n01.r01": {
+		"text": "Hangi davranışlar tarihî mekânları ve doğayı korur? Koruyanları gülen yüze, zarar verenleri üzgün yüze koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u04.n01.r02.ipucu": {
+		"text": "Tarihî eserler yüzlerce yıldır bizi bekliyor. Onlara zarar vermeyiz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u04.n01.r02": {
+		"text": "Tarihî bir kaleyi geziyorsunuz. Arkadaşın taşlara adını kazımak istiyor. Ne yaparsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u04.n01.r03.ipucu": {
+		"text": "Korunan yerler gelecekte de güzel kalır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u04.n01.r03": {
+		"text": "Herkes tarihî mekânları ve doğal güzellikleri korursa ne olur?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u04.n02.intro": {
+		"text": "Ülkemizin yönetim şekli cumhuriyettir. Bu konuda bilgiyi doğru kaynaklardan toplayalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.hayat_bilgisi.u04.n02.r01.ipucu": {
+		"text": "Bilgi veren kaynakları düşün.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u04.n02.r01": {
+		"text": "Ülkemizin yönetim şeklini öğrenmek istiyorsun. Hangi kaynağa bakarsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u04.n02.r02.ipucu": {
+		"text": "Meclisin kendisini ziyaret etmek güzel bir bilgi kaynağıdır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u04.n02.r02": {
+		"text": "Türkiye Büyük Millet Meclisi hakkında bilgi toplamak için nereyi ziyaret edebilirsin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.krallik": {
+		"text": "Krallık",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.halk": {
+		"text": "Halk",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.tek_kisi": {
+		"text": "Tek bir kişi",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u04.n02.r03.p1": {
+		"text": "Ülkemizin yönetim şekli cumhuriyettir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u04.n02.r03.p2": {
+		"text": "Cumhuriyette halk, yöneticilerini seçimle belirler. Milletvekilleri Türkiye Büyük Millet Meclisi'nde halk adına karar verir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u04.n02.r03.s1": {
+		"text": "Ülkemizin yönetim şekli nedir? Krallık mı, cumhuriyet mi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u04.n02.r03.s2": {
+		"text": "Cumhuriyette yöneticileri kim seçer? Halk mı, tek bir kişi mi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u04.n02.r03": {
+		"text": "Ansiklopediden okuduklarını dinle, sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u04.n03.intro": {
+		"text": "Atatürk çalışkan, cesur ve ileri görüşlüydü. Bu özellikleri onun başarılarına nasıl yol açtı?",
+		"speaker": "BILGE"
+	},
+	"vo.ad.etiket.cok_konustugu": {
+		"text": "Çok konuştuğu için",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.cok_calistigi": {
+		"text": "Çok çalışkan olduğu için",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.cesur_kararli": {
+		"text": "Cesur ve kararlı",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.kararsiz": {
+		"text": "Kararsız",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u04.n03.r01.p1": {
+		"text": "Mustafa Kemal küçükken çok çalışkandı. Matematik öğretmeni onun başarısını görünce ona Kemal adını verdi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u04.n03.r01.p2": {
+		"text": "Kurtuluş Savaşı'nda cesur ve kararlıydı. Milletimizle birlikte zafere ulaştı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u04.n03.r01.p3": {
+		"text": "İleri görüşlüydü. Ülkemizin geleceğini düşünerek Cumhuriyet'i kurdu ve eğitime çok önem verdi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u04.n03.r01.s1": {
+		"text": "Mustafa Kemal'e Kemal adı neden verildi? Çok çalışkan olduğu için mi, çok konuştuğu için mi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u04.n03.r01.s2": {
+		"text": "Kurtuluş Savaşı'nda nasıl davrandı? Cesur ve kararlı mı, kararsız mı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u04.n03.r01": {
+		"text": "Hikâyeyi dinle, sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.ozellik_caliskan": {
+		"text": "Çalışkan",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.basari_okul": {
+		"text": "Okulda çok başarılı oldu",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.ozellik_cesur": {
+		"text": "Cesur ve kararlı",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.basari_kurtulus": {
+		"text": "Kurtuluş Savaşı'nı kazandı",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.ozellik_ileri": {
+		"text": "İleri görüşlü",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.basari_cumhuriyet": {
+		"text": "Cumhuriyet'i kurdu",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u04.n03.r02": {
+		"text": "Atatürk'ün her özelliğini, o özelliğin getirdiği başarıyla eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.ozellik_egitim": {
+		"text": "Eğitime önem veren",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.basari_harf": {
+		"text": "Yeni harfleri herkese öğretti",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u04.n03.r03": {
+		"text": "Atatürk'ün her özelliğini, o özelliğin getirdiği başarıyla eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u04.n04.intro": {
+		"text": "Birlik olursak her zorluğu aşarız. Millî birlik ve beraberliğimiz ülkemizi güçlendirir.",
+		"speaker": "BILGE"
+	},
+	"vo.ad.simge.guclendirir": {
+		"text": "Birliği güçlendirir",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.simge.guclendirmez": {
+		"text": "Birliği güçlendirmez",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u04.n04.r01": {
+		"text": "Hangi olaylar birliğimizi güçlendirir? Güçlendirenleri birleşen ellere, güçlendirmeyenleri yalnız ele koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u04.n04.r02.ipucu": {
+		"text": "Zor günlerde birbirimize destek oluruz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u04.n04.r02": {
+		"text": "Bir şehrimizde deprem oldu. Okulunuzda yardım kampanyası başladı. Ne yaparsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u04.n04.r03.ipucu": {
+		"text": "Birlikte yapılan iş büyük sonuçlar doğurur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u04.n04.r03": {
+		"text": "Sınıfça birlik olup okul bahçesine fidan diktiniz. Birkaç yıl sonra ne olur?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u05.n01.intro": {
+		"text": "Ağaçlar, arılar, toprak ve hayvanlar hayatımız için çok önemli. Doğanın bize verdiklerini keşfedelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.hayat_bilgisi.u05.n01.r01.p1": {
+		"text": "Ormanda ağaçlar bize temiz hava verir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u05.n01.r01.p2": {
+		"text": "Arılar çiçeklerden bal yapar. Dereler tarlalara su taşır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u05.n01.r01.s1": {
+		"text": "Arılar bize ne verir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u05.n01.r01.s2": {
+		"text": "Ağaçlar bize ne verir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u05.n01.r01": {
+		"text": "Hikâyeyi dinle, sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u05.n01.r02.p1": {
+		"text": "Çiftlikte toprak, sebze ve meyvelerin yetişmesini sağlar.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u05.n01.r02.p2": {
+		"text": "İnekler bize süt verir. Güneş bitkilerin büyümesine yardım eder.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u05.n01.r02.s1": {
+		"text": "İnekler bize ne verir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u05.n01.r02.s2": {
+		"text": "Sebze ve meyveler nerede yetişir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u05.n01.r02": {
+		"text": "Hikâyeyi dinle, sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.hayvan.ari": {
+		"text": "Arı",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.doga.agac": {
+		"text": "Ağaç",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.hayvan.inek": {
+		"text": "İnek",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.hayvan.tavuk": {
+		"text": "Tavuk",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u05.n01.r03": {
+		"text": "Doğadaki her varlığı bize sağladığı yararla eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u05.n02.intro": {
+		"text": "Kroki, bir yerin basit çizimidir. Kırmızı yıldız, bulunduğun yeri gösteriyor. Haydi, krokiyi okuyalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.hayat_bilgisi.u05.n02.r01.ipucu": {
+		"text": "Yıldızın yanındaki ağaçlara ve kaydırağa bak.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u05.n02.r01": {
+		"text": "Krokide kırmızı yıldız senin yerini gösteriyor. Neredesin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u05.n02.r02.ipucu": {
+		"text": "Yıldız, bayraklı binanın üstünde.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u05.n02.r02": {
+		"text": "Krokiye bak. Kırmızı yıldız şimdi nerede? Neredesin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.kroki.firin_k": {
+		"text": "Fırının yanı",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u05.n02.r03": {
+		"text": "Fırının yanında olduğunu gösteren krokiyi bul. Dinle ve bul: Fırının yanı!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u05.n03.intro": {
+		"text": "Afetlerden önce hazırlanır, afet anında doğru davranır, sonrasında güvenli yerde buluşuruz.",
+		"speaker": "BILGE"
+	},
+	"vo.ad.simge.afet_oncesi": {
+		"text": "Afet öncesi",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.simge.afet_ani": {
+		"text": "Afet anı",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u05.n03.r01": {
+		"text": "Bu davranışlar afetten önce mi, afet anında mı? Öncesini çantaya, anını masa altındaki kaplumbağaya koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.simge.afet_sonrasi": {
+		"text": "Afet sonrası",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u05.n03.r02": {
+		"text": "Davranışları ayır: afet öncesi çantaya, afet anı kaplumbağaya, afet sonrası toplanma alanına.",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.afet.canta_hazirla": {
+		"text": "Afet çantası hazırlamak",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.afet.cok_kapan": {
+		"text": "Çök, kapan, tutun",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.afet.toplanma_git": {
+		"text": "Toplanma alanına gitmek",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u05.n03.r03": {
+		"text": "Her davranışı doğru etiketle eşleştir: afet öncesi, afet anı ya da afet sonrası.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u05.n04.intro": {
+		"text": "Doğayı korumak için doğru bilgiye ihtiyacımız var. Bilgiyi hangi kaynaklardan toplarız?",
+		"speaker": "BILGE"
+	},
+	"vo.g3.hayat_bilgisi.u05.n04.r01.ipucu": {
+		"text": "Bu konuyu en iyi çevre uzmanları bilir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u05.n04.r01": {
+		"text": "Dereleri ve suyu nasıl koruyacağımızı öğrenmek istiyorsun. Kime sorabilirsin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u05.n04.r02.ipucu": {
+		"text": "Konuyu bilen ve sana açıklayabilecek birini düşün.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u05.n04.r02": {
+		"text": "Okulunuzda sıfır atık hakkında bilgi toplayacaksınız. Kime sorarsınız?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u05.n04.r03.ipucu": {
+		"text": "Bir bilgiyi güvenilir başka kaynaklarla karşılaştırırız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u05.n04.r03": {
+		"text": "İnternette doğa ile ilgili ilginç bir bilgi buldun. Bu bilginin doğru olup olmadığını nasıl anlarsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u06.n01.intro": {
+		"text": "Bilim insanlarının buluşları hayatımızı kolaylaştırır. Bilimsel gelişmelerin etkilerini inceleyelim!",
+		"speaker": "BILGE"
+	},
+	"vo.ad.etiket.hastaliktan_korur": {
+		"text": "Hastalıklardan korur",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.uyku_getirir": {
+		"text": "Uykumuzu getirir",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u06.n01.r01.p1": {
+		"text": "Eskiden insanlar birçok hastalıktan korunamıyordu.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u06.n01.r01.p2": {
+		"text": "Bilim insanları aşıyı geliştirdi. Artık aşı sayesinde birçok hastalıktan korunuyoruz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u06.n01.r01.s1": {
+		"text": "Aşı bize nasıl yardım eder? Hastalıklardan korur mu, uykumuzu getirir mi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u06.n01.r01": {
+		"text": "Hikâyeyi dinle, sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.taze_tutar": {
+		"text": "Yiyecekleri taze tutar",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.etiket.isitir": {
+		"text": "Yiyecekleri ısıtır",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u06.n01.r02.p1": {
+		"text": "Elektrik kullanılmaya başlanınca geceleri evlerimiz aydınlandı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u06.n01.r02.p2": {
+		"text": "Buzdolabı sayesinde yiyeceklerimiz bozulmadan uzun süre taze kalır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u06.n01.r02.s1": {
+		"text": "Elektrik geceleri hayatımızı nasıl değiştirdi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u06.n01.r02.s2": {
+		"text": "Buzdolabı ne işe yarar? Yiyecekleri taze tutar mı, ısıtır mı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u06.n01.r02": {
+		"text": "Hikâyeyi dinle, sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.tek.asi": {
+		"text": "Aşı",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.tek.ampul": {
+		"text": "Ampul",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.tek.buzdolabi": {
+		"text": "Buzdolabı",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u06.n01.r03": {
+		"text": "Her bilimsel gelişmeyi günlük yaşama etkisiyle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u06.n02.intro": {
+		"text": "Teknoloji geliştikçe hayatımız değişir. Eskiden ve bugün kullandığımız araçları karşılaştıralım!",
+		"speaker": "BILGE"
+	},
+	"vo.ad.simge.eski": {
+		"text": "Eski",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.simge.yeni": {
+		"text": "Yeni",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u06.n02.r01": {
+		"text": "Bu araçlar eski mi, yeni mi? Eskileri kum saatine, yenileri parıltıya koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.tek.mum": {
+		"text": "Mum",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.tek.at_arabasi": {
+		"text": "At arabası",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.tek.camasir_legen": {
+		"text": "Leğende çamaşır yıkamak",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u06.n02.r02": {
+		"text": "Her eski aracı, onun yerini alan yeni araçla eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u06.n02.r03.ipucu": {
+		"text": "Makine çamaşırı yıkarken insanların zamanı ne olur?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u06.n02.r03": {
+		"text": "Çamaşır makinesi kullanılmaya başlanınca günlük yaşam nasıl değişti?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u06.n03.intro": {
+		"text": "Ressamlar, müzisyenler ve mimarlar sanatımıza büyük katkı yaptı. Onları nereden öğreniriz?",
+		"speaker": "BILGE"
+	},
+	"vo.g3.hayat_bilgisi.u06.n03.r01.ipucu": {
+		"text": "Tablolar sergilenen yeri düşün.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u06.n03.r01": {
+		"text": "Ressam Osman Hamdi Bey'in tablolarını görmek istiyorsun. Nereye gidersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u06.n03.r02.ipucu": {
+		"text": "Sanatçıları anlatan kitapları düşün.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u06.n03.r02": {
+		"text": "Âşık Veysel'in türkülerini ve hayatını araştırıyorsun. Hangi kaynak işine yarar?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u06.n03.r03.ipucu": {
+		"text": "Bir mimarın eserini en iyi yerinde görerek tanırız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.hayat_bilgisi.u06.n03.r03": {
+		"text": "Mimar Sinan'ın eserlerini yakından tanımak istiyorsun. Ne yapabilirsin?",
+		"speaker": "ANLATICI"
 	}
 }
