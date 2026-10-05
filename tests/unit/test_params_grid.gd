@@ -45,6 +45,17 @@ func _sil() -> Dictionary:
 func _pieces() -> Dictionary:
 	return {"mode": "paint", "ask": "pieces", "cols": 6, "rows": 5, "pieces": 5}
 
+## Döndürerek kopyala: L dörtlüsü saat yönünde çeyrek dönmüş olarak (2, 1)'e boyanır.
+func _rot() -> Dictionary:
+	return {"mode": "paint", "ask": "copy", "cols": 8, "rows": 6, "transform": "rotate",
+		"reference": [[0, 0], [1, 0], [2, 0], [0, 1]], "target": [[2, 1], [3, 1], [3, 2], [3, 3]]}
+
+## Büyüterek kopyala: üçlü L iki katına (her kare 2×2) büyür.
+func _scale() -> Dictionary:
+	return {"mode": "paint", "ask": "copy", "cols": 8, "rows": 6, "transform": "scale",
+		"reference": [[0, 0], [1, 0], [0, 1]],
+		"target": [[1, 1], [2, 1], [3, 1], [4, 1], [1, 2], [2, 2], [3, 2], [4, 2], [1, 3], [2, 3], [1, 4], [2, 4]]}
+
 func test_grid_registered() -> void:
 	assert_true(TemplateRegistry.has("grid"))
 	if TemplateRegistry.has("grid"):
@@ -74,6 +85,11 @@ func test_grid_valid() -> void:
 	_ok(_with(_pieces(), {"cols": 3, "rows": 3, "pieces": 9}))
 	_ok(_with(_pieces(), {"cols": 8, "rows": 6, "pieces": 20}))
 	_ok(_with(_sym(), {"axis": 1, "given": [[0, 0]]}))
+	_ok(_rot())
+	_ok(_scale())
+	_ok(_with(_rot(), {"target": [[0, 0], [0, 1], [0, 2], [1, 2]]}))
+	_ok(_with(_rot(), {"target": [[6, 2], [4, 3], [5, 3], [6, 3]]}))
+	_bad(_with(_rot(), {"target": [[0, 0], [1, 0], [0, 1], [0, 2]]}), "ayna görüntüsü dönüş değil")
 
 func test_grid_invalid() -> void:
 	_bad(_with(_build(), {"mode": "draw"}), "bilinmeyen mod")
@@ -132,6 +148,17 @@ func test_grid_invalid() -> void:
 	_bad(_with(_pieces(), {"pieces": 21}), "21 parça")
 	_bad(_with(_pieces(), {"cols": 3, "rows": 3, "pieces": 10}), "hücreden fazla parça")
 	_bad(_with(_pieces(), {"pieces": 4.5}), "kesirli parça")
+	_bad(_with(_rot(), {"transform": "flip"}), "bilinmeyen dönüşüm")
+	_bad(_with(_rot(), {"reference": null}), "dönüşüm var, örnek yok")
+	_bad(_with(_rot(), {"transform": null}), "örnek var, dönüşüm yok")
+	_bad(_with(_rot(), {"reference": []}), "boş örnek")
+	_bad(_with(_rot(), {"reference": [[8, 0]]}), "örnek dışarıda")
+	_bad(_with(_rot(), {"target": [[2, 1], [3, 1], [4, 1], [2, 2]]}), "hedef dönmemiş (örnekle aynı yön)")
+	_bad(_with(_rot(), {"target": [[2, 1], [3, 1], [3, 2]]}), "hedef başka şekil")
+	_bad(_with(_rot(), {"reference": [[0, 0], [1, 0], [0, 1], [1, 1]], "target": [[2, 2], [3, 2], [2, 3], [3, 3]]}),
+		"döndürünce değişmeyen şekil")
+	_bad(_with(_scale(), {"target": [[1, 1], [2, 1], [1, 2]]}), "büyümemiş hedef")
+	_bad(_with(_sil(), {"transform": "rotate", "reference": [[0, 0], [1, 0], [2, 0], [0, 1]]}), "dönüşüm yalnızca copy'de")
 
 func test_grid_error_messages() -> void:
 	var blocked: Dictionary = {"mode": "path", "ask": "build", "cols": 3, "rows": 3, "start": [0, 0], "goal": [2, 0],
@@ -145,6 +172,12 @@ func test_grid_error_messages() -> void:
 		[ContentValidator.msg("err.params.grid_mirror")] as Array[String])
 	assert_eq(_errs(_with(_pieces(), {"cols": 3, "rows": 3, "pieces": 10})),
 		[ContentValidator.msg("err.params.grid_pieces")] as Array[String])
+	assert_eq(_errs(_with(_rot(), {"transform": "flip"})),
+		[ContentValidator.msg("err.params.grid_transform")] as Array[String])
+	assert_eq(_errs(_with(_rot(), {"reference": [[0, 0], [1, 0], [0, 1], [1, 1]], "target": [[2, 2], [3, 2], [2, 3], [3, 3]]})),
+		[ContentValidator.msg("err.params.grid_transform_same")] as Array[String])
+	assert_eq(_errs(_with(_scale(), {"target": [[1, 1], [2, 1], [1, 2]]})),
+		[ContentValidator.msg("err.params.grid_transform_target")] as Array[String])
 
 func test_grid_cell_size_rule() -> void:
 	var s: GDScript = load(TemplateRegistry.script_path("grid")) as GDScript
@@ -172,6 +205,25 @@ func test_grid_logic_simulate_and_shortest() -> void:
 	assert_eq(ab.size(), 8)
 	var closed: Dictionary = {Vector2i(1, 0): true, Vector2i(1, 1): true, Vector2i(1, 2): true}
 	assert_false(GridLogic.is_reachable(Vector2i(0, 0), "right", Vector2i(2, 0), "relative", 3, 3, closed))
+
+func test_grid_logic_transform_helpers() -> void:
+	var l3: Array[Vector2i] = [Vector2i(5, 2), Vector2i(6, 2), Vector2i(5, 3)]
+	assert_eq(GridLogic.normalized(l3), [Vector2i(0, 0), Vector2i(1, 0), Vector2i(0, 1)] as Array[Vector2i])
+	assert_eq(GridLogic.normalized([]), [] as Array[Vector2i])
+	# Saat yönünde çeyrek dönüş: sağa uzanan kol aşağı iner.
+	assert_eq(GridLogic.rotated([Vector2i(0, 0), Vector2i(1, 0), Vector2i(2, 0), Vector2i(0, 1)]),
+		[Vector2i(0, 0), Vector2i(1, 0), Vector2i(1, 1), Vector2i(1, 2)] as Array[Vector2i])
+	assert_eq(GridLogic.scaled([Vector2i(1, 1)]),
+		[Vector2i(0, 0), Vector2i(1, 0), Vector2i(0, 1), Vector2i(1, 1)] as Array[Vector2i])
+	assert_eq(GridLogic.scaled(l3).size(), 12)
+	assert_eq(GridLogic.transform_shapes(l3, "rotate").size(), 3, "90°, 180°, 270°")
+	assert_eq(GridLogic.transform_shapes([Vector2i(0, 0), Vector2i(1, 0)], "rotate").size(), 1, "180° ikili örnekle aynı")
+	assert_eq(GridLogic.transform_shapes([Vector2i(0, 0)], "rotate").size(), 0, "tek kare dönünce değişmez")
+	assert_eq(GridLogic.transform_shapes(l3, "scale").size(), 1)
+	assert_eq(GridLogic.transform_shapes(l3, "mirror").size(), 0, "bilinmeyen dönüşüm")
+	assert_true(GridLogic.matches_transform([Vector2i(3, 3), Vector2i(4, 3), Vector2i(4, 4)], l3, "rotate"), "konum serbest")
+	assert_false(GridLogic.matches_transform([Vector2i(3, 3), Vector2i(4, 3), Vector2i(3, 4)], l3, "rotate"), "dönmemiş")
+	assert_false(GridLogic.matches_transform([], l3, "scale"))
 
 func test_grid_logic_paint_helpers() -> void:
 	assert_eq(GridLogic.mirror(Vector2i(3, 1), 4), Vector2i(4, 1))

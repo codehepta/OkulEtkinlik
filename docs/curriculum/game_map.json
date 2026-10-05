@@ -172,7 +172,8 @@
 		"templates": [
 			"drag_match",
 			"sort_bins",
-			"count_choose"
+			"count_choose",
+			"listen_find"
 		]
 	},
 	"MAT.2.1.3": {
@@ -248,10 +249,7 @@
 			"drag_match",
 			"count_choose"
 		],
-		"proposed": [
-			"estimate_then_count"
-		],
-		"note": "b) uygun standart birimi seçme listen_find, nesneyle eşleştirme drag_match ve birim cinsinden aralıklı seçeneklerle tahmin count_choose ile oynanabilir; c) tahmini ekranda cetvel ya da terazi ölçümüyle karşılaştırıp yargıda bulunma önerilen estimate_then_count gerektirir; a) standart birimlerle gerçek ölçme deneyimini ilişkilendirme ev etkinliği."
+		"note": "b) uygun standart birimi seçme listen_find, nesneyle eşleştirme drag_match ve birim cinsinden aralıklı seçeneklerle tahmin count_choose ile oynanabilir; c) tahmini ölçüm sonucuyla karşılaştırıp yargıda bulunma count_choose tahmin modu (estimates) ile, metre çubuklarını, kilogramlık ağırlıkları ya da santimetre küplerini sayarak kontrol edip oynanabilir; a) standart birimlerle gerçek ölçme deneyimini ilişkilendirme ev etkinliği."
 	},
 	"MAT.2.2.1": {
 		"fit": "partial",
@@ -295,12 +293,10 @@
 		"templates": [
 			"drag_match",
 			"count_choose",
-			"balloon_pop"
+			"balloon_pop",
+			"balance"
 		],
-		"proposed": [
-			"estimate_then_count"
-		],
-		"note": "a–b) çarpma ve bölmenin bileşenlerini ve ilişkilerini belirleme oynanabilir; c) tahmin ve zihinden işlem sonucunu karşılaştırma önerilen estimate_then_count gerektirir; ç) sonuçları açıklama sözlü etkinlik."
+		"note": "a–b) çarpma ve bölmenin bileşenlerini ve ilişkilerini belirleme oynanabilir; c) sonucu tahmin edip zihinden işlem sonucuyla karşılaştırma balance tahmin modu (tekrarlı toplama olarak kurulmuş eksik değerli terazi) ile oynanabilir; ç) sonuçları açıklama sözlü etkinlik."
 	},
 	"MAT.2.2.6": {
 		"fit": "full",
@@ -324,18 +320,20 @@
 		"templates": [
 			"listen_find",
 			"drag_match",
-			"grid"
+			"grid",
+			"scenario"
 		],
-		"note": "a–b) yapılardaki geometrik cisimleri belirleme ve ilişkilendirme oynanabilir; c) birleştirerek yapı oluşturma denetlenebilir hedefle (silüeti eşle, N parça kullan) grid (paint: silhouette, pieces) ile ekranda kare birimlerle oynanabilir; özgün yapı somut bloklarla kurma ev etkinliği olarak önerilebilir."
+		"note": "a) yapılardaki geometrik cisimleri belirleme scenario (blok yapı görselinde parçanın cismini seçme) ile, b) cisimleri yüzlerindeki şekillerle ilişkilendirme drag_match ile oynanabilir; c) birleştirerek yapı oluşturma denetlenebilir hedefle (silüeti eşle, N parça kullan) grid (paint: silhouette, pieces) ile ekranda kare birimlerle oynanabilir; özgün yapı somut bloklarla kurma ev etkinliği olarak önerilebilir."
 	},
 	"MAT.2.3.3": {
 		"fit": "partial",
 		"templates": [
 			"listen_find",
 			"drag_match",
-			"grid"
+			"grid",
+			"scenario"
 		],
-		"note": "a–b) modellerdeki geometrik şekilleri belirleme ve ilişkilendirme oynanabilir; c) şekilleri birleştirerek model oluşturma denetlenebilir hedefle (silüeti eşle, N parça kullan) grid (paint: silhouette, pieces) ile oynanabilir; serbest özgün model ustalık hesabına girmediği için ev etkinliği olarak önerilebilir."
+		"note": "a) modellerdeki geometrik şekilleri belirleme scenario (şekillerden yapılmış model görselinde parçanın şeklini seçme) ile, b) şekilleri köşe sayısıyla ilişkilendirme drag_match ile oynanabilir; c) şekilleri birleştirerek model oluşturma denetlenebilir hedefle (silüeti eşle, N parça kullan) grid (paint: silhouette, pieces) ile oynanabilir; serbest özgün model ustalık hesabına girmediği için ev etkinliği olarak önerilebilir."
 	},
 	"MAT.2.3.4": {
 		"fit": "partial",
@@ -344,20 +342,14 @@
 			"listen_find",
 			"grid"
 		],
-		"proposed": [
-			"grid_transform"
-		],
-		"note": "a) ve c) farklı yön ve büyüklükteki şekil ve cisimleri tanıyıp aynı şekil olarak ayırma oynanabilir; b) şekli kareli zeminde kendisi oluşturma grid (paint/copy) ile oynanabilir, ancak farklı büyüklük ya da yönde oluşturma (büyütme, döndürme) grid'in ilk sürümünde yok (spec Açık sorular, Faz 3b); cisimler için somut model ev etkinliği."
+		"note": "a) ve c) farklı yön ve büyüklükteki şekil ve cisimleri tanıyıp aynı şekil olarak ayırma oynanabilir; b) şekli kareli zeminde döndürerek ya da iki kat büyüterek oluşturma grid (paint/copy, transform: rotate, scale) ile oynanabilir; cisimleri farklı yön ve büyüklükte oluşturma somut model ister, ev etkinliği."
 	},
 	"MAT.2.3.5": {
 		"fit": "partial",
 		"templates": [
 			"count_choose"
 		],
-		"proposed": [
-			"estimate_then_count"
-		],
-		"note": "b) sıvı miktarını seçenekli tahmin etme count_choose ile oynanabilir; c) tahmini ekranda bardakla doldurma sonucuyla karşılaştırma önerilen estimate_then_count gerektirir; a) gerçek kaplarla sıvı ölçme deneyimi ev etkinliği."
+		"note": "b) sıvı miktarını seçenekli tahmin etme ve c) tahmini, dolan bardakları sayarak bulunan ölçüm sonucuyla karşılaştırıp yakın/uzak yargısında bulunma count_choose tahmin modu (estimates) ile oynanabilir; a) gerçek kaplarla sıvı ölçme deneyimi ev etkinliği."
 	},
 	"MAT.2.3.6": {
 		"fit": "partial",
