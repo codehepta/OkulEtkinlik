@@ -48,6 +48,12 @@ Kurallar: [`docs/assets/style-guide.md`](../docs/assets/style-guide.md) · [`doc
 | 064 | 1. sınıf Türkçe: harf sesleri, heceler, sözcükler, ses kaynakları (77 satır) | En yüksek | ⏳ Bekliyor |
 | 065 | 1. sınıf Türkçe ünite 1–5 seslendirmesi (247 satır) | Yüksek | ⏳ Bekliyor |
 | 066 | 1. sınıf Türkçe ünite 6–9 seslendirmesi (219 satır) | Orta | ⏳ Bekliyor |
+| 070 | Faz 4c: 2. sınıf Türkçe seslendirmesi (430 satır, 8 tema) | Yüksek | ⏳ Bekliyor |
+| 071 | Faz 4c: 3. sınıf Türkçe seslendirmesi (515 satır, 8 tema) | Yüksek | ⏳ Bekliyor |
+| 072 | Faz 4c: Türkçe kart sözcükleri seslendirmesi (217 satır, `vo.tk.*`) | Orta | ⏳ Bekliyor |
+| 073 | Faz 4c: 2. sınıf Türkçe hikâye ve durum görselleri | Orta | ⏳ Bekliyor |
+| 074 | Faz 4c: 3. sınıf Türkçe hikâye ve durum görselleri | Orta | ⏳ Bekliyor |
+| 075 | Faz 4c: 2–3. sınıf Türkçe çıkartmaları (80) | Orta | ⏳ Bekliyor |
 | 090 | Fen 3 görselleri, ünite 1–3 (69 `item.fen.*`: canlılar, duyular, yaşam döngüleri, kayaçlar, fosiller) | Orta | ⏳ Bekliyor |
 | 091 | Fen 3 görselleri, ünite 4–6 (64 `item.fen.*`: maddeler, karışımlar, atıklar, hareket, elektrikli araç gereç, davranış kartları) | Orta | ⏳ Bekliyor |
 | 092 | Fen 3 görselleri, ünite 7–8 (39 `item.fen.*`: toprak, bitki yetiştirme, yaşam alanları) | Orta | ⏳ Bekliyor |
@@ -56,7 +62,8 @@ Kurallar: [`docs/assets/style-guide.md`](../docs/assets/style-guide.md) · [`doc
 | 095 | Fen 3 seslendirmesi, ünite 1–4 (77 satır) | Orta | ⏳ Bekliyor |
 | 096 | Fen 3 seslendirmesi, ünite 5–8 + ortak kart sesleri (164 satır) | Orta | ⏳ Bekliyor |
 
-Önerilen sıra: 001 → 003 → 002 → 004 → 005 → 007 → 006 → 008 → 009 → 010 → 011 → 012 → 015 → 016 → 023 → 024 → 044 → 040 → 041 → 045 → 042 → 043 → 064 → 060 → 065 → 061 → 062 → 066 → 063 → 050 → 051 → 052 → 053 → 090 → 093 → 091 → 092 → 094 → 095 → 096. Bilge karakter sayfası diğer bütün partilerin stil referansıdır.
+Önerilen sıra: 001 → 003 → 002 → 004 → 005 → 007 → 006 → 008 → 009 → 010 → 011 → 012 → 015 → 016 → 023 → 024 → 044 → 040 → 041 → 045 → 042 → 043 → 064 → 060 → 065 → 061 → 062 → 066 → 063 → 050 → 051 → 052 → 053 → 070 → 071 → 072 → 073 → 074 → 075 → 090 → 093 → 091 → 092 → 094 → 095 → 096. Bilge karakter sayfası diğer bütün partilerin stil referansıdır.
+
 
 ## Geliştiriciler (agent) için
 - Yeni bir içerik ünitesi eklendiğinde eksik asset'ler için `tools/missing_assets.gd` çalıştırılır ve sıradaki numarayla yeni bir parti dosyası açılır.

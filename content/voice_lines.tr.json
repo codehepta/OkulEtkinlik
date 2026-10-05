@@ -7010,5 +7010,4653 @@
 	"vo.g2.matematik.u06.n04.r02": {
 		"text": "Araştırma sorumuz: Bahçede hangi böcek daha az? Grafiği kur ve sorulara cevap ver.",
 		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n01.intro": {
+		"text": "Merhaba! Şimdi kulaklarını aç. Birbirine yardım eden çocukların hikâyelerini dinleyelim.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u01.n01.r01": {
+		"text": "Hikâyeyi dikkatle dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n01.r01.p1": {
+		"text": "Yağmur başladı. Ece'nin şemsiyesi vardı ama arkadaşı Can'ın yoktu.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n01.r01.p2": {
+		"text": "Ece, Can'ı şemsiyesinin altına çağırdı. İkisi birlikte okula yürüdü.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n01.r01.p3": {
+		"text": "Can okula ıslanmadan vardı. Ece'ye teşekkür etti. Ece çok mutlu oldu.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n01.r01.q1": {
+		"text": "Can'ın neyi yoktu?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n01.r01.q2": {
+		"text": "Bu hikâyenin konusu nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n01.r01.q3": {
+		"text": "Sence Can yarın ne yapar?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n01.r02": {
+		"text": "Mert'in hikâyesini dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n01.r02.p1": {
+		"text": "Mert parkta oynarken yerde bir cüzdan buldu.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n01.r02.p2": {
+		"text": "Mert cüzdanı hemen parktaki bekçi amcaya götürdü.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n01.r02.p3": {
+		"text": "Bekçi amca cüzdanın sahibini buldu. Sahibi Mert'e çok teşekkür etti.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n01.r02.q1": {
+		"text": "Mert parkta ne buldu?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n01.r02.q2": {
+		"text": "Mert cüzdanı bulmadan önce ne yapıyordu?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n01.r02.q3": {
+		"text": "Mert nasıl bir çocuktur?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n01.r03": {
+		"text": "Hangisi Ece'nin, hangisi Mert'in hikâyesindeydi? Her kartı doğru kutuya taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.ece": {
+		"text": "Ece",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.mert": {
+		"text": "Mert",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n02.intro": {
+		"text": "Her yerde aynı sesle konuşmayız. Duruma uygun olanı birlikte seçelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u01.n02.r01": {
+		"text": "Ayşe kütüphanede arkadaşına bir soru soracak. Nasıl konuşmalı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n02.r01.hint": {
+		"text": "Kütüphanede herkes kitap okur. Sesimiz onları rahatsız etmemeli.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u01.n02.r01.c2": {
+		"text": "Herkes irkildi. Kütüphanede alçak sesle konuşuruz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n02.r01.c3": {
+		"text": "Okuyanların dikkati dağıldı. Kütüphane şarkı yeri değil.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n02.r02": {
+		"text": "Okul müdürü sana kitap hediye etti. Ona ne söylersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n02.r02.hint": {
+		"text": "Büyüklerimize saygılı ve kibar sözlerle teşekkür ederiz.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u01.n02.r02.c2": {
+		"text": "Bu söz arkadaşlar arasında kullanılır. Büyüklerimize daha kibar konuşuruz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n02.r02.c3": {
+		"text": "Müdür ne demek istediğini anlamadı. Açık ve kibar konuşalım.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n02.r03": {
+		"text": "Yarın okul gezisi var. Havanın nasıl olacağını öğrenmek istiyorsun. Ne dinlersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n02.r03.hint": {
+		"text": "Havanın nasıl olacağını kim söyler? Bir düşün.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u01.n02.r03.c2": {
+		"text": "Ninni insanı uyutur ama havayı söylemez.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n02.r03.c3": {
+		"text": "Masal çok güzel ama yarının havasını anlatmaz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n02.r04": {
+		"text": "Küçük kardeşin uyumak istiyor. Ona ne dinletirsin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n02.r04.c2": {
+		"text": "Davul çok gürültülü. Kardeşin uyuyamadı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n02.r04.c3": {
+		"text": "Haberler bilgi verir ama uyutmaz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n03.intro": {
+		"text": "Şimdi okuma zamanı! Metni önce sessizce oku. Takılırsan hoparlöre dokunabilirsin.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u01.n03.r01": {
+		"text": "Metni sessizce oku. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n03.r01.p1": {
+		"text": "Dedem bahçeye bir fidan dikti. Ben de ona su taşıdım.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n03.r01.p2": {
+		"text": "Dedem, \"Bu ağaç büyüyünce gölgesinde herkes dinlenecek.\" dedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n03.r01.q1": {
+		"text": "Bu metnin başlığı hangisi olabilir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n03.r01.q2": {
+		"text": "Ağaç büyüyünce ne olacak?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n03.r02": {
+		"text": "Zıt anlamlı sözcükleri eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.buyuk": {
+		"text": "büyük",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.kucuk": {
+		"text": "küçük",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.sicak": {
+		"text": "sıcak",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.soguk": {
+		"text": "soğuk",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.uzun": {
+		"text": "uzun",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.kisa": {
+		"text": "kısa",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n03.r03": {
+		"text": "Metni sessizce oku. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n03.r03.p1": {
+		"text": "Komşumuz Fatma Teyze yaşlıdır. Merdivenleri çıkarken zorlanır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n03.r03.p2": {
+		"text": "Annemle ben her cuma onun pazar çantasını taşırız. Teyze bize gülümser.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n03.r03.q1": {
+		"text": "Metnin konusu nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n03.r03.q2": {
+		"text": "Fatma Teyze neden zorlanır?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n03.r04": {
+		"text": "Bu cümleler doğru mu, yanlış mı? Bildiklerini düşün ve kartları kutulara taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.dogru": {
+		"text": "Doğru",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.yanlis": {
+		"text": "Yanlış",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n04.intro": {
+		"text": "Olaylar bir sırayla olur. Önce ne oldu, sonra ne oldu? Haydi sıralayalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u01.n04.r01": {
+		"text": "Ağaç nasıl büyür? Kartları olayların sırasına göre diz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n04.r02": {
+		"text": "Elif sabah okula hazırlanıyor. Kartları olayların sırasına göre diz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n04.r03": {
+		"text": "Arkadaşımıza hediye hazırladık. Önce ne yaptık? Kartları sırala.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n05.intro": {
+		"text": "Yazarken bazı kurallara uyarız. Soru ekini, kısaltmaları ve büyük harfleri öğrenelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u01.n05.r01": {
+		"text": "Soru eki ayrı yazılır. Her cümleye uyan soru ekini bul ve yanına taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.kedi_uyudu": {
+		"text": "Kedi uyudu",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.mu": {
+		"text": "mu?",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.elma_tatli": {
+		"text": "Elma tatlı",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.mi": {
+		"text": "mı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.bu_senin": {
+		"text": "Bu senin",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.mi_2": {
+		"text": "mi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.okul_buyuk": {
+		"text": "Okul büyük",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.mu_2": {
+		"text": "mü?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n05.r02": {
+		"text": "Kısaltmaları açık yazılışlarıyla eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.kg": {
+		"text": "kg",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.kilogram": {
+		"text": "kilogram",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.dr": {
+		"text": "Dr.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.doktor": {
+		"text": "doktor",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.tdk": {
+		"text": "TDK",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.turk_dil_kurumu": {
+		"text": "Türk Dil Kurumu",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n05.r03": {
+		"text": "Bu sözcükler büyük harfle başlar. Her sözcüğü türüyle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.kisi_adi": {
+		"text": "Kişi adı",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.elif": {
+		"text": "Elif",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.sehir_adi": {
+		"text": "Şehir adı",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.bursa": {
+		"text": "Bursa",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.ulke_adi": {
+		"text": "Ülke adı",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.turkiye": {
+		"text": "Türkiye",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n01.intro": {
+		"text": "Merhaba! Bugün Atatürk'ün çocukluğunu ve çocuk bayramını dinleyeceğiz. Hazır mısın?",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u02.n01.r01": {
+		"text": "Mustafa'nın hikâyesini dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n01.r01.p1": {
+		"text": "Mustafa 1881'de Selanik'te doğdu. Annesinin adı Zübeyde Hanım'dı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n01.r01.p2": {
+		"text": "Mustafa okulda çok çalışkandı. Matematik dersinde çok başarılıydı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n01.r01.p3": {
+		"text": "Matematik öğretmeni ona \"Kemal\" adını verdi. Böylece adı Mustafa Kemal oldu.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n01.r01.q1": {
+		"text": "Mustafa nerede doğdu?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n01.r01.q2": {
+		"text": "Mustafa'ya \"Kemal\" adını kim verdi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n01.r01.q3": {
+		"text": "Mustafa nasıl bir öğrenciydi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n01.r02": {
+		"text": "Zeynep'in bayram hikâyesini dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n01.r02.p1": {
+		"text": "Bugün 23 Nisan. Zeynep bayramlık elbisesini giydi. Eline küçük bir bayrak aldı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n01.r02.p2": {
+		"text": "Okul bahçesinde şiirler okundu, halk oyunları oynandı. Herkes çok neşeliydi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n01.r02.p3": {
+		"text": "Öğretmen, \"Atatürk bu bayramı çocuklara armağan etti.\" dedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n01.r02.q1": {
+		"text": "Zeynep eline ne aldı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n01.r02.q2": {
+		"text": "Atatürk bu bayramı kime armağan etti?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n01.r02.q3": {
+		"text": "Zeynep okula gitmeden önce ne yaptı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n01.r03": {
+		"text": "Hangisi Mustafa'nın, hangisi Zeynep'in hikâyesindeydi? Her kartı doğru kutuya taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.mustafa": {
+		"text": "Mustafa",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.zeynep": {
+		"text": "Zeynep",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n02.intro": {
+		"text": "Bayramda, törende ve müzede nasıl konuşur, nasıl dinleriz? Birlikte seçelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u02.n02.r01": {
+		"text": "23 Nisan töreninde şiir okuyacaksın. Nasıl okumalısın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n02.r01.hint": {
+		"text": "Herkes seni duymalı. Sözcükleri açık açık söyle.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u02.n02.r01.c2": {
+		"text": "Arkadaşların seni duyamadı. Şiiri net ve gür bir sesle okuruz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n02.r01.c3": {
+		"text": "Sözcükler birbirine karıştı. Şiiri acele etmeden okuruz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n02.r02": {
+		"text": "Törende İstiklâl Marşı okunuyor. Ne yapmalısın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n02.r02.hint": {
+		"text": "İstiklâl Marşı'nı saygıyla dinleriz.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u02.n02.r02.c2": {
+		"text": "Marşı iyi duyamadınız. Marş okunurken konuşmayız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n02.r02.c3": {
+		"text": "İstiklâl Marşı okunurken ayakta, saygıyla dururuz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n02.r03": {
+		"text": "Atatürk'ün çocukluğunu öğrenmek istiyorsun. Ne dinlersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n02.r03.hint": {
+		"text": "Hangisi Atatürk'ün hayatını anlatır? Bir düşün.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u02.n02.r03.c2": {
+		"text": "Maç haberi sporu anlatır. Atatürk'ü anlatmaz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n02.r03.c3": {
+		"text": "Ninni insanı uyutur ama Atatürk'ü anlatmaz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n02.r04": {
+		"text": "Müzede rehber Atatürk'ü anlatıyor. Ona bir soru sormak istiyorsun. Ne yaparsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n02.r04.hint": {
+		"text": "Konuşan birinin sözünü kesmeyiz. Sıramızı bekleriz.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u02.n02.r04.c2": {
+		"text": "Rehberin sözü yarım kaldı. Elimizi kaldırıp sıramızı bekleriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n02.r04.c3": {
+		"text": "Herkes irkildi. Müzede sakin bir sesle konuşuruz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n03.intro": {
+		"text": "Atatürk ağaçları ve kitapları çok severdi. Şimdi bununla ilgili metinleri sessizce okuyalım.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u02.n03.r01": {
+		"text": "Metni sessizce oku. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n03.r01.p1": {
+		"text": "Öğretmenimiz, Atatürk'ün ağaçları çok sevdiğini anlattı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n03.r01.p2": {
+		"text": "Biz de okul bahçesine fidan diktik. Her gün sırayla onları sulayacağız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n03.r01.q1": {
+		"text": "Bu metnin başlığı hangisi olabilir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n03.r01.q2": {
+		"text": "Çocuklar fidanlar için ne yapacak?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n03.r02": {
+		"text": "Zıt anlamlı sözcükleri eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.caliskan_2": {
+		"text": "çalışkan",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.tembel_2": {
+		"text": "tembel",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.erken": {
+		"text": "erken",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.gec": {
+		"text": "geç",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.mutlu": {
+		"text": "mutlu",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.uzgun": {
+		"text": "üzgün",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n03.r03": {
+		"text": "Metni sessizce oku. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n03.r03.p1": {
+		"text": "Kerem kütüphanede Atatürk'ün hayatını anlatan bir kitap buldu.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n03.r03.p2": {
+		"text": "Kitaptan Atatürk'ün okumayı çok sevdiğini öğrendi. Kerem de her gün okumaya karar verdi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n03.r03.q1": {
+		"text": "Metnin konusu nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n03.r03.q2": {
+		"text": "Kerem neye karar verdi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n03.r04": {
+		"text": "Bu cümleler doğru mu, yanlış mı? Bildiklerini düşün ve kartları kutulara taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n04.intro": {
+		"text": "Bayrama nasıl hazırlanırız? Önce ne olur, sonra ne olur? Haydi sıralayalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u02.n04.r01": {
+		"text": "Okul bahçesine fidan diktik. Kartları olayların sırasına göre diz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n04.r02": {
+		"text": "Zeynep 23 Nisan'a hazırlanıyor. Kartları olayların sırasına göre diz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n04.r03": {
+		"text": "Sınıfımızı bayram için süsledik. Önce ne yaptık? Kartları sırala.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n05.intro": {
+		"text": "Yazarken bazı kurallara uyarız. Soru ekini, kısaltmaları ve büyük harfleri hatırlayalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u02.n05.r01": {
+		"text": "Soru eki ayrı yazılır. Sözcüğün son ünlüsüne bak. Her cümleye uyan soru ekini bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.bayrak_asildi": {
+		"text": "Bayrak asıldı",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.siir_guzel": {
+		"text": "Şiir güzel",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.toren_uzun": {
+		"text": "Tören uzun",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.fidan_buyudu": {
+		"text": "Fidan büyüdü",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n05.r02": {
+		"text": "Kısaltmaları açık yazılışlarıyla eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.cad": {
+		"text": "Cad.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.cadde": {
+		"text": "cadde",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.sok": {
+		"text": "Sok.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.sokak": {
+		"text": "sokak",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.no": {
+		"text": "No.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.numara": {
+		"text": "numara",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u02.n05.r03": {
+		"text": "Bu sözcükler büyük harfle başlar. Her sözcüğü türüyle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.zubeyde": {
+		"text": "Zübeyde",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.ankara": {
+		"text": "Ankara",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n01.intro": {
+		"text": "Merhaba! Doğada her gün yeni şeyler olur. Bir sincabın ve bir su damlasının hikâyesini dinleyelim.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u03.n01.r01": {
+		"text": "Sincap Pıtır'ın hikâyesini dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n01.r01.p1": {
+		"text": "Sonbahar geldi, yapraklar sarardı. Sincap Pıtır ağaçtan fındık topladı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n01.r01.p2": {
+		"text": "Pıtır, fındıkları ağacın kovuğuna sakladı. Kovuk fındıkla doldu.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n01.r01.p3": {
+		"text": "Kış gelince her yere kar yağdı. Pıtır, yuvasında fındıklarını yedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n01.r01.q1": {
+		"text": "Pıtır ağaçtan ne topladı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n01.r01.q2": {
+		"text": "Pıtır fındıkları nereye sakladı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n01.r01.q3": {
+		"text": "Pıtır neden fındık topladı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n01.r02": {
+		"text": "Su damlası Damla'nın hikâyesini dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n01.r02.p1": {
+		"text": "Damla, göldeki küçük bir su damlasıydı. Güneş onu ısıttı, Damla buhar oldu.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n01.r02.p2": {
+		"text": "Buhar göğe yükseldi ve soğudu. Damla, arkadaşlarıyla birleşip bulut oldu.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n01.r02.p3": {
+		"text": "Bulut ağırlaştı. Damla yağmur olup yeniden göle düştü.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n01.r02.q1": {
+		"text": "Damla'yı ne ısıttı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n01.r02.q2": {
+		"text": "Buhar soğuyunca ne oldu?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n01.r02.q3": {
+		"text": "Bu hikâyenin konusu nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n01.r03": {
+		"text": "Hangisi Pıtır'ın, hangisi Damla'nın hikâyesindeydi? Her kartı doğru kutuya taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.pitir": {
+		"text": "Pıtır",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.damla": {
+		"text": "Damla",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n02.intro": {
+		"text": "Doğada, sınıfta ve parkta nasıl konuşur, ne dinleriz? Birlikte seçelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u03.n02.r01": {
+		"text": "Ormanda kuşların sesini dinlemek istiyorsun. Ne yaparsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n02.r01.hint": {
+		"text": "Kuşları duymak için çevremiz sakin olmalı.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u03.n02.r01.c2": {
+		"text": "Kuşlar korkup uçtu. Doğayı dinlerken sessiz oluruz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n02.r01.c3": {
+		"text": "Müzik sesi kuşların sesini bastırdı. Kuşları duyamadın.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n02.r02": {
+		"text": "Sınıfta arkadaşlarına mevsimleri anlatacaksın. Nasıl konuşmalısın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n02.r02.hint": {
+		"text": "Herkes seni anlamalı. Acele etme.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u03.n02.r02.c2": {
+		"text": "Arkadaşların seni duyamadı. Sınıfta herkesin duyacağı sesle konuşuruz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n02.r02.c3": {
+		"text": "Arkadaşların anlamakta zorlandı. Acele etmeden konuşuruz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n02.r03": {
+		"text": "Hayvanların kışı nasıl geçirdiğini öğrenmek istiyorsun. Ne dinlersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n02.r03.hint": {
+		"text": "Hangisi hayvanlar hakkında bilgi verir? Bir düşün.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u03.n02.r03.c2": {
+		"text": "Ninni insanı uyutur ama hayvanları anlatmaz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n02.r03.c3": {
+		"text": "Maç anlatımı futbolu anlatır, hayvanları anlatmaz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n02.r04": {
+		"text": "Parkta bir çocuk çiçekleri koparıyor. Ona ne söylersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n02.r04.hint": {
+		"text": "Kibar sözlerle uyarırsak bizi daha iyi dinler.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u03.n02.r04.c2": {
+		"text": "Bağırınca çocuk üzüldü. Kibar sözlerle uyarırız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n02.r04.c3": {
+		"text": "Çiçekler koparılmaya devam etti. Kibarca uyarabiliriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n03.intro": {
+		"text": "Şimdi doğa ile ilgili metinleri sessizce oku. Takılırsan hoparlöre dokunabilirsin.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u03.n03.r01": {
+		"text": "Metni sessizce oku. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n03.r01.p1": {
+		"text": "Sonbaharda hava soğudu. Kırlangıçlar sıcak yerlere doğru uçtu.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n03.r01.p2": {
+		"text": "İlkbahar gelince kırlangıçlar geri döndü. Yeniden yuvalarına yerleştiler.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n03.r01.q1": {
+		"text": "Bu metnin başlığı hangisi olabilir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n03.r01.q2": {
+		"text": "Kırlangıçlar neden uçup gitti?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n03.r02": {
+		"text": "Zıt anlamlı sözcükleri eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.yaz": {
+		"text": "yaz",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.kis": {
+		"text": "kış",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.gece": {
+		"text": "gece",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.gunduz": {
+		"text": "gündüz",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.islak": {
+		"text": "ıslak",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.kuru": {
+		"text": "kuru",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n03.r03": {
+		"text": "Metni sessizce oku. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n03.r03.p1": {
+		"text": "Bahçemizdeki elma ağacı ilkbaharda çiçek açar. Yazın dalları elmayla dolar.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n03.r03.p2": {
+		"text": "Sonbaharda yaprakları sararır ve düşer. Kışın dalları karla örtülür.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n03.r03.q1": {
+		"text": "Metnin konusu nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n03.r03.q2": {
+		"text": "Elma ağacı ne zaman çiçek açar?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n03.r04": {
+		"text": "Bu cümleler doğru mu, yanlış mı? Bildiklerini düşün ve kartları kutulara taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n04.intro": {
+		"text": "Doğada her şey bir sırayla olur. Önce ne oldu, sonra ne oldu? Haydi sıralayalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u03.n04.r01": {
+		"text": "Kelebek nasıl oluşur? Kartları doğru sıraya diz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n04.r02": {
+		"text": "Damla'nın yolculuğunu hatırla. Kartları olayların sırasına göre diz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n04.r03": {
+		"text": "İlkbahardan başla. Mevsimleri sırasıyla diz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n05.intro": {
+		"text": "Yazarken bazı kurallara uyarız. Soru ekini, kısaltmaları ve büyük harfleri hatırlayalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u03.n05.r01": {
+		"text": "Soru eki ayrı yazılır. Sözcüğün son ünlüsüne bak. Her cümleye uyan soru ekini bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.kar_yagdi": {
+		"text": "Kar yağdı",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.agac_yesil": {
+		"text": "Ağaç yeşil",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.kus_uctu": {
+		"text": "Kuş uçtu",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.gol_buyuk": {
+		"text": "Göl büyük",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n05.r02": {
+		"text": "Kısaltmaları açık yazılışlarıyla eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.km": {
+		"text": "km",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.kilometre": {
+		"text": "kilometre",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.m": {
+		"text": "m",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.metre": {
+		"text": "metre",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u03.n05.r03": {
+		"text": "Bu sözcükler büyük harfle başlar. Her sözcüğü türüyle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.dag_adi": {
+		"text": "Dağ adı",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.agri": {
+		"text": "Ağrı",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.nehir_adi": {
+		"text": "Nehir adı",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.firat": {
+		"text": "Fırat",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.gol_adi": {
+		"text": "Göl adı",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.van": {
+		"text": "Van",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n01.intro": {
+		"text": "Merhaba! Kitaplar bizi yeni yerlere götürür. Bir kütüphane hikâyesi ve bir masal dinleyelim.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u04.n01.r01": {
+		"text": "Deniz'in hikâyesini dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n01.r01.p1": {
+		"text": "Deniz ilk kez kütüphaneye gitti. Raflarda yüzlerce kitap vardı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n01.r01.p2": {
+		"text": "Kütüphane görevlisi ona hayvanları anlatan bir kitap verdi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n01.r01.p3": {
+		"text": "Deniz kitabı eve götürdü. İki hafta sonra kitabı geri getirecekti.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n01.r01.q1": {
+		"text": "Deniz nereye gitti?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n01.r01.q2": {
+		"text": "Görevli Deniz'e ne verdi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n01.r01.q3": {
+		"text": "Deniz iki hafta sonra ne yapar?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n01.r02": {
+		"text": "Masalı dikkatle dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n01.r02.p1": {
+		"text": "Bir varmış, bir yokmuş. Küçük bir tavşan ormanda kaybolmuş.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n01.r02.p2": {
+		"text": "Yaşlı baykuş ona yolu göstermiş. Tavşan evine sağ salim dönmüş.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n01.r02.p3": {
+		"text": "Ertesi gün tavşan baykuşa bir sepet havuç götürmüş. İkisi dost olmuşlar.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n01.r02.q1": {
+		"text": "Tavşan nerede kaybolmuş?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n01.r02.q2": {
+		"text": "Tavşana kim yardım etmiş?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n01.r02.q3": {
+		"text": "Tavşan baykuşa neden havuç götürmüş?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n01.r03": {
+		"text": "Bunlar gerçek hayatta olur mu, yoksa yalnızca masalda mı? Kartları kutulara taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.gercek": {
+		"text": "Gerçek",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.hayal": {
+		"text": "Hayal",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n02.intro": {
+		"text": "Kütüphanede ve sınıfta nasıl konuşur, ne dinleriz? Birlikte seçelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u04.n02.r01": {
+		"text": "Kütüphane görevlisinden bir kitap isteyeceksin. Ne dersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n02.r01.hint": {
+		"text": "Büyüklerimizden bir şey isterken kibar konuşuruz.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u04.n02.r01.c2": {
+		"text": "Görevli bu sözlere üzüldü. Büyüklerimizden kibarca isteriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n02.r01.c3": {
+		"text": "Görevli ne istediğini anlamadı. Açık ve kibar konuşalım.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n02.r02": {
+		"text": "Sınıfta okuduğun bir kitabı anlatacaksın. Nasıl anlatmalısın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n02.r02.hint": {
+		"text": "Konuşurken dinleyenlere bakarız.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u04.n02.r02.c2": {
+		"text": "Arkadaşların seni iyi duyamadı. Konuşurken onlara bakarız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n02.r02.c3": {
+		"text": "Arkadaşların seni duyamadı. Herkesin duyacağı sesle anlatırız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n02.r03": {
+		"text": "Keloğlan'ın maceralarını merak ediyorsun. Ne dinlersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n02.r03.hint": {
+		"text": "Keloğlan bir masal kahramanıdır.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u04.n02.r03.c2": {
+		"text": "Hava durumu yarının havasını söyler, Keloğlan'ı anlatmaz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n02.r03.c3": {
+		"text": "Haberler bilgi verir ama Keloğlan'ı anlatmaz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n02.r04": {
+		"text": "Öğretmen masal okuyor. Arkadaşın seninle konuşmak istiyor. Ne dersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n02.r04.hint": {
+		"text": "Masalı dinlerken konuşursak en güzel yerini kaçırabiliriz.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u04.n02.r04.c2": {
+		"text": "Masalın güzel bir yerini kaçırdınız. Dinlerken konuşmayız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n02.r04.c3": {
+		"text": "Herkesin dikkati dağıldı. Masalı sessizce dinleriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n03.intro": {
+		"text": "Okumayı seven çocukların metinlerini sessizce oku. Takılırsan hoparlöre dokunabilirsin.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u04.n03.r01": {
+		"text": "Metni sessizce oku. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n03.r01.p1": {
+		"text": "Ali her akşam yatmadan önce kitap okur. Okudukça yeni sözcükler öğrenir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n03.r01.p2": {
+		"text": "Bir gün sınıfta kitaptan öğrendiği bir bilgiyi anlattı. Herkes ilgiyle dinledi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n03.r01.q1": {
+		"text": "Bu metnin başlığı hangisi olabilir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n03.r01.q2": {
+		"text": "Ali okudukça ne öğrenir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n03.r02": {
+		"text": "Zıt anlamlı sözcükleri eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.acik": {
+		"text": "açık",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.kapali": {
+		"text": "kapalı",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.kolay": {
+		"text": "kolay",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.zor": {
+		"text": "zor",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.ince": {
+		"text": "ince",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.kalin": {
+		"text": "kalın",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n03.r03": {
+		"text": "Metni sessizce oku. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n03.r03.p1": {
+		"text": "Selin kitabını okurken sayfaları kıvırmaz. Kaldığı yere ayraç koyar.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n03.r03.p2": {
+		"text": "Kitabı bitirince rafına yerleştirir. Böylece kitabı hep yeni gibi kalır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n03.r03.q1": {
+		"text": "Metnin konusu nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n03.r03.q2": {
+		"text": "Selin kaldığı yere ne koyar?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n03.r04": {
+		"text": "Kitaplara nasıl davranmalıyız? Doğru ve yanlış davranışları kutulara taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n04.intro": {
+		"text": "Her okuma serüveninin bir sırası vardır. Önce ne oldu, sonra ne oldu? Haydi sıralayalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u04.n04.r01": {
+		"text": "Kütüphaneden kitap aldık. Kartları olayların sırasına göre diz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n04.r02": {
+		"text": "Masaldaki tavşanın başından geçenleri hatırla. Kartları sırala.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n04.r03": {
+		"text": "Bir metni okuduk. Önce ne yaptık? Kartları sırala.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n05.intro": {
+		"text": "Yazarken bazı kurallara uyarız. Soru ekini, kısaltmaları ve büyük harfleri hatırlayalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u04.n05.r01": {
+		"text": "Soru eki ayrı yazılır. Sözcüğün son ünlüsüne bak. Her cümleye uyan soru ekini bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.kitap_kalin": {
+		"text": "Kitap kalın",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.masal_bitti": {
+		"text": "Masal bitti",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.raf_dolu": {
+		"text": "Raf dolu",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.kitap_kucuk": {
+		"text": "Kitap küçük",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n05.r02": {
+		"text": "Kısaltmaları açık yazılışlarıyla eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u04.n05.r03": {
+		"text": "Bu sözcükler büyük harfle başlar. Her sözcüğü türüyle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.keloglan": {
+		"text": "Keloğlan",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.konya": {
+		"text": "Konya",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n01.intro": {
+		"text": "Merhaba! Her çocuğun bir yeteneği vardır. Şimdi yeteneğini keşfeden çocukları dinleyelim.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u05.n01.r01": {
+		"text": "Zeynep'in hikâyesini dikkatle dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n01.r01.p1": {
+		"text": "Zeynep resim yapmayı çok sever. Her gün defterine renkli çiçekler ve kuşlar çizer.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n01.r01.p2": {
+		"text": "Okulda bir resim sergisi açıldı. Öğretmeni, Zeynep'in kuş resmini panoya astı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n01.r01.p3": {
+		"text": "Annesi ve babası sergiye geldi. Zeynep resmini onlara gururla gösterdi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n01.r01.q1": {
+		"text": "Zeynep ne yapmayı çok sever?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n01.r01.q2": {
+		"text": "Öğretmen hangi resmi panoya astı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n01.r01.q3": {
+		"text": "Bu hikâyenin konusu nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n01.r02": {
+		"text": "Deniz'in hikâyesini dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n01.r02.p1": {
+		"text": "Deniz, okulun müzik gösterisinde flüt çalacaktı. Çok heyecanlıydı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n01.r02.p2": {
+		"text": "Gösteriden önce her akşam evde çalıştı. Annesi de onu sabırla dinledi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n01.r02.p3": {
+		"text": "Gösteri günü Deniz flütünü çok güzel çaldı. Herkes onu uzun uzun alkışladı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n01.r02.q1": {
+		"text": "Deniz hangi çalgıyı çaldı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n01.r02.q2": {
+		"text": "Deniz gösteriden önce ne yaptı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n01.r02.q3": {
+		"text": "Alkışları duyan Deniz nasıl hissetti?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n01.r03": {
+		"text": "Hangisi Zeynep'in, hangisi Deniz'in hikâyesindeydi? Her kartı doğru kutuya taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.deniz": {
+		"text": "Deniz",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n02.intro": {
+		"text": "Güzel sözler yetenekleri büyütür. Duruma uygun olanı birlikte seçelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u05.n02.r01": {
+		"text": "Arkadaşın resim yarışmasında ödül alamadı ve üzüldü. Ona ne söylersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n02.r01.hint": {
+		"text": "Üzgün bir arkadaşımızı güzel sözlerle sevindiririz.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u05.n02.r01.c2": {
+		"text": "Arkadaşın daha çok üzüldü. Üzgün birine moral veririz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n02.r01.c3": {
+		"text": "Arkadaşın kırıldı. Övünmek yerine onu cesaretlendirelim.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n02.r02": {
+		"text": "Arkadaşın satranç oynamayı biliyor. Sen de öğrenmek istiyorsun. Ona ne dersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n02.r02.hint": {
+		"text": "Bir şey isterken kibar sözler kullanırız.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u05.n02.r02.c2": {
+		"text": "Emir gibi konuşunca arkadaşın kırıldı. Kibarca rica ederiz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n02.r02.c3": {
+		"text": "Bu söz arkadaşını üzdü. Herkesin bildiği bir şey vardır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n02.r03": {
+		"text": "Beden eğitimi öğretmeni yeni bir oyunun kurallarını anlatıyor. Nasıl dinlersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n02.r03.hint": {
+		"text": "Kuralları bilirsek oyunu doğru oynarız.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u05.n02.r03.c2": {
+		"text": "Kuralları kaçırdın. Öğretmen konuşurken onu dinleriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n02.r03.c3": {
+		"text": "Topun sesi yüzünden kuralları duyamadın.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n02.r04": {
+		"text": "Yeni bir şarkı öğrenmek istiyorsun. Ne dinlersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n02.r04.hint": {
+		"text": "Bir şarkıyı öğrenmek için onu dinlemeliyiz.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u05.n02.r04.c2": {
+		"text": "Hava durumu havayı anlatır, şarkı öğretmez.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n02.r04.c3": {
+		"text": "Maç anlatımı maçı anlatır, şarkı öğretmez.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n03.intro": {
+		"text": "Şimdi okuma zamanı! Metni önce sessizce oku. Takılırsan hoparlöre dokunabilirsin.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u05.n03.r01": {
+		"text": "Metni sessizce oku. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n03.r01.p1": {
+		"text": "Ela ip atlamayı çok sever. Her teneffüste arkadaşlarıyla bahçede ip atlar.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n03.r01.p2": {
+		"text": "Ela önce on kez atlayabiliyordu. Her gün çalıştı. Şimdi yirmi kez atlayabiliyor.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n03.r01.q1": {
+		"text": "Bu metnin başlığı hangisi olabilir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n03.r01.q2": {
+		"text": "Ela nasıl daha çok atlayabildi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n03.r02": {
+		"text": "Zıt anlamlı sözcükleri eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.hizli": {
+		"text": "hızlı",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.yavas": {
+		"text": "yavaş",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.sesli": {
+		"text": "sesli",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.sessiz": {
+		"text": "sessiz",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n03.r03": {
+		"text": "Metni sessizce oku. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n03.r03.p1": {
+		"text": "Burak kilden küçük hayvanlar yapar. Bu hafta bir kedi, bir köpek ve bir kaplumbağa yaptı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n03.r03.p2": {
+		"text": "Hepsini rafına dizdi. Kardeşi en çok kaplumbağayı beğendi ve ona bir ad verdi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n03.r03.q1": {
+		"text": "Metnin konusu nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n03.r03.q2": {
+		"text": "Kardeşi en çok hangisini beğendi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n03.r04": {
+		"text": "Bu cümleler doğru mu, yanlış mı? Bildiklerini düşün ve kartları kutulara taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n04.intro": {
+		"text": "Olaylar bir sırayla olur. Önce ne oldu, sonra ne oldu? Haydi sıralayalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u05.n04.r01": {
+		"text": "Zeynep resim yapıyor. Kartları olayların sırasına göre diz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n04.r02": {
+		"text": "Deniz gösteriye hazırlanıyor. Kartları olayların sırasına göre diz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n04.r03": {
+		"text": "Burak kilden bir kaplumbağa yapıyor. Önce ne yaptı? Kartları sırala.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n05.intro": {
+		"text": "Yazarken bazı kurallara uyarız. Soru ekini, kısaltmaları ve büyük harfleri öğrenelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u05.n05.r01": {
+		"text": "Soru eki ayrı yazılır. Sözcüğün son ünlüsüne bak ve her cümleye uyan soru ekini yanına taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.resim_bitti": {
+		"text": "Resim bitti",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.sahne_hazir": {
+		"text": "Sahne hazır",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.oyun_uzun": {
+		"text": "Oyun uzun",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.davul_buyuk": {
+		"text": "Davul büyük",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n05.r02": {
+		"text": "Kısaltmaları açık yazılışlarıyla eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u05.n05.r03": {
+		"text": "Bu sözcükler büyük harfle başlar. Her sözcüğü türüyle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.izmir": {
+		"text": "İzmir",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.japonya": {
+		"text": "Japonya",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n01.intro": {
+		"text": "Merhaba küçük mucit! Merak eden ve çözüm bulan çocukların hikâyelerini dinleyelim.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u06.n01.r01": {
+		"text": "Arda'nın hikâyesini dikkatle dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n01.r01.p1": {
+		"text": "Arda'nın kalemleri hep masadan yere düşüyordu. Arda bu duruma bir çözüm aradı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n01.r01.p2": {
+		"text": "Boş bir kutu buldu. Kutuyu renkli kâğıtlarla kapladı ve ondan bir kalemlik yaptı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n01.r01.p3": {
+		"text": "Artık kalemleri hiç düşmüyordu. Arda kendi icadına çok sevindi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n01.r01.q1": {
+		"text": "Arda'nın sorunu neydi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n01.r01.q2": {
+		"text": "Arda kalemliği neyden yaptı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n01.r01.q3": {
+		"text": "Arda nasıl bir çocuktur?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n01.r02": {
+		"text": "Duru'nun deneyini dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n01.r02.p1": {
+		"text": "Duru, hangi eşyaların suda yüzdüğünü merak etti. Büyük bir kaba su doldurdu.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n01.r02.p2": {
+		"text": "Suya bir mantar, bir taş ve bir yaprak bıraktı. Sonra dikkatle izledi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n01.r02.p3": {
+		"text": "Taş hemen dibe battı. Mantar ve yaprak ise suyun üstünde yüzdü.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n01.r02.q1": {
+		"text": "Duru neyi merak etti?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n01.r02.q2": {
+		"text": "Hangisi dibe battı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n01.r02.q3": {
+		"text": "Duru nasıl bir çocuktur?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n01.r03": {
+		"text": "Bu eşyalar suda yüzer mi, batar mı? Duru'nun deneyini düşün ve kartları kutulara taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.yuzer": {
+		"text": "Yüzer",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.batar": {
+		"text": "Batar",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n02.intro": {
+		"text": "Mucitler fikirlerini güzelce anlatır ve dikkatle dinler. Doğru olanı birlikte seçelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u06.n02.r01": {
+		"text": "Bilim şenliğinde sınıfa icadını anlatacaksın. Nasıl konuşursun?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n02.r01.hint": {
+		"text": "Herkes seni duymalı ve anlamalı.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u06.n02.r01.c2": {
+		"text": "Kimse anlayamadı. Bir şey anlatırken açık ve yavaş konuşuruz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n02.r01.c3": {
+		"text": "Arkadaki arkadaşların seni duyamadı. Herkesin duyacağı bir sesle konuşalım.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n02.r02": {
+		"text": "Arkadaşının yaptığı oyuncak arabayı çok beğendin. Ona ne dersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n02.r02.hint": {
+		"text": "Merak ettiğimiz bir şeyi kibarca sorarız.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u06.n02.r02.c2": {
+		"text": "Arkadaşın kırıldı. İstediğimizi kibarca söyleriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n02.r02.c3": {
+		"text": "Arkadaşın üzüldü. Başkalarının emeğine saygı duyarız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n02.r03": {
+		"text": "Bir deney yapacaksın. Adımları öğrenmek için kimi dinlersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n02.r03.hint": {
+		"text": "Deneyi kim biliyor ve anlatıyor? Bir düşün.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u06.n02.r03.c2": {
+		"text": "Reklam ürün tanıtır, deneyin adımlarını anlatmaz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n02.r03.c3": {
+		"text": "Ninni insanı uyutur ama deneyi anlatmaz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n02.r04": {
+		"text": "Uçakların nasıl uçtuğunu merak ediyorsun. Ne dinlersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n02.r04.c2": {
+		"text": "Ninni çok tatlı ama uçakları anlatmaz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n02.r04.c3": {
+		"text": "Maç anlatımı maçı anlatır, uçakları anlatmaz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n03.intro": {
+		"text": "Şimdi okuma zamanı! Metni önce sessizce oku. Takılırsan hoparlöre dokunabilirsin.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u06.n03.r01": {
+		"text": "Metni sessizce oku. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n03.r01.p1": {
+		"text": "Selin tatile gidecekti. Saksıdaki çiçeği susuz kalacak diye üzüldü.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n03.r01.p2": {
+		"text": "Bir şişeye su doldurdu. Şişeyi ters çevirip saksıya yerleştirdi. Çiçek her gün azar azar su içti.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n03.r01.q1": {
+		"text": "Bu metnin başlığı hangisi olabilir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n03.r01.q2": {
+		"text": "Selin neden üzüldü?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n03.r02": {
+		"text": "Zıt anlamlı sözcükleri eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.eski": {
+		"text": "eski",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.yeni": {
+		"text": "yeni",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.bos": {
+		"text": "boş",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.dolu": {
+		"text": "dolu",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n03.r03": {
+		"text": "Metni sessizce oku. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n03.r03.p1": {
+		"text": "Can ile dedesi bozuk bir duvar saatini açtılar. İçinde küçük dişliler vardı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n03.r03.p2": {
+		"text": "Bir dişli yerinden çıkmıştı. Dedesi dişliyi yerine taktı. Saat yeniden tık tık çalışmaya başladı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n03.r03.q1": {
+		"text": "Metnin konusu nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n03.r03.q2": {
+		"text": "Dede saati nasıl çalıştırdı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n03.r04": {
+		"text": "Bu cümleler doğru mu, yanlış mı? Bildiklerini düşün ve kartları kutulara taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n04.intro": {
+		"text": "Mucitler işlerini adım adım yapar. Önce ne oldu, sonra ne oldu? Haydi sıralayalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u06.n04.r01": {
+		"text": "Duru deney yapıyor. Kartları olayların sırasına göre diz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n04.r02": {
+		"text": "Arda kâğıttan uçak yapıyor. Kartları olayların sırasına göre diz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n04.r03": {
+		"text": "Bir mucit nasıl çalışır? Önce ne yapar? Kartları sırala.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n05.intro": {
+		"text": "Yazarken bazı kurallara uyarız. Soru ekini, kısaltmaları ve büyük harfleri öğrenelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u06.n05.r01": {
+		"text": "Soru eki ayrı yazılır. Sözcüğün son ünlüsüne bak ve her cümleye uyan soru ekini yanına taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.robot_hazir": {
+		"text": "Robot hazır",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.saat_bozuk": {
+		"text": "Saat bozuk",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.deney_bitti": {
+		"text": "Deney bitti",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.isik_sondu": {
+		"text": "Işık söndü",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n05.r02": {
+		"text": "Kısaltmaları açık yazılışlarıyla eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n05.r03": {
+		"text": "Bu sözcükler büyük harfle başlar. Her sözcüğü türüyle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.arda": {
+		"text": "Arda",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.almanya": {
+		"text": "Almanya",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n01.intro": {
+		"text": "Merhaba! Kültürümüz bir hazine gibidir. Bir fıkra ve bir bayram hikâyesi dinleyelim.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u07.n01.r01": {
+		"text": "Nasreddin Hoca'nın fıkrasını dikkatle dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n01.r01.p1": {
+		"text": "Nasreddin Hoca komşusundan bir kazan ödünç aldı. Geri verirken içine küçük bir tencere koydu.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n01.r01.p2": {
+		"text": "Hoca, \"Kazanın doğurdu.\" dedi. Komşu buna inandı ve tencereyi sevinerek aldı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n01.r01.p3": {
+		"text": "Hoca kazanı yine aldı, sonra \"Kazan öldü.\" dedi. \"Doğurduğuna inandın, öldüğüne de inan!\" diye güldü.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n01.r01.q1": {
+		"text": "Hoca kazanın içine ne koydu?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n01.r01.q2": {
+		"text": "Komşu tencereyi alırken nasıldı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n01.r01.q3": {
+		"text": "Bu fıkranın kahramanı kimdir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n01.r02": {
+		"text": "Ayşe'nin bayram hikâyesini dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n01.r02.p1": {
+		"text": "Bayram sabahı Ayşe erkenden kalktı. Yeni elbisesini giydi ve saçlarını taradı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n01.r02.p2": {
+		"text": "Ailesiyle dedesini ziyarete gittiler. Ayşe kapıda dedesinin elini öptü.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n01.r02.p3": {
+		"text": "Dedesi ona şeker ikram etti. Sonra herkes birlikte sofraya oturdu.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n01.r02.q1": {
+		"text": "Ayşe bayram sabahı ne giydi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n01.r02.q2": {
+		"text": "Ayşe dedesine nasıl saygı gösterdi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n01.r02.q3": {
+		"text": "Bu hikâyenin konusu nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n01.r03": {
+		"text": "Hangisi Hoca'nın fıkrasında, hangisi Ayşe'nin hikâyesindeydi? Her kartı doğru kutuya taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.hoca": {
+		"text": "Hoca",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.ayse": {
+		"text": "Ayşe",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n02.intro": {
+		"text": "Güzel geleneklerimizde güzel sözler vardır. Duruma uygun olanı birlikte seçelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u07.n02.r01": {
+		"text": "Bayramda babaannenin elini öptün. Ona ne söylersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n02.r01.hint": {
+		"text": "Bayramda büyüklerimize güzel dileklerimizi söyleriz.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u07.n02.r01.c2": {
+		"text": "Babaannen şaşırdı. Bayramda önce güzel dileklerimizi söyleriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n02.r01.c3": {
+		"text": "Bu söz kaba kaçtı. Büyüklerimizle sevgiyle konuşuruz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n02.r02": {
+		"text": "Evinize misafir geldi. Kapıyı sen açtın. Ne söylersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n02.r02.hint": {
+		"text": "Misafirlerimizi güler yüzle karşılarız.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u07.n02.r02.c2": {
+		"text": "Misafir şaşırdı. Misafirlerimizi sıcak ve kibar sözlerle karşılarız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n02.r02.c3": {
+		"text": "Bu söz misafiri üzdü. Kapıda güler yüzle karşılarız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n02.r03": {
+		"text": "Keloğlan masalı dinlemek istiyorsun. Kimi dinlersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n02.r03.hint": {
+		"text": "Masalları kim anlatır? Bir düşün.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u07.n02.r03.c2": {
+		"text": "Hava durumu havayı anlatır, masal anlatmaz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n02.r03.c3": {
+		"text": "Maç anlatıcısı maçı anlatır, masal anlatmaz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n02.r04": {
+		"text": "Ebru ustası, boyaları suya nasıl serptiğini gösteriyor. Nasıl izlersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n02.r04.hint": {
+		"text": "Bir şeyi öğrenmek için dikkatle bakarız.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u07.n02.r04.c2": {
+		"text": "Ustanın gösterdiklerini kaçırdın. Öğrenirken dikkatimizi veririz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n02.r04.c3": {
+		"text": "Boyaların nasıl serpildiğini göremedin.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n03.intro": {
+		"text": "Şimdi okuma zamanı! Metni önce sessizce oku. Takılırsan hoparlöre dokunabilirsin.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u07.n03.r01": {
+		"text": "Metni sessizce oku. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n03.r01.p1": {
+		"text": "Babaannem ebru yapar. Önce suyun üstüne renkli boyaları serper.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n03.r01.p2": {
+		"text": "Sonra suyun üstüne bir kâğıt koyar. Kâğıdı kaldırınca rengârenk desenler çıkar.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n03.r01.q1": {
+		"text": "Bu metnin başlığı hangisi olabilir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n03.r01.q2": {
+		"text": "Babaanne boyaları nereye serper?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n03.r02": {
+		"text": "Zıt anlamlı sözcükleri eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.genc": {
+		"text": "genç",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.yasli": {
+		"text": "yaşlı",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.gelmek": {
+		"text": "gelmek",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.gitmek": {
+		"text": "gitmek",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.neseli": {
+		"text": "neşeli",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n03.r03": {
+		"text": "Metni sessizce oku. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n03.r03.p1": {
+		"text": "Ninem tezgâhta halı dokur. Halıda kırmızı, mavi ve sarı ipler kullanır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n03.r03.p2": {
+		"text": "Bir halıyı aylarca dokur. Bu halıyı bitirince bana hediye edeceğini söyledi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n03.r03.q1": {
+		"text": "Metnin konusu nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n03.r03.q2": {
+		"text": "Nine halıyı bitirince ne yapacak?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n03.r04": {
+		"text": "Bu eşyalar ebruda mı, halıda mı kullanıldı? Metinleri düşün ve kartları kutulara taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.ebru": {
+		"text": "Ebru",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.hali": {
+		"text": "Halı",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n04.intro": {
+		"text": "Olaylar bir sırayla olur. Önce ne oldu, sonra ne oldu? Haydi sıralayalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u07.n04.r01": {
+		"text": "Ayşe bayrama hazırlanıyor. Kartları olayların sırasına göre diz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n04.r02": {
+		"text": "Babaanne ebru yapıyor. Kartları olayların sırasına göre diz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n04.r03": {
+		"text": "Hoca'nın fıkrasında önce ne oldu? Kartları sırala.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n05.intro": {
+		"text": "Yazarken bazı kurallara uyarız. Soru ekini, kısaltmaları ve büyük harfleri öğrenelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u07.n05.r01": {
+		"text": "Soru eki ayrı yazılır. Sözcüğün son ünlüsüne bak ve her cümleye uyan soru ekini yanına taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.bayram_geldi": {
+		"text": "Bayram geldi",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.hali_yumusak": {
+		"text": "Halı yumuşak",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.ebru_kurudu": {
+		"text": "Ebru kurudu",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.kazan_buyuk": {
+		"text": "Kazan büyük",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n05.r02": {
+		"text": "Kısaltmaları açık yazılışlarıyla eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u07.n05.r03": {
+		"text": "Bu sözcükler büyük harfle başlar. Her sözcüğü türüyle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.erciyes": {
+		"text": "Erciyes",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n01.intro": {
+		"text": "Merhaba! Her çocuğun sağlıklı olma ve oyun oynama hakkı vardır. Haydi hikâyeleri dinleyelim.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u08.n01.r01": {
+		"text": "Elif'in hikâyesini dikkatle dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n01.r01.p1": {
+		"text": "Elif'in dişi ağrıyordu. Annesi onu hemen diş doktoruna götürdü.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n01.r01.p2": {
+		"text": "Doktor, Elif'in dişini tedavi etti. Ona dişlerini nasıl fırçalayacağını da gösterdi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n01.r01.p3": {
+		"text": "Elif o günden beri dişlerini her gün sabah ve akşam fırçalıyor.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n01.r01.q1": {
+		"text": "Elif'in neresi ağrıyordu?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n01.r01.q2": {
+		"text": "Bu hikâyenin konusu nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n01.r01.q3": {
+		"text": "Elif doktorun sözünü dinledi mi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n01.r02": {
+		"text": "Öykü'nün hikâyesini dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n01.r02.p1": {
+		"text": "Teneffüs zili çaldı. Öykü ve arkadaşları hemen okul bahçesine çıktı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n01.r02.p2": {
+		"text": "Önce ip atladılar, sonra saklambaç oynadılar. Hepsi çok eğlendi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n01.r02.p3": {
+		"text": "Zil yeniden çalınca çocuklar sıraya girdi ve sınıflarına döndü.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n01.r02.q1": {
+		"text": "Zil çalınca çocuklar nereye çıktı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n01.r02.q2": {
+		"text": "Teneffüs bitince ne yaptılar?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n01.r02.q3": {
+		"text": "Bu hikâyenin konusu nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n01.r03": {
+		"text": "Hangisi Elif'in, hangisi Öykü'nün hikâyesindeydi? Her kartı doğru kutuya taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.oyku": {
+		"text": "Öykü",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n02.intro": {
+		"text": "Derdimizi güzelce anlatmak da önemlidir. Duruma uygun olanı birlikte seçelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u08.n02.r01": {
+		"text": "Doktor sana nerenin ağrıdığını soruyor. Nasıl cevap verirsin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n02.r01.hint": {
+		"text": "Doktor bize yardım etmek ister. Ona derdimizi anlatırız.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u08.n02.r01.c2": {
+		"text": "Doktor neyin ağrıdığını bilemedi. Derdimizi açıkça anlatırız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n02.r01.c3": {
+		"text": "Doktor irkildi. Sakin bir sesle konuşuruz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n02.r02": {
+		"text": "Arkadaşların bahçede oyun oynuyor. Sen de katılmak istiyorsun. Ne dersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n02.r02.hint": {
+		"text": "Bir şey isterken kibar sözler kullanırız.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u08.n02.r02.c2": {
+		"text": "Arkadaşların üzüldü. İsteğimizi kibarca söyleriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n02.r02.c3": {
+		"text": "Küsmek sorunu çözmez. Kibarca sormayı deneyelim.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n02.r03": {
+		"text": "Okulda yangın tatbikatı var. Öğretmen ne yapacağınızı anlatıyor. Neden dikkatle dinlersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n02.r03.hint": {
+		"text": "Bu bilgiler bizi korur.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u08.n02.r03.c2": {
+		"text": "Bu anlatım uyumak için değil. Güvenliğimiz için dinleriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n02.r03.c3": {
+		"text": "Tatbikat şaka değildir. Ne yapacağımızı öğrenmek için dinleriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n02.r04": {
+		"text": "Kardeşin resim defterini izin almadan aldı. Ona ne söylersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n02.r04.hint": {
+		"text": "Duygumuzu sakin ve kibar sözlerle anlatırız.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u08.n02.r04.c2": {
+		"text": "Kardeşin korktu. Sakin ve kibar konuşuruz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n02.r04.c3": {
+		"text": "Kardeşin izin istemesi gerektiğini öğrenemedi. Duygumuzu kibarca söyleriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n03.intro": {
+		"text": "Şimdi okuma zamanı! Metni önce sessizce oku. Takılırsan hoparlöre dokunabilirsin.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u08.n03.r01": {
+		"text": "Metni sessizce oku. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n03.r01.p1": {
+		"text": "Her çocuğun bir adı vardır. Adımız bizi başka insanlardan ayırır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n03.r01.p2": {
+		"text": "Bu yüzden arkadaşlarımıza adlarıyla sesleniriz. Onlara lakap takmayız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n03.r01.q1": {
+		"text": "Bu metnin başlığı hangisi olabilir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n03.r01.q2": {
+		"text": "Arkadaşlarımıza nasıl sesleniriz?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n03.r02": {
+		"text": "Zıt anlamlı sözcükleri eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.hasta": {
+		"text": "hasta",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.saglikli": {
+		"text": "sağlıklı",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.dogru_2": {
+		"text": "doğru",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.yanlis_2": {
+		"text": "yanlış",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.temiz": {
+		"text": "temiz",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.kirli": {
+		"text": "kirli",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n03.r03": {
+		"text": "Metni sessizce oku. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n03.r03.p1": {
+		"text": "Kerem okulunu çok sever. Okulda okumayı, yazmayı ve saymayı öğrendi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n03.r03.p2": {
+		"text": "Kerem her akşam çantasını kendisi hazırlar. Kitaplarını temiz ve düzenli tutar.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n03.r03.q1": {
+		"text": "Metnin konusu nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n03.r03.q2": {
+		"text": "Kerem her akşam ne yapar?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n03.r04": {
+		"text": "Hangisi hakkımız, hangisi görevimiz? Kartları doğru kutuya taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.hak": {
+		"text": "Hak",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.gorev": {
+		"text": "Görev",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n04.intro": {
+		"text": "Olaylar bir sırayla olur. Önce ne oldu, sonra ne oldu? Haydi sıralayalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u08.n04.r01": {
+		"text": "Elif diş doktoruna gitti. Kartları olayların sırasına göre diz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n04.r02": {
+		"text": "Öykü teneffüse çıktı. Kartları olayların sırasına göre diz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n04.r03": {
+		"text": "Kerem akşam ne yaptı? Önce ne oldu? Kartları sırala.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n05.intro": {
+		"text": "Yazarken bazı kurallara uyarız. Soru ekini, kısaltmaları ve büyük harfleri öğrenelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.turkce.u08.n05.r01": {
+		"text": "Soru eki ayrı yazılır. Sözcüğün son ünlüsüne bak ve her cümleye uyan soru ekini yanına taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.oyun_bitti": {
+		"text": "Oyun bitti",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.kapi_acik": {
+		"text": "Kapı açık",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.odev_uzun": {
+		"text": "Ödev uzun",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.bu_duduk": {
+		"text": "Bu düdük",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n05.r02": {
+		"text": "Kısaltmaları açık yazılışlarıyla eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u08.n05.r03": {
+		"text": "Bu sözcükler büyük harfle başlar. Her sözcüğü türüyle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.kerem": {
+		"text": "Kerem",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.trabzon": {
+		"text": "Trabzon",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.italya": {
+		"text": "İtalya",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n01.intro": {
+		"text": "Merhaba! Güzel değerlerimizi anlatan iki hikâye dinleyeceğiz. Kulaklarını iyice aç!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u01.n01.r01": {
+		"text": "Zeynep'in hikâyesini dikkatle dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n01.r01.p1": {
+		"text": "Sınıfa yeni bir öğrenci geldi. Adı Kerem'di. Resim dersinde boyaları olmadığı için üzgün üzgün oturuyordu.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n01.r01.p2": {
+		"text": "Zeynep bunu fark etti. Kalem kutusunu Kerem'in sırasına koydu ve \"İstediğin rengi alabilirsin.\" dedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n01.r01.p3": {
+		"text": "Kerem gülümsedi ve güzel bir deniz resmi yaptı. Teneffüste iki arkadaş birlikte oyun oynadı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n01.r01.q1": {
+		"text": "Kerem neden üzgündü?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n01.r01.q2": {
+		"text": "Bu hikâyenin ana fikri nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n01.r01.q3": {
+		"text": "Sence ertesi gün ne olur?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n01.r02": {
+		"text": "Emir'in hikâyesini dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n01.r02.p1": {
+		"text": "Emir salonda topla oynuyordu. Top birden masaya çarptı ve annesinin sevdiği vazo yere düşüp kırıldı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n01.r02.p2": {
+		"text": "Emir çok korktu ama saklanmadı. Annesine gidip \"Vazoyu ben kırdım, özür dilerim.\" dedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n01.r02.p3": {
+		"text": "Annesi Emir'e sarıldı. \"Doğruyu söylediğin için seninle gurur duyuyorum.\" dedi. Emir rahatladı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n01.r02.q1": {
+		"text": "Vazo nasıl kırıldı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n01.r02.q2": {
+		"text": "Hikâyedeki ana duygu nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n01.r02.q3": {
+		"text": "Emir'in yaptığı hangi değeri gösterir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n01.r03": {
+		"text": "Hangisi Zeynep'in, hangisi Emir'in hikâyesindeydi? Kartları doğru kutuya taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.emir": {
+		"text": "Emir",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n02.intro": {
+		"text": "Konuşurken ve dinlerken doğru seçimi yapmak önemlidir. Haydi birlikte düşünelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u01.n02.r01": {
+		"text": "Otobüste yaşlı bir teyze ayakta duruyor. Ona yerini vermek istiyorsun. Ne dersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n02.r01.hint": {
+		"text": "Büyüklerimize saygılı ve nazik sözlerle seslenelim.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u01.n02.r01.c2": {
+		"text": "Teyze bu sözü biraz kaba buldu. Büyüklerimize \"Buyurun\" deriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n02.r01.c3": {
+		"text": "Teyze yerin boş olduğunu anlamadı. Nazikçe söylemek gerekir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n02.r02": {
+		"text": "Arkadaşın yere düştü ve dizi acıdı. Ona nasıl seslenirsin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n02.r02.hint": {
+		"text": "Canı yanan birine yumuşak ve yardımsever bir sesle konuşuruz.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u01.n02.r02.c2": {
+		"text": "Arkadaşın daha çok üzüldü. Önce onun iyi olup olmadığını soralım.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n02.r02.c3": {
+		"text": "Arkadaşın kırıldı. Canı yanana gülmeyiz, yardım ederiz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n02.r03": {
+		"text": "Öğretmenin yarınki gezinin kurallarını anlatıyor. Unutmamak için ne yaparsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n02.r03.hint": {
+		"text": "Önemli bilgileri unutmamak için bir yol var. Defterini düşün.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u01.n02.r03.c2": {
+		"text": "Resim güzel oldu ama kurallar aklında kalmadı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n02.r03.c3": {
+		"text": "Dikkatin dağıldı. Kuralları kaçırdın.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n02.r04": {
+		"text": "Okula bir itfaiyeci gelecek. Ondan çok şey öğrenmek istiyorsun. Önceden ne hazırlarsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n02.r04.c2": {
+		"text": "Oyuncaklar eğlenceli ama merak ettiklerini öğrenmene yardım etmez.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n02.r04.c3": {
+		"text": "Şarkı söylemek güzel ama itfaiyeciyi dinlemek için soru hazırlarız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n03.intro": {
+		"text": "Şimdi metni kendin sessizce oku. Takıldığın yerde hoparlöre dokunabilirsin.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u01.n03.r01": {
+		"text": "Metni sessizce oku. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n03.r01.p1": {
+		"text": "Defne aylardır kumbarasında para biriktiriyordu. Kendine yeni bir oyuncak almak istiyordu.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n03.r01.p2": {
+		"text": "Bir gün okulda, kışın üşüyen çocuklar için mont toplanacağını duydu. Bütün akşam bunu düşündü.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n03.r01.p3": {
+		"text": "Ertesi gün kumbarasını öğretmenine verdi. \"Bir çocuk sıcacık olsun.\" dedi. İçi mutlulukla doldu.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n03.r01.q1": {
+		"text": "Bu metnin başlığı hangisi olabilir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n03.r01.q2": {
+		"text": "Metnin ana fikri nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n03.r01.q3": {
+		"text": "Defne parasını önce ne için biriktiriyordu?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n03.r02": {
+		"text": "Eş anlamlı sözcükleri eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.armagan": {
+		"text": "armağan",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.hediye": {
+		"text": "hediye",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.ogrenci": {
+		"text": "öğrenci",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.talebe": {
+		"text": "talebe",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.cevap": {
+		"text": "cevap",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.yanit": {
+		"text": "yanıt",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n03.r03": {
+		"text": "Bu sözlerde altın gerçek anlamda mı, mecaz anlamda mı? Kartları doğru kutuya taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.mecaz": {
+		"text": "Mecaz",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n04.intro": {
+		"text": "Bir konuşmayı dinleyip sonunu tahmin edelim. Bakalım sen ne düşüneceksin?",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u01.n04.r01": {
+		"text": "Arda ile Selin'in konuşmasını dinle. Konuşmanın nasıl biteceğini tahmin et.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n04.r01.p1": {
+		"text": "Arda ile Selin bahçede tek bir top buldu. Arda, \"Ben futbol oynamak istiyorum.\" dedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n04.r01.p2": {
+		"text": "Selin, \"Ben de voleybol oynamak istiyorum.\" dedi. İkisi bir süre düşündü.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n04.r01.p3": {
+		"text": "Arda, \"Önce sen voleybol oyna, sonra ben futbol oynayayım mı?\" diye sordu.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n04.r01.q1": {
+		"text": "Selin ne cevap verir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n04.r01.q2": {
+		"text": "Arda nasıl bir çözüm buldu?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n04.r01.q3": {
+		"text": "Hikâyede kaç top var?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n04.r02": {
+		"text": "Elif ile dedesinin konuşmasını dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n04.r02.p1": {
+		"text": "Dede, \"Elif, kirazlar olgunlaştı. Bana toplamamda yardım eder misin?\" diye sordu.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n04.r02.p2": {
+		"text": "Elif, \"Elbette dedeciğim! Ama ben ağaca uzanamam.\" dedi. Dede gülümseyip bir sepet getirdi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n04.r02.p3": {
+		"text": "Dede, \"Ben dalları eğerim, sen de kirazları sepete koyarsın.\" dedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n04.r02.q1": {
+		"text": "Konuşma nasıl sonuçlanır?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n04.r02.q2": {
+		"text": "Elif neden zorlanacaktı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n04.r02.q3": {
+		"text": "Dede ne getirdi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n04.r03": {
+		"text": "Hangisi Arda ile Selin'in, hangisi Elif ile dedesinin konuşmasındaydı? Kartları kutulara taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n05.intro": {
+		"text": "Yazarken kurallara uyarız. Pekiştirmeli sözcükleri, kısaltmaları ve büyük harfleri çalışalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u01.n05.r01": {
+		"text": "Tertemiz sözcüğünü hecelerden kur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n05.r01.word": {
+		"text": "tertemiz",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n05.r02": {
+		"text": "Yepyeni sözcüğünü hecelerden kur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n05.r02.word": {
+		"text": "yepyeni",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n05.r03": {
+		"text": "Kısaltmaya gelen eki okunuşuna göre seç. Her kısaltmayı doğru ekle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.tbmm": {
+		"text": "TBMM",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.ye": {
+		"text": "'ye",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.ya": {
+		"text": "'ya",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.tubitak": {
+		"text": "TÜBİTAK",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.a": {
+		"text": "'a",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u01.n05.r04": {
+		"text": "Bu sözcükler büyük harfle başlar. Her sözcüğü türüyle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n01.intro": {
+		"text": "Merhaba! Atatürk'ün çocukluğunu ve sevdiği şeyleri anlatan hikâyeler dinleyelim.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u02.n01.r01": {
+		"text": "Küçük Mustafa'nın hikâyesini dikkatle dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n01.r01.p1": {
+		"text": "Mustafa, 1881 yılında Selanik'te doğdu. Annesi Zübeyde Hanım, babası Ali Rıza Efendi'ydi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n01.r01.p2": {
+		"text": "Mustafa okula gitmeyi çok severdi. En çok matematik dersinde başarılıydı. Soruları hızla çözerdi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n01.r01.p3": {
+		"text": "Matematik öğretmeni onun bu başarısını çok beğendi. Ona \"Kemal\" adını verdi. Artık adı Mustafa Kemal'di.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n01.r01.q1": {
+		"text": "Mustafa hangi şehirde doğdu?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n01.r01.q2": {
+		"text": "Mustafa'ya Kemal adını kim verdi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n01.r01.q3": {
+		"text": "Bu hikâyenin konusu nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n01.r02": {
+		"text": "Sınıfın fidan dikme hikâyesini dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n01.r02.p1": {
+		"text": "Öğretmen, \"Atatürk ağaçları çok severdi. Ağaç dikmeyi önemserdi.\" dedi. Çocuklar dikkatle dinledi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n01.r02.p2": {
+		"text": "Sınıf, okul bahçesine fidan dikmeye karar verdi. Herkes evden küçük bir kürek getirdi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n01.r02.p3": {
+		"text": "Çocuklar fidanları dikip suladı. Ali, \"Bu ağaçlar büyüyünce bahçemiz yemyeşil olacak.\" dedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n01.r02.q1": {
+		"text": "Çocuklar okul bahçesine ne dikti?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n01.r02.q2": {
+		"text": "Hikâyenin ana fikri nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n01.r02.q3": {
+		"text": "Sence fidanlar büyüyünce ne olur?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n01.r03": {
+		"text": "Hangisi Mustafa'nın, hangisi fidan dikme hikâyesindeydi? Kartları doğru kutuya taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.fidan": {
+		"text": "Fidan",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n02.intro": {
+		"text": "Törenlerde, okulda ve evde nasıl konuşur, nasıl dinleriz? Birlikte karar verelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u02.n02.r01": {
+		"text": "23 Nisan töreninde bir şiir okuyacaksın. Nasıl okumalısın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n02.r01.hint": {
+		"text": "Herkesin duyması ve anlaması için nasıl bir ses gerekir?",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u02.n02.r01.c2": {
+		"text": "Arkada oturanlar şiiri duyamadı. Törende açık ve gür sesle okuruz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n02.r01.c3": {
+		"text": "Dinleyenler sözcükleri anlayamadı. Acele etmeden okumalıyız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n02.r02": {
+		"text": "Törende İstiklal Marşı çalmaya başladı. Ne yaparsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n02.r02.hint": {
+		"text": "İstiklal Marşı'mızı saygıyla dinleriz.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u02.n02.r02.c2": {
+		"text": "Marşımız çalarken konuşmayız. Saygıyla dinleriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n02.r02.c3": {
+		"text": "Marşımız çalarken yerimizde dik dururuz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n02.r03": {
+		"text": "Atatürk'ün çocukluğunu öğrenmek istiyorsun. Hangisini dinlersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n02.r03.hint": {
+		"text": "Bilgi veren bir program seçmelisin.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u02.n02.r03.c2": {
+		"text": "Ninni uyumaya yardım eder ama bilgi vermez.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n02.r03.c3": {
+		"text": "Reklam bir ürünü tanıtır. Atatürk'ü anlatmaz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n02.r04": {
+		"text": "Sınıfça bir müzeye gittiniz. Rehber eşyaları tek tek anlatıyor. Ne yaparsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n02.r04.c2": {
+		"text": "Rehberin anlattıklarını kaçırdın. Dinlerken eşyalara dikkatle bakarız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n02.r04.c3": {
+		"text": "Gruptan ayrıldın ve anlatılanları duyamadın.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n03.intro": {
+		"text": "Şimdi bir kahramanımızın hikâyesini sessizce okuyacaksın. Takılırsan hoparlöre dokun.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u02.n03.r01": {
+		"text": "Metni sessizce oku. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n03.r01.p1": {
+		"text": "Seyit Onbaşı, Çanakkale'de görev yapan bir askerdi. Vatanını çok seven, güçlü ve cesur biriydi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n03.r01.p2": {
+		"text": "Bir gün çok ağır bir top mermisini sırtına aldı. Hiç vazgeçmeden onu taşıdı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n03.r01.p3": {
+		"text": "Herkes onun gücüne ve cesaretine şaşırdı. Seyit Onbaşı bugün de sevgiyle anılıyor.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n03.r01.q1": {
+		"text": "Bu metnin başlığı hangisi olabilir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n03.r01.q2": {
+		"text": "Metnin ana fikri nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n03.r01.q3": {
+		"text": "Seyit Onbaşı nerede görev yapıyordu?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n03.r02": {
+		"text": "Zıt anlamlı sözcükleri eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.cesur": {
+		"text": "cesur",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.korkak_2": {
+		"text": "korkak",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.guclu": {
+		"text": "güçlü",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.zayif": {
+		"text": "zayıf",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.agir": {
+		"text": "ağır",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.hafif": {
+		"text": "hafif",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n03.r03": {
+		"text": "Her cümlenin sonuna hangi noktalama işareti gelir? Eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.ne_zaman_geldin": {
+		"text": "Ne zaman geldin",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.x": {
+		"text": "?",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.yasasin_bayram": {
+		"text": "Yaşasın bayram",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.x_2": {
+		"text": "!",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.bayragi_astik": {
+		"text": "Bayrağı astık",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.x_3": {
+		"text": ".",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n04.intro": {
+		"text": "Konuşmaları dinle ve sonunu tahmin et. Kim ne diyecek, bakalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u02.n04.r01": {
+		"text": "Deniz ile Bora'nın konuşmasını dinle. Konuşmanın nasıl biteceğini tahmin et.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n04.r01.p1": {
+		"text": "Deniz, \"23 Nisan için sınıfı süsleyelim mi?\" diye sordu. Bora, \"Çok güzel fikir!\" dedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n04.r01.p2": {
+		"text": "Bora, \"Ama makasımız tek. İkimiz aynı anda kesemeyiz.\" dedi. Deniz biraz düşündü.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n04.r01.p3": {
+		"text": "Deniz, \"Ben keserim, sen de kestiklerimi duvara yapıştırırsın. Olur mu?\" dedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n04.r01.q1": {
+		"text": "Bora ne cevap verir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n04.r01.q2": {
+		"text": "Çocuklar neden süs yapıyor?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n04.r01.q3": {
+		"text": "Bora ne iş yapacak?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n04.r02": {
+		"text": "Ece ile babaannesinin konuşmasını dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n04.r02.p1": {
+		"text": "Ece, \"Babaanne, 23 Nisan'ı çocuklara kim armağan etti?\" diye sordu.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n04.r02.p2": {
+		"text": "Babaanne, \"Atatürk armağan etti. Çocukları çok severdi.\" dedi. Ece çok sevindi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n04.r02.p3": {
+		"text": "Ece, \"O zaman ben de bayramda Atatürk için bir şiir okuyacağım!\" dedi. Babaanne gülümsedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n04.r02.q1": {
+		"text": "Babaanne ne der?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n04.r02.q2": {
+		"text": "23 Nisan'ı çocuklara kim armağan etti?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n04.r02.q3": {
+		"text": "Ece bayramda ne yapacak?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n04.r03": {
+		"text": "Hangisi Deniz ile Bora'nın, hangisi Ece'nin konuşmasındaydı? Kartları kutulara taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n05.intro": {
+		"text": "Bayrağımızın renklerini anlatan sözcüklerle başlayalım. Sonra kısaltmalara ve büyük harflere bakalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u02.n05.r01": {
+		"text": "Kıpkırmızı sözcüğünü hecelerden kur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n05.r01.word": {
+		"text": "kıpkırmızı",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n05.r02": {
+		"text": "Bembeyaz sözcüğünü hecelerden kur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n05.r02.word": {
+		"text": "bembeyaz",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n05.r03": {
+		"text": "Kısaltmaya gelen eki okunuşuna göre seç. Her kısaltmayı doğru ekle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.de": {
+		"text": "'de",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.da": {
+		"text": "'da",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.ta": {
+		"text": "'ta",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u02.n05.r04": {
+		"text": "Bu sözcükler büyük harfle başlar. Her sözcüğü türüyle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.erzurum": {
+		"text": "Erzurum",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n01.intro": {
+		"text": "Merhaba! Doğada neler oluyor? İki hikâye dinleyerek öğrenelim.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u03.n01.r01": {
+		"text": "Sincabın hikâyesini dikkatle dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n01.r01.p1": {
+		"text": "Sonbahar gelmişti. Yapraklar sararıp yere düşüyordu. Orhan ile kardeşi ormanda yürüyüşe çıktı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n01.r01.p2": {
+		"text": "Bir sincap gördüler. Sincap ağzında fındık taşıyor, onları bir ağacın kovuğuna saklıyordu.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n01.r01.p3": {
+		"text": "Orhan, \"Sincap kış için yiyecek biriktiriyor.\" dedi. Kış gelince sincap hiç aç kalmayacaktı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n01.r01.q1": {
+		"text": "Hikâye hangi mevsimde geçiyor?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n01.r01.q2": {
+		"text": "Sincap fındıkları nereye saklıyordu?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n01.r01.q3": {
+		"text": "Kış gelince sincap ne yapar?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n01.r02": {
+		"text": "Damla'nın yolculuğunu dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n01.r02.p1": {
+		"text": "Damla denizde yaşayan küçük bir su damlasıydı. Bir gün güneş ısıttı ve Damla buhar olup yükseldi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n01.r02.p2": {
+		"text": "Gökyüzünde başka damlalarla buluştu. Hep birlikte kocaman bir bulut oldular.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n01.r02.p3": {
+		"text": "Bulut ağırlaşınca Damla yağmur olup bir tarlaya düştü. \"Bitkiler, size su getirdim!\" dedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n01.r02.q1": {
+		"text": "Damla neden yükseldi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n01.r02.q2": {
+		"text": "Bu hikâyenin konusu nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n01.r02.q3": {
+		"text": "Damla bulutta ne oldu?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n01.r03": {
+		"text": "Bunlar gerçek hayatta olur mu, yoksa hayal mi? Kartları doğru kutuya taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n02.intro": {
+		"text": "Doğada da sınıfta da güzel konuşur, dikkatle dinleriz. Haydi seçelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u03.n02.r01": {
+		"text": "Piknikte arkadaşın çöplerini yerde bırakmak üzere. Ona ne dersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n02.r01.hint": {
+		"text": "Doğayı korumayı arkadaşımıza kırmadan, nazikçe hatırlatalım.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u03.n02.r01.c2": {
+		"text": "Arkadaşın kırıldı. Doğru olanı nazik sözlerle söyleriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n02.r01.c3": {
+		"text": "Çöpler yerde kaldı. Doğayı korumak hepimizin görevi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n02.r02": {
+		"text": "Arıların balı nasıl yaptığını öğrenmek istiyorsun. Ne dinlersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n02.r02.hint": {
+		"text": "Bilgi veren bir program seç.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u03.n02.r02.c2": {
+		"text": "Ninni insanı uyutur ama balın nasıl yapıldığını anlatmaz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n02.r02.c3": {
+		"text": "Bilmece eğlencelidir ama arılar hakkında bilgi vermez.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n02.r03": {
+		"text": "Doğa gezisinde rehber kuşların seslerini dinletecek. Kuşları duymak için ne yaparsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n02.r03.hint": {
+		"text": "Kuşların sesi incedir. Etraf sessiz olmalı.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u03.n02.r03.c2": {
+		"text": "Senin sesin kuşların sesini bastırdı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n02.r03.c3": {
+		"text": "Kuşlar ürkerek uçup gitti.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n02.r04": {
+		"text": "Mert sınıfta kelebekleri anlatıyor. Can ise her cümlede Mert'in sözünü kesiyor. Konuşmadaki hata nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n02.r04.hint": {
+		"text": "Biri konuşurken onun sözünü bitirmesini bekleriz.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u03.n02.r04.c2": {
+		"text": "Soru sormak hata değildir. Sırasını bekleyip sorabiliriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n02.r04.c3": {
+		"text": "Dinlemek çok güzel bir davranıştır. Can'ın hatası dinlememekti.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n03.intro": {
+		"text": "Şimdi metni kendin sessizce oku. Takılırsan hoparlöre dokunabilirsin.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u03.n03.r01": {
+		"text": "Metni sessizce oku. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n03.r01.p1": {
+		"text": "Arılar çiçekten çiçeğe uçar. Çiçeklerin tatlı özünü toplayıp kovanlarına taşırlar.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n03.r01.p2": {
+		"text": "Arılar çiçeklere konarken onların tozlarını da taşır. Böylece çiçekler meyveye dönüşür.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n03.r01.p3": {
+		"text": "Arılar olmasa bahçelerde elma, kiraz ve çilek yetişmezdi. Arılar doğanın çalışkan dostlarıdır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n03.r01.q1": {
+		"text": "Bu metnin başlığı hangisi olabilir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n03.r01.q2": {
+		"text": "Metnin ana fikri nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n03.r01.q3": {
+		"text": "Arılar olmasa ne olurdu?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n03.r02": {
+		"text": "Eş anlamlı sözcükleri eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.doga": {
+		"text": "doğa",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.tabiat": {
+		"text": "tabiat",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.irmak": {
+		"text": "ırmak",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.nehir": {
+		"text": "nehir",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.siyah": {
+		"text": "siyah",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.kara": {
+		"text": "kara",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n03.r03": {
+		"text": "Bu sözler gerçek anlamda mı, mecaz anlamda mı? Kartları doğru kutuya taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n04.intro": {
+		"text": "Konuşmaları dinle ve sonunu tahmin et. Mevsimlerin içinde küçük bir gezinti yapalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u03.n04.r01": {
+		"text": "Ayşe ile Kaan'ın konuşmasını dinle. Konuşmanın nasıl biteceğini tahmin et.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n04.r01.p1": {
+		"text": "Sabah her yer bembeyaz olmuştu. Ayşe, \"Kaan, haydi kardan adam yapalım!\" dedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n04.r01.p2": {
+		"text": "Kaan, \"Çok isterim ama eldivenlerimi bulamıyorum. Ellerim üşür.\" dedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n04.r01.p3": {
+		"text": "Ayşe, \"Benim iki çift eldivenim var. Birini sana vereyim mi?\" diye sordu.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n04.r01.q1": {
+		"text": "Kaan ne cevap verir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n04.r01.q2": {
+		"text": "Kaan neden dışarı çıkamıyordu?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n04.r01.q3": {
+		"text": "Sence sonra ne olur?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n04.r02": {
+		"text": "Ozan ile annesinin konuşmasını dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n04.r02.p1": {
+		"text": "Ozan, \"Anne, güneş çok sıcak. Denize girebilir miyim?\" diye sordu.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n04.r02.p2": {
+		"text": "Annesi, \"Önce güneş kremini sür ve şapkanı tak. Güneş tenini yakmasın.\" dedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n04.r02.p3": {
+		"text": "Ozan şapkasını aradı ama bulamadı. Annesi çantasına baktı ve gülümsedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n04.r02.q1": {
+		"text": "Annesi ne der?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n04.r02.q2": {
+		"text": "Hikâye hangi mevsimde geçiyor?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n04.r02.q3": {
+		"text": "Annesi Ozan'a önce ne yapmasını söyledi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n04.r03": {
+		"text": "Hangisi kış konuşmasında, hangisi yaz konuşmasındaydı? Kartları kutulara taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.kis_2": {
+		"text": "Kış",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.yaz_2": {
+		"text": "Yaz",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n05.intro": {
+		"text": "Doğanın renkleriyle başlayalım: masmavi gök, yemyeşil orman! Sonra kısaltmalara ve büyük harflere bakalım.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u03.n05.r01": {
+		"text": "Masmavi sözcüğünü hecelerden kur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n05.r01.word": {
+		"text": "masmavi",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n05.r02": {
+		"text": "Yemyeşil sözcüğünü hecelerden kur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n05.r02.word": {
+		"text": "yemyeşil",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n05.r03": {
+		"text": "Kısaltmaya gelen eki okunuşuna göre seç. Her kısaltmayı doğru ekle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.dan": {
+		"text": "'dan",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u03.n05.r04": {
+		"text": "Bu sözcükler büyük harfle başlar. Her sözcüğü türüyle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.kedi_adi": {
+		"text": "Kedi adı",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.pamuk": {
+		"text": "Pamuk",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n01.intro": {
+		"text": "Merhaba! Merak eden ve öğrenen çocukların hikâyelerini dinleyelim.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u04.n01.r01": {
+		"text": "Ela'nın hikâyesini dikkatle dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n01.r01.p1": {
+		"text": "Ela bir masal okuyordu. Masalda \"cesur\" sözcüğünü gördü ama anlamını bilmiyordu.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n01.r01.p2": {
+		"text": "Ablası ona bir sözlük verdi. \"Bilmediğin sözcükleri burada bulabilirsin.\" dedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n01.r01.p3": {
+		"text": "Ela sözlüğü açtı. \"Cesur, korkusuz demekmiş!\" dedi. Sonra masalı keyifle okumaya devam etti.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n01.r01.q1": {
+		"text": "Ela hangi sözcüğün anlamını bilmiyordu?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n01.r01.q2": {
+		"text": "Hikâyenin ana fikri nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n01.r01.q3": {
+		"text": "Ela bir daha bilmediği bir sözcük görünce ne yapar?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n01.r02": {
+		"text": "Kuzey'in hikâyesini dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n01.r02.p1": {
+		"text": "Kuzey denizdeki canlıları çok merak ediyordu. Kütüphaneden kocaman bir ansiklopedi aldı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n01.r02.p2": {
+		"text": "Ansiklopedide ahtapotu okudu. Ahtapotun sekiz kolu ve üç kalbi olduğunu öğrendi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n01.r02.p3": {
+		"text": "Kuzey akşam yemeğinde bunu ailesine anlattı. Herkes çok şaşırdı. Kuzey çok mutlu oldu.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n01.r02.q1": {
+		"text": "Ahtapotun kaç kalbi vardır?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n01.r02.q2": {
+		"text": "Kuzey ansiklopediyi nereden aldı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n01.r02.q3": {
+		"text": "Bu hikâyenin konusu nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n01.r03": {
+		"text": "Hangisi Ela'nın, hangisi Kuzey'in hikâyesindeydi? Kartları doğru kutuya taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.ela": {
+		"text": "Ela",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.kuzey": {
+		"text": "Kuzey",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n02.intro": {
+		"text": "Bilgiye ulaşırken de güzel konuşur, dikkatle dinleriz. Haydi seçelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u04.n02.r01": {
+		"text": "Kütüphanede dinozor kitabı arıyorsun. Görevliye nasıl sorarsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n02.r01.hint": {
+		"text": "Yardım isterken kibar sözcükler kullanırız.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u04.n02.r01.c2": {
+		"text": "Görevli bu sözü kaba buldu. Yardım isterken \"lütfen\" deriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n02.r01.c3": {
+		"text": "Kütüphanedeki herkes irkildi. Burada alçak sesle konuşuruz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n02.r02": {
+		"text": "Gezegenler hakkında bilgi edinmek istiyorsun. Hangisini dinlersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n02.r02.hint": {
+		"text": "Bilgi veren bir program seçmelisin.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u04.n02.r02.c2": {
+		"text": "Fıkra güldürür ama gezegenleri anlatmaz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n02.r02.c3": {
+		"text": "Ninni uyutur ama bilgi vermez.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n02.r03": {
+		"text": "Öğretmenin dinozorları anlatıyor. Yarın bunları sınıfa sen anlatacaksın. Dinlerken ne yaparsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n02.r03.hint": {
+		"text": "Önemli bilgileri unutmamak için yazabilirsin.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u04.n02.r03.c2": {
+		"text": "Anlatılanları kaçırdın. Yarın neyi anlatacağını bilemezsin.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n02.r03.c3": {
+		"text": "Dikkatin dağıldı. Bilgiler aklında kalmadı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n02.r04": {
+		"text": "Arkadaşın \"Penguenler uçar.\" dedi. Sen bunun doğru olmadığını düşünüyorsun. Ona ne dersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n02.r04.hint": {
+		"text": "Farklı düşündüğümüzde de kibar konuşuruz. Doğru bilgiyi birlikte arayabiliriz.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u04.n02.r04.c2": {
+		"text": "Arkadaşın üzüldü. Farklı düşünsek de kırıcı konuşmayız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n02.r04.c3": {
+		"text": "Arkadaşın yanlış bilgiyle kaldı. Nazikçe birlikte araştırabiliriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n03.intro": {
+		"text": "Şimdi sözlüğü anlatan bir metni sessizce oku. Takılırsan hoparlöre dokun.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u04.n03.r01": {
+		"text": "Metni sessizce oku. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n03.r01.p1": {
+		"text": "Sözlük, sözcüklerin anlamlarını bulduğumuz bir kitaptır. İçinde binlerce sözcük vardır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n03.r01.p2": {
+		"text": "Sözlükteki sözcükler alfabetik sıradadır. Bu yüzden aradığımız sözcüğü kolayca buluruz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n03.r01.p3": {
+		"text": "Bilmediğimiz bir sözcüğü sözlükten öğrenince okuduğumuzu daha iyi anlarız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n03.r01.q1": {
+		"text": "Bu metnin başlığı hangisi olabilir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n03.r01.q2": {
+		"text": "Metnin ana fikri nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n03.r01.q3": {
+		"text": "Sözlükteki sözcükler nasıl sıralanır?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n03.r02": {
+		"text": "Zıt anlamlı sözcükleri eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.soru": {
+		"text": "soru",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n03.r03": {
+		"text": "Bu sözler gerçek anlamda mı, mecaz anlamda mı? Kartları doğru kutuya taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n04.intro": {
+		"text": "Merak eden çocukların konuşmalarını dinle. Sonunu sen tahmin et!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u04.n04.r01": {
+		"text": "Selin ile Mete'nin konuşmasını dinle. Konuşmanın nasıl biteceğini tahmin et.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n04.r01.p1": {
+		"text": "Selin, \"Ben yıldızlarla ilgili bir kitap almak istiyorum.\" dedi. Mete, \"Ben de hayvan kitabı.\" dedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n04.r01.p2": {
+		"text": "Görevli, \"Bugün her öğrenci yalnızca bir kitap alabilir.\" dedi. İkisi birbirine baktı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n04.r01.p3": {
+		"text": "Mete, \"Sen yıldız kitabını al, ben hayvan kitabını. Okuyunca değiştirelim mi?\" dedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n04.r01.q1": {
+		"text": "Selin ne cevap verir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n04.r01.q2": {
+		"text": "Her öğrenci kaç kitap alabilir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n04.r01.q3": {
+		"text": "Sence sonunda ne olur?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n04.r02": {
+		"text": "Yusuf ile dedesinin konuşmasını dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n04.r02.p1": {
+		"text": "Yusuf, \"Dede, penguenler kuştur. O zaman uçabilirler mi?\" diye sordu.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n04.r02.p2": {
+		"text": "Dede, \"Güzel bir soru! Gel, ansiklopediye birlikte bakalım.\" dedi ve kitabı getirdi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n04.r02.p3": {
+		"text": "Birlikte okudular. Penguenler uçamıyordu ama çok iyi yüzüyordu. Yusuf çok şaşırdı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n04.r02.q1": {
+		"text": "Yusuf dedesine ne der?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n04.r02.q2": {
+		"text": "Penguenler ne yapabilir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n04.r02.q3": {
+		"text": "Dede soruya cevabı nasıl buldu?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n04.r03": {
+		"text": "Hangisi Selin ile Mete'nin, hangisi Yusuf ile dedesinin konuşmasındaydı? Kartları kutulara taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.selin": {
+		"text": "Selin",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.yusuf": {
+		"text": "Yusuf",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n05.intro": {
+		"text": "Bilgi hazinemiz dopdolu! Pekiştirmeli sözcükleri, kısaltmaları ve büyük harfleri çalışalım.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u04.n05.r01": {
+		"text": "Dopdolu sözcüğünü hecelerden kur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n05.r01.word": {
+		"text": "dopdolu",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n05.r02": {
+		"text": "Upuzun sözcüğünü hecelerden kur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n05.r02.word": {
+		"text": "upuzun",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n05.r03": {
+		"text": "Kısaltmaya gelen eki okunuşuna göre seç. Her kısaltmayı doğru ekle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.trt": {
+		"text": "TRT",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.tan": {
+		"text": "'tan",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u04.n05.r04": {
+		"text": "Bu sözcükler büyük harfle başlar. Her sözcüğü türüyle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n01.intro": {
+		"text": "Merhaba! Herkesin bir yeteneği vardır. Yeteneğini kullanan çocukların hikâyelerini dinleyelim.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u05.n01.r01": {
+		"text": "Defne'nin hikâyesini dikkatle dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n01.r01.p1": {
+		"text": "Defne resim yapmayı çok severdi. Bir gün öğretmeni, sınıfta küçük bir resim sergisi açılacağını söyledi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n01.r01.p2": {
+		"text": "Defne, babaannesinin çiçekli bahçesini çizdi. Renkleri seçerken çok dikkatli davrandı, hiç acele etmedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n01.r01.p3": {
+		"text": "Sergi günü herkes Defne'nin resminin önünde durdu. Defne, emek verdiği resmi beğenilince çok sevindi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n01.r01.q1": {
+		"text": "Defne neyin resmini çizdi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n01.r01.q2": {
+		"text": "Bu hikâyenin ana fikri nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n01.r01.q3": {
+		"text": "Sence Defne sergiden sonra ne yapar?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n01.r02": {
+		"text": "Elif'in hikâyesini dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n01.r02.p1": {
+		"text": "Elif okul konserinde flüt çalacaktı. Konserden önceki günlerde her akşam evde düzenli olarak çalıştı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n01.r02.p2": {
+		"text": "Konser günü sahneye çıkınca Elif çok heyecanlandı. Derin bir nefes aldı ve öğretmenine baktı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n01.r02.p3": {
+		"text": "Öğretmeni ona gülümsedi. Elif sakinleşti ve şarkıyı güzelce çaldı. Herkes onu uzun uzun alkışladı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n01.r02.q1": {
+		"text": "Elif konserde ne çaldı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n01.r02.q2": {
+		"text": "Elif sahneye çıkınca ne hissetti?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n01.r02.q3": {
+		"text": "Elif konserden önce ne yaptı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n01.r03": {
+		"text": "Hangisi Defne'nin, hangisi Elif'in hikâyesindeydi? Her kartı doğru kutuya taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.defne": {
+		"text": "Defne",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n02.intro": {
+		"text": "Konuşurken ve dinlerken duruma uygun davranırız. Haydi, doğru olanı birlikte seçelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u05.n02.r01": {
+		"text": "Sınıfta yeteneğini arkadaşlarına tanıtacaksın. Nasıl konuşmalısın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n02.r01.hint": {
+		"text": "Herkes seni duymalı ve anlamalı. Sesin ve hızın nasıl olmalı?",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u05.n02.r01.c2": {
+		"text": "Arkadaşların söylediklerini kaçırdı. Yavaş ve anlaşılır konuşuruz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n02.r01.c3": {
+		"text": "Arkalarda oturanlar seni duyamadı. Herkesin duyacağı bir sesle konuşuruz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n02.r02": {
+		"text": "Öğretmen kâğıttan kuş yapmayı adım adım gösteriyor. Nasıl dinlersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n02.r02.hint": {
+		"text": "Her adımı görmen ve duyman gerekiyor.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u05.n02.r02.c2": {
+		"text": "Konuşurken bir adımı kaçırdın. Gösterilen işi dikkatle izleyerek dinleriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n02.r02.c3": {
+		"text": "Kuşun nasıl katlandığını göremedin. Gözlerimiz de anlatana bakmalı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n02.r03": {
+		"text": "Müzik öğretmeni konserin gününü ve saatini söylüyor. Unutmamak için ne yaparsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n02.r03.hint": {
+		"text": "Önemli bilgileri unutmamanın bir yolu var.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u05.n02.r03.c2": {
+		"text": "Resim güzel ama günü ve saati yazmadın. Önemli bilgileri not alırız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n02.r03.c3": {
+		"text": "Konserin ne zaman olduğunu öğrenemedin. Duyuruları dikkatle dinleriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n02.r04": {
+		"text": "Arkadaşının resmi istediği gibi olmadı ve üzüldü. Ona ne söylersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n02.r04.hint": {
+		"text": "Üzgün bir arkadaşa cesaret veren sözler söyleriz.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u05.n02.r04.c2": {
+		"text": "Arkadaşın daha çok üzüldü. Kırıcı sözler yerine cesaret veririz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n02.r04.c3": {
+		"text": "Arkadaşın yalnız kaldığını hissetti. Arkadaşımıza ilgiyle ve kibarca konuşuruz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n03.intro": {
+		"text": "Şimdi metinleri sessizce oku. Takılırsan hoparlöre dokunabilirsin.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u05.n03.r01": {
+		"text": "Metni sessizce oku. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n03.r01.p1": {
+		"text": "Bizim sınıfta herkes farklı bir şeyde iyidir. Ayşe çok hızlı koşar, Burak ise çok güzel şarkı söyler.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n03.r01.p2": {
+		"text": "Can bilmeceleri hemen çözer. Öğretmenimiz, herkesin yeteneğinin farklı ve değerli olduğunu söyler.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n03.r01.q1": {
+		"text": "Bu metnin başlığı hangisi olabilir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n03.r01.q2": {
+		"text": "Burak neyi iyi yapar?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n03.r01.q3": {
+		"text": "Metnin ana fikri nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n03.r02": {
+		"text": "Sena'nın hikâyesini sessizce oku. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n03.r02.p1": {
+		"text": "Sena'nın küçük kardeşinin canı sıkılmıştı. Sena, eski çoraplarından iki sevimli kukla yaptı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n03.r02.p2": {
+		"text": "Sonra bir kutuyu sahneye çevirdi ve kuklalarla bir gösteri yaptı. Kardeşi kahkahalarla güldü.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n03.r02.q1": {
+		"text": "Sena kuklaları neyle yaptı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n03.r02.q2": {
+		"text": "Sena neden kukla yaptı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n03.r02.q3": {
+		"text": "Gösteriden önce ne oldu?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n03.r03": {
+		"text": "Eş anlamlı sözcükleri eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n03.r04": {
+		"text": "Sözcükler gerçek anlamda mı, mecaz anlamda mı kullanılmış? Kartları kutulara taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n04.intro": {
+		"text": "Konuşmaları dinle. Sonunda ne olacağını tahmin edebilir misin?",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u05.n04.r01": {
+		"text": "Zehra ile Mert'in konuşmasını dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n04.r01.p1": {
+		"text": "Beden eğitimi dersinde basketbol oynanacaktı. Zehra, \"Ben top sektirmeyi bilmiyorum.\" dedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n04.r01.p2": {
+		"text": "Mert gülümsedi: \"Ben biraz biliyorum. İstersen sana gösterebilirim.\" Zehra, \"Çok iyi olur!\" dedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n04.r01.q1": {
+		"text": "Zehra neyi bilmiyordu?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n04.r01.q2": {
+		"text": "Bu konuşma nasıl sonuçlanır?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n04.r02": {
+		"text": "Selim ile dedesinin konuşmasını dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n04.r02.p1": {
+		"text": "Selim, dedesinin bağlamasına hayranlıkla baktı. \"Dede, bana da bağlama çalmayı öğretir misin?\" dedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n04.r02.p2": {
+		"text": "Dedesi, \"Tabii öğretirim. Ama her gün biraz çalışman gerekir.\" dedi. Selim, \"Söz veriyorum!\" dedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n04.r02.q1": {
+		"text": "Selim dedesinden ne istedi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n04.r02.q2": {
+		"text": "Bu konuşma nasıl sonuçlanır?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n04.r03": {
+		"text": "Hikâyelerdeki nesneleri karşılaştır. Hangisi sporla, hangisi müzikle ilgili? Kartları kutulara taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.spor": {
+		"text": "Spor",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.muzik": {
+		"text": "Müzik",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n05.intro": {
+		"text": "Yazarken kurallara uyarız. Pekiştirmeli sözcükleri, kısaltmaları ve büyük harfleri çalışalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u05.n05.r01": {
+		"text": "Masmavi sözcüğünü hecelerden kur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n05.r01.word": {
+		"text": "masmavi",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n05.r02": {
+		"text": "Kıpkırmızı sözcüğünü hecelerden kur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n05.r02.word": {
+		"text": "kıpkırmızı",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n05.r03": {
+		"text": "Kısaltmalara gelen ek, kısaltmanın okunuşuna uyar ve kesme işaretiyle ayrılır. Her kısaltmayı doğru ekle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u05.n05.r04": {
+		"text": "Bu sözcükler büyük harfle başlar. Her türü örneğiyle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.sinop": {
+		"text": "Sinop",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n01.intro": {
+		"text": "Bilim yolculuğuna hoş geldin! Merak eden ve deneyen çocukların hikâyelerini dinleyelim.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u06.n01.r01": {
+		"text": "Deniz'in deneyini dikkatle dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n01.r01.p1": {
+		"text": "Fen dersinde öğretmen masaya su dolu bir kap koydu. Yanına bir taş, bir mantar ve bir anahtar bıraktı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n01.r01.p2": {
+		"text": "Deniz önce tahmin yaptı, sonra nesneleri tek tek suya attı. Mantar yüzdü, taş ile anahtar dibe battı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n01.r01.p3": {
+		"text": "Deniz, \"Tahminlerimden biri yanlış çıktı ama deneyerek doğrusunu öğrendim.\" dedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n01.r01.q1": {
+		"text": "Hangi nesne suda yüzdü?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n01.r01.q2": {
+		"text": "Deniz nesneleri suya atmadan önce ne yaptı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n01.r01.q3": {
+		"text": "Bu hikâyenin ana fikri nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n01.r02": {
+		"text": "Ela'nın hikâyesini dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n01.r02.p1": {
+		"text": "Ela bahçede dedesinin büyütecini buldu. Büyüteci bir yaprağa tuttu ve küçük bir karınca gördü.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n01.r02.p2": {
+		"text": "Karıncanın bacakları büyüteçte kocaman görünüyordu. Ela, \"Dede, karıncanın kaç bacağı var?\" diye sordu.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n01.r02.p3": {
+		"text": "Dedesi, \"Hadi birlikte sayalım.\" dedi. Birlikte saydılar: tam altı bacak! Ela çok heyecanlandı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n01.r02.q1": {
+		"text": "Ela büyüteçle ne gördü?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n01.r02.q2": {
+		"text": "Karıncanın kaç bacağı var?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n01.r02.q3": {
+		"text": "Hikâyedeki ana duygu nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n01.r03": {
+		"text": "Bu cümleler gerçek mi, hayal mi? Kartları doğru kutuya taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n02.intro": {
+		"text": "Bilim insanları dikkatle dinler ve açıkça anlatır. Sen de doğru olanı seç!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u06.n02.r01": {
+		"text": "Bilim şenliğinde deneyini ziyaretçilere anlatıyorsun. Nasıl konuşmalısın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n02.r01.hint": {
+		"text": "Dinleyenler deneyini anlamak istiyor.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u06.n02.r01.c2": {
+		"text": "Ziyaretçiler rahatsız oldu. Anlatırken sakin bir sesle konuşuruz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n02.r01.c3": {
+		"text": "Ziyaretçiler ne dediğini anlamadı. Açık ve anlaşılır konuşuruz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n02.r02": {
+		"text": "Yarın bilim müzesine gideceksin. Rehbere ne soracağını unutmamak için bugün ne yaparsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n02.r02.hint": {
+		"text": "Merak ettiklerini önceden hazırlayabilirsin.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u06.n02.r02.c2": {
+		"text": "Müzede ne soracağını unuttun. Sorularımızı önceden hazırlarız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n02.r02.c3": {
+		"text": "Dinlenmek iyidir ama sorularını hazırlamadın. Önce bir soru listesi yaparız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n02.r03": {
+		"text": "Bir bilim insanının hayatını öğrenmek istiyorsun. Ne dinlersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n02.r03.hint": {
+		"text": "Bilgi veren bir şey seçmelisin.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u06.n02.r03.c2": {
+		"text": "Ninni insanı uyutur ama bilgi vermez.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n02.r03.c3": {
+		"text": "Tekerleme eğlencelidir ama bir bilim insanını anlatmaz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n02.r04": {
+		"text": "Öğretmen deneyin adımlarını sırayla söylüyor. Adımları unutmamak için ne yaparsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n02.r04.c2": {
+		"text": "Adımları kaçırdın. Dinlerken önemli bilgileri not alırız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n02.r04.c3": {
+		"text": "Konuşurken öğretmeni duyamadın. Önce dinleriz, sonra konuşuruz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n03.intro": {
+		"text": "Şimdi okuma zamanı! Metni sessizce oku. Takılırsan hoparlöre dokunabilirsin.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u06.n03.r01": {
+		"text": "Metni sessizce oku. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n03.r01.p1": {
+		"text": "Yağmurdan sonra güneş açtı. Efe gökyüzünde rengârenk bir yay gördü ve koşarak annesine haber verdi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n03.r01.p2": {
+		"text": "Annesi, \"Güneş ışığı yağmur damlalarından geçince gökkuşağı oluşur.\" dedi. Efe bunu defterine yazdı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n03.r01.q1": {
+		"text": "Bu metnin başlığı hangisi olabilir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n03.r01.q2": {
+		"text": "Gökkuşağı nasıl oluşur?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n03.r01.q3": {
+		"text": "Efe gökkuşağını görünce ne yaptı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n03.r02": {
+		"text": "Zıt anlamlı sözcükleri eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.derin": {
+		"text": "derin",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.sig": {
+		"text": "sığ",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.karanlik": {
+		"text": "karanlık",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.aydinlik": {
+		"text": "aydınlık",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n03.r03": {
+		"text": "Her cümlenin sonuna hangi noktalama işareti gelir? Cümleyi işaretle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.hava_guzel": {
+		"text": "Hava güzel",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.saat_kac": {
+		"text": "Saat kaç",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.yasasin": {
+		"text": "Yaşasın",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n04.intro": {
+		"text": "Konuşmaları dinle. Sonunda ne olacağını tahmin edebilir misin?",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u06.n04.r01": {
+		"text": "Nil ile Kaan'ın konuşmasını dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n04.r01.p1": {
+		"text": "Okulda bilim şenliği yapılacaktı. Nil, \"Deneyimiz için boş bir şişe ve biraz sirke lazım.\" dedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n04.r01.p2": {
+		"text": "Kaan, \"Evde boş bir şişe var. Yarın onu getiririm.\" dedi. Nil, \"Ben de sirkeyi getiririm.\" dedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n04.r01.q1": {
+		"text": "Nil ile Kaan neye hazırlanıyor?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n04.r01.q2": {
+		"text": "Bu konuşma nasıl sonuçlanır?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n04.r02": {
+		"text": "Ada ile babasının konuşmasını dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n04.r02.p1": {
+		"text": "Ada pencereden baktı. \"Baba, Ay geçen hafta yuvarlaktı. Bu akşam neden yarım görünüyor?\" diye sordu.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n04.r02.p2": {
+		"text": "Babası, \"Gel, her akşam Ay'ı gözleyip çizelim. Ne değiştiğini birlikte görürüz.\" dedi. Ada çok sevindi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n04.r02.q1": {
+		"text": "Ada neyi merak etti?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n04.r02.q2": {
+		"text": "Bu konuşma nasıl sonuçlanır?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n04.r03": {
+		"text": "Hikâyeleri karşılaştır. Hangisi Kaan'ın, hangisi Ada'nın hikâyesindeydi? Kartları kutulara taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.kaan": {
+		"text": "Kaan",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.ada": {
+		"text": "Ada",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n05.intro": {
+		"text": "Yazarken kurallara uyarız. Pekiştirmeli sözcükleri, kısaltmaları ve büyük harfleri çalışalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u06.n05.r01": {
+		"text": "Tertemiz sözcüğünü hecelerden kur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n05.r01.word": {
+		"text": "tertemiz",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n05.r02": {
+		"text": "Apaçık sözcüğünü hecelerden kur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n05.r02.word": {
+		"text": "apaçık",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n05.r03": {
+		"text": "Kısaltmalara gelen ek, kısaltmanın okunuşuna uyar ve kesme işaretiyle ayrılır. Her kısaltmayı doğru ekle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u06.n05.r04": {
+		"text": "Bu sözcükler büyük harfle başlar. Her türü örneğiyle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.cahit": {
+		"text": "Cahit",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n01.intro": {
+		"text": "Merhaba! Güzel geleneklerimizi anlatan hikâyeleri dinleyelim.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u07.n01.r01": {
+		"text": "Aslı'nın bayram gününü dikkatle dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n01.r01.p1": {
+		"text": "Bayram sabahı Aslı erkenden uyandı. Yeni kıyafetlerini giydi ve ailesiyle dedesinin evine gitti.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n01.r01.p2": {
+		"text": "Aslı, dedesinin ve babaannesinin elini öptü. Babaannesi ona sarıldı ve bir avuç şeker verdi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n01.r01.p3": {
+		"text": "Öğleden sonra komşuları da bayramlaşmaya geldi. Aslı misafirlere şeker ikram etti. Ev neşeyle doldu.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n01.r01.q1": {
+		"text": "Aslı bayram sabahı nereye gitti?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n01.r01.q2": {
+		"text": "Bu hikâyenin konusu nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n01.r01.q3": {
+		"text": "Aslı misafirlere ne ikram etti?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n01.r02": {
+		"text": "Murat'ın ninesini anlatan hikâyeyi dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n01.r02.p1": {
+		"text": "Murat'ın ninesi tezgâhta halı dokurdu. Renkli ipleri tek tek düğümler, güzel desenler yapardı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n01.r02.p2": {
+		"text": "Ninesi, \"Bu sanatı ben de annemden öğrendim.\" dedi. Murat, \"Ben de öğrenip yaşatacağım.\" dedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n01.r02.q1": {
+		"text": "Murat'ın ninesi ne yapıyordu?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n01.r02.q2": {
+		"text": "Ninesi bu sanatı kimden öğrenmiş?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n01.r02.q3": {
+		"text": "Bu hikâyenin ana fikri nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n01.r03": {
+		"text": "Hangisi Aslı'nın, hangisi Murat'ın hikâyesindeydi? Her kartı doğru kutuya taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.asli": {
+		"text": "Aslı",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.murat": {
+		"text": "Murat",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n02.intro": {
+		"text": "Misafirimize ve büyüklerimize nasıl konuşuruz? Haydi, doğru olanı seçelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u07.n02.r01": {
+		"text": "Kapı çaldı. Annenle birlikte kapıyı açtın, misafirler geldi. Onlara ne dersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n02.r01.hint": {
+		"text": "Misafirlerimizi güler yüzle ve kibar sözlerle karşılarız.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u07.n02.r01.c2": {
+		"text": "Misafirler biraz şaşırdı. Onları güler yüzle karşılarız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n02.r01.c3": {
+		"text": "Misafirler hoş karşılanmadıklarını düşündü. Onlara \"Hoş geldiniz.\" deriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n02.r02": {
+		"text": "Bayramda uzakta yaşayan dedeni telefonla arıyorsun. Ne dersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n02.r02.hint": {
+		"text": "Büyüklerimizle saygılı konuşur, bayramlarını kutlarız.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u07.n02.r02.c2": {
+		"text": "Dedeni sevindirmek için daha saygılı sözler seçebilirsin.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n02.r02.c3": {
+		"text": "Dede bayramın kutlanmasını bekliyordu. Önce bayramını kutlarız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n02.r03": {
+		"text": "Öğretmen bir Nasreddin Hoca fıkrası anlatacak. Fıkrayı akşam ailene anlatmak istiyorsun. Nasıl dinlersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n02.r03.hint": {
+		"text": "Sonra anlatabilmek için her şeyi iyi duymalısın.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u07.n02.r03.c2": {
+		"text": "Fıkranın sonunu kaçırdın. Anlatılanı dikkatle dinleriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n02.r03.c3": {
+		"text": "Dikkatin dağıldı ve fıkrayı hatırlayamadın. Dinlerken anlatana odaklanırız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n02.r04": {
+		"text": "Ebru atölyesinde usta, gereken malzemeleri tek tek sayıyor. Unutmamak için ne yaparsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n02.r04.c2": {
+		"text": "Malzemelerin adlarını kaçırdın. Önemli bilgileri not alırız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n02.r04.c3": {
+		"text": "Ustanın anlattıklarını duyamadın. Anlatılanı sonuna kadar dinleriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n03.intro": {
+		"text": "Şimdi bir Nasreddin Hoca fıkrası okuyalım. Metni sessizce oku. Takılırsan hoparlöre dokunabilirsin.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u07.n03.r01": {
+		"text": "Fıkrayı sessizce oku. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n03.r01.p1": {
+		"text": "Nasreddin Hoca bir düğüne eski giysileriyle gitti. Kimse ona yer göstermedi, onunla ilgilenmedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n03.r01.p2": {
+		"text": "Hoca eve dönüp güzel bir kürk giydi. Düğüne geri gelince herkes onu başköşeye oturttu.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n03.r01.p3": {
+		"text": "Yemek gelince Hoca kürkünün yenini çorbaya uzattı. \"Ye kürküm ye!\" dedi. Herkes hatasını anladı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n03.r01.q1": {
+		"text": "Bu fıkranın başlığı hangisi olabilir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n03.r01.q2": {
+		"text": "Hoca kürk giyince ne oldu?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n03.r01.q3": {
+		"text": "Fıkranın ana fikri nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n03.r02": {
+		"text": "Eş anlamlı sözcükleri eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.misafir": {
+		"text": "misafir",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.konuk": {
+		"text": "konuk",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.kent": {
+		"text": "kent",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.sehir": {
+		"text": "şehir",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.ihtiyar": {
+		"text": "ihtiyar",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n03.r03": {
+		"text": "Sözcükler gerçek anlamda mı, mecaz anlamda mı kullanılmış? Kartları kutulara taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n04.intro": {
+		"text": "Konuşmaları dinle. Sonunda ne olacağını tahmin edebilir misin?",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u07.n04.r01": {
+		"text": "Zeynep ile annesinin konuşmasını dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n04.r01.p1": {
+		"text": "Zeynep'lere komşuları Gül Teyze geldi. Annesi, \"Zeynep, misafirimize lokum ikram eder misin?\" dedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n04.r01.p2": {
+		"text": "Zeynep, \"Tabii anneciğim, tabağı hemen hazırlarım.\" dedi. Gül Teyze, \"Ne kadar nazik bir kızsın!\" dedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n04.r01.q1": {
+		"text": "Zeynep'lere kim geldi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n04.r01.q2": {
+		"text": "Bu konuşma nasıl sonuçlanır?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n04.r02": {
+		"text": "Nehir ile ebru ustasının konuşmasını dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n04.r02.p1": {
+		"text": "Nehir bir ebru atölyesine gitti. Ustaya, \"Boyalar suyun üstünde nasıl duruyor?\" diye sordu.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n04.r02.p2": {
+		"text": "Usta, \"Suyu kitre ile koyulaştırırız. İstersen sen de dene.\" dedi. Nehir fırçayı heyecanla aldı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n04.r02.q1": {
+		"text": "Nehir nereye gitti?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n04.r02.q2": {
+		"text": "Bu konuşma nasıl sonuçlanır?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n04.r03": {
+		"text": "Hikâyeleri karşılaştır. Hangisi Zeynep'in, hangisi Nehir'in hikâyesindeydi? Kartları kutulara taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.nehir_2": {
+		"text": "Nehir",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n05.intro": {
+		"text": "Yazarken kurallara uyarız. Pekiştirmeli sözcükleri, kısaltmaları ve büyük harfleri çalışalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u07.n05.r01": {
+		"text": "Yemyeşil sözcüğünü hecelerden kur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n05.r01.word": {
+		"text": "yemyeşil",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n05.r02": {
+		"text": "Sımsıcak sözcüğünü hecelerden kur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n05.r02.word": {
+		"text": "sımsıcak",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n05.r03": {
+		"text": "Kısaltmalara gelen ek, kısaltmanın okunuşuna uyar ve kesme işaretiyle ayrılır. Her kısaltmayı doğru ekle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u07.n05.r04": {
+		"text": "Bu sözcükler büyük harfle başlar. Her türü örneğiyle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.bayram_adi": {
+		"text": "Bayram adı",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.kurban_bayrami": {
+		"text": "Kurban Bayramı",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n01.intro": {
+		"text": "Merhaba! Haklarımız da sorumluluklarımız da var. Bunları anlatan hikâyeleri dinleyelim.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u08.n01.r01": {
+		"text": "Barış'ın cumartesi gününü dikkatle dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n01.r01.p1": {
+		"text": "Barış cumartesi sabahı önce ödevlerini bitirdi. Sonra odasını topladı ve saksıdaki çiçekleri suladı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n01.r01.p2": {
+		"text": "Öğleden sonra annesiyle parka gitti. Arkadaşlarıyla saklambaç oynadı, salıncakta sallandı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n01.r01.p3": {
+		"text": "Annesi, \"Sorumluluklarını yerine getirdin. Oyun oynamak da senin hakkın.\" dedi. Barış gülümsedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n01.r01.q1": {
+		"text": "Barış parka gitmeden önce ne yaptı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n01.r01.q2": {
+		"text": "Annesine göre oyun oynamak nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n01.r01.q3": {
+		"text": "Bu hikâyenin ana fikri nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n01.r02": {
+		"text": "Ece'nin hikâyesini dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n01.r02.p1": {
+		"text": "Ece bir sabah ateşlenince babası onu hemen doktora götürdü. Doktor, Ece'yi dikkatle muayene etti.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n01.r02.p2": {
+		"text": "Doktor, \"İlaçlarını zamanında iç ve bol bol dinlen.\" dedi. Ece, doktorun söylediklerini yaptı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n01.r02.p3": {
+		"text": "Birkaç gün sonra Ece iyileşti. Okula dönünce arkadaşları onu sevinçle karşıladı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n01.r02.q1": {
+		"text": "Babası Ece'yi nereye götürdü?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n01.r02.q2": {
+		"text": "Ece iyileşmek için ne yaptı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n01.r02.q3": {
+		"text": "Bu hikâyenin konusu nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n01.r03": {
+		"text": "Hangisi hakkımız, hangisi görevimiz? Kartları doğru kutuya taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n02.intro": {
+		"text": "Konuşurken ve dinlerken kurallara uyarız. Haydi, doğru olanı birlikte seçelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u08.n02.r01": {
+		"text": "Sınıf başkanı seçimi için arkadaşlarına konuşma yapacaksın. Nasıl konuşmalısın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n02.r01.hint": {
+		"text": "Arkadaşlarına saygı duyduğunu gösteren bir konuşma seç.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u08.n02.r01.c2": {
+		"text": "Arkadaşların rahatsız oldu. Konuşurken sesimizi ayarlarız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n02.r01.c3": {
+		"text": "Diğer adaylar üzüldü. Kimseyi kötülemeden kendi fikirlerimizi anlatırız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n02.r02": {
+		"text": "Sınıf toplantısında Ada konuşurken Kerem sürekli onun sözünü kesiyor. Bu konuşmadaki hata nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n02.r02.hint": {
+		"text": "Biri konuşurken ne yapmamız gerekir? Bir düşün.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u08.n02.r02.c2": {
+		"text": "Kibar olmak güzeldir. Buradaki sorun, Ada'nın sözünün kesilmesi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n02.r02.c3": {
+		"text": "Kerem sessiz durmadı. Sorun, Ada'nın sözünün kesilmesi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n02.r03": {
+		"text": "Sınıfınıza bir itfaiyeci konuk gelecek. O gelmeden önce ne yaparsın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n02.r03.hint": {
+		"text": "Merak ettiklerini önceden hazırlayabilirsin.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u08.n02.r03.c2": {
+		"text": "İtfaiyeci gelince ne soracağını bilemedin. Sorularımızı önceden hazırlarız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n02.r03.c3": {
+		"text": "Konuğu kaçırdın. Konuğu dinlemek için hazırlıklı oluruz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n02.r04": {
+		"text": "Okulda çocuk hakları üzerine bir söyleşi var. Bu söyleşiyi neden dinlersin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n02.r04.hint": {
+		"text": "Söyleşilerde konuşan kişi bize bir konuyu anlatır.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u08.n02.r04.c2": {
+		"text": "Söyleşiyi kaçırdın. Söyleşileri bilgi almak için dinleriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n02.r04.c3": {
+		"text": "Söyleşi dans etmek için değil. Bir konuyu öğrenmek için dinleriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n03.intro": {
+		"text": "Şimdi okuma zamanı! Metinleri sessizce oku. Takılırsan hoparlöre dokunabilirsin.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u08.n03.r01": {
+		"text": "Metni sessizce oku. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n03.r01.p1": {
+		"text": "Teneffüste Sude, okul bahçesinde yerlere atılmış kâğıtlar gördü. Bunu sınıf arkadaşlarına anlattı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n03.r01.p2": {
+		"text": "Sınıfça bahçeyi temizlediler. Sonra kâğıt ve plastik için ayrı kutular koyup üstlerine resim çizdiler.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n03.r01.q1": {
+		"text": "Bu metnin başlığı hangisi olabilir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n03.r01.q2": {
+		"text": "Sınıf neden ayrı kutular koydu?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n03.r01.q3": {
+		"text": "Sence bundan sonra bahçe nasıl olur?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n03.r02": {
+		"text": "Metni sessizce oku. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n03.r02.p1": {
+		"text": "Evimizde herkesin bir görevi var. Babam yemek yapar, annem çamaşırları yıkar, ablam bulaşıkları yerleştirir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n03.r02.p2": {
+		"text": "Ben de her akşam sofrayı kurarım ve kedimizin mamasını veririm. Birlikte çalışınca işler çabuk biter.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n03.r02.q1": {
+		"text": "Metindeki çocuğun görevi nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n03.r02.q2": {
+		"text": "Metnin ana fikri nedir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n03.r03": {
+		"text": "Zıt anlamlı sözcükleri eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n03.r04": {
+		"text": "Her cümlenin sonuna hangi noktalama işareti gelir? Cümleyi işaretle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.bahce_temiz_mi": {
+		"text": "Bahçe temiz mi",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.eyvah": {
+		"text": "Eyvah",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.copler_kutuda": {
+		"text": "Çöpler kutuda",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n04.intro": {
+		"text": "Konuşmaları dinle. Sonunda ne olacağını tahmin edebilir misin?",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u08.n04.r01": {
+		"text": "Emre ile öğretmeninin konuşmasını dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n04.r01.p1": {
+		"text": "Emre öğretmenine, \"Okul bahçemiz çok boş. Oraya fidan diksek nasıl olur?\" diye sordu.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n04.r01.p2": {
+		"text": "Öğretmeni, \"Harika bir fikir! Her sınıf bir fidan dikip ona bakabilir.\" dedi. Emre çok sevindi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n04.r01.q1": {
+		"text": "Emre neyi önerdi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n04.r01.q2": {
+		"text": "Bu konuşma nasıl sonuçlanır?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n04.r02": {
+		"text": "Yusuf ile kütüphane görevlisinin konuşmasını dinle. Sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n04.r02.p1": {
+		"text": "Yusuf kütüphaneye gitti. Görevliye, \"Aldığım kitabı getirmeyi unuttum, özür dilerim.\" dedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n04.r02.p2": {
+		"text": "Görevli, \"Önemli değil ama başka çocuklar da onu okumak istiyor.\" dedi. Yusuf, \"Yarın getiririm.\" dedi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n04.r02.q1": {
+		"text": "Yusuf neyi unutmuştu?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n04.r02.q2": {
+		"text": "Bu konuşma nasıl sonuçlanır?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n04.r03": {
+		"text": "Hikâyeleri karşılaştır. Hangisi Emre'nin, hangisi Yusuf'un hikâyesindeydi? Kartları kutulara taşı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.emre": {
+		"text": "Emre",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n05.intro": {
+		"text": "Yazarken kurallara uyarız. Pekiştirmeli sözcükleri, kısaltmaları ve büyük harfleri çalışalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.turkce.u08.n05.r01": {
+		"text": "Sapasağlam sözcüğünü hecelerden kur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n05.r01.word": {
+		"text": "sapasağlam",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n05.r02": {
+		"text": "Yepyeni sözcüğünü hecelerden kur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n05.r02.word": {
+		"text": "yepyeni",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n05.r03": {
+		"text": "Kısaltmalara gelen ek, kısaltmanın okunuşuna uyar ve kesme işaretiyle ayrılır. Her kısaltmayı doğru ekle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.turkce.u08.n05.r04": {
+		"text": "Bu sözcükler büyük harfle başlar. Her türü örneğiyle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.rize": {
+		"text": "Rize",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.misir": {
+		"text": "Mısır",
+		"speaker": "ANLATICI"
 	}
 }

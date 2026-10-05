@@ -1,0 +1,1016 @@
+{
+	"id": "g3.turkce.u03",
+	"grade": 3,
+	"subject": "turkce",
+	"title_key": "unit.g3.turkce.u03",
+	"source": {
+		"program": "TYMM İlkokul Türkçe (1–4)",
+		"doc": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1, 2, 3, 4, 5, 6, 7 ve 8. Sınıflar)",
+		"file": "docs/curriculum/sources/tymm-ilkokul-turkce.pdf",
+		"page": 123,
+		"theme": "3. TEMA: DOĞAYI TANIYORUZ",
+		"theme_id": "g3.turkce.t03"
+	},
+	"nodes": [
+		{
+			"id": "g3.turkce.u03.n01",
+			"outcomes": [
+				"T.D.3.3",
+				"T.D.3.2"
+			],
+			"title_key": "node.g3.turkce.u03.n01",
+			"intro_voice": "vo.g3.turkce.u03.n01.intro",
+			"sticker": "st.turkce.g3_sincap",
+			"rounds": [
+				{
+					"template": "story",
+					"difficulty": 1,
+					"voice": "vo.g3.turkce.u03.n01.r01",
+					"params": {
+						"read": "listen",
+						"pages": [
+							{
+								"text": "story.g3.turkce.u03.n01.r01.p1",
+								"voice": "vo.g3.turkce.u03.n01.r01.p1",
+								"image": "item.hikaye.g3_sincap_findik"
+							},
+							{
+								"text": "story.g3.turkce.u03.n01.r01.p2",
+								"voice": "vo.g3.turkce.u03.n01.r01.p2",
+								"image": "item.hikaye.g3_sincap_findik"
+							},
+							{
+								"text": "story.g3.turkce.u03.n01.r01.p3",
+								"voice": "vo.g3.turkce.u03.n01.r01.p3",
+								"image": "item.hikaye.g3_sincap_findik"
+							}
+						],
+						"questions": [
+							{
+								"voice": "vo.g3.turkce.u03.n01.r01.q1",
+								"text": "story.g3.turkce.u03.n01.r01.q1",
+								"options": [
+									{
+										"type": "text",
+										"value": "tk.sonbaharda"
+									},
+									{
+										"type": "text",
+										"value": "tk.yazin"
+									},
+									{
+										"type": "text",
+										"value": "tk.ilkbaharda"
+									}
+								],
+								"answer": 0,
+								"page": 0
+							},
+							{
+								"voice": "vo.g3.turkce.u03.n01.r01.q2",
+								"text": "story.g3.turkce.u03.n01.r01.q2",
+								"options": [
+									{
+										"type": "text",
+										"value": "tk.agacin_kovuguna"
+									},
+									{
+										"type": "text",
+										"value": "tk.tasin_altina"
+									},
+									{
+										"type": "text",
+										"value": "tk.gole"
+									}
+								],
+								"answer": 0,
+								"page": 1
+							},
+							{
+								"voice": "vo.g3.turkce.u03.n01.r01.q3",
+								"text": "story.g3.turkce.u03.n01.r01.q3",
+								"options": [
+									{
+										"type": "text",
+										"value": "tk.sakladigi_findiklari_yer"
+									},
+									{
+										"type": "text",
+										"value": "tk.denize_gider"
+									},
+									{
+										"type": "text",
+										"value": "tk.yeni_ev_arar"
+									}
+								],
+								"answer": 0
+							}
+						]
+					}
+				},
+				{
+					"template": "story",
+					"difficulty": 2,
+					"voice": "vo.g3.turkce.u03.n01.r02",
+					"params": {
+						"read": "listen",
+						"pages": [
+							{
+								"text": "story.g3.turkce.u03.n01.r02.p1",
+								"voice": "vo.g3.turkce.u03.n01.r02.p1",
+								"image": "item.hikaye.g3_damla_yolculuk"
+							},
+							{
+								"text": "story.g3.turkce.u03.n01.r02.p2",
+								"voice": "vo.g3.turkce.u03.n01.r02.p2",
+								"image": "item.hikaye.g3_damla_yolculuk"
+							},
+							{
+								"text": "story.g3.turkce.u03.n01.r02.p3",
+								"voice": "vo.g3.turkce.u03.n01.r02.p3",
+								"image": "item.hikaye.g3_damla_yolculuk"
+							}
+						],
+						"questions": [
+							{
+								"voice": "vo.g3.turkce.u03.n01.r02.q1",
+								"text": "story.g3.turkce.u03.n01.r02.q1",
+								"options": [
+									{
+										"type": "text",
+										"value": "tk.gunes_isitti"
+									},
+									{
+										"type": "text",
+										"value": "tk.ruzgar_esti"
+									},
+									{
+										"type": "text",
+										"value": "tk.kar_yagdi"
+									}
+								],
+								"answer": 0,
+								"page": 0
+							},
+							{
+								"voice": "vo.g3.turkce.u03.n01.r02.q2",
+								"text": "story.g3.turkce.u03.n01.r02.q2",
+								"options": [
+									{
+										"type": "text",
+										"value": "tk.suyun_yolculugu"
+									},
+									{
+										"type": "text",
+										"value": "tk.bir_baligin_evi"
+									},
+									{
+										"type": "text",
+										"value": "tk.denizde_tatil_2"
+									}
+								],
+								"answer": 0
+							},
+							{
+								"voice": "vo.g3.turkce.u03.n01.r02.q3",
+								"text": "story.g3.turkce.u03.n01.r02.q3",
+								"options": [
+									{
+										"type": "text",
+										"value": "tk.yagmur_olup_yagdi"
+									},
+									{
+										"type": "text",
+										"value": "tk.tas_oldu"
+									},
+									{
+										"type": "text",
+										"value": "tk.uyudu"
+									}
+								],
+								"answer": 0,
+								"page": 2
+							}
+						]
+					}
+				},
+				{
+					"template": "sort_bins",
+					"difficulty": 2,
+					"voice": "vo.g3.turkce.u03.n01.r03",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "text",
+									"value": "tk.gercek",
+									"voice": "vo.tk.gercek"
+								},
+								"shape": "square"
+							},
+							{
+								"label": {
+									"type": "text",
+									"value": "tk.hayal",
+									"voice": "vo.tk.hayal"
+								},
+								"shape": "star"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.yagmur_yagar"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.kar_erir"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.yaprak_sararir"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.damla_konusur"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.bulut_guler"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.agac_yurur"
+								},
+								"bin": 1
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g3.turkce.u03.n02",
+			"outcomes": [
+				"T.K.3.1",
+				"T.D.3.1",
+				"T.K.3.5"
+			],
+			"title_key": "node.g3.turkce.u03.n02",
+			"intro_voice": "vo.g3.turkce.u03.n02.intro",
+			"sticker": "st.turkce.g3_durbun",
+			"rounds": [
+				{
+					"template": "scenario",
+					"difficulty": 2,
+					"voice": "vo.g3.turkce.u03.n02.r01",
+					"params": {
+						"scene": "item.durum.g3_piknik_cop",
+						"hint": "vo.g3.turkce.u03.n02.r01.hint",
+						"choices": [
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.birlikte_toplayalim"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.cok_pissin"
+								},
+								"correct": false,
+								"result_voice": "vo.g3.turkce.u03.n02.r01.c2"
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.bana_ne"
+								},
+								"correct": false,
+								"result_voice": "vo.g3.turkce.u03.n02.r01.c3"
+							}
+						]
+					}
+				},
+				{
+					"template": "scenario",
+					"difficulty": 2,
+					"voice": "vo.g3.turkce.u03.n02.r02",
+					"params": {
+						"scene": "item.durum.g3_ari_belgesel",
+						"hint": "vo.g3.turkce.u03.n02.r02.hint",
+						"choices": [
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.ari_belgeseli"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.ninni"
+								},
+								"correct": false,
+								"result_voice": "vo.g3.turkce.u03.n02.r02.c2"
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.bilmece"
+								},
+								"correct": false,
+								"result_voice": "vo.g3.turkce.u03.n02.r02.c3"
+							}
+						]
+					}
+				},
+				{
+					"template": "scenario",
+					"difficulty": 2,
+					"voice": "vo.g3.turkce.u03.n02.r03",
+					"params": {
+						"scene": "item.durum.g3_kus_sesi",
+						"hint": "vo.g3.turkce.u03.n02.r03.hint",
+						"choices": [
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.sessizce_dinlerim"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.sarki_soylerim"
+								},
+								"correct": false,
+								"result_voice": "vo.g3.turkce.u03.n02.r03.c2"
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.kosup_oynarim"
+								},
+								"correct": false,
+								"result_voice": "vo.g3.turkce.u03.n02.r03.c3"
+							}
+						]
+					}
+				},
+				{
+					"template": "scenario",
+					"difficulty": 3,
+					"voice": "vo.g3.turkce.u03.n02.r04",
+					"params": {
+						"scene": "item.durum.g3_soz_kesme",
+						"hint": "vo.g3.turkce.u03.n02.r04.hint",
+						"choices": [
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.soz_kesmek"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.soru_sormak"
+								},
+								"correct": false,
+								"result_voice": "vo.g3.turkce.u03.n02.r04.c2"
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.dinlemek"
+								},
+								"correct": false,
+								"result_voice": "vo.g3.turkce.u03.n02.r04.c3"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g3.turkce.u03.n03",
+			"outcomes": [
+				"T.O.3.3",
+				"T.O.3.2",
+				"T.O.3.1"
+			],
+			"title_key": "node.g3.turkce.u03.n03",
+			"intro_voice": "vo.g3.turkce.u03.n03.intro",
+			"sticker": "st.turkce.g3_ari",
+			"rounds": [
+				{
+					"template": "story",
+					"difficulty": 2,
+					"voice": "vo.g3.turkce.u03.n03.r01",
+					"params": {
+						"read": "silent",
+						"pages": [
+							{
+								"text": "story.g3.turkce.u03.n03.r01.p1",
+								"voice": "vo.g3.turkce.u03.n03.r01.p1",
+								"image": "item.hikaye.g3_ari_cicek"
+							},
+							{
+								"text": "story.g3.turkce.u03.n03.r01.p2",
+								"voice": "vo.g3.turkce.u03.n03.r01.p2",
+								"image": "item.hikaye.g3_ari_cicek"
+							},
+							{
+								"text": "story.g3.turkce.u03.n03.r01.p3",
+								"voice": "vo.g3.turkce.u03.n03.r01.p3",
+								"image": "item.hikaye.g3_ari_cicek"
+							}
+						],
+						"questions": [
+							{
+								"voice": "vo.g3.turkce.u03.n03.r01.q1",
+								"text": "story.g3.turkce.u03.n03.r01.q1",
+								"options": [
+									{
+										"type": "text",
+										"value": "tk.caliskan_arilar"
+									},
+									{
+										"type": "text",
+										"value": "tk.kisin_kar_yagar"
+									},
+									{
+										"type": "text",
+										"value": "tk.denizdeki_balik"
+									}
+								],
+								"answer": 0
+							},
+							{
+								"voice": "vo.g3.turkce.u03.n03.r01.q2",
+								"text": "story.g3.turkce.u03.n03.r01.q2",
+								"options": [
+									{
+										"type": "text",
+										"value": "tk.arilar_doga_icin_onemlidir"
+									},
+									{
+										"type": "text",
+										"value": "tk.arilar_cok_uyur"
+									},
+									{
+										"type": "text",
+										"value": "tk.cicekler_ucar"
+									}
+								],
+								"answer": 0
+							},
+							{
+								"voice": "vo.g3.turkce.u03.n03.r01.q3",
+								"text": "story.g3.turkce.u03.n03.r01.q3",
+								"options": [
+									{
+										"type": "text",
+										"value": "tk.meyve_yetismezdi"
+									},
+									{
+										"type": "text",
+										"value": "tk.kar_yagmazdi"
+									},
+									{
+										"type": "text",
+										"value": "tk.deniz_kururdu"
+									}
+								],
+								"answer": 0,
+								"page": 2
+							}
+						]
+					}
+				},
+				{
+					"template": "drag_match",
+					"difficulty": 2,
+					"voice": "vo.g3.turkce.u03.n03.r02",
+					"params": {
+						"read": "silent",
+						"pairs": [
+							{
+								"left": {
+									"type": "text",
+									"value": "tk.doga",
+									"voice": "vo.tk.doga"
+								},
+								"right": {
+									"type": "text",
+									"value": "tk.tabiat",
+									"voice": "vo.tk.tabiat"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "tk.irmak",
+									"voice": "vo.tk.irmak"
+								},
+								"right": {
+									"type": "text",
+									"value": "tk.nehir",
+									"voice": "vo.tk.nehir"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "tk.siyah",
+									"voice": "vo.tk.siyah"
+								},
+								"right": {
+									"type": "text",
+									"value": "tk.kara",
+									"voice": "vo.tk.kara"
+								}
+							}
+						]
+					}
+				},
+				{
+					"template": "sort_bins",
+					"difficulty": 3,
+					"voice": "vo.g3.turkce.u03.n03.r03",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "text",
+									"value": "tk.gercek",
+									"voice": "vo.tk.gercek"
+								},
+								"shape": "square"
+							},
+							{
+								"label": {
+									"type": "text",
+									"value": "tk.mecaz",
+									"voice": "vo.tk.mecaz"
+								},
+								"shape": "diamond"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.soguk_su"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.tatli_elma"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.tas_duvar"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.soguk_bakis"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.tatli_soz"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.tas_kalp"
+								},
+								"bin": 1
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g3.turkce.u03.n04",
+			"outcomes": [
+				"T.K.3.2"
+			],
+			"title_key": "node.g3.turkce.u03.n04",
+			"intro_voice": "vo.g3.turkce.u03.n04.intro",
+			"sticker": "st.turkce.g3_kardan_adam",
+			"rounds": [
+				{
+					"template": "story",
+					"difficulty": 2,
+					"voice": "vo.g3.turkce.u03.n04.r01",
+					"params": {
+						"read": "listen",
+						"pages": [
+							{
+								"text": "story.g3.turkce.u03.n04.r01.p1",
+								"voice": "vo.g3.turkce.u03.n04.r01.p1",
+								"image": "item.hikaye.g3_kar_bahce"
+							},
+							{
+								"text": "story.g3.turkce.u03.n04.r01.p2",
+								"voice": "vo.g3.turkce.u03.n04.r01.p2",
+								"image": "item.hikaye.g3_kar_bahce"
+							},
+							{
+								"text": "story.g3.turkce.u03.n04.r01.p3",
+								"voice": "vo.g3.turkce.u03.n04.r01.p3",
+								"image": "item.hikaye.g3_kar_bahce"
+							}
+						],
+						"questions": [
+							{
+								"voice": "vo.g3.turkce.u03.n04.r01.q1",
+								"text": "story.g3.turkce.u03.n04.r01.q1",
+								"options": [
+									{
+										"type": "text",
+										"value": "tk.tesekkurler_olur"
+									},
+									{
+										"type": "text",
+										"value": "tk.kar_sevmem"
+									},
+									{
+										"type": "text",
+										"value": "tk.hayir_eve_gidiyorum"
+									}
+								],
+								"answer": 0
+							},
+							{
+								"voice": "vo.g3.turkce.u03.n04.r01.q2",
+								"text": "story.g3.turkce.u03.n04.r01.q2",
+								"options": [
+									{
+										"type": "text",
+										"value": "tk.eldiveni_yoktu"
+									},
+									{
+										"type": "text",
+										"value": "tk.hastaydi"
+									},
+									{
+										"type": "text",
+										"value": "tk.uykusu_vardi"
+									}
+								],
+								"answer": 0,
+								"page": 1
+							},
+							{
+								"voice": "vo.g3.turkce.u03.n04.r01.q3",
+								"text": "story.g3.turkce.u03.n04.r01.q3",
+								"options": [
+									{
+										"type": "text",
+										"value": "tk.kardan_adam_yaparlar"
+									},
+									{
+										"type": "text",
+										"value": "tk.yuzmeye_giderler"
+									},
+									{
+										"type": "text",
+										"value": "tk.cicek_dikerler"
+									}
+								],
+								"answer": 0
+							}
+						]
+					}
+				},
+				{
+					"template": "story",
+					"difficulty": 3,
+					"voice": "vo.g3.turkce.u03.n04.r02",
+					"params": {
+						"read": "listen",
+						"pages": [
+							{
+								"text": "story.g3.turkce.u03.n04.r02.p1",
+								"voice": "vo.g3.turkce.u03.n04.r02.p1",
+								"image": "item.hikaye.g3_yaz_sahil"
+							},
+							{
+								"text": "story.g3.turkce.u03.n04.r02.p2",
+								"voice": "vo.g3.turkce.u03.n04.r02.p2",
+								"image": "item.hikaye.g3_yaz_sahil"
+							},
+							{
+								"text": "story.g3.turkce.u03.n04.r02.p3",
+								"voice": "vo.g3.turkce.u03.n04.r02.p3",
+								"image": "item.hikaye.g3_yaz_sahil"
+							}
+						],
+						"questions": [
+							{
+								"voice": "vo.g3.turkce.u03.n04.r02.q1",
+								"text": "story.g3.turkce.u03.n04.r02.q1",
+								"options": [
+									{
+										"type": "text",
+										"value": "tk.sapkan_burada"
+									},
+									{
+										"type": "text",
+										"value": "tk.denize_girme"
+									},
+									{
+										"type": "text",
+										"value": "tk.eve_gidelim"
+									}
+								],
+								"answer": 0
+							},
+							{
+								"voice": "vo.g3.turkce.u03.n04.r02.q2",
+								"text": "story.g3.turkce.u03.n04.r02.q2",
+								"options": [
+									{
+										"type": "text",
+										"value": "tk.yazin"
+									},
+									{
+										"type": "text",
+										"value": "tk.kisin"
+									},
+									{
+										"type": "text",
+										"value": "tk.sonbaharda"
+									}
+								],
+								"answer": 0
+							},
+							{
+								"voice": "vo.g3.turkce.u03.n04.r02.q3",
+								"text": "story.g3.turkce.u03.n04.r02.q3",
+								"options": [
+									{
+										"type": "text",
+										"value": "tk.krem_surmesini"
+									},
+									{
+										"type": "text",
+										"value": "tk.yemek_yemesini"
+									},
+									{
+										"type": "text",
+										"value": "tk.uyumasini"
+									}
+								],
+								"answer": 0,
+								"page": 1
+							}
+						]
+					}
+				},
+				{
+					"template": "sort_bins",
+					"difficulty": 2,
+					"voice": "vo.g3.turkce.u03.n04.r03",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "text",
+									"value": "tk.kis_2",
+									"voice": "vo.tk.kis_2"
+								},
+								"shape": "circle"
+							},
+							{
+								"label": {
+									"type": "text",
+									"value": "tk.yaz_2",
+									"voice": "vo.tk.yaz_2"
+								},
+								"shape": "heart"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.kar"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.eldiven"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.kaan"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.deniz_2"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.sapka"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "text",
+									"value": "tk.krem"
+								},
+								"bin": 1
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g3.turkce.u03.n05",
+			"outcomes": [
+				"T.Y.3.3"
+			],
+			"title_key": "node.g3.turkce.u03.n05",
+			"intro_voice": "vo.g3.turkce.u03.n05.intro",
+			"sticker": "st.turkce.g3_yaprak",
+			"rounds": [
+				{
+					"template": "syllable_build",
+					"difficulty": 2,
+					"voice": "vo.g3.turkce.u03.n05.r01",
+					"params": {
+						"parts": [
+							"mas",
+							"ma",
+							"vi"
+						],
+						"distractors": [
+							"mav",
+							"mal"
+						],
+						"voice": "vo.g3.turkce.u03.n05.r01.word"
+					}
+				},
+				{
+					"template": "syllable_build",
+					"difficulty": 2,
+					"voice": "vo.g3.turkce.u03.n05.r02",
+					"params": {
+						"parts": [
+							"yem",
+							"ye",
+							"şil"
+						],
+						"distractors": [
+							"yeş",
+							"yen"
+						],
+						"voice": "vo.g3.turkce.u03.n05.r02.word"
+					}
+				},
+				{
+					"template": "drag_match",
+					"difficulty": 2,
+					"voice": "vo.g3.turkce.u03.n05.r03",
+					"params": {
+						"pairs": [
+							{
+								"left": {
+									"type": "text",
+									"value": "tk.km",
+									"voice": "vo.tk.km"
+								},
+								"right": {
+									"type": "text",
+									"value": "tk.ye",
+									"voice": "vo.tk.ye"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "tk.tdk",
+									"voice": "vo.tk.tdk"
+								},
+								"right": {
+									"type": "text",
+									"value": "tk.dan",
+									"voice": "vo.tk.dan"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "tk.tubitak",
+									"voice": "vo.tk.tubitak"
+								},
+								"right": {
+									"type": "text",
+									"value": "tk.ta",
+									"voice": "vo.tk.ta"
+								}
+							}
+						]
+					}
+				},
+				{
+					"template": "drag_match",
+					"difficulty": 2,
+					"voice": "vo.g3.turkce.u03.n05.r04",
+					"params": {
+						"pairs": [
+							{
+								"left": {
+									"type": "text",
+									"value": "tk.dag_adi",
+									"voice": "vo.tk.dag_adi"
+								},
+								"right": {
+									"type": "text",
+									"value": "tk.erciyes",
+									"voice": "vo.tk.erciyes"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "tk.nehir_adi",
+									"voice": "vo.tk.nehir_adi"
+								},
+								"right": {
+									"type": "text",
+									"value": "tk.firat",
+									"voice": "vo.tk.firat"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "tk.kedi_adi",
+									"voice": "vo.tk.kedi_adi"
+								},
+								"right": {
+									"type": "text",
+									"value": "tk.pamuk",
+									"voice": "vo.tk.pamuk"
+								}
+							}
+						]
+					}
+				}
+			]
+		}
+	]
+}
