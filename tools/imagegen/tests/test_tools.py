@@ -6,7 +6,7 @@ from PIL import Image
 
 from approve import prepare
 from batch_parser import BatchItem
-from generate import DutyCycle, is_geometric, select_items
+from generate import DutyCycle, choose_mask, flood_foreground, is_geometric, select_items
 
 
 def _item(n: int) -> BatchItem:
@@ -82,6 +82,36 @@ class DutyCycleTest(unittest.TestCase):
         cycle.add_work(10_000)
         self.assertFalse(cycle.maybe_rest())
         self.assertEqual(slept, [])
+
+
+class CutoutFallbackTest(unittest.TestCase):
+    def _plate(self) -> Image.Image:
+        # açık gri zemin üzerinde beyaz tabak (BiRefNet'in kaçırdığı durum)
+        im = Image.new("RGB", (200, 200), (228, 228, 230))
+        im.paste((246, 246, 246), (50, 50, 150, 150))
+        return im
+
+    def test_flood_foreground_finds_light_object_on_grey(self) -> None:
+        mask = flood_foreground(self._plate())
+        self.assertEqual(mask.getpixel((100, 100)), 255)
+        self.assertEqual(mask.getpixel((5, 5)), 0)
+        self.assertEqual(mask.getbbox(), (50, 50, 150, 150))
+
+    def test_choose_mask_falls_back_when_model_mask_is_tiny(self) -> None:
+        flood = flood_foreground(self._plate())
+        tiny = Image.new("L", (200, 200), 0)
+        tiny.paste(255, (90, 90, 110, 110))  # yalnızca "gözler"
+        chosen, used_fallback = choose_mask(tiny, flood)
+        self.assertTrue(used_fallback)
+        self.assertEqual(chosen.getpixel((60, 60)), 255)
+
+    def test_choose_mask_keeps_model_mask_when_plausible(self) -> None:
+        flood = flood_foreground(self._plate())
+        good = Image.new("L", (200, 200), 0)
+        good.paste(255, (52, 52, 148, 148))
+        chosen, used_fallback = choose_mask(good, flood)
+        self.assertFalse(used_fallback)
+        self.assertIs(chosen, good)
 
 
 if __name__ == "__main__":

@@ -16,7 +16,7 @@ from collections.abc import Callable
 from datetime import datetime
 from pathlib import Path
 
-from PIL import Image, ImageDraw
+from PIL import Image, ImageChops, ImageDraw, ImageFilter
 
 from batch_parser import BatchItem, parse_batch
 
@@ -48,6 +48,11 @@ STYLE_REF_INSTRUCTION = (
     "The reference images are ONLY a style guide for the clay material, colors, lighting and eye style. "
     "Do not draw any object, character or shape from the reference images. Draw only this subject: "
 )
+
+# Beyaz/çok açık nesneler açık gri zeminden ayrılamaz (BiRefNet de taşma dolgusu da kaçırır);
+# bu öğeler kontrastlı zeminde üretilir. Zemin zaten silindiği için son görsel değişmez.
+LIGHT_BG = "plain solid light grey background (#EEEEEE)"
+CONTRAST_BG = "plain solid medium grey background (#8C8C8C)"
 
 # Sayma/geometri kesinliği gereken öğeler difüzyonda yanlış çıkar; Blender'da modellenir.
 GEOMETRIC_PREFIXES = ("item.sekil.", "item.cisim.", "item.blok.")
@@ -149,8 +154,43 @@ class Generator:
         return result.image
 
 
+_FILL_MARKER = (255, 0, 254)
+
+
+def flood_foreground(image: Image.Image, thresh: int = 36) -> Image.Image:
+    """Düz açık gri zeminde nesne maskesi: kenarlardan taşma dolgusu, dolmayan her şey nesnedir.
+
+    BiRefNet açık renkli nesneleri (beyaz tabak, açık ten rengi el) gri zeminden ayıramayıp
+    yalnızca gözleri bırakabiliyor; bu maske o durum için yedektir."""
+    work = image.convert("RGB").copy()
+    w, h = work.size
+    step = max(1, min(w, h) // 32)
+    seeds = [(x, y) for x in range(0, w, step) for y in (0, h - 1)] + \
+            [(x, y) for y in range(0, h, step) for x in (0, w - 1)]
+    for xy in seeds:
+        if work.getpixel(xy) != _FILL_MARKER:
+            ImageDraw.floodfill(work, xy, _FILL_MARKER, thresh=thresh)
+    r, g, b = work.split()
+    is_bg = ImageChops.multiply(
+        ImageChops.multiply(r.point(lambda v: 255 if v == _FILL_MARKER[0] else 0),
+                            g.point(lambda v: 255 if v == _FILL_MARKER[1] else 0)),
+        b.point(lambda v: 255 if v == _FILL_MARKER[2] else 0))
+    return ImageChops.invert(is_bg)
+
+
+def choose_mask(model_mask: Image.Image, flood_mask: Image.Image, min_ratio: float = 0.5) -> tuple[Image.Image, bool]:
+    """Model maskesi taşma dolgusunun bulduğu alanın çok altındaysa (nesne silinmiş) ikisini birleştirir."""
+    def area(m: Image.Image) -> int:
+        return sum(m.point(lambda v: 1 if v > 127 else 0).histogram()[1:])
+    if area(model_mask) < min_ratio * area(flood_mask):
+        merged = ImageChops.lighter(model_mask, flood_mask.filter(ImageFilter.GaussianBlur(1)))
+        return merged, True
+    return model_mask, False
+
+
 class BackgroundRemover:
-    def __init__(self) -> None:
+    def __init__(self, flood_thresh: int = 36) -> None:
+        self.flood_thresh = flood_thresh
         import torch
         from torchvision import transforms
         from transformers import AutoModelForImageSegmentation
@@ -172,8 +212,10 @@ class BackgroundRemover:
         rgb = image.convert("RGB")
         with self.torch.no_grad():
             pred = self.net(self.tf(rgb).unsqueeze(0).to(self.device))[-1].sigmoid().cpu()[0].squeeze()
+        model_mask = self.to_pil(pred).resize(rgb.size)
+        mask, self.last_used_fallback = choose_mask(model_mask, flood_foreground(rgb, self.flood_thresh))
         out = rgb.copy()
-        out.putalpha(self.to_pil(pred).resize(rgb.size))
+        out.putalpha(mask)
         return out
 
 
@@ -219,6 +261,10 @@ def main() -> None:
     ap.add_argument("--work-minutes", type=float, default=0, help="bu kadar üretimden sonra dinlen (0: kapalı)")
     ap.add_argument("--rest-minutes", type=float, default=15, help="dinlenme süresi")
     ap.add_argument("--include-geometric", action="store_true", help="sekil/cisim/blok öğelerini de üret")
+    ap.add_argument("--contrast-bg", action="store_true",
+                    help="beyaz/çok açık nesneler için açık gri zemin yerine orta gri zemin iste")
+    ap.add_argument("--recut", action="store_true",
+                    help="üretme; mevcut ham adayların arka planını yeniden sil (kesimler üzerine yazılır)")
     ap.add_argument("--no-style-instruction", action="store_true",
                     help="stil referansı varken prompt'a 'yalnızca stil' talimatını ekleme")
     args = ap.parse_args()
@@ -242,6 +288,18 @@ def main() -> None:
     # 1. aşama: üretim. MLX ile PyTorch aynı anda bellekte kalırsa ikisinin tampon önbellekleri
     # birleşik belleği doldurur, sistem swap'a düşer ve üretim ~3 kat yavaşlar. Bu yüzden önce
     # bütün ham görseller üretilir, model bellekten atılır, arka plan silme sonra yapılır.
+    if args.recut:
+        to_recut = []
+        for item in items:
+            if not item.remove_background:
+                continue
+            for k in range(args.seeds):
+                raw = out_dir / item.key / f"s{args.seed_base + k}_{args.model}.png"
+                if raw.exists():
+                    to_recut.append((raw, raw.parent / f"{raw.stem}_cut.png", raw.with_suffix(".json")))
+        cut_all(to_recut, flood_thresh(args))
+        return
+
     import gc
 
     import mlx.core as mx
@@ -271,6 +329,8 @@ def main() -> None:
         if args.model == "klein":
             refs += style_refs
         prompt = item.prompt
+        if args.contrast_bg:
+            prompt = prompt.replace(LIGHT_BG, CONTRAST_BG)
         if args.model == "klein" and style_refs and not args.no_style_instruction:
             prompt = STYLE_REF_INSTRUCTION + prompt
         size = SIZES.get(item.ratio, SIZES["1:1"])
@@ -320,19 +380,35 @@ def main() -> None:
     mx.clear_cache()
 
     # 2. aşama: arka plan silme (PyTorch / MPS)
-    if to_cut:
-        t = time.time()
-        remover = BackgroundRemover()
-        for raw, cut_path, _ in to_cut:
-            remover.cut(Image.open(raw)).save(cut_path)
-            if remover.device == "mps":
-                remover.torch.mps.empty_cache()
-        print(f"Arka plan silindi: {len(to_cut)} görsel, {time.time() - t:.0f} sn", flush=True)
+    cut_all(to_cut, flood_thresh(args))
 
     rows = [(f"{item.number}. {item.key}", shown) for item, shown in planned]
     sheet = out_dir / f"sheet_{args.model}.png"
     contact_sheet(rows, sheet)
     print(f"Seçim sayfası: {sheet.relative_to(REPO)}  (toplam {time.time() - t0:.0f} sn)")
+
+
+def flood_thresh(args: argparse.Namespace) -> int:
+    # orta gri zeminde yer gölgesi zeminden çok, beyaz nesneden az farklıdır: yüksek eşik gölgeyi zemine katar
+    return 90 if args.contrast_bg else 36
+
+
+def cut_all(to_cut: list[tuple[Path, Path, Path]], flood_thresh: int = 36) -> None:
+    """Ham adayların arka planını siler; BiRefNet nesneyi kaçırırsa taşma dolgusu maskesine düşer."""
+    if not to_cut:
+        return
+    t = time.time()
+    remover = BackgroundRemover(flood_thresh)
+    for raw, cut_path, meta_path in to_cut:
+        remover.cut(Image.open(raw)).save(cut_path)
+        if remover.last_used_fallback and meta_path.exists():
+            meta = json.loads(meta_path.read_text(encoding="utf-8"))
+            meta["cutout_fallback"] = "flood-fill"
+            meta_path.write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
+            print(f"YEDEK MASKE {cut_path.parent.name}/{cut_path.name}: BiRefNet nesneyi kaçırdı", flush=True)
+        if remover.device == "mps":
+            remover.torch.mps.empty_cache()
+    print(f"Arka plan silindi: {len(to_cut)} görsel, {time.time() - t:.0f} sn", flush=True)
 
 
 if __name__ == "__main__":
