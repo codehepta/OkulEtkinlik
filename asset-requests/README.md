@@ -18,9 +18,9 @@ Yerel üretilen görsellerin kaynağı (model, tohum, prompt): `docs/assets/imag
 | Parti | Konu | Öncelik | Durum |
 |---|---|---|---|
 | 001 | Bilge maskot: karakter sayfası + 9 poz | En yüksek | ✅ Tamam (2–8, 10: yerel klein, 2026-10-05) |
-| 002 | Ada haritası, bölge arka planları, ikonlar, duraklar | Yüksek | ⏳ Bekliyor |
-| 003 | Profil avatarları + arayüz ikonları | Yüksek | ⏳ Bekliyor |
-| 004 | Sayma ve eşleştirme nesneleri (28 nesne) | Yüksek | ⏳ Bekliyor |
+| 002 | Ada haritası, bölge arka planları, ikonlar, duraklar | Yüksek | ✅ Tamam (Ağaç Evi arka planı yerel klein, 2026-10-05) |
+| 003 | Profil avatarları + arayüz ikonları | Yüksek | 🟡 17/18 (hoparlör ikonu yeniden üretiliyor) |
+| 004 | Sayma ve eşleştirme nesneleri (28 nesne) | Yüksek | ✅ Tamam (13 nesne yerel klein, 2026-10-05) |
 | 005 | Genel seslendirme (Gemini TTS) + sayılar 0–20 | Yüksek | ⏳ Bekliyor |
 | 006 | Müzik (6 parça) + ses efektleri (12) | Orta | ⏳ Bekliyor |
 | 007 | 1. sınıf Matematik Faz 1 ünitesi seslendirmesi (32 satır, Faz 3c'de `u02` yollarına taşındı) + `vo.genel.takma_ad` | Yüksek | ⏳ Bekliyor |
