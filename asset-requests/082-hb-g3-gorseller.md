@@ -617,7 +617,7 @@ a cute small clay child opening the front door to an unknown person. 3D claymati
 - **Açıklama:** Kapıyı açmayıp ailesini aramak
 
 ```
-a small round claymation diorama vignette: a cute small clay child staying inside and calling a parent on the phone. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a small round claymation diorama vignette: a cute small clay child alone inside a small living room, holding a phone to the ear and calling a parent, a closed front door behind them, no grown-ups in the room. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 43. `assets/images/items/guvenlik/adres_soyle.png`
@@ -897,7 +897,7 @@ one lonely house in an empty field. 3D claymation style, handcrafted plasticine 
 - **Açıklama:** Boş sokak
 
 ```
-an empty quiet street. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a small round claymation diorama vignette: an empty quiet small town street with a few closed houses on both sides and no people at all. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 71. `assets/images/items/sahne/aileler.png`
@@ -947,7 +947,7 @@ a friendly bus driver at the wheel. Every grown-up in the image has adult body p
 - **Açıklama:** Öğretmen
 
 ```
-a friendly teacher pointing at a blank board. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a friendly grown-up woman teacher with glasses standing next to a blank green chalkboard and pointing at it, holding a book in the other hand. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 76. `assets/images/items/meslek/itfaiyeci.png`
@@ -1097,7 +1097,7 @@ a group of children listening to a guide at a historic castle. 3D claymation sty
 - **Açıklama:** Tarihî duvara çizmek
 
 ```
-a cute small clay child scribbling with a marker on an old stone wall. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a small round claymation diorama vignette: a cute small clay child scribbling colorful lines with a marker on an old grey stone wall of a historic building (a wrong behavior card). 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 91. `assets/images/items/koruma/cicek_koparmak.png`
@@ -1117,7 +1117,7 @@ a small round claymation diorama vignette: a cute small clay child pulling flowe
 - **Açıklama:** Ateşi söndürmeden bırakmak
 
 ```
-a smoking campfire left alone in a forest. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a small round claymation diorama vignette: a small forest clearing with tall trees and a campfire of logs still burning with orange flames and grey smoke, left alone with no people around (a dangerous behavior card). 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 93. `assets/images/items/koruma/vazgecir.png`
@@ -1287,7 +1287,7 @@ a single lonely hand turned away from a small circle of hands, soft colors. 3D c
 - **Açıklama:** Bayramı birlikte kutlamak
 
 ```
-people celebrating a national holiday together with flags. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+children and grown-ups celebrating a national holiday together, waving red Turkish flags with a white crescent and a white five-pointed star. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 110. `assets/images/items/birlik/mac.png`
@@ -1647,7 +1647,7 @@ a family looking at a map with a green assembly point symbol, no text. Every gro
 - **Açıklama:** Toplanma alanına gitmek
 
 ```
-a family walking calmly to a green open assembly area. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a small round claymation diorama vignette: a grown-up mother, a grown-up father and a child walking calmly hand in hand toward a wide open green grass area with a small green sign post showing a symbol of people standing in a square, no text. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 146. `assets/images/items/afet/binaya_girme.png`
@@ -1657,7 +1657,7 @@ a family walking calmly to a green open assembly area. Every grown-up in the ima
 - **Açıklama:** Hasarlı binaya girmemek
 
 ```
-a cute small clay child staying away from a cracked building with a grown-up. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a small round claymation diorama vignette: a cute small clay child holding a grown-up's hand, both standing back at a safe distance from a cracked damaged building. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 147. `assets/images/items/kaynak/cevre_uzmani.png`
@@ -1717,7 +1717,7 @@ a school corridor diorama with colorful recycling bins in a row, dominant palett
 - **Açıklama:** Güvenilir kaynaklarla karşılaştırmak
 
 ```
-a cute small clay child and a parent comparing a library book and an encyclopedia side by side. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a cute small clay child and a grown-up parent each holding a big book, comparing them side by side; the book covers have only simple pictures and plain color blocks, no letters, no words. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 153. `assets/images/items/kaynak/hemen_inan.png`
@@ -1877,7 +1877,7 @@ a modern laptop. 3D claymation style, handcrafted plasticine toy look, soft roun
 - **Açıklama:** E-posta
 
 ```
-a tablet showing a blank envelope icon. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a dark grey tablet with a light blue screen showing a big yellow envelope icon. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 169. `assets/images/items/tek/at_arabasi.png`
@@ -1987,7 +1987,7 @@ an art gallery diorama with framed classic paintings on the walls, no text, domi
 - **Açıklama:** Sanat kitabı
 
 ```
-a big art book with a bağlama (Turkish lute) picture on the cover, no letters. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a big closed art book with a dark blue cover and a picture of a bağlama (long-necked Turkish lute) on it, no letters. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 180. `assets/images/items/sanat/asik_veysel.png`
