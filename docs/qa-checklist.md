@@ -280,3 +280,29 @@ Sekiz ünite, 20 durak (`content/g3/fen/u01`–`u08.json`). Görseller ve sesler
 1. `item.fen.*` görselleri kartlarda ve kutularda kesilmeden, aynı ışık ve bakış açısıyla görünüyor.
 2. Senaryo sahneleri (093) çerçeveye sığıyor; `alti_lamba` sahnesinde altı ışıklı pencere sayılabiliyor; `tuketim_grafik` sahnesinde sağdaki sütun belirgin kısa.
 3. Seslendirmede (095, 096) bilimsel terimler (paleontolog, mikroskop, mineral) doğru telaffuz ediliyor.
+
+---
+
+# Faz 4c — Türkçe 2. ve 3. sınıf içerikleri
+
+16 ünite (`content/g2/turkce`, `content/g3/turkce`), 80 durak, 274 tur. Profilde sınıfı 2 ya da 3 yapıp Harf Vadisi'ne gir.
+
+## Oynanış
+1. Patika: 2. sınıfta 40, 3. sınıfta 40 durak görünür; patika yatay kayar, duraklar sırayla açılır.
+2. Dinle ve Anla: hikâye sayfaları kendiliğinden okunur; sorular okunur ve yazılı da durur. Metin seçenekleri tek satırda, rahat okunur boyda.
+3. Doğru Seçim: durum görseli (yoksa yer tutucu) ve 2–3 kart. Yanlış kartta nazik sonuç cümlesi okunur, ceza hissi yok. İkinci yanlışta Bilge'nin ipucu okunur.
+4. Sessiz Oku: sayfa metni ilk cevaba kadar okunmaz, hoparlör görünmez; ilk cevaptan sonra hoparlör çıkar. Zıt/eş anlam eşleştirmesinde kart sesleri de ilk cevaptan sonra açılır.
+5. Uzun kart yazıları (ör. "Türk Dil Kurumu", "Fısıldayarak") karoda iki satıra bölünür, kesilmez ve karodan taşmaz.
+6. Yazım Kuralları: soru eki kartları (mı/mi/mu/mü) doğru cümleye oturur; 3. sınıfta pekiştirmeli sözcükler (masmavi, yemyeşil...) hecelerden kurulur, kurulunca sözcük okunur.
+7. Durak bitince Türkçe çıkartması albümün Türkçe sayfasına eklenir.
+
+## İçerik gözden geçirme (sınıf öğretmeni)
+1. Hikâye ve okuma metinleri 2. ve 3. sınıf düzeyine uygun mu (uzunluk, sözcük seçimi)?
+2. Her sorunun tek ve açık bir doğru cevabı var mı? Özellikle tahmin soruları ("Sence ... ne olur?") ve noktalama eşleştirmeleri ("Hava güzel" → ".").
+3. Kısaltmaya gelen ekler (TBMM'ye, TDK'ya, TÜBİTAK'a) ve pekiştirmeli sözcüklerin hece bölünüşü doğru mu?
+4. Atatürk ve kahramanlar temalarındaki bilgiler doğru mu?
+
+## Asset geldiğinde (parti 070–075)
+1. Seslendirme gelince (070, 071, 072) cihaz sesinin yerine kayıtlar çalar; hikâye sayfaları ve kart sözcükleri doğru satırla eşleşir.
+2. Hikâye ve durum görselleri (073, 074) yer tutucuların yerini alır; hikâye görseli kitap sayfasında kare, durum görseli üstte geniş görünür.
+3. Çıkartmalar (075) albümde görünür.
