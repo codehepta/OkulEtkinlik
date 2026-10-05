@@ -1,0 +1,407 @@
+{
+	"id": "g3.hayat_bilgisi.u06",
+	"grade": 3,
+	"subject": "hayat_bilgisi",
+	"title_key": "unit.g3.hayat_bilgisi.u06",
+	"source": {
+		"program": "TYMM İlkokul Hayat Bilgisi (1–3)",
+		"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+		"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+		"page": 82,
+		"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf",
+		"theme": "6. BİLİM, TEKNOLOJİ VE SANAT"
+	},
+	"nodes": [
+		{
+			"id": "g3.hayat_bilgisi.u06.n01",
+			"outcomes": [
+				"HB.3.6.1"
+			],
+			"title_key": "node.g3.hayat_bilgisi.u06.n01",
+			"intro_voice": "vo.g3.hayat_bilgisi.u06.n01.intro",
+			"sticker": "st.hayat_bilgisi.deney_tupu",
+			"rounds": [
+				{
+					"template": "story",
+					"difficulty": 1,
+					"voice": "vo.g3.hayat_bilgisi.u06.n01.r01",
+					"params": {
+						"pages": [
+							{
+								"text": "hikaye.g3.hayat_bilgisi.u06.n01.r01.p1",
+								"voice": "vo.g3.hayat_bilgisi.u06.n01.r01.p1"
+							},
+							{
+								"text": "hikaye.g3.hayat_bilgisi.u06.n01.r01.p2",
+								"voice": "vo.g3.hayat_bilgisi.u06.n01.r01.p2",
+								"image": "item.tek.asi_sahne"
+							}
+						],
+						"questions": [
+							{
+								"voice": "vo.g3.hayat_bilgisi.u06.n01.r01.s1",
+								"answer": 0,
+								"page": 1,
+								"options": [
+									{
+										"type": "text",
+										"value": "label.hb.hastaliktan_korur",
+										"voice": "vo.ad.etiket.hastaliktan_korur"
+									},
+									{
+										"type": "text",
+										"value": "label.hb.uyku_getirir",
+										"voice": "vo.ad.etiket.uyku_getirir"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"template": "story",
+					"difficulty": 2,
+					"voice": "vo.g3.hayat_bilgisi.u06.n01.r02",
+					"params": {
+						"pages": [
+							{
+								"text": "hikaye.g3.hayat_bilgisi.u06.n01.r02.p1",
+								"voice": "vo.g3.hayat_bilgisi.u06.n01.r02.p1",
+								"image": "item.tek.elektrik_sahne"
+							},
+							{
+								"text": "hikaye.g3.hayat_bilgisi.u06.n01.r02.p2",
+								"voice": "vo.g3.hayat_bilgisi.u06.n01.r02.p2"
+							}
+						],
+						"questions": [
+							{
+								"voice": "vo.g3.hayat_bilgisi.u06.n01.r02.s1",
+								"answer": 0,
+								"page": 0,
+								"options": [
+									{
+										"type": "item",
+										"value": "item.sahne.aydinlik_ev"
+									},
+									{
+										"type": "item",
+										"value": "item.toplum.bos_sokak"
+									}
+								]
+							},
+							{
+								"voice": "vo.g3.hayat_bilgisi.u06.n01.r02.s2",
+								"answer": 0,
+								"page": 1,
+								"options": [
+									{
+										"type": "text",
+										"value": "label.hb.taze_tutar",
+										"voice": "vo.ad.etiket.taze_tutar"
+									},
+									{
+										"type": "text",
+										"value": "label.hb.isitir",
+										"voice": "vo.ad.etiket.isitir"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"template": "drag_match",
+					"difficulty": 3,
+					"voice": "vo.g3.hayat_bilgisi.u06.n01.r03",
+					"params": {
+						"pairs": [
+							{
+								"left": {
+									"type": "item",
+									"value": "item.tek.asi",
+									"voice": "vo.ad.tek.asi"
+								},
+								"right": {
+									"type": "item",
+									"value": "item.sahne.saglikli_cocuk"
+								}
+							},
+							{
+								"left": {
+									"type": "item",
+									"value": "item.tek.ampul",
+									"voice": "vo.ad.tek.ampul"
+								},
+								"right": {
+									"type": "item",
+									"value": "item.sahne.aydinlik_ev"
+								}
+							},
+							{
+								"left": {
+									"type": "item",
+									"value": "item.tek.buzdolabi",
+									"voice": "vo.ad.tek.buzdolabi"
+								},
+								"right": {
+									"type": "item",
+									"value": "item.yiyecek.taze"
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g3.hayat_bilgisi.u06.n02",
+			"outcomes": [
+				"HB.3.6.2"
+			],
+			"title_key": "node.g3.hayat_bilgisi.u06.n02",
+			"intro_voice": "vo.g3.hayat_bilgisi.u06.n02.intro",
+			"sticker": "st.hayat_bilgisi.robot",
+			"rounds": [
+				{
+					"template": "sort_bins",
+					"difficulty": 1,
+					"voice": "vo.g3.hayat_bilgisi.u06.n02.r01",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "item",
+									"value": "item.simge.eski",
+									"voice": "vo.ad.simge.eski"
+								},
+								"shape": "diamond",
+								"color": "orange"
+							},
+							{
+								"label": {
+									"type": "item",
+									"value": "item.simge.yeni",
+									"voice": "vo.ad.simge.yeni"
+								},
+								"shape": "star",
+								"color": "blue"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.tek.daktilo"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.tek.mektup"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.tek.telefon_cevirmeli"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.tek.bilgisayar"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.tek.eposta"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.tek.telefon_akilli"
+								},
+								"bin": 1
+							}
+						]
+					}
+				},
+				{
+					"template": "drag_match",
+					"difficulty": 2,
+					"voice": "vo.g3.hayat_bilgisi.u06.n02.r02",
+					"params": {
+						"pairs": [
+							{
+								"left": {
+									"type": "item",
+									"value": "item.tek.mum",
+									"voice": "vo.ad.tek.mum"
+								},
+								"right": {
+									"type": "item",
+									"value": "item.tek.led"
+								}
+							},
+							{
+								"left": {
+									"type": "item",
+									"value": "item.tek.at_arabasi",
+									"voice": "vo.ad.tek.at_arabasi"
+								},
+								"right": {
+									"type": "item",
+									"value": "item.tek.otomobil"
+								}
+							},
+							{
+								"left": {
+									"type": "item",
+									"value": "item.tek.camasir_legen",
+									"voice": "vo.ad.tek.camasir_legen"
+								},
+								"right": {
+									"type": "item",
+									"value": "item.tek.camasir_makinesi"
+								}
+							}
+						]
+					}
+				},
+				{
+					"template": "scenario",
+					"difficulty": 3,
+					"voice": "vo.g3.hayat_bilgisi.u06.n02.r03",
+					"params": {
+						"scene": "item.tek.camasir_sahne",
+						"hint": "vo.g3.hayat_bilgisi.u06.n02.r03.ipucu",
+						"choices": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sahne.ailece_vakit"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sahne.yorgun_yikama"
+								},
+								"correct": false
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g3.hayat_bilgisi.u06.n03",
+			"outcomes": [
+				"HB.3.6.3"
+			],
+			"title_key": "node.g3.hayat_bilgisi.u06.n03",
+			"intro_voice": "vo.g3.hayat_bilgisi.u06.n03.intro",
+			"sticker": "st.hayat_bilgisi.baglama",
+			"rounds": [
+				{
+					"template": "scenario",
+					"difficulty": 1,
+					"voice": "vo.g3.hayat_bilgisi.u06.n03.r01",
+					"params": {
+						"scene": "item.sanat.osman_hamdi",
+						"hint": "vo.g3.hayat_bilgisi.u06.n03.r01.ipucu",
+						"choices": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.kaynak.muze"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.kaynak.market"
+								},
+								"correct": false
+							}
+						]
+					}
+				},
+				{
+					"template": "scenario",
+					"difficulty": 2,
+					"voice": "vo.g3.hayat_bilgisi.u06.n03.r02",
+					"params": {
+						"scene": "item.sanat.asik_veysel",
+						"hint": "vo.g3.hayat_bilgisi.u06.n03.r02.ipucu",
+						"choices": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.kaynak.sanat_kitabi"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.kaynak.yemek_kitabi"
+								},
+								"correct": false
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.kaynak.oyuncakci"
+								},
+								"correct": false
+							}
+						]
+					}
+				},
+				{
+					"template": "scenario",
+					"difficulty": 3,
+					"voice": "vo.g3.hayat_bilgisi.u06.n03.r03",
+					"params": {
+						"scene": "item.sanat.mimar_sinan",
+						"hint": "vo.g3.hayat_bilgisi.u06.n03.r03.ipucu",
+						"choices": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.kaynak.eser_gezisi"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.kaynak.cizgi_film"
+								},
+								"correct": false
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.kaynak.lunapark"
+								},
+								"correct": false
+							}
+						]
+					}
+				}
+			]
+		}
+	]
+}

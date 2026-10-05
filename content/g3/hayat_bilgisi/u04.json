@@ -1,0 +1,590 @@
+{
+	"id": "g3.hayat_bilgisi.u04",
+	"grade": 3,
+	"subject": "hayat_bilgisi",
+	"title_key": "unit.g3.hayat_bilgisi.u04",
+	"source": {
+		"program": "TYMM İlkokul Hayat Bilgisi (1–3)",
+		"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+		"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+		"page": 73,
+		"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf",
+		"theme": "4. YAŞADIĞIM YER VE ÜLKEM"
+	},
+	"nodes": [
+		{
+			"id": "g3.hayat_bilgisi.u04.n01",
+			"outcomes": [
+				"HB.3.4.1"
+			],
+			"title_key": "node.g3.hayat_bilgisi.u04.n01",
+			"intro_voice": "vo.g3.hayat_bilgisi.u04.n01.intro",
+			"sticker": "st.hayat_bilgisi.kale",
+			"rounds": [
+				{
+					"template": "sort_bins",
+					"difficulty": 1,
+					"voice": "vo.g3.hayat_bilgisi.u04.n01.r01",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "item",
+									"value": "item.simge.uygun",
+									"voice": "vo.ad.simge.uygun"
+								},
+								"shape": "heart",
+								"color": "green"
+							},
+							{
+								"label": {
+									"type": "item",
+									"value": "item.simge.uygun_degil",
+									"voice": "vo.ad.simge.uygun_degil"
+								},
+								"shape": "square",
+								"color": "orange"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.koruma.cope_at"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.koruma.yolda_yuru"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.koruma.rehber"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.koruma.duvara_cizmek"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.koruma.cicek_koparmak"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.koruma.ates_birakmak"
+								},
+								"bin": 1
+							}
+						]
+					}
+				},
+				{
+					"template": "scenario",
+					"difficulty": 2,
+					"voice": "vo.g3.hayat_bilgisi.u04.n01.r02",
+					"params": {
+						"scene": "item.sahne.tarihi_kale",
+						"hint": "vo.g3.hayat_bilgisi.u04.n01.r02.ipucu",
+						"choices": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.koruma.vazgecir"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.koruma.kazimak"
+								},
+								"correct": false
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.koruma.tas_al"
+								},
+								"correct": false
+							}
+						]
+					}
+				},
+				{
+					"template": "scenario",
+					"difficulty": 3,
+					"voice": "vo.g3.hayat_bilgisi.u04.n01.r03",
+					"params": {
+						"scene": "item.sahne.korursak",
+						"hint": "vo.g3.hayat_bilgisi.u04.n01.r03.ipucu",
+						"choices": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sahne.korunmus_tarih"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sahne.yikik_kale"
+								},
+								"correct": false
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sahne.kirli_dere"
+								},
+								"correct": false
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g3.hayat_bilgisi.u04.n02",
+			"outcomes": [
+				"HB.3.4.2"
+			],
+			"title_key": "node.g3.hayat_bilgisi.u04.n02",
+			"intro_voice": "vo.g3.hayat_bilgisi.u04.n02.intro",
+			"sticker": "st.hayat_bilgisi.meclis",
+			"rounds": [
+				{
+					"template": "scenario",
+					"difficulty": 1,
+					"voice": "vo.g3.hayat_bilgisi.u04.n02.r01",
+					"params": {
+						"scene": "item.sahne.yonetim_arastirma",
+						"hint": "vo.g3.hayat_bilgisi.u04.n02.r01.ipucu",
+						"choices": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.kaynak.ansiklopedi"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.kaynak.yemek_kitabi"
+								},
+								"correct": false
+							}
+						]
+					}
+				},
+				{
+					"template": "scenario",
+					"difficulty": 2,
+					"voice": "vo.g3.hayat_bilgisi.u04.n02.r02",
+					"params": {
+						"scene": "item.sahne.meclis_merak",
+						"hint": "vo.g3.hayat_bilgisi.u04.n02.r02.ipucu",
+						"choices": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.kaynak.tbmm"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.kaynak.lunapark"
+								},
+								"correct": false
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.kaynak.oyuncakci"
+								},
+								"correct": false
+							}
+						]
+					}
+				},
+				{
+					"template": "story",
+					"difficulty": 3,
+					"voice": "vo.g3.hayat_bilgisi.u04.n02.r03",
+					"params": {
+						"pages": [
+							{
+								"text": "hikaye.g3.hayat_bilgisi.u04.n02.r03.p1",
+								"voice": "vo.g3.hayat_bilgisi.u04.n02.r03.p1",
+								"image": "item.ataturk.cumhuriyet"
+							},
+							{
+								"text": "hikaye.g3.hayat_bilgisi.u04.n02.r03.p2",
+								"voice": "vo.g3.hayat_bilgisi.u04.n02.r03.p2",
+								"image": "item.milli.tbmm_1920"
+							}
+						],
+						"questions": [
+							{
+								"voice": "vo.g3.hayat_bilgisi.u04.n02.r03.s1",
+								"answer": 1,
+								"page": 0,
+								"options": [
+									{
+										"type": "text",
+										"value": "label.hb.krallik",
+										"voice": "vo.ad.etiket.krallik"
+									},
+									{
+										"type": "text",
+										"value": "label.hb.cumhuriyet",
+										"voice": "vo.ad.etiket.cumhuriyet"
+									}
+								]
+							},
+							{
+								"voice": "vo.g3.hayat_bilgisi.u04.n02.r03.s2",
+								"answer": 0,
+								"page": 1,
+								"options": [
+									{
+										"type": "text",
+										"value": "label.hb.halk",
+										"voice": "vo.ad.etiket.halk"
+									},
+									{
+										"type": "text",
+										"value": "label.hb.tek_kisi",
+										"voice": "vo.ad.etiket.tek_kisi"
+									}
+								]
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g3.hayat_bilgisi.u04.n03",
+			"outcomes": [
+				"HB.3.4.3"
+			],
+			"title_key": "node.g3.hayat_bilgisi.u04.n03",
+			"intro_voice": "vo.g3.hayat_bilgisi.u04.n03.intro",
+			"sticker": "st.hayat_bilgisi.yildiz",
+			"rounds": [
+				{
+					"template": "story",
+					"difficulty": 1,
+					"voice": "vo.g3.hayat_bilgisi.u04.n03.r01",
+					"params": {
+						"pages": [
+							{
+								"text": "hikaye.g3.hayat_bilgisi.u04.n03.r01.p1",
+								"voice": "vo.g3.hayat_bilgisi.u04.n03.r01.p1",
+								"image": "item.ataturk.ogrenci"
+							},
+							{
+								"text": "hikaye.g3.hayat_bilgisi.u04.n03.r01.p2",
+								"voice": "vo.g3.hayat_bilgisi.u04.n03.r01.p2",
+								"image": "item.ataturk.kurtulus"
+							},
+							{
+								"text": "hikaye.g3.hayat_bilgisi.u04.n03.r01.p3",
+								"voice": "vo.g3.hayat_bilgisi.u04.n03.r01.p3",
+								"image": "item.ataturk.harf"
+							}
+						],
+						"questions": [
+							{
+								"voice": "vo.g3.hayat_bilgisi.u04.n03.r01.s1",
+								"answer": 1,
+								"page": 0,
+								"options": [
+									{
+										"type": "text",
+										"value": "label.hb.cok_konustugu",
+										"voice": "vo.ad.etiket.cok_konustugu"
+									},
+									{
+										"type": "text",
+										"value": "label.hb.cok_calistigi",
+										"voice": "vo.ad.etiket.cok_calistigi"
+									}
+								]
+							},
+							{
+								"voice": "vo.g3.hayat_bilgisi.u04.n03.r01.s2",
+								"answer": 0,
+								"page": 1,
+								"options": [
+									{
+										"type": "text",
+										"value": "label.hb.cesur_kararli",
+										"voice": "vo.ad.etiket.cesur_kararli"
+									},
+									{
+										"type": "text",
+										"value": "label.hb.kararsiz",
+										"voice": "vo.ad.etiket.kararsiz"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"template": "drag_match",
+					"difficulty": 2,
+					"voice": "vo.g3.hayat_bilgisi.u04.n03.r02",
+					"params": {
+						"pairs": [
+							{
+								"left": {
+									"type": "text",
+									"value": "label.hb.ozellik_caliskan",
+									"voice": "vo.ad.etiket.ozellik_caliskan"
+								},
+								"right": {
+									"type": "text",
+									"value": "label.hb.basari_okul",
+									"voice": "vo.ad.etiket.basari_okul"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "label.hb.ozellik_cesur",
+									"voice": "vo.ad.etiket.ozellik_cesur"
+								},
+								"right": {
+									"type": "text",
+									"value": "label.hb.basari_kurtulus",
+									"voice": "vo.ad.etiket.basari_kurtulus"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "label.hb.ozellik_ileri",
+									"voice": "vo.ad.etiket.ozellik_ileri"
+								},
+								"right": {
+									"type": "text",
+									"value": "label.hb.basari_cumhuriyet",
+									"voice": "vo.ad.etiket.basari_cumhuriyet"
+								}
+							}
+						]
+					}
+				},
+				{
+					"template": "drag_match",
+					"difficulty": 3,
+					"voice": "vo.g3.hayat_bilgisi.u04.n03.r03",
+					"params": {
+						"pairs": [
+							{
+								"left": {
+									"type": "text",
+									"value": "label.hb.ozellik_caliskan",
+									"voice": "vo.ad.etiket.ozellik_caliskan"
+								},
+								"right": {
+									"type": "text",
+									"value": "label.hb.basari_okul",
+									"voice": "vo.ad.etiket.basari_okul"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "label.hb.ozellik_cesur",
+									"voice": "vo.ad.etiket.ozellik_cesur"
+								},
+								"right": {
+									"type": "text",
+									"value": "label.hb.basari_kurtulus",
+									"voice": "vo.ad.etiket.basari_kurtulus"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "label.hb.ozellik_ileri",
+									"voice": "vo.ad.etiket.ozellik_ileri"
+								},
+								"right": {
+									"type": "text",
+									"value": "label.hb.basari_cumhuriyet",
+									"voice": "vo.ad.etiket.basari_cumhuriyet"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "label.hb.ozellik_egitim",
+									"voice": "vo.ad.etiket.ozellik_egitim"
+								},
+								"right": {
+									"type": "text",
+									"value": "label.hb.basari_harf",
+									"voice": "vo.ad.etiket.basari_harf"
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g3.hayat_bilgisi.u04.n04",
+			"outcomes": [
+				"HB.3.4.4"
+			],
+			"title_key": "node.g3.hayat_bilgisi.u04.n04",
+			"intro_voice": "vo.g3.hayat_bilgisi.u04.n04.intro",
+			"sticker": "st.hayat_bilgisi.el_ele_halka",
+			"rounds": [
+				{
+					"template": "sort_bins",
+					"difficulty": 1,
+					"voice": "vo.g3.hayat_bilgisi.u04.n04.r01",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "item",
+									"value": "item.simge.guclendirir",
+									"voice": "vo.ad.simge.guclendirir"
+								},
+								"shape": "heart",
+								"color": "red"
+							},
+							{
+								"label": {
+									"type": "item",
+									"value": "item.simge.guclendirmez",
+									"voice": "vo.ad.simge.guclendirmez"
+								},
+								"shape": "square",
+								"color": "blue"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.birlik.bayram"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.birlik.mac"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.birlik.afet_yardim"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.birlik.yalniz"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.birlik.alay"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.birlik.yardimdan_kac"
+								},
+								"bin": 1
+							}
+						]
+					}
+				},
+				{
+					"template": "scenario",
+					"difficulty": 2,
+					"voice": "vo.g3.hayat_bilgisi.u04.n04.r02",
+					"params": {
+						"scene": "item.sahne.yardim_kampanyasi",
+						"hint": "vo.g3.hayat_bilgisi.u04.n04.r02.ipucu",
+						"choices": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.birlik.koli"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.birlik.ilgisiz"
+								},
+								"correct": false
+							}
+						]
+					}
+				},
+				{
+					"template": "scenario",
+					"difficulty": 3,
+					"voice": "vo.g3.hayat_bilgisi.u04.n04.r03",
+					"params": {
+						"scene": "item.sahne.fidan_dikim",
+						"hint": "vo.g3.hayat_bilgisi.u04.n04.r03.ipucu",
+						"choices": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sahne.yesil_bahce"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sahne.bos_bahce"
+								},
+								"correct": false
+							}
+						]
+					}
+				}
+			]
+		}
+	]
+}

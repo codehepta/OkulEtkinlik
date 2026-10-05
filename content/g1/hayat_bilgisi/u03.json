@@ -1,0 +1,524 @@
+{
+	"id": "g1.hayat_bilgisi.u03",
+	"grade": 1,
+	"subject": "hayat_bilgisi",
+	"title_key": "unit.g1.hayat_bilgisi.u03",
+	"source": {
+		"program": "TYMM İlkokul Hayat Bilgisi (1–3)",
+		"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+		"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+		"page": 23,
+		"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf",
+		"theme": "3. AİLEM VE TOPLUM"
+	},
+	"nodes": [
+		{
+			"id": "g1.hayat_bilgisi.u03.n01",
+			"outcomes": [
+				"HB.1.3.1"
+			],
+			"title_key": "node.g1.hayat_bilgisi.u03.n01",
+			"intro_voice": "vo.g1.hayat_bilgisi.u03.n01.intro",
+			"sticker": "st.hayat_bilgisi.ev",
+			"rounds": [
+				{
+					"template": "listen_find",
+					"difficulty": 1,
+					"voice": "vo.g1.hayat_bilgisi.u03.n01.r01",
+					"params": {
+						"target": {
+							"type": "item",
+							"value": "item.aile.dede",
+							"voice": "vo.ad.aile.dede"
+						},
+						"options": [
+							{
+								"type": "item",
+								"value": "item.aile.anne"
+							},
+							{
+								"type": "item",
+								"value": "item.aile.dede",
+								"voice": "vo.ad.aile.dede"
+							},
+							{
+								"type": "item",
+								"value": "item.aile.kardes"
+							}
+						]
+					}
+				},
+				{
+					"template": "listen_find",
+					"difficulty": 1,
+					"voice": "vo.g1.hayat_bilgisi.u03.n01.r02",
+					"params": {
+						"target": {
+							"type": "item",
+							"value": "item.aile.buyukanne",
+							"voice": "vo.ad.aile.buyukanne"
+						},
+						"options": [
+							{
+								"type": "item",
+								"value": "item.aile.baba"
+							},
+							{
+								"type": "item",
+								"value": "item.aile.teyze"
+							},
+							{
+								"type": "item",
+								"value": "item.aile.buyukanne",
+								"voice": "vo.ad.aile.buyukanne"
+							}
+						]
+					}
+				},
+				{
+					"template": "sort_bins",
+					"difficulty": 2,
+					"voice": "vo.g1.hayat_bilgisi.u03.n01.r03",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "item",
+									"value": "item.simge.cekirdek_aile",
+									"voice": "vo.ad.simge.cekirdek_aile"
+								},
+								"shape": "circle",
+								"color": "blue"
+							},
+							{
+								"label": {
+									"type": "item",
+									"value": "item.simge.genis_aile",
+									"voice": "vo.ad.simge.genis_aile"
+								},
+								"shape": "star",
+								"color": "purple"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.aile.anne"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.aile.baba"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.aile.kardes"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.aile.buyukanne"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.aile.dede"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.aile.amca"
+								},
+								"bin": 1
+							}
+						]
+					}
+				},
+				{
+					"template": "story",
+					"difficulty": 3,
+					"voice": "vo.g1.hayat_bilgisi.u03.n01.r04",
+					"params": {
+						"pages": [
+							{
+								"text": "hikaye.g1.hayat_bilgisi.u03.n01.r04.p1",
+								"voice": "vo.g1.hayat_bilgisi.u03.n01.r04.p1",
+								"image": "item.sahne.aile_sofra"
+							},
+							{
+								"text": "hikaye.g1.hayat_bilgisi.u03.n01.r04.p2",
+								"voice": "vo.g1.hayat_bilgisi.u03.n01.r04.p2",
+								"image": "item.sahne.aile_yardim"
+							},
+							{
+								"text": "hikaye.g1.hayat_bilgisi.u03.n01.r04.p3",
+								"voice": "vo.g1.hayat_bilgisi.u03.n01.r04.p3"
+							}
+						],
+						"questions": [
+							{
+								"voice": "vo.g1.hayat_bilgisi.u03.n01.r04.s1",
+								"answer": 1,
+								"page": 1,
+								"options": [
+									{
+										"type": "item",
+										"value": "item.sahne.aile_tv"
+									},
+									{
+										"type": "item",
+										"value": "item.sahne.aile_yardim"
+									}
+								]
+							},
+							{
+								"voice": "vo.g1.hayat_bilgisi.u03.n01.r04.s2",
+								"answer": 0,
+								"page": 1,
+								"options": [
+									{
+										"type": "item",
+										"value": "item.duygu.guvende"
+									},
+									{
+										"type": "item",
+										"value": "item.duygu.korkmus"
+									},
+									{
+										"type": "item",
+										"value": "item.duygu.kizgin"
+									}
+								]
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g1.hayat_bilgisi.u03.n02",
+			"outcomes": [
+				"HB.1.3.2"
+			],
+			"title_key": "node.g1.hayat_bilgisi.u03.n02",
+			"intro_voice": "vo.g1.hayat_bilgisi.u03.n02.intro",
+			"sticker": "st.hayat_bilgisi.cicek_demeti",
+			"rounds": [
+				{
+					"template": "scenario",
+					"difficulty": 1,
+					"voice": "vo.g1.hayat_bilgisi.u03.n02.r01",
+					"params": {
+						"scene": "item.sahne.su_ikram",
+						"hint": "vo.g1.hayat_bilgisi.u03.n02.r01.ipucu",
+						"choices": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.nezaket.tesekkur"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.nezaket.surat_as"
+								},
+								"correct": false
+							}
+						]
+					}
+				},
+				{
+					"template": "scenario",
+					"difficulty": 2,
+					"voice": "vo.g1.hayat_bilgisi.u03.n02.r02",
+					"params": {
+						"scene": "item.sahne.sofra_tuz",
+						"hint": "vo.g1.hayat_bilgisi.u03.n02.r02.ipucu",
+						"choices": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.nezaket.rica_et"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.nezaket.uzanip_al"
+								},
+								"correct": false
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.nezaket.bagirarak_iste"
+								},
+								"correct": false
+							}
+						]
+					}
+				},
+				{
+					"template": "scenario",
+					"difficulty": 3,
+					"voice": "vo.g1.hayat_bilgisi.u03.n02.r03",
+					"params": {
+						"scene": "item.sahne.misafir",
+						"hint": "vo.g1.hayat_bilgisi.u03.n02.r03.ipucu",
+						"choices": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.nezaket.hos_geldin"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.nezaket.odaya_kac"
+								},
+								"correct": false
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.nezaket.tv_sesi"
+								},
+								"correct": false
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g1.hayat_bilgisi.u03.n03",
+			"outcomes": [
+				"HB.1.3.3"
+			],
+			"title_key": "node.g1.hayat_bilgisi.u03.n03",
+			"intro_voice": "vo.g1.hayat_bilgisi.u03.n03.intro",
+			"sticker": "st.hayat_bilgisi.sulama_kabi",
+			"rounds": [
+				{
+					"template": "sort_bins",
+					"difficulty": 1,
+					"voice": "vo.g1.hayat_bilgisi.u03.n03.r01",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "item",
+									"value": "item.simge.cocuk_gorevi",
+									"voice": "vo.ad.simge.cocuk_gorevi"
+								},
+								"shape": "circle",
+								"color": "yellow"
+							},
+							{
+								"label": {
+									"type": "item",
+									"value": "item.simge.buyuk_gorevi",
+									"voice": "vo.ad.simge.buyuk_gorevi"
+								},
+								"shape": "triangle",
+								"color": "blue"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.gorev.oyuncak_topla"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.gorev.cicek_sula"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.gorev.araba_kullan"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.gorev.ocakta_yemek"
+								},
+								"bin": 1
+							}
+						]
+					}
+				},
+				{
+					"template": "sort_bins",
+					"difficulty": 2,
+					"voice": "vo.g1.hayat_bilgisi.u03.n03.r02",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "item",
+									"value": "item.simge.cocuk_gorevi",
+									"voice": "vo.ad.simge.cocuk_gorevi"
+								},
+								"shape": "circle",
+								"color": "yellow"
+							},
+							{
+								"label": {
+									"type": "item",
+									"value": "item.simge.buyuk_gorevi",
+									"voice": "vo.ad.simge.buyuk_gorevi"
+								},
+								"shape": "triangle",
+								"color": "blue"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.gorev.oyuncak_topla"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.gorev.yatak_duzelt"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.gorev.sofra_kur"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.gorev.araba_kullan"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.gorev.ocakta_yemek"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.gorev.ampul_degistir"
+								},
+								"bin": 1
+							}
+						]
+					}
+				},
+				{
+					"template": "drag_match",
+					"difficulty": 2,
+					"voice": "vo.g1.hayat_bilgisi.u03.n03.r03",
+					"params": {
+						"pairs": [
+							{
+								"left": {
+									"type": "item",
+									"value": "item.gorev.oyuncak_topla",
+									"voice": "vo.ad.gorev.oyuncak_topla"
+								},
+								"right": {
+									"type": "item",
+									"value": "item.esya.oyuncak_kutusu"
+								}
+							},
+							{
+								"left": {
+									"type": "item",
+									"value": "item.gorev.cicek_sula",
+									"voice": "vo.ad.gorev.cicek_sula"
+								},
+								"right": {
+									"type": "item",
+									"value": "item.esya.sulama_kabi"
+								}
+							},
+							{
+								"left": {
+									"type": "item",
+									"value": "item.gorev.sofra_kur",
+									"voice": "vo.ad.gorev.sofra_kur"
+								},
+								"right": {
+									"type": "item",
+									"value": "item.esya.tabaklar"
+								}
+							}
+						]
+					}
+				},
+				{
+					"template": "scenario",
+					"difficulty": 3,
+					"voice": "vo.g1.hayat_bilgisi.u03.n03.r04",
+					"params": {
+						"scene": "item.sahne.aile_is_bolumu",
+						"hint": "vo.g1.hayat_bilgisi.u03.n03.r04.ipucu",
+						"choices": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.gorev.sofra_topla"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.gorev.tv_izle"
+								},
+								"correct": false
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.gorev.uyuya_kal"
+								},
+								"correct": false
+							}
+						]
+					}
+				}
+			]
+		}
+	]
+}
