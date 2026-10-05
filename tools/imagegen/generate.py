@@ -13,6 +13,8 @@ import argparse
 import json
 import sys
 import time
+from collections.abc import Callable
+from datetime import datetime
 from pathlib import Path
 
 from PIL import Image, ImageDraw
@@ -39,6 +41,34 @@ MODELS: dict[str, dict] = {
     "zimage": {"registry": "z-image-turbo", "license": "Apache-2.0", "steps": 9},
     "klein": {"registry": "flux2-klein-4b", "license": "Apache-2.0", "steps": 4},
 }
+
+
+# Sayma/geometri kesinliği gereken öğeler difüzyonda yanlış çıkar; Blender'da modellenir.
+GEOMETRIC_PREFIXES = ("item.sekil.", "item.cisim.", "item.blok.")
+
+
+def is_geometric(key: str) -> bool:
+    return key.startswith(GEOMETRIC_PREFIXES)
+
+
+class DutyCycle:
+    """Isınmayı sınırlamak için iş/dinlenme döngüsü: work_s kadar üretimden sonra rest_s bekler."""
+
+    def __init__(self, work_s: float, rest_s: float, sleep: Callable[[float], None] = time.sleep) -> None:
+        self.work_s = work_s
+        self.rest_s = rest_s
+        self.sleep = sleep
+        self.worked = 0.0
+
+    def add_work(self, seconds: float) -> None:
+        self.worked += seconds
+
+    def maybe_rest(self) -> bool:
+        if self.work_s <= 0 or self.worked < self.work_s:
+            return False
+        self.sleep(self.rest_s)
+        self.worked = 0.0
+        return True
 
 
 def find_batch(batch_id: str) -> Path:
@@ -165,12 +195,20 @@ def main() -> None:
     ap.add_argument("--style-ref", action="append", default=[], help="klein için ek stil referansı (repo yolu)")
     ap.add_argument("--force", action="store_true", help="assets/ içinde zaten olan öğeleri de üret")
     ap.add_argument("--no-cut", action="store_true", help="arka plan silmeyi atla")
+    ap.add_argument("--work-minutes", type=float, default=0, help="bu kadar üretimden sonra dinlen (0: kapalı)")
+    ap.add_argument("--rest-minutes", type=float, default=15, help="dinlenme süresi")
+    ap.add_argument("--include-geometric", action="store_true", help="sekil/cisim/blok öğelerini de üret")
     args = ap.parse_args()
 
     batch_file = find_batch(args.batch)
     items = select_items(parse_batch(batch_file.read_text(encoding="utf-8")), args.items)
     if not args.force:
         items = [i for i in items if not (REPO / i.path).exists()]
+    if not args.include_geometric:
+        for i in items:
+            if is_geometric(i.key):
+                print(f"BLENDER {i.number} {i.key}: geometrik öğe, Blender'da üretilecek")
+        items = [i for i in items if not is_geometric(i.key)]
     if not items:
         print("Üretilecek öğe yok.")
         return
@@ -190,6 +228,7 @@ def main() -> None:
     gen = Generator(args.model, args.quantize, args.lora)
     print(f"Model yüklendi: {time.time() - t0:.0f} sn")
 
+    cycle = DutyCycle(args.work_minutes * 60, args.rest_minutes * 60)
     planned: list[tuple[BatchItem, list[Path]]] = []
     to_cut: list[tuple[Path, Path, Path]] = []  # (ham, kesilmiş, kayıt)
     for item in items:
@@ -211,13 +250,19 @@ def main() -> None:
         shown: list[Path] = []
         for k in range(args.seeds):
             seed = args.seed_base + k
-            t = time.time()
-            image = gen.generate(item.prompt, seed, size, steps, refs)
             raw = item_dir / f"s{seed}_{args.model}.png"
-            image.save(raw)
-            mx.clear_cache()
             cut_requested = not args.no_cut and item.remove_background
             cut_path = item_dir / f"s{seed}_{args.model}_cut.png"
+            if raw.exists() and raw.with_suffix(".json").exists():
+                # önceki çalıştırmadan kalmış: yeniden üretme, yalnızca eksik kesimi tamamla
+                if cut_requested and not cut_path.exists():
+                    to_cut.append((raw, cut_path, raw.with_suffix(".json")))
+                shown.append(cut_path if cut_requested else raw)
+                continue
+            t = time.time()
+            image = gen.generate(item.prompt, seed, size, steps, refs)
+            image.save(raw)
+            mx.clear_cache()
             meta = {
                 "key": item.key, "target": item.path, "batch": batch_file.name, "number": item.number,
                 "model": MODELS[args.model]["registry"], "model_license": MODELS[args.model]["license"],
@@ -232,7 +277,13 @@ def main() -> None:
             if cut_requested:
                 to_cut.append((raw, cut_path, meta_path))
             shown.append(cut_path if cut_requested else raw)
-            print(f"{item.number:>3} {item.key} s{seed}: {time.time() - t:.0f} sn", flush=True)
+            took = time.time() - t
+            cycle.add_work(took)
+            print(f"{datetime.now():%H:%M} {item.number:>3} {item.key} s{seed}: {took:.0f} sn", flush=True)
+            if cycle.work_s and cycle.worked >= cycle.work_s:
+                print(f"{datetime.now():%H:%M} dinlenme: {args.rest_minutes:.0f} dk", flush=True)
+                cycle.maybe_rest()
+                print(f"{datetime.now():%H:%M} dinlenme bitti", flush=True)
         planned.append((item, shown))
 
     del gen

@@ -2,8 +2,10 @@
 
 Kullanım (repo kökünden):
     uv run --project tools/imagegen python tools/imagegen/approve.py 060 1=1000 4=1001 7=1000:klein
+    uv run --project tools/imagegen python tools/imagegen/approve.py 040 9=0:blender
 
-Her seçim için: aday (arka planı silinmişse _cut sürümü) şeffaf kenarları kırpılarak,
+Her seçim için: aday (arka planı silinmişse _cut sürümü) şeffaf kenarları kırpılarak
+(kayıtta "trim": false ise kırpılmadan),
 uzun kenarı en fazla 1024 px olacak şekilde hedef yola yazılır; üretim bilgisi
 docs/assets/image-provenance.jsonl dosyasına eklenir.
 """
@@ -25,7 +27,8 @@ MAX_SIDE = 1024
 
 def prepare(src: Path, trim: bool) -> Image.Image:
     im = Image.open(src)
-    im = im.convert("RGBA") if trim else im.convert("RGB")
+    has_alpha = im.mode in ("RGBA", "LA") or (im.mode == "P" and "transparency" in im.info)
+    im = im.convert("RGBA") if (trim or has_alpha) else im.convert("RGB")
     if trim:
         bbox = im.getchannel("A").point(lambda a: 255 if a > 8 else 0).getbbox()
         if bbox:
@@ -65,7 +68,9 @@ def main() -> None:
         if target.exists() and not args.overwrite:
             sys.exit(f"Hedef zaten var (üzerine yazmak için --overwrite): {item.path}")
         target.parent.mkdir(parents=True, exist_ok=True)
-        prepare(src, trim=src == cut).save(target)
+        # Blender öğeleri sabit ölçekle çekilir; kırpılırsa "küçük" ile "büyük" aynı boyuta gelir
+        trim = meta.get("trim", src == cut)
+        prepare(src, trim=trim).save(target)
         records.append({**meta, "approved": date.today().isoformat(), "source_file": str(src.relative_to(REPO))})
         print(f"{item.number} {item.key} → {item.path}")
 

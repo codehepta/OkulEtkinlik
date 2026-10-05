@@ -6,7 +6,7 @@ from PIL import Image
 
 from approve import prepare
 from batch_parser import BatchItem
-from generate import select_items
+from generate import DutyCycle, is_geometric, select_items
 
 
 def _item(n: int) -> BatchItem:
@@ -42,6 +42,46 @@ class PrepareTest(unittest.TestCase):
             out = prepare(p, trim=False)
         self.assertEqual(out.size, (1024, 585))
         self.assertEqual(out.mode, "RGB")
+
+    def test_untrimmed_sprite_keeps_canvas_and_alpha(self) -> None:
+        im = Image.new("RGBA", (1024, 1024), (0, 0, 0, 0))
+        im.paste((0, 0, 255, 255), (450, 450, 574, 574))  # boşlukta küçük kare
+        with tempfile.TemporaryDirectory() as d:
+            p = Path(d) / "k.png"
+            im.save(p)
+            out = prepare(p, trim=False)
+        self.assertEqual(out.size, (1024, 1024))
+        self.assertEqual(out.mode, "RGBA")
+        self.assertEqual(out.getpixel((0, 0))[3], 0)
+
+
+class GeometricTest(unittest.TestCase):
+    def test_geometric_prefixes_go_to_blender(self) -> None:
+        self.assertTrue(is_geometric("item.sekil.altigen"))
+        self.assertTrue(is_geometric("item.cisim.kure"))
+        self.assertTrue(is_geometric("item.blok.onluk"))
+        self.assertFalse(is_geometric("item.hayvan.kedi"))
+        self.assertFalse(is_geometric("item.yapi.ev"))
+
+
+class DutyCycleTest(unittest.TestCase):
+    def test_rests_after_work_window_and_resets(self) -> None:
+        slept: list[float] = []
+        cycle = DutyCycle(work_s=600, rest_s=900, sleep=slept.append)
+        cycle.add_work(400)
+        self.assertFalse(cycle.maybe_rest())
+        cycle.add_work(250)
+        self.assertTrue(cycle.maybe_rest())
+        self.assertEqual(slept, [900])
+        cycle.add_work(100)
+        self.assertFalse(cycle.maybe_rest())
+
+    def test_disabled_when_work_window_is_zero(self) -> None:
+        slept: list[float] = []
+        cycle = DutyCycle(work_s=0, rest_s=900, sleep=slept.append)
+        cycle.add_work(10_000)
+        self.assertFalse(cycle.maybe_rest())
+        self.assertEqual(slept, [])
 
 
 if __name__ == "__main__":
