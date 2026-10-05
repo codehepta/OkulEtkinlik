@@ -7,7 +7,10 @@ extends MiniGame
 ##                 kodunu boya), silhouette (silüeti eşle), pieces (N bağlı hücre boya).
 ## Boyalı hücre kabarık kil + iç işaret, kilitli hücre çizgili desen + koyu kenar alır; ipucu
 ## noktaları ve iz çizgisi şekilce ayrılır (renk tek başına anlam taşımaz).
-## Bu sürümde döndürme / büyütme (MAT.2.3.4 b) bilerek yoktur.
+## copy + `transform` ("rotate" | "scale") + `reference` (Faz 3d, MAT.2.3.4 b): sağdaki örnek
+## `reference` şeklini gösterir; çocuk onu döndürerek (örnekle aynı yönde olmayan herhangi bir
+## çeyrek dönüş) ya da iki kat büyüterek zemine boyar. Konum serbesttir; `target` ipucu ve çözüm
+## için önerilen yerdir.
 
 const Widgets: GDScript = preload("res://scenes/games/game_widgets.gd")
 const GridLogic: GDScript = preload("res://scripts/core/grid_logic.gd")
@@ -18,6 +21,8 @@ const PAINT_ASKS: PackedStringArray = ["copy", "symmetry", "code", "silhouette",
 const ARROW_SETS: PackedStringArray = ["relative", "absolute"]
 ## Simetri ekseninin yönü: dikey eksen sütun sınırı, yatay eksen satır sınırıdır.
 const AXIS_DIRS: PackedStringArray = ["vertical", "horizontal"]
+## copy dönüşümleri (MAT.2.3.4 b).
+const TRANSFORMS: PackedStringArray = ["rotate", "scale"]
 ## Sütun / satır aralıkları (x: en az, y: en çok).
 const PATH_COLS: Vector2i = Vector2i(3, 8)
 const PATH_ROWS: Vector2i = Vector2i(3, 5)
@@ -118,6 +123,10 @@ var _hint_card: String = ""
 var _painted: Dictionary = {}
 var _locked: Dictionary = {}
 var _target: Dictionary = {}
+## copy: sağdaki örnekte görünen şekil (dönüşüm yoksa hedefin kendisi).
+var _reference: Dictionary = {}
+## copy: "" (birebir kopya), "rotate" ya da "scale".
+var _transform: String = ""
 var _pieces: int = 0
 var _axis: int = 0
 var _axis_dir: String = "vertical"
@@ -427,6 +436,12 @@ func _setup_paint(params: Dictionary) -> void:
 		"copy", "silhouette":
 			for c: Vector2i in GridLogic.parse_cells(params["target"]) as Array:
 				_target[c] = true
+			_transform = str(params.get("transform", ""))
+			_reference = _target.duplicate()
+			if _transform != "":
+				_reference.clear()
+				for c: Vector2i in GridLogic.parse_cells(params["reference"]) as Array:
+					_reference[c] = true
 		"symmetry":
 			_axis = int(params["axis"])
 			_axis_dir = str(params.get("axis_dir", "vertical"))
@@ -512,6 +527,8 @@ func _refresh_paint() -> void:
 		_count_tile.set("text", str(_painted.size()))
 
 func _paint_correct() -> bool:
+	if _transform != "":
+		return GridLogic.matches_transform(_painted.keys(), _reference.keys(), _transform)
 	if _ask == "pieces":
 		return _painted.size() == _pieces and GridLogic.cells_connected(_painted.keys())
 	if _painted.size() != _target.size():
@@ -696,7 +713,7 @@ func _draw_reference(ci: Control) -> void:
 	for r: int in _rows:
 		for c: int in _cols:
 			var rect: Rect2 = Rect2(o + Vector2(c, r) * rs, Vector2(rs, rs)).grow(-3.0)
-			if _target.has(Vector2i(c, r)):
+			if _reference.has(Vector2i(c, r)):
 				ci.draw_style_box(ClayStyle.plaque_box(PAINT_COLOR, PAINT_COLOR.darkened(0.22), 8, 3, 4, 0), rect)
 				ci.draw_circle(rect.get_center() - Vector2(0, 2), rs * 0.13, ClayStyle.IVORY, true, -1.0, true)
 			else:
@@ -814,6 +831,10 @@ func program() -> Array[String]:
 
 func painted() -> Array[Vector2i]:
 	return GridLogic.sorted_cells(_painted.keys())
+
+## copy: sağdaki örnekte görünen hücreler.
+func reference_cells() -> Array[Vector2i]:
+	return GridLogic.sorted_cells(_reference.keys())
 
 func character_cell() -> Vector2i:
 	return _char_cell
@@ -966,6 +987,9 @@ static func _validate_paint(p: Dictionary, ask: String, cols: int, rows: int) ->
 		"copy", "silhouette":
 			if not _valid_cells(p.get("target"), cols, rows):
 				errs.append(ContentValidator.msg("err.params.grid_target"))
+				return errs
+			if p.has("transform") or p.has("reference"):
+				errs.append_array(_validate_transform(p, ask, cols, rows))
 		"symmetry":
 			var dir: Variant = p.get("axis_dir", "vertical")
 			if not (dir is String) or not AXIS_DIRS.has(dir as String):
@@ -1006,6 +1030,22 @@ static func _validate_paint(p: Dictionary, ask: String, cols: int, rows: int) ->
 			var n: Variant = p.get("pieces")
 			if not ContentValidator.is_int_like(n) or int(n) < PIECES_MIN or int(n) > PIECES_MAX or int(n) > cols * rows:
 				errs.append(ContentValidator.msg("err.params.grid_pieces"))
+	return errs
+
+## copy dönüşümü: transform rotate ya da scale, reference geçerli hücreler; hedef örneğin dönüşmüş
+## biçimlerinden biri olmalı. Dönünce değişmeyen örnek (kare, tek hücre) döndürme sorusu olamaz.
+static func _validate_transform(p: Dictionary, ask: String, cols: int, rows: int) -> Array[String]:
+	var errs: Array[String] = []
+	var kind: Variant = p.get("transform")
+	if ask != "copy" or not (kind is String) or not TRANSFORMS.has(kind as String) or not _valid_cells(p.get("reference"), cols, rows):
+		errs.append(ContentValidator.msg("err.params.grid_transform"))
+		return errs
+	var reference: Array = GridLogic.parse_cells(p["reference"])
+	var shapes: Array = GridLogic.transform_shapes(reference, kind as String)
+	if shapes.is_empty():
+		errs.append(ContentValidator.msg("err.params.grid_transform_same"))
+	elif not shapes.has(GridLogic.normalized(GridLogic.parse_cells(p["target"]))):
+		errs.append(ContentValidator.msg("err.params.grid_transform_target"))
 	return errs
 
 ## 1–6 komut; her biri [yön, 1–9 tam sayı].

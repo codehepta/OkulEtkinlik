@@ -1,6 +1,7 @@
 extends RefCounted
 ## Kareli zemin (grid) şablonunun saf mantığı: hücre ayrıştırma, program yürütme,
-## en kısa program (BFS), ayna hücresi, kod yolu, 4-bağlılık ve yılan sırası.
+## en kısa program (BFS), ayna hücresi, kod yolu, 4-bağlılık, yılan sırası ve şekil dönüşümleri
+## (döndürme, büyütme; MAT.2.3.4 b).
 ## Sahnesizdir; şablon ve doğrulama `preload` ile kullanır. Koordinatlar [sütun, satır],
 ## 0 tabanlı, satır 0 en üstte.
 
@@ -176,3 +177,49 @@ static func sorted_cells(cells: Array) -> Array[Vector2i]:
 		res.append(c)
 	res.sort_custom(func(a: Vector2i, b: Vector2i) -> bool: return a.y < b.y or (a.y == b.y and a.x < b.x))
 	return res
+
+## Şekli sol üst köşesi (0, 0) olacak biçimde kaydırır; satır öncelikli sıralı.
+static func normalized(cells: Array) -> Array[Vector2i]:
+	var res: Array[Vector2i] = []
+	if cells.is_empty():
+		return res
+	var mn: Vector2i = cells[0]
+	for c: Vector2i in cells:
+		mn = Vector2i(mini(mn.x, c.x), mini(mn.y, c.y))
+	for c: Vector2i in cells:
+		res.append(c - mn)
+	return sorted_cells(res)
+
+## Saat yönünde çeyrek dönüş (satır 0 üstte): sağa uzanan kol aşağı iner. Sonuç normalizedir.
+static func rotated(cells: Array) -> Array[Vector2i]:
+	var res: Array[Vector2i] = []
+	for c: Vector2i in cells:
+		res.append(Vector2i(-c.y, c.x))
+	return normalized(res)
+
+## Her kare 2×2 olacak biçimde iki kat büyütme. Sonuç normalizedir.
+static func scaled(cells: Array) -> Array[Vector2i]:
+	var res: Array[Vector2i] = []
+	for c: Vector2i in normalized(cells):
+		for d: Vector2i in [Vector2i(0, 0), Vector2i(1, 0), Vector2i(0, 1), Vector2i(1, 1)]:
+			res.append(c * 2 + d)
+	return sorted_cells(res)
+
+## Dönüşümün kabul ettiği şekiller (normalize). rotate: 90°, 180° ve 270° dönmüş biçimlerden örnekle
+## aynı yönde olmayanlar (dönünce değişmeyen şekilde boş); scale: iki kat büyümüş biçim.
+static func transform_shapes(reference: Array, kind: String) -> Array:
+	var res: Array = []
+	var ref: Array[Vector2i] = normalized(reference)
+	if kind == "scale":
+		res.append(scaled(ref))
+	elif kind == "rotate":
+		var cur: Array[Vector2i] = ref
+		for i: int in 3:
+			cur = rotated(cur)
+			if cur != ref and not res.has(cur):
+				res.append(cur)
+	return res
+
+## Boyanan hücreler, örneğin dönüşmüş biçimlerinden biri mi (konum serbest)?
+static func matches_transform(cells: Array, reference: Array, kind: String) -> bool:
+	return not cells.is_empty() and transform_shapes(reference, kind).has(normalized(cells))

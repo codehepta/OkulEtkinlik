@@ -334,10 +334,10 @@ Uygunluk: **tam** = bütün süreç bileşenleri dokunmatik oyunla çalışılab
 | Kod | Öğrenme çıktısı | s. | Uygunluk | Şablonlar | Not |
 |---|---|---|---|---|---|
 | MAT.2.3.1 | Günlük yaşamda kullanılan nesneleri biçimsel özelliklerine göre geometrik cisim olarak sınıflandırabilme | 72 | tam | `sort_bins`, `drag_match`, `listen_find` |  |
-| MAT.2.3.2 | Geometrik cisim modellerini kullanarak yapılar sentezleyebilme | 72 | kısmi | `listen_find`, `drag_match`, `grid` | a–b) yapılardaki geometrik cisimleri belirleme ve ilişkilendirme oynanabilir; c) birleştirerek yapı oluşturma denetlenebilir hedefle (silüeti eşle, N parça kullan) grid (paint: silhouette, pieces) ile ekranda kare birimlerle oynanabilir; özgün yapı somut bloklarla kurma ev etkinliği olarak önerilebilir. |
-| MAT.2.3.3 | Geometrik şekiller kullanarak modeller sentezleyebilme | 72 | kısmi | `listen_find`, `drag_match`, `grid` | a–b) modellerdeki geometrik şekilleri belirleme ve ilişkilendirme oynanabilir; c) şekilleri birleştirerek model oluşturma denetlenebilir hedefle (silüeti eşle, N parça kullan) grid (paint: silhouette, pieces) ile oynanabilir; serbest özgün model ustalık hesabına girmediği için ev etkinliği olarak önerilebilir. |
-| MAT.2.3.4 | Geometrik şekil ve cisimlerin yön, konum veya büyüklükleri değiştiğinde biçimsel özelliklerinin değişmediğini yorumlayabilme | 72 | kısmi | `sort_bins`, `listen_find`, `grid` | a) ve c) farklı yön ve büyüklükteki şekil ve cisimleri tanıyıp aynı şekil olarak ayırma oynanabilir; b) şekli kareli zeminde kendisi oluşturma grid (paint/copy) ile oynanabilir, ancak farklı büyüklük ya da yönde oluşturma (büyütme, döndürme) grid'in ilk sürümünde yok (spec Açık sorular, Faz 3b); cisimler için somut model ev etkinliği. |
-| MAT.2.3.5 | Standart olmayan sıvı ölçme araçları ile sıvı miktarını tahmin edebilme | 72 | kısmi | `count_choose` | b) sıvı miktarını seçenekli tahmin etme count_choose ile oynanabilir; c) tahmini ekranda bardakla doldurma sonucuyla karşılaştırma önerilen estimate_then_count gerektirir; a) gerçek kaplarla sıvı ölçme deneyimi ev etkinliği. |
+| MAT.2.3.2 | Geometrik cisim modellerini kullanarak yapılar sentezleyebilme | 72 | kısmi | `listen_find`, `drag_match`, `grid`, `scenario` | a) yapılardaki geometrik cisimleri belirleme scenario (blok yapı görselinde parçanın cismini seçme) ile, b) cisimleri yüzlerindeki şekillerle ilişkilendirme drag_match ile oynanabilir; c) birleştirerek yapı oluşturma denetlenebilir hedefle (silüeti eşle, N parça kullan) grid (paint: silhouette, pieces) ile ekranda kare birimlerle oynanabilir; özgün yapı somut bloklarla kurma ev etkinliği olarak önerilebilir. |
+| MAT.2.3.3 | Geometrik şekiller kullanarak modeller sentezleyebilme | 72 | kısmi | `listen_find`, `drag_match`, `grid`, `scenario` | a) modellerdeki geometrik şekilleri belirleme scenario (şekillerden yapılmış model görselinde parçanın şeklini seçme) ile, b) şekilleri köşe sayısıyla ilişkilendirme drag_match ile oynanabilir; c) şekilleri birleştirerek model oluşturma denetlenebilir hedefle (silüeti eşle, N parça kullan) grid (paint: silhouette, pieces) ile oynanabilir; serbest özgün model ustalık hesabına girmediği için ev etkinliği olarak önerilebilir. |
+| MAT.2.3.4 | Geometrik şekil ve cisimlerin yön, konum veya büyüklükleri değiştiğinde biçimsel özelliklerinin değişmediğini yorumlayabilme | 72 | kısmi | `sort_bins`, `listen_find`, `grid` | a) ve c) farklı yön ve büyüklükteki şekil ve cisimleri tanıyıp aynı şekil olarak ayırma oynanabilir; b) şekli kareli zeminde döndürerek ya da iki kat büyüterek oluşturma grid (paint/copy, transform: rotate, scale) ile oynanabilir; cisimleri farklı yön ve büyüklükte oluşturma somut model ister, ev etkinliği. |
+| MAT.2.3.5 | Standart olmayan sıvı ölçme araçları ile sıvı miktarını tahmin edebilme | 72 | kısmi | `count_choose` | b) sıvı miktarını seçenekli tahmin etme ve c) tahmini, dolan bardakları sayarak bulunan ölçüm sonucuyla karşılaştırıp yakın/uzak yargısında bulunma count_choose tahmin modu (estimates) ile oynanabilir; a) gerçek kaplarla sıvı ölçme deneyimi ev etkinliği. |
 
 #### MAT.2.1. Sayılar ve Nicelikler (1)
 
@@ -346,7 +346,7 @@ Uygunluk: **tam** = bütün süreç bileşenleri dokunmatik oyunla çalışılab
 | Kod | Öğrenme çıktısı | s. | Uygunluk | Şablonlar | Not |
 |---|---|---|---|---|---|
 | MAT.2.1.1 | 100’e kadar olan niceliklerin büyüklüklerini temsil etmede sayıların sembolik temsillerinden yararlanabilme | 51 | tam | `count_choose`, `drag_match`, `listen_find` | c) sayı yazma 2–3. sınıfta iz sürme yerine rakam karosu girişiyle (listen_find yazma modu, answer: digits) çalışılır. |
-| MAT.2.1.2 | İki basamaklı sayıları çözümleyebilme | 51 | tam | `drag_match`, `sort_bins`, `count_choose` |  |
+| MAT.2.1.2 | İki basamaklı sayıları çözümleyebilme | 51 | tam | `drag_match`, `sort_bins`, `count_choose`, `listen_find` |  |
 | MAT.2.1.3 | Sayıların sırasını belirleyebilme | 51 | tam | `sequence`, `balance` |  |
 | MAT.2.1.4 | İleriye ve geriye doğru ritmik sayabilme | 51 | tam | `pattern`, `sequence`, `listen_find` | a) yüzlük tablo listen_find ızgarası olarak verilir; c) genelleme sesli okunan kural seçenekleri arasından seçilir. |
 | MAT.2.1.5 | Sayı ve sayı temsiline dönüşen şekil örüntülerine dayalı çıkarım yapabilme | 51 | kısmi | `pattern`, `listen_find` | a) varsayımı sesli seçenekler arasından seçme, c) gösterilen örüntünün varsayımı karşılayıp karşılamadığını sınama ve d) gösterilen örüntüyü değerlendirme pattern ve listen_find ile oynanabilir; b) örüntüleri örnekler üzerinde listeleme ve ç) kuralı sözlü olarak ifade etme serbest üretim. |
@@ -362,7 +362,7 @@ Uygunluk: **tam** = bütün süreç bileşenleri dokunmatik oyunla çalışılab
 | MAT.2.2.2 | Toplama ve çıkarma işlemlerinin sonuçlarını tahminde bulunarak ve zihinden işlem yaparak muhakeme edebilme | 66 | tam | `balloon_pop`, `drag_match`, `count_choose`, `balance` | a–b) işlem ögelerini ve aralarındaki ilişkileri belirleme oynanabilir; c–ç) sonucu tahmin edip zihinden işlem sonucuyla karşılaştırma ve tutarlılığı (yakın/uzak) seçme balance tahmin modu (eksik değerli terazi) ile oynanabilir. |
 | MAT.2.2.3 | Toplama ve çıkarma işlemlerinin ilişkisini yorumlayabilme | 66 | tam | `drag_match`, `balance` | c) ilişkiyi yeniden ifade etme, işlem ailesini model ve işlem kartlarıyla eşleştirerek çalışılır. |
 | MAT.2.2.4 | Çarpma ve bölme işlemlerini toplama ve çıkarma işlemlerine dayalı olarak çözümleyebilme | 66 | tam | `drag_match`, `count_choose`, `sort_bins` |  |
-| MAT.2.2.5 | Çarpma ve bölme işlemlerinin sonuçlarını tahminde bulunarak ve zihinden işlem yaparak muhakeme edebilme | 66 | kısmi | `drag_match`, `count_choose`, `balloon_pop` | a–b) çarpma ve bölmenin bileşenlerini ve ilişkilerini belirleme oynanabilir; c) tahmin ve zihinden işlem sonucunu karşılaştırma önerilen estimate_then_count gerektirir; ç) sonuçları açıklama sözlü etkinlik. |
+| MAT.2.2.5 | Çarpma ve bölme işlemlerinin sonuçlarını tahminde bulunarak ve zihinden işlem yaparak muhakeme edebilme | 66 | kısmi | `drag_match`, `count_choose`, `balloon_pop`, `balance` | a–b) çarpma ve bölmenin bileşenlerini ve ilişkilerini belirleme oynanabilir; c) sonucu tahmin edip zihinden işlem sonucuyla karşılaştırma balance tahmin modu (tekrarlı toplama olarak kurulmuş eksik değerli terazi) ile oynanabilir; ç) sonuçları açıklama sözlü etkinlik. |
 | MAT.2.2.6 | Dört işlem bağlamında eşitliğin farklı anlamlarını yorumlayabilme | 66 | tam | `balance`, `drag_match`, `listen_find` | c) eşitliğin anlamları (işlemin sonucu; iki tarafın eşit değeri) terazi modelli sesli seçenekler arasından seçilerek ifade edilir. |
 
 #### MAT.2.1. Sayılar ve Nicelikler (2)
@@ -375,7 +375,7 @@ Uygunluk: **tam** = bütün süreç bileşenleri dokunmatik oyunla çalışılab
 | MAT.2.1.8 | Paraları değerlerine göre ilişkilendirerek çözümleyebilme | 58 | tam | `clock_money`, `drag_match`, `sort_bins` |  |
 | MAT.2.1.9 | Zaman ölçü birimlerini okuyabilme ve yazabilme | 58 | tam | `clock_money`, `drag_match`, `sort_bins` | Yazma, dijital saati kurma ve eşleştirmeyle çalışılır. |
 | MAT.2.1.10 | Standart uzunluk ve kütle ölçme araçlarının ve birimlerinin gerekliliğini yansıtabilme | 58 | kısmi | `scenario`, `listen_find` | b–c) farklı karışlarla farklı sonuç çıkan durumdan standart birim gereğini çıkarma scenario ile oynanabilir; a) kendi standart olmayan ölçme deneyimlerini gözden geçirme gerçek ölçme deneyimi ister. |
-| MAT.2.1.11 | Standart uzunluk ve kütle ölçü birimleri cinsinden uzunlukları ve kütleleri tahmin edebilme | 58 | kısmi | `listen_find`, `drag_match`, `count_choose` | b) uygun standart birimi seçme listen_find, nesneyle eşleştirme drag_match ve birim cinsinden aralıklı seçeneklerle tahmin count_choose ile oynanabilir; c) tahmini ekranda cetvel ya da terazi ölçümüyle karşılaştırıp yargıda bulunma önerilen estimate_then_count gerektirir; a) standart birimlerle gerçek ölçme deneyimini ilişkilendirme ev etkinliği. |
+| MAT.2.1.11 | Standart uzunluk ve kütle ölçü birimleri cinsinden uzunlukları ve kütleleri tahmin edebilme | 58 | kısmi | `listen_find`, `drag_match`, `count_choose` | b) uygun standart birimi seçme listen_find, nesneyle eşleştirme drag_match ve birim cinsinden aralıklı seçeneklerle tahmin count_choose ile oynanabilir; c) tahmini ölçüm sonucuyla karşılaştırıp yargıda bulunma count_choose tahmin modu (estimates) ile, metre çubuklarını, kilogramlık ağırlıkları ya da santimetre küplerini sayarak kontrol edip oynanabilir; a) standart birimlerle gerçek ölçme deneyimini ilişkilendirme ev etkinliği. |
 
 #### MAT.2.3. Nesnelerin Geometrisi (2)
 
@@ -1023,8 +1023,7 @@ Spec §3.7'deki 14 şablonda karşılığı olmayan mekanikler (karar için bkz.
 
 | Öneri | Çıktı sayısı | Kodlar |
 |---|---|---|
-| `estimate_then_count` | 10 | MAT.1.1.8, MAT.2.1.6, MAT.2.1.11, MAT.2.2.5, MAT.2.3.5, MAT.3.1.8, MAT.3.1.14, MAT.3.2.3, MAT.3.3.4, MAT.3.3.5 |
-| `grid_transform` | 1 | MAT.2.3.4 |
+| `estimate_then_count` | 7 | MAT.1.1.8, MAT.2.1.6, MAT.3.1.8, MAT.3.1.14, MAT.3.2.3, MAT.3.3.4, MAT.3.3.5 |
 
 ## Sahibe notlar
 

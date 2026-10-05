@@ -1,6 +1,8 @@
 # 050 · 3. sınıf Matematik nesne görselleri
 
-**Öncelik: ORTA** (Faz 3e). `content/g3/matematik/u01–u06.json` turlarında kullanılan ve henüz istenmemiş 65 nesne: onluk taban blokları (`item.blok.*`), olay ve süre kartları (`item.olay.*`), uzunluk ve kütle karşılaştırma nesneleri (`item.olcu.*`), geometrik cisimler (`item.cisim.*`), düzlemsel şekiller (`item.sekil.*`), çizim araçları (`item.arac.*`), çevre ölçme kartları (`item.cevre.*`), sıvı kapları (`item.kap.*`) ve simetri kartları (`item.simetri.*`).
+**Öncelik: ORTA** (Faz 3e). `content/g3/matematik/u01–u06.json` turlarında kullanılan ve henüz istenmemiş 55 nesne: onluk taban blokları (`item.blok.*`), olay ve süre kartları (`item.olay.*`), uzunluk ve kütle karşılaştırma nesneleri (`item.olcu.*`), düzlemsel şekiller (`item.sekil.*`), çizim araçları (`item.arac.*`), çevre ölçme kartları (`item.cevre.*`), sıvı kapları (`item.kap.*`) ve simetri kartları (`item.simetri.*`).
+
+Ortak anahtarlar: `item.cisim.*` (6 cisim) ile `item.sekil.ucgen`, `item.sekil.kare`, `item.sekil.dikdortgen` ve `item.simetri.kalp` 2. sınıf partilerinde (040, 042) istendi; burada tekrar edilmez.
 
 > Bu dosya eklenmeden de oyun çalışır: eksik görsellerin yerinde Türkçe etiketli yer tutucu görünür.
 
@@ -34,49 +36,39 @@ Stil bloğu: `docs/assets/style-guide.md` → `STYLE_SPRITE` (promptların sonun
 | 20 | `assets/images/items/olcu/un_cuvali.png` | 1:1 | — | un çuvalı (`label.item.olcu.un_cuvali`). |
 | 21 | `assets/images/items/olcu/fil.png` | 1:1 | — | fil (`label.item.olcu.fil`). |
 | 22 | `assets/images/items/olcu/kamyon.png` | 1:1 | — | kamyon (`label.item.olcu.kamyon`). |
-| 23 | `assets/images/items/cisim/kup.png` | 1:1 | — | küp (`label.item.cisim.kup`). |
-| 24 | `assets/images/items/cisim/kare_prizma.png` | 1:1 | — | kare prizma (`label.item.cisim.kare_prizma`). |
-| 25 | `assets/images/items/cisim/dikdortgen_prizma.png` | 1:1 | — | dikdörtgen prizma (`label.item.cisim.dikdortgen_prizma`). |
-| 26 | `assets/images/items/cisim/ucgen_prizma.png` | 1:1 | — | üçgen prizma (`label.item.cisim.ucgen_prizma`). |
-| 27 | `assets/images/items/cisim/kure.png` | 1:1 | — | küre (`label.item.cisim.kure`). |
-| 28 | `assets/images/items/cisim/silindir.png` | 1:1 | — | silindir (`label.item.cisim.silindir`). |
-| 29 | `assets/images/items/sekil/ucgen.png` | 1:1 | — | üçgen (`label.item.sekil.ucgen`). |
-| 30 | `assets/images/items/sekil/ucgen_dik.png` | 1:1 | — | dik üçgen (`label.item.sekil.ucgen_dik`). |
-| 31 | `assets/images/items/sekil/ucgen_genis.png` | 1:1 | — | geniş üçgen (`label.item.sekil.ucgen_genis`). |
-| 32 | `assets/images/items/sekil/kare.png` | 1:1 | — | kare (`label.item.sekil.kare`). |
-| 33 | `assets/images/items/sekil/dikdortgen.png` | 1:1 | — | dikdörtgen (`label.item.sekil.dikdortgen`). |
-| 34 | `assets/images/items/sekil/yamuk.png` | 1:1 | — | yamuk (`label.item.sekil.yamuk`). |
-| 35 | `assets/images/items/sekil/besgen.png` | 1:1 | — | beşgen (`label.item.sekil.besgen`). |
-| 36 | `assets/images/items/sekil/besgen_ev.png` | 1:1 | — | ev biçiminde beşgen (`label.item.sekil.besgen_ev`). |
-| 37 | `assets/images/items/sekil/altigen.png` | 1:1 | — | altıgen (`label.item.sekil.altigen`). |
-| 38 | `assets/images/items/sekil/altigen_uzun.png` | 1:1 | — | uzun altıgen (`label.item.sekil.altigen_uzun`). |
-| 39 | `assets/images/items/sekil/sekizgen.png` | 1:1 | — | sekizgen (`label.item.sekil.sekizgen`). |
-| 40 | `assets/images/items/arac/cetvel.png` | 1:1 | — | cetvel (`label.item.arac.cetvel`). |
-| 41 | `assets/images/items/arac/kareli_kagit.png` | 1:1 | — | kareli kâğıt (`label.item.arac.kareli_kagit`). |
-| 42 | `assets/images/items/arac/geometri_tahtasi.png` | 1:1 | — | geometri tahtası (`label.item.arac.geometri_tahtasi`). |
-| 43 | `assets/images/items/arac/tablet.png` | 1:1 | — | tablet (`label.item.arac.tablet`). |
-| 44 | `assets/images/items/arac/makas.png` | 1:1 | — | makas (`label.item.arac.makas`). |
-| 45 | `assets/images/items/arac/yapistirici.png` | 1:1 | — | yapıştırıcı (`label.item.arac.yapistirici`). |
-| 46 | `assets/images/items/arac/kasik.png` | 1:1 | — | kaşık (`label.item.arac.kasik`). |
-| 47 | `assets/images/items/cevre/dikdortgen_3x2.png` | 1:1 | — | dikdörtgen (3 × 2 birim) (`label.item.cevre.dikdortgen_3x2`). |
-| 48 | `assets/images/items/cevre/kare_3.png` | 1:1 | — | kare (kenarı 3 birim) (`label.item.cevre.kare_3`). |
-| 49 | `assets/images/items/cevre/kitap_karis.png` | 1:1 | — | kitap ve karış (`label.item.cevre.kitap_karis`). |
-| 50 | `assets/images/items/kap/bardak.png` | 1:1 | — | su bardağı (`label.item.kap.bardak`). |
-| 51 | `assets/images/items/kap/cay_bardagi.png` | 1:1 | — | çay bardağı (`label.item.kap.cay_bardagi`). |
-| 52 | `assets/images/items/kap/fincan.png` | 1:1 | — | fincan (`label.item.kap.fincan`). |
-| 53 | `assets/images/items/kap/su_sisesi.png` | 1:1 | — | su şişesi (1 L) (`label.item.kap.su_sisesi`). |
-| 54 | `assets/images/items/kap/kova.png` | 1:1 | — | kova (`label.item.kap.kova`). |
-| 55 | `assets/images/items/kap/kuvet.png` | 1:1 | — | küvet (`label.item.kap.kuvet`). |
-| 56 | `assets/images/items/kap/akvaryum.png` | 1:1 | — | akvaryum (`label.item.kap.akvaryum`). |
-| 57 | `assets/images/items/simetri/kare.png` | 1:1 | — | kare (`label.item.simetri.kare`). |
-| 58 | `assets/images/items/simetri/dikdortgen.png` | 1:1 | — | dikdörtgen (`label.item.simetri.dikdortgen`). |
-| 59 | `assets/images/items/simetri/daire.png` | 1:1 | — | daire (`label.item.simetri.daire`). |
-| 60 | `assets/images/items/simetri/kalp.png` | 1:1 | — | kalp (`label.item.simetri.kalp`). |
-| 61 | `assets/images/items/simetri/kare_kosegen.png` | 1:1 | — | köşegeni çizili kare (`label.item.simetri.kare_kosegen`). |
-| 62 | `assets/images/items/simetri/dikdortgen_kosegen.png` | 1:1 | — | köşegeni çizili dikdörtgen (`label.item.simetri.dikdortgen_kosegen`). |
-| 63 | `assets/images/items/simetri/kare_yamuk_cizgi.png` | 1:1 | — | yamuk çizgili kare (`label.item.simetri.kare_yamuk_cizgi`). |
-| 64 | `assets/images/items/simetri/ev.png` | 1:1 | — | ev çizimi (`label.item.simetri.ev`). |
-| 65 | `assets/images/items/simetri/ruzgar_gulu.png` | 1:1 | — | yamuk çizim (`label.item.simetri.ruzgar_gulu`). |
+| 23 | `assets/images/items/sekil/ucgen_dik.png` | 1:1 | — | dik üçgen (`label.item.sekil.ucgen_dik`). |
+| 24 | `assets/images/items/sekil/ucgen_genis.png` | 1:1 | — | geniş üçgen (`label.item.sekil.ucgen_genis`). |
+| 25 | `assets/images/items/sekil/yamuk.png` | 1:1 | — | yamuk (`label.item.sekil.yamuk`). |
+| 26 | `assets/images/items/sekil/besgen.png` | 1:1 | — | beşgen (`label.item.sekil.besgen`). |
+| 27 | `assets/images/items/sekil/besgen_ev.png` | 1:1 | — | ev biçiminde beşgen (`label.item.sekil.besgen_ev`). |
+| 28 | `assets/images/items/sekil/altigen.png` | 1:1 | — | altıgen (`label.item.sekil.altigen`). |
+| 29 | `assets/images/items/sekil/altigen_uzun.png` | 1:1 | — | uzun altıgen (`label.item.sekil.altigen_uzun`). |
+| 30 | `assets/images/items/sekil/sekizgen.png` | 1:1 | — | sekizgen (`label.item.sekil.sekizgen`). |
+| 31 | `assets/images/items/arac/cetvel.png` | 1:1 | — | cetvel (`label.item.arac.cetvel`). |
+| 32 | `assets/images/items/arac/kareli_kagit.png` | 1:1 | — | kareli kâğıt (`label.item.arac.kareli_kagit`). |
+| 33 | `assets/images/items/arac/geometri_tahtasi.png` | 1:1 | — | geometri tahtası (`label.item.arac.geometri_tahtasi`). |
+| 34 | `assets/images/items/arac/tablet.png` | 1:1 | — | tablet (`label.item.arac.tablet`). |
+| 35 | `assets/images/items/arac/makas.png` | 1:1 | — | makas (`label.item.arac.makas`). |
+| 36 | `assets/images/items/arac/yapistirici.png` | 1:1 | — | yapıştırıcı (`label.item.arac.yapistirici`). |
+| 37 | `assets/images/items/arac/kasik.png` | 1:1 | — | kaşık (`label.item.arac.kasik`). |
+| 38 | `assets/images/items/cevre/dikdortgen_3x2.png` | 1:1 | — | dikdörtgen (3 × 2 birim) (`label.item.cevre.dikdortgen_3x2`). |
+| 39 | `assets/images/items/cevre/kare_3.png` | 1:1 | — | kare (kenarı 3 birim) (`label.item.cevre.kare_3`). |
+| 40 | `assets/images/items/cevre/kitap_karis.png` | 1:1 | — | kitap ve karış (`label.item.cevre.kitap_karis`). |
+| 41 | `assets/images/items/kap/bardak.png` | 1:1 | — | su bardağı (`label.item.kap.bardak`). |
+| 42 | `assets/images/items/kap/cay_bardagi.png` | 1:1 | — | çay bardağı (`label.item.kap.cay_bardagi`). |
+| 43 | `assets/images/items/kap/fincan.png` | 1:1 | — | fincan (`label.item.kap.fincan`). |
+| 44 | `assets/images/items/kap/su_sisesi.png` | 1:1 | — | su şişesi (1 L) (`label.item.kap.su_sisesi`). |
+| 45 | `assets/images/items/kap/kova.png` | 1:1 | — | kova (`label.item.kap.kova`). |
+| 46 | `assets/images/items/kap/kuvet.png` | 1:1 | — | küvet (`label.item.kap.kuvet`). |
+| 47 | `assets/images/items/kap/akvaryum.png` | 1:1 | — | akvaryum (`label.item.kap.akvaryum`). |
+| 48 | `assets/images/items/simetri/kare.png` | 1:1 | — | kare (`label.item.simetri.kare`). |
+| 49 | `assets/images/items/simetri/dikdortgen.png` | 1:1 | — | dikdörtgen (`label.item.simetri.dikdortgen`). |
+| 50 | `assets/images/items/simetri/daire.png` | 1:1 | — | daire (`label.item.simetri.daire`). |
+| 51 | `assets/images/items/simetri/kare_kosegen.png` | 1:1 | — | köşegeni çizili kare (`label.item.simetri.kare_kosegen`). |
+| 52 | `assets/images/items/simetri/dikdortgen_kosegen.png` | 1:1 | — | köşegeni çizili dikdörtgen (`label.item.simetri.dikdortgen_kosegen`). |
+| 53 | `assets/images/items/simetri/kare_yamuk_cizgi.png` | 1:1 | — | yamuk çizgili kare (`label.item.simetri.kare_yamuk_cizgi`). |
+| 54 | `assets/images/items/simetri/ev.png` | 1:1 | — | ev çizimi (`label.item.simetri.ev`). |
+| 55 | `assets/images/items/simetri/ruzgar_gulu.png` | 1:1 | — | yamuk çizim (`label.item.simetri.ruzgar_gulu`). |
 
 ## Promptlar
 
@@ -300,77 +292,7 @@ a cute big grey elephant standing, friendly smile. 3D claymation style, handcraf
 a big friendly dump truck loaded with round stones, seen from the side. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
-### 23. `assets/images/items/cisim/kup.png`
-
-- **Oran:** 1:1  
-- **Referans görsel:** yok  
-- **Açıklama:** küp (`label.item.cisim.kup`).
-
-```
-a cube made of smooth light blue clay, seen from a slight top three-quarter view so three faces show, a simple solid geometric toy block, edges and corners clearly visible. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
-```
-
-### 24. `assets/images/items/cisim/kare_prizma.png`
-
-- **Oran:** 1:1  
-- **Referans görsel:** yok  
-- **Açıklama:** kare prizma (`label.item.cisim.kare_prizma`).
-
-```
-a tall square prism (a square based box taller than it is wide) made of smooth coral clay, slight top three-quarter view, a simple solid geometric toy block, edges and corners clearly visible. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
-```
-
-### 25. `assets/images/items/cisim/dikdortgen_prizma.png`
-
-- **Oran:** 1:1  
-- **Referans görsel:** yok  
-- **Açıklama:** dikdörtgen prizma (`label.item.cisim.dikdortgen_prizma`).
-
-```
-a rectangular prism (a long brick shaped box) made of smooth mint green clay, slight top three-quarter view, a simple solid geometric toy block, edges and corners clearly visible. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
-```
-
-### 26. `assets/images/items/cisim/ucgen_prizma.png`
-
-- **Oran:** 1:1  
-- **Referans görsel:** yok  
-- **Açıklama:** üçgen prizma (`label.item.cisim.ucgen_prizma`).
-
-```
-a triangular prism lying on one rectangular face like a tent, smooth butter yellow clay, slight top three-quarter view, a simple solid geometric toy block, edges and corners clearly visible. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
-```
-
-### 27. `assets/images/items/cisim/kure.png`
-
-- **Oran:** 1:1  
-- **Referans görsel:** yok  
-- **Açıklama:** küre (`label.item.cisim.kure`).
-
-```
-a perfect sphere made of smooth lavender clay, a simple solid geometric toy block, edges and corners clearly visible. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
-```
-
-### 28. `assets/images/items/cisim/silindir.png`
-
-- **Oran:** 1:1  
-- **Referans görsel:** yok  
-- **Açıklama:** silindir (`label.item.cisim.silindir`).
-
-```
-an upright cylinder made of smooth peach clay, slight top view so the round top face shows, a simple solid geometric toy block, edges and corners clearly visible. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
-```
-
-### 29. `assets/images/items/sekil/ucgen.png`
-
-- **Oran:** 1:1  
-- **Referans görsel:** yok  
-- **Açıklama:** üçgen (`label.item.sekil.ucgen`).
-
-```
-a flat equilateral triangle in coral cut out of thick smooth clay like a cookie, seen straight from above, clean straight edges and sharp visible corners. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
-```
-
-### 30. `assets/images/items/sekil/ucgen_dik.png`
+### 23. `assets/images/items/sekil/ucgen_dik.png`
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
@@ -380,7 +302,7 @@ a flat equilateral triangle in coral cut out of thick smooth clay like a cookie,
 a flat right angled triangle in teal cut out of thick smooth clay like a cookie, seen straight from above, clean straight edges and sharp visible corners. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
-### 31. `assets/images/items/sekil/ucgen_genis.png`
+### 24. `assets/images/items/sekil/ucgen_genis.png`
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
@@ -390,27 +312,7 @@ a flat right angled triangle in teal cut out of thick smooth clay like a cookie,
 a flat wide flat obtuse triangle in lavender cut out of thick smooth clay like a cookie, seen straight from above, clean straight edges and sharp visible corners. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
-### 32. `assets/images/items/sekil/kare.png`
-
-- **Oran:** 1:1  
-- **Referans görsel:** yok  
-- **Açıklama:** kare (`label.item.sekil.kare`).
-
-```
-a flat square in butter yellow cut out of thick smooth clay like a cookie, seen straight from above, clean straight edges and sharp visible corners. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
-```
-
-### 33. `assets/images/items/sekil/dikdortgen.png`
-
-- **Oran:** 1:1  
-- **Referans görsel:** yok  
-- **Açıklama:** dikdörtgen (`label.item.sekil.dikdortgen`).
-
-```
-a flat long rectangle in mint green cut out of thick smooth clay like a cookie, seen straight from above, clean straight edges and sharp visible corners. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
-```
-
-### 34. `assets/images/items/sekil/yamuk.png`
+### 25. `assets/images/items/sekil/yamuk.png`
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
@@ -420,7 +322,7 @@ a flat long rectangle in mint green cut out of thick smooth clay like a cookie, 
 a flat trapezoid (four sided, top side shorter than bottom) in peach cut out of thick smooth clay like a cookie, seen straight from above, clean straight edges and sharp visible corners. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
-### 35. `assets/images/items/sekil/besgen.png`
+### 26. `assets/images/items/sekil/besgen.png`
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
@@ -430,7 +332,7 @@ a flat trapezoid (four sided, top side shorter than bottom) in peach cut out of 
 a flat regular pentagon in sky blue cut out of thick smooth clay like a cookie, seen straight from above, clean straight edges and sharp visible corners. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
-### 36. `assets/images/items/sekil/besgen_ev.png`
+### 27. `assets/images/items/sekil/besgen_ev.png`
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
@@ -440,7 +342,7 @@ a flat regular pentagon in sky blue cut out of thick smooth clay like a cookie, 
 a flat house shaped pentagon (a square with a triangular roof as one single flat piece) in pink cut out of thick smooth clay like a cookie, seen straight from above, clean straight edges and sharp visible corners. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
-### 37. `assets/images/items/sekil/altigen.png`
+### 28. `assets/images/items/sekil/altigen.png`
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
@@ -450,7 +352,7 @@ a flat house shaped pentagon (a square with a triangular roof as one single flat
 a flat regular hexagon in honey yellow like a honeycomb cell cut out of thick smooth clay like a cookie, seen straight from above, clean straight edges and sharp visible corners. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
-### 38. `assets/images/items/sekil/altigen_uzun.png`
+### 29. `assets/images/items/sekil/altigen_uzun.png`
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
@@ -460,7 +362,7 @@ a flat regular hexagon in honey yellow like a honeycomb cell cut out of thick sm
 a flat stretched long hexagon in coral cut out of thick smooth clay like a cookie, seen straight from above, clean straight edges and sharp visible corners. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
-### 39. `assets/images/items/sekil/sekizgen.png`
+### 30. `assets/images/items/sekil/sekizgen.png`
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
@@ -470,7 +372,7 @@ a flat stretched long hexagon in coral cut out of thick smooth clay like a cooki
 a flat regular octagon in red cut out of thick smooth clay like a cookie, seen straight from above, clean straight edges and sharp visible corners. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
-### 40. `assets/images/items/arac/cetvel.png`
+### 31. `assets/images/items/arac/cetvel.png`
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
@@ -480,7 +382,7 @@ a flat regular octagon in red cut out of thick smooth clay like a cookie, seen s
 a straight wooden clay ruler with evenly spaced tick marks but no numbers. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
-### 41. `assets/images/items/arac/kareli_kagit.png`
+### 32. `assets/images/items/arac/kareli_kagit.png`
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
@@ -490,7 +392,7 @@ a straight wooden clay ruler with evenly spaced tick marks but no numbers. 3D cl
 a sheet of squared grid paper with soft blue grid lines, slightly curled corner. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
-### 42. `assets/images/items/arac/geometri_tahtasi.png`
+### 33. `assets/images/items/arac/geometri_tahtasi.png`
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
@@ -500,7 +402,7 @@ a sheet of squared grid paper with soft blue grid lines, slightly curled corner.
 a square geoboard with a grid of small round pegs and two colorful rubber bands stretched into a triangle and a square. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
-### 43. `assets/images/items/arac/tablet.png`
+### 34. `assets/images/items/arac/tablet.png`
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
@@ -510,7 +412,7 @@ a square geoboard with a grid of small round pegs and two colorful rubber bands 
 a friendly tablet computer showing simple colorful geometric shapes on the screen, no letters. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
-### 44. `assets/images/items/arac/makas.png`
+### 35. `assets/images/items/arac/makas.png`
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
@@ -520,7 +422,7 @@ a friendly tablet computer showing simple colorful geometric shapes on the scree
 a pair of child safety scissors with rounded tips and chunky orange handles. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
-### 45. `assets/images/items/arac/yapistirici.png`
+### 36. `assets/images/items/arac/yapistirici.png`
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
@@ -530,7 +432,7 @@ a pair of child safety scissors with rounded tips and chunky orange handles. 3D 
 a glue stick with a purple cap. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
-### 46. `assets/images/items/arac/kasik.png`
+### 37. `assets/images/items/arac/kasik.png`
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
@@ -540,7 +442,7 @@ a glue stick with a purple cap. 3D claymation style, handcrafted plasticine toy 
 a simple round wooden spoon. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
-### 47. `assets/images/items/cevre/dikdortgen_3x2.png`
+### 38. `assets/images/items/cevre/dikdortgen_3x2.png`
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
@@ -550,7 +452,7 @@ a simple round wooden spoon. 3D claymation style, handcrafted plasticine toy loo
 a flat coral clay rectangle exactly three grid squares long and two grid squares tall, drawn on light squared grid paper so the unit squares can be counted, seen straight from above, no numbers. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
-### 48. `assets/images/items/cevre/kare_3.png`
+### 39. `assets/images/items/cevre/kare_3.png`
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
@@ -560,7 +462,7 @@ a flat coral clay rectangle exactly three grid squares long and two grid squares
 a flat teal clay square exactly three grid squares on each side, drawn on light squared grid paper so the unit squares can be counted, seen straight from above, no numbers. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
-### 49. `assets/images/items/cevre/kitap_karis.png`
+### 40. `assets/images/items/cevre/kitap_karis.png`
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
@@ -570,7 +472,7 @@ a flat teal clay square exactly three grid squares on each side, drawn on light 
 a closed hardcover book lying flat, a cute child hand with fingers spread measuring the long side with a hand span, seen from above. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
-### 50. `assets/images/items/kap/bardak.png`
+### 41. `assets/images/items/kap/bardak.png`
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
@@ -580,7 +482,7 @@ a closed hardcover book lying flat, a cute child hand with fingers spread measur
 a clear drinking glass half filled with water, no labels and no writing on it. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
-### 51. `assets/images/items/kap/cay_bardagi.png`
+### 42. `assets/images/items/kap/cay_bardagi.png`
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
@@ -590,7 +492,7 @@ a clear drinking glass half filled with water, no labels and no writing on it. 3
 a small tulip shaped Turkish tea glass with tea on a tiny saucer, no labels and no writing on it. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
-### 52. `assets/images/items/kap/fincan.png`
+### 43. `assets/images/items/kap/fincan.png`
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
@@ -600,7 +502,7 @@ a small tulip shaped Turkish tea glass with tea on a tiny saucer, no labels and 
 a small coffee cup on a saucer, no labels and no writing on it. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
-### 53. `assets/images/items/kap/su_sisesi.png`
+### 44. `assets/images/items/kap/su_sisesi.png`
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
@@ -610,7 +512,7 @@ a small coffee cup on a saucer, no labels and no writing on it. 3D claymation st
 a one litre clear plastic water bottle with a blue cap, no labels and no writing on it. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
-### 54. `assets/images/items/kap/kova.png`
+### 45. `assets/images/items/kap/kova.png`
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
@@ -620,7 +522,7 @@ a one litre clear plastic water bottle with a blue cap, no labels and no writing
 a cheerful plastic bucket with a handle, filled with water, no labels and no writing on it. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
-### 55. `assets/images/items/kap/kuvet.png`
+### 46. `assets/images/items/kap/kuvet.png`
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
@@ -630,7 +532,7 @@ a cheerful plastic bucket with a handle, filled with water, no labels and no wri
 a white bathtub full of water with a few soap bubbles, no labels and no writing on it. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
-### 56. `assets/images/items/kap/akvaryum.png`
+### 47. `assets/images/items/kap/akvaryum.png`
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
@@ -640,7 +542,7 @@ a white bathtub full of water with a few soap bubbles, no labels and no writing 
 a rectangular fish tank full of water with one small orange fish and a green plant, no labels and no writing on it. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
-### 57. `assets/images/items/simetri/kare.png`
+### 48. `assets/images/items/simetri/kare.png`
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
@@ -650,7 +552,7 @@ a rectangular fish tank full of water with one small orange fish and a green pla
 a flat butter yellow clay square, seen straight from above. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
-### 58. `assets/images/items/simetri/dikdortgen.png`
+### 49. `assets/images/items/simetri/dikdortgen.png`
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
@@ -660,7 +562,7 @@ a flat butter yellow clay square, seen straight from above. 3D claymation style,
 a flat mint green clay rectangle, clearly longer than it is tall, seen straight from above. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
-### 59. `assets/images/items/simetri/daire.png`
+### 50. `assets/images/items/simetri/daire.png`
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
@@ -670,17 +572,7 @@ a flat mint green clay rectangle, clearly longer than it is tall, seen straight 
 a flat round coral clay disc, seen straight from above. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
-### 60. `assets/images/items/simetri/kalp.png`
-
-- **Oran:** 1:1  
-- **Referans görsel:** yok  
-- **Açıklama:** kalp (`label.item.simetri.kalp`).
-
-```
-a flat pink clay heart, seen straight from above. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
-```
-
-### 61. `assets/images/items/simetri/kare_kosegen.png`
+### 51. `assets/images/items/simetri/kare_kosegen.png`
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
@@ -690,7 +582,7 @@ a flat pink clay heart, seen straight from above. 3D claymation style, handcraft
 a flat butter yellow clay square with one thin dark dashed line drawn along a diagonal from corner to corner, seen straight from above. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
-### 62. `assets/images/items/simetri/dikdortgen_kosegen.png`
+### 52. `assets/images/items/simetri/dikdortgen_kosegen.png`
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
@@ -700,7 +592,7 @@ a flat butter yellow clay square with one thin dark dashed line drawn along a di
 a flat mint green clay rectangle, clearly longer than it is tall, with one thin dark dashed line drawn along a diagonal from corner to corner, seen straight from above. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
-### 63. `assets/images/items/simetri/kare_yamuk_cizgi.png`
+### 53. `assets/images/items/simetri/kare_yamuk_cizgi.png`
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
@@ -710,7 +602,7 @@ a flat mint green clay rectangle, clearly longer than it is tall, with one thin 
 a flat butter yellow clay square with one thin dark dashed line that cuts it into two unequal pieces, slanted and off center, seen straight from above. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
-### 64. `assets/images/items/simetri/ev.png`
+### 54. `assets/images/items/simetri/ev.png`
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
@@ -720,7 +612,7 @@ a flat butter yellow clay square with one thin dark dashed line that cuts it int
 a flat simple house drawing made of a square body and a triangular roof, a door exactly in the middle, perfectly mirror symmetric, seen straight from above. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
-### 65. `assets/images/items/simetri/ruzgar_gulu.png`
+### 55. `assets/images/items/simetri/ruzgar_gulu.png`
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  

@@ -35,8 +35,16 @@ func _sil() -> Dictionary:
 func _pieces() -> Dictionary:
 	return {"mode": "paint", "ask": "pieces", "cols": 6, "rows": 5, "pieces": 5}
 
+func _rot() -> Dictionary:
+	return {"mode": "paint", "ask": "copy", "cols": 8, "rows": 6, "transform": "rotate",
+		"reference": [[0, 0], [1, 0], [2, 0], [0, 1]], "target": [[2, 1], [3, 1], [3, 2], [3, 3]]}
+
+func _scale() -> Dictionary:
+	return {"mode": "paint", "ask": "copy", "cols": 8, "rows": 6, "transform": "scale",
+		"reference": [[0, 0], [1, 0]], "target": [[1, 1], [2, 1], [3, 1], [4, 1], [1, 2], [2, 2], [3, 2], [4, 2]]}
+
 func _all() -> Array[Dictionary]:
-	return [_build(), _absolute({"shortest": true}), _follow(), _copy(), _sym(), _code(), _sil(), _pieces()]
+	return [_build(), _absolute({"shortest": true}), _follow(), _copy(), _sym(), _code(), _sil(), _pieces(), _rot(), _scale()]
 
 func _cells(list: Array) -> Array[Vector2i]:
 	var res: Array[Vector2i] = []
@@ -150,6 +158,36 @@ func test_paint_copy_toggle_and_check() -> void:
 	await wait_for_signal(g.finished, 3.0)
 	assert_eq(answers, [false, true] as Array[bool])
 	assert_false(bool(make("grid", _copy(), 2).call("is_counter_shown")), "zorluk 2: sayaç yok")
+
+func test_paint_copy_rotate_any_place() -> void:
+	var g: MiniGame = make("grid", _rot(), 2)
+	assert_eq(g.call("reference_cells"), _cells(_rot()["reference"]), "örnek ızgara dönmemiş şekli gösterir")
+	# Örnekle aynı yönde boyamak dönüş sayılmaz.
+	for c: Vector2i in [Vector2i(1, 1), Vector2i(2, 1), Vector2i(3, 1), Vector2i(1, 2)]:
+		g.call("_debug_tap_cell", c)
+	g.call("_debug_check")
+	assert_eq(answers, [false] as Array[bool])
+	await wait_unlocked(g)
+	for c: Vector2i in [Vector2i(1, 1), Vector2i(2, 1), Vector2i(3, 1), Vector2i(1, 2)]:
+		g.call("_debug_tap_cell", c)
+	# 270° dönmüş biçim, hedeften farklı bir yerde: kabul.
+	for c: Vector2i in [Vector2i(5, 2), Vector2i(5, 3), Vector2i(5, 4), Vector2i(4, 2)]:
+		g.call("_debug_tap_cell", c)
+	g.call("_debug_check")
+	await wait_for_signal(g.finished, 3.0)
+	assert_eq(answers, [false, true] as Array[bool])
+
+func test_paint_copy_scale() -> void:
+	var g: MiniGame = make("grid", _scale(), 1)
+	for c: Vector2i in [Vector2i(0, 0), Vector2i(1, 0)]:
+		g.call("_debug_tap_cell", c)
+	g.call("_debug_check")
+	assert_eq(answers, [false] as Array[bool], "büyütülmemiş kopya")
+	await wait_unlocked(g)
+	g.call("_debug_answer", true)
+	await wait_for_signal(g.finished, 3.0)
+	assert_eq(answers, [false, true] as Array[bool])
+	assert_eq(_painted(g).size(), 8)
 
 func test_paint_symmetry_locked_given() -> void:
 	var g: MiniGame = make("grid", _sym(), 2)
