@@ -11,7 +11,9 @@ MEB 1–3. sınıf öğretim programlarıyla (Türkiye Yüzyılı Maarif Modeli)
 - Commit mesajlarına, PR açıklamalarına ya da başka herhangi bir çıktıya **`Co-Authored-By`, "Generated with Claude Code" ya da benzeri bir atıf satırı EKLEME.**
 - Uygulama **ağ isteği yapmaz**. Analitik, reklam, uygulama içi satın alma, hesap ya da üçüncü taraf SDK yoktur. Android manifestinde INTERNET izni kapalı kalır.
 - Müfredat öğrenme çıktısı kodlarını **uydurma.** Her kod resmi MEB kaynağından (PDF adı ve sayfası) doğrulanıp `docs/curriculum/outcomes.json`'a kaynağıyla girilir. Doğrulayamıyorsan içeriği yazma, durumu sahibe bildir.
-- Görsel ve sesleri sen üretmezsin; **sahip üretir.** İhtiyaç olduğunda `asset-requests/NNN-konu.md` parti dosyası yazarsın (biçim: mevcut 001–006 dosyaları). Prompt'lar Gemini / Nano Banana uyumlu, İngilizce, kopyala-yapıştıra hazır olmalı ve stil bloğunu tam metin içermeli. Görsellerde asla metin, harf ya da rakam istenmez.
+- İhtiyaç olduğunda `asset-requests/NNN-konu.md` parti dosyası yazarsın (biçim: mevcut 001–006 dosyaları). Prompt'lar Gemini / Nano Banana uyumlu, İngilizce, kopyala-yapıştıra hazır olmalı ve stil bloğunu tam metin içermeli. Görsellerde asla metin, harf ya da rakam istenmez.
+- **Görseller:** Parti dosyalarındaki görseller için yerel açık modellerle (`tools/imagegen/`) ya da Blender'la (geometrik öğeler) **aday** üretebilirsin. **Seçimi ve onayı sahip yapar;** onaylanmamış görsel `assets/`'e girmez. Yalnızca Apache 2.0 / MIT gibi CC BY 4.0 ile uyumlu lisanslı modeller kullanılır (şu an: Z-Image Turbo, FLUX.2 [klein] 4B, BiRefNet). "Ticari olmayan" ya da "araştırma" lisanslı modeller (ör. FLUX.2 klein 9B / dev, Qwen-Image-2.1) yasaktır. Her onaylı görselin model, sürüm, tohum ve prompt kaydı tutulur. Sahip görselleri Nano Banana ile kendisi de üretebilir.
+- **Sesleri sen üretmezsin; sahip üretir.**
 - Asset eksikliği **asla** geliştirmeyi durdurmaz. `AssetRegistry` yer tutucu gösterir, `Narrator` cihazın Türkçe TTS'ine düşer.
 - Çocuk UX'i: ceza, can kaybı, süre baskısı, şans kutusu ya da seri (streak) baskısı yok. Bütün yönergeler seslendirilir ve tekrar dinlenebilir.
 
@@ -39,6 +41,10 @@ godot --headless --path . -s addons/gut/gut_cmdln.gd -gdir=res://tests -ginclude
 
 # Eksik asset raporu
 godot --headless --path . -s res://tools/missing_assets.gd
+
+# Yerel görsel aday üretimi (Apple Silicon; ayrıntı: tools/imagegen/README.md)
+uv run --project tools/imagegen python tools/imagegen/generate.py 060 --items 1-5
+uv run --project tools/imagegen python tools/imagegen/approve.py 060 1=1000   # sahip seçtikten sonra
 
 # Android debug APK (şablonlar kurulu olmalı)
 godot --headless --path . --export-debug "Android" build/android/bilgi-adasi-debug.apk

@@ -4,7 +4,7 @@ Bu klasör, oyunun ihtiyaç duyduğu görsel ve sesleri **sahibin üretmesi** i�
 
 ## Nasıl çalışır
 1. Bir parti dosyasını aç (ör. `001-bilge-maskot.md`).
-2. Görseller için her promptu **Nano Banana** (Gemini) ile üret. Sesler için dosyadaki talimatları izle.
+2. Görseller için her promptu **Nano Banana** (Gemini) ile üret **ya da** yerel aday üretimini kullan: [`tools/imagegen`](../tools/imagegen/README.md) partiyi okur, öğe başına aday görsel ve seçim sayfası üretir, arka planı kendisi siler; seçtiklerini `approve.py` yerleştirir. Sesler için dosyadaki talimatları izle.
 3. Üretilen dosyayı tabloda yazan **yola, aynı isimle** koy. Sprite'ların arka planını sil.
 4. Commit edip push et. Oyun dosyayı otomatik tanır; o ana kadar yer tutucu ve cihaz sesi kullanılır.
 5. Partiyi bitirince aşağıdaki durum tablosunu güncelle.
