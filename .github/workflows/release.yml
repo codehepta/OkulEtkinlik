@@ -91,7 +91,7 @@ jobs:
       - name: Paket doğrulaması
         run: |
           scripts/ci-check-apk.sh build/android/bilgi-adasi.apk "$ANDROID_HOME/build-tools/35.0.1/aapt2"
-          scripts/ci-check-aab.sh build/android/bilgi-adasi.aab
+          scripts/ci-check-aab.sh build/android/bilgi-adasi.aab "$ANDROID_HOME/build-tools/35.0.1/aapt2"
 
       - uses: actions/upload-artifact@v7
         with:

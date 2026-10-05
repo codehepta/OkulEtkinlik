@@ -1,53 +1,29 @@
 #!/usr/bin/env bash
-# CI: Play Store paketini (AAB) doğrular.
-#  1) Manifestte hiçbir izin yok (özellikle INTERNET). AAB manifesti protobuf biçimindedir;
-#     izin adları düz metin olarak durduğu için `grep -a` yeterlidir.
-#  2) İçerik pakettedir (base/assets/ altında).
-#  3) Testler ve GUT pakete girmez.
-# Kullanım: scripts/ci-check-aab.sh <aab>
+# CI: Play Store paketini (AAB) doğrular. AAB doğrudan cihaza kurulmaz; Play onu cihaza özel
+# APK'lara böler. Burada bundletool ile "evrensel" APK üretilir ve APK denetiminin aynısı
+# (izin yok, içerik var, testler yok, boyut bütçesi) onun üzerinde çalışır. Godot AAB'de
+# içerik ayrı bir kurulum anı varlık paketine (asset pack) gidebildiği için evrensel APK,
+# cihaza gerçekten inenin doğru temsilidir.
+# Kullanım: scripts/ci-check-aab.sh <aab> [aapt2 yolu]
+# Önkoşul: Java; imza için ~/.android/debug.keystore (scripts/ci-android-setup.sh üretir).
 set -euo pipefail
 
 AAB="${1:?AAB yolu gerekli}"
-FAIL=0
+SDK_PATH="${ANDROID_HOME:-${ANDROID_SDK_ROOT:-}}"
+AAPT2="${2:-${SDK_PATH}/build-tools/35.0.1/aapt2}"
+BUNDLETOOL_VERSION="1.17.2"
+HERE="$(cd "$(dirname "$0")" && pwd)"
 TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT
 
-echo "== İzinler"
-unzip -q -o "$AAB" "base/manifest/AndroidManifest.xml" -d "$TMP"
-PERMS="$(grep -aoE 'android\.permission\.[A-Z_]+' "$TMP/base/manifest/AndroidManifest.xml" | sort -u || true)"
-if [[ -n "$PERMS" ]]; then
-  echo "HATA: AAB izin istiyor (uygulama hiçbir izin kullanmaz):" >&2
-  echo "$PERMS" >&2
-  FAIL=1
-else
-  echo "izin yok"
-fi
+JAR="$TMP/bundletool.jar"
+curl -fsSL -o "$JAR" "https://github.com/google/bundletool/releases/download/${BUNDLETOOL_VERSION}/bundletool-all-${BUNDLETOOL_VERSION}.jar"
 
-echo "== İçerik"
-LISTING="$(unzip -Z1 "$AAB")"
-PCKS="$(grep -E '^base/assets/.*\.pck$' <<<"$LISTING" || true)"
-for pck in $PCKS; do
-  unzip -q -o "$AAB" "$pck" -d "$TMP"
-done
-for f in "content/g1/matematik/u01.json" "docs/curriculum/outcomes.json" "content/strings.tr.json"; do
-  if grep -qx "base/assets/${f}" <<<"$LISTING"; then
-    echo "var: ${f}"
-  elif [[ -n "$PCKS" ]] && grep -rqaF "$f" "$TMP/base/assets"; then
-    echo "var (pck içinde): ${f}"
-  else
-    echo "HATA: pakette yok: ${f}" >&2
-    FAIL=1
-  fi
-done
+echo "== AAB: $(( ($(stat -c %s "$AAB") + 1048575) / 1048576 )) MB"
+java -jar "$JAR" validate --bundle="$AAB" > /dev/null
+java -jar "$JAR" build-apks --bundle="$AAB" --output="$TMP/out.apks" --mode=universal \
+  --ks="$HOME/.android/debug.keystore" --ks-pass=pass:android --ks-key-alias=androiddebugkey --key-pass=pass:android
+unzip -q -o "$TMP/out.apks" universal.apk -d "$TMP"
 
-echo "== Pakete girmemesi gerekenler"
-if grep -qE '^base/assets/(tests|addons/gut)/' <<<"$LISTING"; then
-  echo "HATA: testler/GUT pakete girmiş." >&2
-  FAIL=1
-else
-  echo "yok"
-fi
-
-echo "== Boyut"
-echo "AAB: $(( ($(stat -c %s "$AAB") + 1048575) / 1048576 )) MB"
-exit "$FAIL"
+echo "== Evrensel APK denetimi"
+"$HERE/ci-check-apk.sh" "$TMP/universal.apk" "$AAPT2"
