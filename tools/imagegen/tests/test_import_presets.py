@@ -32,6 +32,10 @@ class PresetForTest(unittest.TestCase):
         self.assertEqual(preset_for("assets/images/characters/bilge/idle.png")["process/size_limit"], 768)
         self.assertEqual(preset_for("assets/images/regions/agac_ev/bg.png")["process/size_limit"], 2048)
 
+    def test_wide_scenes_in_items_get_scene_limit(self) -> None:
+        self.assertEqual(preset_for("assets/images/items/sahne/bayrak_toreni.png", (1344, 768))["process/size_limit"], 1280)
+        self.assertEqual(preset_for("assets/images/items/hayvan/kedi.png", (562, 817))["process/size_limit"], 512)
+
     def test_everything_is_lossy(self) -> None:
         self.assertEqual(preset_for("assets/images/ui/star.png")["compress/mode"], 1)
 

@@ -23,16 +23,33 @@ SIZE_LIMITS = {
     "map": 2048,
 }
 DEFAULT_LIMIT = 512
+# items/ altındaki geniş sahneler (16:9 "Sahne: ..." görselleri) ekranın büyük kısmını kaplar
+SCENE_LIMIT = 1280
+WIDE_RATIO = 1.5
 
 
-def preset_for(path: str) -> dict:
+def preset_for(path: str, size: tuple[int, int] | None = None) -> dict:
     parts = Path(path).parts
     folder = parts[parts.index("images") + 1] if "images" in parts else ""
+    limit = SIZE_LIMITS.get(folder, DEFAULT_LIMIT)
+    if size and folder not in SIZE_LIMITS and size[0] >= WIDE_RATIO * size[1]:
+        limit = SCENE_LIMIT
     return {
         "compress/mode": 1,
         "compress/lossy_quality": LOSSY_QUALITY,
-        "process/size_limit": SIZE_LIMITS.get(folder, DEFAULT_LIMIT),
+        "process/size_limit": limit,
     }
+
+
+def _png_size(path: Path) -> tuple[int, int] | None:
+    """PNG başlığından genişlik/yükseklik (Pillow gerektirmez)."""
+    try:
+        head = path.read_bytes()[:24]
+    except OSError:
+        return None
+    if head[:8] != b"\x89PNG\r\n\x1a\n":
+        return None
+    return int.from_bytes(head[16:20], "big"), int.from_bytes(head[20:24], "big")
 
 
 def _fmt(value: object) -> str:
@@ -58,7 +75,10 @@ def apply_preset(import_file: Path, preset: dict) -> bool:
 
 def main() -> None:
     files = sorted((REPO / "assets" / "images").rglob("*.png.import"))
-    changed = sum(apply_preset(f, preset_for(str(f.relative_to(REPO)).removesuffix(".import"))) for f in files)
+    changed = 0
+    for f in files:
+        png = Path(str(f).removesuffix(".import"))
+        changed += apply_preset(f, preset_for(str(png.relative_to(REPO)), _png_size(png)))
     print(f"{changed}/{len(files)} içe aktarma dosyası güncellendi")
     if changed:
         print("Şimdi yeniden içe aktar: godot --headless --path . --import", file=sys.stderr)

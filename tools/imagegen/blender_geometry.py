@@ -471,6 +471,125 @@ MODELS_2D = {
 }
 
 
+# ---------- ulusal semboller: 2893 sayılı Türk Bayrağı Kanunu ölçüleri ----------
+# G = bayrak genişliği (yüksekliği). A = G/2 (gönderden dış hilal çemberi merkezine), dış çember çapı G/2,
+# C = G/16 (iki çember merkezi arası), iç çember çapı 0,4 G, E = G/3 (iç çemberin solundan yıldız çemberinin
+# soluna), yıldız çemberi çapı G/4, L = 1,5 G, M = G/30 (beyaz kol). Yıldızın bir ucu sola (hilale) bakar;
+# sağlama: yıldızın sol ucu hilalin uç çizgisini ≈0,0154 G geçer.
+FLAG_RED = "#E30A17"
+FLAG_WHITE = "#F8F6F2"
+
+
+def crescent_star_shapes(g: float, ox: float, oy: float) -> tuple[list, list]:
+    """Hilal ve yıldız çokgenleri (bayrak koordinatı: x gönderden, y orta çizgiden)."""
+    a, c, r_out, r_in = g / 2, g / 16, g / 4, 0.2 * g
+    cx_out, cx_in = a, a + c
+    # uç noktaları: iki çemberin kesişimi
+    dx = cx_in - cx_out
+    xt = cx_out + (r_out ** 2 - r_in ** 2 + dx ** 2) / (2 * dx)
+    yt = math.sqrt(r_out ** 2 - (xt - cx_out) ** 2)
+    t_out = math.atan2(yt, xt - cx_out)
+    t_in = math.atan2(yt, xt - cx_in)
+    # hilal = aynı uçlarda birleşen iki yay; ikisi de üst uçtan sola dolaşıp alt uca gider
+    n = 96
+    outer = [(cx_out + r_out * math.cos(t_out + (2 * math.pi - 2 * t_out) * i / n) + ox,
+              r_out * math.sin(t_out + (2 * math.pi - 2 * t_out) * i / n) + oy) for i in range(n + 1)]
+    inner = [(cx_in + r_in * math.cos(t_in + (2 * math.pi - 2 * t_in) * i / n) + ox,
+              r_in * math.sin(t_in + (2 * math.pi - 2 * t_in) * i / n) + oy) for i in range(n + 1)]
+    crescent = (outer, inner)
+    star_r = g / 8
+    star_cx = cx_in - r_in + g / 3 + star_r
+    inner = star_r * 0.381966
+    star = []
+    for k in range(10):
+        ang = math.pi + k * math.pi / 5  # ilk uç sola
+        rr = star_r if k % 2 == 0 else inner
+        star.append((star_cx + rr * math.cos(ang) + ox, rr * math.sin(ang) + oy))
+    return crescent, star
+
+
+def _dense_flat(name: str, pts: list, mat: bpy.types.Material, z: float, thickness: float,
+                wave=None) -> bpy.types.Object:
+    """Düz çokgeni yoğun üçgen ağa çevirir, isteğe bağlı dalga uygular ve kalınlık verir."""
+    bm = bmesh.new()
+    if isinstance(pts, tuple):
+        # hilal: dış ve iç yay arasında dörtgen şerit; bmesh üçgenlemesi bu içbükey çokgende
+        # üst üste binen üçgenler üretiyordu (alan 0,073 yerine 0,305)
+        outer, inner = pts
+        ov = [bm.verts.new((x, y, 0.0)) for x, y in outer]
+        iv = [ov[0]] + [bm.verts.new((x, y, 0.0)) for x, y in inner[1:-1]] + [ov[-1]]
+        for i in range(len(ov) - 1):
+            quad = [ov[i], ov[i + 1], iv[i + 1], iv[i]]
+            if len(set(quad)) == 3:
+                bm.faces.new(list(dict.fromkeys(quad)))
+            else:
+                bm.faces.new(quad)
+    else:
+        vs = [bm.verts.new((x, y, 0.0)) for x, y in pts]
+        bm.faces.new(vs)
+    bmesh.ops.triangulate(bm, faces=bm.faces[:])
+    for _ in range(5):
+        bmesh.ops.subdivide_edges(bm, edges=bm.edges[:], cuts=1, use_grid_fill=True)
+    if wave is not None:
+        for v in bm.verts:
+            v.co.z = wave(v.co.x, v.co.y)
+    for v in bm.verts:
+        v.co.z += z
+    me = bpy.data.meshes.new(name)
+    bm.to_mesh(me)
+    ob = link(bpy.data.objects.new(name, me))
+    ob.data.materials.append(mat)
+    sol = ob.modifiers.new("solid", "SOLIDIFY")
+    sol.thickness = thickness
+    sol.offset = 0.0
+    bv = ob.modifiers.new("bevel", "BEVEL")
+    bv.width = thickness * 0.35
+    bv.segments = 3
+    bpy.ops.object.select_all(action="DESELECT")
+    ob.select_set(True)
+    bpy.context.view_layer.objects.active = ob
+    bpy.ops.object.shade_smooth()
+    return ob
+
+
+def turkish_flag(name: str, _mat: bpy.types.Material) -> None:
+    g = 1.4
+    length = 1.5 * g
+    red = clay_material(name + "_al", srgb(FLAG_RED))
+    white = clay_material(name + "_beyaz", srgb(FLAG_WHITE))
+
+    def wave(x: float, y: float) -> float:
+        return 0.09 * math.sin(2 * math.pi * x / (0.85 * g) + 0.4) * (x / length + 0.15)
+
+    # bayrak düzlemi XY'de kurulur, sonra dik konuma döndürülür
+    _dense_flat(name + "_zemin", rect_at(length / 2, 0, length, g), red, 0.0, 0.05, wave)
+    _dense_flat(name + "_kol", rect_at(-g / 60, 0, g / 30, g), white, 0.0, 0.06, wave)
+    crescent, star = crescent_star_shapes(g, 0.0, 0.0)
+    _dense_flat(name + "_hilal", crescent, white, 0.035, 0.03, wave)
+    _dense_flat(name + "_yildiz", star, white, 0.035, 0.03, wave)
+    for ob in [o for o in bpy.context.scene.objects if o.type == "MESH"]:
+        ob.rotation_euler.x = math.radians(90)  # XY → XZ: bayrak kameraya (-Y) bakar
+        ob.location.z += g / 2 + 1.2  # bayrağın üst kenarı gönderin tepesinin hemen altında
+    block(name + "_gonder", "cyl", (0.045, g + 1.3), (-g / 30 - 0.05, 0, (g + 1.3) / 2 - 0.05), "#C9A27A")
+    block(name + "_topuz", "box", (0.12, 0.12, 0.12), (-g / 30 - 0.05, 0, g + 1.3), "#E8C46A")
+    rotate_all_z(8)
+
+
+def crescent_badge(name: str, _mat: bpy.types.Material) -> None:
+    g = 1.6  # rozet çapı ≈ bayrak genişliği; hilal-yıldız oranları bayrakla aynı
+    red = clay_material(name + "_al", srgb(FLAG_RED))
+    white = clay_material(name + "_beyaz", srgb(FLAG_WHITE))
+    _dense_flat(name + "_rozet", regular(128, 1.0), red, 0.0, 0.16)
+    crescent, star = crescent_star_shapes(g, 0.0, 0.0)
+    # amblemi rozetin ortasına al: hilal-yıldız grubunun yatay merkezi
+    xs = [p[0] for p in crescent[0] + star]
+    shift = -(min(xs) + max(xs)) / 2
+    crescent = tuple([(x + shift, y) for x, y in arc] for arc in crescent)
+    star = [(x + shift, y) for x, y in star]
+    _dense_flat(name + "_hilal", crescent, white, 0.1, 0.05)
+    _dense_flat(name + "_yildiz", star, white, 0.1, 0.05)
+
+
 # ---------- öğe tanımları: (aile, kurucu, renk) ----------
 def F(pts: list) -> callable:
     return lambda name, mat: flat_tile(name, pts, mat)
@@ -529,6 +648,9 @@ ITEMS: dict[str, tuple[str, callable, str]] = {
     "item.yapi.tren": ("solid", toy_train, "#F8DA74"),
     "item.yapi.blok_ev": ("solid", toy_block_house, "#F8DA74"),
     **{k: ("flat", (lambda parts: lambda n, m: paper_model(n, parts))(v), "#FFFFFF") for k, v in MODELS_2D.items()},
+    # 080 · ulusal semboller (Bayrak Kanunu ölçüleriyle)
+    "item.ulke.turk_bayragi": ("flag", turkish_flag, FLAG_RED),
+    "item.simge.ay_yildiz": ("flat", crescent_badge, FLAG_RED),
 }
 
 # Aile kameraları: sabit yön ve ölçek (görseller arası boyut karşılaştırılabilir kalır)
@@ -538,6 +660,7 @@ CAMERAS = {
     "solid": {"view": (0.9, -1.6, 0.85), "lens": 85, "distance": 7.2},
     "block": {"view": (0.25, -1.2, 1.35), "lens": 85, "distance": 8.6},
     "block_unit": {"view": (0.9, -1.6, 0.85), "lens": 85, "distance": 1.9},
+    "flag": {"view": (0.15, -1.6, 0.28), "lens": 85, "distance": 10.5},
 }
 
 

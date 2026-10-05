@@ -63,3 +63,8 @@ Kaynak PNG'ler 1024 px ve kayıpsızdır; doğrudan pakete girerse APK bütçeyi
 
 ## Kaynak kaydı
 `approve.py` her onaylı görsel için model, sürüm, tohum, prompt ve referansları `docs/assets/image-provenance.jsonl` dosyasına ekler. Bu kayıt lisans takibi ve gerektiğinde aynı görseli yeniden üretmek içindir.
+
+## Gerçek veri gerektiren görseller
+- **Türkiye haritası** (`blender_turkiye_map.py`): sınırlar Natural Earth 1:50m verisinden gelir (kamu malı). Yalnızca çerçevedeki ülkeler `data/turkiye_bolge.json`'a çıkarıldı (151 KB); kaynak GeoJSON repoya girmez.
+- **Türk bayrağı ve ay-yıldız** (`blender_geometry.py`): 2893 sayılı Türk Bayrağı Kanunu'nun ölçü tablosuyla modellenir. Sağlama: yıldızın sol ucu hilalin uç çizgisini 0,0154 G geçer.
+- **Gölge sahneleri** (`blender_shadow_scene.py`): karakter klein ile zeminsiz üretilir, gölge Blender'da alçak güneşle düşürülür.
