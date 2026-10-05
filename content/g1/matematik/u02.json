@@ -788,6 +788,7 @@
 					"difficulty": 1,
 					"voice": "vo.g1.matematik.u02.n07.r01",
 					"params": {
+						"ordered": true,
 						"target": {
 							"type": "item",
 							"value": "item.hayvan.tavsan",
@@ -814,6 +815,7 @@
 					"difficulty": 1,
 					"voice": "vo.g1.matematik.u02.n07.r02",
 					"params": {
+						"ordered": true,
 						"target": {
 							"type": "item",
 							"value": "item.hayvan.kaplumbaga",
@@ -840,6 +842,7 @@
 					"difficulty": 2,
 					"voice": "vo.g1.matematik.u02.n07.r03",
 					"params": {
+						"ordered": true,
 						"target": {
 							"type": "item",
 							"value": "item.hayvan.kedi",
@@ -870,6 +873,7 @@
 					"difficulty": 2,
 					"voice": "vo.g1.matematik.u02.n07.r04",
 					"params": {
+						"ordered": true,
 						"target": {
 							"type": "item",
 							"value": "item.hayvan.ordek",

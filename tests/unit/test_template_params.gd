@@ -64,3 +64,7 @@ func test_listen_find_invalid() -> void:
 	_bad("listen_find", {"target": _tv("item.elma"), "options": [_item("item.elma")]}, "tek seçenek")
 	_bad("listen_find", {"target": _tv("item.elma"), "options": [_item("item.elma"), {"type": "x", "value": "y"}]}, "bozuk token")
 	_bad("listen_find", {"options": [_item("item.elma"), _item("item.armut")]}, "target yok")
+	_bad("listen_find", {"target": _tv("item.elma"), "options": [_item("item.elma"), _item("item.armut")], "ordered": "evet"}, "ordered bool değil")
+
+func test_listen_find_ordered_valid() -> void:
+	_ok("listen_find", {"target": _tv("item.elma"), "options": [_tv("item.elma"), _item("item.armut")], "ordered": true})

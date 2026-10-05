@@ -13,14 +13,14 @@ func before_each() -> void:
 	_fake = FakeServices.new()
 	add_child_autofree(_fake)
 
-func _make(id: String, params: Dictionary) -> MiniGame:
+func _make(id: String, params: Dictionary, seed_value: int = 7) -> MiniGame:
 	var scene: PackedScene = load(TemplateRegistry.SCENES[id]) as PackedScene
 	var game: MiniGame = scene.instantiate() as MiniGame
 	game.narrator = _fake
 	game.audio = _fake
 	add_child_autofree(game)
 	var ctx: RoundContext = RoundContext.new()
-	ctx.rng.seed = 7
+	ctx.rng.seed = seed_value
 	ctx.voice_id = "vo.test"
 	ctx.outcomes = PackedStringArray(["TEST.1"])
 	game.answered.connect(func(c: bool) -> void: _answers.append(c))
@@ -185,3 +185,30 @@ func test_count_choose_up_to_ten_stays_scattered() -> void:
 	var g: MiniGame = _make("count_choose", {"item": "item.elma", "count": 10, "choices": [9, 10, 11]})
 	assert_false(bool(g.call("is_grouped_by_ten")))
 	assert_eq(_item_centers(g).size(), 10)
+
+# --- listen_find: `ordered` seçenekleri içerikteki sırayla soldan sağa dizer (sıra sayıları, MAT.1.1.3) ---
+
+func _option_values_left_to_right(g: MiniGame) -> Array[String]:
+	var opts: Array[Dictionary] = g.get("_options")
+	var views: Array[Control] = g.get("_views")
+	var idx: Array[int] = []
+	for i: int in views.size():
+		idx.append(i)
+	idx.sort_custom(func(a: int, b: int) -> bool: return views[a].position.x < views[b].position.x)
+	var out: Array[String] = []
+	for i: int in idx:
+		out.append(str(opts[i]["value"]))
+	return out
+
+func test_listen_find_ordered_keeps_content_order_left_to_right() -> void:
+	var p: Dictionary = _listen_params()
+	p["ordered"] = true
+	for s: int in [1, 2, 3, 7, 11, 42]:
+		var g: MiniGame = _make("listen_find", p, s)
+		assert_eq(_option_values_left_to_right(g), ["item.elma", "item.armut", "item.kedi"] as Array[String], "seed %d" % s)
+
+func test_listen_find_unordered_still_shuffles() -> void:
+	var seen: Dictionary = {}
+	for s: int in range(1, 13):
+		seen[str(_option_values_left_to_right(_make("listen_find", _listen_params(), s)))] = true
+	assert_gt(seen.size(), 1, "ordered yoksa seçenekler karıştırılır")

@@ -139,6 +139,7 @@ Her şablon bağımsız bir sahnedir ve ortak `MiniGame` arayüzünü uygular (b
 - `balance` `scale/compare` + `item` grupları: iki grubu karşılaştırma ("daha çok / daha az / eşit"); ipucu bire bir eşleme çizgileri. 1. sınıfta seçenekler sözcük kartı + ağır kefe ikonu, 2. sınıftan itibaren `<`, `=`, `>`.
 - **Tahmin modu** ("tahmin et → kontrol et → karşılaştır"): önce aralıklı tahmin seçilir (doğru/yanlış sayılmaz), sonra sonuç kontrol edilir, en sonda tahminin sonuca "yakın" mı "uzak" mı olduğu seçilir. `count_choose` (`estimates`: nesnelere dokunarak sayma) ve `balance` (`ask: estimate`: birim küplerle tartma ya da eksik değerli terazide zihinden işlem).
 - **Rakam karosu girişi:** 2–3. sınıfta çok basamaklı sayı yazma iz sürme yerine rakam karolarıyla yapılır (`listen_find` `answer: digits`). 1. sınıfta rakam yazımı `trace` ile kalır.
+- **Konuma dayalı seçim:** `listen_find` seçenekleri normalde karıştırılır. Yönerge ekrandaki sırayı saydırıyorsa ("soldan say", sıra sayıları, MAT.1.1.3) tur `ordered: true` taşır; seçenekler içerikteki sırayla soldan sağa dizilir. `tests/unit/test_positional_rounds.gd` bütün sınıflarda bu kuralı ve sıra sayısının hedefin konumuyla uyuşmasını denetler.
 - `free_build` ayrı şablon değildir: denetlenebilir hedefle (`grid` `paint/silhouette`, `paint/pieces`) oynanır ve ustalık hesabına girer.
 
 Şablonlar ihtiyaç sırasıyla yazılır (bkz. §8). Matris yeni bir mekanik gerektirirse spec'e şablon eklenir.

@@ -3,6 +3,7 @@ extends MiniGame
 ## Üstte büyük hoparlör düğmesi hedefin sesini yeniden okutur (cevap sayılmaz).
 ## Yazma modu (`answer: "digits"`, Faz 3b): hedef bir sayıdır; çocuk duyduğu sayıyı rakam
 ## karolarıyla yazar ve onaylar (2–3. sınıfta çok basamaklı sayı yazma, MAT.2.1.1 c, MAT.3.1.1 c).
+## `ordered: true`: seçenekler karıştırılmaz, içerikteki sırayla soldan sağa dizilir (sıra sayıları, MAT.1.1.3).
 
 const TOKEN_VIEW: PackedScene = preload("res://scenes/games/token_view.tscn")
 const VIEW_SIZE: Vector2 = Vector2(250, 250)
@@ -37,12 +38,14 @@ func setup(params: Dictionary, difficulty_value: int, context: RoundContext) -> 
 		return
 	for o: Variant in params["options"] as Array:
 		_options.append(o as Dictionary)
-	# Karıştır (Fisher-Yates, bağlamın rng'siyle).
-	for i: int in range(_options.size() - 1, 0, -1):
-		var j: int = ctx.rng.randi_range(0, i)
-		var t: Dictionary = _options[i]
-		_options[i] = _options[j]
-		_options[j] = t
+	# Karıştır (Fisher-Yates, bağlamın rng'siyle). `ordered` turlarda (ör. "soldan say", sıra sayıları)
+	# cevap ekrandaki konuma bağlıdır; seçenekler içerikteki sırayla soldan sağa dizilir.
+	if not bool(params.get("ordered", false)):
+		for i: int in range(_options.size() - 1, 0, -1):
+			var j: int = ctx.rng.randi_range(0, i)
+			var t: Dictionary = _options[i]
+			_options[i] = _options[j]
+			_options[j] = t
 	var total_w: float = _options.size() * VIEW_SIZE.x + (_options.size() - 1) * GAP
 	var x: float = (BASE_SIZE.x - total_w) / 2.0
 	var stage: Rect2 = Rect2(x - STAGE_MARGIN, TOP_Y - STAGE_MARGIN, total_w + STAGE_MARGIN * 2.0, VIEW_SIZE.y + STAGE_MARGIN * 2.0)
@@ -255,6 +258,8 @@ static func validate_params(p: Dictionary) -> Array[String]:
 		if not ok:
 			errs.append(ContentValidator.msg("err.params.write_target"))
 		return errs
+	if p.has("ordered") and not (p["ordered"] is bool):
+		errs.append(ContentValidator.msg("err.params.ordered"))
 	var options: Variant = p.get("options")
 	if not (options is Array) or (options as Array).size() < 2 or (options as Array).size() > 4:
 		errs.append(ContentValidator.msg("err.params.options"))
