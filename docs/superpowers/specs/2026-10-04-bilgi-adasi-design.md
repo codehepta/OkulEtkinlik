@@ -407,6 +407,13 @@ Faz 3d'de sahibin talimatıyla önerilen seçimle ilerlendi; aşağıdakiler sah
 - **MAT.2.4.1 veri grubu sayısı:** program metni "en çok iki veri grubu" diyor; bu, iki kategori olarak yorumlandı ve bütün `chart_build` turları iki kategoriyle yazıldı. Yorum "iki ayrı veri seti" ise 3–4 kategorili turlar eklenebilir.
 - **Yer tutucu etiketleri:** asset gelene kadar kartlarda nesnenin adı (`label.*`) yazılı görünür. Okuma bilmeyen çocuk için bu bir ipucu değildir ama 2. sınıfta "adı okuyup bulma" kolaylığı yaratır; asset partileri 040–043 tamamlanınca kendiliğinden kalkar.
 
+## Açık sorular (Faz 3e)
+Faz 3e'de (3. sınıf Matematik içeriği) sahibin talimatıyla önerilen seçimle ilerlendi; aşağıdakiler onay ya da sonraki fazda karar ister.
+- **Karar (önerilen seçim):** `balloon_pop` işlem kümesine çarpma ve bölme eklendi (`op`: `+`, `-`, `×`, `÷`). Bölme yalnızca kalansız olabilir (`a % b == 0`, `b ≥ 1`); doğrulayıcı başka bölmeyi reddeder. İpucu 1'deki sayı doğrusu/blok modeli yalnızca toplama ve çıkarmada gösterilir; çarpma ve bölmede ipucu yalnızca seçenekleri azaltır. Gerekçe: MAT.3.2.3 ve 3.2.4 için yeni şablon gerekmeden çarpım tablosu pratiği.
+- **Karar (önerilen seçim):** `grid` boyama modunun simetri ekseni yatay da olabilir (`axis_dir`: `vertical` varsayılan, `horizontal`). Yatay eksende `axis` satır sınırıdır ve verilen yarı eksenin üstündedir. Gerekçe: MAT.3.3.7 "dikey ve yatay simetri doğrusu" istiyor.
+- **Tahmin modunun ek kontrol adımları ertelendi:** Faz 3b'nin açık sorusundaki süre (MAT.3.1.14), çevre (3.3.4), sıvı ölçme (3.3.5) ve çarpma/bölme tahmini (3.2.3) kontrol adımları bu fazda yazılmadı; bu çıktılar `partial` kaldı ve içerik mevcut şablonlarla (sıralama, kutulara ayırma, hikâye soruları) çıktının oynanabilir kısmını çalıştırıyor. 100'e kadar tahmin (MAT.3.1.8) için `count_choose` en çok 20 nesne gösterdiğinden turlar 20 nesneyle sınırlı. Önerilen seçim: uyarlanabilir zorluk ve cila fazında ihtiyaç kalırsa bu adımlar mod olarak eklenir; içerik değişmeden yeni turlar eklenebilir.
+- **Karar (önerilen seçim):** `game_map.json`'da 3. sınıf çıktılarının şablon listelerine içerikte gerçekten kullanılan şablonlar eklendi (ör. kural seçimi için `drag_match`, problem durumları için `story`). `fit` değerleri değişmedi; bu yüzden ev etkinliği önerileri de değişmedi.
+
 ## Açık sorular (Faz 6)
 - **Keşif Laboratuvarı 1–2. sınıfta nasıl görünür?** §2 "kilitli/gizli", §3.1 "yakında açılacak görseliyle kapalı" diyor.
   - **Karar (sahip onayıyla önerilen seçim, Faz 6):** Gizlenmez, kilitli görünür: bölge haritada soluk, sis ve kilit ikonuyla durur; dokununca Bilge "Üçüncü sınıfta kapıları açılacak" der (`vo.bolge.kilitli_lab`). Merak uyandırır, ceza hissi vermez. Davranış Faz 1'den beri `scenes/ui/world_map.gd`'de var.

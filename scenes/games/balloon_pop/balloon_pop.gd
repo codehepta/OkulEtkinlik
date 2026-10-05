@@ -1,5 +1,6 @@
 extends MiniGame
 ## Balon patlat: üst plakette işlem (a + b = ?), altta cevap taşıyan kil balonlar.
+## İşlemler: + ve − (Faz 3a), × ve ÷ (Faz 3e, MAT.3.2.3–3.2.6; ÷ yalnızca kalansız bölme).
 ## Balonlar yerinde hafifçe salınır; kaçmaz, kaybolmaz, zamanlayıcı yoktur (spec §3.5).
 ## Doğru balon yumuşakça patlar; yanlış balon hafifçe sallanır ve yerinde kalır.
 
@@ -9,9 +10,11 @@ const MIN_CHOICES: int = 2
 const MAX_CHOICES: int = 6
 ## Zorluğa göre görünen en çok balon.
 const VISIBLE_BY_DIFFICULTY: Dictionary = {1: 3, 2: 4, 3: 6}
-const OPS: PackedStringArray = ["+", "-"]
+const OPS: PackedStringArray = ["+", "-", "×", "÷"]
 ## Ekranda gösterilen işlem işaretleri (matematik sembolü; metin değil).
-const OP_GLYPH: Dictionary = {"+": "+", "-": "−"}
+const OP_GLYPH: Dictionary = {"+": "+", "-": "−", "×": "×", "÷": "÷"}
+## Somut model ipucu olan işlemler (toplama ve çıkarma).
+const MODEL_OPS: PackedStringArray = ["+", "-"]
 ## Somut model yalnızca küçük sayılarda (spec §2 somuttan soyuta).
 const MODEL_MAX: int = 20
 
@@ -65,8 +68,16 @@ func setup(params: Dictionary, difficulty_value: int, context: RoundContext) -> 
 	_build_plaque()
 	_build_balloons()
 
+## ÷ için b 0 ya da kalan varsa -1 döner (geçersiz işlem).
 static func result_of(a: int, op: String, b: int) -> int:
-	return a + b if op == "+" else a - b
+	match op:
+		"+":
+			return a + b
+		"×":
+			return a * b
+		"÷":
+			return a / b if b >= 1 and a % b == 0 else -1
+	return a - b
 
 func _build_plaque() -> void:
 	var parts: Array[String] = [str(_a), str(OP_GLYPH.get(_op, _op)), str(_b), "=", "?"]
@@ -195,7 +206,7 @@ func show_hint(level: int) -> void:
 	if _done or _busy:
 		return
 	if level == 1:
-		if _a <= MODEL_MAX and _b <= MODEL_MAX:
+		if MODEL_OPS.has(_op) and _a <= MODEL_MAX and _b <= MODEL_MAX:
 			_show_model()
 		else:
 			_fade_half_wrong()
@@ -310,7 +321,9 @@ static func validate_params(p: Dictionary) -> Array[String]:
 	if a_ok and b_ok and op_ok:
 		result = result_of(int(p["a"]), op as String, int(p["b"]))
 		result_ok = result >= 0 and result <= MAX_VALUE
-		if not result_ok:
+		if op == "÷" and result < 0:
+			errs.append(ContentValidator.msg("err.params.bp_division"))
+		elif not result_ok:
 			errs.append(ContentValidator.msg("err.params.bp_result"))
 	var choices: Variant = p.get("choices")
 	var choices_ok: bool = choices is Array and (choices as Array).size() >= MIN_CHOICES and (choices as Array).size() <= MAX_CHOICES

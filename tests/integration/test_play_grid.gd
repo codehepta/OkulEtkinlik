@@ -200,6 +200,17 @@ func test_paint_symmetry_locked_given() -> void:
 	await wait_for_signal(g.finished, 3.0)
 	assert_eq(answers, [true] as Array[bool])
 
+func test_paint_symmetry_horizontal_axis() -> void:
+	var p: Dictionary = {"mode": "paint", "ask": "symmetry", "axis_dir": "horizontal", "cols": 8, "rows": 6, "axis": 3,
+		"given": [[2, 2], [3, 1], [4, 2]]}
+	var g: MiniGame = make("grid", p, 2)
+	assert_eq(_painted(g), _cells(p["given"]), "verilenler boyalı başlar")
+	for c: Vector2i in [Vector2i(2, 3), Vector2i(3, 4), Vector2i(4, 3)]:
+		g.call("_debug_tap_cell", c)
+	g.call("_debug_check")
+	await wait_for_signal(g.finished, 3.0)
+	assert_eq(answers, [true] as Array[bool])
+
 func test_paint_code_target() -> void:
 	var g: MiniGame = make("grid", _code(), 2)
 	g.call("_debug_tap_cell", Vector2i(1, 1))

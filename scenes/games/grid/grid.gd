@@ -2,7 +2,8 @@ extends MiniGame
 ## Kareli zemin (spec §3.7 #15). İki mod:
 ## path (hareket): build → yön kartlarıyla program kur ve oynat, karakter hedefte bitmeli;
 ##                 follow → verilen programı izle, karakterin varacağı hücreye dokun.
-## paint (boyama): copy (örneği kopyala), symmetry (ayna eksenine göre tamamla), code (yön + adım
+## paint (boyama): copy (örneği kopyala), symmetry (dikey ya da yatay ayna eksenine göre tamamla;
+##                 `axis_dir`, Faz 3e, MAT.3.3.7 b), code (yön + adım
 ##                 kodunu boya), silhouette (silüeti eşle), pieces (N bağlı hücre boya).
 ## Boyalı hücre kabarık kil + iç işaret, kilitli hücre çizgili desen + koyu kenar alır; ipucu
 ## noktaları ve iz çizgisi şekilce ayrılır (renk tek başına anlam taşımaz).
@@ -18,6 +19,8 @@ const MODES: PackedStringArray = ["path", "paint"]
 const PATH_ASKS: PackedStringArray = ["build", "follow"]
 const PAINT_ASKS: PackedStringArray = ["copy", "symmetry", "code", "silhouette", "pieces"]
 const ARROW_SETS: PackedStringArray = ["relative", "absolute"]
+## Simetri ekseninin yönü: dikey eksen sütun sınırı, yatay eksen satır sınırıdır.
+const AXIS_DIRS: PackedStringArray = ["vertical", "horizontal"]
 ## copy dönüşümleri (MAT.2.3.4 b).
 const TRANSFORMS: PackedStringArray = ["rotate", "scale"]
 ## Sütun / satır aralıkları (x: en az, y: en çok).
@@ -126,6 +129,7 @@ var _reference: Dictionary = {}
 var _transform: String = ""
 var _pieces: int = 0
 var _axis: int = 0
+var _axis_dir: String = "vertical"
 var _code: Array = []
 var _marked: Dictionary = {}
 var _missing: Vector2i = Vector2i(-1, -1)
@@ -440,11 +444,12 @@ func _setup_paint(params: Dictionary) -> void:
 					_reference[c] = true
 		"symmetry":
 			_axis = int(params["axis"])
+			_axis_dir = str(params.get("axis_dir", "vertical"))
 			for c: Vector2i in GridLogic.parse_cells(params["given"]) as Array:
 				_locked[c] = true
 				_painted[c] = true
 				_target[c] = true
-				_target[GridLogic.mirror(c, _axis)] = true
+				_target[GridLogic.mirror_axis(c, _axis, _axis_dir)] = true
 		"code":
 			_start = GridLogic.parse_cell(params["start"])
 			_code = (params["code"] as Array).duplicate(true)
@@ -679,7 +684,10 @@ func _cell_center(cell: Vector2i) -> Vector2:
 
 ## Üst katman: simetri ekseni, program izi (çizgi + kare), ipucu noktaları (daire).
 func _draw_overlay() -> void:
-	if _ask == "symmetry":
+	if _ask == "symmetry" and _axis_dir == "horizontal":
+		var y: float = _axis * _cell
+		_overlay.draw_dashed_line(Vector2(-12.0, y), Vector2(_cols * _cell + 12.0, y), ClayStyle.INK, 10.0, 26.0)
+	elif _ask == "symmetry":
 		var x: float = _axis * _cell
 		_overlay.draw_dashed_line(Vector2(x, -12.0), Vector2(x, _rows * _cell + 12.0), ClayStyle.INK, 10.0, 26.0)
 	var trail: Array[Vector2i] = trail_cells()
@@ -983,8 +991,14 @@ static func _validate_paint(p: Dictionary, ask: String, cols: int, rows: int) ->
 			if p.has("transform") or p.has("reference"):
 				errs.append_array(_validate_transform(p, ask, cols, rows))
 		"symmetry":
+			var dir: Variant = p.get("axis_dir", "vertical")
+			if not (dir is String) or not AXIS_DIRS.has(dir as String):
+				errs.append(ContentValidator.msg("err.params.grid_axis_dir"))
+				return errs
+			var horizontal: bool = dir == "horizontal"
+			var limit: int = rows if horizontal else cols
 			var axis: Variant = p.get("axis")
-			if not ContentValidator.is_int_like(axis) or int(axis) < 1 or int(axis) > cols - 1:
+			if not ContentValidator.is_int_like(axis) or int(axis) < 1 or int(axis) > limit - 1:
 				errs.append(ContentValidator.msg("err.params.grid_axis"))
 				return errs
 			if not _valid_cells(p.get("given"), cols, rows):
@@ -992,11 +1006,11 @@ static func _validate_paint(p: Dictionary, ask: String, cols: int, rows: int) ->
 				return errs
 			var given: Array = GridLogic.parse_cells(p.get("given"))
 			for c: Vector2i in given:
-				if c.x >= int(axis):
+				if (c.y if horizontal else c.x) >= int(axis):
 					errs.append(ContentValidator.msg("err.params.grid_given"))
 					return errs
 			for c: Vector2i in given:
-				if not GridLogic.in_bounds(GridLogic.mirror(c, int(axis)), cols, rows):
+				if not GridLogic.in_bounds(GridLogic.mirror_axis(c, int(axis), dir as String), cols, rows):
 					errs.append(ContentValidator.msg("err.params.grid_mirror"))
 					return errs
 		"code":

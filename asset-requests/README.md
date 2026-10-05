@@ -42,6 +42,10 @@ Kurallar: [`docs/assets/style-guide.md`](../docs/assets/style-guide.md) · [`doc
 | 043 | 2. sınıf Matematik durak çıkartmaları (42 `st.matematik.g2_*`) | Orta | ⏳ Bekliyor |
 | 044 | 2. sınıf Matematik: sayılar 21–100 + kart sesleri (`vo.sayi.*`, `vo.mat2.*`) | Yüksek | ⏳ Bekliyor |
 | 045 | 2. sınıf Matematik ünite 1–6 seslendirmesi (`vo.g2.matematik.*`) | Yüksek | ⏳ Bekliyor |
+| 050 | Faz 3e: 3. sınıf Matematik nesne görselleri (55: taban blokları, olay kartları, ölçü nesneleri, şekiller, araçlar, kaplar, simetri kartları) | Orta | ⏳ Bekliyor |
+| 051 | Faz 3e: 3. sınıf Matematik çıkartmaları (36 `st.matematik.*`) | Orta | ⏳ Bekliyor |
+| 052 | Faz 3e: 3. sınıf Matematik seslendirmesi 1, ünite 1–3 + sayılar, nesne adları, etiketler (230 satır) | Orta | ⏳ Bekliyor |
+| 053 | Faz 3e: 3. sınıf Matematik seslendirmesi 2, ünite 4–6 (103 satır) | Orta | ⏳ Bekliyor |
 | 060 | 1. sınıf Türkçe: sözcük ve nesne görselleri (70 `item.*`) | Yüksek | ⏳ Bekliyor |
 | 061 | 1. sınıf Türkçe: hikâye, cümle, durum ve davranış sahneleri (96 `item.*`) | Orta | ⏳ Bekliyor |
 | 062 | 1. sınıf Türkçe: kutu simgeleri, duygu yüzleri, ses simgeleri (13 `item.*`) | Orta | ⏳ Bekliyor |
@@ -70,7 +74,7 @@ Kurallar: [`docs/assets/style-guide.md`](../docs/assets/style-guide.md) · [`doc
 | 095 | Fen 3 seslendirmesi, ünite 1–4 (77 satır) | Orta | ⏳ Bekliyor |
 | 096 | Fen 3 seslendirmesi, ünite 5–8 + ortak kart sesleri (164 satır) | Orta | ⏳ Bekliyor |
 
-Önerilen sıra: 001 → 003 → 002 → 004 → 005 → 007 → 006 → 008 → 009 → 010 → 011 → 012 → 015 → 016 → 023 → 024 → 044 → 040 → 041 → 045 → 042 → 043 → 031 → 030 → 032 → 034 → 033 → 064 → 060 → 065 → 061 → 062 → 066 → 063 → 070 → 071 → 072 → 073 → 074 → 075 → 090 → 093 → 091 → 092 → 094 → 095 → 096. Hayat Bilgisi: 084 → 080 → 085 → 081 → 086 → 082 → 083 (önce seslendirme ve 1. sınıf, sonra üst sınıflar). Bilge karakter sayfası diğer bütün partilerin stil referansıdır.
+Önerilen sıra: 001 → 003 → 002 → 004 → 005 → 007 → 006 → 008 → 009 → 010 → 011 → 012 → 015 → 016 → 023 → 024 → 044 → 040 → 041 → 045 → 042 → 043 → 031 → 030 → 032 → 034 → 033 → 064 → 060 → 065 → 061 → 062 → 066 → 063 → 050 → 051 → 052 → 053 → 070 → 071 → 072 → 073 → 074 → 075 → 090 → 093 → 091 → 092 → 094 → 095 → 096. Hayat Bilgisi: 084 → 080 → 085 → 081 → 086 → 082 → 083 (önce seslendirme ve 1. sınıf, sonra üst sınıflar). Bilge karakter sayfası diğer bütün partilerin stil referansıdır.
 
 ## Geliştiriciler (agent) için
 - Yeni bir içerik ünitesi eklendiğinde eksik asset'ler için `tools/missing_assets.gd` çalıştırılır ve sıradaki numarayla yeni bir parti dosyası açılır.

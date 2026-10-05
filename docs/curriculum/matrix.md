@@ -639,11 +639,11 @@ Uygunluk: **tam** = bütün süreç bileşenleri dokunmatik oyunla çalışılab
 |---|---|---|---|---|---|
 | MAT.3.1.1 | Niceliklerin büyüklüklerine karşılık gelen 1000’e kadar olan sayıların temsillerinden yararlanabilme | 85 | tam | `count_choose`, `drag_match`, `listen_find` | c) sayı yazma 2–3. sınıfta iz sürme yerine rakam karosu girişiyle (listen_find yazma modu, answer: digits) çalışılır. |
 | MAT.3.1.2 | 1000’e kadar olan sayıları çözümleyebilme | 85 | tam | `drag_match`, `sort_bins`, `count_choose` |  |
-| MAT.3.1.3 | Sayıları sıralayabilme | 85 | tam | `sequence`, `balance`, `sort_bins` |  |
-| MAT.3.1.4 | Sayıları ileriye ve geriye doğru ritmik sayabilme | 85 | tam | `pattern`, `sequence`, `listen_find` | c) genelleme sesli okunan kural seçenekleri arasından seçilir. |
-| MAT.3.1.5 | Sayıları tek-çift olarak sınıflandırabilme | 85 | tam | `sort_bins`, `listen_find` |  |
+| MAT.3.1.3 | Sayıları sıralayabilme | 85 | tam | `sequence`, `balance`, `sort_bins`, `drag_match` |  |
+| MAT.3.1.4 | Sayıları ileriye ve geriye doğru ritmik sayabilme | 85 | tam | `pattern`, `sequence`, `listen_find`, `drag_match`, `balance` | c) genelleme sesli okunan kural seçenekleri arasından seçilir. |
+| MAT.3.1.5 | Sayıları tek-çift olarak sınıflandırabilme | 85 | tam | `sort_bins`, `listen_find`, `pattern` |  |
 | MAT.3.1.6 | Tek ve çift sayıların toplamlarının tek ya da çift olma durumu arasındaki ilişkiye yönelik tümevarımsal akıl yürütebilme | 85 | tam | `sort_bins`, `pattern`, `listen_find` | c) genelleme sesli okunan kural seçenekleri arasından seçilir. |
-| MAT.3.1.7 | Sayı ve sayı temsiline dönüşen şekil örüntülerine dayalı çıkarım yapabilme | 85 | kısmi | `pattern`, `listen_find` | a) varsayımı sesli seçenekler arasından seçme, c) gösterilen örüntünün varsayımı karşılayıp karşılamadığını sınama ve d) gösterilen örüntüyü değerlendirme pattern ve listen_find ile oynanabilir; b) örüntüleri örnekler üzerinde listeleme ve ç) kuralı sözlü olarak ifade etme serbest üretim. |
+| MAT.3.1.7 | Sayı ve sayı temsiline dönüşen şekil örüntülerine dayalı çıkarım yapabilme | 85 | kısmi | `pattern`, `listen_find`, `drag_match`, `sort_bins` | a) varsayımı sesli seçenekler arasından seçme, c) gösterilen örüntünün varsayımı karşılayıp karşılamadığını sınama ve d) gösterilen örüntüyü değerlendirme pattern ve listen_find ile oynanabilir; b) örüntüleri örnekler üzerinde listeleme ve ç) kuralı sözlü olarak ifade etme serbest üretim. |
 | MAT.3.1.8 | Bir çokluktaki ilişkilerden yararlanarak 100’e kadar olan nesnelerin sayısını tahmin edebilme | 85 | kısmi | `count_choose` | Tek bileşen a): çokluğu gruplar hâlinde gösterip bir grubu sayarak bütünü seçme (parça-bütün ilişkisi) count_choose ile kısmen oynanabilir; tahmini sayma sonucuyla karşılaştırma count_choose tahmin modu ile yapılır, ancak mod en çok 20 nesne gösterir; 100'e kadar çokluk için sayma adımının gruplu sürümü gerekir (spec Açık sorular, Faz 3b). |
 
 #### MAT.3.1. Sayılar ve Nicelikler (2)
@@ -673,7 +673,7 @@ Uygunluk: **tam** = bütün süreç bileşenleri dokunmatik oyunla çalışılab
 | MAT.3.2.4 | Çarpma ve bölme işlemlerini çözümleyebilme | 100 | tam | `sequence`, `drag_match`, `balloon_pop` |  |
 | MAT.3.2.5 | Dört işlem gerektiren durumlar için verilen yönergeleri takip ederek yorumlayabilme | 100 | tam | `story`, `drag_match`, `sequence` |  |
 | MAT.3.2.6 | Dört işlem gerektiren günlük yaşam problemlerini çözebilme | 100 | kısmi | `story`, `drag_match`, `count_choose`, `balloon_pop`, `sort_bins` | a–c) verilen ve istenenleri belirleme, işlemi seçme, temsile dönüştürme ve e) çözümü uygulama story, drag_match, count_choose ve balloon_pop ile; ğ) çözüm stratejisinin uygulanabileceği problemleri verilen problemler arasından seçme drag_match ile; h) genellemeyi verilen örneklerle sınama sort_bins ile oynanabilir; ç) kendi ifadeleriyle açıklama ve d) strateji geliştirme serbest üretim, f–g) kendi kullandığı stratejiyi kontrol edip değiştirme ve gözden geçirme öz değerlendirme (oyun çocuğun stratejisini göremez). |
-| MAT.3.2.7 | Dört işlem gerektiren problem durumlarını yapılandırabilme | 100 | kısmi | `drag_match`, `sequence` | a) problem durumundaki ilişkileri kurma (durumu soruyla eşleştirme, olayları sıralama) oynanabilir; b) özgün problem oluşturma sözlü ya da yazılı etkinlik. |
+| MAT.3.2.7 | Dört işlem gerektiren problem durumlarını yapılandırabilme | 100 | kısmi | `drag_match`, `sequence`, `story` | a) problem durumundaki ilişkileri kurma (durumu soruyla eşleştirme, olayları sıralama) oynanabilir; b) özgün problem oluşturma sözlü ya da yazılı etkinlik. |
 | MAT.3.2.8 | Dört işlem bağlamında eşitliğin farklı anlamlarını yorumlayabilme | 101 | tam | `balance`, `drag_match`, `listen_find` | c) eşitliğin anlamları (işlemin sonucu; iki tarafın eşit değeri) terazi modelli sesli seçenekler arasından seçilerek ifade edilir. |
 
 #### MAT.3.3. Nesnelerin Geometrisi (1)
@@ -682,11 +682,11 @@ Uygunluk: **tam** = bütün süreç bileşenleri dokunmatik oyunla çalışılab
 
 | Kod | Öğrenme çıktısı | s. | Uygunluk | Şablonlar | Not |
 |---|---|---|---|---|---|
-| MAT.3.3.1 | Geometrik cisimlerin özelliklerini yorumlayabilme | 108 | kısmi | `count_choose`, `drag_match`, `listen_find` | a–b) cisimlerin köşe, yüz ve ayrıt sayılarını inceleme ve belirleme oynanabilir; c) terimleri kendi ifadeleriyle açıklama sözlü etkinlik. |
-| MAT.3.3.2 | Kenar sayılarına göre geometrik şekilleri sınıflandırabilme | 108 | tam | `sort_bins`, `count_choose`, `listen_find` |  |
-| MAT.3.3.3 | Matematiksel araç ve teknolojileri kullanarak çeşitli geometrik şekilleri ve cisimleri çizebilme | 108 | kısmi | `listen_find`, `drag_match`, `grid` | a–b) çizim araçlarını tanıma ve uygun aracı seçme oynanabilir; c) aracı kullanarak çizme grid (paint: copy, code) ile ekranda yapılabilir; cetvelle kâğıda çizme sınıf ya da ev etkinliği. |
-| MAT.3.3.4 | Standart olmayan ve standart ölçme araçları ile geometrik şekillerin çevre uzunluğunu tahmin edebilme | 108 | kısmi | `count_choose` | b) kareli zemindeki şeklin çevresini seçenekli tahmin etme count_choose ile oynanabilir; c) tahmini birim kenarları sayarak ölçümle karşılaştırma önerilen estimate_then_count gerektirir; a) gerçek ölçme araçlarıyla deneyim ev etkinliği. |
-| MAT.3.3.5 | Standart sıvı ölçü birimleri cinsinden sıvı miktarını tahmin edebilme | 108 | kısmi | `count_choose`, `drag_match` | b) sıvı miktarını standart birimle seçenekli tahmin etme oynanabilir; c) tahmini ekranda ölçü kabıyla doldurma sonucuyla karşılaştırma önerilen estimate_then_count gerektirir; a) gerçek kaplarla sıvı ölçme deneyimi ev etkinliği. |
+| MAT.3.3.1 | Geometrik cisimlerin özelliklerini yorumlayabilme | 108 | kısmi | `count_choose`, `drag_match`, `listen_find`, `story` | a–b) cisimlerin köşe, yüz ve ayrıt sayılarını inceleme ve belirleme oynanabilir; c) terimleri kendi ifadeleriyle açıklama sözlü etkinlik. |
+| MAT.3.3.2 | Kenar sayılarına göre geometrik şekilleri sınıflandırabilme | 108 | tam | `sort_bins`, `count_choose`, `listen_find`, `drag_match`, `story` |  |
+| MAT.3.3.3 | Matematiksel araç ve teknolojileri kullanarak çeşitli geometrik şekilleri ve cisimleri çizebilme | 108 | kısmi | `listen_find`, `drag_match`, `grid`, `sort_bins` | a–b) çizim araçlarını tanıma ve uygun aracı seçme oynanabilir; c) aracı kullanarak çizme grid (paint: copy, code) ile ekranda yapılabilir; cetvelle kâğıda çizme sınıf ya da ev etkinliği. |
+| MAT.3.3.4 | Standart olmayan ve standart ölçme araçları ile geometrik şekillerin çevre uzunluğunu tahmin edebilme | 108 | kısmi | `count_choose`, `story`, `balloon_pop` | b) kareli zemindeki şeklin ya da karışla ölçülen nesnenin çevresini seçenekli tahmin etme story ve count_choose ile oynanabilir; c) tahmini birim kenarları sayarak ölçümle karşılaştırma önerilen estimate_then_count gerektirir; a) gerçek ölçme araçlarıyla deneyim ev etkinliği. |
+| MAT.3.3.5 | Standart sıvı ölçü birimleri cinsinden sıvı miktarını tahmin edebilme | 108 | kısmi | `count_choose`, `drag_match`, `sort_bins`, `story`, `sequence` | b) sıvı miktarını standart birimle seçenekli tahmin etme oynanabilir; c) tahmini ekranda ölçü kabıyla doldurma sonucuyla karşılaştırma önerilen estimate_then_count gerektirir; a) gerçek kaplarla sıvı ölçme deneyimi ev etkinliği. |
 
 #### MAT.3.3. Nesnelerin Geometrisi (2)
 
@@ -694,9 +694,9 @@ Uygunluk: **tam** = bütün süreç bileşenleri dokunmatik oyunla çalışılab
 
 | Kod | Öğrenme çıktısı | s. | Uygunluk | Şablonlar | Not |
 |---|---|---|---|---|---|
-| MAT.3.3.6 | Birden fazla simetri doğrusu olan şekilleri çözümleyebilme | 114 | tam | `listen_find`, `count_choose`, `drag_match` |  |
+| MAT.3.3.6 | Birden fazla simetri doğrusu olan şekilleri çözümleyebilme | 114 | tam | `listen_find`, `count_choose`, `drag_match`, `story` |  |
 | MAT.3.3.7 | Bir parçası verilen simetrik şekli simetri doğrusuna göre yapılandırabilme | 114 | tam | `listen_find`, `drag_match`, `grid` | a) bir parçası verilen şekli inceleyip doğru tamamlanmış şekli ya da ayna parçasını seçme oynanabilir; b) şekli kareli zeminde kendisi tamamlama grid (paint/symmetry) ile oynanabilir. |
-| MAT.3.3.8 | Yönerge ile yapılandırılan ve bir parçası verilen bir şekli tamamlayarak simetrisini oluşturmaya ilişkin kodlama stratejilerini kullanarak yargıda bulunabilme | 114 | tam | `drag_match`, `listen_find`, `grid` | a) yönergeleri ok kodlarıyla eşleştirerek yeniden ifade etme ve c) oluşan simetri hakkında yargı seçme oynanabilir; b) kodlanmış yönergeyi izleyerek şekli kareli zeminde tamamlama grid (paint: code, symmetry) ile oynanabilir. |
+| MAT.3.3.8 | Yönerge ile yapılandırılan ve bir parçası verilen bir şekli tamamlayarak simetrisini oluşturmaya ilişkin kodlama stratejilerini kullanarak yargıda bulunabilme | 114 | tam | `drag_match`, `listen_find`, `grid`, `story` | a) yönergeleri ok kodlarıyla eşleştirerek yeniden ifade etme ve c) oluşan simetri hakkında yargı seçme oynanabilir; b) kodlanmış yönergeyi izleyerek şekli kareli zeminde tamamlama grid (paint: code, symmetry) ile oynanabilir. |
 
 #### MAT.3.4. Veriye Dayalı Araştırma
 
@@ -704,7 +704,7 @@ Uygunluk: **tam** = bütün süreç bileşenleri dokunmatik oyunla çalışılab
 
 | Kod | Öğrenme çıktısı | s. | Uygunluk | Şablonlar | Not |
 |---|---|---|---|---|---|
-| MAT.3.4.1 | Kategorik ve sayma ile elde edilen nicel veriye dayalı tek veri grubu ile çalışabilme ve veriye dayalı karar verebilme | 118 | kısmi | `listen_find`, `count_choose`, `sort_bins`, `chart_build` | d) görselleştirme aracını seçme, f) hazır nokta grafiğini yorumlama ve g) sonuçları oyunda verilen araştırma sorusuna göre değerlendirme oynanabilir; e) verilen veriyle çetele, tablo ve grafik oluşturma chart_build ile oynanabilir; a–c) araştırma durumunu ve sorularını belirleme ve plan yapma çocuğun kendi araştırması, ç) veri toplama gerçek dünya etkinliği (sınıf ya da ev). |
+| MAT.3.4.1 | Kategorik ve sayma ile elde edilen nicel veriye dayalı tek veri grubu ile çalışabilme ve veriye dayalı karar verebilme | 118 | kısmi | `listen_find`, `count_choose`, `sort_bins`, `chart_build`, `story` | d) görselleştirme aracını seçme, f) hazır nokta grafiğini yorumlama ve g) sonuçları oyunda verilen araştırma sorusuna göre değerlendirme oynanabilir; e) verilen veriyle çetele, tablo ve grafik oluşturma chart_build ile oynanabilir; a–c) araştırma durumunu ve sorularını belirleme ve plan yapma çocuğun kendi araştırması, ç) veri toplama gerçek dünya etkinliği (sınıf ya da ev). |
 
 ### Türkçe
 

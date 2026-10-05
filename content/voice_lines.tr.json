@@ -1247,6 +1247,1346 @@
 		"text": "Saat on iki buçuk.",
 		"speaker": "ANLATICI"
 	},
+	"vo.g3.matematik.u01.n01.intro": {
+		"text": "Merhaba! Artık bine kadar sayılarla oynayacağız. Büyük sayıları birlikte okuyup yazalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.matematik.u01.n01.r01": {
+		"text": "Yüzlük, onluk ve birlik bloklarına bak. Her bloğu gösterdiği sayıya sürükle!",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.507": {
+		"text": "beş yüz yedi",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.570": {
+		"text": "beş yüz yetmiş",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.750": {
+		"text": "yedi yüz elli",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n01.r02": {
+		"text": "Dinle ve bul: beş yüz yedi! Bu sayıya dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n01.r03": {
+		"text": "Her toplamın gösterdiği sayıyı bul. Kartları doğru sayıya sürükle!",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.386": {
+		"text": "üç yüz seksen altı",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n01.r04": {
+		"text": "Dinle ve yaz: üç yüz seksen altı. Rakam karolarına dokunarak yaz, sonra onayla!",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.615": {
+		"text": "altı yüz on beş",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.165": {
+		"text": "yüz altmış beş",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.651": {
+		"text": "altı yüz elli bir",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.516": {
+		"text": "beş yüz on altı",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n01.r05": {
+		"text": "Dinle ve bul: altı yüz on beş!",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.940": {
+		"text": "dokuz yüz kırk",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n01.r06": {
+		"text": "Dinle ve yaz: dokuz yüz kırk.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n02.intro": {
+		"text": "Her rakamın bir evi var: yüzler, onlar ve birler basamağı. Rakamların değerini bulalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.matematik.u01.n02.r01": {
+		"text": "Kartları oku. Her birini gösterdiği sayıya sürükle!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3m.bin.yuzler": {
+		"text": "Yüzler basamağı",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3m.bin.onlar": {
+		"text": "Onlar basamağı",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3m.bin.birler": {
+		"text": "Birler basamağı",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n02.r02": {
+		"text": "Her sayıda 5 rakamını bul. 5 hangi basamaktaysa sayıyı o kutuya koy!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n02.r03": {
+		"text": "Yedi yüz kırk iki sayısının rakamlarına bak. Her rakamı basamak değeriyle eşleştir!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n02.r04": {
+		"text": "Şimdi 3 rakamını bul. 3 yüzler basamağındaysa bir kutuya, onlar basamağındaysa öbür kutuya koy!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n02.r05": {
+		"text": "Toplamları sayılarla eşleştir. Sıfırın yerine dikkat et!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n03.intro": {
+		"text": "Sayıları karşılaştırıp sıralayalım. Önce yüzler basamağına, sonra onlara bak!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.matematik.u01.n03.r01": {
+		"text": "Hangi sayı daha büyük? Doğru işareti seç!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n03.r02": {
+		"text": "Sayıları küçükten büyüğe sırala!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n03.r03": {
+		"text": "İki sayıyı karşılaştır. Doğru işareti seç!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n03.r04": {
+		"text": "Bu kez sayıları büyükten küçüğe sırala!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n03.r05": {
+		"text": "Sayı doğrusunda işaretli yer hangi sayı? Onar onar ilerliyoruz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n04.intro": {
+		"text": "Bir sayı hangi onluğa ya da yüzlüğe daha yakın? Sayı doğrusunda bakalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.matematik.u01.n04.r01": {
+		"text": "Kırk yediyi sayı doğrusuna yerleştir. Kırka mı, elliye mi daha yakın?",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.40": {
+		"text": "kırk",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.50": {
+		"text": "elli",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n04.r02": {
+		"text": "Her sayıyı en yakın onluğun kutusuna koy!",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.300": {
+		"text": "üç yüz",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.400": {
+		"text": "dört yüz",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n04.r03": {
+		"text": "Her sayıyı en yakın yüzlüğün kutusuna koy!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n04.r04": {
+		"text": "Her sayıyı en yakın yüzlüğe sürükle!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n04.r05": {
+		"text": "Her sayıyı en yakın onluğa sürükle!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n05.intro": {
+		"text": "Haydi ritim tutalım! Altışar, yedişer, sekizer ve dokuzar sayarak örüntüleri bulalım.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.matematik.u01.n05.r01": {
+		"text": "Altışar ileri sayıyoruz. Boşlukları doldur!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n05.r02": {
+		"text": "Yetmiş içinde yedişer geri sayıyoruz. Boşlukları doldur!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n05.r03": {
+		"text": "Sekizer ileri say. Sıradaki sayılar hangileri?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n05.r04": {
+		"text": "Dokuzar geri say. Sıradaki sayılar hangileri?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n05.r05": {
+		"text": "Onar geri say. Boşlukları doldur!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n06.intro": {
+		"text": "Bir örüntünün kuralını bulursak sonrasını hep biliriz! Yüzer de sayalım.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.matematik.u01.n06.r01": {
+		"text": "Her sayı dizisini kuralıyla eşleştir: kaçar kaçar artıyor?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n06.r02": {
+		"text": "Yüzer ileri say. Boşlukları doldur!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n06.r03": {
+		"text": "Bu diziler geriye doğru gidiyor. Her diziyi kuralıyla eşleştir!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n06.r04": {
+		"text": "Yüzer geri say. Boşlukları doldur!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n06.r05": {
+		"text": "Sayı doğrusunda altışar ilerliyoruz. Kırk ikiyi doğru yere yerleştir!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3m.bin.tek": {
+		"text": "Tek sayılar",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3m.bin.cift": {
+		"text": "Çift sayılar",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n07.intro": {
+		"text": "İkişer eşleşebilenler çift, birisi açıkta kalanlar tek! Sayıları tek ve çift diye ayıralım.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.matematik.u01.n07.r01": {
+		"text": "Sayıları tek ve çift kutularına ayır. Sıfır da çift sayıdır!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n07.r02": {
+		"text": "Bu sayılar tek mi, çift mi? Kutulara ayır!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n07.r03": {
+		"text": "Birden başlayıp ikişer sayıyoruz. Hepsi tek sayı! Boşlukları doldur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n07.r04": {
+		"text": "Birler basamağına bak ve sayıları tek ya da çift kutusuna koy!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n07.r05": {
+		"text": "Üç basamaklı sayılar! Birler basamağına bakarak tek ve çift diye ayır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n08.intro": {
+		"text": "İki sayıyı toplayınca sonuç tek mi olur, çift mi? Bir örüntü var, bulalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.matematik.u01.n08.r01": {
+		"text": "Her toplamı hesapla. Toplam tekse Tek kutusuna, çiftse Çift kutusuna koy!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n08.r02": {
+		"text": "Toplamlar tek mi, çift mi? Kutulara ayır!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n08.r03": {
+		"text": "Bu toplamlar da tek mi, çift mi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n08.r04": {
+		"text": "Şimdi kuralı bulalım! İki tek sayının toplamı, iki çift sayının toplamı, bir tek ile bir çiftin toplamı: tek mi, çift mi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3m.bin.uyar": {
+		"text": "Kurala uyar",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3m.bin.uymaz": {
+		"text": "Kurala uymaz",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n09.intro": {
+		"text": "Bazı örüntüler şekillerle büyür. Her adımda kaç tane eklendiğini bulup sayılarla gösterelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.matematik.u01.n09.r01": {
+		"text": "Her adımda iki küp ekleniyor. Küp sayılarını sürdür!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n09.r02": {
+		"text": "Her adımda üç kare ekleniyor. Dört kareyle başladık. Sıradaki sayılar?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n09.r03": {
+		"text": "Her örüntünün kuralını bul. Kaçar artıyor?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n09.r04": {
+		"text": "Kural: dörder artar. Bu kurala uyan dizileri Uyar kutusuna, uymayanları Uymaz kutusuna koy!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n09.r05": {
+		"text": "Her adımda dört üçgen ekleniyor. Bir üçgenle başladık. Örüntüyü sürdür!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n10.intro": {
+		"text": "Önce bir bak ve tahmin et. Sonra say ve tahminin ne kadar yakın, gör!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.matematik.u01.n10.r01": {
+		"text": "Kaç küp var? Önce tahmin et, sonra sayarak kontrol et!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n10.r02": {
+		"text": "Kaç çilek var? Onluk grubu sayarak tahmin et!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n10.r03": {
+		"text": "Kaç çiçek var? Tahmin et, sonra say!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u01.n10.r04": {
+		"text": "Kaç balık var? Tahminini seç, sonra sayıp karşılaştır!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n01.intro": {
+		"text": "Bir pizzayı eş parçalara bölelim. Bütünü, yarımı ve çeyreği bulalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.matematik.u02.n01.r01": {
+		"text": "İki eş parçaya bölünmüş pizzayı bul!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n01.r02": {
+		"text": "Pizzanın yarısını seç: iki eş parçadan biri!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n01.r03": {
+		"text": "Dört eş parçaya bölünmüş pizzayı bul!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n01.r04": {
+		"text": "Pizzanın çeyreğini seç: dört eş parçadan biri!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3m.yarim": {
+		"text": "yarım",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3m.ceyrek": {
+		"text": "çeyrek",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3m.butun": {
+		"text": "bütün",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n01.r05": {
+		"text": "Her sözcüğü kesir gösterimiyle eşleştir!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n02.intro": {
+		"text": "Bir bütünü eş parçalara bölünce her bir parça bir birim kesirdir.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.matematik.u02.n02.r01": {
+		"text": "Üç eş parçaya bölünmüş pizzayı bul!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n02.r02": {
+		"text": "Üçte birini seç: üç eş parçadan biri!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n02.r03": {
+		"text": "Altı eş parçaya bölünmüş pizzayı bul!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n02.r04": {
+		"text": "Sekizde birini seç: sekiz eş parçadan biri!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n02.r05": {
+		"text": "Her birim kesri, bütünün kaç eş parçaya bölündüğüyle eşleştir!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n03.intro": {
+		"text": "Kesrin altındaki payda bütünün kaç eş parça olduğunu, üstündeki pay kaç parça aldığımızı söyler.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.matematik.u02.n03.r01": {
+		"text": "Pizzanın dörtte üçünü seç, sonra onayla!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n03.r02": {
+		"text": "Pizzanın sekizde beşini seç, sonra onayla!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n03.r03": {
+		"text": "Her kesrin payını bul ve eşleştir! Pay, kesir çizgisinin üstündeki sayıdır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n03.r04": {
+		"text": "Şimdi her kesrin paydasını bul! Payda, kesir çizgisinin altındaki sayıdır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n03.r05": {
+		"text": "Pizza on eş parçaya bölündü. Onda yedisini seç!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n04.intro": {
+		"text": "Akrep saati, yelkovan dakikayı gösterir. Analog ve dijital saatleri okuyalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.matematik.u02.n04.r01": {
+		"text": "Saat kaçı gösteriyor? Doğru dijital saati seç!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n04.r02": {
+		"text": "Saat kaç? Akrep ile yelkovana dikkatle bak!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n04.r03": {
+		"text": "Saati yukarıda yazan zamana kur, sonra onayla!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n04.r04": {
+		"text": "Saat kaç? Doğru dijital saati seç!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n04.r05": {
+		"text": "Saati yazan zamana kur. Önce akrebi, sonra yelkovanı ayarla!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n05.intro": {
+		"text": "Saniye, dakika, saat, gün, hafta, ay ve yıl. Hangisi daha uzun, birlikte bulalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.matematik.u02.n05.r01": {
+		"text": "Zaman birimlerini en kısadan en uzuna sırala!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n05.r02": {
+		"text": "Eşit olan süreleri eşleştir!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n05.r03": {
+		"text": "Bu zaman birimlerini de en kısadan en uzuna sırala!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n05.r04": {
+		"text": "Eşit olan süreleri eşleştir!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n05.r05": {
+		"text": "Altı zaman birimini en kısadan en uzuna sırala!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3m.bin.dakika": {
+		"text": "Birkaç dakika sürer",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3m.bin.saat": {
+		"text": "Birkaç saat sürer",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3m.bin.saniye": {
+		"text": "Birkaç saniye sürer",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3m.bin.gun": {
+		"text": "Birkaç gün sürer",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n06.intro": {
+		"text": "Bazı işler birkaç saniye, bazıları saatler, bazıları da günler sürer. Tahmin edelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.matematik.u02.n06.r01": {
+		"text": "Her iş ne kadar sürer? Birkaç dakika mı, birkaç saat mi? Doğru kutuya koy!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n06.r02": {
+		"text": "Bu işleri en kısa sürenden en uzun sürene sırala!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n06.r03": {
+		"text": "Her iş ne kadar sürer: saniyeler mi, dakikalar mı, günler mi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n06.r04": {
+		"text": "En kısa sürenden en uzun sürene sırala!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n07.intro": {
+		"text": "Santimetre, metre ve kilometre; gram, kilogram ve ton. Birimler arasındaki ilişkileri bulalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.matematik.u02.n07.r01": {
+		"text": "Eşit olan ölçüleri eşleştir!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3m.bin.cm": {
+		"text": "Santimetre",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3m.bin.m": {
+		"text": "Metre",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3m.bin.km": {
+		"text": "Kilometre",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n07.r02": {
+		"text": "Hangisini hangi birimle ölçeriz? Santimetre, metre ya da kilometre kutusuna koy!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n07.r03": {
+		"text": "Bir kilogram bin gramdır. Terazinin dengede kalması için kaç gram daha gerekir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3m.bin.g": {
+		"text": "Gram",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3m.bin.kg": {
+		"text": "Kilogram",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3m.bin.ton": {
+		"text": "Ton",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n07.r04": {
+		"text": "Hangisinin kütlesini hangi birimle ölçeriz? Gram, kilogram ya da ton kutusuna koy!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n07.r05": {
+		"text": "Eşit olan ölçüleri eşleştir. Yarım metre ve yarım kilograma dikkat!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n08.intro": {
+		"text": "Madenî paralar ve kâğıt paralar! Paraları sayıp birbirine dönüştürelim.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.matematik.u02.n08.r01": {
+		"text": "Tepside kaç lira var? Paraları topla ve doğru tutarı seç!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n08.r02": {
+		"text": "Aynı değerdeki paraları eşleştir!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n08.r03": {
+		"text": "Kaç kuruş var? Bir lira yüz kuruştur!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n08.r04": {
+		"text": "Seksen beş lira öde. Cüzdandan paraları seç, sonra onayla!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u02.n08.r05": {
+		"text": "İki yüz altmış lira öde. En az parayla ödemeyi dene!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n01.intro": {
+		"text": "Önce sonucu tahmin et, sonra zihinden hesapla. Tahminin sonuca yakın mı, uzak mı?",
+		"speaker": "BILGE"
+	},
+	"vo.g3.matematik.u03.n01.r01": {
+		"text": "Zihinden topla: üç yüz artı iki yüz kaç eder? Doğru balonu patlat!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n01.r02": {
+		"text": "Önce toplamı tahmin et. Sonra işlemi yapıp tahminini karşılaştır!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n01.r03": {
+		"text": "Zihinden çıkar: altı yüz elli eksi iki yüz kırk kaç eder?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n01.r04": {
+		"text": "Farkı önce tahmin et, sonra hesaplayıp karşılaştır!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n01.r05": {
+		"text": "Hangi sayıya yüz otuz eklersek beş yüz elli beş olur? Toplananı bul!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n02.intro": {
+		"text": "Toplama ve çıkarmada birler basamağından başlarız. Adım adım ilerleyelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.matematik.u03.n02.r01": {
+		"text": "Üç basamaklı iki sayıyı toplarken hangi basamaktan başlarız? Basamakları toplama sırasına diz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n02.r02": {
+		"text": "Topla: iki yüz kırk altı artı yüz otuz yedi. Eldeye dikkat!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n02.r03": {
+		"text": "İşlemleri sonuçlarıyla eşleştir. Toplama ve çıkarma birbirinin tersidir!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n02.r04": {
+		"text": "Çıkar: beş yüz yirmi dört eksi yüz seksen yedi. Onluk bozmayı unutma!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n02.r05": {
+		"text": "Çıkar: altı yüz sekiz eksi iki yüz elli dokuz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n03.intro": {
+		"text": "Çarpma, aynı sayıyı tekrar tekrar toplamaktır. Bölme ise eşit paylaştırmaktır!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.matematik.u03.n03.r01": {
+		"text": "Her tekrarlı toplamayı çarpma işlemiyle eşleştir!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n03.r02": {
+		"text": "Çarp: üç kere dört kaç eder?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n03.r03": {
+		"text": "Çarp: altı kere yedi kaç eder?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n03.r04": {
+		"text": "Böl: elli altıda kaç tane sekiz var?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n03.r05": {
+		"text": "On ile çarp: yirmi dört kere on kaç eder? Kısa yolu hatırla!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n03.r06": {
+		"text": "On ile böl: doksanı ona bölersek kaç olur?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n04.intro": {
+		"text": "Çarpma ve bölme kardeştir: biri ötekini geri alır!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.matematik.u03.n04.r01": {
+		"text": "İşlemleri sonuçlarıyla eşleştir!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n04.r02": {
+		"text": "Çarp: yirmi üç kere üç. Önce birleri, sonra onları çarp!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n04.r03": {
+		"text": "Her çarpma işlemini, ona kardeş olan bölme işlemiyle eşleştir!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n04.r04": {
+		"text": "Böl: kırk sekizi dörde bölersek kaç olur?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n04.r05": {
+		"text": "Çarp: yüz yirmi beş kere dört kaç eder?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n05.intro": {
+		"text": "Yönergeleri sırayla izleyelim. Her adımın sonucu bir sonraki adımın başlangıcı olur!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.matematik.u03.n05.p1": {
+		"text": "8 ile başla. Önce 2 ile çarp. Sonra 5 ekle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n05.q1": {
+		"text": "İlk adımın sonucu kaç?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n05.q2": {
+		"text": "Son sonuç kaç?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n05.r01": {
+		"text": "Yönergeyi dinle, sonra soruları cevapla!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n05.r02": {
+		"text": "Her yönergeyi işlem diline çevir. Kartı doğru işleme sürükle!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n05.p2": {
+		"text": "30 ile başla. 10'a böl. Sonra 7 ile çarp.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n05.q3": {
+		"text": "Son sonuç kaç?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n05.r03": {
+		"text": "Yönergeyi dinle ve adım adım hesapla!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n05.p3": {
+		"text": "Bir kutuda 4 sıra kalem var. Her sırada 6 kalem var. Kalemlerin yarısını Ali aldı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n05.q4": {
+		"text": "Kutuda toplam kaç kalem vardı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n05.q5": {
+		"text": "Ali kaç kalem aldı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n05.r04": {
+		"text": "Durumu dinle ve işlemleri sırayla yap!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n06.intro": {
+		"text": "Bir problemde önce verilenleri ve isteneni bulalım. Sonra uygun işlemi seçip çözelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.matematik.u03.n06.p1": {
+		"text": "Bir otobüste 46 yolcu vardı. Durakta 18 yolcu indi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n06.q1": {
+		"text": "Kalan yolcuları hangi işlemle buluruz?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n06.q2": {
+		"text": "Otobüste kaç yolcu kaldı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n06.r01": {
+		"text": "Problemi dinle. Önce işlemi seç, sonra sonucu bul!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n06.p2": {
+		"text": "Ayşe 5 paket kurabiye aldı. Her pakette 8 kurabiye var.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n06.q3": {
+		"text": "Hangi işlemi yapmalıyız?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n06.q4": {
+		"text": "Ayşe kaç kurabiye aldı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n06.r02": {
+		"text": "Problemi dinle. Verilenlere dikkat et!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n06.p3": {
+		"text": "Öğretmen 72 kalemi 9 masaya eşit olarak dağıttı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n06.q5": {
+		"text": "Hangi işlemi yapmalıyız?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n06.q6": {
+		"text": "Her masaya kaç kalem düştü?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n06.r03": {
+		"text": "Problemi dinle ve eşit paylaştır!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n06.p4": {
+		"text": "Can'ın 250 lirası vardı. 120 liralık bir kitap ve 45 liralık bir kalem aldı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n06.q7": {
+		"text": "Can toplam kaç lira harcadı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n06.q8": {
+		"text": "Can'ın kaç lirası kaldı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n06.r04": {
+		"text": "İki adımlı bir problem! Önce harcanan parayı, sonra kalanı bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n07.intro": {
+		"text": "Bir durumu okuyup ona uygun bir problem sorusu bulalım. Sonra sorumuzu çözelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.matematik.u03.n07.p1": {
+		"text": "Bahçede 12 elma ağacı var. Her ağaçta 10 elma var.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n07.q1": {
+		"text": "Hangisi bu durum için bir problem sorusudur?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n07.q2": {
+		"text": "Bu sorunun cevabı kaç?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n07.r01": {
+		"text": "Durumu dinle. Bu duruma uygun problem sorusunu seç!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n07.p2": {
+		"text": "Sınıfta 28 öğrenci var. Bunların 13'ü kız.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n07.q3": {
+		"text": "Hangi soru bu bilgilerle çözülebilir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n07.q4": {
+		"text": "Sınıfta kaç erkek öğrenci var?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n07.r02": {
+		"text": "Durumu dinle. Hangi soru bu bilgilerle çözülebilir?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n07.p3": {
+		"text": "Bir çiftlikte 6 inek ve 8 tavuk var. Her ineğin 4 bacağı var.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n07.q5": {
+		"text": "Hangi soru çarpma ile çözülür?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n07.q6": {
+		"text": "İneklerin toplam kaç bacağı var?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n07.r03": {
+		"text": "Durumu dinle. Çarpma gerektiren soruyu bul!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n08.intro": {
+		"text": "Eşittir işareti iki tarafın aynı değerde olduğunu söyler. Teraziyi dengede tutalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.matematik.u03.n08.r01": {
+		"text": "İki tarafı karşılaştır. Hangi işaret gelmeli?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n08.r02": {
+		"text": "Terazi dengede olsun. Eksik sayı hangisi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n08.r03": {
+		"text": "Aynı sonucu veren işlemleri eşleştir!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n08.r04": {
+		"text": "Terazinin iki yanı eşit olsun. Eksik sayıyı bul!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u03.n08.r05": {
+		"text": "İki tarafı karşılaştır. Eşit mi, değil mi? Doğru işareti seç!",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.cisim.kup": {
+		"text": "küp",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.cisim.kare_prizma": {
+		"text": "kare prizma",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.cisim.dikdortgen_prizma": {
+		"text": "dikdörtgen prizma",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.cisim.ucgen_prizma": {
+		"text": "üçgen prizma",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.cisim.kure": {
+		"text": "küre",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.cisim.silindir": {
+		"text": "silindir",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n01.intro": {
+		"text": "Cisimlerin köşeleri, yüzleri ve ayrıtları var. Küpü ve prizmaları inceleyelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.matematik.u04.n01.p1": {
+		"text": "Bu bir küp. Küpün bütün yüzleri eş karelerdir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n01.q1": {
+		"text": "Küpün kaç yüzü var?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n01.q2": {
+		"text": "Küpün kaç köşesi var?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n01.q3": {
+		"text": "Küpün kaç ayrıtı var?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n01.r01": {
+		"text": "Küpü incele, sonra soruları cevapla!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n01.r02": {
+		"text": "Her cismi köşe sayısıyla eşleştir. Kürenin hiç köşesi yok!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n01.p2": {
+		"text": "Bu bir üçgen prizma. İki yüzü üçgen, üç yüzü dikdörtgendir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n01.q4": {
+		"text": "Üçgen prizmanın kaç yüzü var?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n01.q5": {
+		"text": "Kaç köşesi var?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n01.q6": {
+		"text": "Kaç ayrıtı var?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n01.r03": {
+		"text": "Üçgen prizmayı incele, sonra soruları cevapla!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n01.r04": {
+		"text": "Dinle ve bul: kare prizma! Doğru cisme dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.sekil.ucgen": {
+		"text": "üçgen",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.sekil.besgen": {
+		"text": "beşgen",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.sekil.altigen": {
+		"text": "altıgen",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.sekil.sekizgen": {
+		"text": "sekizgen",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n02.intro": {
+		"text": "Şekillere kenar sayılarına göre ad veririz: üçgen, dörtgen, beşgen, altıgen ve sekizgen!",
+		"speaker": "BILGE"
+	},
+	"vo.g3m.bin.kenar_3": {
+		"text": "Üç kenarlı şekiller",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3m.bin.kenar_4": {
+		"text": "Dört kenarlı şekiller",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3m.bin.kenar_5": {
+		"text": "Beş kenarlı şekiller",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3m.bin.kenar_6": {
+		"text": "Altı kenarlı şekiller",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n02.r01": {
+		"text": "Şeklin kenarlarını say. Üç kenarlıları bir kutuya, dört kenarlıları öbür kutuya koy!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n02.r02": {
+		"text": "Kenarları say ve şekilleri kenar sayılarına göre kutulara ayır!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n02.r03": {
+		"text": "Her şekli adıyla eşleştir!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n02.r04": {
+		"text": "Dinle ve bul: sekizgen! Doğru şekle dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n02.p1": {
+		"text": "Bu şeklin kenarlarını parmağınla tek tek say.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n02.q1": {
+		"text": "Bu şeklin kaç kenarı var?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n02.q2": {
+		"text": "Bu şeklin adı ne?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n02.r05": {
+		"text": "Şekle bak ve soruları cevapla!",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.arac.cetvel": {
+		"text": "cetvel",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3m.bin.cizim": {
+		"text": "Şekil çizmek için kullanılır",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3m.bin.diger": {
+		"text": "Başka işler için kullanılır",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n03.intro": {
+		"text": "Şekil çizmek için cetvel, kareli kâğıt, geometri tahtası ya da tablet kullanabiliriz!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.matematik.u04.n03.r01": {
+		"text": "Dinle ve bul: cetvel! Doğru araca dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n03.r02": {
+		"text": "Hangi araçlarla şekil çizeriz? Çizim araçlarını bir kutuya, ötekileri Diğer kutusuna koy!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n03.r03": {
+		"text": "Kareli zemin bir çizim aracıdır. Örnekteki dikdörtgeni boyayarak çiz, sonra onayla!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n03.r04": {
+		"text": "Kodu izle: kareleri boyayarak bir dörtgen çiz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n03.r05": {
+		"text": "Örnekteki üçgeni kareli zemine çiz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n04.intro": {
+		"text": "Bir şeklin çevresi bütün kenarlarının toplam uzunluğudur. Birim kareleri sayarak tahmin edelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.matematik.u04.n04.p1": {
+		"text": "Bu dikdörtgen kareli kâğıtta. Her karenin kenarı 1 birim.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n04.q1": {
+		"text": "Dikdörtgenin çevresi kaç birim?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n04.r01": {
+		"text": "Dikdörtgene bak. Kenarlardaki birimleri sayarak çevresini tahmin et!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n04.r02": {
+		"text": "Karenin dört kenarı da dört birim. Çevresi kaç birim? Dört kere dört!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n04.p2": {
+		"text": "Bu karenin her kenarı 3 birim.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n04.q2": {
+		"text": "Karenin çevresi kaç birim?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n04.r03": {
+		"text": "Kareye bak ve çevresini bul!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n04.p3": {
+		"text": "Bir kitabın kısa kenarı 2 karış, uzun kenarı 3 karış.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n04.q3": {
+		"text": "Kitabın çevresi kaç karış?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n04.r04": {
+		"text": "Karış ile ölçelim. Çevreyi tahmin et!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3m.bin.litre_az": {
+		"text": "Bir litreden az",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3m.bin.litre_cok": {
+		"text": "Bir litreden çok",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n05.intro": {
+		"text": "Sıvıları litre ile ölçeriz. Bir kapta yaklaşık kaç litre sıvı var, tahmin edelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.matematik.u04.n05.r01": {
+		"text": "Bir su şişesi bir litredir. Bu kaplar bir litreden az mı, çok mu alır? Kutulara ayır!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n05.p1": {
+		"text": "Bir su şişesi 1 litre su alır. Kova, şişeden çok daha büyük.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n05.q1": {
+		"text": "Kova yaklaşık kaç litre su alır?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n05.r02": {
+		"text": "Kovaya bak ve tahmin et!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n05.r03": {
+		"text": "Kapları aldıkları sıvı miktarına göre azdan çoğa sırala!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n05.p2": {
+		"text": "1 litre su ile bu bardaklardan yaklaşık 4 tanesini doldurabiliriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n05.q2": {
+		"text": "2 litre su ile kaç bardak doldururuz?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u04.n05.r04": {
+		"text": "Bardağa bak ve tahmin et!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u05.n01.intro": {
+		"text": "Simetri doğrusu bir şekli iki eş parçaya ayırır. Bazı şekillerin birden fazla simetri doğrusu var!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.matematik.u05.n01.p1": {
+		"text": "Kareyi ortadan ya da köşeden köşeye katlayınca iki parça tam üst üste gelir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u05.n01.q1": {
+		"text": "Karenin kaç simetri doğrusu var?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u05.n01.r01": {
+		"text": "Kareyi farklı yönlerden katlıyoruz. Dinle ve cevapla!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u05.n01.p2": {
+		"text": "Dikdörtgeni enine ve boyuna ortadan katlayınca parçalar üst üste gelir. Köşeden köşeye katlayınca gelmez.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u05.n01.q2": {
+		"text": "Dikdörtgenin kaç simetri doğrusu var?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u05.n01.r02": {
+		"text": "Dikdörtgeni katlıyoruz. Dinle ve cevapla!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u05.n01.p3": {
+		"text": "Daireyi merkezinden geçen her çizgi boyunca katlayabiliriz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u05.n01.q3": {
+		"text": "Dairenin kaç simetri doğrusu var?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u05.n01.r03": {
+		"text": "Daireye bak. Merkezinden geçen her çizgi onu iki eş parçaya ayırır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u05.n01.r04": {
+		"text": "Her şekli simetri doğrusu sayısıyla eşleştir!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u05.n01.p4": {
+		"text": "Bir çizgi şekli iki eş parçaya ayırıyorsa o çizgi bir simetri doğrusudur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u05.n01.q4": {
+		"text": "Hangi çizgi bir simetri doğrusudur?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u05.n01.r05": {
+		"text": "Çizgilere dikkatle bak!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u05.n02.intro": {
+		"text": "Şeklin yarısı burada! Simetri doğrusuna göre öbür yarısını tamamlayalım.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.matematik.u05.n02.r01": {
+		"text": "Kesikli çizgi simetri doğrusu. Şeklin öbür yarısını boya, sonra onayla!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u05.n02.r02": {
+		"text": "Bu kez simetri doğrusu yatay. Şeklin alt yarısını boya!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u05.n02.r03": {
+		"text": "Dikey simetri doğrusuna göre şekli tamamla!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u05.n02.r04": {
+		"text": "Yatay simetri doğrusuna göre şekli tamamla!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u05.n03.intro": {
+		"text": "Yönergeler bir kod gibidir! Kodu izleyerek şekli çizelim, sonra simetriğini oluşturalım.",
+		"speaker": "BILGE"
+	},
+	"vo.g3.matematik.u05.n03.r01": {
+		"text": "Her yönergeyi ok koduyla eşleştir!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u05.n03.r02": {
+		"text": "Kodu izleyerek kareleri boya!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u05.n03.r03": {
+		"text": "Kodu izle: önce şeklin yarısını çiz!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u05.n03.r04": {
+		"text": "Şimdi bu yarım şeklin simetriğini oluştur. Simetri doğrusunun öbür yanını boya!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u05.n03.p1": {
+		"text": "Birinci şekli ortadan katlarsak iki yarısı üst üste gelir mi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u05.n03.p2": {
+		"text": "Bu şekli ortadan katlarsak iki yarısı üst üste gelir mi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u05.n03.q1": {
+		"text": "Birinci şekil simetrik mi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u05.n03.q2": {
+		"text": "İkinci şekil simetrik mi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u05.n03.r05": {
+		"text": "Şekillere bak ve yargıda bulun!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u06.n01.intro": {
+		"text": "Verileri sayıp çeteleye ve tabloya işleyelim. Sonra grafiğe bakıp soruları cevaplayalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g3.matematik.u06.n01.q1": {
+		"text": "En çok hangi hayvanı gördük?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u06.n01.q2": {
+		"text": "Kaç arı gördük?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u06.n01.r01": {
+		"text": "Bahçede gördüğümüz hayvanları çeteleye işle! Her hayvanı kendi satırına sürükle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u06.n01.q3": {
+		"text": "En az hangisi seçildi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u06.n01.q4": {
+		"text": "Toplam kaç öğrenci seçim yaptı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u06.n01.r02": {
+		"text": "En sevilen oyuncakları sıklık tablosuna işle!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u06.n01.q5": {
+		"text": "Hangisinden en çok var?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u06.n01.q6": {
+		"text": "Çilek elmadan kaç tane fazla?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u06.n01.r03": {
+		"text": "Meyveleri nokta grafiğine işle! Her meyve için kendi sütununa bir nokta koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u06.n01.q7": {
+		"text": "Hangi hayvandan en az var?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u06.n01.q8": {
+		"text": "Ördek balıktan kaç tane fazla?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u06.n01.q9": {
+		"text": "Toplam kaç hayvan var?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u06.n01.r04": {
+		"text": "Göldeki ve çiftlikteki hayvanları nokta grafiğine işle!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u06.n02.intro": {
+		"text": "Bir araştırma sorusu sorduk, verileri topladık. Hangi aracı seçeceğiz ve sonuç ne diyor?",
+		"speaker": "BILGE"
+	},
+	"vo.g3.matematik.u06.n02.p1": {
+		"text": "Sınıfça en sevdiğimiz mevsimi araştırıyoruz. Arkadaşlarımız cevap verdikçe her cevap için bir çizgi çiziyoruz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u06.n02.q1": {
+		"text": "Cevapları sayarken hangi aracı kullanıyoruz?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u06.n02.q2": {
+		"text": "Sayıları düzenli bir tabloda göstermek için hangisini seçeriz?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u06.n02.r01": {
+		"text": "Araştırmayı dinle ve uygun aracı seç!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u06.n02.q3": {
+		"text": "Araştırma sorumuzun cevabı ne? En çok hangi meyve seviliyor?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u06.n02.q4": {
+		"text": "Elmayı seçenler çileği seçenlerden kaç kişi fazla?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u06.n02.r02": {
+		"text": "Araştırma sorumuz: Sınıfta en çok hangi meyve seviliyor? Cevapları nokta grafiğine işle!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u06.n02.q5": {
+		"text": "Araştırma sorumuzun cevabı hangisi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u06.n02.q6": {
+		"text": "En az hangisi getirildi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u06.n02.q7": {
+		"text": "Toplam kaç oyuncak ve okul eşyası var?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g3.matematik.u06.n02.r03": {
+		"text": "Araştırma sorumuz: Okula en çok hangi oyuncağı getiriyoruz? Verileri sıklık tablosuna işle!",
+		"speaker": "ANLATICI"
+	},
 	"vo.g3.fen.u01.n01.intro": {
 		"text": "Merak ettiğimiz bir şeyi nasıl öğreniriz? Gözlem yaparak, deney yaparak ya da kaynaklardan araştırarak! Her soru için en uygun yolu birlikte seçelim.",
 		"speaker": "BILGE"
@@ -4459,10 +5799,6 @@
 		"text": "otuz dokuz",
 		"speaker": "ANLATICI"
 	},
-	"vo.sayi.40": {
-		"text": "kırk",
-		"speaker": "ANLATICI"
-	},
 	"vo.sayi.41": {
 		"text": "kırk bir",
 		"speaker": "ANLATICI"
@@ -4497,10 +5833,6 @@
 	},
 	"vo.sayi.49": {
 		"text": "kırk dokuz",
-		"speaker": "ANLATICI"
-	},
-	"vo.sayi.50": {
-		"text": "elli",
 		"speaker": "ANLATICI"
 	},
 	"vo.sayi.51": {

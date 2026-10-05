@@ -36,6 +36,10 @@ func _copy() -> Dictionary:
 func _sym() -> Dictionary:
 	return {"mode": "paint", "ask": "symmetry", "cols": 8, "rows": 5, "axis": 4, "given": [[3, 1], [2, 2], [3, 2]]}
 
+## Yatay eksen: axis satır sınırıdır (0..axis-1 üst yarı), verilenler eksenin üstünde.
+func _hsym() -> Dictionary:
+	return {"mode": "paint", "ask": "symmetry", "axis_dir": "horizontal", "cols": 8, "rows": 6, "axis": 3, "given": [[2, 2], [3, 1], [4, 2]]}
+
 func _code() -> Dictionary:
 	return {"mode": "paint", "ask": "code", "cols": 8, "rows": 6, "start": [1, 1], "code": [["right", 3], ["down", 2], ["left", 3]]}
 
@@ -85,6 +89,9 @@ func test_grid_valid() -> void:
 	_ok(_with(_pieces(), {"cols": 3, "rows": 3, "pieces": 9}))
 	_ok(_with(_pieces(), {"cols": 8, "rows": 6, "pieces": 20}))
 	_ok(_with(_sym(), {"axis": 1, "given": [[0, 0]]}))
+	_ok(_with(_sym(), {"axis_dir": "vertical"}))
+	_ok(_hsym())
+	_ok(_with(_hsym(), {"axis": 1, "given": [[7, 0]]}))
 	_ok(_rot())
 	_ok(_scale())
 	_ok(_with(_rot(), {"target": [[0, 0], [0, 1], [0, 2], [1, 2]]}))
@@ -137,6 +144,10 @@ func test_grid_invalid() -> void:
 	_bad(_with(_sym(), {"given": [[4, 1]]}), "verilen eksenin sağında")
 	_bad(_with(_sym(), {"given": []}), "boş verilen")
 	_bad(_with(_sym(), {"axis": 6, "given": [[3, 1]]}), "ayna dışarıda")
+	_bad(_with(_sym(), {"axis_dir": "diagonal"}), "bilinmeyen eksen yönü")
+	_bad(_with(_hsym(), {"axis": 6}), "yatay eksen = rows")
+	_bad(_with(_hsym(), {"given": [[2, 3]]}), "verilen yatay eksenin altında")
+	_bad(_with(_hsym(), {"axis": 4, "given": [[2, 0]]}), "yatay ayna dışarıda")
 	_bad(_with(_code(), {"code": [["right", 0]]}), "adım 0")
 	_bad(_with(_code(), {"code": [["right", 10]]}), "adım 10")
 	_bad(_with(_code(), {"code": [["diag", 1]]}), "bilinmeyen yön")
@@ -228,6 +239,9 @@ func test_grid_logic_transform_helpers() -> void:
 func test_grid_logic_paint_helpers() -> void:
 	assert_eq(GridLogic.mirror(Vector2i(3, 1), 4), Vector2i(4, 1))
 	assert_eq(GridLogic.mirror(Vector2i(0, 2), 4), Vector2i(7, 2))
+	assert_eq(GridLogic.mirror_axis(Vector2i(0, 2), 4, "vertical"), Vector2i(7, 2))
+	assert_eq(GridLogic.mirror_axis(Vector2i(2, 2), 3, "horizontal"), Vector2i(2, 3))
+	assert_eq(GridLogic.mirror_axis(Vector2i(5, 0), 3, "horizontal"), Vector2i(5, 5))
 	var cells: Array[Vector2i] = GridLogic.code_cells(Vector2i(1, 1), [["right", 3], ["down", 2], ["left", 3]])
 	assert_eq(cells.size(), 9)
 	assert_true(cells.has(Vector2i(4, 3)) and cells.has(Vector2i(1, 3)))

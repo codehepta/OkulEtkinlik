@@ -399,7 +399,8 @@
 		"templates": [
 			"sequence",
 			"balance",
-			"sort_bins"
+			"sort_bins",
+			"drag_match"
 		]
 	},
 	"MAT.3.1.4": {
@@ -407,7 +408,9 @@
 		"templates": [
 			"pattern",
 			"sequence",
-			"listen_find"
+			"listen_find",
+			"drag_match",
+			"balance"
 		],
 		"note": "c) genelleme sesli okunan kural seçenekleri arasından seçilir."
 	},
@@ -415,7 +418,8 @@
 		"fit": "full",
 		"templates": [
 			"sort_bins",
-			"listen_find"
+			"listen_find",
+			"pattern"
 		]
 	},
 	"MAT.3.1.6": {
@@ -431,7 +435,9 @@
 		"fit": "partial",
 		"templates": [
 			"pattern",
-			"listen_find"
+			"listen_find",
+			"drag_match",
+			"sort_bins"
 		],
 		"note": "a) varsayımı sesli seçenekler arasından seçme, c) gösterilen örüntünün varsayımı karşılayıp karşılamadığını sınama ve d) gösterilen örüntüyü değerlendirme pattern ve listen_find ile oynanabilir; b) örüntüleri örnekler üzerinde listeleme ve ç) kuralı sözlü olarak ifade etme serbest üretim."
 	},
@@ -571,7 +577,8 @@
 		"fit": "partial",
 		"templates": [
 			"drag_match",
-			"sequence"
+			"sequence",
+			"story"
 		],
 		"note": "a) problem durumundaki ilişkileri kurma (durumu soruyla eşleştirme, olayları sıralama) oynanabilir; b) özgün problem oluşturma sözlü ya da yazılı etkinlik."
 	},
@@ -589,7 +596,8 @@
 		"templates": [
 			"count_choose",
 			"drag_match",
-			"listen_find"
+			"listen_find",
+			"story"
 		],
 		"note": "a–b) cisimlerin köşe, yüz ve ayrıt sayılarını inceleme ve belirleme oynanabilir; c) terimleri kendi ifadeleriyle açıklama sözlü etkinlik."
 	},
@@ -598,7 +606,9 @@
 		"templates": [
 			"sort_bins",
 			"count_choose",
-			"listen_find"
+			"listen_find",
+			"drag_match",
+			"story"
 		]
 	},
 	"MAT.3.3.3": {
@@ -606,25 +616,31 @@
 		"templates": [
 			"listen_find",
 			"drag_match",
-			"grid"
+			"grid",
+			"sort_bins"
 		],
 		"note": "a–b) çizim araçlarını tanıma ve uygun aracı seçme oynanabilir; c) aracı kullanarak çizme grid (paint: copy, code) ile ekranda yapılabilir; cetvelle kâğıda çizme sınıf ya da ev etkinliği."
 	},
 	"MAT.3.3.4": {
 		"fit": "partial",
 		"templates": [
-			"count_choose"
+			"count_choose",
+			"story",
+			"balloon_pop"
 		],
 		"proposed": [
 			"estimate_then_count"
 		],
-		"note": "b) kareli zemindeki şeklin çevresini seçenekli tahmin etme count_choose ile oynanabilir; c) tahmini birim kenarları sayarak ölçümle karşılaştırma önerilen estimate_then_count gerektirir; a) gerçek ölçme araçlarıyla deneyim ev etkinliği."
+		"note": "b) kareli zemindeki şeklin ya da karışla ölçülen nesnenin çevresini seçenekli tahmin etme story ve count_choose ile oynanabilir; c) tahmini birim kenarları sayarak ölçümle karşılaştırma önerilen estimate_then_count gerektirir; a) gerçek ölçme araçlarıyla deneyim ev etkinliği."
 	},
 	"MAT.3.3.5": {
 		"fit": "partial",
 		"templates": [
 			"count_choose",
-			"drag_match"
+			"drag_match",
+			"sort_bins",
+			"story",
+			"sequence"
 		],
 		"proposed": [
 			"estimate_then_count"
@@ -636,7 +652,8 @@
 		"templates": [
 			"listen_find",
 			"count_choose",
-			"drag_match"
+			"drag_match",
+			"story"
 		]
 	},
 	"MAT.3.3.7": {
@@ -653,7 +670,8 @@
 		"templates": [
 			"drag_match",
 			"listen_find",
-			"grid"
+			"grid",
+			"story"
 		],
 		"note": "a) yönergeleri ok kodlarıyla eşleştirerek yeniden ifade etme ve c) oluşan simetri hakkında yargı seçme oynanabilir; b) kodlanmış yönergeyi izleyerek şekli kareli zeminde tamamlama grid (paint: code, symmetry) ile oynanabilir."
 	},
@@ -663,7 +681,8 @@
 			"listen_find",
 			"count_choose",
 			"sort_bins",
-			"chart_build"
+			"chart_build",
+			"story"
 		],
 		"note": "d) görselleştirme aracını seçme, f) hazır nokta grafiğini yorumlama ve g) sonuçları oyunda verilen araştırma sorusuna göre değerlendirme oynanabilir; e) verilen veriyle çetele, tablo ve grafik oluşturma chart_build ile oynanabilir; a–c) araştırma durumunu ve sorularını belirleme ve plan yapma çocuğun kendi araştırması, ç) veri toplama gerçek dünya etkinliği (sınıf ya da ev)."
 	},

@@ -121,6 +121,12 @@ static func is_reachable(start: Vector2i, facing: String, goal: Vector2i, arrows
 static func mirror(c: Vector2i, axis: int) -> Vector2i:
 	return Vector2i(2 * axis - 1 - c.x, c.y)
 
+## Eksen yönüne göre ayna: "vertical" sütun sınırına (x), "horizontal" satır sınırına (y) göre.
+static func mirror_axis(c: Vector2i, axis: int, axis_dir: String) -> Vector2i:
+	if axis_dir == "horizontal":
+		return Vector2i(c.x, 2 * axis - 1 - c.y)
+	return mirror(c, axis)
+
 ## Kodla boyama: başlangıç hücresi ve [yön, adım] komutlarıyla geçilen her hücre (tekrarsız, sırayla).
 static func code_cells(start: Vector2i, code: Array) -> Array[Vector2i]:
 	var res: Array[Vector2i] = [start]

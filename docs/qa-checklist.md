@@ -219,6 +219,34 @@ Ekran görüntüleri: `tools/ui_screenshots.gd` (Faz 3b kareleri). Gerçek cihaz
 1. `char.grid.gezgin`, `ui.grid.hedef`, `ui.grid.duvar` eklenince kodla çizilen piyon, bayrak ve blok yerine geçiyor ve kareden taşmıyor; gezginin yönü oyunun çizdiği okla anlaşılıyor.
 2. `vo.tahmin.*` ve `vo.saat.*` kayıtları geldikten sonra cihazın TTS sesi yerine kayıtlar çalıyor.
 
+---
+
+# Faz 3e — 3. sınıf Matematik içeriği
+
+3. sınıf profil açıp Sayı Ormanı'nda 6 ünitenin (36 durak) birkaç durağını oyna. Gerçek cihazda kontrol edilecekler:
+
+## Ortak
+1. Kart ve kutu üzerindeki kısa metinler ("yüzler", "tek", "kurala uyar" gibi) telefonda da okunuyor; yazı karoya sığıyor ve çok küçülmüyor.
+2. Hikâye turlarında (problem çözme, problem kurma, simetri, cisimler) metin seçenekleri tek satıra sığıyor; sayfa metni sesle okunuyor ve tekrar dinlenebiliyor.
+3. Üç basamaklı sayılar (ör. 342, 999) seslendirmede doğru okunuyor.
+
+## Balon patlat: çarpma ve bölme
+1. "3 × 4" ve "12 ÷ 3" işlemleri doğru glifle görünüyor; doğru sonuç balonu patlayınca tur bitiyor.
+2. Çarpma ve bölmede ipucu 1 sayı doğrusu/blok modeli göstermiyor, yalnızca seçenekleri azaltıyor. Toplama ve çıkarmada model eskisi gibi.
+
+## grid: yatay simetri ekseni
+1. "Simetriği tamamla" durağında yatay eksenli turlarda eksen kalın yatay kesik çizgi; verilen yarı üstte, çocuk alt yarıyı boyuyor.
+
+## İçerik
+1. Bir öğretmen üniteleri gözden geçirsin: sorular programın işleniş sırasını izliyor mu, problem metinleri 3. sınıfa uygun mu (u03 n05–n07)?
+2. Tahmin et, say (u01 n10): nesne sayısı en çok 20; tahmin karoları ve sayma adımı çalışıyor.
+
+## Asset geldiğinde (parti 050–053)
+1. `item.blok.*`, `item.sekil.*`, `item.cisim.*`, `item.simetri.*` görselleri eklenince yer tutucuların yerini alıyor; şekillerin köşe sayısı kartta açıkça okunuyor.
+2. 36 `st.matematik.*` çıkartması albümde görünüyor.
+3. `vo.g3.matematik.*`, `vo.sayi.*`, `vo.ad.*`, `vo.g3m.*` kayıtları gelince cihaz sesi yerine kayıtlar çalıyor.
+
+---
 ## Faz 3d — 2. sınıf Matematik
 1. `grid` döndürme: referans şekil soluk gösteriliyor; döndürülmüş şekil zeminin herhangi bir yerine boyanınca kabul ediliyor, ayna görüntüsü kabul edilmiyor. Büyütmede her kare 2 × 2 boyanınca kabul ediliyor.
 2. Haritada 2. sınıf Matematik bölgesinde 6 ünite ve 42 durak açılıyor; her durağın girişini Bilge okuyor, tur yönergeleri hoparlörle tekrar dinlenebiliyor.
