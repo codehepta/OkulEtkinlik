@@ -67,3 +67,9 @@ func test_privacy_policy_states_no_data_collection() -> void:
 	var text: String = FileAccess.get_file_as_string("res://PRIVACY.md")
 	assert_string_contains(text, "Veri toplamıyoruz")
 	assert_string_contains(text, "collects **no data**")
+
+func test_orientation_is_sensor_landscape_only() -> void:
+	# Oyun yalnızca yatay oynanır; telefon çevrilince dikeye dönmemeli.
+	# Android ve iOS export'u bu proje ayarından yönü alır.
+	assert_eq(int(ProjectSettings.get_setting("display/window/handheld/orientation")),
+		DisplayServer.SCREEN_SENSOR_LANDSCAPE, "yön sensor_landscape olmalı")
