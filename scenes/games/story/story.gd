@@ -6,6 +6,7 @@ extends MiniGame
 ##
 ## Okuma kipi (`read`):
 ## - "listen" (varsayılan): her sayfa açılınca seslendirilir; hoparlör düğmesi yeniden okutur.
+##   Son sayfanın sesi bitince soru kendiliğinden gelir (ok düğmesi de çalışır).
 ## - "silent" (sessiz okuma, T.O.* durakları): yönerge ve sorular yine seslendirilir, ama okuma
 ##   parçasının sesi ilk cevaba kadar tutulur. İlk cevaptan sonra sayfalarda hoparlör belirir;
 ##   ikinci yanlışta (ipucu 1) ilgili sayfa kendiliğinden seslendirilir.
@@ -40,6 +41,8 @@ const TEXT_OPTION_GAP: Vector2 = Vector2(48, 36)
 const TEXT_OPTION_FONT: int = 56
 const STAGE_MARGIN: float = 40.0
 const NEXT_QUESTION_DELAY: float = 0.9
+## Dinleme kipinde son sayfanın sesi bittikten sonra soruya geçmeden önceki kısa bekleme (sn).
+const AUTO_QUESTION_DELAY: float = 0.8
 
 var _pages: Array[Dictionary] = []
 var _questions: Array[Dictionary] = []
@@ -50,6 +53,8 @@ var _question: int = 0
 ## "read" ya da "question".
 var _phase: String = "read"
 var _faded: Dictionary = {}
+## Her sayfa/soru gösteriminde artar; bekleyen otomatik geçiş eskiyse iptal olur.
+var _view_gen: int = 0
 
 var _read_layer: Control = null
 var _question_layer: Control = null
@@ -74,7 +79,14 @@ func setup(params: Dictionary, difficulty_value: int, context: RoundContext) -> 
 	_voice_unlocked = not _silent
 	_build_read_layer()
 	_build_question_layer()
+	if narrator.has_signal("line_finished") and not narrator.is_connected("line_finished", _on_line_finished):
+		narrator.connect("line_finished", _on_line_finished)
 	_show_page(0)
+
+func _exit_tree() -> void:
+	if is_instance_valid(narrator) and narrator.has_signal("line_finished") \
+			and narrator.is_connected("line_finished", _on_line_finished):
+		narrator.disconnect("line_finished", _on_line_finished)
 
 func _build_read_layer() -> void:
 	_read_layer = _layer("ReadLayer")
@@ -142,6 +154,7 @@ func _label(rect: Rect2, font_size: int) -> Label:
 # --- okuma evresi ---
 
 func _show_page(i: int) -> void:
+	_view_gen += 1
 	_phase = "read"
 	_page = clampi(i, 0, _pages.size() - 1)
 	_read_layer.visible = true
@@ -154,6 +167,19 @@ func _show_page(i: int) -> void:
 	_speaker.visible = _voice_unlocked
 	if not _silent:
 		narrator.say(str(pg["voice"]))
+
+## Dinleme kipinde son sayfanın sesi bitince kısa bir beklemeden sonra soruya geçilir;
+## çocuk ok düğmesini bulamasa da hikâye takılı kalmaz.
+func _on_line_finished(id: String) -> void:
+	if _silent or _done or _phase != "read" or _page != _pages.size() - 1:
+		return
+	if id != str(_pages[_page]["voice"]):
+		return
+	var gen: int = _view_gen
+	await _wait(AUTO_QUESTION_DELAY)
+	if gen != _view_gen or _phase != "read" or not _can_input():
+		return
+	_show_question()
 
 func _on_speaker() -> void:
 	if not _can_input() or not _voice_unlocked or _phase != "read":
@@ -181,6 +207,7 @@ func _on_book() -> void:
 # --- soru evresi ---
 
 func _show_question() -> void:
+	_view_gen += 1
 	_phase = "question"
 	_read_layer.visible = false
 	_question_layer.visible = true
