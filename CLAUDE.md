@@ -45,6 +45,7 @@ godot --headless --path . -s res://tools/missing_assets.gd
 # Yerel görsel aday üretimi (Apple Silicon; ayrıntı: tools/imagegen/README.md)
 uv run --project tools/imagegen python tools/imagegen/generate.py 060 --items 1-5
 uv run --project tools/imagegen python tools/imagegen/approve.py 060 1=1000   # sahip seçtikten sonra
+uv run --project tools/imagegen python tools/imagegen/import_presets.py    # yerleştirme + --import sonrası (APK bütçesi), ardından yeniden --import
 
 # Android debug APK (şablonlar kurulu olmalı)
 godot --headless --path . --export-debug "Android" build/android/bilgi-adasi-debug.apk
