@@ -40,6 +40,7 @@
 	"err.params.pairs_dup": "pairs yinelenen sol ya da sağ öğe içeriyor",
 	"err.params.target_voice": "target için voice zorunlu",
 	"err.params.options": "options 2 ile 4 arasında token içermeli",
+	"err.params.ordered": "ordered true ya da false olmalı",
 	"err.params.options_dup": "options yinelenen öğe içeriyor",
 	"err.params.options_missing_target": "options hedefi (target) içermeli",
 	"err.params.seq_items": "items doğru sırayla 3 ile 6 arasında token içermeli",
