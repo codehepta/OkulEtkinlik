@@ -26,3 +26,13 @@ func test_duck_lowers_music_by_12_db() -> void:
 	assert_almost_eq(AudioServer.get_bus_volume_db(idx), -12.0, 0.01)
 	_a.set_ducked(false)
 	assert_almost_eq(AudioServer.get_bus_volume_db(idx), 0.0, 0.01)
+
+## Faz 8 ses miksajı: ana kanalda sınırlayıcı var; üst üste binen ses, müzik ve efekt patlamaz.
+func test_master_has_limiter() -> void:
+	var master: int = AudioServer.get_bus_index("Master")
+	var found: bool = false
+	for i: int in AudioServer.get_bus_effect_count(master):
+		if AudioServer.get_bus_effect(master, i) is AudioEffectHardLimiter and AudioServer.is_bus_effect_enabled(master, i):
+			found = true
+			assert_lte((AudioServer.get_bus_effect(master, i) as AudioEffectHardLimiter).ceiling_db, -0.5)
+	assert_true(found, "Master kanalında etkin sınırlayıcı")

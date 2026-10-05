@@ -370,3 +370,37 @@ Eşikler `scripts/core/adaptive_config.gd`'dedir. Simülasyon raporu: `godot --h
 3. Bir çocuğun 15–20 dakikalık oyununu izle: tur başına ilk denemede doğru cevap oranı kabaca 3'te 2 ile 10'da 9 arasında mı? Çok kolay ya da çok zorsa gözlemi yaz; düzeltme yalnızca yapılandırma dosyasında yapılır, ardından `tests/integration/test_adaptive_sim.gd` çalıştırılır.
 4. Veli paneli: tek kusursuz turdan sonra ustalık çubuğu %30 civarında (ham ustalık; zorluk kararı ayrı tahmin kullanır).
 
+# Faz 8 — Sürüm adayı (cila, erişilebilirlik, düşük cihaz)
+
+Otomatik denetimler her PR'da çalışır: dokunma hedefleri bütün ekranlarda ≥128 px (`tests/integration/test_a11y_screens.gd`), metin kontrastı WCAG AA (`tests/unit/test_contrast.gd`), düşük cihaz ayarları (`tests/unit/test_low_end_settings.gd`), APK izin ve boyut bütçesi (`scripts/ci-check-apk.sh`, 150 MB). Aşağıdakiler gerçek cihazda yapılır.
+
+## Test cihazı
+- Tercihen Android 8 (API 26), 2 GB RAM, 720p ekranlı eski bir telefon ya da tablet. Yoksa en eski erişilebilir cihaz; modeli ve Android sürümünü not et.
+- APK: son PR → Checks → CI → Artifacts → `bilgi-adasi-debug-apk`.
+
+## Performans
+1. Soğuk açılış: uygulamayı kapat (son uygulamalardan da kaydır), aç. Açılış ekranından profil ekranına geçiş kaç saniye? Hedef: 5 sn altı.
+2. Her bölgeye gir, bir durağı baştan sona oyna. Takılma, donma, ses kesilmesi var mı? Özellikle: sürükle-bırak (eşleştirme, kutulara ayırma), balon patlatma, grafik kurma.
+3. 15 dakika kesintisiz oyna. Cihaz aşırı ısınıyor mu, oyun yavaşlıyor mu? Ayarlar → Pil'den uygulamanın tüketimine bak.
+4. Oyunun ortasında ana ekrana çık, başka bir uygulama aç, 1 dakika sonra geri dön. Oyun kaldığı yerden sürüyor mu ya da en azından ilerleme kaybolmadan açılıyor mu?
+5. Masaüstü ölçümü için: `godot --headless --path . -s res://tools/perf_probe.gd` (şablon kurulumu ≤50 ms, içerik yükleme ≤400 ms masaüstünde; düşük cihazda kabaca 6 katı).
+
+## Erişilebilirlik
+1. Her ekranda her düğmeye 6–7 yaşında bir çocuğun parmağıyla rahatça dokunulabiliyor mu? Yanlışlıkla komşu düğmeye basılıyor mu?
+2. Veli panelinde "hareketi azalt"ı aç: yıldız patlaması, Bilge sallanması, patika kayması duruyor ya da sadeleşiyor mu? Yanıp sönen hiçbir şey var mı (olmamalı)?
+3. Her yönergenin yanında tekrar dinleme var mı ve çalışıyor mu? Sesi tamamen kıs: 2–3. sınıfta altyazı balonu yönergeyi gösteriyor mu?
+4. Renk körlüğü: telefonda Ayarlar → Erişilebilirlik → Renk düzeltme (deuteranomali) aç. Kutulara ayırma, grafik ve doğru/yanlış geri bildirimi şekil ve simgeyle de anlaşılıyor mu?
+5. Güneş altında ya da en düşük parlaklıkta yazılar okunuyor mu?
+
+## Ses miksajı
+1. Telefon hoparlöründe orta seste: müzik çalarken anlatım rahatça anlaşılıyor mu? (Anlatımda müzik kısılır.)
+2. Kulaklıkla en yüksek seste: hiçbir ses patlamıyor, cızırdamıyor mu? "Yanlış" efekti sert değil, yumuşak mı?
+3. Veli panelindeki üç kaydırıcı ayrı ayrı çalışıyor ve uygulama kapanıp açılınca korunuyor mu?
+4. Yeni ses dosyaları: `docs/assets/audio-mix.md` hedeflerine çekildi mi?
+
+## Sürüm adayı ölçütleri
+- [ ] CI yeşil (test + android-debug), APK boyutu bütçede.
+- [ ] Yukarıdaki cihaz adımlarında engelleyici sorun yok; bulunanlar issue olarak açıldı.
+- [ ] Öğretmen gözden geçirmeleri (Türkçe metinler, Hayat Bilgisi, harf vuruş sırası) tamamlandı ya da sürüm notunda "bilinen eksik" olarak yazıldı.
+- [ ] En az öncelikli asset partileri (001–006, 064) geldi ya da yer tutucularla yayın kararı verildi.
+

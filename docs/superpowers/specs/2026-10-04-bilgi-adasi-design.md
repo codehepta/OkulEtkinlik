@@ -437,3 +437,10 @@ Hayat Bilgisi 1–3 içeriği (Hayat Kasabası). Ayrıntı: `docs/superpowers/pl
 ## Açık sorular (Faz 7b)
 - **Karar (sahip onayıyla önerilen seçim, Faz 7b):** İnce ayar sahte oyuncu simülasyonuyla yapıldı, eşikler tek dosyada (`scripts/core/adaptive_config.gd`). Sonuç §3.4'te. Simülasyonun oyuncu modeli (seviyeye göre ilk deneme başarı olasılığı, tekrar ve pratik etkisi) varsayımdır; gerçek oyun verisi toplanmadığı için (ağ yok, analitik yok) eşikler ancak sahibin ve öğretmenlerin cihazdaki gözlemiyle doğrulanabilir (`docs/qa-checklist.md` Faz 7b). Gözlem farklı çıkarsa yalnızca yapılandırma dosyası değişir; simülasyon testi hedefleri korur.
 - **Karar (önerilen seçim):** Veli panelindeki ustalık çubuğu ham ustalığı (m) göstermeye devam eder; tek turdan sonra çubuk %30'dur. Tahmin yalnızca zorluk kararında kullanılır, çünkü az veriyle veliye yüksek ustalık göstermek yanıltıcı olur.
+
+## Açık sorular (Faz 8)
+- **Karar (sahip onayıyla önerilen seçim, Faz 8):** Cihaz testleri sahibin gerçek Android cihazında yapılır; cloud görevi otomatik denetimleri (dokunma hedefi, kontrast, düşük cihaz ayarları, APK boyutu), ölçüm aracını (`tools/perf_probe.gd`) ve `docs/qa-checklist.md` Faz 8 adımlarını hazırladı. Ayrıntı: `docs/superpowers/plans/2026-10-08-faz8-cila-surum-adayi.md`.
+- **Karar (önerilen seçim):** Android'de çizim yöntemi `gl_compatibility` (OpenGL ES 3). Uygulama tamamen 2B'dir; Android 8 dönemi düşük cihazların çoğunda Vulkan yok ya da kararsız. Masaüstü ve editör `mobile` yöntemiyle kalır; ekran görüntüleri zaten `gl_compatibility` ile alınıyor.
+- **Karar (önerilen seçim):** APK boyut bütçesi 150 MB (CI'da denetlenir). Ses hedefleri −16 LUFS seslendirme, −23 LUFS müzik, −18 LUFS efekt (`docs/assets/audio-mix.md`); ana kanalda −1 dB tavanlı sınırlayıcı.
+- **Karar (önerilen seçim):** Kontrast hedefi bütün metinlerde WCAG AA gövde metni eşiği 4.5:1 (çocuk ekranlarındaki metin büyük metin sayılsa da).
+
