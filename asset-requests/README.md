@@ -50,8 +50,8 @@ Yerel üretilen görsellerin kaynağı (model, tohum, prompt): `docs/assets/imag
 | 053 | Faz 3e: 3. sınıf Matematik seslendirmesi 2, ünite 4–6 (103 satır) | Orta | ⏳ Bekliyor |
 | 060 | 1. sınıf Türkçe: sözcük ve nesne görselleri (70 `item.*`) | Yüksek | ✅ Tamam (yerel klein, 2026-10-05; robot tarifi netleştirildi) |
 | 061 | 1. sınıf Türkçe: hikâye, cümle, durum ve davranış sahneleri (96 `item.*`) | Orta | ✅ Tamam (yerel klein; gölge sahneleri Blender, 2026-10-05) |
-| 062 | 1. sınıf Türkçe: kutu simgeleri, duygu yüzleri, ses simgeleri (13 `item.*`) | Orta | ⏳ Bekliyor |
-| 063 | 1. sınıf Türkçe çıkartmaları (65 `st.turkce.g1_*`) | Düşük | ⏳ Bekliyor |
+| 062 | 1. sınıf Türkçe: kutu simgeleri, duygu yüzleri, ses simgeleri (13 `item.*`) | Orta | ✅ Tamam (yerel klein; sayı çıkartmaları Blender, 2026-10-06) |
+| 063 | 1. sınıf Türkçe çıkartmaları (65 `st.turkce.g1_*`) | Düşük | ✅ Tamam (yerel klein; sayı çıkartmaları Blender, 2026-10-06) |
 | 064 | 1. sınıf Türkçe: harf sesleri, heceler, sözcükler, ses kaynakları (77 satır) | En yüksek | ⏳ Bekliyor |
 | 065 | 1. sınıf Türkçe ünite 1–5 seslendirmesi (247 satır) | Yüksek | ⏳ Bekliyor |
 | 066 | 1. sınıf Türkçe ünite 6–9 seslendirmesi (219 satır) | Orta | ⏳ Bekliyor |

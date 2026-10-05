@@ -115,7 +115,7 @@ a round sticker badge with a thick white die-cut border, showing a cheerful yell
 - **Açıklama:** Çıkartma (g1.turkce.u02.n01)
 
 ```
-a round sticker badge with a thick white die-cut border, showing arı. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
+a round sticker badge with a thick white die-cut border, showing a cute fuzzy honey bee with yellow and black stripes, two small transparent wings and tiny antennae. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
 ```
 
 ### 5. `assets/images/stickers/turkce/g1_nar.png`
@@ -155,7 +155,7 @@ a round sticker badge with a thick white die-cut border, showing a small cozy ho
 - **Açıklama:** Çıkartma (g1.turkce.u02.n05)
 
 ```
-a round sticker badge with a thick white die-cut border, showing top. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
+a round sticker badge with a thick white die-cut border, showing a colorful round toy beach ball with red, yellow and blue stripes. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
 ```
 
 ### 9. `assets/images/stickers/turkce/g1_uc_dort.png`
@@ -165,7 +165,7 @@ a round sticker badge with a thick white die-cut border, showing top. 3D claymat
 - **Açıklama:** Çıkartma (g1.turkce.u02.n06)
 
 ```
-a round sticker badge with a thick white die-cut border, showing a stack of four colorful wooden blocks. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
+a round sticker badge with a thick white die-cut border, showing exactly four colorful cube wooden toy blocks stacked one on top of another in a single straight tower (red, yellow, green, blue), four blocks in total. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
 ```
 
 ### 10. `assets/images/stickers/turkce/g1_anne.png`
@@ -215,7 +215,7 @@ a round sticker badge with a thick white die-cut border, showing a single red tu
 - **Açıklama:** Çıkartma (g1.turkce.u03.n04)
 
 ```
-a round sticker badge with a thick white die-cut border, showing a cute ladybug with seven round dots on its back. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
+a round sticker badge with a thick white die-cut border, showing a cute red ladybug seen from above with exactly seven big round black dots on its back, three dots on each wing and one dot in the middle, seven dots in total. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
 ```
 
 ### 15. `assets/images/stickers/turkce/g1_otobus.png`
@@ -295,7 +295,7 @@ a round sticker badge with a thick white die-cut border, showing a small blue ri
 - **Açıklama:** Çıkartma (g1.turkce.u04.n03)
 
 ```
-a round sticker badge with a thick white die-cut border, showing mantar. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
+a round sticker badge with a thick white die-cut border, showing a cute mushroom with a red cap with white spots and a short cream stem. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
 ```
 
 ### 23. `assets/images/stickers/turkce/g1_elma.png`
@@ -605,7 +605,7 @@ a round sticker badge with a thick white die-cut border, showing a colorful butt
 - **Açıklama:** Çıkartma (g1.turkce.u07.n05)
 
 ```
-a round sticker badge with a thick white die-cut border, showing a cute friendly ant. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
+a round sticker badge with a thick white die-cut border, showing a cute friendly black-brown ant seen from the side with three body parts (head, middle, round back part), two antennae and exactly six thin legs, three on each side. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
 ```
 
 ### 54. `assets/images/stickers/turkce/g1_kitaplik.png`
@@ -645,7 +645,7 @@ a round sticker badge with a thick white die-cut border, showing a small colorfu
 - **Açıklama:** Çıkartma (g1.turkce.u08.n03)
 
 ```
-a round sticker badge with a thick white die-cut border, showing a flying carpet. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
+a round sticker badge with a thick white die-cut border, showing a colorful rectangular patterned carpet with tassels floating in the air with a gentle wavy shape, small white clouds below it. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
 ```
 
 ### 58. `assets/images/stickers/turkce/g1_sepet.png`
