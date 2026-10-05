@@ -25,7 +25,8 @@ const TEXT_RECT_WITH_PICTURE: Rect2 = Rect2(760, 190, 1030, 580)
 const TEXT_RECT_FULL: Rect2 = Rect2(130, 190, 1660, 580)
 const PAGE_FONT: int = 64
 const BUTTON_SIDE: float = 170.0
-const SPEAKER_POS: Vector2 = Vector2(130, 820)
+## Bilge sol alt köşede durur (x 16–266, y 724–1068); hoparlör onun sağında kalır.
+const SPEAKER_POS: Vector2 = Vector2(290, 820)
 const NEXT_POS: Vector2 = Vector2(1620, 820)
 const BOOK_POS: Vector2 = Vector2(1620, 840)
 const QUESTION_RECT: Rect2 = Rect2(330, 190, 1460, 200)

@@ -1,0 +1,811 @@
+{
+	"id": "g1.matematik.u06",
+	"grade": 1,
+	"subject": "matematik",
+	"title_key": "unit.g1.matematik.u06",
+	"source": {
+		"program": "TYMM İlkokul Matematik (1–4)",
+		"doc": "İlkokul Matematik Dersi Öğretim Programı",
+		"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+		"page": 43,
+		"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf",
+		"theme": "MAT.1.3. Nesnelerin Geometrisi (2)"
+	},
+	"nodes": [
+		{
+			"id": "g1.matematik.u06.n01",
+			"outcomes": [
+				"MAT.1.3.3"
+			],
+			"title_key": "node.g1.matematik.u06.n01",
+			"intro_voice": "vo.g1.matematik.u06.n01.intro",
+			"sticker": "st.matematik.g1_tekerlek",
+			"rounds": [
+				{
+					"template": "sort_bins",
+					"difficulty": 1,
+					"voice": "vo.g1.matematik.u06.n01.r01",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "text",
+									"value": "label.g1.matematik.yuvarlak",
+									"voice": "vo.g1.matematik.yuvarlak"
+								},
+								"shape": "circle",
+								"color": "orange"
+							},
+							{
+								"label": {
+									"type": "text",
+									"value": "label.g1.matematik.koseli",
+									"voice": "vo.g1.matematik.koseli"
+								},
+								"shape": "square",
+								"color": "blue"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.oyuncak.top"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.oyuncak.kup"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.meyve.portakal"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.okul.kitap"
+								},
+								"bin": 1
+							}
+						]
+					}
+				},
+				{
+					"template": "sort_bins",
+					"difficulty": 2,
+					"voice": "vo.g1.matematik.u06.n01.r02",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "text",
+									"value": "label.g1.matematik.yuvarlak",
+									"voice": "vo.g1.matematik.yuvarlak"
+								},
+								"shape": "circle",
+								"color": "orange"
+							},
+							{
+								"label": {
+									"type": "text",
+									"value": "label.g1.matematik.koseli",
+									"voice": "vo.g1.matematik.koseli"
+								},
+								"shape": "square",
+								"color": "blue"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.esya.tabak"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.esya.kutu"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.esya.simit"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.okul.silgi"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.esya.duvar_saati"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.yapi.pencere"
+								},
+								"bin": 1
+							}
+						]
+					}
+				},
+				{
+					"template": "sort_bins",
+					"difficulty": 3,
+					"voice": "vo.g1.matematik.u06.n01.r03",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "text",
+									"value": "label.g1.matematik.yuvarlak",
+									"voice": "vo.g1.matematik.yuvarlak"
+								},
+								"shape": "circle",
+								"color": "orange"
+							},
+							{
+								"label": {
+									"type": "text",
+									"value": "label.g1.matematik.koseli",
+									"voice": "vo.g1.matematik.koseli"
+								},
+								"shape": "square",
+								"color": "blue"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.esya.tekerlek"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.esya.cerceve"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.oyuncak.balon_sari"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.okul.canta"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.esya.dugme"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.esya.zar"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.yapi.kapi"
+								},
+								"bin": 1
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g1.matematik.u06.n02",
+			"outcomes": [
+				"MAT.1.3.4"
+			],
+			"title_key": "node.g1.matematik.u06.n02",
+			"intro_voice": "vo.g1.matematik.u06.n02.intro",
+			"sticker": "st.matematik.g1_ev",
+			"rounds": [
+				{
+					"template": "drag_match",
+					"difficulty": 1,
+					"voice": "vo.g1.matematik.u06.n02.r01",
+					"params": {
+						"pairs": [
+							{
+								"left": {
+									"type": "item",
+									"value": "item.yapi.cati"
+								},
+								"right": {
+									"type": "item",
+									"value": "item.sekil.ucgen",
+									"voice": "vo.g1.matematik.sekil.ucgen"
+								}
+							},
+							{
+								"left": {
+									"type": "item",
+									"value": "item.yapi.kapi"
+								},
+								"right": {
+									"type": "item",
+									"value": "item.sekil.dikdortgen",
+									"voice": "vo.g1.matematik.sekil.dikdortgen"
+								}
+							},
+							{
+								"left": {
+									"type": "item",
+									"value": "item.yapi.pencere"
+								},
+								"right": {
+									"type": "item",
+									"value": "item.sekil.kare",
+									"voice": "vo.g1.matematik.sekil.kare"
+								}
+							}
+						]
+					}
+				},
+				{
+					"template": "listen_find",
+					"difficulty": 1,
+					"voice": "vo.g1.matematik.u06.n02.r02",
+					"params": {
+						"target": {
+							"type": "item",
+							"value": "item.sekil.cember",
+							"voice": "vo.g1.matematik.u06.n02.s01"
+						},
+						"options": [
+							{
+								"type": "item",
+								"value": "item.sekil.kare",
+								"voice": "vo.g1.matematik.sekil.kare"
+							},
+							{
+								"type": "item",
+								"value": "item.sekil.cember",
+								"voice": "vo.g1.matematik.sekil.cember"
+							},
+							{
+								"type": "item",
+								"value": "item.sekil.ucgen",
+								"voice": "vo.g1.matematik.sekil.ucgen"
+							}
+						]
+					}
+				},
+				{
+					"template": "listen_find",
+					"difficulty": 2,
+					"voice": "vo.g1.matematik.u06.n02.r03",
+					"params": {
+						"target": {
+							"type": "item",
+							"value": "item.sekil.dikdortgen",
+							"voice": "vo.g1.matematik.u06.n02.s02"
+						},
+						"options": [
+							{
+								"type": "item",
+								"value": "item.sekil.dikdortgen",
+								"voice": "vo.g1.matematik.sekil.dikdortgen"
+							},
+							{
+								"type": "item",
+								"value": "item.sekil.ucgen",
+								"voice": "vo.g1.matematik.sekil.ucgen"
+							},
+							{
+								"type": "item",
+								"value": "item.sekil.cember",
+								"voice": "vo.g1.matematik.sekil.cember"
+							},
+							{
+								"type": "item",
+								"value": "item.sekil.kare",
+								"voice": "vo.g1.matematik.sekil.kare"
+							}
+						]
+					}
+				},
+				{
+					"template": "drag_match",
+					"difficulty": 2,
+					"voice": "vo.g1.matematik.u06.n02.r04",
+					"params": {
+						"pairs": [
+							{
+								"left": {
+									"type": "item",
+									"value": "item.yapi.cati"
+								},
+								"right": {
+									"type": "item",
+									"value": "item.sekil.ucgen",
+									"voice": "vo.g1.matematik.sekil.ucgen"
+								}
+							},
+							{
+								"left": {
+									"type": "item",
+									"value": "item.yapi.saat"
+								},
+								"right": {
+									"type": "item",
+									"value": "item.sekil.cember",
+									"voice": "vo.g1.matematik.sekil.cember"
+								}
+							},
+							{
+								"left": {
+									"type": "item",
+									"value": "item.yapi.kapi"
+								},
+								"right": {
+									"type": "item",
+									"value": "item.sekil.dikdortgen",
+									"voice": "vo.g1.matematik.sekil.dikdortgen"
+								}
+							},
+							{
+								"left": {
+									"type": "item",
+									"value": "item.yapi.pencere"
+								},
+								"right": {
+									"type": "item",
+									"value": "item.sekil.kare",
+									"voice": "vo.g1.matematik.sekil.kare"
+								}
+							}
+						]
+					}
+				},
+				{
+					"template": "count_choose",
+					"difficulty": 2,
+					"voice": "vo.g1.matematik.u06.n02.r05",
+					"params": {
+						"item": "item.sekil.ucgen",
+						"count": 5,
+						"choices": [
+							4,
+							5,
+							6
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g1.matematik.u06.n03",
+			"outcomes": [
+				"MAT.1.3.5"
+			],
+			"title_key": "node.g1.matematik.u06.n03",
+			"intro_voice": "vo.g1.matematik.u06.n03.intro",
+			"sticker": "st.matematik.g1_ucurtma",
+			"rounds": [
+				{
+					"template": "sort_bins",
+					"difficulty": 1,
+					"voice": "vo.g1.matematik.u06.n03.r01",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "item",
+									"value": "item.sekil.ucgen",
+									"voice": "vo.g1.matematik.sekil.ucgen"
+								},
+								"shape": "triangle",
+								"color": "green"
+							},
+							{
+								"label": {
+									"type": "item",
+									"value": "item.sekil.cember",
+									"voice": "vo.g1.matematik.sekil.cember"
+								},
+								"shape": "circle",
+								"color": "orange"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sekil.ucgen"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sekil.cember"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sekil.ucgen_2"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sekil.cember_2"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sekil.ucgen_3"
+								},
+								"bin": 0
+							}
+						]
+					}
+				},
+				{
+					"template": "listen_find",
+					"difficulty": 1,
+					"voice": "vo.g1.matematik.u06.n03.r02",
+					"params": {
+						"target": {
+							"type": "item",
+							"value": "item.sekil.kare",
+							"voice": "vo.g1.matematik.sekil.kare"
+						},
+						"options": [
+							{
+								"type": "item",
+								"value": "item.sekil.ucgen",
+								"voice": "vo.g1.matematik.sekil.ucgen"
+							},
+							{
+								"type": "item",
+								"value": "item.sekil.kare",
+								"voice": "vo.g1.matematik.sekil.kare"
+							},
+							{
+								"type": "item",
+								"value": "item.sekil.cember",
+								"voice": "vo.g1.matematik.sekil.cember"
+							}
+						]
+					}
+				},
+				{
+					"template": "sort_bins",
+					"difficulty": 2,
+					"voice": "vo.g1.matematik.u06.n03.r03",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "item",
+									"value": "item.sekil.kare",
+									"voice": "vo.g1.matematik.sekil.kare"
+								},
+								"shape": "square",
+								"color": "blue"
+							},
+							{
+								"label": {
+									"type": "item",
+									"value": "item.sekil.dikdortgen",
+									"voice": "vo.g1.matematik.sekil.dikdortgen"
+								},
+								"shape": "star",
+								"color": "green"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sekil.kare"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sekil.dikdortgen"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sekil.kare_2"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sekil.dikdortgen_2"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sekil.kare_3"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sekil.dikdortgen_3"
+								},
+								"bin": 1
+							}
+						]
+					}
+				},
+				{
+					"template": "listen_find",
+					"difficulty": 2,
+					"voice": "vo.g1.matematik.u06.n03.r04",
+					"params": {
+						"target": {
+							"type": "item",
+							"value": "item.sekil.dikdortgen",
+							"voice": "vo.g1.matematik.sekil.dikdortgen"
+						},
+						"options": [
+							{
+								"type": "item",
+								"value": "item.sekil.kare",
+								"voice": "vo.g1.matematik.sekil.kare"
+							},
+							{
+								"type": "item",
+								"value": "item.sekil.dikdortgen",
+								"voice": "vo.g1.matematik.sekil.dikdortgen"
+							},
+							{
+								"type": "item",
+								"value": "item.sekil.ucgen",
+								"voice": "vo.g1.matematik.sekil.ucgen"
+							},
+							{
+								"type": "item",
+								"value": "item.sekil.cember",
+								"voice": "vo.g1.matematik.sekil.cember"
+							}
+						]
+					}
+				},
+				{
+					"template": "sort_bins",
+					"difficulty": 3,
+					"voice": "vo.g1.matematik.u06.n03.r05",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "item",
+									"value": "item.sekil.ucgen",
+									"voice": "vo.g1.matematik.sekil.ucgen"
+								},
+								"shape": "triangle",
+								"color": "green"
+							},
+							{
+								"label": {
+									"type": "item",
+									"value": "item.sekil.kare",
+									"voice": "vo.g1.matematik.sekil.kare"
+								},
+								"shape": "square",
+								"color": "blue"
+							},
+							{
+								"label": {
+									"type": "item",
+									"value": "item.sekil.cember",
+									"voice": "vo.g1.matematik.sekil.cember"
+								},
+								"shape": "circle",
+								"color": "orange"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sekil.ucgen"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sekil.kare"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sekil.cember"
+								},
+								"bin": 2
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sekil.ucgen_2"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sekil.kare_2"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sekil.cember_2"
+								},
+								"bin": 2
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sekil.kare_3"
+								},
+								"bin": 1
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g1.matematik.u06.n04",
+			"outcomes": [
+				"MAT.1.3.5"
+			],
+			"title_key": "node.g1.matematik.u06.n04",
+			"intro_voice": "vo.g1.matematik.u06.n04.intro",
+			"sticker": "st.matematik.g1_mozaik",
+			"rounds": [
+				{
+					"template": "drag_match",
+					"difficulty": 1,
+					"voice": "vo.g1.matematik.u06.n04.r01",
+					"params": {
+						"pairs": [
+							{
+								"left": {
+									"type": "item",
+									"value": "item.sekil.ucgen"
+								},
+								"right": {
+									"type": "item",
+									"value": "item.sekil.ucgen_2"
+								}
+							},
+							{
+								"left": {
+									"type": "item",
+									"value": "item.sekil.kare"
+								},
+								"right": {
+									"type": "item",
+									"value": "item.sekil.kare_2"
+								}
+							},
+							{
+								"left": {
+									"type": "item",
+									"value": "item.sekil.cember"
+								},
+								"right": {
+									"type": "item",
+									"value": "item.sekil.cember_2"
+								}
+							}
+						]
+					}
+				},
+				{
+					"template": "drag_match",
+					"difficulty": 2,
+					"voice": "vo.g1.matematik.u06.n04.r02",
+					"params": {
+						"pairs": [
+							{
+								"left": {
+									"type": "item",
+									"value": "item.sekil.kare"
+								},
+								"right": {
+									"type": "item",
+									"value": "item.sekil.kare_3"
+								}
+							},
+							{
+								"left": {
+									"type": "item",
+									"value": "item.sekil.dikdortgen"
+								},
+								"right": {
+									"type": "item",
+									"value": "item.sekil.dikdortgen_2"
+								}
+							},
+							{
+								"left": {
+									"type": "item",
+									"value": "item.sekil.ucgen_2"
+								},
+								"right": {
+									"type": "item",
+									"value": "item.sekil.ucgen_3"
+								}
+							},
+							{
+								"left": {
+									"type": "item",
+									"value": "item.sekil.cember"
+								},
+								"right": {
+									"type": "item",
+									"value": "item.sekil.cember_2"
+								}
+							}
+						]
+					}
+				}
+			]
+		}
+	]
+}

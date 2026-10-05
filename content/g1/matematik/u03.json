@@ -1,0 +1,202 @@
+{
+	"id": "g1.matematik.u03",
+	"grade": 1,
+	"subject": "matematik",
+	"title_key": "unit.g1.matematik.u03",
+	"source": {
+		"program": "TYMM İlkokul Matematik (1–4)",
+		"doc": "İlkokul Matematik Dersi Öğretim Programı",
+		"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+		"page": 26,
+		"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf",
+		"theme": "MAT.1.1. Sayılar ve Nicelikler (2)"
+	},
+	"nodes": [
+		{
+			"id": "g1.matematik.u03.n01",
+			"outcomes": [
+				"MAT.1.1.8"
+			],
+			"title_key": "node.g1.matematik.u03.n01",
+			"intro_voice": "vo.g1.matematik.u03.n01.intro",
+			"sticker": "st.matematik.g1_cetvel",
+			"rounds": [
+				{
+					"template": "listen_find",
+					"difficulty": 1,
+					"voice": "vo.g1.matematik.u03.n01.r01",
+					"params": {
+						"target": {
+							"type": "item",
+							"value": "item.olcu.adim",
+							"voice": "vo.g1.matematik.u03.n01.s01"
+						},
+						"options": [
+							{
+								"type": "item",
+								"value": "item.olcu.atac",
+								"voice": "vo.g1.matematik.olcu.atac"
+							},
+							{
+								"type": "item",
+								"value": "item.olcu.adim",
+								"voice": "vo.g1.matematik.olcu.adim"
+							},
+							{
+								"type": "item",
+								"value": "item.olcu.kup",
+								"voice": "vo.g1.matematik.olcu.kup"
+							}
+						]
+					}
+				},
+				{
+					"template": "listen_find",
+					"difficulty": 1,
+					"voice": "vo.g1.matematik.u03.n01.r02",
+					"params": {
+						"target": {
+							"type": "item",
+							"value": "item.olcu.atac",
+							"voice": "vo.g1.matematik.u03.n01.s02"
+						},
+						"options": [
+							{
+								"type": "item",
+								"value": "item.olcu.atac",
+								"voice": "vo.g1.matematik.olcu.atac"
+							},
+							{
+								"type": "item",
+								"value": "item.olcu.adim",
+								"voice": "vo.g1.matematik.olcu.adim"
+							},
+							{
+								"type": "item",
+								"value": "item.olcu.karis",
+								"voice": "vo.g1.matematik.olcu.karis"
+							}
+						]
+					}
+				},
+				{
+					"template": "listen_find",
+					"difficulty": 2,
+					"voice": "vo.g1.matematik.u03.n01.r03",
+					"params": {
+						"target": {
+							"type": "item",
+							"value": "item.olcu.karis",
+							"voice": "vo.g1.matematik.u03.n01.s03"
+						},
+						"options": [
+							{
+								"type": "item",
+								"value": "item.olcu.misket",
+								"voice": "vo.g1.matematik.olcu.misket"
+							},
+							{
+								"type": "item",
+								"value": "item.olcu.karis",
+								"voice": "vo.g1.matematik.olcu.karis"
+							},
+							{
+								"type": "item",
+								"value": "item.olcu.atac",
+								"voice": "vo.g1.matematik.olcu.atac"
+							}
+						]
+					}
+				},
+				{
+					"template": "listen_find",
+					"difficulty": 2,
+					"voice": "vo.g1.matematik.u03.n01.r04",
+					"params": {
+						"target": {
+							"type": "item",
+							"value": "item.olcu.misket",
+							"voice": "vo.g1.matematik.u03.n01.s04"
+						},
+						"options": [
+							{
+								"type": "item",
+								"value": "item.olcu.adim",
+								"voice": "vo.g1.matematik.olcu.adim"
+							},
+							{
+								"type": "item",
+								"value": "item.olcu.karis",
+								"voice": "vo.g1.matematik.olcu.karis"
+							},
+							{
+								"type": "item",
+								"value": "item.olcu.misket",
+								"voice": "vo.g1.matematik.olcu.misket"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g1.matematik.u03.n02",
+			"outcomes": [
+				"MAT.1.1.8"
+			],
+			"title_key": "node.g1.matematik.u03.n02",
+			"intro_voice": "vo.g1.matematik.u03.n02.intro",
+			"sticker": "st.matematik.g1_kantar",
+			"rounds": [
+				{
+					"template": "balance",
+					"difficulty": 1,
+					"voice": "vo.g1.matematik.u03.n02.r01",
+					"params": {
+						"mode": "scale",
+						"ask": "estimate",
+						"item": "item.meyve.elma",
+						"value": 4,
+						"estimates": [
+							2,
+							4,
+							9
+						]
+					}
+				},
+				{
+					"template": "balance",
+					"difficulty": 2,
+					"voice": "vo.g1.matematik.u03.n02.r02",
+					"params": {
+						"mode": "scale",
+						"ask": "estimate",
+						"item": "item.oyuncak.ayicik",
+						"value": 7,
+						"estimates": [
+							3,
+							6,
+							12
+						]
+					}
+				},
+				{
+					"template": "balance",
+					"difficulty": 3,
+					"voice": "vo.g1.matematik.u03.n02.r03",
+					"params": {
+						"mode": "scale",
+						"ask": "estimate",
+						"item": "item.okul.canta",
+						"value": 12,
+						"estimates": [
+							5,
+							11,
+							15
+						]
+					}
+				}
+			]
+		}
+	]
+}
