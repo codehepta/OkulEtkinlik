@@ -306,3 +306,28 @@ Sekiz ünite, 20 durak (`content/g3/fen/u01`–`u08.json`). Görseller ve sesler
 1. Seslendirme gelince (070, 071, 072) cihaz sesinin yerine kayıtlar çalar; hikâye sayfaları ve kart sözcükleri doğru satırla eşleşir.
 2. Hikâye ve durum görselleri (073, 074) yer tutucuların yerini alır; hikâye görseli kitap sayfasında kare, durum görseli üstte geniş görünür.
 3. Çıkartmalar (075) albümde görünür.
+
+# Faz 5b — Hayat Kasabası (Hayat Bilgisi 1–3)
+
+17 ünite, 53 durak (`content/g1–g3/hayat_bilgisi/`). Görseller ve sesler gelene kadar kartlar yer tutucu rengiyle, satırlar cihazın Türkçe sesiyle gelir; aşağıdaki adımlar asset'ler gelince yeniden yapılır.
+
+## Akış
+1. Her sınıf için bir profil aç (1, 2, 3). Haritada Hayat Kasabası'na dokun. Beklenen: 1. sınıfta 15, 2. sınıfta 21, 3. sınıfta 17 durak; patika kayıyor, numaralar sırayla.
+2. Her ünitenin ilk durağını baştan sona oyna. Giriş satırını Bilge söyler, her tur yönergesi okunur ve tekrar dinlenebilir.
+3. Senaryo turlarında yanlış karta dokun: ipucu cümlesi okunur, ceza hissi yok.
+4. Kutulara ayırma turlarında kutuya dokununca etiketin adı okunur ("Uygun davranış", "Geri dönüşüm" gibi).
+5. Hikâye turlarında sayfalar okunur, sorular sesli sorulur. 2–3. sınıftaki metin seçenekli sorularda soru cümlesi iki seçeneği de söylüyor.
+6. Durağı bitirince Hayat Bilgisi çıkartması albüme düşer (albüm → Hayat Bilgisi sekmesi).
+
+## İçerik gözden geçirmesi (sınıf öğretmeni)
+1. Atatürk durakları: doğum yeri ve yılı, anne ve baba adları, okulların sırası (Mahalle Mektebi → Şemsi Efendi Okulu → Askerî Rüştiye → Askerî İdadi → Harp Okulu), kişilik özelliği ↔ başarı eşleşmeleri.
+2. Millî ve dinî bayram hikâyeleri (2. sınıf 4. ünite): dil sıcak, kapsayıcı ve programın vurguladığı değerlerle (paylaşma, büyüklere saygı, dayanışma) uyumlu mu?
+3. Kişisel alan ve güvenlik senaryoları (1. sınıf 2. ünite, 3. sınıf 2. ünite): çocuğu korkutmadan doğru davranışı gösteriyor mu?
+4. Yön bulma (2. sınıf 5. ünite) ve afet önlemleri (2. sınıf 5. ünite, 3. sınıf 5. ünite) bilgileri doğru mu?
+Düzeltmeler yalnızca `content/*.json` dosyalarında yapılır; `ContentValidator` testi geçmelidir.
+
+## Asset geldiğinde (parti 080–086)
+1. Davranış kartları yan yana konduğunda çocuk yazıya bakmadan doğru davranışı ayırt edebiliyor mu? Aynı çocuk figürü bütün kartlarda tutarlı mı?
+2. Sahneler senaryo çerçevesinde (16:9) kırpılmadan görünüyor mu?
+3. Krokiler (3. sınıf 5. ünite): üç kroki aynı mahalle, yalnızca kırmızı yıldızın yeri farklı.
+4. Seslendirme: "yüz on iki", tarihler ve özel adlar (Zübeyde Hanım, Ali Rıza Efendi, Şemsi Efendi) doğru okunuyor.

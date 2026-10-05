@@ -1,0 +1,394 @@
+{
+	"id": "g2.hayat_bilgisi.u06",
+	"grade": 2,
+	"subject": "hayat_bilgisi",
+	"title_key": "unit.g2.hayat_bilgisi.u06",
+	"source": {
+		"program": "TYMM İlkokul Hayat Bilgisi (1–3)",
+		"doc": "Hayat Bilgisi Dersi Öğretim Programı",
+		"file": "docs/curriculum/sources/tymm-hayat-bilgisi.pdf",
+		"page": 57,
+		"url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf",
+		"theme": "6. BİLİM, TEKNOLOJİ VE SANAT"
+	},
+	"nodes": [
+		{
+			"id": "g2.hayat_bilgisi.u06.n01",
+			"outcomes": [
+				"HB.2.6.1"
+			],
+			"title_key": "node.g2.hayat_bilgisi.u06.n01",
+			"intro_voice": "vo.g2.hayat_bilgisi.u06.n01.intro",
+			"sticker": "st.hayat_bilgisi.mikroskop",
+			"rounds": [
+				{
+					"template": "scenario",
+					"difficulty": 1,
+					"voice": "vo.g2.hayat_bilgisi.u06.n01.r01",
+					"params": {
+						"scene": "item.sahne.calisma_masasi",
+						"hint": "vo.g2.hayat_bilgisi.u06.n01.r01.ipucu",
+						"choices": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.kaynak.kutuphane"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.kaynak.oyuncakci"
+								},
+								"correct": false
+							}
+						]
+					}
+				},
+				{
+					"template": "scenario",
+					"difficulty": 2,
+					"voice": "vo.g2.hayat_bilgisi.u06.n01.r02",
+					"params": {
+						"scene": "item.sahne.calisma_masasi",
+						"hint": "vo.g2.hayat_bilgisi.u06.n01.r02.ipucu",
+						"choices": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.kaynak.ansiklopedi"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.kaynak.yemek_kitabi"
+								},
+								"correct": false
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.kaynak.cizgi_film"
+								},
+								"correct": false
+							}
+						]
+					}
+				},
+				{
+					"template": "scenario",
+					"difficulty": 3,
+					"voice": "vo.g2.hayat_bilgisi.u06.n01.r03",
+					"params": {
+						"scene": "item.sahne.calisma_masasi",
+						"hint": "vo.g2.hayat_bilgisi.u06.n01.r03.ipucu",
+						"choices": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.kaynak.aileyle_internet"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.kaynak.yalniz_internet"
+								},
+								"correct": false
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.kaynak.reklam"
+								},
+								"correct": false
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g2.hayat_bilgisi.u06.n02",
+			"outcomes": [
+				"HB.2.6.2"
+			],
+			"title_key": "node.g2.hayat_bilgisi.u06.n02",
+			"intro_voice": "vo.g2.hayat_bilgisi.u06.n02.intro",
+			"sticker": "st.hayat_bilgisi.ampul",
+			"rounds": [
+				{
+					"template": "sequence",
+					"difficulty": 1,
+					"voice": "vo.g2.hayat_bilgisi.u06.n02.r01",
+					"params": {
+						"items": [
+							{
+								"type": "item",
+								"value": "item.tek.telefon_cevirmeli"
+							},
+							{
+								"type": "item",
+								"value": "item.tek.telefon_tuslu"
+							},
+							{
+								"type": "item",
+								"value": "item.tek.telefon_akilli"
+							}
+						]
+					}
+				},
+				{
+					"template": "sequence",
+					"difficulty": 2,
+					"voice": "vo.g2.hayat_bilgisi.u06.n02.r02",
+					"params": {
+						"items": [
+							{
+								"type": "item",
+								"value": "item.tek.mum"
+							},
+							{
+								"type": "item",
+								"value": "item.tek.gaz_lambasi"
+							},
+							{
+								"type": "item",
+								"value": "item.tek.ampul"
+							},
+							{
+								"type": "item",
+								"value": "item.tek.led"
+							}
+						]
+					}
+				},
+				{
+					"template": "scenario",
+					"difficulty": 3,
+					"voice": "vo.g2.hayat_bilgisi.u06.n02.r03",
+					"params": {
+						"scene": "item.tek.telefon_zaman",
+						"hint": "vo.g2.hayat_bilgisi.u06.n02.r03.ipucu",
+						"choices": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.tek.telefon_gelecek"
+								},
+								"correct": true
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.tek.telefon_dev"
+								},
+								"correct": false
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.tek.telefon_cevirmeli"
+								},
+								"correct": false
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g2.hayat_bilgisi.u06.n03",
+			"outcomes": [
+				"HB.2.6.3"
+			],
+			"title_key": "node.g2.hayat_bilgisi.u06.n03",
+			"intro_voice": "vo.g2.hayat_bilgisi.u06.n03.intro",
+			"sticker": "st.hayat_bilgisi.palet",
+			"rounds": [
+				{
+					"template": "listen_find",
+					"difficulty": 1,
+					"voice": "vo.g2.hayat_bilgisi.u06.n03.r01",
+					"params": {
+						"target": {
+							"type": "item",
+							"value": "item.sanat.muzik_yapan",
+							"voice": "vo.ad.sanat.muzik_yapan"
+						},
+						"options": [
+							{
+								"type": "item",
+								"value": "item.gunluk.kahvalti"
+							},
+							{
+								"type": "item",
+								"value": "item.sanat.muzik_yapan",
+								"voice": "vo.ad.sanat.muzik_yapan"
+							},
+							{
+								"type": "item",
+								"value": "item.gunluk.okula_git"
+							}
+						]
+					}
+				},
+				{
+					"template": "sort_bins",
+					"difficulty": 2,
+					"voice": "vo.g2.hayat_bilgisi.u06.n03.r02",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "item",
+									"value": "item.simge.muzik",
+									"voice": "vo.ad.simge.muzik"
+								},
+								"shape": "star",
+								"color": "purple"
+							},
+							{
+								"label": {
+									"type": "item",
+									"value": "item.simge.resim",
+									"voice": "vo.ad.simge.resim"
+								},
+								"shape": "circle",
+								"color": "orange"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sanat.baglama"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sanat.davul"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sanat.flut"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sanat.firca"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sanat.tuval"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sanat.ebru"
+								},
+								"bin": 1
+							}
+						]
+					}
+				},
+				{
+					"template": "sort_bins",
+					"difficulty": 3,
+					"voice": "vo.g2.hayat_bilgisi.u06.n03.r03",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "item",
+									"value": "item.simge.muzik",
+									"voice": "vo.ad.simge.muzik"
+								},
+								"shape": "star",
+								"color": "purple"
+							},
+							{
+								"label": {
+									"type": "item",
+									"value": "item.simge.resim",
+									"voice": "vo.ad.simge.resim"
+								},
+								"shape": "circle",
+								"color": "orange"
+							},
+							{
+								"label": {
+									"type": "item",
+									"value": "item.simge.tiyatro",
+									"voice": "vo.ad.simge.tiyatro"
+								},
+								"shape": "diamond",
+								"color": "red"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sanat.baglama"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sanat.davul"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sanat.firca"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sanat.ebru"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sanat.kukla"
+								},
+								"bin": 2
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.sanat.sahne_perdesi"
+								},
+								"bin": 2
+							}
+						]
+					}
+				}
+			]
+		}
+	]
+}
