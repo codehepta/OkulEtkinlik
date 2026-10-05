@@ -1,0 +1,456 @@
+{
+	"id": "g2.matematik.u06",
+	"grade": 2,
+	"subject": "matematik",
+	"title_key": "unit.g2.matematik.u06",
+	"source": {
+		"program": "TYMM İlkokul Matematik (1–4)",
+		"doc": "İlkokul Matematik Dersi Öğretim Programı",
+		"file": "docs/curriculum/sources/tymm-ilkokul-matematik.pdf",
+		"page": 81,
+		"url": "https://tymm.meb.gov.tr/assets/pdf/ilkokul-matematik-dersi_20260902_111356_122.pdf",
+		"theme": "MAT.2.4. Veriye Dayalı Araştırma"
+	},
+	"nodes": [
+		{
+			"id": "g2.matematik.u06.n01",
+			"outcomes": [
+				"MAT.2.4.1"
+			],
+			"title_key": "node.g2.matematik.u06.n01",
+			"intro_voice": "vo.g2.matematik.u06.n01.intro",
+			"sticker": "st.matematik.g2_cetele",
+			"rounds": [
+				{
+					"template": "chart_build",
+					"difficulty": 1,
+					"voice": "vo.g2.matematik.u06.n01.r01",
+					"params": {
+						"kind": "tally",
+						"categories": [
+							"item.meyve.elma",
+							"item.meyve.muz"
+						],
+						"counts": [
+							6,
+							3
+						],
+						"questions": [
+							{
+								"ask": "most",
+								"voice": "vo.g2.matematik.u06.n01.r01.q1"
+							},
+							{
+								"ask": "diff",
+								"voice": "vo.g2.matematik.u06.n01.r01.q2",
+								"a": 0,
+								"b": 1,
+								"choices": [
+									2,
+									3,
+									4
+								]
+							}
+						]
+					}
+				},
+				{
+					"template": "chart_build",
+					"difficulty": 2,
+					"voice": "vo.g2.matematik.u06.n01.r02",
+					"params": {
+						"kind": "tally",
+						"categories": [
+							"item.oyuncak.top",
+							"item.oyuncak.araba"
+						],
+						"counts": [
+							7,
+							5
+						],
+						"questions": [
+							{
+								"ask": "least",
+								"voice": "vo.g2.matematik.u06.n01.r02.q1"
+							},
+							{
+								"ask": "total",
+								"voice": "vo.g2.matematik.u06.n01.r02.q2",
+								"choices": [
+									11,
+									12,
+									13
+								]
+							}
+						]
+					}
+				},
+				{
+					"template": "chart_build",
+					"difficulty": 2,
+					"voice": "vo.g2.matematik.u06.n01.r03",
+					"params": {
+						"kind": "table",
+						"categories": [
+							"item.hayvan.kus",
+							"item.hayvan.kelebek"
+						],
+						"counts": [
+							4,
+							8
+						],
+						"questions": [
+							{
+								"ask": "count",
+								"voice": "vo.g2.matematik.u06.n01.r03.q1",
+								"category": 1,
+								"choices": [
+									7,
+									8,
+									9
+								]
+							},
+							{
+								"ask": "most",
+								"voice": "vo.g2.matematik.u06.n01.r03.q2"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g2.matematik.u06.n02",
+			"outcomes": [
+				"MAT.2.4.1"
+			],
+			"title_key": "node.g2.matematik.u06.n02",
+			"intro_voice": "vo.g2.matematik.u06.n02.intro",
+			"sticker": "st.matematik.g2_grafik",
+			"rounds": [
+				{
+					"template": "chart_build",
+					"difficulty": 1,
+					"voice": "vo.g2.matematik.u06.n02.r01",
+					"params": {
+						"kind": "object",
+						"categories": [
+							"item.doga.cicek",
+							"item.doga.yaprak"
+						],
+						"counts": [
+							5,
+							2
+						],
+						"questions": [
+							{
+								"ask": "most",
+								"voice": "vo.g2.matematik.u06.n02.r01.q1"
+							},
+							{
+								"ask": "diff",
+								"voice": "vo.g2.matematik.u06.n02.r01.q2",
+								"a": 0,
+								"b": 1,
+								"choices": [
+									2,
+									3,
+									4
+								]
+							}
+						]
+					}
+				},
+				{
+					"template": "chart_build",
+					"difficulty": 2,
+					"voice": "vo.g2.matematik.u06.n02.r02",
+					"params": {
+						"kind": "object",
+						"categories": [
+							"item.meyve.cilek",
+							"item.meyve.armut"
+						],
+						"counts": [
+							3,
+							6
+						],
+						"questions": [
+							{
+								"ask": "least",
+								"voice": "vo.g2.matematik.u06.n02.r02.q1"
+							},
+							{
+								"ask": "total",
+								"voice": "vo.g2.matematik.u06.n02.r02.q2",
+								"choices": [
+									8,
+									9,
+									10
+								]
+							}
+						]
+					}
+				},
+				{
+					"template": "chart_build",
+					"difficulty": 3,
+					"voice": "vo.g2.matematik.u06.n02.r03",
+					"params": {
+						"kind": "dot",
+						"categories": [
+							"item.okul.kalem",
+							"item.okul.silgi"
+						],
+						"counts": [
+							8,
+							5
+						],
+						"questions": [
+							{
+								"ask": "diff",
+								"voice": "vo.g2.matematik.u06.n02.r03.q1",
+								"a": 0,
+								"b": 1,
+								"choices": [
+									2,
+									3,
+									4
+								]
+							},
+							{
+								"ask": "count",
+								"voice": "vo.g2.matematik.u06.n02.r03.q2",
+								"category": 1,
+								"choices": [
+									4,
+									5,
+									6
+								]
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g2.matematik.u06.n03",
+			"outcomes": [
+				"MAT.2.4.1"
+			],
+			"title_key": "node.g2.matematik.u06.n03",
+			"intro_voice": "vo.g2.matematik.u06.n03.intro",
+			"sticker": "st.matematik.g2_defter",
+			"rounds": [
+				{
+					"template": "sort_bins",
+					"difficulty": 1,
+					"voice": "vo.g2.matematik.u06.n03.r01",
+					"params": {
+						"bins": [
+							{
+								"label": {
+									"type": "text",
+									"value": "txt.mat2.veri_oyuncak",
+									"voice": "vo.mat2.veri_oyuncak"
+								},
+								"shape": "circle",
+								"color": "orange"
+							},
+							{
+								"label": {
+									"type": "text",
+									"value": "txt.mat2.veri_meyve",
+									"voice": "vo.mat2.veri_meyve"
+								},
+								"shape": "square",
+								"color": "blue"
+							}
+						],
+						"items": [
+							{
+								"token": {
+									"type": "item",
+									"value": "item.oyuncak.top"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.meyve.elma"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.oyuncak.araba"
+								},
+								"bin": 0
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.meyve.muz"
+								},
+								"bin": 1
+							},
+							{
+								"token": {
+									"type": "item",
+									"value": "item.oyuncak.ayicik"
+								},
+								"bin": 0
+							}
+						]
+					}
+				},
+				{
+					"template": "listen_find",
+					"difficulty": 2,
+					"voice": "vo.g2.matematik.u06.n03.r02",
+					"params": {
+						"target": {
+							"type": "text",
+							"value": "txt.mat2.veri_cetele",
+							"voice": "vo.g2.matematik.u06.n03.r02.hedef"
+						},
+						"options": [
+							{
+								"type": "text",
+								"value": "txt.mat2.veri_cetele",
+								"voice": "vo.mat2.veri_cetele"
+							},
+							{
+								"type": "text",
+								"value": "txt.mat2.veri_siklik",
+								"voice": "vo.mat2.veri_siklik"
+							},
+							{
+								"type": "text",
+								"value": "txt.mat2.veri_sekil_grafigi",
+								"voice": "vo.mat2.veri_sekil_grafigi"
+							}
+						]
+					}
+				},
+				{
+					"template": "listen_find",
+					"difficulty": 3,
+					"voice": "vo.g2.matematik.u06.n03.r03",
+					"params": {
+						"target": {
+							"type": "text",
+							"value": "txt.mat2.veri_sekil_grafigi",
+							"voice": "vo.g2.matematik.u06.n03.r03.hedef"
+						},
+						"options": [
+							{
+								"type": "text",
+								"value": "txt.mat2.veri_cetele",
+								"voice": "vo.mat2.veri_cetele"
+							},
+							{
+								"type": "text",
+								"value": "txt.mat2.veri_siklik",
+								"voice": "vo.mat2.veri_siklik"
+							},
+							{
+								"type": "text",
+								"value": "txt.mat2.veri_sekil_grafigi",
+								"voice": "vo.mat2.veri_sekil_grafigi"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "g2.matematik.u06.n04",
+			"outcomes": [
+				"MAT.2.4.1"
+			],
+			"title_key": "node.g2.matematik.u06.n04",
+			"intro_voice": "vo.g2.matematik.u06.n04.intro",
+			"sticker": "st.matematik.g2_kupa",
+			"rounds": [
+				{
+					"template": "chart_build",
+					"difficulty": 2,
+					"voice": "vo.g2.matematik.u06.n04.r01",
+					"params": {
+						"kind": "object",
+						"categories": [
+							"item.hayvan.kus",
+							"item.hayvan.balik"
+						],
+						"counts": [
+							4,
+							7
+						],
+						"questions": [
+							{
+								"ask": "most",
+								"voice": "vo.g2.matematik.u06.n04.r01.q1"
+							},
+							{
+								"ask": "diff",
+								"voice": "vo.g2.matematik.u06.n04.r01.q2",
+								"a": 1,
+								"b": 0,
+								"choices": [
+									2,
+									3,
+									4
+								]
+							}
+						]
+					}
+				},
+				{
+					"template": "chart_build",
+					"difficulty": 3,
+					"voice": "vo.g2.matematik.u06.n04.r02",
+					"params": {
+						"kind": "dot",
+						"categories": [
+							"item.hayvan.ari",
+							"item.hayvan.kelebek"
+						],
+						"counts": [
+							3,
+							8
+						],
+						"questions": [
+							{
+								"ask": "least",
+								"voice": "vo.g2.matematik.u06.n04.r02.q1"
+							},
+							{
+								"ask": "total",
+								"voice": "vo.g2.matematik.u06.n04.r02.q2",
+								"choices": [
+									10,
+									11,
+									12
+								]
+							},
+							{
+								"ask": "diff",
+								"voice": "vo.g2.matematik.u06.n04.r02.q3",
+								"a": 1,
+								"b": 0,
+								"choices": [
+									4,
+									5,
+									6
+								]
+							}
+						]
+					}
+				}
+			]
+		}
+	]
+}

@@ -3635,6 +3635,2050 @@
 		"text": "Arkadaşının kalemini yanlışlıkla kırdın. Ona nasıl konuşursun?",
 		"speaker": "ANLATICI"
 	},
+	"vo.sayi.21": {
+		"text": "yirmi bir",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.22": {
+		"text": "yirmi iki",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.23": {
+		"text": "yirmi üç",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.24": {
+		"text": "yirmi dört",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.25": {
+		"text": "yirmi beş",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.26": {
+		"text": "yirmi altı",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.27": {
+		"text": "yirmi yedi",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.28": {
+		"text": "yirmi sekiz",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.29": {
+		"text": "yirmi dokuz",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.30": {
+		"text": "otuz",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.31": {
+		"text": "otuz bir",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.32": {
+		"text": "otuz iki",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.33": {
+		"text": "otuz üç",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.34": {
+		"text": "otuz dört",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.35": {
+		"text": "otuz beş",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.36": {
+		"text": "otuz altı",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.37": {
+		"text": "otuz yedi",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.38": {
+		"text": "otuz sekiz",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.39": {
+		"text": "otuz dokuz",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.40": {
+		"text": "kırk",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.41": {
+		"text": "kırk bir",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.42": {
+		"text": "kırk iki",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.43": {
+		"text": "kırk üç",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.44": {
+		"text": "kırk dört",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.45": {
+		"text": "kırk beş",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.46": {
+		"text": "kırk altı",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.47": {
+		"text": "kırk yedi",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.48": {
+		"text": "kırk sekiz",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.49": {
+		"text": "kırk dokuz",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.50": {
+		"text": "elli",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.51": {
+		"text": "elli bir",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.52": {
+		"text": "elli iki",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.53": {
+		"text": "elli üç",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.54": {
+		"text": "elli dört",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.55": {
+		"text": "elli beş",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.56": {
+		"text": "elli altı",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.57": {
+		"text": "elli yedi",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.58": {
+		"text": "elli sekiz",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.59": {
+		"text": "elli dokuz",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.60": {
+		"text": "altmış",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.61": {
+		"text": "altmış bir",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.62": {
+		"text": "altmış iki",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.63": {
+		"text": "altmış üç",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.64": {
+		"text": "altmış dört",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.65": {
+		"text": "altmış beş",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.66": {
+		"text": "altmış altı",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.67": {
+		"text": "altmış yedi",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.68": {
+		"text": "altmış sekiz",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.69": {
+		"text": "altmış dokuz",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.70": {
+		"text": "yetmiş",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.71": {
+		"text": "yetmiş bir",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.72": {
+		"text": "yetmiş iki",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.73": {
+		"text": "yetmiş üç",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.74": {
+		"text": "yetmiş dört",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.75": {
+		"text": "yetmiş beş",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.76": {
+		"text": "yetmiş altı",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.77": {
+		"text": "yetmiş yedi",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.78": {
+		"text": "yetmiş sekiz",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.79": {
+		"text": "yetmiş dokuz",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.80": {
+		"text": "seksen",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.81": {
+		"text": "seksen bir",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.82": {
+		"text": "seksen iki",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.83": {
+		"text": "seksen üç",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.84": {
+		"text": "seksen dört",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.85": {
+		"text": "seksen beş",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.86": {
+		"text": "seksen altı",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.87": {
+		"text": "seksen yedi",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.88": {
+		"text": "seksen sekiz",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.89": {
+		"text": "seksen dokuz",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.90": {
+		"text": "doksan",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.91": {
+		"text": "doksan bir",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.92": {
+		"text": "doksan iki",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.93": {
+		"text": "doksan üç",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.94": {
+		"text": "doksan dört",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.95": {
+		"text": "doksan beş",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.96": {
+		"text": "doksan altı",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.97": {
+		"text": "doksan yedi",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.98": {
+		"text": "doksan sekiz",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.99": {
+		"text": "doksan dokuz",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.100": {
+		"text": "yüz",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n01.intro": {
+		"text": "Merhaba! Bugün geometrik cisimlerle tanışacağız. Küp, küre, silindir ve prizmalar seni bekliyor!",
+		"speaker": "BILGE"
+	},
+	"vo.mat2.kure_ad": {
+		"text": "küre",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.kup_ad": {
+		"text": "küp",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.silindir_ad": {
+		"text": "silindir",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n01.r01": {
+		"text": "Dinle! Söylenen cismi bul ve dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.ucgen_prizma_ad": {
+		"text": "üçgen prizma",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n01.r02": {
+		"text": "Hangisi silindir? Dinle ve dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.kare_prizma_ad": {
+		"text": "kare prizma",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.dikdortgen_prizma_ad": {
+		"text": "dikdörtgen prizma",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n01.r03": {
+		"text": "Dinle ve doğru cismi bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n01.r04": {
+		"text": "Prizmalara dikkat! Dinle ve doğru prizmayı bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n01.r05": {
+		"text": "Hepsi birbirine benziyor. İyi dinle ve doğru cismi bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n02.intro": {
+		"text": "Etrafımızdaki nesneler de geometrik cisimlere benzer. Bak, zar bir küpe benziyor!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.matematik.u01.n02.r01": {
+		"text": "Her nesneyi benzediği cisimle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n02.r02": {
+		"text": "Nesnelerin biçimine bak. Her birini benzediği cisme sürükle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n02.r03": {
+		"text": "Dikkatli bak! Her nesneyi doğru cisimle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n03.intro": {
+		"text": "Nesneleri biçimlerine göre ayıralım. Yuvarlak mı, köşeli mi, iyice bak!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.matematik.u01.n03.r01": {
+		"text": "Her nesneyi benzediği cismin kutusuna koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n03.r02": {
+		"text": "Küp mü, dikdörtgen prizma mı? Nesneleri doğru kutuya ayır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n03.r03": {
+		"text": "Üç kutu var! Her nesneyi benzediği cismin kutusuna koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n04.intro": {
+		"text": "Bloklarla yapılmış oyuncaklara bakalım. Hangi cisimleri kullanmışlar, bulabilir misin?",
+		"speaker": "BILGE"
+	},
+	"vo.g2.matematik.u01.n04.r01.ipucu": {
+		"text": "Kuleler yuvarlak ve uzun. Altı ve üstü düz bir daire.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n04.r01": {
+		"text": "Bu kalenin uzun kuleleri hangi cisme benziyor?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n04.r02.ipucu": {
+		"text": "Robotun kafasının bütün yüzleri eş kare.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n04.r02": {
+		"text": "Robotun kafası hangi cisim?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n04.r03.ipucu": {
+		"text": "Çatının iki ucunda üçgen var.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n04.r03": {
+		"text": "Evin çatısı hangi cisim?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n04.r04.ipucu": {
+		"text": "Tekerlekler yuvarlanır ve iki yüzü düz dairedir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n04.r04": {
+		"text": "Trenin tekerlekleri hangi cisme benziyor?",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.kare_ad": {
+		"text": "kare",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.daire_ad": {
+		"text": "daire",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.ucgen_ad": {
+		"text": "üçgen",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n04.r05": {
+		"text": "Her cismin bir yüzü bir şekildir. Cismi, yüzündeki şekille eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.dikdortgen_ad": {
+		"text": "dikdörtgen",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n04.r06": {
+		"text": "Cisimleri yüzlerindeki şekillerle eşleştir. Dikdörtgen prizmaya dikkat!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n05.intro": {
+		"text": "Şimdi sıra sende! Kareleri boyayarak kendi yapını kur.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.matematik.u01.n05.r01": {
+		"text": "Soluk kuleyi kareleri boyayarak doldur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n05.r02": {
+		"text": "Soluk evi boya. Önce gövdeyi, sonra çatıyı yap.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n05.r03": {
+		"text": "Altı kare kullanarak birbirine değen bir yapı kur. Kareler kenarlarıyla birleşsin.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n05.r04": {
+		"text": "On kare kullanarak kendi modelini kur. Hepsi birbirine bağlı olsun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n06.intro": {
+		"text": "Kâğıttan kesilmiş şekillerle resimler yapılmış. Hangi şekiller var, bakalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.matematik.u01.n06.r01.ipucu": {
+		"text": "Çatının üç kenarı ve üç köşesi var.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n06.r01": {
+		"text": "Bu evin çatısı hangi şekil?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n06.r02.ipucu": {
+		"text": "Tekerleklerin hiç köşesi yok.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n06.r02": {
+		"text": "Arabanın tekerlekleri hangi şekil?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n06.r03.ipucu": {
+		"text": "Yelkenlerin üç köşesi var.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n06.r03": {
+		"text": "Geminin yelkenleri hangi şekil?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n06.r04.ipucu": {
+		"text": "Gövdenin dört köşesi var, uzun kenarları kısa kenarlarından uzun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n06.r04": {
+		"text": "Robotun gövdesi hangi şekil?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n06.r05": {
+		"text": "Her şekli köşe sayısıyla eşleştir. Dairenin hiç köşesi yok!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n07.intro": {
+		"text": "Bir şekli çevirsek ya da büyütsek adı değişir mi? Hadi deneyelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.matematik.u01.n07.r01": {
+		"text": "Bazı şekiller dönmüş, bazıları küçülmüş. Yine de adları aynı! Her şekli kendi kutusuna koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n07.r02": {
+		"text": "Şekiller farklı yönlerde ve büyüklükte. Her birini doğru kutuya ayır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n07.r03": {
+		"text": "Cisimler de dönebilir. Yatık silindir hâlâ silindir mi? Her cismi kutusuna koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n07.r04.hedef": {
+		"text": "Ters dönmüş üçgen hangisi?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n07.r04": {
+		"text": "Dinle ve bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n07.r05": {
+		"text": "Sağdaki şekli çevir! Yan yatmış hâlini zemine boya.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n07.r06": {
+		"text": "Sağdaki şekli büyüt! Her kare iki kat olsun: bir kare yerine dört kare boya.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n08.intro": {
+		"text": "Bir kapta ne kadar su var? Önce tahmin edelim, sonra bardaklarla ölçüp bakalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.matematik.u01.n08.r01": {
+		"text": "Sürahideki su kaç bardağı doldurur? Önce tahmin et, sonra dolan bardakları say.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n08.r02": {
+		"text": "Bu kova kaç kupayı doldurur? Tahmin et, sonra kupaları say.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n08.r03": {
+		"text": "Küvet kaç kova suyla doldu? Önce tahmin et, sonra kovaları say.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u01.n08.r04": {
+		"text": "Büyük şişedeki meyve suyu kaç küçük şişeyi doldurdu? Say ve doğru sayıya dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n01.intro": {
+		"text": "Yirmiden sonra da sayılar devam ediyor! Hadi yüze kadar sayıları tanıyalım.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.matematik.u02.n01.r01": {
+		"text": "Kaç elma var? Önce onluk sırayı, sonra birlikleri say.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n01.r02": {
+		"text": "Kaç çilek var? Onluk sıra ve birlikler sana yardım eder.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n01.r03": {
+		"text": "Dinle ve duyduğun sayıyı bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n01.r04": {
+		"text": "Dinle! Sayıyı bul. Rakamların yerine dikkat et.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n01.r05": {
+		"text": "Dinle ve doğru sayıya dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n02.intro": {
+		"text": "Duyduğun sayıyı rakam karolarıyla yazacaksın. Önce onlar, sonra birler!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.matematik.u02.n02.r01": {
+		"text": "Dinle ve duyduğun sayıyı rakamlarla yaz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n02.r02": {
+		"text": "Dinle ve duyduğun sayıyı rakamlarla yaz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n02.r03": {
+		"text": "Dinle ve duyduğun sayıyı rakamlarla yaz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n02.r04": {
+		"text": "Dinle ve duyduğun sayıyı rakamlarla yaz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n02.r05": {
+		"text": "Dinle ve duyduğun sayıyı rakamlarla yaz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n03.intro": {
+		"text": "Her sayının bir adı var. Sayıların yazılışını ve adını eşleştirelim.",
+		"speaker": "BILGE"
+	},
+	"vo.mat2.sayi_21": {
+		"text": "yirmi bir",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.sayi_36": {
+		"text": "otuz altı",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.sayi_50": {
+		"text": "elli",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n03.r01": {
+		"text": "Sayının adını rakamlarla yazılmış hâliyle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.sayi_48": {
+		"text": "kırk sekiz",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.sayi_84": {
+		"text": "seksen dört",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.sayi_72": {
+		"text": "yetmiş iki",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.sayi_27": {
+		"text": "yirmi yedi",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n03.r02": {
+		"text": "Okunuşları ve sayıları eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.sayi_69": {
+		"text": "altmış dokuz",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.sayi_96": {
+		"text": "doksan altı",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.sayi_66": {
+		"text": "altmış altı",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.sayi_99": {
+		"text": "doksan dokuz",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n03.r03": {
+		"text": "Benzer sayılara dikkat! Her adı doğru sayıyla eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n04.intro": {
+		"text": "İki basamaklı sayılarda onlar ve birler basamağı var. Kırk yedide kaç onluk var, bulalım!",
+		"speaker": "BILGE"
+	},
+	"vo.mat2.onluk_4_7": {
+		"text": "dört onluk yedi birlik",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.onluk_2_5": {
+		"text": "iki onluk beş birlik",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.onluk_6_0": {
+		"text": "altı onluk sıfır birlik",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n04.r01": {
+		"text": "Onlukları ve birlikleri doğru sayıyla eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.onluk_3_8": {
+		"text": "üç onluk sekiz birlik",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.onluk_8_3": {
+		"text": "sekiz onluk üç birlik",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.onluk_5_5": {
+		"text": "beş onluk beş birlik",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.onluk_9_1": {
+		"text": "dokuz onluk bir birlik",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n04.r02": {
+		"text": "Kaç onluk, kaç birlik? Her birini doğru sayıya sürükle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.onlar_3": {
+		"text": "onlar basamağında üç",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.onlar_5": {
+		"text": "onlar basamağında beş",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n04.r03": {
+		"text": "Onlar basamağına bak. Her sayıyı doğru kutuya koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n04.r04.hedef": {
+		"text": "Birler basamağında beş olan sayıyı bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n04.r04": {
+		"text": "Dinle ve bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n04.r05.hedef": {
+		"text": "Yedi onluktan oluşan sayıyı bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n04.r05": {
+		"text": "Dinle ve bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n05.intro": {
+		"text": "Sayılar sıraya girmek istiyor. Hangisi önce, hangisi sonra gelir?",
+		"speaker": "BILGE"
+	},
+	"vo.g2.matematik.u02.n05.r01": {
+		"text": "Sayıları küçükten büyüğe sırala.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n05.r02": {
+		"text": "Sayıları küçükten büyüğe sırala. Onlar basamağına bak!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n05.r03": {
+		"text": "Bu sefer büyükten küçüğe sırala.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n05.r04": {
+		"text": "Sol kefedeki sayı mı büyük, sağdaki mi? Doğru işareti seç.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n05.r05": {
+		"text": "Sayı doğrusunda okun gösterdiği sayıyı bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n05.r06": {
+		"text": "Altmış sayısı sayı doğrusunda nerede? Doğru yere dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n06.intro": {
+		"text": "İkişer, üçer, beşer sayalım! Ritmi yakalarsan eksik sayıyı kolayca bulursun.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.matematik.u02.n06.r01": {
+		"text": "İkişer ileri say. Eksik sayıyı bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n06.r02": {
+		"text": "Üçer ileri say. Eksik sayıyı bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n06.r03": {
+		"text": "Dörder ileri say. Eksik sayıyı bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n06.r04": {
+		"text": "Beşer ileri say. Eksik sayıyı bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n07.intro": {
+		"text": "Ritmik sayma geriye doğru da olur. Sayılar her adımda azalıyor!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.matematik.u02.n07.r01": {
+		"text": "İkişer geri say. Eksik sayıyı bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n07.r02": {
+		"text": "Beşer geri say. Eksik sayıyı bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n07.r03": {
+		"text": "Üçer geri say. Eksik sayıyı bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.kural_3_ileri": {
+		"text": "üçer ileri",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n07.r04.hedef": {
+		"text": "Üç, altı, dokuz, on iki. Bu sayılar nasıl ilerliyor?",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.kural_2_ileri": {
+		"text": "ikişer ileri",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.kural_3_geri": {
+		"text": "üçer geri",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n07.r04": {
+		"text": "Dinle ve kuralı bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.kural_5_geri": {
+		"text": "beşer geri",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n07.r05.hedef": {
+		"text": "Elli, kırk beş, kırk, otuz beş. Bu sayılar nasıl değişiyor?",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.kural_5_ileri": {
+		"text": "beşer ileri",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.kural_4_geri": {
+		"text": "dörder geri",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n07.r05": {
+		"text": "Dinle ve kuralı bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n08.intro": {
+		"text": "Örüntülerin gizli bir kuralı var. Kuralı bulan dedektif sen ol!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.matematik.u02.n08.r01": {
+		"text": "Bu örüntüde sayılar düzenli artıyor. Eksik sayıyı bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n08.r02": {
+		"text": "Her adımda kaç arttığını bul, eksik sayıyı tamamla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n08.r03.hedef": {
+		"text": "Bir kulede iki küp, sonra dört küp, sonra altı küp var. Kule nasıl büyüyor?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n08.r03": {
+		"text": "Dinle ve bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.uymuyor": {
+		"text": "uymuyor",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n08.r04.hedef": {
+		"text": "Kuralımız dörder ileri. Dört, sekiz, on, on altı. Bu örüntü kurala uyuyor mu?",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.uyuyor": {
+		"text": "uyuyor",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n08.r04": {
+		"text": "Dinle ve bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n08.r05.hedef": {
+		"text": "Beş, on, on beş, yirmi. Hangi sayı bu örüntüye ait?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n08.r05": {
+		"text": "Dinle ve bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n09.intro": {
+		"text": "Bazen saymadan önce tahmin ederiz. Bir grubu say, bütün hakkında düşün!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.matematik.u02.n09.r01": {
+		"text": "Kaç kelebek var? Önce tahmin et, sonra sayarak kontrol et.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n09.r02": {
+		"text": "Kaç kiraz var? Bir sırayı say, bütünü tahmin et. Sonra hepsini say.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n09.r03": {
+		"text": "Kaç balık var? Tahmin et, sonra say.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u02.n09.r04": {
+		"text": "Kaç üzüm var? Onluk sıraya bak, tahmin et, sonra say.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n01.intro": {
+		"text": "Günlük hayatta da toplar ve çıkarırız. Problemi dinle, ne istendiğini bul!",
+		"speaker": "BILGE"
+	},
+	"vo.mat2.toplama": {
+		"text": "toplama",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.cikarma": {
+		"text": "çıkarma",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n01.r01.s1": {
+		"text": "Sepette 24 elma vardı. Annem 12 elma daha koydu.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n01.r01.q1": {
+		"text": "Bu problemde hangi işlemi yaparız?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n01.r01.q2": {
+		"text": "Sepette şimdi kaç elma var?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n01.r01": {
+		"text": "Problemi dinle, sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.kalan_kalem": {
+		"text": "kalan kalem sayısı",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.toplam_ogrenci": {
+		"text": "öğrenci sayısı",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n01.r02.s1": {
+		"text": "Sınıfta 45 kalem vardı. Öğrenciler 20 kalemi çantalarına koydu.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n01.r02.q1": {
+		"text": "Bu problemde ne isteniyor?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n01.r02.q2": {
+		"text": "Hangi işlemi yaparız?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n01.r02.q3": {
+		"text": "Sınıfta kaç kalem kaldı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n01.r02": {
+		"text": "Problemi dinle, sonra soruları cevapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n01.r03": {
+		"text": "Otobüste 38 kişi vardı. Durakta 15 kişi daha bindi. Otobüste kaç kişi oldu? Doğru balonu patlat.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n01.r04": {
+		"text": "Kumbaramda 72 lira vardı. 28 liralık bir kitap aldım. Kaç liram kaldı? Doğru balonu patlat.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n02.intro": {
+		"text": "Bazı problemler iki adımda çözülür. Önce birini, sonra diğerini yapalım.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.matematik.u03.n02.r01.s1": {
+		"text": "Bahçede 30 çiçek vardı. Ayşe 15 çiçek daha dikti.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n02.r01.s2": {
+		"text": "Sonra 10 çiçeği vazoya koymak için kesti.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n02.r01.q1": {
+		"text": "İlk adımda hangi işlemi yaparız?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n02.r01.q2": {
+		"text": "İlk adımda kaç çiçek olur?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n02.r01.q3": {
+		"text": "Bahçede sonunda kaç çiçek kaldı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n02.r01": {
+		"text": "Problemi dinle, adım adım çöz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n02.r02.s1": {
+		"text": "Kemal'in 50 misketi vardı. Arkadaşına 18 misket verdi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n02.r02.s2": {
+		"text": "Sonra ablası ona 20 misket hediye etti.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n02.r02.q1": {
+		"text": "Kemal'in arkadaşına verdikten sonra kaç misketi kaldı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n02.r02.q2": {
+		"text": "Kemal'in sonunda kaç misketi oldu?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n02.r02": {
+		"text": "Problemi dinle, adım adım çöz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.prob_kus": {
+		"text": "Dalda 25 kuş vardı, 10 kuş geldi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_25_arti_10": {
+		"text": "yirmi beş artı on",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.prob_balon": {
+		"text": "25 balondan 10'u patladı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_25_eksi_10": {
+		"text": "yirmi beş eksi on",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n02.r03": {
+		"text": "Her problemi çözen işlemle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.prob_kitap": {
+		"text": "12 kitaba 8 kitap eklendi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.prob_kurabiye": {
+		"text": "20 kurabiyeden 5'i yendi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.prob_cocuk": {
+		"text": "Parka 6 çocuk daha geldi.",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.prob_yaprak": {
+		"text": "Ağaçtan 9 yaprak düştü.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n02.r04": {
+		"text": "Her problemi kutusuna koy: toplama mı, çıkarma mı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n03.intro": {
+		"text": "Toplama ve çıkarmayı zihinden yapalım. Önce onlukları, sonra birlikleri düşün!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.matematik.u03.n03.r01": {
+		"text": "Kaç eder? Toplamı bul ve o balonu patlat.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n03.r02": {
+		"text": "Eldeli toplama! Önce birlikleri topla. Toplamın olduğu balonu patlat.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n03.r03": {
+		"text": "Farkı bul. Doğru balonu patlat.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n03.r04": {
+		"text": "Onluk bozarak çıkar. Farkın olduğu balonu patlat.",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_20_arti_30": {
+		"text": "yirmi artı otuz",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_45_eksi_5": {
+		"text": "kırk beş eksi beş",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_16_arti_14": {
+		"text": "on altı artı on dört",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n03.r05": {
+		"text": "Her işlemi sonucuyla eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n04.intro": {
+		"text": "Sonucu önce tahmin et, sonra hesapla. Tahminin sonuca yakın mı, uzak mı?",
+		"speaker": "BILGE"
+	},
+	"vo.g2.matematik.u03.n04.r01": {
+		"text": "Toplamı önce tahmin et. Sonra işlemi yapıp teraziyi dengele.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n04.r02": {
+		"text": "Toplam yaklaşık kaç olur? Tahmin et, sonra hesapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n04.r03": {
+		"text": "Fark yaklaşık kaç olur? Tahmin et, sonra hesapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n05.intro": {
+		"text": "Toplama ve çıkarma birbirinin tersidir. Bir toplama işleminden çıkarma işlemi yapabiliriz!",
+		"speaker": "BILGE"
+	},
+	"vo.mat2.islem_25_17_42": {
+		"text": "yirmi beş artı on yedi eşittir kırk iki",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_42_17_25": {
+		"text": "kırk iki eksi on yedi eşittir yirmi beş",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_30_8_38": {
+		"text": "otuz artı sekiz eşittir otuz sekiz",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_38_8_30": {
+		"text": "otuz sekiz eksi sekiz eşittir otuz",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n05.r01": {
+		"text": "Her toplama işlemini kardeşi olan çıkarma işlemiyle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_14_6_20": {
+		"text": "on dört artı altı eşittir yirmi",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_20_6_14": {
+		"text": "yirmi eksi altı eşittir on dört",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_50_25_75": {
+		"text": "elli artı yirmi beş eşittir yetmiş beş",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_75_25_50": {
+		"text": "yetmiş beş eksi yirmi beş eşittir elli",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_33_40_73": {
+		"text": "otuz üç artı kırk eşittir yetmiş üç",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_73_40_33": {
+		"text": "yetmiş üç eksi kırk eşittir otuz üç",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n05.r02": {
+		"text": "Toplama ve çıkarma işlemlerini eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n05.r03": {
+		"text": "Eksik sayıyı bul. Terazi dengelensin.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n05.r04": {
+		"text": "Toplamı biliyoruz. Eksik toplananı bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n06.intro": {
+		"text": "Aynı sayıyı tekrar tekrar toplamak yerine çarparız. Dörder dörder sayalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.matematik.u03.n06.r01": {
+		"text": "Civcivler üçer üçer duruyor. Üçer sayarak kaç civciv olduğunu bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_4_arti_4_arti_4": {
+		"text": "dört artı dört artı dört",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_3_carpi_4": {
+		"text": "üç çarpı dört",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_5_arti_5": {
+		"text": "beş artı beş",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_2_carpi_5": {
+		"text": "iki çarpı beş",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n06.r02": {
+		"text": "Tekrarlı toplamayı çarpma işlemiyle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_2_arti_2_arti_2_arti_2_arti_2": {
+		"text": "iki artı iki artı iki artı iki artı iki",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_5_carpi_2": {
+		"text": "beş çarpı iki",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_3_arti_3_arti_3_arti_3": {
+		"text": "üç artı üç artı üç artı üç",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_4_carpi_3": {
+		"text": "dört çarpı üç",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_10_arti_10_arti_10": {
+		"text": "on artı on artı on",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_3_carpi_10": {
+		"text": "üç çarpı on",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n06.r03": {
+		"text": "Toplamaları çarpmalarla eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_6_arti_6": {
+		"text": "altı artı altı",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n06.r04": {
+		"text": "Sonucu 12 olanlar bir kutuya, 10 olanlar öbür kutuya.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n07.intro": {
+		"text": "Eşit paylaştırmak bölmektir. On iki elmayı üç arkadaşa eşit dağıtalım!",
+		"speaker": "BILGE"
+	},
+	"vo.mat2.islem_12_eksi_4_eksi_4_eksi_4": {
+		"text": "on iki eksi dört eksi dört eksi dört",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_12_bolu_4": {
+		"text": "on iki bölü dört",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_10_eksi_5_eksi_5": {
+		"text": "on eksi beş eksi beş",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_10_bolu_5": {
+		"text": "on bölü beş",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n07.r01": {
+		"text": "Ardışık çıkarmayı bölme işlemiyle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_8_bolu_2": {
+		"text": "sekiz bölü iki",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_15_bolu_5": {
+		"text": "on beş bölü beş",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_18_bolu_3": {
+		"text": "on sekiz bölü üç",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n07.r02": {
+		"text": "Her bölmeyi sonucuyla eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.carpma": {
+		"text": "çarpma",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.bolme": {
+		"text": "bölme",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_4_carpi_5": {
+		"text": "dört çarpı beş",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_20_bolu_5": {
+		"text": "yirmi bölü beş",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_2_carpi_7": {
+		"text": "iki çarpı yedi",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_14_bolu_2": {
+		"text": "on dört bölü iki",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_9_bolu_3": {
+		"text": "dokuz bölü üç",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n07.r03": {
+		"text": "Çarpma mı, bölme mi? Her işlemi kendi kutusuna koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n08.intro": {
+		"text": "Çarpma ve bölmenin parçalarını tanıyalım. Tahmin edip zihinden hesaplayalım!",
+		"speaker": "BILGE"
+	},
+	"vo.mat2.islem_3_carpi_5": {
+		"text": "üç çarpı beş",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_4_carpi_2": {
+		"text": "dört çarpı iki",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_5_carpi_5": {
+		"text": "beş çarpı beş",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n08.r01": {
+		"text": "Her çarpma işlemini sonucuyla eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_3x4_12": {
+		"text": "üç çarpı dört eşittir on iki",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_12b4_3": {
+		"text": "on iki bölü dört eşittir üç",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_2x5_10": {
+		"text": "iki çarpı beş eşittir on",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_10b5_2": {
+		"text": "on bölü beş eşittir iki",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n08.r02": {
+		"text": "Çarpmayı kardeşi olan bölmeyle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n08.r03": {
+		"text": "Üç kutuda beşer kalem var. İki kutuda on kalem oldu, bir kutu daha ekle. Üç çarpı beş kaç eder? Doğru balonu patlat.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n08.r04": {
+		"text": "Üç tabakta dörder elma var. Önce kaç elma olduğunu tahmin et, sonra tekrarlı toplamayla hesapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n08.r05": {
+		"text": "Üç kutuda onar boya var. Tahmin et, sonra hesapla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n09.intro": {
+		"text": "Eşittir işareti iki tarafın aynı değerde olduğunu söyler. Teraziyi dengede tutalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.matematik.u03.n09.r01": {
+		"text": "Terazi dengede olsun. Eksik sayıyı bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n09.r02": {
+		"text": "İki taraf eşit mi? Doğru işareti seç.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n09.r03": {
+		"text": "Eksik sayıyı bul, terazi dengelensin.",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_7_arti_3": {
+		"text": "yedi artı üç",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_20_bolu_4": {
+		"text": "yirmi bölü dört",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.islem_2_arti_3": {
+		"text": "iki artı üç",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n09.r04": {
+		"text": "Aynı sonucu veren işlemleri eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.esit_iki_taraf": {
+		"text": "iki taraf aynı değerde",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n09.r05.hedef": {
+		"text": "Altı artı altı eşittir üç çarpı dört. Buradaki eşittir ne anlatıyor?",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.esit_sol_buyuk": {
+		"text": "sol taraf daha büyük",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.esit_sag_buyuk": {
+		"text": "sağ taraf daha büyük",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u03.n09.r05": {
+		"text": "Dinle ve bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n01.intro": {
+		"text": "Pizzayı eş parçalara bölelim! İki eş parçanın her biri yarım, dört eş parçanın her biri çeyrek.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.matematik.u04.n01.r01": {
+		"text": "Pizzayı iki eş parçaya böl.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n01.r02": {
+		"text": "Pizzayı dört eş parçaya böl.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n01.r03": {
+		"text": "Pizzanın yarımını seç.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n01.r04": {
+		"text": "Pizzanın çeyreğini seç.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n01.r05": {
+		"text": "İki çeyrek seç. Bak, iki çeyrek bir yarım eder!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n02.intro": {
+		"text": "Bir bütünde kaç yarım, kaç çeyrek var? Parçaları birleştirelim.",
+		"speaker": "BILGE"
+	},
+	"vo.mat2.iki_yarim": {
+		"text": "iki yarım",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.butun": {
+		"text": "bütün",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.iki_ceyrek": {
+		"text": "iki çeyrek",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.yarim": {
+		"text": "yarım",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n02.r01": {
+		"text": "Eşleştir: kaç parça bir bütün eder?",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.dort_ceyrek": {
+		"text": "dört çeyrek",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.ceyrek": {
+		"text": "çeyrek",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.yarimin_yarisi": {
+		"text": "yarımın yarısı",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n02.r02": {
+		"text": "Bütün, yarım ve çeyreği eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n02.r03": {
+		"text": "Pizzanın dört eş parçasından üçünü seç. Bir çeyrek eksik kaldı!",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n03.intro": {
+		"text": "Madenî paraları ve kâğıt paraları tanıyalım. Her paranın bir değeri var!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.matematik.u04.n03.r01": {
+		"text": "Paraları ayır: madenî para mı, kâğıt para mı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n03.r02": {
+		"text": "Tepside kaç kuruş var? Doğru tutarı seç.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n03.r03": {
+		"text": "Paraları say. Toplam kaç kuruş?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n03.r04": {
+		"text": "Kaç lira var? Doğru tutarı seç.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n04.intro": {
+		"text": "Yüz kuruş bir liradır. İki tane elli kuruş da bir lira eder!",
+		"speaker": "BILGE"
+	},
+	"vo.mat2.iki_elli_kurus": {
+		"text": "iki tane elli kuruş",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.bir_lira": {
+		"text": "bir lira",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.iki_yirmibes_kurus": {
+		"text": "iki tane yirmi beş kuruş",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.elli_kurus": {
+		"text": "elli kuruş",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n04.r01": {
+		"text": "Aynı değerdeki paraları eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.yuz_kurus": {
+		"text": "yüz kuruş",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.iki_yuz_kurus": {
+		"text": "iki yüz kuruş",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.iki_lira": {
+		"text": "iki lira",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.yarim_lira": {
+		"text": "yarım lira",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.ceyrek_lira": {
+		"text": "çeyrek lira",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.yirmibes_kurus": {
+		"text": "yirmi beş kuruş",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n04.r02": {
+		"text": "Kuruş ve lirayı eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n04.r03": {
+		"text": "Bir lira ve kuruşları say. Toplam kaç kuruş?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n04.r04": {
+		"text": "Yetmiş beş kuruş öde. Cüzdandan paraları tepsiye koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n04.r05": {
+		"text": "Otuz beş lira öde. Cüzdandan doğru paraları seç.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n05.intro": {
+		"text": "Akrep saati, yelkovan dakikayı gösterir. Tam, yarım ve çeyrek saatleri okuyalım!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.matematik.u04.n05.r01": {
+		"text": "Saat kaç? Doğru saati seç.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n05.r02": {
+		"text": "Saat kaç? Yelkovan altıyı gösteriyorsa yarım saattir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n05.r03": {
+		"text": "Saat kaç? Yelkovan üçü gösteriyorsa çeyrek geçiyor.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n05.r04": {
+		"text": "Saat kaç? Yelkovan dokuzu gösteriyorsa çeyrek var.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n05.r05": {
+		"text": "Saati sekiz buçuğa kur. Sonra onayla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n05.r06": {
+		"text": "Saati on biri çeyrek geçeye kur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n06.intro": {
+		"text": "Zamanı ölçmenin başka birimleri de var: dakika, gün, hafta, ay ve yıl.",
+		"speaker": "BILGE"
+	},
+	"vo.mat2.zaman_1_saat": {
+		"text": "bir saat",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.zaman_60_dakika": {
+		"text": "altmış dakika",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.zaman_1_hafta": {
+		"text": "bir hafta",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.zaman_7_gun": {
+		"text": "yedi gün",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n06.r01": {
+		"text": "Zaman birimlerini eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.zaman_1_gun": {
+		"text": "bir gün",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.zaman_24_saat": {
+		"text": "yirmi dört saat",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.zaman_1_yil": {
+		"text": "bir yıl",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.zaman_12_ay": {
+		"text": "on iki ay",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.zaman_1_mevsim": {
+		"text": "bir mevsim",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.zaman_3_ay": {
+		"text": "üç ay",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n06.r02": {
+		"text": "Hangisi kaç eder? Eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.zaman_yarim_saat": {
+		"text": "yarım saat",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.zaman_30_dakika": {
+		"text": "otuz dakika",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.zaman_ceyrek_saat": {
+		"text": "çeyrek saat",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.zaman_15_dakika": {
+		"text": "on beş dakika",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.zaman_4_mevsim": {
+		"text": "dört mevsim",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n06.r03": {
+		"text": "Zaman birimlerini eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.zaman_hafta_ici": {
+		"text": "hafta içi",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.zaman_hafta_sonu": {
+		"text": "hafta sonu",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.zaman_pazartesi": {
+		"text": "Pazartesi",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.zaman_cumartesi": {
+		"text": "Cumartesi",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.zaman_carsamba": {
+		"text": "Çarşamba",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.zaman_pazar": {
+		"text": "Pazar",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.zaman_cuma": {
+		"text": "Cuma",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n06.r04": {
+		"text": "Günleri ayır: hafta içi mi, hafta sonu mu?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n07.intro": {
+		"text": "İki arkadaş aynı masayı karışla ölçtü ama farklı sonuç buldu. Neden acaba?",
+		"speaker": "BILGE"
+	},
+	"vo.g2.matematik.u04.n07.r01.ipucu": {
+		"text": "Herkesin karışı farklı. Herkes için aynı olan bir araç seçmeliyiz.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n07.r01.sonuc": {
+		"text": "Yine karışla ölçünce sonuçlar yine farklı çıktı.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n07.r01": {
+		"text": "İki arkadaş masayı karışla ölçtü, farklı sonuç buldu. Aynı sonucu bulmak için ne yapmalılar?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n07.r02.ipucu": {
+		"text": "Kütleyi ölçen standart araç terazidir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n07.r02": {
+		"text": "Manav domatesleri tartıyor. Herkese doğru miktar vermek için hangi aracı kullanmalı?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n07.r03.hedef": {
+		"text": "Kapının boyunu herkes aynı bulsun. Hangi aracı kullanırız?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n07.r03": {
+		"text": "Dinle ve bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n07.r04.hedef": {
+		"text": "Karpuzun kütlesini ölçmek için hangi aracı kullanırız?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n07.r04": {
+		"text": "Dinle ve bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n08.intro": {
+		"text": "Uzunluğu metre ve santimetreyle, kütleyi kilogram ve gramla ölçeriz. Önce tahmin edelim!",
+		"speaker": "BILGE"
+	},
+	"vo.mat2.birim_santimetre": {
+		"text": "santimetre",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.birim_kilogram": {
+		"text": "kilogram",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n08.r01": {
+		"text": "Her nesneyi onu ölçtüğümüz birimle eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.olc_sinif_boyu": {
+		"text": "sınıfın uzunluğu",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.birim_metre": {
+		"text": "metre",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.olc_kalem_boyu": {
+		"text": "kalemin uzunluğu",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.olc_karpuz_kutle": {
+		"text": "karpuzun kütlesi",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.olc_silgi_kutle": {
+		"text": "silginin kütlesi",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.birim_gram": {
+		"text": "gram",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n08.r02": {
+		"text": "Hangisini hangi birimle ölçeriz? Eşleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n08.r03": {
+		"text": "Halı kaç metre uzunluğunda? Önce tahmin et, sonra metre çubuklarını say.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n08.r04": {
+		"text": "Karpuz kaç kilogram? Tahmin et, sonra terazideki bir kilogramlık ağırlıkları say.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u04.n08.r05": {
+		"text": "Kalem kaç santimetre? Tahmin et, sonra yan yana dizilen santimetre küplerini say.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u05.n01.intro": {
+		"text": "Gezgin hedefe ulaşmak istiyor. Ok kartlarıyla ona yol gösterelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.matematik.u05.n01.r01": {
+		"text": "Ok kartlarıyla gezgini bayrağa götür.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u05.n01.r02": {
+		"text": "Duvarlara çarpmadan bayrağa giden yolu kur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u05.n01.r03": {
+		"text": "Gezgin önce ileri gider, sonra döner. Kartlarla bayrağa götür.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u05.n02.intro": {
+		"text": "Bu kez ölçütümüz en kısa yol! En az adımla hedefe ulaşmayı dene.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.matematik.u05.n02.r01": {
+		"text": "En kısa yoldan bayrağa git. Gereksiz adım atma.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u05.n02.r02": {
+		"text": "Yolda engeller var! En kısa yolu yeniden planla.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u05.n02.r03": {
+		"text": "Kartları izle. Gezgin hangi karede durur? O kareye dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u05.n02.r04": {
+		"text": "Gezgin yönünü değiştirerek ilerliyor. Kartları izle ve durduğu kareye dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u05.n03.intro": {
+		"text": "Hangi yol daha kısa? Adımları sayarak karar verelim.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.matematik.u05.n03.r01": {
+		"text": "Okula giden yolda kaç ayak izi var? Say ve doğru sayıya dokun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u05.n03.r02": {
+		"text": "Parka giden yoldaki ayak izlerini say.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u05.n03.r03.hedef": {
+		"text": "Okul yolu yedi adım, park yolu on bir adım. Kısa yol kaç adım?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u05.n03.r03": {
+		"text": "Dinle ve bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u05.n04.intro": {
+		"text": "Kelebeğin iki kanadı birbirinin aynısı. Katlayınca iki yarısı üst üste gelen şekiller simetriktir!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.matematik.u05.n04.r01": {
+		"text": "Simetrik olanları bir kutuya, olmayanları öbür kutuya koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u05.n04.r02": {
+		"text": "Ortadan katlasak iki yarısı aynı mı olur? Şekilleri ayır.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u05.n04.r03.hedef": {
+		"text": "Simetrik olan şekli bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u05.n04.r03": {
+		"text": "Dinle ve bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u05.n04.r04.hedef": {
+		"text": "Simetrik olmayan şekli bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u05.n04.r04": {
+		"text": "Dinle ve bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u06.n01.intro": {
+		"text": "Sınıfta en çok hangi meyve seviliyor? Verileri çetele tablosuna işleyelim!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.matematik.u06.n01.r01.q1": {
+		"text": "Hangi meyve daha çok seçilmiş?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u06.n01.r01.q2": {
+		"text": "Elmayı seçenler muzu seçenlerden kaç fazla?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u06.n01.r01": {
+		"text": "Her meyveyi kendi satırına sürükle. Çetele tablosu oluşsun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u06.n01.r02.q1": {
+		"text": "Hangi oyuncak daha az?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u06.n01.r02.q2": {
+		"text": "Toplam kaç oyuncak var?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u06.n01.r02": {
+		"text": "Oyuncakları çeteleye işle.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u06.n01.r03.q1": {
+		"text": "Kaç kelebek var?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u06.n01.r03.q2": {
+		"text": "Hangisi daha çok?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u06.n01.r03": {
+		"text": "Sıklık tablosunu doldur. Her nesneyi kendi satırına koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u06.n02.intro": {
+		"text": "Verileri resimlerle de gösterebiliriz. Şekil grafiği kuralım!",
+		"speaker": "BILGE"
+	},
+	"vo.g2.matematik.u06.n02.r01.q1": {
+		"text": "Bahçede hangisi daha çok?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u06.n02.r01.q2": {
+		"text": "Çiçekler yapraklardan kaç fazla?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u06.n02.r01": {
+		"text": "Her çiçeği ve yaprağı kendi sütununa koy, şekil grafiği oluşsun.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u06.n02.r02.q1": {
+		"text": "En az hangi meyve var?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u06.n02.r02.q2": {
+		"text": "Toplam kaç meyve var?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u06.n02.r02": {
+		"text": "Meyveleri sütunlara yerleştir.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u06.n02.r03.q1": {
+		"text": "Kalemler silgilerden kaç fazla?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u06.n02.r03.q2": {
+		"text": "Kaç silgi var?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u06.n02.r03": {
+		"text": "Nokta grafiği kur: her nesne için bir nokta.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u06.n03.intro": {
+		"text": "Verileri göstermek için çetele, sıklık tablosu ya da şekil grafiği seçeriz. Hangisi ne işe yarar?",
+		"speaker": "BILGE"
+	},
+	"vo.mat2.veri_oyuncak": {
+		"text": "oyuncak",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.veri_meyve": {
+		"text": "meyve",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u06.n03.r01": {
+		"text": "Verileri analize hazırlayalım. Oyuncakları ve meyveleri ayrı kutulara koy.",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.veri_cetele": {
+		"text": "çetele tablosu",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u06.n03.r02.hedef": {
+		"text": "Arkadaşların seçtikçe her biri için bir çizgi çekeceğiz. Hangisini kullanırız?",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.veri_siklik": {
+		"text": "sıklık tablosu",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.veri_sekil_grafigi": {
+		"text": "şekil grafiği",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u06.n03.r02": {
+		"text": "Dinle ve bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u06.n03.r03.hedef": {
+		"text": "Her veri için bir resim koyup sütunlar oluşturacağız. Hangisini kullanırız?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u06.n03.r03": {
+		"text": "Dinle ve bul.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u06.n04.intro": {
+		"text": "Grafik kuruldu! Şimdi araştırma sorumuza cevap arayalım.",
+		"speaker": "BILGE"
+	},
+	"vo.g2.matematik.u06.n04.r01.q1": {
+		"text": "Sınıf en çok hangi hayvanı seviyor?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u06.n04.r01.q2": {
+		"text": "Balığı seçenler kuşu seçenlerden kaç fazla?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u06.n04.r01": {
+		"text": "Araştırma sorumuz: Sınıf en çok hangi hayvanı seviyor? Önce grafiği kur.",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u06.n04.r02.q1": {
+		"text": "Bahçede hangi böcek daha az?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u06.n04.r02.q2": {
+		"text": "Toplam kaç böcek saydık?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u06.n04.r02.q3": {
+		"text": "Kelebekler arılardan kaç fazla?",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.matematik.u06.n04.r02": {
+		"text": "Araştırma sorumuz: Bahçede hangi böcek daha az? Grafiği kur ve sorulara cevap ver.",
+		"speaker": "ANLATICI"
+	},
 	"vo.g1.hayat_bilgisi.u01.n01.intro": {
 		"text": "Okulumuzun kuralları hepimizi mutlu eder. Haydi, okulda nasıl davranacağımızı birlikte bulalım!",
 		"speaker": "BILGE"

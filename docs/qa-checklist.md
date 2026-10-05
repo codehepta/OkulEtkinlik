@@ -219,6 +219,19 @@ Ekran görüntüleri: `tools/ui_screenshots.gd` (Faz 3b kareleri). Gerçek cihaz
 1. `char.grid.gezgin`, `ui.grid.hedef`, `ui.grid.duvar` eklenince kodla çizilen piyon, bayrak ve blok yerine geçiyor ve kareden taşmıyor; gezginin yönü oyunun çizdiği okla anlaşılıyor.
 2. `vo.tahmin.*` ve `vo.saat.*` kayıtları geldikten sonra cihazın TTS sesi yerine kayıtlar çalıyor.
 
+## Faz 3d — 2. sınıf Matematik
+1. `grid` döndürme: referans şekil soluk gösteriliyor; döndürülmüş şekil zeminin herhangi bir yerine boyanınca kabul ediliyor, ayna görüntüsü kabul edilmiyor. Büyütmede her kare 2 × 2 boyanınca kabul ediliyor.
+2. Haritada 2. sınıf Matematik bölgesinde 6 ünite ve 42 durak açılıyor; her durağın girişini Bilge okuyor, tur yönergeleri hoparlörle tekrar dinlenebiliyor.
+3. 21–100 arası sayılar (rakam yazma, sayı adı eşleme, onluk/birlik) doğru seslendiriliyor; kayıt yoksa cihazın Türkçe sesi düzgün okuyor ("kırk yedi").
+4. Para turlarında 1 kuruş yok; "100 kuruş = 1 lira", "yarım lira = 50 kuruş" eşleşmeleri tek doğru cevaplı.
+5. Tahmin turlarında (bardak, metre çubuğu, kilogramlık ağırlık) tahmin cevap sayılmıyor; kontrol adımında her nesneye dokunuluyor, sonra yakın/uzak kararı geliyor.
+6. Veri turlarında grafikler iki kategoriyle kuruluyor; "en çok / en az / kaç fazla / toplam" soruları sesle soruluyor.
+7. Bir sınıf öğretmeni ünite içeriklerini programla karşılaştırıyor (özellikle MAT.2.3.2–2.3.3 yapı/model sahneleri ve MAT.2.1.10 zaman birimleri).
+
+## Asset geldiğinde (parti 040–045)
+1. `item.cisim.*`, `item.sekil.*`, `item.yapi.*`, `item.model.*` görselleri gelince kartlardaki yazılı yer tutucu kalkıyor; dönmüş ve küçük çeşitler aynı nesne olarak tanınıyor.
+2. `vo.sayi.21`–`100`, `vo.mat2.*` ve `vo.g2.matematik.*` kayıtları geldikten sonra cihaz sesi yerine kayıtlar çalıyor.
+
 # Faz 6 — Fen Bilimleri 3 (Keşif Laboratuvarı)
 
 Sekiz ünite, 20 durak (`content/g3/fen/u01`–`u08.json`). Görseller ve sesler gelene kadar her kart Türkçe adını yazan bir yer tutucu, her satır cihazın Türkçe sesi olarak görünür/duyulur.
