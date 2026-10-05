@@ -244,3 +244,14 @@ func test_place_and_store_decor() -> void:
 	assert_eq(_p.decor_layout(id), {"decor.test_a": Vector2(1.0, 0.0)})
 	_p.store_decor(id, "decor.test_a")
 	assert_eq(_p.decor_layout(id), {})
+
+## Faz 7b: çıktı kaydı tur sayısını ve zorluk ayarını taşır.
+func test_outcome_record_tracks_rounds_and_adjust() -> void:
+	var pid: String = _p.create_profile("a", "x", 1)
+	assert_eq(_p.outcome_record(pid, "TEST.1"), {}, "oynanmamış çıktı")
+	_p.record_node(pid, N1, _res([_rr(0), _rr(0), _rr(0)]))
+	var rec: Dictionary = _p.outcome_record(pid, "TEST.1")
+	assert_eq(int(rec["n"]), 3)
+	assert_eq(int(rec["adj"]), 1, "üç kusursuz tur zorluğu artırır")
+	rec["adj"] = -1
+	assert_eq(int(_p.outcome_record(pid, "TEST.1")["adj"]), 1, "dönen kayıt kopyadır")

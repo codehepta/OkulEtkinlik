@@ -11,7 +11,7 @@ const _SETTINGS_INTS: Array[String] = ["daily_limit_min"]
 ## Profildeki tamsayı alanlar.
 const _PROFILE_INTS: Array[String] = ["grade", "created_day"]
 const _NODE_INTS: Array[String] = ["best_stars", "plays"]
-const _OUTCOME_INTS: Array[String] = ["box", "due", "last_day"]
+const _OUTCOME_INTS: Array[String] = ["box", "due", "last_day", "n", "adj"]
 const _USAGE_INTS: Array[String] = ["day", "seconds", "unlocked_day"]
 
 static func default_settings() -> Dictionary:

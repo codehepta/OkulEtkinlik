@@ -359,3 +359,14 @@ Düzeltmeler yalnızca `content/*.json` dosyalarında yapılır; `ContentValidat
 2. Sahneler senaryo çerçevesinde (16:9) kırpılmadan görünüyor mu?
 3. Krokiler (3. sınıf 5. ünite): üç kroki aynı mahalle, yalnızca kırmızı yıldızın yeri farklı.
 4. Seslendirme: "yüz on iki", tarihler ve özel adlar (Zübeyde Hanım, Ali Rıza Efendi, Şemsi Efendi) doğru okunuyor.
+
+# Faz 7b — Uyarlanabilir zorluk
+
+Eşikler `scripts/core/adaptive_config.gd`'dedir. Simülasyon raporu: `godot --headless --path . -s res://tools/adaptive_report.gd`.
+
+## Cihazda gözlem
+1. Yeni bir profille Sayı Ormanı'nın ilk durağını hatasız oyna, durağı tekrar aç. Beklenen: aynı çıktının üç kusursuz turundan sonra turlar bir seviye zorlaşır (daha büyük sayılar, daha çok seçenek). Sıkıcı gelmemeli.
+2. Aynı durakta bilerek iki kez yanlış cevap ver. Beklenen: aynı durağın sonraki turu kolaylaşır; ceza hissi yok, yıldız kuralı değişmedi.
+3. Bir çocuğun 15–20 dakikalık oyununu izle: tur başına ilk denemede doğru cevap oranı kabaca 3'te 2 ile 10'da 9 arasında mı? Çok kolay ya da çok zorsa gözlemi yaz; düzeltme yalnızca yapılandırma dosyasında yapılır, ardından `tests/integration/test_adaptive_sim.gd` çalıştırılır.
+4. Veli paneli: tek kusursuz turdan sonra ustalık çubuğu %30 civarında (ham ustalık; zorluk kararı ayrı tahmin kullanır).
+

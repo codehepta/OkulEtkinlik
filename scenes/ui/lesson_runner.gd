@@ -40,6 +40,9 @@ var _requeued: Dictionary = {}
 var _results: Array[RoundResult] = []
 ## Atlanan (şablonu yüklenemeyen) turların _results içindeki sıraları.
 var _skipped: Dictionary = {}
+## Durak içi canlı ustalık kayıtları (çıktı kodu -> kayıt kopyası). Zorluk her turdan sonra
+## bunlarla güncellenir; kalıcı kayıt durak sonunda Progress'e aynı hesapla işlenir.
+var _live: Dictionary = {}
 var _game: MiniGame = null
 var _round_wrong: int = 0
 var _round_helped: bool = false
@@ -123,6 +126,7 @@ func _begin(profile_id: String, node_id: String, node: Dictionary, subject: Stri
 	_requeued.clear()
 	_results.clear()
 	_skipped.clear()
+	_live.clear()
 	_pos = -1
 	_time_up = false
 	_active = true
@@ -271,10 +275,10 @@ func _load_round(entry: Dictionary) -> void:
 	game.audio = audio
 	# Tekrar turları kendi düğümlerinin çıktılarını taşır.
 	var outcomes: PackedStringArray = PackedStringArray(rd.get("outcomes", _node.get("outcomes", [])))
-	var mastery: float = 0.0
+	var adj: int = Mastery.Config.COLD_ADJUST
 	if not outcomes.is_empty():
-		mastery = float(progress.outcome_mastery(_profile_id, outcomes[0]))
-	var diff: int = Mastery.played_difficulty(int(rd.get("difficulty", 1)), mastery)
+		adj = int(_live_record(outcomes[0]).get("adj", Mastery.Config.COLD_ADJUST))
+	var diff: int = Mastery.played_difficulty(int(rd.get("difficulty", 1)), adj)
 	var ctx: RoundContext = RoundContext.new()
 	ctx.rng.seed = _rng.randi()
 	ctx.voice_id = str(rd.get("voice", ""))
@@ -293,6 +297,11 @@ func _load_round(entry: Dictionary) -> void:
 	else:
 		game.setup(rd.get("params", {}), diff, ctx)
 		await _say(ctx.voice_id)
+
+func _live_record(code: String) -> Dictionary:
+	if not _live.has(code):
+		_live[code] = progress.outcome_record(_profile_id, code)
+	return _live[code]
 
 ## Düğüm kimliğindeki sınıf (g<N>.…); tanınmazsa 1.
 static func grade_of(node_id: String) -> int:
@@ -381,6 +390,9 @@ func _on_finished(result: RoundResult) -> void:
 	r.outcomes = result.outcomes
 	r.multi_step = result.multi_step
 	_results.append(r)
+	var value: float = Mastery.result_value(r.wrong + 1, r.helped)
+	for code: String in r.outcomes:
+		Mastery.apply_result(_live_record(code), value)
 	_after_round()
 
 func _after_round() -> void:

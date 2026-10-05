@@ -1,7 +1,8 @@
 class_name Leitner
 ## Leitner kartı sistemi: 5 kutu, günlük tekrar programı.
 
-const INTERVALS: Array[int] = [0, 1, 3, 7, 14]
+const Config := preload("res://scripts/core/adaptive_config.gd")
+const INTERVALS: Array[int] = Config.LEITNER_INTERVALS
 
 ## Kutuyu ilerletir. Maksimum kutu 5'tir.
 static func promote(box: int) -> int:

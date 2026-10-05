@@ -86,6 +86,13 @@ func outcome_mastery(profile_id: String, code: String) -> float:
 	var e: Variant = outs.get(code)
 	return float((e as Dictionary).get("mastery", 0.0)) if e is Dictionary else 0.0
 
+## Çıktının ustalık kaydının kopyası ({"mastery", "n", "adj", ...}); hiç oynanmadıysa {}.
+## LessonRunner durak içinde zorluğu bu kopya üzerinde canlı günceller.
+func outcome_record(profile_id: String, code: String) -> Dictionary:
+	var outs: Dictionary = _profile(profile_id).get("outcomes", {})
+	var e: Variant = outs.get(code)
+	return (e as Dictionary).duplicate() if e is Dictionary else {}
+
 func record_node(profile_id: String, node_id: String, results: Array[RoundResult]) -> Dictionary:
 	var out: Dictionary = {"stars": 0, "new_sticker": "", "unlocked": "", "new_decor": ""}
 	var p: Dictionary = _profile(profile_id)
@@ -255,7 +262,7 @@ func _apply_outcomes(p: Dictionary, results: Array[RoundResult], stars: int, lei
 				touched.append(code)
 				known[code] = outs.has(code)
 			var o: Dictionary = outs.get(code, {"mastery": 0.0, "box": 1, "due": 0})
-			o["mastery"] = Mastery.update(float(o.get("mastery", 0.0)), Mastery.result_value(r.wrong + 1, r.helped))
+			Mastery.apply_result(o, Mastery.result_value(r.wrong + 1, r.helped))
 			outs[code] = o
 			if r.helped:
 				helped_codes[code] = true

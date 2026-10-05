@@ -230,11 +230,28 @@ func test_tap_during_feedback_narration_is_ignored() -> void:
 	g.call("_debug_choose", right)
 	assert_eq(g.attempts, 2, "geri bildirim bitince giriş açılır")
 
-func test_difficulty_uses_mastery() -> void:
+func test_difficulty_uses_stored_adjust() -> void:
 	var outs: Dictionary = _progress._profile(_pid)["outcomes"]
-	outs["TEST.1"] = {"mastery": 0.9, "box": 1, "due": 0}
+	outs["TEST.1"] = {"mastery": 0.9, "box": 1, "due": 0, "n": 10, "adj": 1}
 	await _start()
 	assert_eq(_runner.current_game().difficulty, 2)
+
+func test_cold_outcome_plays_base_difficulty() -> void:
+	await _start()
+	assert_eq(_runner.current_game().difficulty, 1)
+
+## Faz 7b: zorluk durak içinde canlı güncellenir; zorlanan çocuk aynı durakta rahatlar.
+func test_difficulty_drops_within_node_after_struggle() -> void:
+	var outs: Dictionary = _progress._profile(_pid)["outcomes"]
+	outs["TEST.1"] = {"mastery": 0.8, "box": 1, "due": 0, "n": 10, "adj": 1}
+	await _start()
+	assert_eq(_runner.current_game().difficulty, 2)
+	await _wrong_answers(1)
+	await _win_round()
+	await wait_until(func() -> bool: return _runner.current_game() != null, 6.0)
+	assert_eq(_runner.current_game().difficulty, 1, "ikinci denemede bilinen tur zorluğu düşürür")
+	var rec: Dictionary = _progress.outcome_record(_pid, "TEST.1")
+	assert_eq(int(rec["n"]), 10, "kalıcı kayıt durak bitene kadar değişmez")
 
 # --- Ders ekranı düzeni: bölge arka planı, tur göstergesi, Bilge ---
 
