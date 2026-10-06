@@ -201,7 +201,7 @@ a round sticker badge with a thick white die-cut border, showing a cute sleepy c
 - **Açıklama:** Çıkartma: Düdük (g1.u05.n03, Afetleri tanıyorum)
 
 ```
-a round sticker badge with a thick white die-cut border, showing a cute orange emergency whistle on a string. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
+a round sticker badge with a thick white die-cut border, showing a classic orange sports whistle seen from the side (a round barrel body with a short square mouthpiece) hanging on a short string loop. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
 ```
 
 ### 15. `assets/images/stickers/hayat_bilgisi/geri_donusum.png`
@@ -581,7 +581,7 @@ a round sticker badge with a thick white die-cut border, showing a cute bubbling
 - **Açıklama:** Çıkartma: Robot (g3.u06.n02, Teknoloji ve günlük yaşam)
 
 ```
-a round sticker badge with a thick white die-cut border, showing a cute small friendly toy robot. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
+a round sticker badge with a thick white die-cut border, showing a cute small friendly toy robot that clearly looks like a robot: a boxy silver-grey body with colored round buttons, a square head with a short antenna and round button eyes, tube arms. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
 ```
 
 ### 53. `assets/images/stickers/hayat_bilgisi/baglama.png`
@@ -591,7 +591,7 @@ a round sticker badge with a thick white die-cut border, showing a cute small fr
 - **Açıklama:** Çıkartma: Bağlama (g3.u06.n03, Sanatçıları araştırıyorum)
 
 ```
-a round sticker badge with a thick white die-cut border, showing a cute small bağlama (Turkish long-necked lute). 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
+a round sticker badge with a thick white die-cut border, showing a cute small Turkish bağlama (saz): a small pear-shaped wooden body and a very long thin straight neck about twice as long as the body, with tuning pegs on the head. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
 ```
 
 

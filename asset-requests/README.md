@@ -64,7 +64,7 @@ Yerel üretilen görsellerin kaynağı (model, tohum, prompt): `docs/assets/imag
 | 080 | Hayat Bilgisi 1. sınıf: nesne, davranış kartı ve sahne görselleri (`item.*`, 165) | Orta | ✅ Tamam (yerel klein; harita, bayrak ve ay-yıldız Blender, 2026-10-05) |
 | 081 | Hayat Bilgisi 2. sınıf: nesne, davranış kartı ve sahne görselleri (`item.*`, 223) | Orta | ✅ Tamam (yerel klein, 2026-10-05) |
 | 082 | Hayat Bilgisi 3. sınıf: nesne, davranış kartı, sahne ve kroki görselleri (`item.*`, 182) | Orta | ✅ Tamam (yerel klein; krokiler Blender, 2026-10-05) |
-| 083 | Hayat Bilgisi durak çıkartmaları (`st.hayat_bilgisi.*`, 53) | Orta | ⏳ Bekliyor |
+| 083 | Hayat Bilgisi durak çıkartmaları (`st.hayat_bilgisi.*`, 53) | Orta | ✅ Tamam (yerel klein; harita çıkartması Blender, 2026-10-05) |
 | 084 | Hayat Bilgisi 1. sınıf seslendirmesi + nesne adları (148 satır) | Yüksek | ⏳ Bekliyor |
 | 085 | Hayat Bilgisi 2. sınıf seslendirmesi + nesne adları (208 satır) | Yüksek | ⏳ Bekliyor |
 | 086 | Hayat Bilgisi 3. sınıf seslendirmesi + nesne adları (183 satır) | Yüksek | ⏳ Bekliyor |
