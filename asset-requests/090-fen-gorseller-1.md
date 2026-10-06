@@ -105,7 +105,7 @@ a curious child kneeling and looking closely at a green leaf through a big round
 - **Açıklama:** Deney yapmak (ünite 1, "Bilgiye ulaşma yolları").
 
 ```
-a child wearing small safety goggles doing a simple experiment, pouring water from a clear jug into two clear cups on a little table. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a child wearing small safety goggles doing a simple experiment, pouring water from a clear jug into exactly TWO clear cups on a little table. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 3. `assets/images/items/fen/yol_kaynak.png`
@@ -155,7 +155,7 @@ an ice cube melting into a small puddle on a white plate, a soft sun shining abo
 - **Açıklama:** Mıknatıs ve ataç (ünite 1, "Bilgiye ulaşma yolları").
 
 ```
-a red and blue horseshoe magnet with several silver paper clips sticking to its ends. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a U-shaped horseshoe magnet standing upright with its open end at the top: two straight parallel arms joined by a curved bottom, one arm red and one arm blue, shiny silver tips at both arm ends, several small silver paper clips hanging from the two tips. It has no face and no eyes. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 8. `assets/images/items/fen/dinozor.png`
@@ -185,7 +185,7 @@ a cute deep sea anglerfish with a small glowing lure, soft dark blue water bubbl
 - **Açıklama:** Bitki bilimci Deniz Hanım (ünite 1, "Bilim insanları").
 
 ```
-a friendly woman botanist scientist with short dark hair and a white lab coat, holding a magnifying glass over a potted plant. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a friendly woman botanist scientist with short dark hair and a white lab coat, holding a magnifying glass over a potted plant. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 11. `assets/images/items/fen/bilim_kerem.png`
@@ -195,7 +195,7 @@ a friendly woman botanist scientist with short dark hair and a white lab coat, h
 - **Açıklama:** Gök bilimci Kerem Bey (ünite 1, "Bilim insanları").
 
 ```
-a friendly man astronomer scientist with glasses and a white lab coat, standing next to a small telescope on a tripod. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a friendly man astronomer scientist with glasses and a white lab coat, standing next to a small telescope on a tripod. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 12. `assets/images/items/fen/saksi_bitki.png`
@@ -215,7 +215,7 @@ a small green leafy plant in a terracotta pot. 3D claymation style, handcrafted 
 - **Açıklama:** Teleskop (ünite 1, "Bilim insanları").
 
 ```
-a small toy telescope on a three-legged stand. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a small toy telescope: one long straight pastel yellow tube pointing up at an angle, mounted on a slim three-legged wooden tripod stand. It has no face and no eyes. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 14. `assets/images/items/fen/keman.png`
@@ -235,7 +235,7 @@ a small brown violin with its bow. 3D claymation style, handcrafted plasticine t
 - **Açıklama:** Resim fırçası ve palet (ünite 1, "Bilim insanları").
 
 ```
-a wooden paint palette with soft color blobs and a paintbrush. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a wooden paint palette with soft color blobs and a paintbrush. It has no face and no eyes. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 16. `assets/images/items/fen/papatya.png`
@@ -375,7 +375,7 @@ a round microscope view circle showing many tiny cute rod-shaped and round bacte
 - **Açıklama:** Mikroskop (ünite 2, "Canlıları gruplayalım").
 
 ```
-a small white and turquoise school microscope. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a simple toy microscope in mint and white: a heavy round base, a curved arm, a flat stage with a glass slide and one straight eyepiece tube on top. It has no face and no eyes. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 30. `assets/images/items/fen/goz.png`
@@ -405,7 +405,7 @@ a single cute cartoon human ear, simple rounded shape. 3D claymation style, hand
 - **Açıklama:** Burun (ünite 2, "Duyularla algılama").
 
 ```
-a single cute cartoon human nose, simple rounded shape. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a single clay human nose shown alone in side view, soft peach skin tone, like a toy body-part model for learning the senses. It has no face and no eyes. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 33. `assets/images/items/fen/dil.png`
@@ -525,7 +525,7 @@ a mimosa pudica plant with feathery leaves, some leaflets folded closed. 3D clay
 - **Açıklama:** Kartal (ünite 2, "Duyularla algılama").
 
 ```
-a cute brown eagle with sharp but friendly eyes. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a majestic eagle with dark brown feathers, a white head, a strong hooked yellow beak and yellow talons, wings slightly spread. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 45. `assets/images/items/fen/kelebek_yumurta.png`
@@ -535,7 +535,7 @@ a cute brown eagle with sharp but friendly eyes. 3D claymation style, handcrafte
 - **Açıklama:** Kelebek yumurtası (ünite 2, "Yaşam döngüleri").
 
 ```
-a few tiny round pale yellow butterfly eggs on a green leaf. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a few tiny round pale yellow butterfly eggs on a green leaf. It has no face and no eyes. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 46. `assets/images/items/fen/tirtil.png`
@@ -555,7 +555,7 @@ a cute chubby green caterpillar on a leaf. 3D claymation style, handcrafted plas
 - **Açıklama:** Pupa (ünite 2, "Yaşam döngüleri").
 
 ```
-a green butterfly chrysalis hanging from a twig. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a green butterfly chrysalis hanging from a twig. It has no face and no eyes. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 48. `assets/images/items/fen/kurbaga_yumurta.png`
@@ -585,7 +585,7 @@ a cute small black tadpole with a round head and a tail. 3D claymation style, ha
 - **Açıklama:** Bacaklı iribaş (ünite 2, "Yaşam döngüleri").
 
 ```
-a tadpole with a tail and two small back legs. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a dark grey tadpole seen from the side: a round head-body, a long flat tail and two tiny back legs sprouting near the tail, no front legs. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 51. `assets/images/items/fen/kurbaga.png`
@@ -605,7 +605,7 @@ a cute green frog sitting. 3D claymation style, handcrafted plasticine toy look,
 - **Açıklama:** Tavuk yumurtası (ünite 2, "Yaşam döngüleri").
 
 ```
-a single brown hen egg in a little straw nest. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a single brown hen egg in a little straw nest. It has no face and no eyes. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 53. `assets/images/items/fen/civciv.png`
@@ -645,7 +645,7 @@ a plump white hen with a red comb. 3D claymation style, handcrafted plasticine t
 - **Açıklama:** Granit (ünite 3, "Kayaç, maden, mineral").
 
 ```
-a chunk of speckled pink, grey and black granite rock. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a chunk of speckled pink, grey and black granite rock. It has no face and no eyes. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 57. `assets/images/items/fen/mermer.png`
@@ -655,7 +655,7 @@ a chunk of speckled pink, grey and black granite rock. 3D claymation style, hand
 - **Açıklama:** Mermer (ünite 3, "Kayaç, maden, mineral").
 
 ```
-a smooth block of white marble with soft grey veins. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a smooth block of white marble with soft grey veins. It has no face and no eyes. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 58. `assets/images/items/fen/komur.png`
@@ -665,7 +665,7 @@ a smooth block of white marble with soft grey veins. 3D claymation style, handcr
 - **Açıklama:** Kömür (ünite 3, "Kayaç, maden, mineral").
 
 ```
-a small pile of shiny black coal lumps. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a small pile of shiny black coal lumps. It has no face and no eyes. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 59. `assets/images/items/fen/kuvars.png`
@@ -675,7 +675,7 @@ a small pile of shiny black coal lumps. 3D claymation style, handcrafted plastic
 - **Açıklama:** Kuvars (ünite 3, "Kayaç, maden, mineral").
 
 ```
-a cluster of clear pointed quartz crystals. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a cluster of clear pointed quartz crystals. It has no face and no eyes. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 60. `assets/images/items/fen/bakir.png`
@@ -685,7 +685,7 @@ a cluster of clear pointed quartz crystals. 3D claymation style, handcrafted pla
 - **Açıklama:** Bakır (ünite 3, "Kayaç, maden, mineral").
 
 ```
-a few shiny orange-brown copper nuggets. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a few shiny orange-brown copper nuggets. It has no face and no eyes. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 61. `assets/images/items/fen/soba.png`
@@ -695,7 +695,7 @@ a few shiny orange-brown copper nuggets. 3D claymation style, handcrafted plasti
 - **Açıklama:** Soba (ünite 3, "Kayaç, maden, mineral").
 
 ```
-a small round cast iron wood stove with a warm glow and a chimney pipe. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a small round cast iron wood stove with a warm glow and a chimney pipe. It has no face and no eyes. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 62. `assets/images/items/fen/heykel.png`
@@ -775,7 +775,7 @@ a fish fossil imprint on a flat stone being uncovered with a soft brush by a glo
 - **Açıklama:** Paleontolog (ünite 3, "Fosiller nasıl oluşur?").
 
 ```
-a friendly paleontologist scientist with a sun hat kneeling and brushing a fossil on a rock. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a friendly grown-up woman paleontologist, a tall adult with adult body proportions, wearing a sun hat and a khaki vest, kneeling and brushing a fossil on a rock. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 
