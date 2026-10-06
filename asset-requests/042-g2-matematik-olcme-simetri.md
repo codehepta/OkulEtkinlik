@@ -54,7 +54,7 @@ Stil blokları: `docs/assets/style-guide.md` → `STYLE_SPRITE` (nesneler), `STY
 - **Açıklama:** Su bardağı
 
 ```
-a clear glass full of water. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a clear transparent drinking glass filled to the top with plain light blue water, no face, no objects inside. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 2. `assets/images/items/sivi/kupa.png`
@@ -104,7 +104,7 @@ a long wooden measuring stick lying horizontally with plain tick marks only (no 
 - **Açıklama:** Bir kilogramlık ağırlık
 
 ```
-a small iron kitchen scale weight with a ring handle on top, plain, no numbers. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a classic dark grey cast-iron kitchen scale weight shaped like a short wide cylinder with a sloped top and a round ring handle on top, plain, no numbers, no face. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 7. `assets/images/items/olcu/santim_kup.png`
@@ -164,7 +164,7 @@ two children measure the same table with their hand spans; one child has big han
 - **Açıklama:** Durum sahnesi: Cetvelle ölçme
 
 ```
-two children measure the same table with the same ruler and smile at each other, dominant palette: leafy greens, warm orange and honey yellow accents. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark.
+two children measure the same small table with one long bright yellow ruler that lies clearly visible across the tabletop, both smiling at each other, dominant palette: leafy greens, warm orange and honey yellow accents. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 13. `assets/images/items/sahne/pazar_tartim.png`
@@ -174,7 +174,7 @@ two children measure the same table with the same ruler and smile at each other,
 - **Açıklama:** Durum sahnesi: Pazarda tartma
 
 ```
-a market stall where a seller weighs tomatoes on a scale while a child watches, dominant palette: leafy greens, warm orange and honey yellow accents. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark.
+a market stall where a grown-up seller weighs tomatoes on a scale while a child watches. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. dominant palette: leafy greens, warm orange and honey yellow accents. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 14. `assets/images/items/yol/ayak_izi.png`
