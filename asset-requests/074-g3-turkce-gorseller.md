@@ -104,7 +104,7 @@ a girl in a classroom sharing colored pencils from her pencil case with a sad lo
 - **Açıklama:** Hikâye görseli (g3.turkce.u01.n01)
 
 ```
-a boy standing next to a broken flower vase on the living room floor, his mother kneeling and talking to him kindly. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a boy standing next to a broken flower vase on the living room floor, his mother kneeling and talking to him kindly. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 3. `assets/images/items/durum/g3_otobus_yer.png`
@@ -114,7 +114,7 @@ a boy standing next to a broken flower vase on the living room floor, his mother
 - **Açıklama:** Durum görseli (g3.turkce.u01.n02)
 
 ```
-inside a city bus, a seated child looking up at an elderly woman holding a handrail. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+inside a city bus, an elderly grey-haired woman STANDING in the aisle and holding a handrail, a small child sitting on a seat right next to her and looking up at her. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 4. `assets/images/items/durum/g3_dusen_arkadas.png`
@@ -134,7 +134,7 @@ a schoolyard, a child sitting on the ground holding a knee while a friend leans 
 - **Açıklama:** Durum görseli (g3.turkce.u01.n02)
 
 ```
-a teacher talking in front of the class while a child writes in a small notebook at the desk. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a teacher talking in front of the class while a child writes in a small notebook at the desk. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 6. `assets/images/items/durum/g3_itfaiyeci.png`
@@ -144,7 +144,7 @@ a teacher talking in front of the class while a child writes in a small notebook
 - **Açıklama:** Durum görseli (g3.turkce.u01.n02)
 
 ```
-a friendly firefighter in uniform visiting a classroom, children sitting and raising hands. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a friendly firefighter in uniform visiting a classroom, children sitting and raising hands. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 7. `assets/images/items/hikaye/g3_kumbara.png`
@@ -154,7 +154,7 @@ a friendly firefighter in uniform visiting a classroom, children sitting and rai
 - **Açıklama:** Hikâye görseli (g3.turkce.u01.n03)
 
 ```
-a girl giving a piggy bank full of coins to her grandmother at a table where warm winter clothes are folded for a donation box. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a girl giving a piggy bank full of coins to her grandmother at a table where warm winter clothes are folded for a donation box. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 8. `assets/images/items/hikaye/g3_tek_top.png`
@@ -174,7 +174,7 @@ two children in a schoolyard both reaching for one red ball, looking at each oth
 - **Açıklama:** Hikâye görseli (g3.turkce.u01.n04)
 
 ```
-a grandfather and a granddaughter in a garden next to a cherry tree, a basket on the ground. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a grey-haired grandfather and his small young granddaughter in a garden next to a cherry tree full of small shiny red cherries, a wicker basket on the ground. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 10. `assets/images/items/hikaye/g3_mustafa_okul.png`
@@ -184,7 +184,7 @@ a grandfather and a granddaughter in a garden next to a cherry tree, a basket on
 - **Açıklama:** Hikâye görseli (g3.turkce.u02.n01)
 
 ```
-an old fashioned classroom from the early nineteen hundreds, a teacher with a kind face smiling at a bright young boy standing at the blackboard. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+an old fashioned classroom from the early nineteen hundreds with wooden desks, a kind grown-up male teacher in a dark suit smiling at a bright young schoolboy standing beside a completely empty clean blackboard. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 11. `assets/images/items/hikaye/g3_fidan_dikimi.png`
@@ -194,7 +194,7 @@ an old fashioned classroom from the early nineteen hundreds, a teacher with a ki
 - **Açıklama:** Hikâye görseli (g3.turkce.u02.n01)
 
 ```
-a group of school children with their teacher planting small tree saplings in a schoolyard, holding small shovels and a watering can. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a group of school children with their teacher planting small tree saplings in a schoolyard, holding small shovels and a watering can. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 12. `assets/images/items/durum/g3_toren_siir.png`
@@ -204,7 +204,7 @@ a group of school children with their teacher planting small tree saplings in a 
 - **Açıklama:** Durum görseli (g3.turkce.u02.n02)
 
 ```
-a child standing on a small school stage in front of classmates and parents, decorated with red and white ribbons. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+ONE child standing alone on a small school stage decorated with red and white ribbons, reciting a poem; classmates and parents sit on chairs in front of the stage, watching. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 13. `assets/images/items/durum/g3_istiklal_marsi.png`
@@ -214,7 +214,7 @@ a child standing on a small school stage in front of classmates and parents, dec
 - **Açıklama:** Durum görseli (g3.turkce.u02.n02)
 
 ```
-children standing in a straight line in a schoolyard facing a flag pole with a red flag, standing still respectfully. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+children standing in a straight line in a schoolyard facing a flag pole with a red flag, standing still respectfully. Any flag shown is the Turkish flag: red with a white crescent and a white five-pointed star. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 14. `assets/images/items/durum/g3_ataturk_belgesel.png`
@@ -224,7 +224,7 @@ children standing in a straight line in a schoolyard facing a flag pole with a r
 - **Açıklama:** Durum görseli (g3.turkce.u02.n02)
 
 ```
-a family sitting on a sofa watching television together in a cozy living room, warm light. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a family sitting on a sofa watching television together in a cozy living room, warm light. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 15. `assets/images/items/durum/g3_muze_rehber.png`
@@ -234,7 +234,7 @@ a family sitting on a sofa watching television together in a cozy living room, w
 - **Açıklama:** Durum görseli (g3.turkce.u02.n02)
 
 ```
-a museum hall with old objects in glass cases, a guide pointing at one case while children watch closely. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a museum hall with old objects in glass cases, a guide pointing at one case while children watch closely. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 16. `assets/images/items/hikaye/g3_seyit_onbasi.png`
@@ -244,7 +244,7 @@ a museum hall with old objects in glass cases, a guide pointing at one case whil
 - **Açıklama:** Hikâye görseli (g3.turkce.u02.n03)
 
 ```
-a strong kind soldier from long ago in a simple uniform standing proudly on a green hill by the sea at sunrise, calm and peaceful scene. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a strong kind soldier from long ago in a simple uniform standing proudly on a green hill by the sea at sunrise, calm and peaceful scene. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 17. `assets/images/items/hikaye/g3_23_nisan_hazirlik.png`
@@ -264,7 +264,7 @@ two children in a classroom cutting red and white paper to make decorations for 
 - **Açıklama:** Hikâye görseli (g3.turkce.u02.n04)
 
 ```
-a grandmother and a granddaughter sitting on a sofa looking at an old photo album together, warm lamp light. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a grandmother and a granddaughter sitting on a sofa looking at an old photo album together, warm lamp light. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 19. `assets/images/items/hikaye/g3_sincap_findik.png`
@@ -294,7 +294,7 @@ a cute smiling water droplet character rising from a blue sea toward a fluffy wh
 - **Açıklama:** Durum görseli (g3.turkce.u03.n02)
 
 ```
-a family picnic on green grass under trees, a child holding a small trash bag and talking to a friend. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a family picnic on green grass under trees: a small child stands holding a small white trash bag in one hand and talks to another child, their parents sit on a picnic blanket behind them. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 22. `assets/images/items/durum/g3_ari_belgesel.png`
@@ -314,7 +314,7 @@ a child watching a television screen showing bees on yellow flowers, sitting on 
 - **Açıklama:** Durum görseli (g3.turkce.u03.n02)
 
 ```
-a nature guide and children standing quietly on a forest path, small birds sitting on branches above. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a nature guide and children standing quietly on a forest path, small birds sitting on branches above. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 24. `assets/images/items/durum/g3_soz_kesme.png`
@@ -354,7 +354,7 @@ two children in warm coats, scarves and gloves in a snowy garden rolling a big s
 - **Açıklama:** Hikâye görseli (g3.turkce.u03.n04)
 
 ```
-a mother and a son on a sunny beach, the mother holding a sun hat, a small ice cream stand nearby. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a mother and a son on a sunny beach, the mother holding a sun hat, a small ice cream stand nearby. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 28. `assets/images/items/hikaye/g3_sozluk_ela.png`
@@ -384,7 +384,7 @@ a boy reading a big encyclopedia with a colorful illustration of a friendly oran
 - **Açıklama:** Durum görseli (g3.turkce.u04.n02)
 
 ```
-a friendly librarian behind a wooden desk in a quiet library, a child approaching with a curious face. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a friendly librarian behind a wooden desk in a quiet library, a child approaching with a curious face. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 31. `assets/images/items/durum/g3_gezegenler.png`
@@ -404,7 +404,7 @@ a child sitting on the floor with a small radio, a poster of colorful planets ar
 - **Açıklama:** Durum görseli (g3.turkce.u04.n02)
 
 ```
-a teacher showing a picture of a friendly long neck dinosaur to the class, a child writing in a notebook. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a grown-up teacher standing at the front of a classroom holding up a large flat picture card that shows a friendly long-neck dinosaur, children sitting at desks, one child writing in a notebook. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 33. `assets/images/items/durum/g3_penguen_tartisma.png`
@@ -424,7 +424,7 @@ two children sitting in a school library looking at a picture book with penguins
 - **Açıklama:** Hikâye görseli (g3.turkce.u04.n03)
 
 ```
-a boy and his grandfather looking together at an open thick dictionary on a wooden table, warm light. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a small young boy with brown hair, about seven years old, and his grey-haired grandfather looking together at an open thick dictionary on a wooden table, warm light. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 35. `assets/images/items/hikaye/g3_kutuphane_secim.png`
@@ -444,7 +444,7 @@ two children in a bright library standing in front of a shelf, one holding a boo
 - **Açıklama:** Hikâye görseli (g3.turkce.u04.n04)
 
 ```
-a grandfather and a grandson on a sofa reading an encyclopedia showing penguins swimming in icy water. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a grandfather and a grandson on a sofa reading an encyclopedia showing penguins swimming in icy water. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 37. `assets/images/items/hikaye/g3_resim_sergisi.png`
@@ -464,7 +464,7 @@ a girl proudly standing next to her colorful painting of a flower garden hanging
 - **Açıklama:** Hikâye görseli (g3.turkce.u05.n01)
 
 ```
-a girl playing a recorder flute on a small school stage, a smiling teacher watching from the side, children clapping in the audience. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a small girl playing a recorder flute on a small school stage, a tall grown-up teacher standing at the side of the stage watching and smiling, children in the audience clapping. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 39. `assets/images/items/durum/g3_yetenek_sunumu.png`
@@ -484,7 +484,7 @@ a child standing in front of the classroom showing a homemade clay toy to seated
 - **Açıklama:** Durum görseli (g3.turkce.u05.n02)
 
 ```
-a teacher folding a paper bird at a table while children watch closely holding colored paper. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a teacher folding a paper bird at a table while children watch closely holding colored paper. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 41. `assets/images/items/durum/g3_konser_duyuru.png`
@@ -494,7 +494,7 @@ a teacher folding a paper bird at a table while children watch closely holding c
 - **Açıklama:** Durum görseli (g3.turkce.u05.n02)
 
 ```
-a music teacher speaking to a class while a child writes in a small notebook with a pencil. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a grown-up music teacher standing in front of the class holding a small guitar and speaking, children sitting at desks, one child writing in a small notebook with a pencil. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 42. `assets/images/items/durum/g3_uzgun_ressam.png`
@@ -514,7 +514,7 @@ a sad child sitting at a desk looking at a drawing, a friend kindly leaning over
 - **Açıklama:** Hikâye görseli (g3.turkce.u05.n03)
 
 ```
-a cheerful classroom scene: one girl running fast in the schoolyard, a boy singing, another boy solving a puzzle at a desk. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a cheerful schoolyard scene with three children: one girl running fast, one boy standing and singing with his mouth wide open and little music notes floating around him, another boy solving a puzzle at a small desk. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 44. `assets/images/items/hikaye/g3_kukla_gosterisi.png`
@@ -544,7 +544,7 @@ a boy showing a girl how to bounce a basketball in a school gym, both smiling. 3
 - **Açıklama:** Hikâye görseli (g3.turkce.u05.n04)
 
 ```
-a grandfather sitting on a sofa holding a baglama, his grandson looking at the instrument with admiration. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a grandfather sitting on a sofa holding a baglama, his grandson looking at the instrument with admiration. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 47. `assets/images/items/hikaye/g3_yuzen_batan.png`
@@ -564,7 +564,7 @@ a child at a classroom table dropping objects into a clear bowl of water: a cork
 - **Açıklama:** Hikâye görseli (g3.turkce.u06.n01)
 
 ```
-a girl and her grandfather kneeling in a garden, looking at a small ant on a green leaf through a magnifying glass. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a girl and her grandfather kneeling in a garden, looking at a small ant on a green leaf through a magnifying glass. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 49. `assets/images/items/durum/g3_bilim_senligi.png`
@@ -574,7 +574,7 @@ a girl and her grandfather kneeling in a garden, looking at a small ant on a gre
 - **Açıklama:** Durum görseli (g3.turkce.u06.n02)
 
 ```
-a child explaining a simple experiment at a school science fair table to curious visitors. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a child explaining a simple experiment at a school science fair table to curious visitors. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 50. `assets/images/items/durum/g3_muze_hazirlik.png`
@@ -594,7 +594,7 @@ a child at home writing in a notebook at a desk, a small toy planet model and a 
 - **Açıklama:** Durum görseli (g3.turkce.u06.n02)
 
 ```
-a family sitting on a sofa watching a documentary about a scientist working in a laboratory on the television. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a family sitting on a sofa watching a documentary about a scientist working in a laboratory on the television. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 52. `assets/images/items/durum/g3_deney_adimlari.png`
@@ -604,7 +604,7 @@ a family sitting on a sofa watching a documentary about a scientist working in a
 - **Açıklama:** Durum görseli (g3.turkce.u06.n02)
 
 ```
-a teacher pointing at simple experiment tools on a table while a child writes notes in a notebook. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a grown-up teacher standing and pointing at simple experiment tools (cups of water, a magnifying glass, a funnel) on a table, a small child sitting at the table writing notes in a notebook. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 53. `assets/images/items/hikaye/g3_gokkusagi.png`
@@ -614,7 +614,7 @@ a teacher pointing at simple experiment tools on a table while a child writes no
 - **Açıklama:** Hikâye görseli (g3.turkce.u06.n03)
 
 ```
-a boy pointing at a bright rainbow in the sky after the rain, his mother standing beside him, wet grass and puddles. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a boy pointing at a bright rainbow in the sky after the rain, his mother standing beside him, wet grass and puddles. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 54. `assets/images/items/hikaye/g3_senlik_hazirlik.png`
@@ -634,7 +634,7 @@ two children in a classroom planning a science fair project, an empty plastic bo
 - **Açıklama:** Hikâye görseli (g3.turkce.u06.n04)
 
 ```
-a girl and her father at an open window at night looking at a half moon, the girl holding a drawing notebook. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a girl and her father at an open window at night looking at a half moon, the girl holding a drawing notebook. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 56. `assets/images/items/hikaye/g3_bayram_ziyareti.png`
@@ -644,7 +644,7 @@ a girl and her father at an open window at night looking at a half moon, the gir
 - **Açıklama:** Hikâye görseli (g3.turkce.u07.n01)
 
 ```
-a girl in new clothes kissing the hand of her grandmother in a cozy living room, the family smiling, a plate of candies on the table. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a girl in new clothes kissing the hand of her grandmother in a cozy living room, the family smiling, a plate of candies on the table. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 57. `assets/images/items/hikaye/g3_hali_tezgahi.png`
@@ -654,7 +654,7 @@ a girl in new clothes kissing the hand of her grandmother in a cozy living room,
 - **Açıklama:** Hikâye görseli (g3.turkce.u07.n01)
 
 ```
-a grandmother weaving a colorful patterned carpet on a wooden loom, her grandson watching beside her. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a grandmother weaving a colorful patterned carpet on a wooden loom, her grandson watching beside her. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 58. `assets/images/items/durum/g3_misafir_kapi.png`
@@ -664,7 +664,7 @@ a grandmother weaving a colorful patterned carpet on a wooden loom, her grandson
 - **Açıklama:** Durum görseli (g3.turkce.u07.n02)
 
 ```
-a child and mother opening the front door to smiling guests holding a box of sweets. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a child and mother opening the front door to smiling guests holding a box of sweets. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 59. `assets/images/items/durum/g3_bayram_telefonu.png`
@@ -684,7 +684,7 @@ a smiling child talking on a home phone, a festive living room with a plate of c
 - **Açıklama:** Durum görseli (g3.turkce.u07.n02)
 
 ```
-a teacher telling a funny story to children sitting in a circle on a classroom carpet, everyone listening and smiling. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a teacher telling a funny story to children sitting in a circle on a classroom carpet, everyone listening and smiling. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 61. `assets/images/items/durum/g3_ebru_atolyesi.png`
@@ -694,7 +694,7 @@ a teacher telling a funny story to children sitting in a circle on a classroom c
 - **Açıklama:** Durum görseli (g3.turkce.u07.n02)
 
 ```
-an art teacher in a marbling workshop showing a tray of water, brushes and paint jars while a child writes in a notebook. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+an art teacher in a marbling workshop showing a tray of water, brushes and paint jars while a child writes in a notebook. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 62. `assets/images/items/hikaye/g3_ye_kurkum.png`
@@ -704,7 +704,7 @@ an art teacher in a marbling workshop showing a tray of water, brushes and paint
 - **Açıklama:** Hikâye görseli (g3.turkce.u07.n03)
 
 ```
-Nasreddin Hodja in a big fur coat and white turban sitting at a festive feast table, playfully holding his sleeve toward a bowl of soup, guests looking surprised. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+Nasreddin Hodja in a big fur coat and white turban sitting at a festive feast table, playfully holding his sleeve toward a bowl of soup, guests looking surprised. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 63. `assets/images/items/hikaye/g3_lokum_ikrami.png`
@@ -714,7 +714,7 @@ Nasreddin Hodja in a big fur coat and white turban sitting at a festive feast ta
 - **Açıklama:** Hikâye görseli (g3.turkce.u07.n04)
 
 ```
-a girl politely offering a plate of Turkish delight to a smiling elderly neighbor woman sitting on a sofa, her mother beside them. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a small girl standing and politely holding out a plate of Turkish delight to a smiling grey-haired elderly neighbor woman sitting on a sofa, the girl's mother standing beside them. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 64. `assets/images/items/hikaye/g3_ebru_teknesi.png`
@@ -724,7 +724,7 @@ a girl politely offering a plate of Turkish delight to a smiling elderly neighbo
 - **Açıklama:** Hikâye görseli (g3.turkce.u07.n04)
 
 ```
-a girl and a kind old marbling artist beside a tray of water with swirling colorful paint patterns on its surface. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a small girl and a kind old grey-bearded marbling artist kneeling side by side beside a tray of water with swirling colorful paint patterns on its surface. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 65. `assets/images/items/hikaye/g3_oyun_hakki.png`
@@ -734,7 +734,7 @@ a girl and a kind old marbling artist beside a tray of water with swirling color
 - **Açıklama:** Hikâye görseli (g3.turkce.u08.n01)
 
 ```
-a happy boy playing on a swing in a sunny park with friends, his mother watching and smiling from a bench. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a happy boy playing on a swing in a sunny park with friends, his mother watching and smiling from a bench. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 66. `assets/images/items/hikaye/g3_doktor_muayene.png`
@@ -744,7 +744,7 @@ a happy boy playing on a swing in a sunny park with friends, his mother watching
 - **Açıklama:** Hikâye görseli (g3.turkce.u08.n01)
 
 ```
-a friendly doctor gently checking a girl with a stethoscope in a bright clinic room, her father sitting beside her. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a friendly doctor in a white coat gently listening to a small girl's chest with a stethoscope in a bright clinic room, her father in a casual green sweater sitting on a chair beside her. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 67. `assets/images/items/durum/g3_baskan_secimi.png`
@@ -774,7 +774,7 @@ a child at a school desk preparing a notebook, a toy red fire truck on the desk.
 - **Açıklama:** Durum görseli (g3.turkce.u08.n02)
 
 ```
-a friendly speaker talking to children sitting in a school hall, colorful paper hearts and hands decorating the wall. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a friendly grown-up speaker standing at the front of a school hall and talking to children who sit on rows of chairs facing her, colorful paper hearts and hands decorating the wall. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 70. `assets/images/items/hikaye/g3_okul_bahcesi.png`
@@ -794,7 +794,7 @@ children cleaning a school yard together, putting paper and plastic into two sep
 - **Açıklama:** Hikâye görseli (g3.turkce.u08.n03)
 
 ```
-a family working together at home: father cooking, mother folding laundry, older sister putting away dishes, a child setting the table and a cat eating from a bowl. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a family working together at home: father cooking, mother folding laundry, older sister putting away dishes, a child setting the table and a cat eating from a bowl. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 72. `assets/images/items/hikaye/g3_fidan_onerisi.png`
@@ -804,7 +804,7 @@ a family working together at home: father cooking, mother folding laundry, older
 - **Açıklama:** Hikâye görseli (g3.turkce.u08.n04)
 
 ```
-a boy talking excitedly to his teacher in an empty school yard, pointing at a bare patch of soil. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a small boy pointing at a bare patch of soil in an empty school yard and talking excitedly to his grown-up teacher who bends down to listen. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 ### 73. `assets/images/items/hikaye/g3_kutuphane_kitap.png`
@@ -814,7 +814,7 @@ a boy talking excitedly to his teacher in an empty school yard, pointing at a ba
 - **Açıklama:** Hikâye görseli (g3.turkce.u08.n04)
 
 ```
-a boy talking politely to a friendly librarian at the library desk, bookshelves behind them. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
+a boy talking politely to a friendly librarian at the library desk, bookshelves behind them. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. Every child in the image has small child proportions and is clearly much shorter than the grown-ups. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark. dominant palette: soft lavender purple, bubblegum pink and cream accents.
 ```
 
 
