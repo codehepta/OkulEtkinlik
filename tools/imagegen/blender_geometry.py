@@ -276,6 +276,33 @@ def sphere(name: str, mat: bpy.types.Material) -> None:
     dp.strength = 0.03
 
 
+def sphere_r(name: str, mat: bpy.types.Material, r: float) -> None:
+    bpy.ops.mesh.primitive_uv_sphere_add(segments=96, ring_count=48, radius=r)
+    ob = bpy.context.active_object
+    ob.name = name
+    ob.data.materials.append(mat)
+    bpy.ops.object.shade_smooth()
+    tex = bpy.data.textures.new(name + "_lump", "CLOUDS")
+    tex.noise_scale = 0.55
+    dp = ob.modifiers.new("lump", "DISPLACE")
+    dp.texture = tex
+    dp.strength = r * 0.03
+
+
+def bead(name: str, mat: bpy.types.Material, r: float) -> None:
+    """Küçük boncuk: delikli küre (ip deliği kameraya bakar)."""
+    sphere_r(name, mat, r)
+    bpy.ops.mesh.primitive_cylinder_add(vertices=32, radius=r * 0.22, depth=r * 3)
+    hole = bpy.context.active_object
+    hole.rotation_euler.x = math.radians(70)
+    ob = bpy.data.objects[name]
+    bo = ob.modifiers.new("delik", "BOOLEAN")
+    bo.object = hole
+    bo.operation = "DIFFERENCE"
+    hole.hide_render = True
+    hole.hide_viewport = True
+
+
 UNIT = 0.22  # taban-onluk birim küpü: birlik, onluk ve yüzlükte aynı boyut
 
 
@@ -360,11 +387,11 @@ def block(name: str, kind: str, dims: tuple, loc: tuple, color: str, axis: str =
            angle_limit=(kind == "cyl"))
 
 
-def dice(name: str, _mat: bpy.types.Material) -> None:
+def dice(name: str, _mat: bpy.types.Material, pip_color: str = "#E5534B") -> None:
     """Görünen yüzlerde doğru nokta dizilimi: üstte 1, önde 2, sağda 3 (karşı yüzler toplamı 7)."""
     e = 1.3
     block(name, "box", (e, e, e), (0, 0, 0), "#F7F4EE")
-    pip_mat = clay_material(name + "_nokta", srgb("#E5534B"))
+    pip_mat = clay_material(name + "_nokta", srgb(pip_color))
     d = e * 0.27
     faces = {
         (0, 0, 1): [(0, 0)],
@@ -643,11 +670,15 @@ ITEMS: dict[str, tuple[str, callable, str]] = {
     "item.blok.yuzluk": ("block", lambda n, m: unit_blocks(n, 10, 10, m, rot_z=-20), "#9FD0F2"),
     # 041 · cisim örneği zar, bloklardan yapılar, kâğıt kesme modeller (şekiller tarifle birebir)
     "item.nesne.zar": ("solid", dice, "#F7F4EE"),
+    "item.esya.zar": ("solid", lambda n, m: dice(n, m, "#2B2B33"), "#F7F4EE"),  # 031: beyaz, siyah noktalı
     "item.yapi.blok_kale": ("solid", toy_castle, "#F8DA74"),
     "item.yapi.robot": ("solid", toy_robot, "#F8DA74"),
     "item.yapi.tren": ("solid", toy_train, "#F8DA74"),
     "item.yapi.blok_ev": ("solid", toy_block_house, "#F8DA74"),
     **{k: ("flat", (lambda parts: lambda n, m: paper_model(n, parts))(v), "#FFFFFF") for k, v in MODELS_2D.items()},
+    # 062 · büyük/küçük simgeleri: aynı tuval ölçeği, kırpılmaz (boyut farkı anlamın kendisi)
+    "item.simge.buyuk": ("size_icon", lambda n, m: sphere_r(n, m, 1.05), "#3E8EDB"),
+    "item.simge.kucuk": ("size_icon", lambda n, m: bead(n, m, 0.26), "#3E8EDB"),
     # 080 · ulusal semboller (Bayrak Kanunu ölçüleriyle)
     "item.ulke.turk_bayragi": ("flag", turkish_flag, FLAG_RED),
     "item.simge.ay_yildiz": ("flat", crescent_badge, FLAG_RED),
@@ -661,6 +692,7 @@ CAMERAS = {
     "block": {"view": (0.25, -1.2, 1.35), "lens": 85, "distance": 8.6},
     "block_unit": {"view": (0.9, -1.6, 0.85), "lens": 85, "distance": 1.9},
     "flag": {"view": (0.15, -1.6, 0.28), "lens": 85, "distance": 10.5},
+    "size_icon": {"view": (0.3, -1.4, 0.9), "ortho": 2.4},
 }
 
 
@@ -687,7 +719,7 @@ def center_scene_objects() -> None:
     bpy.context.view_layer.update()
     dg = bpy.context.evaluated_depsgraph_get()
     pts = []
-    meshes = [o for o in bpy.context.scene.objects if o.type == "MESH"]
+    meshes = [o for o in bpy.context.scene.objects if o.type == "MESH" and not o.hide_render]
     for ob in meshes:
         ev = ob.evaluated_get(dg)
         pts += [ev.matrix_world @ Vector(c) for c in ev.bound_box]
