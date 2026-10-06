@@ -65,7 +65,7 @@ a child next to a big tub of water, holding a toy boat, a rubber duck, a small s
 - **Açıklama:** Kuş yemliği (ünite 1, "Bilgiye ulaşma yolları").
 
 ```
-a garden bird feeder with three small bowls of different seeds, a few small birds around it, a child watching from a window, dominant palette: turquoise, mint and clean white with small coral accents. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark.
+a garden bird feeder with exactly THREE small bowls of different seeds, a few small birds around it, a child watching from a window, dominant palette: turquoise, mint and clean white with small coral accents. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 4. `assets/images/items/fen/sahne/karisik_cop.png`
@@ -135,7 +135,7 @@ a ball resting still on green grass on a calm day, no wind, dominant palette: tu
 - **Açıklama:** Yavaş ve güçlü vuruş (ünite 5, "İtme ve çekme").
 
 ```
-two lanes on a field: in the top lane a ball kicked softly stopped close, in the bottom lane a ball kicked hard went far, two little flags marking where they stopped, dominant palette: turquoise, mint and clean white with small coral accents. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark.
+exactly TWO lanes on a field: in the top lane a ball kicked softly stopped close, in the bottom lane a ball kicked hard went far, exactly TWO little flags marking where the balls stopped, dominant palette: turquoise, mint and clean white with small coral accents. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 11. `assets/images/items/fen/sahne/islak_el.png`
@@ -175,7 +175,7 @@ a desk lamp plugged into a wall socket, the plug and cord clearly visible, domin
 - **Açıklama:** Altı lambası yanan ev (ünite 6, "Elektriği tasarruflu kullanalım").
 
 ```
-a cozy two-story house at dusk seen from outside with six lit windows, two of them showing empty rooms, dominant palette: turquoise, mint and clean white with small coral accents. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark.
+a cozy two-story house at dusk seen from outside with exactly SIX windows glowing with warm light, exactly TWO of those six showing empty rooms with nobody inside, dominant palette: turquoise, mint and clean white with small coral accents. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 15. `assets/images/items/fen/sahne/bosa_yanan_lamba.png`

@@ -123,7 +123,7 @@ a round sticker badge with a thick white die-cut border, showing a cute smiling 
 - **Açıklama:** Çıkartma: Mıknatıs (ünite 4, "Karışımları ayıralım").
 
 ```
-a round sticker badge with a thick white die-cut border, showing a red and blue horseshoe magnet. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
+a round sticker badge with a thick white die-cut border, showing a U-shaped horseshoe magnet with its open end at the top: two straight parallel arms joined by a curved bottom, one arm red and one arm blue, shiny silver tips. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
 ```
 
 ### 10. `assets/images/stickers/fen/geri_donusum_kutusu.png`
@@ -233,7 +233,7 @@ a round sticker badge with a thick white die-cut border, showing a cute round ho
 - **Açıklama:** Çıkartma: Kuş yuvası (ünite 8, "Yaşam alanlarını koruyalım").
 
 ```
-a round sticker badge with a thick white die-cut border, showing a small cozy bird nest with three pale blue eggs. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
+a round sticker badge with a thick white die-cut border, showing a small cozy bird nest with exactly THREE pale blue eggs. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
 ```
 
 

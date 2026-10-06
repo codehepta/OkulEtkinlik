@@ -490,7 +490,7 @@ a child pulling a wooden sled with a rope in the snow. 3D claymation style, hand
 - **Açıklama:** Halat çekmek (ünite 5, "İtme ve çekme").
 
 ```
-two children pulling a thick rope in a friendly tug of war. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+exactly TWO children pulling a thick rope in a friendly tug of war. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 42. `assets/images/items/fen/davranis_buyuge_soyle.png`
