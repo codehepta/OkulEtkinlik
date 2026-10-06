@@ -175,7 +175,7 @@ a terracotta pot filled with dark soil. It has no face and no eyes. 3D claymatio
 - **Açıklama:** Oyuncak top (ünite 7, "Bitki yetiştirelim").
 
 ```
-a colorful toy beach ball. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a colorful striped toy beach ball made of plastic panels. It has no face and no eyes. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 13. `assets/images/items/fen/sekerleme.png`
@@ -185,7 +185,7 @@ a colorful toy beach ball. 3D claymation style, handcrafted plasticine toy look,
 - **Açıklama:** Şekerleme (ünite 7, "Bitki yetiştirelim").
 
 ```
-a wrapped colorful candy. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a single wrapped candy in shiny colorful wrapping paper twisted at both ends. It has no face and no eyes. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 14. `assets/images/items/fen/celtik.png`
@@ -195,7 +195,7 @@ a wrapped colorful candy. 3D claymation style, handcrafted plasticine toy look, 
 - **Açıklama:** Çeltik (ünite 7, "Bitki yetiştirelim").
 
 ```
-rice plants growing in a flooded paddy patch of water. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a small patch of flooded rice paddy: rows of thin green rice plants standing in shallow water, drooping golden rice grain heads at their tops. It has no face and no eyes. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 15. `assets/images/items/fen/ekim_tohum_ek.png`
@@ -205,7 +205,7 @@ rice plants growing in a flooded paddy patch of water. 3D claymation style, hand
 - **Açıklama:** Tohumu ekmek (ünite 7, "Bitki yetiştirelim").
 
 ```
-a child's hand placing a bean seed into a small hole in a pot of soil. It has no face and no eyes. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a small child's hand pushing one brown bean seed into a small hole in the soil of a clay pot, nothing growing yet. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 16. `assets/images/items/fen/ekim_sula.png`
@@ -225,7 +225,7 @@ a child watering a pot of soil with a small watering can. It has no face and no 
 - **Açıklama:** Güneşli yere koymak (ünite 7, "Bitki yetiştirelim").
 
 ```
-a pot of soil placed on a sunny windowsill. It has no face and no eyes. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a small round claymation diorama vignette: a clay pot of soil standing on a windowsill inside a room, bright sunlight shining through the window onto the pot, a round sun visible in the sky outside. It has no face and no eyes. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 18. `assets/images/items/fen/ekim_filiz.png`
@@ -275,7 +275,7 @@ a cute brown forest owl on a branch (not Bilge, no hat, no scarf). 3D claymation
 - **Açıklama:** Solucan (ünite 8, "Kim nerede yaşar?").
 
 ```
-a cute pink earthworm. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a pink earthworm lying stretched along the ground: one long smooth ringed tube body with no legs and no antennae, gently curved like an S. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 23. `assets/images/items/fen/karinca.png`
@@ -285,7 +285,7 @@ a cute pink earthworm. 3D claymation style, handcrafted plasticine toy look, sof
 - **Açıklama:** Karınca (ünite 8, "Kim nerede yaşar?").
 
 ```
-a cute small red ant. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a small red ant seen from the side: three body parts (head, middle and round back part), exactly SIX thin legs, two bent antennae. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 24. `assets/images/items/fen/kostebek.png`
@@ -325,7 +325,7 @@ a green fern plant. 3D claymation style, handcrafted plasticine toy look, soft r
 - **Açıklama:** Kertenkele (ünite 8, "Kim nerede yaşar?").
 
 ```
-a cute small green lizard on a warm stone. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a small green lizard seen from the side on a warm flat stone: a long slim body, four short legs spread out to the sides and a long thin pointed tail. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 28. `assets/images/items/fen/deve.png`
@@ -425,7 +425,7 @@ a child hanging a small wooden birdhouse on a tree. 3D claymation style, handcra
 - **Açıklama:** Göle çöp atmak (ünite 8, "Yaşam alanlarını koruyalım").
 
 ```
-a plastic bag and a bottle floating in a lake, a sad fish nearby. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a small round claymation diorama vignette: a small blue lake with a plastic bag and a plastic bottle floating on the water, a fish under the surface looking sad, litter on the shore. It has no face and no eyes. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 38. `assets/images/items/fen/zarar_piknik_atesi.png`
@@ -435,7 +435,7 @@ a plastic bag and a bottle floating in a lake, a sad fish nearby. 3D claymation 
 - **Açıklama:** Ateşi söndürmeden gitmek (ünite 8, "Yaşam alanlarını koruyalım").
 
 ```
-an abandoned picnic campfire still smoking in a forest clearing. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a small round claymation diorama vignette: a forest clearing with an abandoned picnic campfire of logs still smoking and glowing, nobody around, trees close by. It has no face and no eyes. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 39. `assets/images/items/fen/zarar_dal_kirma.png`
@@ -445,7 +445,7 @@ an abandoned picnic campfire still smoking in a forest clearing. 3D claymation s
 - **Açıklama:** Ağacın dalını kırmak (ünite 8, "Yaşam alanlarını koruyalım").
 
 ```
-a broken branch hanging from a young tree. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a small round claymation diorama vignette: a young tree in a park with one of its branches snapped and hanging down, broken pieces of twig on the grass below. It has no face and no eyes. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 
