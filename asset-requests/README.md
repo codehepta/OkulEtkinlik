@@ -68,11 +68,11 @@ Yerel üretilen görsellerin kaynağı (model, tohum, prompt): `docs/assets/imag
 | 084 | Hayat Bilgisi 1. sınıf seslendirmesi + nesne adları (148 satır) | Yüksek | ⏳ Bekliyor |
 | 085 | Hayat Bilgisi 2. sınıf seslendirmesi + nesne adları (208 satır) | Yüksek | ⏳ Bekliyor |
 | 086 | Hayat Bilgisi 3. sınıf seslendirmesi + nesne adları (183 satır) | Yüksek | ⏳ Bekliyor |
-| 090 | Fen 3 görselleri, ünite 1–3 (69 `item.fen.*`: canlılar, duyular, yaşam döngüleri, kayaçlar, fosiller) | Orta | ⏳ Bekliyor |
-| 091 | Fen 3 görselleri, ünite 4–6 (64 `item.fen.*`: maddeler, karışımlar, atıklar, hareket, elektrikli araç gereç, davranış kartları) | Orta | ⏳ Bekliyor |
-| 092 | Fen 3 görselleri, ünite 7–8 (39 `item.fen.*`: toprak, bitki yetiştirme, yaşam alanları) | Orta | ⏳ Bekliyor |
-| 093 | Fen 3 durum sahneleri (19 `item.fen.sahne.*`, 16:9) | Orta | ⏳ Bekliyor |
-| 094 | Fen 3 çıkartmaları (20 `st.fen.*`) | Orta | ⏳ Bekliyor |
+| 090 | Fen 3 görselleri, ünite 1–3 (69 `item.fen.*`: canlılar, duyular, yaşam döngüleri, kayaçlar, fosiller) | Orta | ✅ Tamam (yerel klein; nesneler yüzsüz, sorunlu öğeler ikinci turda netleştirildi, 2026-10-06) |
+| 091 | Fen 3 görselleri, ünite 4–6 (64 `item.fen.*`: maddeler, karışımlar, atıklar, hareket, elektrikli araç gereç, davranış kartları) | Orta | ✅ Tamam (yerel klein; nesneler yüzsüz, sorunlu öğeler ikinci turda netleştirildi, 2026-10-06) |
+| 092 | Fen 3 görselleri, ünite 7–8 (39 `item.fen.*`: toprak, bitki yetiştirme, yaşam alanları) | Orta | ✅ Tamam (yerel klein; nesneler yüzsüz, sorunlu öğeler ikinci turda netleştirildi, 2026-10-06) |
+| 093 | Fen 3 durum sahneleri (19 `item.fen.sahne.*`, 16:9) | Orta | ✅ Tamam (yerel klein; nesneler yüzsüz, sorunlu öğeler ikinci turda netleştirildi, 2026-10-06) |
+| 094 | Fen 3 çıkartmaları (20 `st.fen.*`) | Orta | ✅ Tamam (yerel klein; nesneler yüzsüz, sorunlu öğeler ikinci turda netleştirildi, 2026-10-06) |
 | 095 | Fen 3 seslendirmesi, ünite 1–4 (77 satır) | Orta | ⏳ Bekliyor |
 | 096 | Fen 3 seslendirmesi, ünite 5–8 + ortak kart sesleri (164 satır) | Orta | ⏳ Bekliyor |
 
