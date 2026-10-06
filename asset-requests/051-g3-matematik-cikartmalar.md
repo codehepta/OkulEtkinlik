@@ -66,7 +66,7 @@ a round sticker badge with a thick white die-cut border, showing a flat square b
 - **Açıklama:** Çıkartma: üç katlı sayı evi (durak "Basamak değeri").
 
 ```
-a round sticker badge with a thick white die-cut border, showing a cute three storey clay house with three stacked colorful floors, each floor a different pastel color, round windows. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
+a round sticker badge with a thick white die-cut border, showing a cute three storey clay house with exactly THREE stacked colorful floors, each floor a different pastel color, round windows. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
 ```
 
 ### 3. `assets/images/stickers/matematik/merdiven.png`
@@ -76,7 +76,7 @@ a round sticker badge with a thick white die-cut border, showing a cute three st
 - **Açıklama:** Çıkartma: merdiven (durak "Hangisi büyük?").
 
 ```
-a round sticker badge with a thick white die-cut border, showing a small cheerful wooden clay ladder with five rounded rungs, warm honey color. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
+a round sticker badge with a thick white die-cut border, showing a small cheerful wooden clay ladder with exactly FIVE rounded rungs, warm honey color. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
 ```
 
 ### 4. `assets/images/stickers/matematik/hedef_tahtasi.png`
@@ -96,7 +96,7 @@ a round sticker badge with a thick white die-cut border, showing a round clay ta
 - **Açıklama:** Çıkartma: davul (durak "Ritmik sayalım").
 
 ```
-a round sticker badge with a thick white die-cut border, showing a small round toy drum with two drumsticks, red and cream clay. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
+a round sticker badge with a thick white die-cut border, showing a small round toy drum with exactly TWO drumsticks, red and cream clay. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
 ```
 
 ### 6. `assets/images/stickers/matematik/notalar.png`
@@ -126,7 +126,7 @@ a round sticker badge with a thick white die-cut border, showing a pair of cute 
 - **Açıklama:** Çıkartma: domino taşı (durak "Tek ve çift toplamlar").
 
 ```
-a round sticker badge with a thick white die-cut border, showing a single chunky domino tile in cream clay with round dark dots on both halves. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
+a round sticker badge with a thick white die-cut border, showing a single long rectangular domino tile in cream clay, twice as long as it is wide, a raised line across its middle dividing it into two square halves, exactly THREE round dark dots on one half and exactly TWO on the other. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
 ```
 
 ### 9. `assets/images/stickers/matematik/kup_kule.png`
@@ -246,7 +246,7 @@ a round sticker badge with a thick white die-cut border, showing a fluffy cloud 
 - **Açıklama:** Çıkartma: oyuncak tren (durak "İşlem adımları").
 
 ```
-a round sticker badge with a thick white die-cut border, showing a cute toy train engine with two small wagons, bright red and teal clay. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
+a round sticker badge with a thick white die-cut border, showing a cute toy train engine with exactly TWO small wagons, bright red and teal clay. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
 ```
 
 ### 21. `assets/images/stickers/matematik/carpim_cicegi.png`
@@ -256,7 +256,7 @@ a round sticker badge with a thick white die-cut border, showing a cute toy trai
 - **Açıklama:** Çıkartma: çarpım çiçeği (durak "Çarpma ve bölme").
 
 ```
-a round sticker badge with a thick white die-cut border, showing a cheerful flower with six round petals in alternating pastel colors and a smiling center. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
+a round sticker badge with a thick white die-cut border, showing a cheerful flower with exactly SIX round petals in alternating pastel colors and a smiling center. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
 ```
 
 ### 22. `assets/images/stickers/matematik/paylasim_sepeti.png`
@@ -336,7 +336,7 @@ a round sticker badge with a thick white die-cut border, showing a small piece o
 - **Açıklama:** Çıkartma: kalem kutusu (durak "Çizim araçları").
 
 ```
-a round sticker badge with a thick white die-cut border, showing a cute pencil cup holding three colorful pencils and a small ruler. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
+a round sticker badge with a thick white die-cut border, showing a cute pencil cup holding exactly THREE colorful pencils and a small ruler. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
 ```
 
 ### 30. `assets/images/stickers/matematik/olcu_bandi.png`
@@ -346,7 +346,7 @@ a round sticker badge with a thick white die-cut border, showing a cute pencil c
 - **Açıklama:** Çıkartma: şerit metre (durak "Çevre uzunluğu").
 
 ```
-a round sticker badge with a thick white die-cut border, showing a round tape measure with a little pulled out tape, yellow clay, tick marks without numbers. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
+a round sticker badge with a thick white die-cut border, showing a round yellow clay tape measure case with a long straight strip of tape pulled out sideways from it, the tape has tick marks without numbers. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
 ```
 
 ### 31. `assets/images/stickers/matematik/surahi.png`
@@ -406,7 +406,7 @@ a round sticker badge with a thick white die-cut border, showing a small cork bo
 - **Açıklama:** Çıkartma: çubuk grafik (durak "Araştırma sorusu").
 
 ```
-a round sticker badge with a thick white die-cut border, showing three chunky rounded clay bars of different heights side by side like a little bar chart, pastel colors, no axes and no numbers. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
+a round sticker badge with a thick white die-cut border, showing exactly THREE chunky rounded clay bars of different heights side by side like a little bar chart, pastel colors, no axes and no numbers. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
 ```
 
 
