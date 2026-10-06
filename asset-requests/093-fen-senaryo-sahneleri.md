@@ -155,7 +155,7 @@ a child in a bathroom with wet dripping hands looking at a hair dryer plugged ne
 - **Açıklama:** Yıpranmış kablo (ünite 6, "Elektriği güvenle kullanalım").
 
 ```
-a table lamp with a frayed cable, colored wires showing through the damaged part, dominant palette: turquoise, mint and clean white with small coral accents. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark.
+a table lamp on the floor with its long cable running along the floor to a wall socket; in the middle of the cable the outer cover is torn open and red and blue inner wires stick out of the damaged spot, clearly visible, dominant palette: turquoise, mint and clean white with small coral accents. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 13. `assets/images/items/fen/sahne/fis_cekme.png`
