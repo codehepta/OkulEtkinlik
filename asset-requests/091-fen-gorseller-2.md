@@ -160,7 +160,7 @@ a white kettle with soft white steam rising from its spout. It has no face and n
 - **Açıklama:** Balondaki hava (ünite 4, "Katı, sıvı, gaz").
 
 ```
-a small hand air pump connected by a short tube to a round red balloon that is being inflated, soft white air swirls inside the balloon. It has no face and no eyes. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a red balloon being blown up with a hand pump: on the left a small upright hand air pump with a T-shaped handle, a thin flexible tube running from the pump to the neck of a round red balloon on the right, the balloon half inflated. It has no face and no eyes. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 9. `assets/images/items/fen/lastik_bant.png`
