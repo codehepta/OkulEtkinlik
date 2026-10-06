@@ -148,7 +148,7 @@ a round sticker badge with a thick white die-cut border, showing a cheerful yell
 - **Açıklama:** Çıkartma (g2.turkce.u02)
 
 ```
-a round sticker badge with a thick white die-cut border, showing a small red flag with a white crescent and star waving on a short wooden pole, cute rounded shape. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
+a round sticker badge with a thick white die-cut border, showing a small red flag with a white crescent and star waving on a short wooden pole, cute rounded shape. It is the Turkish flag: red with a white crescent and a white five-pointed star, the crescent opening toward the star and both near the pole. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
 ```
 
 ### 7. `assets/images/stickers/turkce/g2_mikrofon.png`
@@ -178,7 +178,7 @@ a round sticker badge with a thick white die-cut border, showing an open storybo
 - **Açıklama:** Çıkartma (g2.turkce.u02)
 
 ```
-a round sticker badge with a thick white die-cut border, showing a bunch of three colorful party balloons tied with a ribbon. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
+a round sticker badge with a thick white die-cut border, showing a bunch of exactly THREE colorful party balloons tied with a ribbon. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
 ```
 
 ### 10. `assets/images/stickers/turkce/g2_defter.png`
@@ -248,7 +248,7 @@ a round sticker badge with a thick white die-cut border, showing a cute pink era
 - **Açıklama:** Çıkartma (g2.turkce.u04)
 
 ```
-a round sticker badge with a thick white die-cut border, showing a small stack of three colorful closed books, blank covers. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
+a round sticker badge with a thick white die-cut border, showing a small stack of exactly THREE colorful closed books, blank covers. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
 ```
 
 ### 17. `assets/images/stickers/turkce/g2_ayrac.png`
@@ -288,7 +288,7 @@ a round sticker badge with a thick white die-cut border, showing a cute round br
 - **Açıklama:** Çıkartma (g2.turkce.u04)
 
 ```
-a round sticker badge with a thick white die-cut border, showing a small round pencil cup with three colored pencils. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
+a round sticker badge with a thick white die-cut border, showing a small round pencil cup with exactly THREE colored pencils. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
 ```
 
 ### 21. `assets/images/stickers/turkce/g2_boya_paleti.png`
@@ -368,7 +368,7 @@ a round sticker badge with a thick white die-cut border, showing a single shiny 
 - **Açıklama:** Çıkartma (g2.turkce.u06)
 
 ```
-a round sticker badge with a thick white die-cut border, showing a round magnifying glass with a red handle. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
+a round sticker badge with a thick white die-cut border, showing a single magnifying glass: one round glass lens in a ring frame with exactly ONE straight red handle sticking out diagonally from its lower right side. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
 ```
 
 ### 29. `assets/images/stickers/turkce/g2_kagit_ucak.png`
@@ -548,7 +548,7 @@ a round sticker badge with a thick white die-cut border, showing a small soft pa
 - **Açıklama:** Çıkartma (g3.turkce.u02)
 
 ```
-a round sticker badge with a thick white die-cut border, showing a small red flag with a white crescent and star waving on a short wooden pole. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
+a round sticker badge with a thick white die-cut border, showing a small red flag with a white crescent and star waving on a short wooden pole. It is the Turkish flag: red with a white crescent and a white five-pointed star, the crescent opening toward the star and both near the pole. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
 ```
 
 ### 47. `assets/images/stickers/turkce/g3_mikrofon.png`
@@ -588,7 +588,7 @@ a round sticker badge with a thick white die-cut border, showing a single red ca
 - **Açıklama:** Çıkartma (g3.turkce.u02)
 
 ```
-a round sticker badge with a thick white die-cut border, showing two small crayons, one red and one white, lying side by side. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
+a round sticker badge with a thick white die-cut border, showing exactly TWO small crayons, one red and one white, lying side by side. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
 ```
 
 ### 51. `assets/images/stickers/turkce/g3_sincap.png`
@@ -818,7 +818,7 @@ a round sticker badge with a thick white die-cut border, showing a small plate o
 - **Açıklama:** Çıkartma (g3.turkce.u07)
 
 ```
-a round sticker badge with a thick white die-cut border, showing a large round white traditional turban hat. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
+a round sticker badge with a thick white die-cut border, showing a traditional Ottoman-style turban seen from the side: a tall rounded cream white wrapped fabric hat with clearly visible folds and a small red top, on a soft pastel blue round badge background. 3D claymation style icon, plasticine toy look, very simple bold silhouette readable at small size, soft rounded shapes, smooth matte clay, soft lighting, bright saturated candy colors, single object centered, isolated on a plain solid light grey background (#EEEEEE), no text, no letters, no numbers, no watermark.
 ```
 
 ### 74. `assets/images/stickers/turkce/g3_ebru_firca.png`

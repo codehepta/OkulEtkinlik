@@ -60,7 +60,7 @@ Yerel üretilen görsellerin kaynağı (model, tohum, prompt): `docs/assets/imag
 | 072 | Faz 4c: Türkçe kart sözcükleri seslendirmesi (217 satır, `vo.tk.*`) | Orta | ⏳ Bekliyor |
 | 073 | Faz 4c: 2. sınıf Türkçe hikâye ve durum görselleri | Orta | ✅ Tamam (yerel klein; 19 öğe netleştirilmiş tarifle yeniden üretildi, 2026-10-06) |
 | 074 | Faz 4c: 3. sınıf Türkçe hikâye ve durum görselleri | Orta | ✅ Tamam (yerel klein; 16 öğe netleştirilmiş tarifle yeniden üretildi, 2026-10-06) |
-| 075 | Faz 4c: 2–3. sınıf Türkçe çıkartmaları (80) | Orta | ⏳ Bekliyor |
+| 075 | Faz 4c: 2–3. sınıf Türkçe çıkartmaları (80) | Orta | ✅ Tamam (yerel klein, 2026-10-06) |
 | 080 | Hayat Bilgisi 1. sınıf: nesne, davranış kartı ve sahne görselleri (`item.*`, 165) | Orta | ✅ Tamam (yerel klein; harita, bayrak ve ay-yıldız Blender, 2026-10-05) |
 | 081 | Hayat Bilgisi 2. sınıf: nesne, davranış kartı ve sahne görselleri (`item.*`, 223) | Orta | ✅ Tamam (yerel klein, 2026-10-05) |
 | 082 | Hayat Bilgisi 3. sınıf: nesne, davranış kartı, sahne ve kroki görselleri (`item.*`, 182) | Orta | ✅ Tamam (yerel klein; krokiler Blender, 2026-10-05) |
