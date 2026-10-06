@@ -33,10 +33,10 @@ Yerel üretilen görsellerin kaynağı (model, tohum, prompt): `docs/assets/imag
 | 016 | Faz 4a Türkçe şablonları: sayfa çevirme sesi (`sfx.page_turn`) | Düşük | ⏳ Bekliyor |
 | 023 | Ağaç Evi süs eşyaları (12 `decor.*`) | Orta | ✅ Tamam (yerel klein, 2026-10-05) |
 | 024 | Faz 7a seslendirmesi: Tekrar Bulutu girişi + Ağaç Evi (3 satır) | Orta | ⏳ Bekliyor |
-| 030 | Faz 3c 1. sınıf Matematik: konum resimleri (`item.konum.*`, 11) + ölçme araçları (`item.olcu.*`, 5) | Orta | ⏳ Bekliyor |
-| 031 | Faz 3c: geometrik şekil çeşitleri (`item.sekil.*`, 8; temel üçgen/kare/dikdörtgen 040'ta), yapı parçaları (`item.yapi.*`, 4), yuvarlak/köşeli eşyalar (`item.esya.*`, 8) | Orta | 🟡 10/20 (8 şekil Blender'da; `yapi`/`esya` bekliyor) |
-| 032 | Faz 3c: yarışçı hayvanlar (4), küçük ayıcık ve top (2), hikâye sahneleri (`item.sahne.*`, 3) | Orta | ⏳ Bekliyor |
-| 033 | Faz 3c: 1. sınıf Matematik çıkartmaları (`st.matematik.g1_*`, 26) | Orta | ⏳ Bekliyor |
+| 030 | Faz 3c 1. sınıf Matematik: konum resimleri (`item.konum.*`, 11) + ölçme araçları (`item.olcu.*`, 5) | Orta | ✅ Tamam (konum seti Blender, ölçme araçları klein, 2026-10-06) |
+| 031 | Faz 3c: geometrik şekil çeşitleri (`item.sekil.*`, 8; temel üçgen/kare/dikdörtgen 040'ta), yapı parçaları (`item.yapi.*`, 4), yuvarlak/köşeli eşyalar (`item.esya.*`, 8) | Orta | ✅ Tamam (klein + Blender, 2026-10-06) |
+| 032 | Faz 3c: yarışçı hayvanlar (4), küçük ayıcık ve top (2), hikâye sahneleri (`item.sahne.*`, 3) | Orta | ✅ Tamam (sayma sahneleri sayımı doğrulanarak seçildi, 2026-10-06) |
+| 033 | Faz 3c: 1. sınıf Matematik çıkartmaları (`st.matematik.g1_*`, 26) | Orta | ✅ Tamam (çetele ve grafik Blender, 2026-10-06) |
 | 034 | Faz 3c: 1. sınıf Matematik seslendirmesi (187 satır) | Orta | ⏳ Bekliyor |
 | 040 | 2. sınıf Matematik: geometrik cisim ve şekiller (`item.cisim.*`, `item.sekil.*`; 1. ve 3. sınıfla ortak) | Yüksek | ✅ Tamam (Blender, 2026-10-05) |
 | 041 | 2. sınıf Matematik: cisim örneği nesneler, yapılar ve modeller (`item.nesne.*`, `item.yapi.*`, `item.model.*`) | Yüksek | ✅ Tamam (klein 7 + Blender 9, 2026-10-05) |
