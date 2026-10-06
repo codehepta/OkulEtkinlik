@@ -119,7 +119,7 @@ Bu şablonların henüz ünite içeriği yok (Faz 4b, 4c). Cihazda denemek için
 
 ## story (hikâye)
 1. Dinleme kipi: her sayfa açılınca okunur; hoparlör sayfayı yeniden okutur; ok sayfayı çevirir (sayfa çevirme sesi).
-2. Son sayfadan sonra soru seslendirilir; kitap düğmesi hikâyeye döndürür (yanlış sayılmaz).
+2. Son sayfadan sonra soru seslendirilir; kitap düğmesi hikâyeye döndürür (yanlış sayılmaz). Dinleme kipinde son sayfanın sesi bitince ok düğmesine dokunmadan da soru kendiliğinden gelir; sessiz okumada ok beklenir.
 3. Sayfa metni büyük ve okunaklı; uzun cümleler kutudan taşmıyor.
 4. **Sessiz okuma:** yönerge ve soru okunur ama sayfa okunmaz, hoparlör görünmez. İlk cevaptan sonra hikâyeye dönünce hoparlör çıkar. 2. yanlışta sorunun dayandığı sayfa kendiliğinden okunur.
 

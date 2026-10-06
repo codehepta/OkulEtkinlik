@@ -82,3 +82,19 @@ func test_story_debug_answer_paths() -> void:
 	g.call("_debug_answer", true)
 	await wait_for_signal(g.finished, 3.0)
 	assert_eq(answers, [false, true] as Array[bool])
+
+func test_story_listen_last_page_narration_moves_to_question() -> void:
+	var g: MiniGame = make("story", fixture("story_listen", FX)["params"] as Dictionary, 1)
+	await wait_seconds(1.5)
+	assert_eq(str(g.call("phase")), "read", "ilk sayfanın sesi bitince sayfa kendiliğinden çevrilmez")
+	assert_eq(int(g.call("page_index")), 0)
+	g.call("_debug_next")
+	var moved: bool = await wait_until(func() -> bool: return str(g.call("phase")) == "question", 3.0)
+	assert_true(moved, "son sayfanın sesi bitince soru kendiliğinden gelir")
+	assert_eq(fake.said.back(), "vo.genel.hazir_misin", "soru seslendirilir")
+	assert_eq(answers.size(), 0, "soruya geçmek cevap değildir")
+
+func test_story_silent_last_page_waits_for_arrow() -> void:
+	var g: MiniGame = make("story", fixture("story_silent", FX)["params"] as Dictionary, 1)
+	await wait_seconds(1.5)
+	assert_eq(str(g.call("phase")), "read", "sessiz okumada çocuk kendi hızında okur")
