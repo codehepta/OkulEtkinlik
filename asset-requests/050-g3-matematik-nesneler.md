@@ -209,7 +209,7 @@ a small camping tent by a lake with a tiny campfire, cozy evening. 3D claymation
 - **Açıklama:** bayram tatili (`label.item.olay.bayram_tatili`).
 
 ```
-a cute family of clay characters visiting grandparents, a table with a candy bowl, festive bunting without any symbols. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a cute family of clay characters visiting grandparents, a table with a candy bowl, festive bunting without any symbols. Every grown-up in the image has adult body proportions and is clearly an adult, not a child. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 15. `assets/images/items/olay/yaz_tatili.png`
@@ -469,7 +469,7 @@ a flat teal clay square exactly three grid squares on each side, drawn on light 
 - **Açıklama:** kitap ve karış (`label.item.cevre.kitap_karis`).
 
 ```
-a closed hardcover book lying flat, a cute child hand with fingers spread measuring the long side with a hand span, seen from above. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a closed plain hardcover book lying flat, seen from above, and one child's open hand lying on its cover with the thumb and the little finger stretched wide apart along the long side of the book, measuring it with a hand span; no ruler, no measuring tape, no numbers, no letters, no face. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 41. `assets/images/items/kap/bardak.png`
@@ -489,7 +489,7 @@ a clear drinking glass half filled with water, no labels and no writing on it. 3
 - **Açıklama:** çay bardağı (`label.item.kap.cay_bardagi`).
 
 ```
-a small tulip shaped Turkish tea glass with tea on a tiny saucer, no labels and no writing on it. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a small clear transparent Turkish tea glass with a thin waist (tulip shaped, narrow in the middle and wider at the top and bottom), filled with dark red-amber tea, standing on a tiny round saucer, no handle, no face, no labels and no writing on it. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 43. `assets/images/items/kap/fincan.png`
@@ -529,7 +529,7 @@ a cheerful plastic bucket with a handle, filled with water, no labels and no wri
 - **Açıklama:** küvet (`label.item.kap.kuvet`).
 
 ```
-a white bathtub full of water with a few soap bubbles, no labels and no writing on it. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, big expressive eyes where applicable, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
+a white bathtub full of light blue water with a few plain round white soap bubbles on top, no face, no eyes on anything, no labels and no writing on it. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 
 ### 47. `assets/images/items/kap/akvaryum.png`

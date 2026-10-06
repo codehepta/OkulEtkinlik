@@ -26,7 +26,7 @@ Yerel üretilen görsellerin kaynağı (model, tohum, prompt): `docs/assets/imag
 | 007 | 1. sınıf Matematik Faz 1 ünitesi seslendirmesi (32 satır, Faz 3c'de `u02` yollarına taşındı) + `vo.genel.takma_ad` | Yüksek | ⏳ Bekliyor |
 | 008 | 1. sınıf Matematik ünite 1 çıkartmaları (6) + `ui.replay` ikonu | Orta | ⏳ Bekliyor |
 | 009 | Oturum sonu: gece zemini (`ui.bg_night`) + "büyüğünü çağır" ikonu (`ui.call_grownup`) | Orta | ✅ Tamam (yerel klein, 2026-10-05) |
-| 010 | Faz 3 şablonları: 5 madeni para + 6 banknot (`item.para.*`), bütün pizza (`item.yiyecek.pizza`), saat kadranı (`ui.clock_face`). 1 kuruş iptal (Faz 3b) | Orta | ⏳ Bekliyor |
+| 010 | Faz 3 şablonları: 5 madeni para + 6 banknot (`item.para.*`), bütün pizza (`item.yiyecek.pizza`), saat kadranı (`ui.clock_face`). 1 kuruş iptal (Faz 3b) | Orta | ✅ Tamam (paralar, banknotlar, pizza, kadran Blender; 2026-10-06) |
 | 011 | Faz 3b `grid` şablonu: gezgin karakter (`char.grid.gezgin`), hedef bayrağı (`ui.grid.hedef`), duvar taşı (`ui.grid.duvar`) | Orta | ✅ Tamam (yerel klein, 2026-10-05) |
 | 012 | Faz 3b seslendirmesi: tahmin modu yönergeleri (`vo.tahmin.*`, 4) + 1. sınıf tam ve yarım saatler (`vo.saat.*`, 24) | Orta | ⏳ Bekliyor |
 | 015 | Faz 4a Türkçe şablonları: iz kalemi (`ui.trace_pencil`), sonraki sayfa oku (`ui.page_next`), kitap (`ui.book`) | Orta | ✅ Tamam (yerel klein, 2026-10-05) |
@@ -40,11 +40,11 @@ Yerel üretilen görsellerin kaynağı (model, tohum, prompt): `docs/assets/imag
 | 034 | Faz 3c: 1. sınıf Matematik seslendirmesi (187 satır) | Orta | ⏳ Bekliyor |
 | 040 | 2. sınıf Matematik: geometrik cisim ve şekiller (`item.cisim.*`, `item.sekil.*`; 1. ve 3. sınıfla ortak) | Yüksek | ✅ Tamam (Blender, 2026-10-05) |
 | 041 | 2. sınıf Matematik: cisim örneği nesneler, yapılar ve modeller (`item.nesne.*`, `item.yapi.*`, `item.model.*`) | Yüksek | ✅ Tamam (klein 7 + Blender 9, 2026-10-05) |
-| 042 | 2. sınıf Matematik: sıvı ve ölçme birimleri, sahneler, simetri nesneleri, kutu simgeleri | Orta | ⏳ Bekliyor |
+| 042 | 2. sınıf Matematik: sıvı ve ölçme birimleri, sahneler, simetri nesneleri, kutu simgeleri | Orta | ✅ Tamam (yerel klein; el karıştan türetildi, 2026-10-06) |
 | 043 | 2. sınıf Matematik durak çıkartmaları (42 `st.matematik.g2_*`) | Orta | ⏳ Bekliyor |
 | 044 | 2. sınıf Matematik: sayılar 21–100 + kart sesleri (`vo.sayi.*`, `vo.mat2.*`) | Yüksek | ⏳ Bekliyor |
 | 045 | 2. sınıf Matematik ünite 1–6 seslendirmesi (`vo.g2.matematik.*`) | Yüksek | ⏳ Bekliyor |
-| 050 | Faz 3e: 3. sınıf Matematik nesne görselleri (55: taban blokları, olay kartları, ölçü nesneleri, şekiller, araçlar, kaplar, simetri kartları) | Orta | 🟡 11/55 (taban blokları + şekiller Blender'da) |
+| 050 | Faz 3e: 3. sınıf Matematik nesne görselleri (55: taban blokları, olay kartları, ölçü nesneleri, şekiller, araçlar, kaplar, simetri kartları) | Orta | ✅ Tamam (klein + ızgara/simetri Blender, 2026-10-06) |
 | 051 | Faz 3e: 3. sınıf Matematik çıkartmaları (36 `st.matematik.*`) | Orta | ⏳ Bekliyor |
 | 052 | Faz 3e: 3. sınıf Matematik seslendirmesi 1, ünite 1–3 + sayılar, nesne adları, etiketler (230 satır) | Orta | ⏳ Bekliyor |
 | 053 | Faz 3e: 3. sınıf Matematik seslendirmesi 2, ünite 4–6 (103 satır) | Orta | ⏳ Bekliyor |
