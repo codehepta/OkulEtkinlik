@@ -1,0 +1,10 @@
+{
+ "ANLATICI": {
+  "ref": "tools/ttsgen/voices/anlatici.wav",
+  "ref_text": "Bir varmış, bir yokmuş. Küçük bir köyde, meraklı bir çocuk yaşarmış. Her sabah bahçeye çıkar, çiçekleri sayarmış."
+ },
+ "BILGE": {
+  "ref": "tools/ttsgen/voices/bilge.wav",
+  "ref_text": "Merhaba arkadaşlar! Ben Bilge. Bugün birlikte sayıları ve harfleri öğreneceğiz."
+ }
+}
