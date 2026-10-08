@@ -32,3 +32,20 @@ Geçici seçim (2026-10-07): sahip parçaları daha sonra yeniden değerlendirec
 | `music/hayat_kasabasi.ogg` | Village, 2018 | Komiku (Loyalty Freak Music) | [OpenGameArt](https://opengameart.org/node/83183) | CC0 1.0 |
 | `music/kesif_laboratuvari.ogg` | Sci-fi Puzzle In-Game 2 | MintoDog | [OpenGameArt](https://opengameart.org/content/sci-fi-puzzle-in-game-2) | CC0 1.0 |
 | `music/agac_ev.ogg` | Bluebonnet (looped) | Kistol | [OpenGameArt](https://opengameart.org/content/bluebonnet) | CC0 1.0 |
+
+## Ses kaynakları (`voice/g1/turkce/kaynak/`)
+
+"Sesin sahibi kim?" durağındaki hayvan ve nesne sesleri gerçek kayıtlardır (seslendirme değil). -18 LUFS'a eşitlenip mono Ogg Vorbis olarak kodlandı.
+
+| Dosya | Kayıt | Kaydeden | Kaynak | Lisans |
+|---|---|---|---|---|
+| `voice/g1/turkce/kaynak/kedi.ogg` | Meow Cat #2 | Joseph SARDIN | [BigSoundBank](https://bigsoundbank.com/meow-cat-2-s1890.html) | CC0 1.0 |
+| `voice/g1/turkce/kaynak/kus.ogg` | Robin #4 | Joseph SARDIN | [BigSoundBank](https://bigsoundbank.com/robin-4-s1670.html) | CC0 1.0 |
+| `voice/g1/turkce/kaynak/inek.ogg` | Cow moos #3 | Joseph SARDIN | [BigSoundBank](https://bigsoundbank.com/cow-moos-3-s2383.html) | CC0 1.0 |
+| `voice/g1/turkce/kaynak/saat.ogg` | Tic Tac Mechanical Alarm Clock #3 (ilk 4 sn) | Joseph SARDIN | [BigSoundBank](https://bigsoundbank.com/tic-tac-mechanical-alarm-clock-3-s2656.html) | CC0 1.0 |
+| `voice/g1/turkce/kaynak/horoz.ogg` | Rooster Song | DenisChardonnet | [BigSoundBank](https://bigsoundbank.com/song-of-rooster-s0283.html) | CC0 1.0 |
+| `voice/g1/turkce/kaynak/davul.ogg` | Bass Tom #1 (tek vuruş ×3) | Joseph SARDIN | [BigSoundBank](https://bigsoundbank.com/bass-tom-1-s2338.html) | CC0 1.0 |
+
+## Seslendirme (`voice/`)
+
+Yerel VoxCPM2 (openbmb/VoxCPM2, Apache-2.0) ile üretildi; seçim ve onay sahibindir. Satır başına kayıt: `docs/assets/voice-provenance.jsonl`. Referans sesler: `tools/ttsgen/voices/`.
