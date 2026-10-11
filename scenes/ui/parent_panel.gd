@@ -850,10 +850,15 @@ func _scroll_card(parent: Control) -> VBoxContainer:
 	scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
 	outer.add_child(scroll)
+	# Sağ boşluk: satır sonundaki kod kaydırma çubuğuna yapışmasın.
+	var pad: MarginContainer = MarginContainer.new()
+	pad.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	pad.add_theme_constant_override("margin_right", 36)
+	scroll.add_child(pad)
 	var rows: VBoxContainer = VBoxContainer.new()
 	rows.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	rows.add_theme_constant_override("separation", 28)
-	scroll.add_child(rows)
+	pad.add_child(rows)
 	rows.set_meta("header", header)
 	return rows
 
