@@ -10,6 +10,7 @@ Bu rehber, Nano Banana (Gemini) ile üretilen tüm görsellerin aynı elden çı
 4. **En-boy oranı** her istek dosyasında belirtilir. Önerilen değerler: sprite 1:1, arka plan 16:9, dikey kart 3:4.
 5. **Çözünürlük:** sprite'lar en az 1024 px. Oyuna girmeden önce sprite'ların uzun kenarı 1024 px'e, arka planlarınki 2048 px'e küçültülebilir.
 6. **Küçük partiler.** Önce 2–3 görsel üretilir, stil kontrol edilir, ardından devam edilir.
+7. **Cansız nesnelerde yüz yok** (sahip kararı, 2026-10-12). Göz ve ağız yalnız insan ve hayvanlarda olur. Taş, bulut, eşya, yiyecek, araç ya da bina yüzlü çizilmez; özellikle canlı/cansız ayrımı öğreten turlarda bu kafa karıştırır. `STYLE_SPRITE` artık göz cümlesini içermiyor; cansız öğe promptlarına ayrıca "It has no face, no eyes and no mouth." eklenir (yalnız "no face" demek, göz isteyen bir stil cümlesiyle birlikte işe yaramadı). Daha önce üretilmiş yüzlü cansızlar `docs/assets/yuzlu-cansizlar.md` listesindedir; yalnız karışıklık yarattıklarında yenilenir.
 
 ## 2. Sabit stil blokları
 
@@ -18,8 +19,7 @@ Bu rehber, Nano Banana (Gemini) ile üretilen tüm görsellerin aynı elden çı
 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes,
 subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting,
 gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly
-design, big expressive eyes where applicable, single subject centered and fully
-visible, isolated on a plain solid light grey background (#EEEEEE), no ground
+design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground
 shadow, no props unless described, no text, no letters, no numbers, no watermark.
 ```
 

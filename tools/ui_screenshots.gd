@@ -26,12 +26,12 @@ func _run() -> void:
 	DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path("user://ui_shots"))
 	save.load_or_create()
 	_app = root.get_node("AppState")
-	_app.splash_delay = 999.0
 	var narrator: Node = root.get_node("Narrator")
 	narrator.tts_voice_lookup = func() -> Array: return []
 	narrator.duration_scale = 0.05
 
 	await _show("splash", {})
+	await _frames(120)  # giriş animasyonu bitsin (düğme ve Bilge tam görünür)
 	await _shot("01_splash")
 	await _show("profile_create", {})
 	await _shot("02_profile_create_avatar")
@@ -153,6 +153,12 @@ func _run() -> void:
 	await _show("parent_panel", {})
 	await _shot("14j_parent_panel_four_profiles")
 	print("ui_screenshots: %d görüntü -> %s" % [_shots, ProjectSettings.globalize_path(OUT_DIR)])
+	var missing: PackedStringArray = []
+	for k: String in root.get_node("AssetRegistry").missing_keys():
+		if not k.begins_with("vo.") and not k.begins_with("sfx.") and not k.begins_with("music."):
+			missing.append(k)
+	missing.sort()
+	print("ui_screenshots: eksik görsel %d: %s" % [missing.size(), ", ".join(missing)])
 	quit(0)
 
 ## Ağaç evi: 30 yıldızla üç süs açık, biri odada; sıradaki süsün kilidi rafta.
@@ -278,10 +284,10 @@ const FAZ3_SHOTS: Array = [
 	["41_pizza_split", "fraction_pizza", {"ask": "split", "parts": 4}, 3, 0],
 	["42_pizza_select", "fraction_pizza", {"ask": "select", "parts": 8, "take": 3}, 1, 0],
 	# Faz 5a şablonları
-	["60_sort_bins_two", "sort_bins", {"bins": [{"label": {"type": "item", "value": "item.simge.canli"}, "shape": "heart", "color": "green"}, {"label": {"type": "item", "value": "item.simge.cansiz"}, "shape": "square", "color": "blue"}], "items": [{"token": {"type": "item", "value": "item.hayvan.kedi"}, "bin": 0}, {"token": {"type": "item", "value": "item.esya.top"}, "bin": 1}, {"token": {"type": "item", "value": "item.doga.cicek"}, "bin": 0}, {"token": {"type": "item", "value": "item.esya.kalem"}, "bin": 1}, {"token": {"type": "item", "value": "item.hayvan.kus"}, "bin": 0}, {"token": {"type": "item", "value": "item.esya.kasik"}, "bin": 1}]}, 1, 0],
+	["60_sort_bins_two", "sort_bins", {"bins": [{"label": {"type": "item", "value": "item.simge.canli"}, "shape": "heart", "color": "green"}, {"label": {"type": "item", "value": "item.simge.cansiz"}, "shape": "square", "color": "blue"}], "items": [{"token": {"type": "item", "value": "item.hayvan.kedi"}, "bin": 0}, {"token": {"type": "item", "value": "item.oyuncak.top"}, "bin": 1}, {"token": {"type": "item", "value": "item.doga.cicek"}, "bin": 0}, {"token": {"type": "item", "value": "item.esya.firca"}, "bin": 1}, {"token": {"type": "item", "value": "item.hayvan.kus"}, "bin": 0}, {"token": {"type": "item", "value": "item.esya.kasik"}, "bin": 1}]}, 1, 0],
 	["61_sort_bins_three_hint1", "sort_bins", {"bins": [{"label": {"type": "number", "value": 1}, "shape": "circle"}, {"label": {"type": "number", "value": 2}, "shape": "triangle"}, {"label": {"type": "number", "value": 3}, "shape": "star"}], "items": [{"token": {"type": "text", "value": "|"}, "bin": 0}, {"token": {"type": "text", "value": "||"}, "bin": 1}, {"token": {"type": "text", "value": "|||"}, "bin": 2}, {"token": {"type": "number", "value": 1}, "bin": 0}, {"token": {"type": "number", "value": 2}, "bin": 1}, {"token": {"type": "number", "value": 3}, "bin": 2}, {"token": {"type": "item", "value": "item.meyve.elma"}, "bin": 0}, {"token": {"type": "item", "value": "item.meyve.armut"}, "bin": 1}, {"token": {"type": "item", "value": "item.meyve.muz"}, "bin": 2}]}, 3, 1],
-	["62_scenario", "scenario", {"scene": "item.sahne.yaya_gecidi", "choices": [{"token": {"type": "item", "value": "item.davranis.bekle"}, "correct": true}, {"token": {"type": "item", "value": "item.davranis.kos"}, "correct": false}, {"token": {"type": "item", "value": "item.davranis.top"}, "correct": false}]}, 2, 0],
-	["63_scenario_hint1", "scenario", {"scene": "item.sahne.yaya_gecidi", "choices": [{"token": {"type": "item", "value": "item.davranis.bekle"}, "correct": true}, {"token": {"type": "item", "value": "item.davranis.kos"}, "correct": false}, {"token": {"type": "item", "value": "item.davranis.top"}, "correct": false}]}, 3, 1],
+	["62_scenario", "scenario", {"scene": "item.trafik.yaya_gecidi", "choices": [{"token": {"type": "item", "value": "item.trafik.kaldirimda_bekle"}, "correct": true}, {"token": {"type": "item", "value": "item.trafik.kosarak_gec"}, "correct": false}, {"token": {"type": "item", "value": "item.trafik.top_pesinden"}, "correct": false}]}, 2, 0],
+	["63_scenario_hint1", "scenario", {"scene": "item.trafik.yaya_gecidi", "choices": [{"token": {"type": "item", "value": "item.trafik.kaldirimda_bekle"}, "correct": true}, {"token": {"type": "item", "value": "item.trafik.kosarak_gec"}, "correct": false}, {"token": {"type": "item", "value": "item.trafik.top_pesinden"}, "correct": false}]}, 3, 1],
 ]
 
 ## Faz 3b kareleri (80+; 44–55 Faz 4a, 60–63 Faz 5a, 70–71 Faz 7a): [ad, şablon, params, zorluk, ipucu, sınıf, eylemler ([metot, argümanlar])].
@@ -293,7 +299,7 @@ const FAZ3B_SHOTS: Array = [
 		[["_debug_estimate", [1]], ["_debug_tap_item", [0]], ["_debug_tap_item", [1]], ["_debug_tap_item", [2]]]],
 	["84_count_estimate_judge_hint1", "count_choose", {"item": "item.meyve.elma", "count": 7, "estimates": [3, 6, 12]}, 1, 1, 1,
 		[["_debug_estimate", [1]], ["_fast_forward", []]]],
-	["85_balance_estimate_weigh", "balance", {"mode": "scale", "ask": "estimate", "item": "item.oyuncak.ayi", "value": 7, "estimates": [3, 6, 12]}, 1, 0, 1,
+	["85_balance_estimate_weigh", "balance", {"mode": "scale", "ask": "estimate", "item": "item.oyuncak.ayicik", "value": 7, "estimates": [3, 6, 12]}, 1, 0, 1,
 		[["_debug_estimate", [1]], ["_debug_add_unit", []], ["_debug_add_unit", []], ["_debug_add_unit", []]]],
 	["86_balance_estimate_calc", "balance", {"mode": "scale", "ask": "estimate", "left": [28, 31], "right": [null], "estimates": [40, 60, 80], "choices": [58, 59, 60]}, 1, 0, 2,
 		[["_debug_estimate", [1]]]],

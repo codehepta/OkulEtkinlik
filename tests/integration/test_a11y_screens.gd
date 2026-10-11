@@ -48,7 +48,6 @@ func before_each() -> void:
 	_app.scene_root = _root
 	_app.stickers_path = STICKERS
 	_app.anim_scale = 0.0
-	_app.splash_delay = 999.0
 
 func after_each() -> void:
 	for f: String in DirAccess.get_files_at(SAVE_DIR):

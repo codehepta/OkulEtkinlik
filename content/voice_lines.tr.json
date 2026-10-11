@@ -3,6 +3,10 @@
 		"text": "Merhaba! Ben Bilge. Bilgi Adası'na hoş geldin!",
 		"speaker": "BILGE"
 	},
+	"vo.genel.basla_dokun": {
+		"text": "Hazırsan düğmeye dokun, adaya gidelim!",
+		"speaker": "BILGE"
+	},
 	"vo.genel.profil_sec": {
 		"text": "Kim oynuyor? Resmine dokun!",
 		"speaker": "BILGE"

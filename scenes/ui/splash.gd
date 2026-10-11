@@ -1,23 +1,30 @@
 extends Control
-## Açılış ekranı: ada görseli zemin, kil plakette oyun adı, sevinçli Bilge + hoş geldin sesi;
-## ardından profil yoksa ProfileCreate, varsa ProfileSelect.
+## Açılış ekranı: ada görseli zemin, kil plakette oyun adı, el sallayan Bilge + hoş geldin sesi
+## ve büyük "Adaya Gidelim!" düğmesi. Kendiliğinden geçmez: çocuk düğmeye dokununca profil yoksa
+## ProfileCreate, varsa ProfileSelect açılır. Selamdan sonra Bilge düğmeye dokunmasını söyler.
 ## Giriş animasyonu yumuşaktır (yanıp sönme yok); "hareketi azalt" açıkken her şey son hâliyle gelir.
 
 const ISLAND_KEY: String = "map.island"
-## Sevinçli Bilge için denenecek pozlar (sırayla); hiçbiri yoksa karakter sayfasından önden görünüş.
-const BILGE_KEYS: PackedStringArray = ["char.bilge.happy", "char.bilge.idle", "char.bilge.wave"]
+## El sallayan Bilge için denenecek pozlar (sırayla); hiçbiri yoksa karakter sayfasından önden görünüş.
+const BILGE_KEYS: PackedStringArray = ["char.bilge.wave", "char.bilge.happy", "char.bilge.idle"]
 const BILGE_SHEET_KEY: String = "char.bilge.sheet"
 ## sheet.png (2048×1143) içindeki önden görünüşün kare kırpımı.
 const SHEET_FRONT_REGION: Rect2 = Rect2(20, 100, 520, 520)
 const BILGE_SIZE: Vector2 = Vector2(440, 440)
 const TITLE_FONT_SIZE: int = 132
-const PLAQUE_COLOR: Color = ClayStyle.BUTTER
 const PLAQUE_BORDER: Color = ClayStyle.CARAMEL
 const TITLE_COLOR: Color = ClayStyle.TITLE_INK
 const MEDAL_COLOR: Color = Color(0.93, 0.93, 0.93)
 const INTRO_SECONDS: float = 0.9
 const BOB_SECONDS: float = 1.8
 const BOB_PIXELS: float = 10.0
+const GREETING_LINE: String = "vo.genel.hosgeldin"
+const START_HINT_LINE: String = "vo.genel.basla_dokun"
+const START_SIZE: Vector2 = Vector2(640, 176)
+const START_FONT_SIZE: int = 68
+const START_COLOR: Color = ClayStyle.TANGERINE
+const PULSE_SCALE: float = 1.06
+const PULSE_SECONDS: float = 0.9
 
 var app: Node = AppState
 
@@ -25,20 +32,31 @@ var _title: Label = null
 var _plaque: PanelContainer = null
 var _bilge: Control = null
 var _backdrop: TextureRect = null
+var _start: Button = null
+var _started: bool = false
 
 func _ready() -> void:
 	_build()
 	_title.text = Strings.t("app.title")
 	app.adopt_scene("splash", self)
-	app.narrator.say("vo.genel.hosgeldin")
+	app.narrator.line_finished.connect(_on_line_finished)
+	app.narrator.say(GREETING_LINE)
 	_play_intro.call_deferred()
-	await get_tree().create_timer(app.splash_delay).timeout
-	if not is_inside_tree():
+
+## Düğmeye dokununca bir kez çalışır: profil yoksa oluşturma, varsa seçim ekranı.
+func start() -> void:
+	if _started:
 		return
+	_started = true
+	if app.narrator.line_finished.is_connected(_on_line_finished):
+		app.narrator.line_finished.disconnect(_on_line_finished)
 	if app.progress.profiles().is_empty():
 		app.goto("profile_create")
 	else:
 		app.goto("profile_select")
+
+func start_button() -> Button:
+	return _start
 
 func title_label() -> Label:
 	return _title
@@ -51,6 +69,14 @@ func bilge_view() -> Control:
 
 func backdrop() -> TextureRect:
 	return _backdrop
+
+func _on_line_finished(id: String) -> void:
+	if id == GREETING_LINE and not _started and is_inside_tree():
+		app.narrator.say(START_HINT_LINE)
+
+func _exit_tree() -> void:
+	if is_instance_valid(app) and app.narrator.line_finished.is_connected(_on_line_finished):
+		app.narrator.line_finished.disconnect(_on_line_finished)
 
 func _build() -> void:
 	# Zemin: ada görseli (tam görünür, kapatacak şekilde); yoksa sıcak gökyüzü gradyanı.
@@ -93,6 +119,25 @@ func _build() -> void:
 	_bilge.offset_bottom = -40.0
 	_bilge.pivot_offset = Vector2(BILGE_SIZE.x / 2.0, BILGE_SIZE.y)
 	add_child(_bilge)
+
+	# Büyük başla düğmesi: ortada, altyazı şeridinin hemen üstünde; ok simgesi okuma bilmeyene de yol gösterir.
+	_start = (load("res://scenes/components/big_button.tscn") as PackedScene).instantiate() as Button
+	_start.name = "StartButton"
+	_start.set("text_key", "splash.start")
+	_start.set("icon_key", "ui.page_next")
+	_start.set("clay_color", START_COLOR)
+	_start.custom_minimum_size = START_SIZE
+	_start.set_anchors_preset(Control.PRESET_CENTER_BOTTOM)
+	_start.grow_horizontal = Control.GROW_DIRECTION_BOTH
+	_start.offset_left = -START_SIZE.x / 2.0
+	_start.offset_right = START_SIZE.x / 2.0
+	_start.offset_bottom = -ClayStyle.SUBTITLE_BAND - 24.0
+	_start.offset_top = _start.offset_bottom - START_SIZE.y
+	_start.focus_mode = Control.FOCUS_NONE
+	add_child(_start)
+	_start.add_theme_font_size_override("font_size", START_FONT_SIZE)
+	ClayStyle.use_bold(_start)
+	_start.pressed.connect(start)
 
 ## Sevinçli Bilge: poz görseli; yoksa karakter sayfasından kırpılmış madalyon; o da yoksa yer tutucu.
 func _make_bilge() -> Control:
@@ -145,9 +190,7 @@ void fragment() {
 
 ## Başlık plaketi: alt kenarı kalın (kil kalınlığı), geniş yan boşluk.
 func _plaque_style() -> StyleBoxFlat:
-	var style: StyleBoxFlat = ClayStyle.plaque_box(PLAQUE_COLOR, PLAQUE_BORDER, 48, 10, 8, 20, 72.0, 12.0)
-	style.content_margin_bottom = 20.0
-	return style
+	return ClayStyle.title_plaque_box()
 
 func _sky_gradient() -> GradientTexture2D:
 	return ClayStyle.vertical_gradient(ClayStyle.DAY_TOP, ClayStyle.DAY_BOTTOM)
@@ -168,7 +211,19 @@ func _play_intro() -> void:
 	tw.tween_property(_plaque, "position:y", plaque_y, INTRO_SECONDS).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
 	tw.tween_property(_bilge, "modulate:a", 1.0, INTRO_SECONDS * 0.6).set_delay(0.3)
 	tw.tween_property(_bilge, "position:y", bilge_y, INTRO_SECONDS).set_delay(0.3).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
+	_start.modulate.a = 0.0
+	tw.tween_property(_start, "modulate:a", 1.0, INTRO_SECONDS * 0.6).set_delay(0.6)
 	tw.chain().tween_callback(_start_bob.bind(bilge_y))
+	tw.chain().tween_callback(_start_pulse)
+
+## Düğme yavaşça "nefes alır": dikkat çeker ama yanıp sönmez.
+func _start_pulse() -> void:
+	if not is_inside_tree() or _started:
+		return
+	_start.pivot_offset = _start.size / 2.0
+	var pulse: Tween = create_tween().set_loops()
+	pulse.tween_property(_start, "scale", Vector2.ONE * PULSE_SCALE, PULSE_SECONDS).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
+	pulse.tween_property(_start, "scale", Vector2.ONE, PULSE_SECONDS).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
 
 func _start_bob(base_y: float) -> void:
 	if not is_inside_tree():
