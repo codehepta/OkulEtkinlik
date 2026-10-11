@@ -111,6 +111,7 @@ Harita → bölge → patika → durak
   - Ses seviyeleri (anlatım, müzik, efekt).
   - Sınıf değiştirme, profil silme.
   - İlerlemeyi JSON olarak dışa ve içe aktarma (paylaşım menüsü üzerinden).
+  - **Yerleşim (2026-10-12, onaylı yeniden tasarım):** sabit üst şerit (başlık plaketi, çocuk seçici, her zaman görünen Çıkış), solda beş bölüm: İlerleme · Evde (çocuğa özel) · Süre · Ses ve ekran (cihaz geneli, "Bütün çocuklar için ortak") · Profil ve yedek. Yalnızca etkin bölüm kurulur; sayfa kaymaz, uzun listeler kendi kartında kayar. Oturum sonundan veli kapısıyla gelen veli Süre bölümünde açar. Seçili bölüm ve ders kaydedilmez.
 - **Süre dolunca:** mevcut tur bitirilir, ardından Bilge "Uyku zamanı!" animasyonu ve sesiyle oturumu kapatır. Ertesi güne kadar veli kapısı olmadan devam edilemez.
 
 ### 3.7 Mini oyun şablonları
