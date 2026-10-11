@@ -76,23 +76,30 @@ func _run() -> void:
 	await _show("parent_gate", {"next": {"scene": "parent_panel", "args": {}}})
 	await _shot("13_parent_gate")
 	await _shot_with_subtitle("13b_parent_gate_subtitle", "vo.genel.veli_cagir")
+	_fake_outcomes(pid)
 	await _show("parent_panel", {})
 	await _shot("14_parent_panel")
 	await _shot_with_subtitle("14b_parent_panel_no_subtitle", "vo.genel.veli_cagir")
+	# Veli paneli bölümleri: her bölüm kendi karesinde (sayfa kaymaz).
 	var panel: Node = _app.current_scene()
-	var scroll: ScrollContainer = _find_scroll(panel)
-	if scroll != null:
-		scroll.scroll_vertical = 900
+	for t: Array in [["home", "14c_parent_panel_home"], ["time", "14d_parent_panel_time"],
+			["sound", "14f_parent_panel_sound"], ["profile", "14g_parent_panel_profile"]]:
+		panel.select_tab(str(t[0]))
 		await _frames(10)
-		await _shot("14c_parent_panel_settings")
-		scroll.scroll_vertical = 100000
-		await _frames(10)
-		await _shot("14d_parent_panel_actions")
-	if panel.has_method("request_delete"):
-		panel.request_delete()
-		await _frames(10)
-		await _shot("14e_parent_panel_delete_dialog")
-		(panel.call("delete_dialog") as Window).hide()
+		await _shot(str(t[1]))
+	panel.request_delete()
+	await _frames(10)
+	await _shot("14e_parent_panel_delete_dialog")
+	panel.cancel_delete()
+	# Kayıt uyarısı şeridiyle en uzun bölüm (taşma denetimi).
+	root.get_node("SaveService").last_load_status = "reset"
+	panel.select_tab("sound")
+	await _frames(10)
+	await _shot("14h_parent_panel_warning_sound")
+	panel.select_tab("progress")
+	await _frames(10)
+	await _shot("14i_parent_panel_warning_progress")
+	root.get_node("SaveService").last_load_status = "loaded"
 	await _show("session_end", {})
 	await _shot("15_session_end")
 
@@ -141,6 +148,10 @@ func _run() -> void:
 	await _faz3_templates()
 	# --- Faz 4a Türkçe şablonları ---
 	await _faz4a_templates()
+	# --- Veli paneli: dört profil ve uzun takma adla üst şerit ---
+	progress.create_profile("avatar.kedi", "Mehmetcan123", 2)
+	await _show("parent_panel", {})
+	await _shot("14j_parent_panel_four_profiles")
 	print("ui_screenshots: %d görüntü -> %s" % [_shots, ProjectSettings.globalize_path(OUT_DIR)])
 	quit(0)
 
@@ -173,11 +184,22 @@ func _shot_with_subtitle(name: String, line_id: String) -> void:
 	narrator.set("duration_scale", scale)
 	await _frames(2)
 
-func _find_scroll(n: Node) -> ScrollContainer:
-	for c: Node in n.get_children():
-		if c is ScrollContainer:
-			return c as ScrollContainer
-	return null
+## Veli paneli İlerleme karesi için 1. sınıf Matematik çıktılarına örnek ustalık yazar.
+func _fake_outcomes(pid: String) -> void:
+	var content: Node = root.get_node("ContentDB")
+	var codes: Array[String] = []
+	for u: Dictionary in content.units(1, "matematik"):
+		for n: Dictionary in u["nodes"]:
+			for code: Variant in n.get("outcomes", []):
+				if not codes.has(str(code)):
+					codes.append(str(code))
+	var today: int = int(root.get_node("Progress").clock.today())
+	for p: Variant in root.get_node("SaveService").data["profiles"]:
+		if str((p as Dictionary)["id"]) != pid:
+			continue
+		var outs: Dictionary = (p as Dictionary)["outcomes"]
+		for i: int in mini(codes.size(), 8):
+			outs[codes[i]] = {"mastery": 0.25 + 0.09 * i, "box": 2, "due": today + 1, "last_day": today - i}
 
 ## Ders şablonlarının ara durumları. Yanlış cevaplar runner'ın gerçek geri bildirim akışından geçer.
 func _lesson_extras() -> void:
