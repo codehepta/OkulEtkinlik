@@ -270,7 +270,7 @@ func _build_palette() -> void:
 		var col: int = i % 2
 		var row: int = floori(i / 2.0)
 		var pos: Vector2 = PALETTE_ORIGIN + Vector2(col, row) * (PALETTE_CARD + PALETTE_GAP)
-		var t: Control = _make_card(kinds[i], Rect2(pos, Vector2(PALETTE_CARD, PALETTE_CARD)))
+		var t: Control = _make_card(kinds[i], Rect2(pos, Vector2(PALETTE_CARD, PALETTE_CARD)), palette_forward_arrow)
 		t.name = "Palette_" + kinds[i]
 		t.gui_input.connect(_on_palette_input.bind(kinds[i]))
 		_palette[kinds[i]] = t
@@ -288,13 +288,17 @@ func _build_strip_wells() -> void:
 			Widgets.draw_well(wells, Rect2(Vector2(i * (STRIP_CARD + STRIP_GAP), 0), Vector2(STRIP_CARD, STRIP_CARD)), 22.0))
 	add_child(wells)
 
-## Yön kartı: kil karo + kodla çizilmiş kalın ok (yazı yok).
-func _make_card(kind: String, rect: Rect2) -> Control:
+## Yön kartı: kil karo + kodla çizilmiş kalın ok (yazı yok). facing_of: "ileri" kartının
+## çizileceği bakış yönünü verir (palet kartı program değiştikçe yeniden çizilir).
+func _make_card(kind: String, rect: Rect2, facing_of: Callable = Callable()) -> Control:
 	var t: Control = Widgets.make_tile(self, "", rect, 40, CARD_COLORS.get(kind, ClayStyle.SKY) as Color)
 	var icon: Control = Control.new()
+	icon.name = "Icon"
 	icon.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	icon.size = rect.size - Vector2(0, ClayStyle.DEPTH)
-	icon.draw.connect(func() -> void: _draw_card_icon(icon, kind, Rect2(Vector2.ZERO, icon.size)))
+	icon.draw.connect(func() -> void:
+		var f: String = str(facing_of.call()) if facing_of.is_valid() else "up"
+		_draw_card_icon(icon, kind, f, Rect2(Vector2.ZERO, icon.size)))
 	t.add_child(icon)
 	return t
 
@@ -303,14 +307,18 @@ func _rebuild_strip() -> void:
 		c.hide()
 		c.queue_free()
 	_strip.clear()
+	var arrows: Array[String] = strip_arrows()
 	for i: int in _program.size():
 		var pos: Vector2 = STRIP_ORIGIN + Vector2(i * (STRIP_CARD + STRIP_GAP), 0)
-		var t: Control = _make_card(_program[i], Rect2(pos, Vector2(STRIP_CARD, STRIP_CARD)))
+		var arrow: String = arrows[i]
+		var t: Control = _make_card(_program[i], Rect2(pos, Vector2(STRIP_CARD, STRIP_CARD)), func() -> String: return arrow)
 		if _ask == "build":
 			t.gui_input.connect(_on_strip_input.bind(i))
 		else:
 			t.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		_strip.append(t)
+	if _palette.has("forward"):
+		((_palette["forward"] as Control).get_node("Icon") as Control).queue_redraw()
 	if _overlay != null:
 		_overlay.queue_redraw()
 
@@ -642,7 +650,7 @@ func _draw_pawn(ci: CanvasItem, r: Rect2) -> void:
 		c + d * s * 0.5, c + d * s * 0.3 + perp * s * 0.14, c + d * s * 0.3 - perp * s * 0.14])
 	ci.draw_colored_polygon(tri, ClayStyle.INK)
 
-func _draw_card_icon(ci: CanvasItem, kind: String, r: Rect2) -> void:
+func _draw_card_icon(ci: CanvasItem, kind: String, facing: String, r: Rect2) -> void:
 	var c: Vector2 = r.get_center()
 	var s: float = minf(r.size.x, r.size.y)
 	match kind:
@@ -651,8 +659,7 @@ func _draw_card_icon(ci: CanvasItem, kind: String, r: Rect2) -> void:
 		"turn_right":
 			_draw_turn(ci, c, s, 1.0)
 		_:
-			var dir_name: String = "up" if kind == "forward" else kind
-			_draw_arrow(ci, c, s, Vector2(GridLogic.DIRS[dir_name] as Vector2i))
+			_draw_arrow(ci, c, s, Vector2(GridLogic.DIRS[GridLogic.card_arrow(kind, facing)] as Vector2i))
 
 ## Kalın düz ok (ileri / mutlak yön).
 static func _draw_arrow(ci: CanvasItem, c: Vector2, s: float, d: Vector2) -> void:
@@ -853,6 +860,14 @@ func hint_cells() -> Array[Vector2i]:
 	if _missing.x >= 0:
 		res.append(_missing)
 	return GridLogic.sorted_cells(res)
+
+## Şeritteki kartların ok yönleri ("ileri" = o anki bakış yönü, dönüş = "").
+func strip_arrows() -> Array[String]:
+	return GridLogic.card_arrows(_program, _facing)
+
+## Paletteki "ileri" kartının gösterdiği yön: program bittiğinde gezginin bakacağı yön.
+func palette_forward_arrow() -> String:
+	return GridLogic.facing_after(_program, _facing)
 
 func hint_card() -> String:
 	return _hint_card

@@ -61,6 +61,29 @@ static func step(cell: Vector2i, facing: String, card: String) -> Dictionary:
 			return {"cell": cell, "facing": FACING_ORDER[(i + 1) % 4]}
 	return {"cell": cell + (DIRS[card] as Vector2i), "facing": card}
 
+## Kartın üzerinde çizilen ok yönü: "ileri" kartı gezginin o anki bakış yönünü gösterir
+## (sağa bakan gezgin için sağ ok), mutlak kart kendi yönünü, dönüş kartı "" (kıvrık ok).
+static func card_arrow(card: String, facing: String) -> String:
+	if card == "forward":
+		return facing
+	return card if DIRS.has(card) else ""
+
+## Programdaki her kartın ok yönü; yön kartlar sırayla uygulanarak izlenir (sınır yok sayılır).
+static func card_arrows(program: Array, facing: String) -> Array[String]:
+	var res: Array[String] = []
+	var f: String = facing
+	for card: Variant in program:
+		res.append(card_arrow(str(card), f))
+		f = str(step(Vector2i.ZERO, f, str(card))["facing"])
+	return res
+
+## Program bittikten sonraki bakış yönü (sınır yok sayılır).
+static func facing_after(program: Array, facing: String) -> String:
+	var f: String = facing
+	for card: Variant in program:
+		f = str(step(Vector2i.ZERO, f, str(card))["facing"])
+	return f
+
 ## Programı yürütür. states: her başarılı karttan sonraki durum; blocked: ızgara dışı ya da
 ## duvar yüzünden durdu mu; blocked_facing: çarpma anındaki yön; end / end_facing: son durum.
 static func simulate(program: Array, start: Vector2i, facing: String, cols: int, rows: int, walls: Dictionary) -> Dictionary:

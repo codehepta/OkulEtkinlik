@@ -253,3 +253,17 @@ func test_grid_logic_paint_helpers() -> void:
 	assert_true(GridLogic.cells_connected(GridLogic.snake_cells(6, 5, 20)))
 	assert_eq(GridLogic.sorted_cells([Vector2i(1, 2), Vector2i(3, 0), Vector2i(0, 2)]),
 		[Vector2i(3, 0), Vector2i(0, 2), Vector2i(1, 2)] as Array[Vector2i])
+
+## "İleri" kartı gezginin o anki bakış yönünü gösterir: sağa bakan gezgin için sağ ok (yukarı değil).
+func test_grid_logic_card_arrows_follow_facing() -> void:
+	assert_eq(GridLogic.card_arrow("forward", "right"), "right")
+	assert_eq(GridLogic.card_arrow("forward", "down"), "down")
+	assert_eq(GridLogic.card_arrow("left", "up"), "left", "mutlak kart kendi yönünü gösterir")
+	assert_eq(GridLogic.card_arrow("turn_left", "right"), "", "dönüş kartı kıvrık ok")
+	assert_eq(GridLogic.card_arrows(["forward", "forward", "forward"], "right"),
+		["right", "right", "right"] as Array[String], "sağa bakan gezginin üç ileri kartı üç sağ ok")
+	assert_eq(GridLogic.card_arrows(["forward", "turn_left", "forward", "turn_right", "forward"], "right"),
+		["right", "", "up", "", "right"] as Array[String])
+	assert_eq(GridLogic.facing_after(["forward", "turn_left"], "right"), "up")
+	assert_eq(GridLogic.facing_after(["down"], "right"), "down")
+	assert_eq(GridLogic.facing_after([], "left"), "left")
