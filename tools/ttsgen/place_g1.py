@@ -46,7 +46,7 @@ for k in sorted(scope):
     raw = subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-i", str(src), "-af", "loudnorm=I=-18:TP=-1.5:LRA=11", "-ar", "24000", "-ac", "1", "-f", "f32le", "-"], capture_output=True, check=True).stdout
     w = np.frombuffer(raw, np.float32)
     dst = R / "assets/audio/voice" / ("/".join(k.split(".")[1:]) + ".ogg"); dst.parent.mkdir(parents=True, exist_ok=True)
-    with sf.SoundFile(dst, "w", 24000, 1, format="OGG", subtype="VORBIS") as f:
+    with sf.SoundFile(dst, "w", 24000, 1, format="OGG", subtype="VORBIS", compression_level=1.0) as f:
         for i in range(0, len(w), 16384): f.write(w[i:i + 16384])
     prov.append({"key": k, "file": str(dst.relative_to(R)), "text": x["text"], "spoken": x["say"], "speaker": x["speaker"],
                  "model": "openbmb/VoxCPM2", "model_license": "Apache-2.0", "runtime": "voxcpm 2.0.3 (MPS)", "seed": x["seed"],

@@ -16,7 +16,7 @@ Ayrıntılı yöntem ve dersler: `~/.claude/skills/generating-speech-locally-wit
 - `rules_single.py`: tek aday kipi. Cümle ve iki kelimelik satırlar için.
 - `rules_plain.py`: sayı, saat, para ve tek kelime için düz biçimler (`X!`, `X.`).
 - `tts_generate.py`, `tts_select.py`: üretim (çalışma/mola döngülü, kaldığı yerden devam eder) ve Whisper ile seçim.
-- `place_g1.py`, `place_g2.py`: sınıfın onaylı seslerini −18 LUFS, mono 24 kHz Ogg Vorbis olarak `assets/audio/voice/` altına koyar ve `docs/assets/voice-provenance.jsonl` kaydını yazar.
+- `place_g1.py`, `place_g2.py`: sınıfın onaylı seslerini −18 LUFS, mono 24 kHz Ogg Vorbis (en yüksek sıkıştırma, ≈42 kbps; APK bütçesi) olarak `assets/audio/voice/` altına koyar ve `docs/assets/voice-provenance.jsonl` kaydını yazar.
 
 ## Kurulum
 ```bash

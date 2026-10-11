@@ -372,7 +372,7 @@ Eşikler `scripts/core/adaptive_config.gd`'dedir. Simülasyon raporu: `godot --h
 
 # Faz 8 — Sürüm adayı (cila, erişilebilirlik, düşük cihaz)
 
-Otomatik denetimler her PR'da çalışır: dokunma hedefleri bütün ekranlarda ≥128 px (`tests/integration/test_a11y_screens.gd`), metin kontrastı WCAG AA (`tests/unit/test_contrast.gd`), düşük cihaz ayarları (`tests/unit/test_low_end_settings.gd`), APK izin ve boyut bütçesi (`scripts/ci-check-apk.sh`, 150 MB). Aşağıdakiler gerçek cihazda yapılır.
+Otomatik denetimler her PR'da çalışır: dokunma hedefleri bütün ekranlarda ≥128 px (`tests/integration/test_a11y_screens.gd`), metin kontrastı WCAG AA (`tests/unit/test_contrast.gd`), düşük cihaz ayarları (`tests/unit/test_low_end_settings.gd`), APK izin ve boyut bütçesi (`scripts/ci-check-apk.sh`, 200 MB). Aşağıdakiler gerçek cihazda yapılır.
 
 ## Test cihazı
 - Tercihen Android 8 (API 26), 2 GB RAM, 720p ekranlı eski bir telefon ya da tablet. Yoksa en eski erişilebilir cihaz; modeli ve Android sürümünü not et.
