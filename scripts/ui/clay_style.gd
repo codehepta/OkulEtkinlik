@@ -175,6 +175,12 @@ static func plaque_box(fill: Color, edge: Color, radius: int = 48, border: int =
 	s.content_margin_bottom = pad_y
 	return s
 
+## Ekran başlığı plaketi (açılış, "Kim oynuyor?"): tereyağı rengi, karamel kenar, kalın alt kenar.
+static func title_plaque_box(pad_x: float = 72.0) -> StyleBoxFlat:
+	var style: StyleBoxFlat = plaque_box(BUTTER, CARAMEL, 48, 10, 8, 20, pad_x, 12.0)
+	style.content_margin_bottom = 20.0
+	return style
+
 ## Ders kartı (ClayTile, hoparlör): kalın alt kenar ve belirgin gölgeyle kabarık kil.
 static func card_box(color: Color, radius: int = RADIUS) -> StyleBoxFlat:
 	return plaque_box(color, color.darkened(0.22), radius, BORDER, 8, 14, 0.0, 0.0)
