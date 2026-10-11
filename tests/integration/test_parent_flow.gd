@@ -337,18 +337,159 @@ func test_gate_leaves_bottom_band_for_subtitle() -> void:
 		var r: Rect2 = (b as Control).get_global_rect()
 		assert_lte(r.end.y, vp.y - ClayStyle.SUBTITLE_BAND + 1.0, "düğme altyazı şeridine girmez")
 
+func _checked_count(panel: Node) -> int:
+	var checked: int = 0
+	for n: Node in (panel as Control).find_children("*", "Button", true, false):
+		var b: Button = n as Button
+		if b.is_visible_in_tree() and b.toggle_mode and b.button_pressed and b.icon == AssetRegistry.texture(ClayStyle.CHECK_ICON_KEY):
+			checked += 1
+	return checked
+
 func test_panel_hides_subtitle_and_marks_selection() -> void:
 	_login(1)
 	var panel: Node = _open_panel()
 	assert_eq(panel.subtitle_placement(), "hidden")
+	assert_eq(panel.current_tab(), "progress", "varsayılan bölüm İlerleme")
+	assert_eq(_checked_count(panel), 1, "İlerleme: seçili ders onay ikonu taşır")
 	panel.set_daily_limit(15)
-	panel.call("_rebuild")
-	var checked: int = 0
-	for n: Node in (panel as Control).find_children("*", "Button", true, false):
-		var b: Button = n as Button
-		if b.toggle_mode and b.button_pressed and b.icon == AssetRegistry.texture(ClayStyle.CHECK_ICON_KEY):
-			checked += 1
-	assert_eq(checked, 2, "seçili süre ve seçili sınıf onay ikonu taşır")
+	panel.select_tab("time")
+	assert_eq(_checked_count(panel), 1, "Süre: seçili süre onay ikonu taşır")
+	panel.select_tab("profile")
+	assert_eq(_checked_count(panel), 1, "Profil: seçili sınıf onay ikonu taşır")
+	panel.select_tab("home")
+	assert_eq(_checked_count(panel), 1, "Evde: seçili ders onay ikonu taşır")
+
+# --- Bölümler ---
+
+const TABS: Array[String] = ["progress", "home", "time", "sound", "profile"]
+
+func test_section_switch_keeps_selected_child_and_subject() -> void:
+	_login(1)
+	var b: String = _progress.create_profile("avatar.kedi", "U", 1)
+	var panel: Node = _open_panel()
+	panel.select_profile_tab(b)
+	panel.select_subject("turkce")
+	for t: String in TABS:
+		panel.select_tab(t)
+		assert_eq(panel.current_tab(), t)
+		assert_eq(panel.selected_profile(), b, "bölüm değişince seçili çocuk korunur")
+	panel.select_tab("home")
+	panel.select_profile_tab(_app.profile_id)
+	assert_eq(panel.current_tab(), "home", "çocuk değişince bölüm korunur")
+	assert_eq(panel.current_subject(), "turkce", "çocuk değişince ders korunur")
+
+func test_child_selector_hidden_in_shared_sections() -> void:
+	_login(1)
+	var panel: Node = _open_panel()
+	for t: String in ["progress", "home", "profile"]:
+		panel.select_tab(t)
+		assert_true(panel.child_selector_visible(), "%s: çocuk seçici görünür" % t)
+		assert_false(panel.shared_note_visible(), t)
+	for t: String in ["time", "sound"]:
+		panel.select_tab(t)
+		assert_false(panel.child_selector_visible(), "%s: ortak bölümde çocuk seçici yok" % t)
+		assert_true(panel.shared_note_visible(), "%s: ortak not görünür" % t)
+
+func test_session_end_entry_opens_time_section() -> void:
+	_login(1)
+	_app.goto("session_end")
+	_screen().parent_button().pressed.emit()
+	assert_eq(_screen().args["next"]["args"], {"tab": "time"})
+	_screen().set_question(ParentGateQuiz.make(12, 5))
+	_type(_screen(), "60")
+	_screen().submit()
+	assert_eq(_app.current_scene_name(), "parent_panel")
+	assert_eq(_screen().current_tab(), "time", "oturum sonundan gelen veli Süre'de açar")
+
+func test_exit_and_buttons_inside_viewport_in_every_section() -> void:
+	_login(1)
+	for n: String in ["Ayşegülcan12", "Mehmetcan123", "Zeynepnur123"]:
+		_progress.create_profile("avatar.kedi", n, 3)
+	_save.last_load_status = "recovered"
+	var panel: Node = _open_panel()
+	for t: String in TABS:
+		panel.select_tab(t)
+		await wait_process_frames(3)
+		var vp: Rect2 = (panel as Control).get_viewport_rect()
+		var exit_rect: Rect2 = panel.exit_button().get_global_rect()
+		assert_true(panel.exit_button().is_visible_in_tree(), t)
+		assert_true(vp.encloses(exit_rect), "%s: Çıkış ekranda %s" % [t, exit_rect])
+		for n: Node in (panel as Control).find_children("*", "BaseButton", true, false):
+			var c: Control = n as Control
+			if c.is_visible_in_tree():
+				var r: Rect2 = c.get_global_rect()
+				assert_true(vp.grow(1.0).encloses(r), "%s: %s ekran dışında %s" % [t, c.get_path(), r])
+
+func test_time_section_shows_today_usage() -> void:
+	_login(1)
+	_save.data["settings"]["daily_limit_min"] = 20
+	_save.data["usage"]["day"] = _timer._effective_day()
+	_save.data["usage"]["seconds"] = 7 * 60 + 30
+	var panel: Node = _open_panel()
+	panel.select_tab("time")
+	var label: Label = panel.find_child("UsageLabel", true, false) as Label
+	assert_not_null(label)
+	if label == null:
+		return
+	var expected: String = Strings.t("parent.usage_limited", {"played": 7, "left": 13})
+	assert_eq(label.text, expected)
+	assert_eq(panel.usage_text(), expected)
+	panel.set_daily_limit(0)
+	assert_eq(label.text, Strings.t("parent.usage_unlimited", {"played": 7}), "sınır değişince satır güncellenir")
+	panel.set_daily_limit(10)
+	_save.data["usage"]["seconds"] = 9999
+	panel.select_tab("time")
+	assert_eq(panel.usage_text(), Strings.t("parent.usage_locked", {"played": 166}))
+	panel.unlock_today()
+	assert_eq(panel.usage_text(), Strings.t("parent.usage_unlocked", {"played": 166}))
+	var shown: Label = panel.find_child("UsageLabel", true, false) as Label
+	assert_eq(shown.text, panel.usage_text())
+
+func test_delete_confirmation_card_cancel_and_confirm() -> void:
+	var a: String = _login(1)
+	var b: String = _progress.create_profile("avatar.kedi", "U", 1)
+	var panel: Node = _open_panel()
+	panel.select_tab("profile")
+	panel.select_profile_tab(b)
+	panel.request_delete()
+	var card: Node = panel.delete_dialog()
+	assert_true((card as CanvasItem).visible)
+	assert_false(card is Window, "Godot'nun varsayılan penceresi değil, kil kart")
+	assert_gte(panel.delete_cancel_button().custom_minimum_size.y, 128.0)
+	assert_gte(panel.delete_confirm_button().custom_minimum_size.y, 128.0)
+	panel.delete_cancel_button().pressed.emit()
+	assert_false(panel.delete_dialog().visible)
+	assert_eq(_progress.profiles().size(), 2, "vazgeçince silinmez")
+	assert_eq(_app.current_scene_name(), "parent_panel")
+	panel.request_delete()
+	panel.delete_confirm_button().pressed.emit()
+	assert_eq(_progress.profiles().size(), 1)
+	assert_eq(str(_progress.profiles()[0]["id"]), a)
+	assert_eq(_app.current_scene_name(), "profile_select")
+
+func test_import_keeps_section_and_shows_message_in_backup_card() -> void:
+	var id: String = _login(1)
+	var other: Dictionary = SaveSchema.new_save()
+	other["profiles"].append(SaveSchema.new_profile(id, "avatar.kedi", "Z", 2))
+	var panel: Node = _open_panel()
+	panel.select_tab("profile")
+	assert_true(panel.import_text(ProgressExport.to_json(other)))
+	assert_eq(_screen().current_tab(), "profile", "içe aktarma sonrası bölüm korunur")
+	var status: Label = _screen().find_child("BackupStatus", true, false) as Label
+	assert_not_null(status)
+	if status != null:
+		assert_eq(status.text, Strings.t("parent.import_ok"))
+
+func test_progress_section_subject_summary() -> void:
+	_login(1)
+	_save.data["profiles"][0]["outcomes"]["TEST.1"] = {"mastery": 0.5, "box": 2, "due": 3, "last_day": 20000}
+	var panel: Node = _open_panel()
+	panel.select_subject("matematik")
+	var label: Label = panel.find_child("SubjectSummary", true, false) as Label
+	assert_not_null(label)
+	if label == null:
+		return
+	assert_true(label.text.begins_with(Strings.t("parent.subject_summary", {"played": 1, "total": 1, "pct": 50})), label.text)
 
 func test_panel_reset_day_returns_effective_day_to_clock() -> void:
 	_login(1)
