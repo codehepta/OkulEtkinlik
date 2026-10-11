@@ -69,7 +69,7 @@ MEB 1., 2. ve 3. sınıf öğretim programlarıyla (Türkiye Yüzyılı Maarif M
 - **Bilgi Adası** tek bir harita ekranıdır; dört bölge ve ortada **Bilge'nin Ağaç Evi** bulunur.
 - Her bölgede kıvrımlı bir **patika** vardır. Patikadaki her **durak** bir öğrenme çıktısına (ya da küçük bir çıktı grubuna) karşılık gelir.
 - Profildeki **sınıf**, patikanın içeriğini belirler. Harita aynı kalır, duraklar o sınıfın içerik dosyalarından gelir.
-- Keşif Laboratuvarı 1–2. sınıfta "yakında açılacak" görseliyle kapalı durur.
+- Keşif Laboratuvarı yalnız 3. sınıfta haritada görünür; 1–2. sınıfta rozeti ve dokunma alanı yoktur (bkz. Açık sorular, 2026-10-12 kararı).
 
 ### 3.2 Çekirdek döngü
 ```
@@ -419,6 +419,7 @@ Faz 3e'de (3. sınıf Matematik içeriği) sahibin talimatıyla önerilen seçim
 ## Açık sorular (Faz 6)
 - **Keşif Laboratuvarı 1–2. sınıfta nasıl görünür?** §2 "kilitli/gizli", §3.1 "yakında açılacak görseliyle kapalı" diyor.
   - **Karar (sahip onayıyla önerilen seçim, Faz 6):** Gizlenmez, kilitli görünür: bölge haritada soluk, sis ve kilit ikonuyla durur; dokununca Bilge "Üçüncü sınıfta kapıları açılacak" der (`vo.bolge.kilitli_lab`). Merak uyandırır, ceza hissi vermez. Davranış Faz 1'den beri `scenes/ui/world_map.gd`'de var.
+  - **Karar değişti (sahip kararı, 2026-10-12):** Kilitli göstermek çocukta oynayamayacağı bir yere merak ve oynama isteği doğuruyor; kapalı kapı psikolojik olarak doğru bulunmadı. 1–2. sınıfta bölge haritada **hiç gösterilmez**: rozet, kilit, sis ve dokunma alanı yok, `vo.bolge.kilitli_lab` kaldırıldı. Ada görselindeki bina sabit resmin parçası olarak durur ama etkileşimsizdir.
 - **Karar (önerilen seçim, Faz 6):** Fen ünite dosyaları programın işleniş sırasını izler (`g3.fen.uNN` = `themes.json` `g3.fen.tNN`). Her turun şablonu `game_map.json`'da o çıktı için listelenen şablonlardan biridir; eşlemede `scenario` olmayan çıktılarda sesli seçenekten seçme `listen_find` ile (soru hedefin sesi, seçenekler metin kartı) yazılır. Fen görselleri `item.fen.<ad>` (senaryo sahneleri `item.fen.sahne.<ad>`) anahtarlarıyla `assets/images/items/fen/` altında toplanır. FB.3.1.2 hikâyesindeki bilim insanları kurgusaldır. Ayrıntı: `docs/superpowers/plans/2026-10-05-faz6-fen3.md`.
 
 ## Açık sorular (Faz 4c)

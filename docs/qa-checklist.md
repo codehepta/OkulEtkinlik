@@ -10,7 +10,7 @@ Her maddeyi sırayla uygula; "Beklenen" ile uyuşmayan her şeyi not al.
 ## 1. İlk açılış ve profil
 1. Uygulamayı aç. Beklenen: açılış ekranı, ardından Bilge'nin "hoş geldin" sesi (ya da Türkçe TTS yedeği).
 2. Profil oluştur: avatar seç (ör. tavşan) -> sınıf: 1 -> takma ad (en fazla 12 karakter). Beklenen: her adımda yönerge sesi gelir; sonunda dünya haritası açılır.
-3. Haritada yalnızca Sayı Ormanı açık, Keşif Laboratuvarı kilitli (1. sınıf). Kilitli bölgeye dokun: kilit sesi gelir, ekran değişmez.
+3. Haritada Keşif Laboratuvarı'nın rozeti yok (1. sınıf); yalnız Sayı Ormanı, Harf Vadisi, Hayat Kasabası ve Ağaç Ev rozetleri görünür. Laboratuvar binasının olduğu yere dokun: hiçbir şey olmaz.
 
 ## 2. Oyun hissi
 1. Sayı Ormanı -> ilk durak. Beklenen: yönerge okunur, nesneler ekranda çakışmadan durur.
@@ -292,7 +292,7 @@ Gerçek cihazda 1. sınıf profiliyle Sayı Ormanı'nda kontrol edilecekler (ass
 Sekiz ünite, 20 durak (`content/g3/fen/u01`–`u08.json`). Görseller ve sesler gelene kadar her kart Türkçe adını yazan bir yer tutucu, her satır cihazın Türkçe sesi olarak görünür/duyulur.
 
 ## Bölge
-1. 1. ve 2. sınıf profiliyle haritaya gir. Beklenen: Keşif Laboratuvarı soluk, sisli ve kilitli görünür; dokununca Bilge "Üçüncü sınıfta kapıları açılacak" der, patika açılmaz.
+1. 1. ve 2. sınıf profiliyle haritaya gir. Beklenen: Keşif Laboratuvarı'nın rozeti, kilidi ya da sisi yok; bina alanına dokunmak hiçbir şey yapmaz. 3. sınıf profilinde rozet görünür ve patika açılır.
 2. 3. sınıf profiliyle lab'a dokun. Beklenen: patikada 20 durak, ünite sırasıyla (Bilimsel Keşif Yolculuğu ilk).
 
 ## İçerik akışı

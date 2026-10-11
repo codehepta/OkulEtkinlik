@@ -1,7 +1,8 @@
 extends Control
 ## Dünya haritası: ada görseli ekrana sığdırılır (hiçbir yeri kırpılmaz); her bölgenin
 ## üstüne küçük kil rozet (ikon + ad) oturur, ortada ağaç ev rozeti. Bölgenin kendisi de
-## dokunulabilir alandır. Keşif Laboratuvarı 1–2. sınıfta soluk ve kilitlidir.
+## dokunulabilir alandır. Keşif Laboratuvarı (Fen) yalnız 3. sınıfta görünür; 1–2. sınıfta
+## rozeti ve dokunma alanı hiç yoktur (kilit ya da sis de yok: merak ve hayal kırıklığı yaratmasın).
 
 const NarrationWait: GDScript = preload("res://scripts/ui/narration_wait.gd")
 
@@ -28,11 +29,7 @@ const TEXT_COLOR: Color = ClayStyle.INK
 const BADGE_FONT_SIZE: int = 36
 const BADGE_ICON: float = 88.0
 const BADGE_MIN_HEIGHT: float = 128.0
-const LOCK_SIZE: Vector2 = Vector2(72, 96)
-const LOCKED_TINT: Color = Color(0.82, 0.82, 0.82, 0.78)
 ## Kilitli lab'ın üstündeki sisin alanı (adanın içinde kalır).
-const FOG_RECT: Rect2 = Rect2(0.54, 0.50, 0.32, 0.36)
-const FOG_COLOR: Color = Color(1, 1, 1, 0.28)
 const FEN_MIN_GRADE: int = 3
 
 var app: Node = AppState
@@ -45,7 +42,6 @@ var _tree_zone: Button = null
 var _album_button: Button = null
 var _avatar_button: Button = null
 var _island: Control = null
-var _fog: Panel = null
 var _busy: bool = false
 
 func _ready() -> void:
@@ -61,7 +57,7 @@ func _ready() -> void:
 	add_child(_island)
 	_island.set("stretch_mode", TextureRect.STRETCH_SCALE)
 
-	for subject: String in SUBJECTS:
+	for subject: String in visible_subjects():
 		var zone: Button = _zone_button()
 		zone.pressed.connect(func() -> void: tap_region(subject))
 		add_child(zone)
@@ -70,21 +66,10 @@ func _ready() -> void:
 	_tree_zone.pressed.connect(tap_tree_house)
 	add_child(_tree_zone)
 
-	if region_locked("fen"):
-		_fog = _fog_panel()
-		add_child(_fog)
-
-	for subject: String in SUBJECTS:
+	for subject: String in visible_subjects():
 		var region: String = app.content.SUBJECT_REGION[subject]
 		var b: Button = _badge(region)
 		b.pressed.connect(func() -> void: tap_region(subject))
-		if region_locked(subject):
-			(b.get_child(0) as Control).modulate = LOCKED_TINT
-			var lock: Control = _image("ui.lock")
-			b.add_child(lock)
-			lock.mouse_filter = Control.MOUSE_FILTER_IGNORE
-			lock.custom_minimum_size = LOCK_SIZE
-			lock.size = LOCK_SIZE
 		add_child(b)
 		_buttons[subject] = b
 
@@ -124,18 +109,28 @@ func _exit_tree() -> void:
 func subtitle_placement() -> String:
 	return "top"
 
-func region_locked(subject: String) -> bool:
+## Bu sınıfta haritada hiç gösterilmeyen bölge (Fen, 3. sınıftan önce).
+func region_hidden(subject: String) -> bool:
 	return subject == "fen" and _grade < FEN_MIN_GRADE
 
+## Bu sınıfta haritada görünen dersler (sırayla).
+func visible_subjects() -> Array[String]:
+	var out: Array[String] = []
+	for subject: String in SUBJECTS:
+		if not region_hidden(subject):
+			out.append(subject)
+	return out
+
+## Bölge rozeti; bölge bu sınıfta gizliyse null.
 func region_button(subject: String) -> Button:
-	return _buttons[subject] as Button
+	return _buttons.get(subject) as Button
+
+## Bölgenin dokunma alanı; bölge bu sınıfta gizliyse null.
+func region_zone(subject: String) -> Button:
+	return _zones.get(subject) as Button
 
 func tree_button() -> Button:
 	return _tree_button
-
-## Rozette kilit ikonu var mı (çocuk 0 plaket, çocuk 1 kilit).
-func region_shows_lock(subject: String) -> bool:
-	return region_button(subject).get_child_count() > 1
 
 ## Ada görselinin ekrandaki dikdörtgeni (sığdırılmış, ortalanmış).
 func island_rect() -> Rect2:
@@ -144,15 +139,11 @@ func island_rect() -> Rect2:
 	var shown: Vector2 = ISLAND_SIZE * s
 	return Rect2((view - shown) / 2.0, shown)
 
-## Bölge adını okutur; açıksa patikaya geçer, kilitliyse kilit sesini okutur.
+## Bölge adını okutur ve patikaya geçer. Bu sınıfta gizli bölgeye dokunma yok sayılır.
 func tap_region(subject: String) -> void:
-	if _busy:
+	if _busy or region_hidden(subject):
 		return
 	_busy = true
-	if region_locked(subject):
-		await NarrationWait.say(self, app.narrator, "vo.bolge.kilitli_lab")
-		_busy = false
-		return
 	var region: String = app.content.SUBJECT_REGION[subject]
 	await NarrationWait.say(self, app.narrator, "vo.bolge.%s" % region)
 	if is_inside_tree():
@@ -184,13 +175,11 @@ func _layout() -> void:
 	var r: Rect2 = island_rect()
 	_island.position = r.position
 	_island.size = r.size
-	for subject: String in SUBJECTS:
+	for subject: String in visible_subjects():
 		_place_zone(_zones[subject] as Button, ZONE_RECT[subject], r)
 		_place_badge(_buttons[subject] as Button, BADGE_ANCHOR[subject], r)
 	_place_zone(_tree_zone, TREE_ZONE, r)
 	_place_badge(_tree_button, TREE_ANCHOR, r)
-	if _fog != null:
-		_place_zone(_fog, FOG_RECT, r)
 
 func _place_zone(c: Control, z: Rect2, r: Rect2) -> void:
 	c.position = r.position + z.position * r.size
@@ -205,10 +194,6 @@ func _place_badge(b: Button, anchor: Vector2, r: Rect2) -> void:
 	plaque.position = Vector2.ZERO
 	plaque.size = s
 	b.position = r.position + anchor * r.size - s / 2.0
-	if b.get_child_count() > 1:
-		# Kilit ikonu rozetin sağ üst köşesine, kenarın biraz dışına taşar.
-		var lock: Control = b.get_child(1) as Control
-		lock.position = Vector2(s.x - LOCK_SIZE.x * 0.6, -LOCK_SIZE.y * 0.35)
 
 func _image(key: String) -> Control:
 	var img: Control = (load("res://scenes/components/asset_image.tscn") as PackedScene).instantiate() as Control
@@ -232,13 +217,6 @@ func _zone_button() -> Button:
 	for state: String in ["normal", "hover", "pressed", "focus", "disabled"]:
 		b.add_theme_stylebox_override(state, StyleBoxEmpty.new())
 	return b
-
-## Kilitli bölgenin üstüne yumuşak kenarlı açık bir sis (solukluk).
-func _fog_panel() -> Panel:
-	var p: Panel = Panel.new()
-	p.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	p.add_theme_stylebox_override("panel", ClayStyle.soft_box(FOG_COLOR, 220, 40))
-	return p
 
 ## Rozet plaketi: ikon sola yaslı, yazının sağında biraz daha boşluk.
 func _clay_box(fill: Color, edge: Color) -> StyleBoxFlat:
