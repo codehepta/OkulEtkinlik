@@ -26,7 +26,7 @@ func test_every_round_plays_to_the_end() -> void:
 		answers = []
 		results = []
 		var g: MiniGame = make(str(r["template"]), (r["params"] as Dictionary).duplicate(true), int(r["difficulty"]), 7, 3)
-		await wait_frames(2)
+		await wait_physics_frames(2)
 		if g.has_method("touch_targets"):
 			assert_touch_targets(g)
 		for step: int in MAX_STEPS:
@@ -36,9 +36,9 @@ func test_every_round_plays_to_the_end() -> void:
 			if results.size() > 0:
 				break
 			g.call("_debug_answer", true)
-			await wait_frames(1)
+			await wait_physics_frames(1)
 		await wait_until(func() -> bool: return results.size() > 0, 4.0)
 		assert_eq(results.size(), 1, "%s (%s) bitmeli" % [entry["id"], r["template"]])
 		assert_false(answers.has(false), "%s: doğru cevap yanlış sayıldı" % entry["id"])
 		g.queue_free()
-		await wait_frames(1)
+		await wait_physics_frames(1)
