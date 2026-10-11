@@ -7,7 +7,7 @@
 #     `unzip -l` yeterlidir. Dosyalar bir .pck içine gömülmüşse (assets/*.pck) PCK dizinindeki
 #     yol adları düz metin olduğundan `grep -a` ile aranır (şifreleme kapalı).
 #  3) Testler ve GUT pakete girmez (export_presets.cfg exclude_filter).
-#  4) Boyut bütçesi (Faz 8): APK en çok MAX_APK_MB (varsayılan 150) MB. Düşük depolamalı
+#  4) Boyut bütçesi (Faz 8; 2026-10-12 sahip kararıyla 150 → 200): APK en çok MAX_APK_MB (varsayılan 200) MB. Düşük depolamalı
 #     cihazlar ve mağaza sınırı için. Asset'ler geldikçe büyür; aşılırsa önce sesleri .ogg'ye
 #     çevir, görselleri 1024 px'e indir (docs/assets/style-guide.md).
 # Kullanım: scripts/ci-check-apk.sh <apk> [aapt2 yolu]
@@ -67,7 +67,7 @@ else
 fi
 
 echo "== Boyut"
-MAX_APK_MB="${MAX_APK_MB:-150}"
+MAX_APK_MB="${MAX_APK_MB:-200}"
 SIZE_BYTES="$(stat -c %s "$APK")"
 SIZE_MB=$(( (SIZE_BYTES + 1048575) / 1048576 ))
 echo "APK: ${SIZE_MB} MB (${SIZE_BYTES} bayt), bütçe ${MAX_APK_MB} MB"

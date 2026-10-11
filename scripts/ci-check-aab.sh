@@ -21,7 +21,7 @@ curl -fsSL -o "$JAR" "https://github.com/google/bundletool/releases/download/${B
 
 # Boyut bütçesi AAB dosyasına uygulanır. Evrensel APK bütün mimarileri sıkıştırılmamış
 # taşıdığı için cihaza inen boyutun yaklaşık iki katıdır; onun boyutu denetlenmez.
-MAX_AAB_MB="${MAX_AAB_MB:-150}"
+MAX_AAB_MB="${MAX_AAB_MB:-200}"
 AAB_MB=$(( ($(stat -c %s "$AAB") + 1048575) / 1048576 ))
 echo "== AAB: ${AAB_MB} MB, bütçe ${MAX_AAB_MB} MB"
 if (( AAB_MB > MAX_AAB_MB )); then
