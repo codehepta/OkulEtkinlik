@@ -64,7 +64,7 @@
 						"categories": [
 							"item.oyuncak.top",
 							"item.oyuncak.kup",
-							"item.okul.kitap"
+							"item.oyuncak.araba"
 						],
 						"counts": [
 							5,
@@ -97,7 +97,7 @@
 						"categories": [
 							"item.meyve.elma",
 							"item.meyve.cilek",
-							"item.doga.mantar"
+							"item.meyve.muz"
 						],
 						"counts": [
 							3,
@@ -275,8 +275,8 @@
 						"categories": [
 							"item.oyuncak.top",
 							"item.oyuncak.kup",
-							"item.okul.kitap",
-							"item.okul.kalem"
+							"item.oyuncak.ayicik",
+							"item.oyuncak.araba"
 						],
 						"counts": [
 							3,

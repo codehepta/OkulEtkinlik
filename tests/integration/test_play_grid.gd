@@ -83,6 +83,16 @@ func test_path_build_correct_and_wrong() -> void:
 	assert_eq(g.call("character_cell"), Vector2i(5, 0))
 	assert_false(results[0].helped)
 
+## İleri kartları gezginin baktığı yöne çizilir (3 ileri, sağa bakarken 3 sağ ok).
+func test_path_forward_cards_point_where_walker_faces() -> void:
+	var f: MiniGame = make("grid", _follow())
+	assert_eq(f.call("strip_arrows"), ["up", "up", "", "right"] as Array[String])
+	var g: MiniGame = make("grid", _build(), 2)
+	assert_eq(g.call("palette_forward_arrow"), "right", "boş programda gezgin sağa bakıyor")
+	_add(g, ["forward", "turn_left"])
+	assert_eq(g.call("strip_arrows"), ["right", ""] as Array[String])
+	assert_eq(g.call("palette_forward_arrow"), "up", "sola döndükten sonra ileri kartı yukarı gösterir")
+
 func test_path_build_wrong_end_cell() -> void:
 	var g: MiniGame = make("grid", _build(), 2)
 	_add(g, ["turn_left", "forward"])

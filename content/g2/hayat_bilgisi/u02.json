@@ -621,7 +621,7 @@
 							{
 								"token": {
 									"type": "item",
-									"value": "item.acil112.telefonu_kapat"
+									"value": "item.iletisim.bagir"
 								},
 								"correct": false
 							}

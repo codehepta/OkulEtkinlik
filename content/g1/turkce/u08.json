@@ -357,7 +357,7 @@
 							{
 								"token": {
 									"type": "item",
-									"value": "item.doga.agac"
+									"value": "item.doga.fidan"
 								},
 								"bin": 0
 							},
@@ -492,7 +492,7 @@
 							{
 								"token": {
 									"type": "item",
-									"value": "item.doga.dag"
+									"value": "item.tasit.otobus"
 								},
 								"bin": 0
 							},

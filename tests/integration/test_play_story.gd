@@ -98,3 +98,31 @@ func test_story_silent_last_page_waits_for_arrow() -> void:
 	var g: MiniGame = make("story", fixture("story_silent", FX)["params"] as Dictionary, 1)
 	await wait_seconds(1.5)
 	assert_eq(str(g.call("phase")), "read", "sessiz okumada çocuk kendi hızında okur")
+
+## Doğru seçenek her zaman ilk sırada durmaz: metin/görsel seçenekler rng ile karıştırılır,
+## sayı seçenekleri küçükten büyüğe dizilir. Cevap içerikteki indekse göre denetlenir.
+func _story_q(options: Array, answer: int) -> Dictionary:
+	return {"read": "listen", "pages": [{"text": "txt.test", "voice": "vo.test.p1"}],
+		"questions": [{"voice": "vo.test.q1", "options": options, "answer": answer}]}
+
+func test_story_options_shuffled_not_always_first() -> void:
+	var opts: Array = [{"type": "text", "value": "lbl.a"}, {"type": "text", "value": "lbl.b"},
+		{"type": "text", "value": "lbl.c"}, {"type": "text", "value": "lbl.d"}]
+	var firsts: Dictionary = {}
+	for s: int in 12:
+		var g: MiniGame = make("story", _story_q(opts, 0), 1, s + 1)
+		g.call("_debug_next")
+		var order: Array[int] = g.call("option_order")
+		assert_eq(order.size(), 4)
+		firsts[order[0]] = true
+		g.call("_debug_choose", 0)
+		await wait_for_signal(g.finished, 3.0)
+	assert_gt(firsts.size(), 1, "doğru cevap (0) her tohumda ilk sırada olmamalı")
+	assert_eq(answers, [true, true, true, true, true, true, true, true, true, true, true, true] as Array[bool],
+		"içerik indeksi doğru cevap olarak kalır")
+
+func test_story_number_options_ascending() -> void:
+	var opts: Array = [{"type": "number", "value": 6}, {"type": "number", "value": 2}, {"type": "number", "value": 4}]
+	var g: MiniGame = make("story", _story_q(opts, 0), 1, 3)
+	g.call("_debug_next")
+	assert_eq(g.call("option_order"), [1, 2, 0] as Array[int], "sayılar küçükten büyüğe")

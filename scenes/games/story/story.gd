@@ -67,6 +67,8 @@ var _question_label: Label = null
 var _question_panel: Panel = null
 var _question_speaker: Control = null
 var _option_views: Array[Control] = []
+## Ekrandaki sıra: _option_order[k] = k. yuvadaki seçeneğin içerikteki indeksi.
+var _option_order: Array[int] = []
 var _options_root: Control = null
 
 func setup(params: Dictionary, difficulty_value: int, context: RoundContext) -> void:
@@ -230,10 +232,28 @@ func _build_options(q: Dictionary) -> void:
 	_option_views.clear()
 	_faded.clear()
 	var options: Array = q["options"] as Array
+	_option_order = display_order(options, ctx.rng)
+	_option_views.resize(options.size())
 	if is_text_options(options):
 		_build_text_options(options)
 	else:
 		_build_token_options(options)
+
+## Seçeneklerin ekran sırası. Sayılar küçükten büyüğe dizilir; diğerleri karıştırılır ki
+## doğru cevap hep aynı yerde (çoğunlukla içerikte ilk sırada) durmasın.
+static func display_order(options: Array, rng: RandomNumberGenerator) -> Array[int]:
+	var order: Array[int] = []
+	var numeric: bool = true
+	for i: int in options.size():
+		order.append(i)
+		if str((options[i] as Dictionary).get("type", "")) != "number":
+			numeric = false
+	if numeric:
+		order.sort_custom(func(a: int, b: int) -> bool:
+			return float((options[a] as Dictionary)["value"]) < float((options[b] as Dictionary)["value"]))
+	else:
+		Widgets.shuffle(order, rng)
+	return order
 
 ## Bütün seçenekler metin token'ıysa iki sütunlu metin karoları kullanılır.
 static func is_text_options(options: Array) -> bool:
@@ -247,16 +267,17 @@ func _build_token_options(options: Array) -> void:
 	var x: float = (BASE_SIZE.x - total_w) / 2.0
 	_options_root.add_child(ClayStyle.make_panel(ClayStyle.tray_box(),
 		Rect2(x - STAGE_MARGIN, OPTION_Y - STAGE_MARGIN, total_w + STAGE_MARGIN * 2.0, OPTION_SIZE.y + STAGE_MARGIN * 2.0)))
-	for i: int in options.size():
+	for k: int in options.size():
+		var i: int = _option_order[k]
 		var v: Control = TOKEN_VIEW.instantiate() as Control
 		v.set("framed", true)
 		_options_root.add_child(v)
 		v.call("set_token", options[i] as Dictionary)
 		v.size = OPTION_SIZE
-		v.position = Vector2(x + i * (OPTION_SIZE.x + OPTION_GAP), OPTION_Y)
+		v.position = Vector2(x + k * (OPTION_SIZE.x + OPTION_GAP), OPTION_Y)
 		v.pivot_offset = OPTION_SIZE / 2.0
 		v.gui_input.connect(_on_option_input.bind(i))
-		_option_views.append(v)
+		_option_views[i] = v
 
 func _build_text_options(options: Array) -> void:
 	var cols: int = 1 if options.size() <= 2 else 2
@@ -266,14 +287,15 @@ func _build_text_options(options: Array) -> void:
 	var origin: Vector2 = Vector2((BASE_SIZE.x - total.x) / 2.0, OPTION_Y - 70.0)
 	_options_root.add_child(ClayStyle.make_panel(ClayStyle.tray_box(),
 		Rect2(origin - Vector2(STAGE_MARGIN, STAGE_MARGIN), total + Vector2(STAGE_MARGIN, STAGE_MARGIN) * 2.0)))
-	for i: int in options.size():
-		var col: int = i % cols
-		var row: int = i / cols
+	for k: int in options.size():
+		var i: int = _option_order[k]
+		var col: int = k % cols
+		var row: int = k / cols
 		var pos: Vector2 = origin + Vector2(col * (TEXT_OPTION_SIZE.x + TEXT_OPTION_GAP.x), row * (TEXT_OPTION_SIZE.y + TEXT_OPTION_GAP.y))
 		var label: String = Strings.t(str((options[i] as Dictionary)["value"]))
 		var tile: Control = Widgets.make_tile(_options_root, label, Rect2(pos, TEXT_OPTION_SIZE), TEXT_OPTION_FONT, ClayStyle.PEACH)
 		tile.gui_input.connect(_on_option_input.bind(i))
-		_option_views.append(tile)
+		_option_views[i] = tile
 
 func _on_option_input(event: InputEvent, index: int) -> void:
 	if is_press(event):
@@ -372,6 +394,9 @@ func question_index() -> int:
 
 func voice_unlocked() -> bool:
 	return _voice_unlocked
+
+func option_order() -> Array[int]:
+	return _option_order.duplicate()
 
 func speaker_visible() -> bool:
 	return _speaker.visible and _read_layer.visible
