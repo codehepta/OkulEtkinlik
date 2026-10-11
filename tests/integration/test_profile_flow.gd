@@ -32,7 +32,6 @@ func before_each() -> void:
 	_app.audio = _fake
 	_app.save = _save
 	_app.scene_root = _root
-	_app.splash_delay = 0.0
 
 func after_each() -> void:
 	for f: String in DirAccess.get_files_at(SAVE_DIR):
@@ -51,27 +50,51 @@ func _lock_profile(id: String) -> void:
 	_save.data["usage"]["seconds"] = 9999
 	_save.data["usage"]["day"] = _timer._effective_day()
 
-func test_splash_without_profiles_goes_to_create() -> void:
+func _splash() -> Control:
 	var splash: Control = (load("res://scenes/ui/splash.tscn") as PackedScene).instantiate() as Control
 	splash.app = _app
 	_root.add_child(splash)
-	await wait_until(func() -> bool: return _app.current_scene_name() == "profile_create", 3.0)
-	assert_eq(_app.current_scene_name(), "profile_create")
-	assert_true(_fake.said.has("vo.genel.hosgeldin"))
+	return splash
 
-func test_splash_with_profile_goes_to_select() -> void:
+func test_splash_waits_for_start_button() -> void:
+	var splash: Control = _splash()
+	await wait_seconds(0.6)
+	assert_eq(_app.current_scene_name(), "splash", "düğmeye basılmadan geçmez")
+	assert_true(_fake.said.has("vo.genel.hosgeldin"))
+	splash.start_button().pressed.emit()
+	assert_eq(_app.current_scene_name(), "profile_create")
+
+func test_splash_start_with_profile_goes_to_select() -> void:
 	_progress.create_profile("avatar.kedi", "A", 1)
-	var splash: Control = (load("res://scenes/ui/splash.tscn") as PackedScene).instantiate() as Control
-	splash.app = _app
-	_root.add_child(splash)
-	await wait_until(func() -> bool: return _app.current_scene_name() == "profile_select", 3.0)
+	var splash: Control = _splash()
+	splash.start_button().pressed.emit()
 	assert_eq(_app.current_scene_name(), "profile_select")
 
+func test_splash_start_button_is_big_with_text_and_icon() -> void:
+	var splash: Control = _splash()
+	await wait_process_frames(2)
+	var b: Button = splash.start_button()
+	assert_eq(b.text, Strings.t("splash.start"))
+	assert_eq(str(b.get("icon_key")), "ui.page_next")
+	assert_gte(b.size.x, 480.0)
+	assert_gte(b.size.y, 150.0)
+	splash.queue_free()
+
+func test_splash_says_start_hint_after_greeting() -> void:
+	var splash: Control = _splash()
+	await wait_until(func() -> bool: return _fake.said.has("vo.genel.basla_dokun"), 2.0)
+	assert_eq(_fake.said, ["vo.genel.hosgeldin", "vo.genel.basla_dokun"] as Array[String])
+	splash.queue_free()
+
+func test_splash_start_is_single_shot() -> void:
+	var splash: Control = _splash()
+	splash.start_button().pressed.emit()
+	var first: Node = _app.current_scene()
+	splash.start()
+	assert_eq(_app.current_scene(), first, "ikinci dokunuş yeni ekran açmaz")
+
 func test_splash_has_island_backdrop_title_plaque_and_bilge() -> void:
-	_app.splash_delay = 999.0
-	var splash: Control = (load("res://scenes/ui/splash.tscn") as PackedScene).instantiate() as Control
-	splash.app = _app
-	_root.add_child(splash)
+	var splash: Control = _splash()
 	assert_eq(splash.backdrop().texture, AssetRegistry.texture("map.island"), "ada görseli zemin")
 	assert_eq(splash.title_label().text, Strings.t("app.title"))
 	assert_true(splash.title_label().get_parent() == splash.title_plaque(), "başlık kil plakette")
@@ -80,14 +103,12 @@ func test_splash_has_island_backdrop_title_plaque_and_bilge() -> void:
 	splash.queue_free()
 
 func test_splash_reduce_motion_shows_final_state() -> void:
-	_app.splash_delay = 999.0
 	_save.data["settings"]["reduce_motion"] = true
-	var splash: Control = (load("res://scenes/ui/splash.tscn") as PackedScene).instantiate() as Control
-	splash.app = _app
-	_root.add_child(splash)
+	var splash: Control = _splash()
 	await wait_physics_frames(3)
 	assert_eq(splash.title_plaque().modulate.a, 1.0, "hareket azaltılınca plaket hemen görünür")
 	assert_eq(splash.bilge_view().modulate.a, 1.0)
+	assert_eq(splash.start_button().scale, Vector2.ONE, "hareket azaltılınca düğme atmaz")
 	splash.queue_free()
 
 func test_create_profile_flow_reaches_world_map() -> void:
@@ -131,6 +152,22 @@ func test_plus_card_hidden_at_four_profiles() -> void:
 	assert_false(_screen().plus_card().visible)
 	assert_eq(_screen().profile_cards().size(), 4)
 	assert_true(_fake.said.has("vo.genel.profil_sec"))
+
+func test_profile_select_has_title_plaque_island_and_bilge() -> void:
+	_progress.create_profile("avatar.kedi", "A", 1)
+	_app.goto("profile_select")
+	var s: Node = _screen()
+	assert_eq(s.title_label().text, Strings.t("profile.title"))
+	assert_eq(s.backdrop().texture, AssetRegistry.texture("map.island"), "ada görseli zemin")
+	assert_not_null(s.bilge_view())
+	assert_eq(s.plus_caption().text, Strings.t("profile.new"))
+
+func test_card_press_bounces_then_selects() -> void:
+	var id: String = _progress.create_profile("avatar.kedi", "A", 2)
+	_app.goto("profile_select")
+	_screen().profile_cards()[0].pressed.emit()
+	await wait_until(func() -> bool: return _app.current_scene_name() == "world_map", 2.0)
+	assert_eq(_app.profile_id, id)
 
 func test_select_profile_goes_to_world_map() -> void:
 	var id: String = _progress.create_profile("avatar.kedi", "A", 3)

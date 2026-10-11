@@ -29,11 +29,11 @@ func test_every_round_sets_up_with_reachable_targets() -> void:
 		var r: Dictionary = item["round"]
 		var params: Dictionary = _normalize(r["params"])
 		var g: MiniGame = make(str(r["template"]), params, int(r["difficulty"]))
-		await wait_frames(2)
+		await wait_physics_frames(2)
 		# drag_match (Faz 1) touch_targets sunmuyor; yalnızca hatasız kurulması denetlenir.
 		if not g.has_method("touch_targets"):
 			g.queue_free()
-			await wait_frames(1)
+			await wait_physics_frames(1)
 			continue
 		var targets: Array[Control] = g.call("touch_targets")
 		assert_gt(targets.size(), 0, "%s: dokunma hedefi yok" % item["where"])
@@ -43,7 +43,7 @@ func test_every_round_sets_up_with_reachable_targets() -> void:
 			assert_true(SCREEN.encloses(rect.grow(-1.0)), "%s: %s ekran dışında %s" % [item["where"], c.name, rect])
 			assert_false(BILGE_CORNER.intersects(rect.grow(-1.0)), "%s: %s Bilge köşesinde %s" % [item["where"], c.name, rect])
 		g.queue_free()
-		await wait_frames(1)
+		await wait_physics_frames(1)
 
 ## JSON sayıları float gelir; ContentDB gibi tam sayılara çevirir.
 func _normalize(v: Variant) -> Variant:

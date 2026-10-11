@@ -24,8 +24,6 @@ var scenes: Dictionary = SCENES.duplicate()
 var profile_id: String = ""
 ## Etkin profilin sınıfı (0 = bilinmiyor); SubtitleBubble okur.
 var active_grade: int = 0
-## Açılış ekranının logo bekleme süresi (sn); testlerde 0.
-var splash_delay: float = 1.5
 
 ## Testlerde sahte düğümlerle değiştirilir.
 var progress: Node = Progress

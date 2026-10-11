@@ -1,29 +1,47 @@
 extends Control
-## Profil seçimi: en fazla 4 avatar kartı, "+" kartı (4 profilde gizli), sağ altta veli dişlisi.
+## Profil seçimi ("Kim oynuyor?"): açılıştaki ada görseli yumuşatılmış zemin olarak sürer; üstte
+## Bilge başlık plaketini gösterir. En fazla 4 avatar kartı (kil madalyonda avatar, kurdelede ad),
+## "+ Yeni" kartı (4 profilde gizli), sağ altta veli dişlisi. Kartlar sırayla gelir; dokunulan kart
+## kısa bir zıplamadan sonra açılır. "Hareketi azalt" açıkken animasyon yoktur.
 
-const CARD_SIZE: Vector2 = Vector2(340, 440)
-const AVATAR_SIZE: Vector2 = Vector2(280, 280)
+const ISLAND_KEY: String = "map.island"
+const BILGE_KEY: String = "char.bilge.point_right"
+const BILGE_SIZE: Vector2 = Vector2(200, 232)
+const TITLE_FONT_SIZE: int = 84
+const CARD_SIZE: Vector2 = Vector2(340, 460)
+const MEDAL_SIZE: Vector2 = Vector2(292, 292)
+const MEDAL_PAD: float = 14.0
+const NAME_FONT_SIZE: int = 44
 const CARD_COLOR: Color = ClayStyle.APRICOT
 const PLUS_COLOR: Color = ClayStyle.MINT
 const PLUS_DISC: Vector2 = Vector2(220, 220)
 const PLUS_LIFT: float = 22.0
+## Zemin bulanıklığı (kaynak piksel) ve üstündeki açık örtü.
+const BLUR_RADIUS: float = 6.0
+const VEIL: Color = Color(1.0, 0.96, 0.88, 0.38)
+const CARDS_TOP: float = 280.0
+const ENTER_SECONDS: float = 0.45
+const ENTER_STAGGER: float = 0.09
+const BOUNCE_SECONDS: float = 0.22
 
 var app: Node = AppState
 
 var _cards: Array[Button] = []
 var _plus: Button = null
+var _plus_caption: Label = null
+var _title: Label = null
+var _backdrop: TextureRect = null
+var _bilge: Control = null
 var _navigating: bool = false
 
 func _ready() -> void:
-	var bg: ColorRect = ColorRect.new()
-	bg.color = ClayStyle.MEADOW
-	bg.set_anchors_preset(Control.PRESET_FULL_RECT)
-	bg.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	add_child(bg)
+	_build_backdrop()
+	_build_header()
 
-	# Kartlar ortada, kendi boylarında; altta altyazı şeridi boş kalır.
+	# Kartlar başlığın altında ortada, kendi boylarında; altta altyazı şeridi boş kalır.
 	var center: CenterContainer = CenterContainer.new()
 	center.set_anchors_preset(Control.PRESET_FULL_RECT)
+	center.offset_top = CARDS_TOP
 	center.offset_bottom = -ClayStyle.SUBTITLE_BAND / 2.0
 	add_child(center)
 	var row: HBoxContainer = HBoxContainer.new()
@@ -35,7 +53,7 @@ func _ready() -> void:
 	for p: Dictionary in profiles:
 		var card: Button = _make_card(str(p["avatar"]), _display_name(p))
 		var id: String = str(p["id"])
-		card.pressed.connect(select.bind(id))
+		card.pressed.connect(_on_card_pressed.bind(id, card))
 		row.add_child(card)
 		_cards.append(card)
 
@@ -60,6 +78,7 @@ func _ready() -> void:
 	add_child(gear)
 
 	app.narrator.say("vo.genel.profil_sec")
+	_play_enter.call_deferred()
 
 ## Altyazı balonu altta: kartlar ortada, dişli sağ altta (balon onlara değmez).
 func subtitle_placement() -> String:
@@ -70,6 +89,36 @@ func profile_cards() -> Array[Button]:
 
 func plus_card() -> Button:
 	return _plus
+
+func plus_caption() -> Label:
+	return _plus_caption
+
+func title_label() -> Label:
+	return _title
+
+func backdrop() -> TextureRect:
+	return _backdrop
+
+func bilge_view() -> Control:
+	return _bilge
+
+func _animate() -> bool:
+	return not app.reduce_motion() and app.anim_scale > 0.0
+
+## Dokunulan kart kısa bir zıplama yapar, sonra profil açılır.
+func _on_card_pressed(id: String, card: Button) -> void:
+	if _navigating:
+		return
+	app.audio.play_sfx("sfx.tap")
+	if not _animate():
+		select(id)
+		return
+	card.pivot_offset = card.size / 2.0
+	var t: float = BOUNCE_SECONDS * app.anim_scale
+	var tw: Tween = create_tween()
+	tw.tween_property(card, "scale", Vector2(1.12, 1.12), t * 0.45).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
+	tw.tween_property(card, "scale", Vector2.ONE, t * 0.55).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
+	tw.tween_callback(select.bind(id))
 
 func select(id: String) -> void:
 	if _navigating:
@@ -88,23 +137,150 @@ func _display_name(p: Dictionary) -> String:
 	var key: String = "label." + str(p["avatar"])
 	return Strings.t(key) if Strings.has(key) else ""
 
+## Zemin: ada görseli bulanık ve açık örtülü (kartlar öne çıksın); yoksa çayır yeşili.
+func _build_backdrop() -> void:
+	_backdrop = TextureRect.new()
+	_backdrop.name = "Backdrop"
+	_backdrop.set_anchors_preset(Control.PRESET_FULL_RECT)
+	_backdrop.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	_backdrop.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
+	_backdrop.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	var island: Texture2D = AssetRegistry.texture(ISLAND_KEY)
+	if island != null:
+		_backdrop.texture = island
+		var mat: ShaderMaterial = ShaderMaterial.new()
+		mat.shader = _blur_shader()
+		mat.set_shader_parameter("radius", BLUR_RADIUS)
+		_backdrop.material = mat
+	else:
+		_backdrop.texture = ClayStyle.vertical_gradient(ClayStyle.MINT, ClayStyle.MEADOW)
+	add_child(_backdrop)
+	var veil: ColorRect = ColorRect.new()
+	veil.color = VEIL
+	veil.set_anchors_preset(Control.PRESET_FULL_RECT)
+	veil.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	add_child(veil)
+
+## Üstte ortada: işaret eden Bilge + "Kim oynuyor?" kil plaketi.
+func _build_header() -> void:
+	var header: HBoxContainer = HBoxContainer.new()
+	header.name = "Header"
+	header.set_anchors_preset(Control.PRESET_CENTER_TOP)
+	header.grow_horizontal = Control.GROW_DIRECTION_BOTH
+	header.offset_top = 28.0
+	header.alignment = BoxContainer.ALIGNMENT_CENTER
+	header.add_theme_constant_override("separation", 12)
+	header.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	add_child(header)
+	_bilge = (load("res://scenes/components/asset_image.tscn") as PackedScene).instantiate() as Control
+	_bilge.name = "Bilge"
+	_bilge.set("key", BILGE_KEY)
+	_bilge.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	header.add_child(_bilge)
+	_bilge.custom_minimum_size = BILGE_SIZE
+	var plaque: PanelContainer = PanelContainer.new()
+	plaque.name = "TitlePlaque"
+	plaque.add_theme_stylebox_override("panel", ClayStyle.title_plaque_box(56.0))
+	plaque.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	plaque.size_flags_vertical = Control.SIZE_SHRINK_CENTER
+	header.add_child(plaque)
+	_title = Label.new()
+	_title.name = "Title"
+	_title.text = Strings.t("profile.title")
+	_title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	_title.add_theme_font_size_override("font_size", TITLE_FONT_SIZE)
+	_title.add_theme_color_override("font_color", ClayStyle.TITLE_INK)
+	_title.add_theme_color_override("font_shadow_color", Color(1, 1, 1, 0.55))
+	_title.add_theme_constant_override("shadow_offset_x", 0)
+	_title.add_theme_constant_override("shadow_offset_y", 3)
+	ClayStyle.use_bold(_title)
+	plaque.add_child(_title)
+	# Başlık ekranın ortasında kalsın: Bilge kadar boşluk sağa da konur.
+	var balance: Control = Control.new()
+	balance.custom_minimum_size = Vector2(BILGE_SIZE.x, 0)
+	balance.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	header.add_child(balance)
+
+## Kartlar sırayla belirir (hafif büyüyerek); hareket azaltılmışsa hemen son hâliyle.
+func _play_enter() -> void:
+	if not is_inside_tree() or not _animate():
+		return
+	var list: Array[Button] = _cards.duplicate()
+	if _plus.visible:
+		list.append(_plus)
+	for i: int in list.size():
+		var c: Button = list[i]
+		c.pivot_offset = c.size / 2.0
+		c.modulate.a = 0.0
+		c.scale = Vector2(0.85, 0.85)
+		var tw: Tween = create_tween().set_parallel(true)
+		var d: float = ENTER_STAGGER * i * app.anim_scale
+		tw.tween_property(c, "modulate:a", 1.0, ENTER_SECONDS * 0.6 * app.anim_scale).set_delay(d)
+		tw.tween_property(c, "scale", Vector2.ONE, ENTER_SECONDS * app.anim_scale).set_delay(d).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
+
+## Avatar kartı: kremsi kil madalyonda avatar, altında fildişi kurdelede ad.
 func _make_card(avatar_key: String, caption: String) -> Button:
 	var card: Button = _card_button(CARD_COLOR)
 	var col: VBoxContainer = _card_column(card)
+	var holder: CenterContainer = CenterContainer.new()
+	holder.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	col.add_child(holder)
+	var medal: Panel = Panel.new()
+	medal.custom_minimum_size = MEDAL_SIZE
+	medal.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	medal.add_theme_stylebox_override("panel", ClayStyle.box(ClayStyle.CREAM, int(MEDAL_SIZE.x / 2.0)))
+	holder.add_child(medal)
 	var img: Control = (load("res://scenes/components/asset_image.tscn") as PackedScene).instantiate() as Control
 	img.set("key", avatar_key)
 	img.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	col.add_child(img)
-	img.custom_minimum_size = AVATAR_SIZE
+	medal.add_child(img)
+	img.set_anchors_preset(Control.PRESET_FULL_RECT)
+	img.offset_left = MEDAL_PAD
+	img.offset_top = MEDAL_PAD
+	img.offset_right = -MEDAL_PAD
+	img.offset_bottom = -MEDAL_PAD - float(ClayStyle.DEPTH)
+	if caption != "":
+		col.add_child(_ribbon(caption))
+	return card
+
+## Ad kurdelesi: fildişi kil şerit, kalın koyu yazı; uzun takma ad kartı taşırmaz (üç nokta).
+func _ribbon(caption: String) -> Control:
+	var holder: CenterContainer = CenterContainer.new()
+	holder.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	var ribbon: PanelContainer = PanelContainer.new()
+	ribbon.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	ribbon.add_theme_stylebox_override("panel", ClayStyle.plaque_box(ClayStyle.IVORY, ClayStyle.CLAY_EDGE, 26, 4, 4, 0, 24.0, 2.0))
+	holder.add_child(ribbon)
 	var label: Label = Label.new()
 	label.text = caption
-	label.add_theme_font_size_override("font_size", 48)
+	label.add_theme_font_size_override("font_size", NAME_FONT_SIZE)
+	label.add_theme_color_override("font_color", ClayStyle.INK)
 	label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	label.text_overrun_behavior = TextServer.OVERRUN_TRIM_ELLIPSIS
-	label.custom_minimum_size = Vector2(CARD_SIZE.x - 48.0, 0)
 	label.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	col.add_child(label)
-	return card
+	ClayStyle.use_bold(label)
+	var font: Font = label.get_theme_font("font")
+	var width: float = font.get_string_size(caption, HORIZONTAL_ALIGNMENT_LEFT, -1, NAME_FONT_SIZE).x if font != null else 0.0
+	label.custom_minimum_size = Vector2(minf(ceilf(width) + 2.0, CARD_SIZE.x - 96.0), 0)
+	ribbon.add_child(label)
+	return holder
+
+func _blur_shader() -> Shader:
+	var sh: Shader = Shader.new()
+	sh.code = """shader_type canvas_item;
+uniform float radius = 6.0;
+void fragment() {
+	vec2 px = TEXTURE_PIXEL_SIZE * radius;
+	vec4 c = vec4(0.0);
+	for (int x = -2; x <= 2; x++) {
+		for (int y = -2; y <= 2; y++) {
+			c += texture(TEXTURE, UV + vec2(float(x), float(y)) * px);
+		}
+	}
+	COLOR = c / 25.0;
+}
+"""
+	return sh
 
 ## "+" kartı: nane yeşili kart üstünde kabarık bej kil disk ve büyük artı.
 func _make_plus_card() -> Button:
@@ -129,6 +305,14 @@ func _make_plus_card() -> Button:
 	plus.offset_bottom = -float(ClayStyle.DEPTH) - PLUS_LIFT
 	plus.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	disc.add_child(plus)
+	_plus_caption = Label.new()
+	_plus_caption.text = Strings.t("profile.new")
+	_plus_caption.add_theme_font_size_override("font_size", NAME_FONT_SIZE)
+	_plus_caption.add_theme_color_override("font_color", ClayStyle.INK)
+	_plus_caption.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	_plus_caption.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	ClayStyle.use_bold(_plus_caption)
+	col.add_child(_plus_caption)
 	return card
 
 func _card_button(color: Color) -> Button:
