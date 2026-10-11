@@ -169,3 +169,15 @@ func test_reset_day_cancels_future_unlock() -> void:
 	_t.clock.fixed_day = 100
 	_t.reset_day()
 	assert_eq(_save.data["usage"]["unlocked_day"], -1)
+
+func test_used_seconds_and_unlocked_today_for_parent_panel() -> void:
+	_set_limit(10)
+	_t.start()
+	_t.tick(125.0)
+	assert_eq(_t.used_seconds(), 125)
+	assert_false(_t.unlocked_today())
+	_t.parent_unlock_today()
+	assert_true(_t.unlocked_today())
+	_t.clock.fixed_day = 101
+	assert_eq(_t.used_seconds(), 0, "yeni günde kullanım sıfırdır")
+	assert_false(_t.unlocked_today(), "açma yalnızca o güne geçerli")

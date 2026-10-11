@@ -25,12 +25,12 @@ Her maddeyi sırayla uygula; "Beklenen" ile uyuşmayan her şeyi not al.
 2. Türkçe ses **yoksa** (ya da kaldır/devre dışı bırak): satırlar sessiz kalmamalı; ekranda altyazı balonu görünmeli.
 
 ## 4. Süre sınırı
-1. Veli paneli (aşağıda) -> Günlük oyun süresi: **10 dk**.
+1. Veli paneli -> **Süre** -> Günlük oyun süresi: **10 dk**.
 2. Çocuk profiliyle oyna ve 10 dakika bekle. Beklenen: süre dolunca **mevcut tur biter**, ardından Bilge'nin uyku ekranı gelir; oyun devam ettirilemez.
 3. Uyku ekranından çıkıp uygulamayı kapat-aç, aynı profili seç. Beklenen: aynı gün yine uyku ekranı.
-4. Panelde "Bugünlük süreyi aç" ile kilit kalkar.
+4. Uyku ekranındaki "büyüğünü çağır" düğmesiyle veli kapısından geç. Beklenen: veli paneli doğrudan **Süre** bölümünde açılır; "Bugün n dk oynandı · bugünkü süre doldu" yazar. "Bugünlük süreyi aç" ile kilit kalkar ve satır "bugünlük süre açık" olur.
 5. **Cihaz başına sınır (Faz 7a):** süre dolunca profil seçimine dön, başka bir profil seç. Beklenen: o profil de uyku ekranına gider; süre bütün profiller için ortaktır.
-6. **Günü sıfırla (Faz 7a):** cihaz tarihini 2 gün ileri al, oyna, sonra tarihi bugüne geri getir. Veli paneli -> "Günü sıfırla". Beklenen: "Oyun günü bugüne döndürüldü." mesajı; süre sınırı bugünün sayacıyla yeniden işler.
+6. **Günü sıfırla (Faz 7a):** cihaz tarihini 2 gün ileri al, oyna, sonra tarihi bugüne geri getir. Veli paneli -> **Süre** -> "Günü sıfırla". Beklenen: "Oyun günü bugüne döndürüldü." mesajı; süre sınırı bugünün sayacıyla yeniden işler.
 
 ## 5. Veli kapısı
 1. Profil seçim ekranında dişli simgesine dokun. Beklenen: aritmetik soru çıkar.
@@ -38,12 +38,14 @@ Her maddeyi sırayla uygula; "Beklenen" ile uyuşmayan her şeyi not al.
 3. Doğru cevap -> veli paneli açılır.
 
 ## 6. Veli paneli
-1. **Hareketi azalt:** aç, oyna. Beklenen: zıplama/sallanma animasyonları belirgin biçimde azalır.
-2. **1. sınıfta ekran metni göster:** aç/kapat. Beklenen: 1. sınıf profilinde ekran metni görünür/gizlenir.
-3. **Yedeği dışa aktar:** Beklenen: "Yedek yazıldı: <yol>" mesajı. Dosya uygulamanın özel klasörüne yazılır (yol mesajda gösterilir); normal dosya yöneticisinden görünmeyebilir.
-4. Bir profili sil, ardından **Yedeği içe aktar**. Beklenen: profil ve ilerleme geri gelir.
-5. Ses seviyeleri (konuşma/müzik/efekt) kaydırıcıları anında etki eder.
-6. **Faz 2 (müfredat verisi):** Veli paneli -> ilerleme: 1. sınıf Matematik çıktı metinleri görünür (`outcomes.json` şema değişikliği sonrası: `theme` yerine `themes`, yeni alanlar). Beklenen: çıktı metinleri eksiksiz ve doğru yazımla (`’`, `â`) listelenir; boş ya da kod görünen satır yok.
+**Yerleşim:** panel solda beş bölümle açılır (İlerleme · Evde · Süre · Ses ve ekran · Profil ve yedek); varsayılan İlerleme. Hiçbir bölümde sayfa kaymaz, yalnızca uzun listeler kendi kartında kayar. **Çıkış** her bölümde sağ üstte görünür. Süre ve Ses ve ekran'da çocuk seçici yerine "Bütün çocuklar için ortak" yazar. Bölüm değiştirince seçili çocuk, çocuk değiştirince bölüm ve ders korunur.
+
+1. **Hareketi azalt** (Ses ve ekran): aç, oyna. Beklenen: zıplama/sallanma animasyonları belirgin biçimde azalır.
+2. **1. sınıfta ekran metni göster** (Ses ve ekran): aç/kapat. Beklenen: 1. sınıf profilinde ekran metni görünür/gizlenir.
+3. **Yedeği dışa aktar** (Profil ve yedek -> Cihaz yedeği kartı): Beklenen: "Yedek yazıldı: <yol>" mesajı kartta kalır. Dosya uygulamanın özel klasörüne yazılır (yol mesajda gösterilir); normal dosya yöneticisinden görünmeyebilir.
+4. Profil ve yedek -> **Profili sil**. Beklenen: kil onay kartı açılır ("Vazgeç" / "Evet, sil"); Vazgeç'te hiçbir şey silinmez. Silmeyi onayla, ardından paneli yeniden aç ve **Yedeği içe aktar**. Beklenen: profil ve ilerleme geri gelir, panel Profil ve yedek bölümünde kalır.
+5. Ses ve ekran: ses seviyeleri (konuşma/müzik/efekt) kaydırıcıları anında etki eder.
+6. **Faz 2 (müfredat verisi):** Veli paneli -> İlerleme -> Matematik: üstte "X/Y çıktı oynandı · ortalama ustalık %Z" özeti, altta çıktı metinleri (en çok iki satır, MEB kodu gri) görünür (`outcomes.json` şema değişikliği sonrası: `theme` yerine `themes`, yeni alanlar). Beklenen: çıktı metinleri eksiksiz ve doğru yazımla (`’`, `â`) listelenir; boş ya da kod görünen satır yok.
 
 ## 7. Dayanıklılık
 1. **Ders ortasında kapat:** bir dersin 2. turunda uygulamayı son uygulamalardan kapat, yeniden aç. Beklenen: profil, tamamlanan duraklar ve çıkartmalar duruyor; kayıt bozulması uyarısı yok (en fazla yarım kalan ders baştan başlar).
@@ -137,7 +139,7 @@ Bu şablonların henüz ünite içeriği yok (Faz 4b, 4c). Cihazda denemek için
 3. **Sürükle-düzenle:** Ağaç Evi'nde raftaki süsü parmakla odaya sürükle, bırak. Beklenen: süs bırakılan yerde kalır; parmağın altında hafifçe büyür (hareketi azalt açıkken büyümez). Süsü rafa geri sürükle: rafa döner. Uygulamayı kapat-aç: yerleşim korunur.
 4. **Kilitli yuva:** kilide dokun. Beklenen: Bilge "Bu süs için biraz daha yıldız toplayalım!" der; ceza ya da bekleme yok.
 5. **Tekrar Bulutu:** bir durağı 1 yıldızla bitir (çok yanlış yap) ya da ertesi gün 3 yıldızlı bir durağın patikasına gir. Beklenen: patikanın sağ üstünde Tekrar Bulutu belirir, Bilge "Tekrar Bulutu geldi!" der. Buluta dokun: 3 karışık tur oynanır; sonuçta yıldız görünür, "Tekrar oyna" düğmesi yoktur. "Devam" ile patikaya dönülür; iyi oynandıysa bulut kaybolur.
-6. **Evde etkinlik önerileri:** veli paneli -> "Evde etkinlik önerileri". Beklenen: seçili profilin sınıfına göre ders başlıkları altında çıktı adı ve öneri metni listelenir; sınıf değişince liste değişir. Metinler doğru Türkçe yazımla ve çevrimdışı görünür.
+6. **Evde etkinlik önerileri:** veli paneli -> **Evde** -> ders düğmesi. Beklenen: seçili profilin sınıfında seçili dersin çıktı adı ve öneri metni listelenir; sınıf (Profil ve yedek) değişince liste değişir. Metinler doğru Türkçe yazımla ve çevrimdışı görünür.
 
 ## Asset geldiğinde (parti 023, 024)
 1. `decor.*` görselleri eklenince rafta ve odada yer tutucuların yerini alır; süsler kırpılmadan ve aynı ışıkta görünür.
@@ -368,7 +370,7 @@ Eşikler `scripts/core/adaptive_config.gd`'dedir. Simülasyon raporu: `godot --h
 1. Yeni bir profille Sayı Ormanı'nın ilk durağını hatasız oyna, durağı tekrar aç. Beklenen: aynı çıktının üç kusursuz turundan sonra turlar bir seviye zorlaşır (daha büyük sayılar, daha çok seçenek). Sıkıcı gelmemeli.
 2. Aynı durakta bilerek iki kez yanlış cevap ver. Beklenen: aynı durağın sonraki turu kolaylaşır; ceza hissi yok, yıldız kuralı değişmedi.
 3. Bir çocuğun 15–20 dakikalık oyununu izle: tur başına ilk denemede doğru cevap oranı kabaca 3'te 2 ile 10'da 9 arasında mı? Çok kolay ya da çok zorsa gözlemi yaz; düzeltme yalnızca yapılandırma dosyasında yapılır, ardından `tests/integration/test_adaptive_sim.gd` çalıştırılır.
-4. Veli paneli: tek kusursuz turdan sonra ustalık çubuğu %30 civarında (ham ustalık; zorluk kararı ayrı tahmin kullanır).
+4. Veli paneli -> İlerleme: tek kusursuz turdan sonra ustalık çubuğu %30 civarında (ham ustalık; zorluk kararı ayrı tahmin kullanır).
 
 # Faz 8 — Sürüm adayı (cila, erişilebilirlik, düşük cihaz)
 
@@ -387,7 +389,7 @@ Otomatik denetimler her PR'da çalışır: dokunma hedefleri bütün ekranlarda 
 
 ## Erişilebilirlik
 1. Her ekranda her düğmeye 6–7 yaşında bir çocuğun parmağıyla rahatça dokunulabiliyor mu? Yanlışlıkla komşu düğmeye basılıyor mu?
-2. Veli panelinde "hareketi azalt"ı aç: yıldız patlaması, Bilge sallanması, patika kayması duruyor ya da sadeleşiyor mu? Yanıp sönen hiçbir şey var mı (olmamalı)?
+2. Veli paneli -> Ses ve ekran -> "hareketi azalt"ı aç: yıldız patlaması, Bilge sallanması, patika kayması duruyor ya da sadeleşiyor mu? Yanıp sönen hiçbir şey var mı (olmamalı)?
 3. Her yönergenin yanında tekrar dinleme var mı ve çalışıyor mu? Sesi tamamen kıs: 2–3. sınıfta altyazı balonu yönergeyi gösteriyor mu?
 4. Renk körlüğü: telefonda Ayarlar → Erişilebilirlik → Renk düzeltme (deuteranomali) aç. Kutulara ayırma, grafik ve doğru/yanlış geri bildirimi şekil ve simgeyle de anlaşılıyor mu?
 5. Güneş altında ya da en düşük parlaklıkta yazılar okunuyor mu?
@@ -395,7 +397,7 @@ Otomatik denetimler her PR'da çalışır: dokunma hedefleri bütün ekranlarda 
 ## Ses miksajı
 1. Telefon hoparlöründe orta seste: müzik çalarken anlatım rahatça anlaşılıyor mu? (Anlatımda müzik kısılır.)
 2. Kulaklıkla en yüksek seste: hiçbir ses patlamıyor, cızırdamıyor mu? "Yanlış" efekti sert değil, yumuşak mı?
-3. Veli panelindeki üç kaydırıcı ayrı ayrı çalışıyor ve uygulama kapanıp açılınca korunuyor mu?
+3. Veli paneli -> Ses ve ekran'daki üç kaydırıcı ayrı ayrı çalışıyor ve uygulama kapanıp açılınca korunuyor mu?
 4. Yeni ses dosyaları: `docs/assets/audio-mix.md` hedeflerine çekildi mi?
 
 ## Sürüm adayı ölçütleri

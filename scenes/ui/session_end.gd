@@ -70,7 +70,7 @@ func bilge_view() -> Control:
 	return _bilge
 
 func open_parent_gate() -> void:
-	app.goto("parent_gate", {"next": {"scene": "parent_panel", "args": {}}, "back": "profile_select"})
+	app.goto("parent_gate", {"next": {"scene": "parent_panel", "args": {"tab": "time"}}, "back": "profile_select"})
 
 ## Büyük kil düğme: solda "büyüğünü çağır" simgesi, sağda strings'ten gelen metin.
 func _make_call_button() -> Button:

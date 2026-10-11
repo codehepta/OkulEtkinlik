@@ -102,4 +102,7 @@ func test_result_and_session_end() -> void:
 func test_parent_screens() -> void:
 	_login(1)
 	await _audit("parent_gate", {"next": {"scene": "parent_panel", "args": {}}})
-	await _audit("parent_panel")
+	# Veli paneli: her bölüm ayrı kurulur; hepsi denetlenir.
+	for tab: String in ["progress", "home", "time", "sound", "profile"]:
+		await _audit("parent_panel", {"tab": tab})
+		assert_eq(_app.current_scene().current_tab(), tab)
