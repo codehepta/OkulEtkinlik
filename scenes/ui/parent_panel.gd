@@ -70,6 +70,7 @@ var _status: String = ""
 var _status_tab: String = ""
 var _status_label: Label = null
 var _usage_label: Label = null
+var _unlock: Button = null
 var _warning_strip: PanelContainer = null
 var _child_selector: Control = null
 var _shared_note: Control = null
@@ -117,6 +118,14 @@ func status_text() -> String:
 
 func warning_visible() -> bool:
 	return _warning_strip != null and _warning_strip.visible
+
+## "Bugünlük süreyi aç" düğmesi (Süre bölümü kurulmadıysa null).
+func unlock_button() -> Button:
+	return _unlock
+
+## Sekmede görünen ad: takma ad; yoksa Kim oynuyor ekranındaki gibi avatarın adı.
+func profile_label(id: String) -> String:
+	return _profile_name(_find_profile(id))
 
 func selected_profile() -> String:
 	return _pid
@@ -306,6 +315,9 @@ func _profile_name(p: Dictionary) -> String:
 	var nick: String = str(p.get("nickname", ""))
 	if nick != "":
 		return nick
+	var avatar_key: String = "label." + str(p.get("avatar", ""))
+	if Strings.has(avatar_key):
+		return Strings.t(avatar_key)
 	return Strings.t("parent.profile_default", {"n": str(p.get("id", "")).trim_prefix("p")})
 
 func _date_text(day: int) -> String:
@@ -320,6 +332,9 @@ func _set_status(text: String, tab: String) -> void:
 func _refresh_usage() -> void:
 	if _usage_label != null:
 		_usage_label.text = usage_text()
+	# Sınır yokken açılacak bir süre de yok: düğme yalnız sınır seçiliyken görünür.
+	if _unlock != null:
+		_unlock.visible = int(_settings().get("daily_limit_min", 0)) > 0
 
 func _grade() -> int:
 	return int(_find_profile(_pid).get("grade", 0))
@@ -348,6 +363,7 @@ func _rebuild() -> void:
 		c.free()
 	_status_label = null
 	_usage_label = null
+	_unlock = null
 	_child_selector = null
 	_shared_note = null
 
@@ -634,11 +650,12 @@ func _build_time(c: VBoxContainer) -> void:
 	_usage_label.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	_usage_label.size_flags_vertical = Control.SIZE_SHRINK_CENTER
 	usage_row.add_child(_usage_label)
-	var unlock: Button = _button(Strings.t("parent.unlock_today"))
-	ClayStyle.style_button(unlock, ClayStyle.MINT)
-	unlock.pressed.connect(unlock_today)
-	usage_row.add_child(unlock)
+	_unlock = _button(Strings.t("parent.unlock_today"))
+	ClayStyle.style_button(_unlock, ClayStyle.MINT)
+	_unlock.pressed.connect(unlock_today)
+	usage_row.add_child(_unlock)
 	limit_card.add_child(usage_row)
+	_refresh_usage()
 
 	var reset_card: VBoxContainer = _card(c)
 	var reset_row: HBoxContainer = HBoxContainer.new()

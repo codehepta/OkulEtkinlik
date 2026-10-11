@@ -445,6 +445,23 @@ func test_time_section_shows_today_usage() -> void:
 	var shown: Label = panel.find_child("UsageLabel", true, false) as Label
 	assert_eq(shown.text, panel.usage_text())
 
+func test_unlock_button_only_with_daily_limit() -> void:
+	_login(1)
+	_save.data["settings"]["daily_limit_min"] = 0
+	var panel: Node = _open_panel()
+	panel.select_tab("time")
+	assert_false(panel.unlock_button().visible, "sınır yokken bugünlük süreyi aç gizli")
+	panel.set_daily_limit(20)
+	assert_true(panel.unlock_button().visible, "sınır seçilince görünür")
+	panel.set_daily_limit(0)
+	assert_false(panel.unlock_button().visible)
+
+func test_profile_without_nickname_shows_avatar_name() -> void:
+	var id: String = _progress.create_profile("avatar.tavsan", "", 1)
+	var named: String = _progress.create_profile("avatar.kedi", "Ece", 1)
+	assert_eq(_open_panel().profile_label(id), Strings.t("label.avatar.tavsan"), "Kim oynuyor ekranıyla aynı ad")
+	assert_eq(_open_panel().profile_label(named), "Ece")
+
 func test_delete_confirmation_card_cancel_and_confirm() -> void:
 	var a: String = _login(1)
 	var b: String = _progress.create_profile("avatar.kedi", "U", 1)
