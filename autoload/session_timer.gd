@@ -84,6 +84,14 @@ func remaining_seconds() -> int:
 		return -1
 	return maxi(0, limit * 60 - int(usage["seconds"]))
 
+## Bugün (etkin gün) oynanan toplam saniye; veli panelindeki süre satırı için.
+func used_seconds() -> int:
+	return int(_usage()["seconds"])
+
+## Veli bugünlük süreyi açtı mı?
+func unlocked_today() -> bool:
+	return int(_usage()["unlocked_day"]) == _effective_day()
+
 func parent_unlock_today() -> void:
 	_usage()["unlocked_day"] = _effective_day()
 	save.save()
