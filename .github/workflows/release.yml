@@ -9,13 +9,6 @@ name: Sürüm
 on:
   push:
     tags: ["v*"]
-  pull_request:
-    paths:
-      - ".github/workflows/release.yml"
-      - "export_presets.cfg"
-      - "scripts/ci-android-setup.sh"
-      - "scripts/ci-check-apk.sh"
-      - "scripts/ci-check-aab.sh"
   workflow_dispatch:
 
 env:

@@ -1,8 +1,11 @@
 name: CI
 
+# Geliştirme aşamasında (tek geliştirici) PR'larda CI çalışmaz; testler birleştirmeden önce
+# yerelde çalıştırılır. CI yalnızca main'e push'ta (birleştirme sonrası) ve elle çalışır.
+# Katkıcı gelince pull_request tetikleyicisi geri eklenir (sahip kararı, 2026-10-12).
 on:
   push:
-  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 env:

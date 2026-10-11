@@ -6,6 +6,8 @@
 - Kısa satır (≤ 2 kelime): ilk harf büyük; '!' ve '.' biçimleri; tek kelimede ayrıca giriş cümlesi.
 - Okunuş düzeltmeleri SAY_AS ile (altmış → atmış).
 - Zor harf/kelimelerde (ı, ö, c, arı) sahip giriş cümleli kesimi seçti.
+- Kısaltmalar açık okunur (ABBR): kg → Kilogram, Dr. → Doktor, TDK → Türk Dil Kurumu (harf harf değil).
+- Soru eki tek başına (mı/mi/mu/mü): önüne fiil konur ('Yazdın mı?'), son kelime kesilir.
 - Uzun satır: metin olduğu gibi.
 Her biçim birden çok tohumla üretilir; Whisper doğru duyan ve kesik olmayan adayı seçer.
 """
@@ -13,6 +15,17 @@ VOWELS = set("aeıioöuü")
 # Okunuş düzeltmeleri: yazılış korunur, ses bu biçimle üretilir (sahibin kulağıyla bulundu).
 SAY_AS = {"altmış": "atmış"}
 CARRIER = "Şimdi okuyalım: "
+# Kısaltmaların açık okunuşu (2. sınıfta sahip onayladı). Satır içinde de açılır.
+ABBR = {"kg": "kilogram", "km": "kilometre", "Dr.": "Doktor", "Cad.": "Cadde", "Sok.": "Sokak", "No.": "Numara",
+        "TDK": "Türk Dil Kurumu", "TRT": "Türkiye Radyo ve Televizyon Kurumu", "TBMM": "Türkiye Büyük Millet Meclisi"}
+# Tek başına soru eki: fiille üretilip son kelime kesilir.
+PARTICLE = {"mı": "Yazdın mı?", "mi": "Bildin mi?", "mu": "Buldun mu?", "mü": "Gördün mü?"}
+
+def expand_abbr(t: str) -> str:
+    import re
+    for a, b in ABBR.items():
+        t = re.sub(rf"(?<![\wçğıöşüÇĞİÖŞÜ]){re.escape(a)}(?![\wçğıöşüÇĞİÖŞÜ])", b, t)
+    return t
 
 def cap(t: str) -> str:
     return t[:1].upper() + t[1:]
@@ -30,6 +43,9 @@ def variants(key: str, text: str) -> list[dict]:
             return [{"say": "Yumuşak ge.", "carrier": False}]
         return [{"say": f"{cap(t)}e.", "carrier": False}, {"say": f"{cap(t)}e!", "carrier": False},
                 {"say": f"{CARRIER}{t}e.", "carrier": True}]
+    if t.rstrip("?") in PARTICLE:
+        return [{"say": PARTICLE[t.rstrip("?")], "carrier": True}]
+    t = expand_abbr(t)
     if ".hece." in key:
         return [{"say": f"{CARRIER}{t}.", "carrier": True}]
     if len(t.split()) <= 2:
@@ -71,14 +87,20 @@ def digits_to_words(s: str) -> str:
     s = re.sub(r"(\d+)[.:]30\b", lambda m: int_to_tr(int(m.group(1))) + " buçuk", s)
     s = re.sub(r"(\d+)[.:]00\b", lambda m: int_to_tr(int(m.group(1))), s)
     s = re.sub(r"(\d+)-(\d+)", lambda m: f"{m.group(1)} eksi {m.group(2)}", s)
+    s = re.sub(r"(\d)\s*/\s*(\d)", r"\1 bölü \2", s)
+    s = re.sub(r"(\d)\s*\+\s*(\d)", r"\1 artı \2", s)
+    s = re.sub(r"(\d)\s*[x×]\s*(\d)", r"\1 çarpı \2", s)
+    s = re.sub(r"(\d)\s*=\s*(\d)", r"\1 eşittir \2", s)
     s = re.sub(r"(\d+)'?(\w*)", lambda m: int_to_tr(int(m.group(1))) + (m.group(2) and "" ), s)
     return s
 
 def norm(s: str) -> str:
     import re
+    s = s.replace("â", "a").replace("î", "i").replace("û", "u").replace("Â", "A").replace("Î", "İ").replace("Û", "U")
     return re.sub(r"[^\wçğıöşü ]", "", s.lower().replace("İ", "i").replace("I", "ı")).strip()
 
 def heard_ok(expected: str, say: str, asr: str) -> bool:
+    expected = expand_abbr(expected)
     n = words_to_int(expected)
     a = norm(asr)
     if n is not None:
@@ -91,4 +113,4 @@ def heard_ok(expected: str, say: str, asr: str) -> bool:
     if len(expected.split()) > 2:                       # cümle: küçük Whisper hatalarını tolere et
         import difflib
         return difflib.SequenceMatcher(None, a, norm(digits_to_words(expected))).ratio() >= 0.85
-    return a == norm(expected) or a == e
+    return a == norm(digits_to_words(expected)) or a == norm(expected) or a == e

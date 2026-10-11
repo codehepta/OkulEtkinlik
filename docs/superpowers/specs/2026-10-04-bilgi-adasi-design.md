@@ -442,7 +442,7 @@ Hayat Bilgisi 1–3 içeriği (Hayat Kasabası). Ayrıntı: `docs/superpowers/pl
 ## Açık sorular (Faz 8)
 - **Karar (sahip onayıyla önerilen seçim, Faz 8):** Cihaz testleri sahibin gerçek Android cihazında yapılır; cloud görevi otomatik denetimleri (dokunma hedefi, kontrast, düşük cihaz ayarları, APK boyutu), ölçüm aracını (`tools/perf_probe.gd`) ve `docs/qa-checklist.md` Faz 8 adımlarını hazırladı. Ayrıntı: `docs/superpowers/plans/2026-10-08-faz8-cila-surum-adayi.md`.
 - **Karar (önerilen seçim):** Android'de çizim yöntemi `gl_compatibility` (OpenGL ES 3). Uygulama tamamen 2B'dir; Android 8 dönemi düşük cihazların çoğunda Vulkan yok ya da kararsız. Masaüstü ve editör `mobile` yöntemiyle kalır; ekran görüntüleri zaten `gl_compatibility` ile alınıyor.
-- **Karar (önerilen seçim):** APK boyut bütçesi 150 MB (CI'da denetlenir). Ses hedefleri −16 LUFS seslendirme, −23 LUFS müzik, −18 LUFS efekt (`docs/assets/audio-mix.md`); ana kanalda −1 dB tavanlı sınırlayıcı.
+- **Karar (önerilen seçim):** APK boyut bütçesi 150 MB (CI'da denetlenir). **Güncelleme (sahip kararı, 2026-10-12):** 2. sınıf seslendirmesiyle APK 155 MB oldu. Seslendirme en yüksek Vorbis sıkıştırmasına geçti (≈42 kbps, %35 küçük) ve bütçe APK ile AAB için 200 MB'a çıktı; 3. sınıf seslerinden sonra tahmini boyut ≈160 MB. Ses hedefleri −16 LUFS seslendirme, −23 LUFS müzik, −18 LUFS efekt (`docs/assets/audio-mix.md`); ana kanalda −1 dB tavanlı sınırlayıcı.
 - **Karar (önerilen seçim):** Kontrast hedefi bütün metinlerde WCAG AA gövde metni eşiği 4.5:1 (çocuk ekranlarındaki metin büyük metin sayılsa da).
 
 ## Açık sorular (Faz 9)

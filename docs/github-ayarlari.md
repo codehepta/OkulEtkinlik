@@ -14,10 +14,11 @@ Depodaki dosyalar (`CONTRIBUTING.md`, şablonlar, `CODEOWNERS`, `dependabot.yml`
 
 ## 2. Dal koruması (Settings → Rules → Rulesets → New branch ruleset)
 - **Name:** `main koruması` · **Enforcement:** Active · **Target:** Default branch (`main`)
-- Kurallar:
+- **Şu an (geliştirme aşaması, tek geliştirici; 2026-10-12'de kuruldu):**
   - ✅ Restrict deletions · ✅ Block force pushes
-  - ✅ Require a pull request before merging — Required approvals: **0** (tek bakımcıysan; katkıcı gelince 1 yap) · ✅ Require review from Code Owners (katkıcı geldiğinde)
-  - ✅ Require status checks to pass — **`test`** ve **`android-debug`** (CI iş adları) · ✅ Require branches to be up to date
+  - ✅ Require a pull request before merging — Required approvals: **0** · birleştirme yöntemi: merge commit. PR'ları sahip onaylar ve birleştirir (PR'lar sahibin hesabından açıldığı için GitHub kendi PR'ını onaylatmaz; onay birleştirme düğmesidir).
+  - Status check zorunlu değil: CI PR'larda kapalı (`.github/workflows/ci.yml` yalnızca `main`'e push'ta ve elle çalışır). Testler birleştirmeden önce yerelde çalıştırılır.
+- **Katkıcı gelince:** `ci.yml`'e `pull_request` tetikleyicisini geri ekle; Required approvals **1** ve ✅ Require review from Code Owners; ✅ Require status checks to pass — **`test`** ve **`android-debug`** · ✅ Require branches to be up to date.
 - **Bypass list:** gerekirse kendini ekle (acil durum için).
 
 ## 3. Güvenlik (Settings → Code security / Advanced Security)
