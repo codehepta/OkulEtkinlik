@@ -225,12 +225,15 @@ SQ = [(-0.8, -0.8), (0.8, -0.8), (0.8, 0.8), (-0.8, 0.8)]
 RECT = [(-1.1, -0.6), (1.1, -0.6), (1.1, 0.6), (-1.1, 0.6)]
 
 
-def sym_square(name, diag=False, off=False):
+def sym_square(name, diag=False, off=False, low=False):
     flat_poly(name, SQ, 0.16, 0.0, YELLOW)
     if diag:
         dashed(name + "_cizgi", (-0.74, -0.74), (0.74, 0.74), 0.17)
     if off:
         dashed(name + "_cizgi", (-0.25, -0.76), (0.45, 0.76), 0.17)
+    if low:
+        # Merkezden geçmeyen yatay çizgi: kareyi eş olmayan iki parçaya böler (simetri doğrusu değil).
+        dashed(name + "_cizgi", (-0.76, 0.36), (0.76, 0.36), 0.17)
 
 
 def sym_rect(name, diag=False):
@@ -267,6 +270,7 @@ ITEMS = {**{k: ("010-faz3-sablonlar", (lambda k=k, v=v: coin(k, *v))) for k, v i
          "item.simetri.kare_kosegen": ("050-g3-matematik-nesneler", lambda: sym_square("kare", diag=True)),
          "item.simetri.dikdortgen_kosegen": ("050-g3-matematik-nesneler", lambda: sym_rect("dikdortgen", diag=True)),
          "item.simetri.kare_yamuk_cizgi": ("050-g3-matematik-nesneler", lambda: sym_square("kare", off=True)),
+         "item.simetri.kare_yatay_cizgi": ("098-gorsel-duzeltmeleri-2", lambda: sym_square("kare", low=True)),
          "item.simetri.ev": ("050-g3-matematik-nesneler", lambda: sym_house("ev")),
          "item.simetri.ruzgar_gulu": ("050-g3-matematik-nesneler", lambda: lopsided_kite("ucurtma")),
          }

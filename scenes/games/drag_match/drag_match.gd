@@ -108,6 +108,12 @@ func _make_slot(token: Dictionary, pos: Vector2) -> Control:
 	target.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	slot.add_child(target)
 	target.call("set_token", token)
+	# Sesli hedef kart dokununca kendi sesini okur (cevap sayılmaz); bırakma alanı slotun tamamıdır.
+	if Token.voice_of(token) != "":
+		target.mouse_filter = Control.MOUSE_FILTER_STOP
+		target.gui_input.connect(func(event: InputEvent) -> void:
+			if is_press(event):
+				_say_target(token))
 	target.custom_minimum_size = _view_size
 	target.size = _view_size
 	target.position = Vector2(_view_size.x + TARGET_GAP, 0)
@@ -218,6 +224,17 @@ func _say_pair(pair_index: int, any_side: bool) -> void:
 		voice = Token.voice_of(pr["right"] as Dictionary)
 	if voice != "":
 		narrator.say(voice)
+
+## Hedef kartın sesi (sessiz okumada ses açılmadıysa okunmaz).
+func _say_target(token: Dictionary) -> void:
+	var voice: String = Token.voice_of(token)
+	if voice == "" or not _voice_unlocked or not _can_input():
+		return
+	narrator.say(voice)
+
+## Test için: sağdaki s. hedef karta dokunma.
+func _debug_tap_target(slot_index: int) -> void:
+	_say_target((_pairs[_slot_pair[slot_index]] as Dictionary)["right"] as Dictionary)
 
 func voice_unlocked() -> bool:
 	return _voice_unlocked

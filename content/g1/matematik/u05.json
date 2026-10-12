@@ -102,8 +102,8 @@
 							},
 							{
 								"type": "item",
-								"value": "item.para.tl_200",
-								"voice": "vo.g1.matematik.para.tl_200"
+								"value": "item.para.tl_5",
+								"voice": "vo.g1.matematik.para.tl_5"
 							}
 						]
 					}
@@ -136,8 +136,8 @@
 							},
 							{
 								"type": "item",
-								"value": "item.para.tl_10",
-								"voice": "vo.g1.matematik.para.tl_10"
+								"value": "item.para.tl_20",
+								"voice": "vo.g1.matematik.para.tl_20"
 							}
 						]
 					}
@@ -270,7 +270,8 @@
 								},
 								"right": {
 									"type": "number",
-									"value": 50
+									"value": 50,
+									"voice": "vo.sayi.50"
 								}
 							}
 						]
@@ -302,7 +303,8 @@
 								},
 								"right": {
 									"type": "number",
-									"value": 50
+									"value": 50,
+									"voice": "vo.sayi.50"
 								}
 							},
 							{
@@ -313,7 +315,8 @@
 								},
 								"right": {
 									"type": "number",
-									"value": 100
+									"value": 100,
+									"voice": "vo.sayi.100"
 								}
 							},
 							{
@@ -324,7 +327,8 @@
 								},
 								"right": {
 									"type": "number",
-									"value": 200
+									"value": 200,
+									"voice": "vo.sayi.200"
 								}
 							}
 						]

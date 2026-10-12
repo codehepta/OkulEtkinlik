@@ -121,14 +121,14 @@
 							{
 								"token": {
 									"type": "item",
-									"value": "item.hava.cicek_acan_agac"
+									"value": "item.hava.cicek_toplayan"
 								},
 								"bin": 0
 							},
 							{
 								"token": {
 									"type": "item",
-									"value": "item.hava.gokkusagi"
+									"value": "item.hava.lale_bahcesi"
 								},
 								"bin": 0
 							},
@@ -149,7 +149,7 @@
 							{
 								"token": {
 									"type": "item",
-									"value": "item.hava.ruzgar"
+									"value": "item.hava.kestane"
 								},
 								"bin": 1
 							},
@@ -188,7 +188,7 @@
 								},
 								"right": {
 									"type": "item",
-									"value": "item.hava.gokkusagi"
+									"value": "item.hava.cicek_acan_agac"
 								}
 							},
 							{

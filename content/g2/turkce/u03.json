@@ -817,13 +817,13 @@
 							{
 								"left": {
 									"type": "text",
-									"value": "tk.km",
-									"voice": "vo.tk.km"
+									"value": "tk.no",
+									"voice": "vo.tk.no"
 								},
 								"right": {
 									"type": "text",
-									"value": "tk.kilometre",
-									"voice": "vo.tk.kilometre"
+									"value": "tk.numara",
+									"voice": "vo.tk.numara"
 								}
 							},
 							{
@@ -836,6 +836,18 @@
 									"type": "text",
 									"value": "tk.metre",
 									"voice": "vo.tk.metre"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "tk.kg",
+									"voice": "vo.tk.kg"
+								},
+								"right": {
+									"type": "text",
+									"value": "tk.kilogram",
+									"voice": "vo.tk.kilogram"
 								}
 							}
 						]
@@ -855,8 +867,8 @@
 								},
 								"right": {
 									"type": "text",
-									"value": "tk.agri",
-									"voice": "vo.tk.agri"
+									"value": "tk.erciyes",
+									"voice": "vo.tk.erciyes"
 								}
 							},
 							{

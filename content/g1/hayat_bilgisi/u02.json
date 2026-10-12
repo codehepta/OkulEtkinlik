@@ -370,7 +370,7 @@
 							{
 								"token": {
 									"type": "item",
-									"value": "item.trafik.on_koltuk"
+									"value": "item.trafik.ayakta_dur"
 								},
 								"bin": 1
 							}

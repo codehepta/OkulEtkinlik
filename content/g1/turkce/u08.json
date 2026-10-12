@@ -141,7 +141,7 @@
 									},
 									{
 										"type": "item",
-										"value": "item.sahne.gece"
+										"value": "item.davranis.uyku"
 									}
 								],
 								"answer": 0,
@@ -442,7 +442,7 @@
 							{
 								"token": {
 									"type": "item",
-									"value": "item.hayal.dev"
+									"value": "item.hayal.ejderha"
 								},
 								"bin": 1
 							}
@@ -485,7 +485,7 @@
 							{
 								"token": {
 									"type": "item",
-									"value": "item.hayvan.horoz"
+									"value": "item.hayvan.inek"
 								},
 								"bin": 0
 							},
@@ -716,10 +716,6 @@
 							{
 								"type": "text",
 								"value": "tr1.kelime.dedem_b"
-							},
-							{
-								"type": "text",
-								"value": "tr1.kelime.bize"
 							},
 							{
 								"type": "text",

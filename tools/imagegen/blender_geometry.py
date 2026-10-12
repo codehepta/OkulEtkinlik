@@ -657,7 +657,7 @@ ITEMS: dict[str, tuple[str, callable, str]] = {
     # 040 · cisimler
     "item.cisim.kup": ("solid", lambda n, m: box(n, 1.4, 1.4, 1.4, m), "#9CC3EE"),
     "item.cisim.kare_prizma": ("solid", lambda n, m: box(n, 1.0, 1.0, 1.9, m), "#A8DDB5"),
-    "item.cisim.dikdortgen_prizma": ("solid", lambda n, m: box(n, 2.2, 1.0, 0.9, m), "#F7B57A"),
+    "item.cisim.dikdortgen_prizma": ("solid", lambda n, m: box(n, 2.2, 1.4, 0.6, m), "#F7B57A"),  # üç ayrıt farklı: hiçbir yüz kare değil
     "item.cisim.ucgen_prizma": ("solid", prism, "#B79FE8"),
     "item.cisim.kure": ("solid", sphere, "#F5B3C8"),
     "item.cisim.silindir": ("solid", cylinder, "#F8DA74"),

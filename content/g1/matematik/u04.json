@@ -276,14 +276,14 @@
 					"difficulty": 3,
 					"voice": "vo.g1.matematik.u04.n02.r05",
 					"params": {
-						"a": 23,
+						"a": 13,
 						"op": "+",
-						"b": 4,
+						"b": 5,
 						"choices": [
-							27,
-							26,
-							28,
-							37
+							18,
+							17,
+							19,
+							15
 						]
 					}
 				}
@@ -306,21 +306,21 @@
 						"mode": "scale",
 						"ask": "estimate",
 						"left": [
-							8,
-							7
+							12,
+							5
 						],
 						"right": [
 							null
 						],
 						"choices": [
-							14,
-							15,
-							16
+							16,
+							17,
+							18
 						],
 						"estimates": [
 							5,
-							14,
-							20
+							10,
+							16
 						]
 					}
 				},
@@ -428,17 +428,17 @@
 						"mode": "scale",
 						"ask": "missing",
 						"left": [
-							9,
-							3
+							11,
+							4
 						],
 						"right": [
 							null,
-							8
+							3
 						],
 						"choices": [
-							3,
-							4,
-							5
+							11,
+							12,
+							13
 						]
 					}
 				}
@@ -532,11 +532,11 @@
 							{
 								"left": {
 									"type": "text",
-									"value": "label.g1.matematik.islem.8_arti_4"
+									"value": "label.g1.matematik.islem.11_arti_4"
 								},
 								"right": {
 									"type": "text",
-									"value": "label.g1.matematik.islem.12_eksi_4"
+									"value": "label.g1.matematik.islem.15_eksi_4"
 								}
 							}
 						]
@@ -550,16 +550,16 @@
 						"mode": "scale",
 						"ask": "missing",
 						"left": [
-							12
+							16
 						],
 						"right": [
 							5,
 							null
 						],
 						"choices": [
-							6,
-							7,
-							8
+							10,
+							11,
+							12
 						]
 					}
 				}

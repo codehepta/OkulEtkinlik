@@ -103,6 +103,21 @@ func test_drag_match_finishes_after_all_pairs() -> void:
 	assert_eq(_results[0].wrong, 1)
 	assert_eq(_results[0].attempts, 3)
 
+## Sağdaki hedef kartın sesi varsa dokununca okunur (cevap sayılmaz); sesi yoksa sessiz kalır.
+func test_drag_match_target_tap_reads_its_voice() -> void:
+	var params: Dictionary = {"pairs": [
+		{"left": {"type": "item", "value": "item.elma"}, "right": {"type": "item", "value": "item.armut", "voice": "vo.test.armut"}},
+		{"left": {"type": "item", "value": "item.kiraz"}, "right": {"type": "number", "value": 2}},
+	]}
+	var g: MiniGame = _make("drag_match", params)
+	_fake.said.clear()
+	var right_of: Array[int] = g._debug_right_slots()
+	g._debug_tap_target(right_of[0])
+	assert_eq(_fake.said, ["vo.test.armut"] as Array[String])
+	g._debug_tap_target(right_of[1])
+	assert_eq(_fake.said, ["vo.test.armut"] as Array[String], "sesi olmayan hedef okunmaz")
+	assert_eq(_answers.size(), 0, "dokunmak cevap sayılmaz")
+
 func test_listen_find_speaks_target_on_setup() -> void:
 	_make("listen_find", _listen_params())
 	assert_eq(_fake.said, ["vo.sayi.1"] as Array[String])

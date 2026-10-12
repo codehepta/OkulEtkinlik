@@ -336,16 +336,18 @@
 						"bins": [
 							{
 								"label": {
-									"type": "item",
-									"value": "item.simge.simetrik"
+									"type": "text",
+									"value": "txt.mat2.simetrik",
+									"voice": "vo.mat2.simetrik"
 								},
 								"shape": "circle",
 								"color": "orange"
 							},
 							{
 								"label": {
-									"type": "item",
-									"value": "item.simge.simetrik_degil"
+									"type": "text",
+									"value": "txt.mat2.simetrik_degil",
+									"voice": "vo.mat2.simetrik_degil"
 								},
 								"shape": "square",
 								"color": "blue"
@@ -391,16 +393,18 @@
 						"bins": [
 							{
 								"label": {
-									"type": "item",
-									"value": "item.simge.simetrik"
+									"type": "text",
+									"value": "txt.mat2.simetrik",
+									"voice": "vo.mat2.simetrik"
 								},
 								"shape": "circle",
 								"color": "orange"
 							},
 							{
 								"label": {
-									"type": "item",
-									"value": "item.simge.simetrik_degil"
+									"type": "text",
+									"value": "txt.mat2.simetrik_degil",
+									"voice": "vo.mat2.simetrik_degil"
 								},
 								"shape": "square",
 								"color": "blue"

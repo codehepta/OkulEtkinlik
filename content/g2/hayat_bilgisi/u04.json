@@ -374,7 +374,8 @@
 								},
 								"right": {
 									"type": "item",
-									"value": "item.milli.cocuk_senligi"
+									"value": "item.milli.cocuk_senligi",
+									"voice": "vo.ad.milli.cocuk_senligi"
 								}
 							},
 							{
@@ -385,7 +386,8 @@
 								},
 								"right": {
 									"type": "item",
-									"value": "item.milli.genclik_spor"
+									"value": "item.milli.genclik_spor",
+									"voice": "vo.ad.milli.genclik_spor"
 								}
 							},
 							{
@@ -396,7 +398,8 @@
 								},
 								"right": {
 									"type": "item",
-									"value": "item.milli.fener_alayi"
+									"value": "item.milli.cumhuriyet_sokak",
+									"voice": "vo.ad.milli.cumhuriyet_sokak"
 								}
 							},
 							{
@@ -407,7 +410,8 @@
 								},
 								"right": {
 									"type": "item",
-									"value": "item.milli.zafer"
+									"value": "item.milli.zafer",
+									"voice": "vo.ad.milli.zafer"
 								}
 							}
 						]

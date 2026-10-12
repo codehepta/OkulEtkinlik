@@ -514,13 +514,13 @@
 							{
 								"left": {
 									"type": "text",
-									"value": "tk.agir",
-									"voice": "vo.tk.agir"
+									"value": "tk.sicak",
+									"voice": "vo.tk.sicak"
 								},
 								"right": {
 									"type": "text",
-									"value": "tk.hafif",
-									"voice": "vo.tk.hafif"
+									"value": "tk.soguk",
+									"voice": "vo.tk.soguk"
 								}
 							},
 							{
@@ -815,13 +815,13 @@
 					"voice": "vo.g3.turkce.u06.n05.r01",
 					"params": {
 						"parts": [
-							"ter",
-							"te",
-							"miz"
+							"sap",
+							"sa",
+							"rı"
 						],
 						"distractors": [
-							"tem",
-							"mis"
+							"tur",
+							"ran"
 						],
 						"voice": "vo.g3.turkce.u06.n05.r01.word"
 					}

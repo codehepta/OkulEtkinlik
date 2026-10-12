@@ -33,3 +33,22 @@ func test_view_shows_wrapped_label() -> void:
 	view.call("set_token", {"type": "text", "value": "app.title"})
 	var tile: Node = view.get_child(0)
 	assert_eq(str(tile.get("text")), "Bilgi\nAdası")
+
+## Banknot ve madeni paralarda değer görselde yazmaz (görsellerde rakam yok): karo altına kodla
+## değer etiketi çizilir, çocuk yalnız renge bakmak zorunda kalmaz.
+func test_money_item_shows_value_badge() -> void:
+	var v: Control = (load("res://scenes/games/token_view.tscn") as PackedScene).instantiate() as Control
+	add_child_autofree(v)
+	v.call("set_token", {"type": "item", "value": "item.para.tl_20"})
+	assert_eq(v.call("money_badge_text"), Strings.t("fmt.money.tl", {"n": "20"}))
+	v.call("set_token", {"type": "item", "value": "item.para.kr_50"})
+	assert_eq(v.call("money_badge_text"), Strings.t("fmt.money.kr", {"n": "50"}))
+	v.call("set_token", {"type": "item", "value": "item.hayvan.kedi"})
+	assert_eq(v.call("money_badge_text"), "", "para olmayan görselde etiket yok")
+
+func test_money_value_parses_key() -> void:
+	var TokenView: GDScript = load("res://scenes/games/token_view.gd")
+	assert_eq(TokenView.money_value("item.para.tl_200"), {"unit": "tl", "n": 200})
+	assert_eq(TokenView.money_value("item.para.kr_5"), {"unit": "kr", "n": 5})
+	assert_eq(TokenView.money_value("item.para.cuzdan"), {})
+	assert_eq(TokenView.money_value("item.esya.para"), {})

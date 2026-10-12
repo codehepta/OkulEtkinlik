@@ -192,7 +192,7 @@
 							{
 								"token": {
 									"type": "item",
-									"value": "item.oyuncak.balon_sari"
+									"value": "item.oyuncak.top"
 								},
 								"bin": 0
 							},
@@ -527,7 +527,7 @@
 									"voice": "vo.g1.matematik.sekil.kare"
 								},
 								"shape": "square",
-								"color": "blue"
+								"color": "purple"
 							},
 							{
 								"label": {
@@ -535,8 +535,8 @@
 									"value": "item.sekil.dikdortgen",
 									"voice": "vo.g1.matematik.sekil.dikdortgen"
 								},
-								"shape": "star",
-								"color": "green"
+								"shape": "rectangle",
+								"color": "yellow"
 							}
 						],
 						"items": [
@@ -632,7 +632,7 @@
 									"voice": "vo.g1.matematik.sekil.ucgen"
 								},
 								"shape": "triangle",
-								"color": "green"
+								"color": "red"
 							},
 							{
 								"label": {
@@ -650,7 +650,7 @@
 									"voice": "vo.g1.matematik.sekil.cember"
 								},
 								"shape": "circle",
-								"color": "orange"
+								"color": "purple"
 							}
 						],
 						"items": [

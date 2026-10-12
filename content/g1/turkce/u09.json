@@ -141,7 +141,7 @@
 									},
 									{
 										"type": "item",
-										"value": "item.sahne.gece"
+										"value": "item.davranis.tablet_oyna"
 									}
 								],
 								"answer": 0,
@@ -497,14 +497,6 @@
 							},
 							{
 								"type": "text",
-								"value": "tr1.kelime.her"
-							},
-							{
-								"type": "text",
-								"value": "tr1.kelime.sabah"
-							},
-							{
-								"type": "text",
 								"value": "tr1.kelime.mama"
 							},
 							{
@@ -586,7 +578,7 @@
 							{
 								"token": {
 									"type": "item",
-									"value": "item.davranis.saklan"
+									"value": "item.davranis.tablet_oyna"
 								},
 								"correct": false
 							},

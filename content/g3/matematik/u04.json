@@ -222,8 +222,8 @@
 						"options": [
 							{
 								"type": "item",
-								"value": "item.cisim.kup",
-								"voice": "vo.ad.cisim.kup"
+								"value": "item.cisim.ucgen_prizma",
+								"voice": "vo.ad.cisim.ucgen_prizma"
 							},
 							{
 								"type": "item",
