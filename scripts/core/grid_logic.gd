@@ -77,6 +77,20 @@ static func card_arrows(program: Array, facing: String) -> Array[String]:
 		f = str(step(Vector2i.ZERO, f, str(card))["facing"])
 	return res
 
+## Her kart uygulanmadan hemen önceki bakış yönü (kartın oku bu yöne göre çizilir).
+static func card_facings(program: Array, facing: String) -> Array[String]:
+	var res: Array[String] = []
+	var f: String = facing
+	for card: Variant in program:
+		res.append(f)
+		f = str(step(Vector2i.ZERO, f, str(card))["facing"])
+	return res
+
+## Yukarı bakan çizimi bu bakış yönüne çeviren açı (saat yönünde, radyan). Dönüş kartının
+## kıvrık oku bu açıyla döndürülür: ok bakış yönünde başlar, ucu yeni yönü gösterir.
+static func facing_angle(facing: String) -> float:
+	return FACING_ORDER.find(facing) * PI / 2.0
+
 ## Program bittikten sonraki bakış yönü (sınır yok sayılır).
 static func facing_after(program: Array, facing: String) -> String:
 	var f: String = facing

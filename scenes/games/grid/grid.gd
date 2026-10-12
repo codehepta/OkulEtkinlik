@@ -49,6 +49,11 @@ const STRIP_ORIGIN: Vector2 = Vector2(280, 830)
 const STRIP_CARD: float = 128.0
 const STRIP_GAP: float = 8.0
 const CHAR_SCALE: float = 0.84
+## Gezginin bakış oku: uç ve taban merkezden uzaklığı, taban yarı genişliği (karakter boyuna oranla).
+const FACING_TIP: float = 0.66
+const FACING_BASE: float = 0.4
+const FACING_HALF: float = 0.2
+const FACING_COLOR: Color = ClayStyle.EMBER
 # paint düzeni
 const PAINT_AREA: Rect2 = Rect2(280, 160, 1030, 780)
 const REF_RECT: Rect2 = Rect2(1330, 170, 540, 380)
@@ -270,7 +275,7 @@ func _build_palette() -> void:
 		var col: int = i % 2
 		var row: int = floori(i / 2.0)
 		var pos: Vector2 = PALETTE_ORIGIN + Vector2(col, row) * (PALETTE_CARD + PALETTE_GAP)
-		var t: Control = _make_card(kinds[i], Rect2(pos, Vector2(PALETTE_CARD, PALETTE_CARD)), palette_forward_arrow)
+		var t: Control = _make_card(kinds[i], Rect2(pos, Vector2(PALETTE_CARD, PALETTE_CARD)), palette_facing)
 		t.name = "Palette_" + kinds[i]
 		t.gui_input.connect(_on_palette_input.bind(kinds[i]))
 		_palette[kinds[i]] = t
@@ -288,8 +293,9 @@ func _build_strip_wells() -> void:
 			Widgets.draw_well(wells, Rect2(Vector2(i * (STRIP_CARD + STRIP_GAP), 0), Vector2(STRIP_CARD, STRIP_CARD)), 22.0))
 	add_child(wells)
 
-## Yön kartı: kil karo + kodla çizilmiş kalın ok (yazı yok). facing_of: "ileri" kartının
-## çizileceği bakış yönünü verir (palet kartı program değiştikçe yeniden çizilir).
+## Yön kartı: kil karo + kodla çizilmiş kalın ok (yazı yok). facing_of: kart uygulanırken
+## gezginin bakış yönü; "ileri" oku bu yöne, dönüş oku bu yönden yeni yöne çizilir (palet
+## kartı program değiştikçe yeniden çizilir).
 func _make_card(kind: String, rect: Rect2, facing_of: Callable = Callable()) -> Control:
 	var t: Control = Widgets.make_tile(self, "", rect, 40, CARD_COLORS.get(kind, ClayStyle.SKY) as Color)
 	var icon: Control = Control.new()
@@ -307,18 +313,19 @@ func _rebuild_strip() -> void:
 		c.hide()
 		c.queue_free()
 	_strip.clear()
-	var arrows: Array[String] = strip_arrows()
+	var facings: Array[String] = strip_facings()
 	for i: int in _program.size():
 		var pos: Vector2 = STRIP_ORIGIN + Vector2(i * (STRIP_CARD + STRIP_GAP), 0)
-		var arrow: String = arrows[i]
-		var t: Control = _make_card(_program[i], Rect2(pos, Vector2(STRIP_CARD, STRIP_CARD)), func() -> String: return arrow)
+		var facing: String = facings[i]
+		var t: Control = _make_card(_program[i], Rect2(pos, Vector2(STRIP_CARD, STRIP_CARD)), func() -> String: return facing)
 		if _ask == "build":
 			t.gui_input.connect(_on_strip_input.bind(i))
 		else:
 			t.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		_strip.append(t)
-	if _palette.has("forward"):
-		((_palette["forward"] as Control).get_node("Icon") as Control).queue_redraw()
+	# Palet kartları programın son bakış yönüyle çizilir: ileri ve dönüş kartları yenilenir.
+	for t: Control in _palette_list:
+		(t.get_node("Icon") as Control).queue_redraw()
 	if _overlay != null:
 		_overlay.queue_redraw()
 
@@ -632,7 +639,7 @@ func _draw_goal(ci: CanvasItem, r: Rect2) -> void:
 	ci.draw_colored_polygon(flag, FLAG_COLOR)
 	ci.draw_polyline(flag + PackedVector2Array([flag[0]]), FLAG_COLOR.darkened(0.3), 4.0, true)
 
-## Karakter: `char.grid.gezgin` dokusu ya da kil piyon; her durumda baktığı yönü gösteren üçgen.
+## Karakter: `char.grid.gezgin` dokusu ya da kil piyon; her durumda yanında baktığı yönü gösteren büyük ok.
 func _draw_pawn(ci: CanvasItem, r: Rect2) -> void:
 	var tex: Texture2D = AssetRegistry.texture(CHAR_KEY)
 	var c: Vector2 = r.get_center()
@@ -644,20 +651,22 @@ func _draw_pawn(ci: CanvasItem, r: Rect2) -> void:
 		ci.draw_circle(c, s * 0.34, PAWN_COLOR, true, -1.0, true)
 		ci.draw_arc(c, s * 0.34, 0.0, TAU, 48, PAWN_COLOR.darkened(0.3), 5.0, true)
 		ci.draw_circle(c + Vector2(-0.12, -0.12) * s, s * 0.07, Color(1, 1, 1, 0.4), true, -1.0, true)
+	# Bakış yönü: gezginin kenarında, baktığı yöne dönük büyük ok (beyaz kenarlı, her zeminde seçilir).
 	var d: Vector2 = Vector2(GridLogic.DIRS[_char_facing] as Vector2i)
 	var perp: Vector2 = Vector2(-d.y, d.x)
 	var tri: PackedVector2Array = PackedVector2Array([
-		c + d * s * 0.5, c + d * s * 0.3 + perp * s * 0.14, c + d * s * 0.3 - perp * s * 0.14])
-	ci.draw_colored_polygon(tri, ClayStyle.INK)
+		c + d * s * FACING_TIP, c + d * s * FACING_BASE + perp * s * FACING_HALF, c + d * s * FACING_BASE - perp * s * FACING_HALF])
+	ci.draw_colored_polygon(tri, FACING_COLOR)
+	ci.draw_polyline(tri + PackedVector2Array([tri[0]]), Color.WHITE, s * 0.035, true)
 
 func _draw_card_icon(ci: CanvasItem, kind: String, facing: String, r: Rect2) -> void:
 	var c: Vector2 = r.get_center()
 	var s: float = minf(r.size.x, r.size.y)
 	match kind:
 		"turn_left":
-			_draw_turn(ci, c, s, -1.0)
+			_draw_turn(ci, c, s, -1.0, GridLogic.facing_angle(facing))
 		"turn_right":
-			_draw_turn(ci, c, s, 1.0)
+			_draw_turn(ci, c, s, 1.0, GridLogic.facing_angle(facing))
 		_:
 			_draw_arrow(ci, c, s, Vector2(GridLogic.DIRS[GridLogic.card_arrow(kind, facing)] as Vector2i))
 
@@ -671,20 +680,26 @@ static func _draw_arrow(ci: CanvasItem, c: Vector2, s: float, d: Vector2) -> voi
 	ci.draw_colored_polygon(PackedVector2Array([
 		c + d * s * 0.34, c + d * s * 0.04 + perp * s * 0.2, c + d * s * 0.04 - perp * s * 0.2]), ClayStyle.INK)
 
-## Kıvrık dönüş oku: aşağıdan yukarı çıkar, çeyrek yayla yana (side: -1 sol, 1 sağ) döner.
-static func _draw_turn(ci: CanvasItem, c: Vector2, s: float, side: float) -> void:
+## Kıvrık dönüş oku: bakış yönünde ilerler, çeyrek yayla yana (side: -1 sol, 1 sağ) döner.
+## Şekil yukarı bakış için kurulur ve `angle` kadar döndürülür (GridLogic.facing_angle).
+static func _draw_turn(ci: CanvasItem, c: Vector2, s: float, side: float, angle: float = 0.0) -> void:
 	var w: float = s * 0.12
 	var rad: float = s * 0.22
-	var center: Vector2 = c + Vector2(0.1 * side, 0.0) * s
-	var pts: PackedVector2Array = PackedVector2Array([c + Vector2(-0.12 * side, 0.32) * s])
+	var center: Vector2 = Vector2(0.1 * side, 0.0) * s
+	var pts: PackedVector2Array = PackedVector2Array([Vector2(-0.12 * side, 0.32) * s])
 	for k: int in 13:
 		var a: float = lerpf(PI, PI * 1.5, k / 12.0)
 		pts.append(center + Vector2(cos(a) * side, sin(a)) * rad)
+	var tip_base: Vector2 = pts[pts.size() - 1]
+	var head: PackedVector2Array = PackedVector2Array([
+		tip_base + Vector2(0.2 * side, 0.0) * s, tip_base + Vector2(0.0, -0.17) * s, tip_base + Vector2(0.0, 0.17) * s])
+	for i: int in pts.size():
+		pts[i] = c + pts[i].rotated(angle)
+	for i: int in head.size():
+		head[i] = c + head[i].rotated(angle)
 	ci.draw_polyline(pts, ClayStyle.INK, w, true)
 	ci.draw_circle(pts[0], w / 2.0, ClayStyle.INK, true, -1.0, true)
-	var tip_base: Vector2 = pts[pts.size() - 1]
-	ci.draw_colored_polygon(PackedVector2Array([
-		tip_base + Vector2(0.2 * side, 0.0) * s, tip_base + Vector2(0.0, -0.17) * s, tip_base + Vector2(0.0, 0.17) * s]), ClayStyle.INK)
+	ci.draw_colored_polygon(head, ClayStyle.INK)
 
 func _cell_center(cell: Vector2i) -> Vector2:
 	return (Vector2(cell) + Vector2(0.5, 0.5)) * _cell
@@ -865,8 +880,16 @@ func hint_cells() -> Array[Vector2i]:
 func strip_arrows() -> Array[String]:
 	return GridLogic.card_arrows(_program, _facing)
 
+## Şeritteki her kart uygulanırken gezginin bakış yönü (kartlar bu yöne göre çizilir).
+func strip_facings() -> Array[String]:
+	return GridLogic.card_facings(_program, _facing)
+
 ## Paletteki "ileri" kartının gösterdiği yön: program bittiğinde gezginin bakacağı yön.
 func palette_forward_arrow() -> String:
+	return GridLogic.facing_after(_program, _facing)
+
+## Paletteki kartların çizildiği bakış yönü (program bittiğinde); dönüş kartları da buna göre döner.
+func palette_facing() -> String:
 	return GridLogic.facing_after(_program, _facing)
 
 func hint_card() -> String:
