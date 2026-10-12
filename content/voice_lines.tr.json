@@ -43,10 +43,6 @@
 		"text": "Bilge'nin Ağaç Evi",
 		"speaker": "ANLATICI"
 	},
-	"vo.bolge.kilitli_lab": {
-		"text": "Burası Keşif Laboratuvarı! Üçüncü sınıfta kapıları açılacak.",
-		"speaker": "BILGE"
-	},
 	"vo.genel.durak_sec": {
 		"text": "Parlayan taşa dokun, başlayalım!",
 		"speaker": "BILGE"

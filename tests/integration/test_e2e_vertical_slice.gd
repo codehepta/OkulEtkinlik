@@ -74,7 +74,7 @@ func test_full_vertical_slice() -> void:
 	assert_ne(pid, "")
 	assert_eq(_app.active_grade, 1)
 	# Harita -> Sayı Ormanı.
-	assert_false(_screen().region_locked("matematik"))
+	assert_false(_screen().region_hidden("matematik"))
 	await _screen().tap_region("matematik")
 	assert_eq(_app.current_scene_name(), "region_path")
 	assert_eq(_screen().stop_state(N1), "open")

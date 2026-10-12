@@ -55,7 +55,7 @@ func _run() -> void:
 	_app.select_profile(pid)
 	await _show("world_map", {})
 	await _shot("06_world_map")
-	await _shot_with_subtitle("06b_world_map_subtitle", "vo.bolge.kilitli_lab")
+	await _shot_with_subtitle("06b_world_map_subtitle", "vo.genel.harita_giris")
 	await _show("region_path", {"subject": "matematik"})
 	await _shot("07_region_path")
 	await _show("lesson", {"node_id": "g1.matematik.u02.n01"})

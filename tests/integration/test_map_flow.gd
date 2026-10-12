@@ -74,29 +74,34 @@ func _win_lesson() -> void:
 			return
 		await wait_until(func() -> bool: return _screen().current_game() != null, 6.0)
 
-func test_fen_locked_for_grade_1_open_for_grade_3() -> void:
+func test_fen_hidden_for_grade_1_shown_for_grade_3() -> void:
 	_login(1)
 	_app.goto("world_map")
-	assert_true(_screen().region_locked("fen"))
-	assert_false(_screen().region_locked("matematik"))
+	assert_true(_screen().region_hidden("fen"))
+	assert_false(_screen().region_hidden("matematik"))
 	assert_true(_fake.said.has("vo.genel.harita_giris"))
 	assert_true(_fake.music.has("music.menu"))
 
-func test_fen_locked_for_grade_2() -> void:
+func test_fen_hidden_for_grade_2() -> void:
 	_login(2)
 	_app.goto("world_map")
-	assert_true(_screen().region_locked("fen"))
+	assert_true(_screen().region_hidden("fen"))
+	assert_null(_screen().region_button("fen"), "1–2. sınıfta laboratuvar rozeti hiç yok")
+	assert_null(_screen().region_zone("fen"), "dokunma alanı da yok")
+	assert_eq(_screen().visible_subjects(), ["matematik", "turkce", "hayat_bilgisi"] as Array[String])
 
-func test_fen_open_for_grade_3() -> void:
+func test_fen_shown_for_grade_3() -> void:
 	_login(3)
 	_app.goto("world_map")
-	assert_false(_screen().region_locked("fen"))
+	assert_false(_screen().region_hidden("fen"))
+	assert_not_null(_screen().region_button("fen"))
+	assert_not_null(_screen().region_zone("fen"))
 
-func test_locked_lab_tap_says_locked_voice_and_stays() -> void:
+func test_hidden_lab_tap_is_ignored() -> void:
 	_login(1)
 	_app.goto("world_map")
 	await _screen().tap_region("fen")
-	assert_true(_fake.said.has("vo.bolge.kilitli_lab"))
+	assert_false(_fake.said.has("vo.bolge.kilitli_lab"))
 	assert_eq(_app.current_scene_name(), "world_map")
 
 func test_region_tap_says_name_then_opens_path() -> void:
@@ -289,7 +294,7 @@ func test_region_labels_fit_inside_cards() -> void:
 	_app.goto("world_map")
 	await wait_process_frames(3)
 	var cards: Array[Button] = []
-	for subject: String in ["matematik", "turkce", "hayat_bilgisi", "fen"]:
+	for subject: String in _screen().visible_subjects():
 		cards.append(_screen().region_button(subject))
 	for card: Button in cards:
 		var rect: Rect2 = card.get_global_rect()
@@ -310,7 +315,7 @@ func test_map_badges_sit_inside_island_without_overlap() -> void:
 	_app.goto("world_map")
 	var island: Rect2 = _screen().island_rect()
 	var rects: Array[Rect2] = []
-	for s: String in ["matematik", "turkce", "hayat_bilgisi", "fen"]:
+	for s: String in _screen().visible_subjects():
 		rects.append(_screen().region_button(s).get_rect())
 	rects.append(_screen().tree_button().get_rect())
 	for i: int in rects.size():
@@ -318,15 +323,6 @@ func test_map_badges_sit_inside_island_without_overlap() -> void:
 		assert_true(rects[i].size.y >= 128.0, "rozet %d dokunma hedefi" % i)
 		for j: int in range(i + 1, rects.size()):
 			assert_false(rects[i].intersects(rects[j]), "rozet %d ve %d çakışmamalı" % [i, j])
-
-func test_locked_lab_badge_shows_lock_only_when_locked() -> void:
-	_login(1)
-	_app.goto("world_map")
-	assert_true(_screen().region_shows_lock("fen"))
-	assert_false(_screen().region_shows_lock("matematik"))
-	_login(3)
-	_app.goto("world_map")
-	assert_false(_screen().region_shows_lock("fen"))
 
 func test_path_stops_numbered_and_open_stop_pulses() -> void:
 	_login(1)
