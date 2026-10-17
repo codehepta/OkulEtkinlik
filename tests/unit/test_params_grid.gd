@@ -267,3 +267,21 @@ func test_grid_logic_card_arrows_follow_facing() -> void:
 	assert_eq(GridLogic.facing_after(["forward", "turn_left"], "right"), "up")
 	assert_eq(GridLogic.facing_after(["down"], "right"), "down")
 	assert_eq(GridLogic.facing_after([], "left"), "left")
+
+## Dönüş kartının oku gezginin o anki bakış yönüne göre döner: ok bakış yönünde başlar,
+## ucu dönüşten sonraki yönü gösterir (aşağı bakarken "sola dön" ekranda sağa kıvrılır).
+func test_turn_icon_matches_real_turn_for_every_facing() -> void:
+	for f: String in GridLogic.FACING_ORDER:
+		var angle: float = GridLogic.facing_angle(f)
+		var entry: Vector2 = Vector2(0, -1).rotated(angle)
+		assert_almost_eq(entry, Vector2(GridLogic.DIRS[f] as Vector2i), Vector2(0.001, 0.001), "%s: ok bakış yönünde başlar" % f)
+		for card: String in ["turn_left", "turn_right"]:
+			var side: float = -1.0 if card == "turn_left" else 1.0
+			var tip: Vector2 = Vector2(side, 0).rotated(angle)
+			var after: String = str(GridLogic.step(Vector2i.ZERO, f, card)["facing"])
+			assert_almost_eq(tip, Vector2(GridLogic.DIRS[after] as Vector2i), Vector2(0.001, 0.001), "%s + %s: okun ucu gerçek dönüş yönünde" % [f, card])
+
+func test_card_facings_track_turns() -> void:
+	assert_eq(GridLogic.card_facings(["forward", "forward", "turn_left", "forward", "turn_right", "forward"], "down"),
+		["down", "down", "down", "right", "right", "down"] as Array[String])
+	assert_eq(GridLogic.card_facings([], "up"), [] as Array[String])
