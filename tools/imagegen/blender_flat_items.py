@@ -248,6 +248,34 @@ def sym_house(name):
     flat_poly(name + "_kapi", [(-0.18, -0.9), (0.18, -0.9), (0.18, -0.3), (-0.18, -0.3)], 0.2, 0.0, "#8A5A3C")
 
 
+def span_hand(name, a, b, out):
+    """a→b kenar parçası boyunca açık el (bir karış): başparmak ucu a'da, serçe parmak ucu b'de,
+    avuç içi kenarın dışında (out: dışa doğru birim vektör). Parmaklar avuçtan uçlara uzanır."""
+    ax, ay = a
+    bx, by = b
+    ox, oy = out
+    def at(t, d):
+        return ax + (bx - ax) * t + ox * d, ay + (by - ay) * t + oy * d
+    skin = "#F2B48C"
+    px, py = at(0.5, 0.34)
+    tips = [(at(0.04, 0.02), 0.13), (at(0.3, -0.04), 0.11), (at(0.5, -0.06), 0.115), (at(0.7, -0.04), 0.11), (at(0.96, 0.02), 0.095)]
+    for k, ((tx, ty), w) in enumerate(tips):
+        L = math.hypot(tx - px, ty - py)
+        ang = math.atan2(ty - py, tx - px)
+        slab(f"{name}_parmak{k}", L, w, 0.08, (px + tx) / 2, (py + ty) / 2, 0.12, skin, bevel=w * 0.45, rot=ang)
+    bump(name + "_avuc", px, py, 0.16, 0.22, skin, 0.5)
+
+
+def book_spans(name):
+    # Kapalı kil kitap (üstten): uzun kenar 3 karış, kısa kenar 2 karış; her karış 0,8 birim.
+    flat_poly(name, [(-1.2, -0.8), (1.2, -0.8), (1.2, 0.8), (-1.2, 0.8)], 0.16, 0.0, "#B9A3E3")
+    flat_poly(name + "_sirt", [(-1.2, -0.8), (-1.05, -0.8), (-1.05, 0.8), (-1.2, 0.8)], 0.2, 0.0, "#8E76C8")
+    for k in range(3):
+        span_hand(f"{name}_uzun{k}", (-1.2 + 0.8 * k, -0.8), (-0.4 + 0.8 * k, -0.8), (0.0, -1.0))
+    for k in range(2):
+        span_hand(f"{name}_kisa{k}", (1.2, -0.8 + 0.8 * k), (1.2, 0.8 * k), (1.0, 0.0))
+
+
 def lopsided_kite(name):
     flat_poly(name, [(0.0, 1.0), (0.75, 0.25), (0.05, -0.85), (-0.38, 0.05)], 0.16, 0.0, "#7FB7EC")
     # kuyruk yalnızca bir yana kıvrılır
@@ -271,6 +299,7 @@ ITEMS = {**{k: ("010-faz3-sablonlar", (lambda k=k, v=v: coin(k, *v))) for k, v i
          "item.simetri.dikdortgen_kosegen": ("050-g3-matematik-nesneler", lambda: sym_rect("dikdortgen", diag=True)),
          "item.simetri.kare_yamuk_cizgi": ("050-g3-matematik-nesneler", lambda: sym_square("kare", off=True)),
          "item.simetri.kare_yatay_cizgi": ("098-gorsel-duzeltmeleri-2", lambda: sym_square("kare", low=True)),
+         "item.cevre.kitap_karis": ("098-gorsel-duzeltmeleri-2", lambda: book_spans("kitap")),
          "item.simetri.ev": ("050-g3-matematik-nesneler", lambda: sym_house("ev")),
          "item.simetri.ruzgar_gulu": ("050-g3-matematik-nesneler", lambda: lopsided_kite("ucurtma")),
          }
