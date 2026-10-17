@@ -10,7 +10,8 @@ Ayrıntılı yöntem ve dersler: `~/.claude/skills/generating-speech-locally-wit
   - Harfler: `Aaa.`, `Ne.`
   - Giriş cümleli kesim: `Şimdi okuyalım: …`
   - `SAY_AS` okunuş düzeltmeleri, ör. altmış → atmış.
-  - `ABBR` kısaltmaların açık okunuşu (kg → kilogram, Dr. → Doktor, TDK → Türk Dil Kurumu), satır içinde de.
+  - `ABBR` kısaltmaların açık okunuşu (kg → kilogram, Dr. → Doktor), satır içinde de. Harf kısaltmaları aralıksız harf adlarıyla, tamamı büyük harf: TDK → TEDEKA, TRT → TERETE.
+  - Kart ekleri ('ye, 'dan) giriş cümlesiyle üretilir, son kelime kesilir.
   - `PARTICLE` tek başına soru ekleri: fiille üretilir (`Yazdın mı?`), son kelime kesilir.
   - Whisper'ın rakamlarını sözcüğe çeviren karşılaştırma.
 - `rules_single.py`: tek aday kipi. Cümle ve iki kelimelik satırlar için.
