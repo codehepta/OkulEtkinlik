@@ -76,7 +76,7 @@ Yerel üretilen görsellerin kaynağı (model, tohum, prompt): `docs/assets/imag
 | 095 | Fen 3 seslendirmesi, ünite 1–4 (77 satır) | Orta | ⏳ Bekliyor |
 | 096 | Fen 3 seslendirmesi, ünite 5–8 + ortak kart sesleri (164 satır) | Orta | ⏳ Bekliyor |
 | 097 | Görsel düzeltmeleri 1: el kutuları, halı (kırmızı-mavi-sarı), canlı/cansız turlarındaki yüzlü cansızlar, çığ/karlı dağ (13 öğe) | Yüksek | ✅ Tamam (yerel klein, sahip seçti, 2026-10-12) |
-| 098 | Görsel düzeltmeleri 2: içerik denetiminde metni, sesi ya da soruyu tutmayan görseller (136 öğe; 2'si Blender) | Yüksek | 🔄 Adaylar üretiliyor (yerel klein) |
+| 098 | Görsel düzeltmeleri 2: içerik denetiminde metni, sesi ya da soruyu tutmayan görseller (136 öğe; 2'si Blender) | Yüksek | ✅ Tamam (klein, Z-Image, Blender; 8 görseli Emrah abi Gemini ile üretti; 2026-10-18) |
 
 Önerilen sıra: 001 → 003 → 002 → 004 → 005 → 007 → 006 → 008 → 009 → 010 → 011 → 012 → 015 → 016 → 023 → 024 → 044 → 040 → 041 → 045 → 042 → 043 → 031 → 030 → 032 → 034 → 033 → 064 → 060 → 065 → 061 → 062 → 066 → 063 → 050 → 051 → 052 → 053 → 070 → 071 → 072 → 073 → 074 → 075 → 090 → 093 → 091 → 092 → 094 → 095 → 096. Hayat Bilgisi: 084 → 080 → 085 → 081 → 086 → 082 → 083 (önce seslendirme ve 1. sınıf, sonra üst sınıflar). Bilge karakter sayfası diğer bütün partilerin stil referansıdır.
 

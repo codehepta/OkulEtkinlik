@@ -13,9 +13,9 @@
 | 1 | `assets/images/items/davranis/siraya_ciz.png` | 1:1 | — | Sınıfta bir çocuk, kâğıt olmadan doğrudan sıranın yüzeyine kalemle karalıyor; sıra üstü renkli çizgilerle dolu. |
 | 2 | `assets/images/items/gorev/ocakta_yemek.png` | 1:1 | — | Yetişkin bir kadın (anne), uzun boylu, yetişkin yüz ve oranlarla, ocakta tencerede yemek karıştırıyor. |
 | 3 | `assets/images/items/sahne/aile_is_bolumu.png` | 16:9 | — | Yemek bitmiş: masa yarı toplanmış; anne tabakları tezgâha taşıyor, baba masayı siliyor, küçük kardeş bardak siliyor; bir sandalye boş (oyuncu için). |
-| 4 | `assets/images/items/davranis/sirada_bekle.png` | 1:1 | — | Dört çocuk art arda tek sıra olmuş, sakin ve sabırlı bekliyor (kuyruk). |
-| 5 | `assets/images/items/trafik/top_pesinden.png` | 1:1 | — | Çocuk, kaldırımdan yola yuvarlanan topun peşinden koşuyor. |
-| 6 | `assets/images/items/sahne/sofra_tuz.png` | 16:9 | — | Uzun bir yemek masası: bir uçta küçük bir çocuk oturuyor, masanın öbür ucunda belirgin bir tuzluk duruyor (tuz uzakta). |
+| 4 | `assets/images/items/davranis/sirada_bekle.png` | 1:1 | — | Dört çocuk yandan görünüşte, tek sıra hâlinde art arda bekliyor (kuyruk). |
+| 5 | `assets/images/items/trafik/top_pesinden.png` | 1:1 | — | Çocuk kaldırımdan yola, yuvarlanan topun peşinden koşuyor; uzaktan araba geliyor. |
+| 6 | `assets/images/items/sahne/sofra_tuz.png` | 16:9 | — | Uzun sofra: bir uçta küçük çocuk uzanıyor, öbür uçta küçücük bir tuzluk (bardak boyunda). |
 | 7 | `assets/images/items/nezaket/tv_sesi.png` | 1:1 | — | Çocuk televizyonun karşısında, elinde kumanda, TV'den büyük ses dalgaları yayılıyor; misafire aldırmıyor. |
 | 8 | `assets/images/items/gorev/yatak_duzelt.png` | 1:1 | — | Çocuk yatağın yanında ayakta, battaniyeyi düzeltip yastığı kabartıyor (yatak toplama). |
 | 9 | `assets/images/items/simge/cocuk_gorevi.png` | 1:1 | — | Küçük, tombul bir çocuk eli (kısa parmaklar, sarı manşet); karenin yalnızca yaklaşık yarısını kaplar, 'çocuk' izlenimi için küçük ve avucunda minik bir oyuncak küp var. |
@@ -33,7 +33,7 @@
 | 21 | `assets/images/items/atik/pecete.png` | 1:1 | — | Kullanılmış, buruşturulmuş, lekeli beyaz-gri kâğıt peçete (kâğıt geri dönüşümüyle karışmaz). |
 | 22 | `assets/images/items/atik/karton.png` | 1:1 | — | Düzleştirilmiş kahverengi oluklu karton kutu; yırtık kenarda dalgalı oluklu katman görünür. |
 | 23 | `assets/images/items/davranis/yabanciyla_git.png` | 1:1 | — | Başı ayağı görünen, şapkalı ve koyu gözlüklü tanımadık bir yetişkin, çocuğun elinden tutup götürüyor; çocuk tedirgin geriye bakıyor. |
-| 24 | `assets/images/items/sahne/bilyeler.png` | 1:1 | — | Okul bahçesinde çimde oturan bir çocuğun önünde iki düz sıra halinde, aralarında boşluk olan tam 12 renkli cam bilye; sağda arkadaşının uzattığı açık avucunda tam 4 renkli bilye. Bilyeler üst üste binmemeli, hepsi sayılabilmeli. |
+| 24 | `assets/images/items/sahne/bilyeler.png` | 1:1 | — | Çimde oturan çocuk, iki eliyle küçük bir kavanoz bilye tutuyor (sayım yok). |
 | 25 | `assets/images/items/sahne/musluk_acik.png` | 1:1 | — | Dişini fırçalayan çocuk; musluk açık, belirgin bir su akıntısı lavaboya akıyor. |
 | 26 | `assets/images/items/sahne/musluk_kapali.png` | 1:1 | — | Çocuk musluğu kapatıyor; musluktan su gelmiyor, lavabo kuru. |
 | 27 | `assets/images/items/davranis/ogretmeni_dinle.png` | 1:1 | — | Öğretmen ayakta, bir elini kaldırmış konuşuyor; sırasında oturan çocuk dikkatle öğretmene bakıp dinliyor. |
@@ -49,7 +49,7 @@
 | 37 | `assets/images/items/sahne/dede_topac.png` | 1:1 | — | Dede ve torun yere oturmuş, aralarında dönen aynı ahşap topaç. |
 | 38 | `assets/images/items/arkadas/oyuncak_kap.png` | 1:1 | — | Oyuncağı arkadaşının elinden zorla çeken çocuk; karşısındaki çocuk üzgün. |
 | 39 | `assets/images/items/arkadas/oyuna_kat.png` | 1:1 | — | Bir çocuk diğerini elinden tutup oyuna çağırıyor. |
-| 40 | `assets/images/items/toplum/sirada_bekle.png` | 1:1 | — | Arka arkaya dizilmiş, sırasını sakin sakin bekleyen dört çocuk. |
+| 40 | `assets/images/items/toplum/sirada_bekle.png` | 1:1 | — | Fırın tezgâhı önünde üç çocuk yandan görünüşte tek sıra hâlinde sırasını bekliyor. |
 | 41 | `assets/images/items/toplum/one_gec.png` | 1:1 | — | Sıradaki çocukları geçip öne fırlayan çocuk; sıradakiler şaşkın ve biraz üzgün. |
 | 42 | `assets/images/items/sahne/firin_sirasi.png` | 16:9 | — | Fırın tezgâhının önünde sırada bekleyen çocuklar; tabela ya da yazı yok. |
 | 43 | `assets/images/items/sahne/okul_bahcesi_cicek.png` | 16:9 | — | Okul bahçesinde solmuş, boynu bükük çiçekler; toprak kuru ve çatlak. |
@@ -63,7 +63,7 @@
 | 51 | `assets/images/items/bilgi112/yemek.png` | 1:1 | — | Tabakta spagetti, köfte ve bezelyeden oluşan yemek. |
 | 52 | `assets/images/items/acil112/saka_yapma.png` | 1:1 | — | Oyuncak telefonla arama yapmak isteyen arkadaşını elini kaldırarak engelleyen çocuk. |
 | 53 | `assets/images/items/sahne/bisikletten_dustu.png` | 16:9 | — | Bisikletten düşmüş çocuk yerde oturuyor, dizindeki kırmızı sıyrık açıkça görünüyor. |
-| 54 | `assets/images/items/sahne/aile_pansuman.png` | 1:1 | — | Anne ve baba, düşen çocuğun dizine pansuman yapıp onu teselli ediyor. |
+| 54 | `assets/images/items/sahne/aile_pansuman.png` | 1:1 | — | Dizinde sıyrık olan çocuk; anne yara bandı yapıştırıyor, baba ilk yardım kutusu tutuyor. |
 | 55 | `assets/images/items/milli/askerler.png` | 1:1 | — | Yan yana dizilmiş, üniformalı ve kepli dört asker; yetişkin oranlarında. |
 | 56 | `assets/images/items/milli/meclis.png` | 1:1 | — | Hikâyedeki ilk Meclis binasıyla aynı bina: sade iki katlı taş yapı, çatıda bayrak. |
 | 57 | `assets/images/items/milli/okul_binasi.png` | 1:1 | — | Meclis'ten ayırt edilsin diye: renkli okul binası, bahçesinde kaydırak ve salıncak var; bayrak ve yüz yok. |
@@ -73,7 +73,7 @@
 | 61 | `assets/images/items/hava/kestane.png` | 1:1 | — | Parlak kahverengi kestaneler, dikenli yeşil açılmış bir kabuk ve birkaç turuncu sonbahar yaprağı. |
 | 62 | `assets/images/items/onlem/dolap_sabitle.png` | 1:1 | — | Duvara metal bağlantı parçası ve vidalarla sabitlenmiş uzun dolap. |
 | 63 | `assets/images/items/tasarruf/isik_kapat.png` | 1:1 | — | Kapı aralığında anahtarı kapatan çocuk; arkasındaki oda karanlık, tavan lambası sönük. |
-| 64 | `assets/images/items/tasarruf/isik_acik_birak.png` | 1:1 | — | Odadan çıkıp uzaklaşan çocuk; arkasında ışığı yanık, parlak bir oda kalıyor. |
+| 64 | `assets/images/items/tasarruf/isik_acik_birak.png` | 1:1 | — | Çocuk odadan çıkıp gidiyor; arkadaki boş odada tavan lambası yanık kalmış, dışarısı gündüz. |
 | 65 | `assets/images/items/tasarruf/kagit_iki_yuz.png` | 1:1 | — | Bir yüzü çizili kâğıdı çevirip boş arka yüzüne çizen çocuk. |
 | 66 | `assets/images/items/tek/led.png` | 1:1 | — | LED ampul/lamba: yüzsüz, parlayan modern LED ampul (süt beyazı kubbe, küçük parlak LED noktaları halkası, beyaz kanatlı taban, soğuk beyaz ışık). Dikdörtgen/ekran değil. g2 hayat bilgisi u06 da kullanıyor (aydınlatma sırası); yeni görsel orada da uyar. |
 | 67 | `assets/images/items/plan/gec_yat.png` | 1:1 | — | Gece geç saatte yatmayıp esneyen, gözlerini ovuşturan pijamalı çocuk; arkasında karanlık pencere ve ay. |
@@ -91,9 +91,9 @@
 | 79 | `assets/images/items/hikaye/g2_semsiye_yagmur.png` | 1:1 | — | Yağmurlu sokakta Ece mor şemsiyesini kendi üstünde tutuyor, yanındaki Can şemsiyesiz, hafif ıslak saçlarla yağmura bakıyor. Karakterler g2_semsiye görseliyle aynı (Ece: kahverengi saçlı, pembe tişört, eflatun şort; Can: kısa kahverengi saçlı, mavi tişört, koyu pantolon). |
 | 80 | `assets/images/items/fen/fosil_3_camur.png` | 1:1 | — | Çamur örtüsü: kesit blokta balık iskeleti kalın kahverengi çamur ve kum katmanının ALTINDA gömülü; üst yüzey düz çamur, üstte kemik görünmez. |
 | 81 | `assets/images/items/fen/fosil_2_dip.png` | 1:1 | — | Göl dibi: üstte berrak mavi su katmanı, altında kumlu dipte açıkta yatan balık iskeleti; üstü hiçbir şeyle örtülü değil (fosil_3 ile açıkça ayrışır). |
-| 82 | `assets/images/items/fen/sahne/iki_vurus.png` | 16:9 | — | İki paralel şerit, aynı başlangıç çizgisi. Üst şerit: kısa ince ok, top yakında, bayrak yakında. Alt şerit: uzun kalın iri ok, top çok uzakta, bayrak uzakta. Tam iki top, iki bayrak. |
+| 82 | `assets/images/items/fen/sahne/iki_vurus.png` | 16:9 | — | İki ayrı şerit: üstte hafif vurulan top yakında durmuş, altta güçlü vurulan top bayrağa kadar gitmiş. |
 | 83 | `assets/images/items/fen/bisiklet_fren.png` | 1:1 | — | Fren yapan bisikletli: çocuk frene basan eliyle kolu sıkıyor, arkaya yaslanmış, arka tekerleğin arkasında kısa fren izi ve toz bulutu; belirgin yavaşlama. |
-| 84 | `assets/images/items/fen/itme_salincak.png` | 1:1 | — | Çocuk, salıncakta oturan arkadaşını arkadan iki eliyle itiyor. |
+| 84 | `assets/images/items/fen/itme_salincak.png` | 1:1 | — | Çocuk salıncaktaki arkadaşını arkasından iki eliyle itiyor. |
 | 85 | `assets/images/items/fen/bacakli_iribas.png` | 1:1 | — | Büyümüş iribaş: yeşilimsi gri gövde, uzun kuyruk ve gövdenin arkasında iki net, yüzgeç olmayan küçük bacak ve perdeli ayak. |
 | 86 | `assets/images/items/fen/bakir.png` | 1:1 | — | Bakır: parlak, metalik kırmızımsı turuncu bir bakır külçe ve üstünde sarılı çıplak bakır tel (portakal gibi görünmemeli). |
 | 87 | `assets/images/items/fen/buhar.png` | 1:1 | — | Yalnız su buharı: yukarı kıvrılan yumuşak beyaz buhar bulutu; çaydanlık ya da kap yok. |
@@ -102,7 +102,7 @@
 | 90 | `assets/images/items/fen/karton_kutu.png` | 1:1 | — | Katlanmış karton kutu: açık kapakları üstte duran, kahverengi oluklu karton yapışkan bantlı kutu. |
 | 91 | `assets/images/items/fen/yogurt_kabi.png` | 1:1 | — | Plastik yoğurt kabı: pembe-mavi renkli, kapaklı, etiket bandı olan (yazısız) plastik kap; kâğıt bardağa benzemez. |
 | 92 | `assets/images/items/fen/sahne/cam_kagit_kutusu.png` | 16:9 | — | Tek mavi kâğıt geri dönüşüm kutusu gazete ve kâğıt dolu; bir çocuk (Ali) yeşil cam şişeyi bu kutunun içine atıyor, şişe kâğıtların arasında görünüyor. |
-| 93 | `assets/images/items/fen/tasarruf_isik_kapat.png` | 1:1 | — | Çocuk duvardaki anahtara parmağıyla basıp ışığı kapatıyor; yanındaki lamba sönmüş (ışıksız, soluk gri-beyaz ampul). |
+| 93 | `assets/images/items/fen/tasarruf_isik_kapat.png` | 1:1 | — | Gündüz, güneşli oda; çocuk düğmeye basmış, tavan lambası sönük. |
 | 94 | `assets/images/items/fen/sahne/alti_lamba.png` | 16:9 | — | İki raf, her rafta eşit aralıklı üç özdeş masa lambası: toplam tam altı lamba, hepsi sıcak sarı yanıyor. |
 | 95 | `assets/images/items/fen/granit.png` | 1:1 | — | Granit: gri-pembe tuzlu-biber benekli, pürüzlü, köşeli sert kayaç parçası (yumurtaya benzemez). |
 | 96 | `assets/images/items/fen/karisim_kum_nohut.png` | 1:1 | — | Kase içinde kum ve nohut iç içe karışık; kum taneleri nohutların arasında ve üstünde belirgin. |
@@ -111,35 +111,35 @@
 | 99 | `assets/images/items/fen/koruma_fidan_dik.png` | 1:1 | — | Çocuk dizlerinin üstünde, küçük kürekle açtığı çukura fidanı dikiyor; çıplak toprak ve küçük fidan belirgin. |
 | 100 | `assets/images/items/fen/zarar_dal_kirma.png` | 1:1 | — | Çocuk bir ağaç dalını iki eliyle bükerek kırıyor; dal çatırdıyor, birkaç yaprak düşüyor. |
 | 101 | `assets/images/items/katki/yangin_sondu.png` | 1:1 | — | Yangın söndürüldükten sonraki ev: alev yok; ıslak, hafif isli çatı, ince bir duman telesi ve su birikintisi. |
-| 102 | `assets/images/items/toplum/yer_ver.png` | 1:1 | — | Çocuk ayakta, yaşlı bir kadına boş koltuğu gösterip yer veriyor (koltukta kimse oturmuyor). g2 hayat bilgisi u03 de bu görseli kullanıyor (otobüste yer verme turu); yeni görsel orada da uyar. |
+| 102 | `assets/images/items/toplum/yer_ver.png` | 1:1 | — | Otobüste çocuk ayağa kalkmış, boşalan koltuğu bastonlu yaşlı kadına gösteriyor; önde yetişkin şoför. |
 | 103 | `assets/images/items/doga/temiz_hava.png` | 1:1 | — | Temiz hava: gözleri kapalı, derin nefes alan mutlu çocuk; çevresinde soluk mavi kil rüzgâr kıvrımları ve uçuşan taze yeşil yapraklar. Ağaç yok (item.doga.agac kartıyla benzemesin). |
-| 104 | `assets/images/items/sorumluluk/kitabi_unut.png` | 1:1 | — | Kitabı unutmak: kitapsız, boş çantaya şaşkınlıkla bakan çocuk (çevrede kitap yok). |
+| 104 | `assets/images/items/sorumluluk/kitabi_unut.png` | 1:1 | — | Sınıfta sırasında oturan çocuk boş çantasına üzgün bakıyor; masasında kitap yok. |
 | 105 | `assets/images/items/hak/bahceye_cik.png` | 1:1 | — | Bahçeye çıkmak: bahçe kapısına doğru yürüyen mutlu çocuk (açık ahşap kapı, çiçekler). |
-| 106 | `assets/images/items/guvenlik/ilac_seker.png` | 1:1 | — | İlacı şeker gibi yemek: yalnız başına, açık ilaç şişesinden avucuna bir yığın beyaz hap döken çocuk; şişe ve haplar belli (şeker kutusu değil). |
+| 106 | `assets/images/items/guvenlik/ilac_seker.png` | 1:1 | — | Giyinik çocuk, kırmızı haçlı ilaç şişesinden renkli hapları şeker sanıp yemek üzere. |
 | 107 | `assets/images/items/sonuc/gece_gorunur.png` | 1:1 | — | Gece görünür olmak: karanlık yolda yansıtıcı yelekli çocuk, bir aracın farları onu aydınlatıyor (araç yüzsüz). Aynı görsel tur 12 ve 13 için. |
 | 108 | `assets/images/items/toplum/paylas.png` | 1:1 | — | Toplumda paylaşmak: komşuya ikram. Çit arkasında yaşlı bir komşuya kurabiye tabağı uzatan çocuk; arkada komşu evleri (aile içi sofra/paylaşma görsellerinden farklı). |
 | 109 | `assets/images/items/sahne/copler_kucuk.png` | 1:1 | — | Sokakta biriken çöp: iki ev arasındaki yol çöp torbaları, devrilmiş taşkın çöp kutuları ve etrafa saçılmış atıklarla dolu; sinekler (kötü koku). Tüm torbalar ve evler yüzsüz. temiz_sokak ile açık karşıtlık. |
-| 110 | `assets/images/items/koruma/rehber.png` | 1:1 | — | Rehberi dinlemek: tarihî kaleyi eliyle gösterip anlatan yetişkin rehber ve dikkatle dinleyen üç çocuk. |
+| 110 | `assets/images/items/koruma/rehber.png` | 1:1 | — | Kasketli ve bayraklı yetişkin rehber taş kaleyi gösteriyor; üç çocuk dinliyor. |
 | 111 | `assets/images/items/koruma/vazgecir.png` | 1:1 | — | Arkadaşını vazgeçirmek: taş duvara bir şey kazımak üzere olan çocuğu, arkadaşı elini tutup diğer avucunu "dur" diye kaldırarak vazgeçiriyor. |
 | 112 | `assets/images/items/birlik/alay.png` | 1:1 | — | Alay etmek: üç çocuk yarım daire hâlinde, yalnız duran dördüncü küçük çocuğu parmakla gösterip gülüyor; dışlanan çocuk başı öne eğik, üzgün. |
 | 113 | `assets/images/items/simge/guclendirmez.png` | 1:1 | — | Birliği güçlendirmez etiketi: tek başına duran tek bir el (boncuk halkası yok); "yalnız el" simgesi, item.simge.guclendirir (birleşen eller) ile karşıt. |
 | 114 | `assets/images/items/kroki/firin_k.png` | 1:1 | — | Kroki: kuşbakışı mahalle haritası. Fırın turuncu çatılı bina (bacası ve çatıda büyük ekmek biçimli yazısız tabela); kırmızı yıldız FIRININ üstünde. park_k ve okul_k ile AYNI düzen, AYNI ölçek ve aynı yakınlık; yalnız yıldızın yeri değişir (ideal: tek tabanı üretip yıldızı taşımak). |
 | 115 | `assets/images/items/kroki/park_k.png` | 1:1 | — | Kroki: firin_k ile birebir aynı harita tabanı ve ölçek; kırmızı yıldız PARKIN üstünde. |
 | 116 | `assets/images/items/kroki/okul_k.png` | 1:1 | — | Kroki: firin_k ile birebir aynı harita tabanı ve ölçek; kırmızı yıldız OKULUN (mavi çatılı, bayraklı bina) üstünde. |
-| 117 | `assets/images/items/kaynak/hemen_inan.png` | 1:1 | — | Hemen inanmak: ekrana bakıp "doğru!" diyen, yumruğunu sıkan, tereddütsüz inanan neşeli çocuk (ekranda yalnız yeşil onay işareti simgesi). |
+| 117 | `assets/images/items/kaynak/hemen_inan.png` | 1:1 | — | Çocuk tablette uçan domuz resmine şaşkın şaşkın bakıyor, hemen inanıyor. |
 | 118 | `assets/images/items/sahne/top_paylasilmiyor.png` | 16:9 | — | Top paylaşılmıyor: sol önde tek çocuk topu göğsüne bastırıp arkasını dönüyor; sağda üç çocuk boş elle, üzgün duruyor. |
 | 119 | `assets/images/items/guvenlik/kitap_oku.png` | 1:1 | — | Kitap okumak: koltukta oturup elinde açık renkli resimli kitabı okuyan mutlu çocuk (güvenli davranış). |
 | 120 | `assets/images/items/guvenlik/adres_soyle.png` | 1:1 | — | Adres söylemek: kapıyı aralayıp konuşan çocuk, başının üstünde içinde yalnız küçük bir ev simgesi olan konuşma baloncuğu (yazı yok). |
 | 121 | `assets/images/items/afet/cok_kapan.png` | 1:1 | — | Çök-Kapan-Tutun: yere diz çökmüş, öne eğilmiş, iki kolu başını ve ensesini koruyan çocuk (masaya yaslanıp ayakta durmuyor; masa_altı kartından farklı: açık alanda çömelmiş). |
-| 122 | `assets/images/items/afet/binaya_girme.png` | 1:1 | — | Hasarlı binaya girmemek: çatlak, hasarlı bina önünde anne/baba çocuğun elini tutup diğer avucuyla "dur" diyor; önde büyük kırmızı yasak işareti (daire + çapraz çizgi, yazısız). |
+| 122 | `assets/images/items/afet/binaya_girme.png` | 1:1 | — | Çatlak evin kapısında kırmızı-beyaz şerit; ebeveyn çocuğun elinden tutup geri çekiyor. |
 | 123 | `assets/images/items/afet/toplanma_git.png` | 1:1 | — | Afet sonrası toplanma alanına gitmek: anne, baba ve çocuk el ele, arkada çatlak bina varken yeşil alandaki yazısız aile simgeli toplanma levhasına doğru yürüyor. toplanma_ogren (evde haritaya bakma) ile ayrışsın. r39 ve r40 kullanır. |
 | 124 | `assets/images/items/tek/asi.png` | 1:1 | — | Aşı: şırınga (iğnesi mavi kapaklı), küçük aşı şişesi ve pamuk topu; yüzsüz. |
 | 125 | `assets/images/items/tek/at_arabasi.png` | 1:1 | — | At arabası: bir atın koşumla çektiği, iki büyük tekerlekli ahşap araba (yandan görünüm). |
 | 126 | `assets/images/items/simetri/kare_yatay_cizgi.png` | 1:1 | — | Sarı kare; üst kenara paralel, ortadan geçmeyen (üstten üçte bir aşağıda) tek yatay kesikli çizgi. Çizgi şekli iki eşit olmayan parçaya böler, simetri doğrusu değildir. |
 | 127 | `assets/images/items/arac/tablet.png` | 1:1 | — | Açık, dijital bir tablet: ekranında çizilmiş basit bir üçgen ve kare çerçeve, önünde küçük bir kil kalem. Şekil çizme aracı olarak okunmalı. |
 | 128 | `assets/images/items/olay/okul_gunu.png` | 1:1 | — | Sınıfta ders: kil bir sıranın başında oturan çocuk, önünde açık defter ve kalem; arkada boş yeşil tahta (yalnız yıldız ve üçgen karalaması) ve iki arkadaş. Tüm okul gününü (saatler) anlatır; eve/okula yürüyüş değil. |
-| 129 | `assets/images/items/olay/otobus_yolculugu.png` | 1:1 | — | Uzun (şehirler arası) otobüs yolculuğu: uzun bir otobüs, uzaklara kıvrılarak giden uzun yol, arkada dağlar; pencerede uykulu bir çocuk. Süre 'birkaç saat' okunmalı, şehir içi kısa yolculuk gibi durmamalı. |
-| 130 | `assets/images/items/olay/bayram_tatili.png` | 1:1 | — | Bayram tatili = birkaç gün: üstünde renkli flama dizisi asılı, kareli boş bir takvim sayfası; arka arkaya üç kare yıldız çıkartmalı; yanlarda küçük güneş ve hilal. Rakam yok. Aile yemek sofrası değil. |
+| 129 | `assets/images/items/olay/otobus_yolculugu.png` | 1:1 | — | Dağ yolunda uzun şehirler arası otobüs; önde yetişkin şoför, ortada pencerede uyuyan çocuk yolcu. |
+| 130 | `assets/images/items/olay/bayram_tatili.png` | 1:1 | — | Bavulları tavanına bağlı aile arabası, bayram süslü köy evine geliyor; dede ve nine el sallıyor. |
 | 131 | `assets/images/items/cevre/kitap_karis.png` | 1:1 | — | Yukarıdan kapalı mor bir kil kitap; kısa kenarının yanında art arda tam 2, uzun kenarının yanında art arda tam 3 el izi (karış) yan yana dizilmiş. Çocuk eli karışları sayarak ölçmeyi göstermeli. |
 | 132 | `assets/images/items/hikaye/g3_23_nisan_hazirlik.png` | 1:1 | — | Bir sınıf masasında iki çocuk: kız kırmızı kâğıdı tek bir yuvarlak uçlu güvenli çocuk makasıyla kesiyor, erkek çocuk kesilmiş süs parçalarını ve yapıştırıcıyı tutuyor. Resimde tek makas var, bıçak ya da keskin alet yok. |
 | 133 | `assets/images/items/durum/g3_sinif_toplantisi.png` | 16:9 | — | Sınıf toplantısı: sıralar yarım daire düzeninde, ayakta kâğıt tutan bir kız (Ada) konuşuyor; sırasında oturan bir erkek çocuk (Kerem) öne eğilmiş, ağzı açık, elini kızın önüne uzatarak sözünü kesiyor; kız şaşkın bakıyor, birkaç çocuk izliyor. |
@@ -182,7 +182,7 @@ A cozy home kitchen and dining area right after dinner. The round dining table i
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
-- **Açıklama:** Dört çocuk art arda tek sıra olmuş, sakin ve sabırlı bekliyor (kuyruk). (denetim: g1_hayat_bilgisi)
+- **Açıklama:** Dört çocuk yandan görünüşte, tek sıra hâlinde art arda bekliyor (kuyruk).
 
 ```
 a side view of four children standing in a straight queue one behind the other, all facing the same direction toward a drinking fountain, each child waiting patiently behind the next, clear single-file line. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
@@ -192,7 +192,7 @@ a side view of four children standing in a straight queue one behind the other, 
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
-- **Açıklama:** Çocuk, kaldırımdan yola yuvarlanan topun peşinden koşuyor. (denetim: g1_hayat_bilgisi)
+- **Açıklama:** Çocuk kaldırımdan yola, yuvarlanan topun peşinden koşuyor; uzaktan araba geliyor.
 
 ```
 a small claymation vignette: a street with a grey road, white lane markings and a raised sidewalk curb; a child running off the curb into the road after a rolling ball, a car approaching in the distance. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
@@ -202,7 +202,7 @@ a small claymation vignette: a street with a grey road, white lane markings and 
 
 - **Oran:** 16:9  
 - **Referans görsel:** yok  
-- **Açıklama:** Uzun bir yemek masası: bir uçta küçük bir çocuk oturuyor, masanın öbür ucunda belirgin bir tuzluk duruyor (tuz uzakta). (denetim: g1_hayat_bilgisi)
+- **Açıklama:** Uzun sofra: bir uçta küçük çocuk uzanıyor, öbür uçta küçücük bir tuzluk (bardak boyunda).
 
 ```
 a long family dinner table seen from the side at child eye level: a small child sits at the far left end of the table reaching out with one arm; at the far right end of the table stands one tiny white salt shaker, about as small as a drinking cup and much smaller than the child's head, other family members sit in the middle eating; realistic sizes. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark.
@@ -382,7 +382,7 @@ A tall adult stranger seen full body from head to toe, wearing a wide-brim dark 
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
-- **Açıklama:** Okul bahçesinde çimde oturan bir çocuğun önünde iki düz sıra halinde, aralarında boşluk olan tam 12 renkli cam bilye; sağda arkadaşının uzattığı açık avucunda tam 4 renkli bilye. Bilyeler üst üste binmemeli, hepsi sayılabilmeli. (denetim: g1_matematik)
+- **Açıklama:** Çimde oturan çocuk, iki eliyle küçük bir kavanoz bilye tutuyor (sayım yok).
 
 ```
 a small claymation vignette: a boy sitting on the grass holding a small glass jar in his two hands, the jar is about the size of his head and full of tiny colorful marbles; realistic sizes. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
@@ -542,7 +542,7 @@ Two small clay children, both smiling. The first child warmly holds the second, 
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
-- **Açıklama:** Arka arkaya dizilmiş, sırasını sakin sakin bekleyen dört çocuk. (denetim: g2_hayat_bilgisi)
+- **Açıklama:** Fırın tezgâhı önünde üç çocuk yandan görünüşte tek sıra hâlinde sırasını bekliyor.
 
 ```
 a small claymation vignette, seen from the side: a bakery counter with a baker behind it; three children stand in a straight single-file queue, one behind the other, each child behind the previous one, all facing the counter and waiting their turn. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
@@ -682,7 +682,7 @@ A park path in a clay diorama. A small clay boy sits on the ground beside a smal
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
-- **Açıklama:** Anne ve baba, düşen çocuğun dizine pansuman yapıp onu teselli ediyor. (denetim: g2_hayat_bilgisi)
+- **Açıklama:** Dizinde sıyrık olan çocuk; anne yara bandı yapıştırıyor, baba ilk yardım kutusu tutuyor.
 
 ```
 a small claymation vignette: a child sitting on a front step with a small red scrape on one knee, the mother kneeling in front of the child and putting a plaster on the knee, the father standing beside them holding an open white first-aid box, a small bicycle lying on the grass. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
@@ -782,7 +782,7 @@ A small clay child standing in a doorway, reaching up and pressing a wall light 
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
-- **Açıklama:** Odadan çıkıp uzaklaşan çocuk; arkasında ışığı yanık, parlak bir oda kalıyor. (denetim: g2_hayat_bilgisi)
+- **Açıklama:** Çocuk odadan çıkıp gidiyor; arkadaki boş odada tavan lambası yanık kalmış, dışarısı gündüz.
 
 ```
 a small claymation vignette: a child walking out of a bedroom door toward the viewer and leaving; behind the child the empty bedroom has its ceiling lamp switched on and glowing brightly, bright daylight comes through the bedroom window, nobody is in the room. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
@@ -962,7 +962,7 @@ a small clay diorama block cut open to show the bottom of a lake seen from the s
 
 - **Oran:** 16:9  
 - **Referans görsel:** yok  
-- **Açıklama:** İki paralel şerit, aynı başlangıç çizgisi. Üst şerit: kısa ince ok, top yakında, bayrak yakında. Alt şerit: uzun kalın iri ok, top çok uzakta, bayrak uzakta. Tam iki top, iki bayrak. (denetim: g3_fen)
+- **Açıklama:** İki ayrı şerit: üstte hafif vurulan top yakında durmuş, altta güçlü vurulan top bayrağa kadar gitmiş.
 
 ```
 two separate parallel grass lanes, one above the other, each lane with its own child and its own ball, both children start at the same white line on the left; in the top lane a child gently taps a ball and the ball stops close to the line; in the bottom lane a child kicks hard and the ball has rolled far to the right end of the lane next to a small flag. 3D claymation diorama, handcrafted plasticine miniature world, tilt-shift miniature feel, soft rounded shapes, subtle clay texture, warm soft studio lighting with gentle shadows, bright cheerful candy-pastel color palette, cozy and inviting, child-friendly, clean uncluttered composition with open empty space in the center for game elements, no characters unless described, no text, no letters, no numbers, no watermark.
@@ -982,7 +982,7 @@ a child on a small bicycle squeezing the hand brake lever on the handlebar with 
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
-- **Açıklama:** Çocuk, salıncakta oturan arkadaşını arkadan iki eliyle itiyor. (denetim: g3_fen)
+- **Açıklama:** Çocuk salıncaktaki arkadaşını arkasından iki eliyle itiyor.
 
 ```
 a child standing behind a simple wooden A-frame playground swing, pushing a friend's back forward with both hands, the friend sitting on the swing seat moving forward, strong sense of pushing motion. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
@@ -1072,7 +1072,7 @@ a single blue recycling bin that is full of crumpled paper and newspapers, and a
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
-- **Açıklama:** Çocuk duvardaki anahtara parmağıyla basıp ışığı kapatıyor; yanındaki lamba sönmüş (ışıksız, soluk gri-beyaz ampul). (denetim: g3_fen)
+- **Açıklama:** Gündüz, güneşli oda; çocuk düğmeye basmış, tavan lambası sönük.
 
 ```
 a small claymation vignette: a bright daytime room with sunlight from the window, a child pressing a light switch on the wall with one finger, the ceiling lamp above is switched OFF: the bulb is grey and dark and gives no light. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
@@ -1162,7 +1162,7 @@ a small cute pastel clay house just after its fire has been put out: there is NO
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
-- **Açıklama:** Çocuk ayakta, yaşlı bir kadına boş koltuğu gösterip yer veriyor (koltukta kimse oturmuyor). g2 hayat bilgisi u03 de bu görseli kullanıyor (otobüste yer verme turu); yeni görsel orada da uyar. (denetim: g3_hayat_bilgisi)
+- **Açıklama:** Otobüste çocuk ayağa kalkmış, boşalan koltuğu bastonlu yaşlı kadına gösteriyor; önde yetişkin şoför.
 
 ```
 a small claymation vignette inside a city bus: a child has stood up from a bus seat and stands in the aisle pointing kindly to the now empty seat; an elderly woman with a walking cane stands next to the empty seat smiling and about to sit down; an adult bus driver sits at the steering wheel at the front. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
@@ -1182,7 +1182,7 @@ a happy clay child standing with eyes gently closed, chest lifted and smiling wh
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
-- **Açıklama:** Kitabı unutmak: kitapsız, boş çantaya şaşkınlıkla bakan çocuk (çevrede kitap yok). (denetim: g3_hayat_bilgisi)
+- **Açıklama:** Sınıfta sırasında oturan çocuk boş çantasına üzgün bakıyor; masasında kitap yok.
 
 ```
 a small claymation vignette: a child sitting at a school classroom desk looking sadly into an open empty school backpack, no book on the desk, other children's desks have books. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
@@ -1202,7 +1202,7 @@ a happy clay child walking toward an open wooden garden gate, mid-step with a sm
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
-- **Açıklama:** İlacı şeker gibi yemek: yalnız başına, açık ilaç şişesinden avucuna bir yığın beyaz hap döken çocuk; şişe ve haplar belli (şeker kutusu değil). (denetim: g3_hayat_bilgisi)
+- **Açıklama:** Giyinik çocuk, kırmızı haçlı ilaç şişesinden renkli hapları şeker sanıp yemek üzere.
 
 ```
 a six-year-old child in a t-shirt and shorts sitting on the floor holding an open medicine bottle with a red cross label, colorful round pills spilled in the other hand, the child mistakenly thinking the pills are candy and about to eat them. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
@@ -1242,7 +1242,7 @@ a small round clay street diorama: two pastel houses facing each other with a gr
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
-- **Açıklama:** Rehberi dinlemek: tarihî kaleyi eliyle gösterip anlatan yetişkin rehber ve dikkatle dinleyen üç çocuk. (denetim: g3_hayat_bilgisi)
+- **Açıklama:** Kasketli ve bayraklı yetişkin rehber taş kaleyi gösteriyor; üç çocuk dinliyor.
 
 ```
 a small claymation vignette: an adult tour guide wearing a cap and holding a small flag on a stick, pointing at a big old grey stone castle wall with towers, a group of three children standing and listening carefully. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
@@ -1312,7 +1312,7 @@ a flat top-down bird's-eye plan view of a tiny town map filling the whole square
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
-- **Açıklama:** Hemen inanmak: ekrana bakıp "doğru!" diyen, yumruğunu sıkan, tereddütsüz inanan neşeli çocuk (ekranda yalnız yeşil onay işareti simgesi). (denetim: g3_hayat_bilgisi)
+- **Açıklama:** Çocuk tablette uçan domuz resmine şaşkın şaşkın bakıyor, hemen inanıyor.
 
 ```
 a small claymation vignette: a child holding a tablet whose screen shows a pig with wings flying in the sky, the child staring with wide amazed eyes and an open mouth, completely believing the silly picture. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
@@ -1362,7 +1362,7 @@ a small clay child kneeling low on the floor and curled forward in the drop-cove
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
-- **Açıklama:** Hasarlı binaya girmemek: çatlak, hasarlı bina önünde anne/baba çocuğun elini tutup diğer avucuyla "dur" diyor; önde büyük kırmızı yasak işareti (daire + çapraz çizgi, yazısız). (denetim: g3_hayat_bilgisi)
+- **Açıklama:** Çatlak evin kapısında kırmızı-beyaz şerit; ebeveyn çocuğun elinden tutup geri çekiyor.
 
 ```
 a small claymation vignette: a cracked damaged house with a red and white striped barrier tape across its door, a parent holding the child's hand and gently pulling the child back away from the door, both standing outside at a safe distance. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
@@ -1432,7 +1432,7 @@ a cozy clay classroom scene: a smiling child sitting at a small wooden school de
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
-- **Açıklama:** Uzun (şehirler arası) otobüs yolculuğu: uzun bir otobüs, uzaklara kıvrılarak giden uzun yol, arkada dağlar; pencerede uykulu bir çocuk. Süre 'birkaç saat' okunmalı, şehir içi kısa yolculuk gibi durmamalı. (denetim: g3_matematik)
+- **Açıklama:** Dağ yolunda uzun şehirler arası otobüs; önde yetişkin şoför, ortada pencerede uyuyan çocuk yolcu.
 
 ```
 a small claymation vignette: a big long intercity coach bus driving on a winding mountain highway; an adult driver sits at the steering wheel at the front; a child passenger sits by a side window in the middle of the bus, asleep with a small pillow; the road continues far into the distance. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
@@ -1442,7 +1442,7 @@ a small claymation vignette: a big long intercity coach bus driving on a winding
 
 - **Oran:** 1:1  
 - **Referans görsel:** yok  
-- **Açıklama:** Bayram tatili = birkaç gün: üstünde renkli flama dizisi asılı, kareli boş bir takvim sayfası; arka arkaya üç kare yıldız çıkartmalı; yanlarda küçük güneş ve hilal. Rakam yok. Aile yemek sofrası değil. (denetim: g3_matematik)
+- **Açıklama:** Bavulları tavanına bağlı aile arabası, bayram süslü köy evine geliyor; dede ve nine el sallıyor.
 
 ```
 a small claymation vignette: a family car with suitcases tied on its roof arriving at grandparents' village house decorated with colorful festive bunting, grandparents waving happily at the door. 3D claymation style, handcrafted plasticine toy look, soft rounded chunky shapes, subtle fingerprint texture, smooth matte clay surface, warm soft studio lighting, gentle ambient occlusion, bright cheerful candy-pastel colors, cute child-friendly design, single subject centered and fully visible, isolated on a plain solid light grey background (#EEEEEE), no ground shadow, no props unless described, no text, no letters, no numbers, no watermark.
