@@ -221,7 +221,7 @@
 							{
 								"token": {
 									"type": "text",
-									"value": "tk.cicek"
+									"value": "tk.cicek_2"
 								},
 								"bin": 0
 							},
@@ -607,25 +607,25 @@
 							{
 								"left": {
 									"type": "text",
-									"value": "tk.armagan",
-									"voice": "vo.tk.armagan"
+									"value": "tk.dost",
+									"voice": "vo.tk.dost"
 								},
 								"right": {
 									"type": "text",
-									"value": "tk.hediye",
-									"voice": "vo.tk.hediye"
+									"value": "tk.arkadas",
+									"voice": "vo.tk.arkadas"
 								}
 							},
 							{
 								"left": {
 									"type": "text",
-									"value": "tk.ogrenci",
-									"voice": "vo.tk.ogrenci"
+									"value": "tk.kent",
+									"voice": "vo.tk.kent"
 								},
 								"right": {
 									"type": "text",
-									"value": "tk.talebe",
-									"voice": "vo.tk.talebe"
+									"value": "tk.sehir",
+									"voice": "vo.tk.sehir"
 								}
 							}
 						]
@@ -658,42 +658,42 @@
 							{
 								"token": {
 									"type": "text",
-									"value": "tk.tas_duvar"
+									"value": "tk.altin_yuzuk"
 								},
 								"bin": 0
 							},
 							{
 								"token": {
 									"type": "text",
-									"value": "tk.tas_kalp"
+									"value": "tk.altin_kalp"
 								},
 								"bin": 1
 							},
 							{
 								"token": {
 									"type": "text",
-									"value": "tk.tatli_elma"
+									"value": "tk.kara_bulut"
 								},
 								"bin": 0
 							},
 							{
 								"token": {
 									"type": "text",
-									"value": "tk.tatli_soz"
+									"value": "tk.kara_haber"
 								},
 								"bin": 1
 							},
 							{
 								"token": {
 									"type": "text",
-									"value": "tk.sicak_cay"
+									"value": "tk.sert_kaya"
 								},
 								"bin": 0
 							},
 							{
 								"token": {
 									"type": "text",
-									"value": "tk.sicak_bakis"
+									"value": "tk.sert_soz"
 								},
 								"bin": 1
 							}
@@ -895,7 +895,7 @@
 							{
 								"token": {
 									"type": "text",
-									"value": "tk.mizrap"
+									"value": "tk.flut_2"
 								},
 								"bin": 1
 							}
@@ -919,13 +919,12 @@
 					"voice": "vo.g3.turkce.u05.n05.r01",
 					"params": {
 						"parts": [
-							"mas",
-							"ma",
-							"vi"
+							"düm",
+							"düz"
 						],
 						"distractors": [
-							"mav",
-							"maş"
+							"ban",
+							"kol"
 						],
 						"voice": "vo.g3.turkce.u05.n05.r01.word"
 					}
@@ -942,7 +941,7 @@
 							"zı"
 						],
 						"distractors": [
-							"kip",
+							"kem",
 							"mız"
 						],
 						"voice": "vo.g3.turkce.u05.n05.r02.word"
@@ -962,8 +961,8 @@
 								},
 								"right": {
 									"type": "text",
-									"value": "tk.de",
-									"voice": "vo.tk.de"
+									"value": "tk.ye",
+									"voice": "vo.tk.ye"
 								}
 							},
 							{
@@ -974,8 +973,8 @@
 								},
 								"right": {
 									"type": "text",
-									"value": "tk.ya",
-									"voice": "vo.tk.ya"
+									"value": "tk.dan",
+									"voice": "vo.tk.dan"
 								}
 							},
 							{
@@ -986,8 +985,8 @@
 								},
 								"right": {
 									"type": "text",
-									"value": "tk.tan",
-									"voice": "vo.tk.tan"
+									"value": "tk.ta",
+									"voice": "vo.tk.ta"
 								}
 							}
 						]

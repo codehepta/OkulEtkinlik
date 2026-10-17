@@ -576,14 +576,14 @@
 							{
 								"token": {
 									"type": "text",
-									"value": "tk.agir_canta"
+									"value": "tk.yumusak_yastik"
 								},
 								"bin": 0
 							},
 							{
 								"token": {
 									"type": "text",
-									"value": "tk.agir_soz"
+									"value": "tk.yumusak_soz"
 								},
 								"bin": 1
 							},
@@ -843,7 +843,7 @@
 						],
 						"distractors": [
 							"yeş",
-							"şıl"
+							"mer"
 						],
 						"voice": "vo.g3.turkce.u07.n05.r01.word"
 					}

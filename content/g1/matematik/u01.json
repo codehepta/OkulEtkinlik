@@ -102,8 +102,8 @@
 							},
 							{
 								"type": "item",
-								"value": "item.konum.arasinda",
-								"voice": "vo.g1.matematik.konum.arasinda"
+								"value": "item.konum.altinda",
+								"voice": "vo.g1.matematik.konum.altinda"
 							},
 							{
 								"type": "item",
@@ -299,7 +299,7 @@
 					"params": {
 						"mode": "path",
 						"ask": "build",
-						"cols": 5,
+						"cols": 3,
 						"rows": 4,
 						"start": [
 							0,
@@ -307,7 +307,7 @@
 						],
 						"facing": "right",
 						"goal": [
-							3,
+							0,
 							0
 						],
 						"arrows": "relative",

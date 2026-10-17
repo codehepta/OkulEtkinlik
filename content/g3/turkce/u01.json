@@ -528,13 +528,13 @@
 							{
 								"left": {
 									"type": "text",
-									"value": "tk.ogrenci",
-									"voice": "vo.tk.ogrenci"
+									"value": "tk.guzel",
+									"voice": "vo.tk.guzel"
 								},
 								"right": {
 									"type": "text",
-									"value": "tk.talebe",
-									"voice": "vo.tk.talebe"
+									"value": "tk.hos",
+									"voice": "vo.tk.hos"
 								}
 							},
 							{

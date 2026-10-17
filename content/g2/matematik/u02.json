@@ -639,8 +639,8 @@
 							},
 							{
 								"type": "number",
-								"value": 77,
-								"voice": "vo.sayi.77"
+								"value": 60,
+								"voice": "vo.sayi.60"
 							}
 						]
 					}
@@ -1049,24 +1049,24 @@
 					"params": {
 						"target": {
 							"type": "number",
-							"value": 15,
+							"value": 25,
 							"voice": "vo.g2.matematik.u02.n08.r05.hedef"
 						},
 						"options": [
 							{
 								"type": "number",
-								"value": 12,
-								"voice": "vo.sayi.12"
+								"value": 20,
+								"voice": "vo.sayi.20"
 							},
 							{
 								"type": "number",
-								"value": 15,
-								"voice": "vo.sayi.15"
+								"value": 25,
+								"voice": "vo.sayi.25"
 							},
 							{
 								"type": "number",
-								"value": 17,
-								"voice": "vo.sayi.17"
+								"value": 30,
+								"voice": "vo.sayi.30"
 							}
 						]
 					}

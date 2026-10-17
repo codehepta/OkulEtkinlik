@@ -139,14 +139,19 @@
 							},
 							{
 								"voice": "vo.g1.turkce.u07.golge.q2",
+								"text": "tr1.hikaye.u07.golge.q2",
 								"options": [
 									{
-										"type": "item",
-										"value": "item.sahne.gece"
+										"type": "text",
+										"value": "tr1.hikaye.u07.golge.q2.c1"
 									},
 									{
-										"type": "item",
-										"value": "item.sahne.ada_golge"
+										"type": "text",
+										"value": "tr1.hikaye.u07.golge.q2.c2"
+									},
+									{
+										"type": "text",
+										"value": "tr1.hikaye.u07.golge.q2.c3"
 									}
 								],
 								"answer": 0,
@@ -374,7 +379,7 @@
 							{
 								"token": {
 									"type": "item",
-									"value": "item.oyuncak.kup"
+									"value": "item.esya.anahtar"
 								},
 								"bin": 1
 							}
@@ -556,8 +561,8 @@
 							{
 								"left": {
 									"type": "text",
-									"value": "tr1.cumle.kelebek_cicege_konar",
-									"voice": "vo.g1.turkce.cumle.kelebek_cicege_konar"
+									"value": "tr1.cumle.kelebek_ucar",
+									"voice": "vo.g1.turkce.cumle.kelebek_ucar"
 								},
 								"right": {
 									"type": "item",
@@ -588,8 +593,8 @@
 							{
 								"left": {
 									"type": "text",
-									"value": "tr1.cumle.kelebek_cicege_konar",
-									"voice": "vo.g1.turkce.cumle.kelebek_cicege_konar"
+									"value": "tr1.cumle.kelebek_ucar",
+									"voice": "vo.g1.turkce.cumle.kelebek_ucar"
 								},
 								"right": {
 									"type": "item",
@@ -716,7 +721,7 @@
 							},
 							{
 								"type": "text",
-								"value": "tr1.kelime.buyutecle"
+								"value": "tr1.kelime.kucuk"
 							},
 							{
 								"type": "text",

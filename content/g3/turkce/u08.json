@@ -228,14 +228,14 @@
 							{
 								"token": {
 									"type": "text",
-									"value": "tk.egitim_almak"
+									"value": "tk.ad_almak"
 								},
 								"bin": 0
 							},
 							{
 								"token": {
 									"type": "text",
-									"value": "tk.saglik"
+									"value": "tk.doktora_gitmek"
 								},
 								"bin": 0
 							},
@@ -315,7 +315,7 @@
 					"difficulty": 2,
 					"voice": "vo.g3.turkce.u08.n02.r02",
 					"params": {
-						"scene": "item.durum.g3_soz_kesme",
+						"scene": "item.durum.g3_sinif_toplantisi",
 						"hint": "vo.g3.turkce.u08.n02.r02.hint",
 						"choices": [
 							{
@@ -895,13 +895,14 @@
 					"voice": "vo.g3.turkce.u08.n05.r02",
 					"params": {
 						"parts": [
-							"yep",
-							"ye",
-							"ni"
+							"pa",
+							"ram",
+							"par",
+							"ça"
 						],
 						"distractors": [
-							"yeb",
-							"yen"
+							"tom",
+							"kıl"
 						],
 						"voice": "vo.g3.turkce.u08.n05.r02.word"
 					}

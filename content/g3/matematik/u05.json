@@ -190,7 +190,7 @@
 									},
 									{
 										"type": "item",
-										"value": "item.simetri.kare_yamuk_cizgi"
+										"value": "item.simetri.kare_yatay_cizgi"
 									}
 								],
 								"answer": 1,
@@ -520,7 +520,7 @@
 							{
 								"text": "txt.g3.matematik.u05.n03.p2",
 								"voice": "vo.g3.matematik.u05.n03.p2",
-								"image": "item.simetri.ruzgar_gulu"
+								"image": "item.simetri.ayakkabi"
 							}
 						],
 						"questions": [

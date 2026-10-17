@@ -726,11 +726,11 @@
 						"items": [
 							{
 								"type": "text",
-								"value": "tk.odevini_yapti"
+								"value": "tk.yemegini_yedi"
 							},
 							{
 								"type": "text",
-								"value": "tk.cantasini_hazirladi"
+								"value": "tk.dislerini_fircaladi"
 							},
 							{
 								"type": "text",
@@ -816,13 +816,13 @@
 							{
 								"left": {
 									"type": "text",
-									"value": "tk.km",
-									"voice": "vo.tk.km"
+									"value": "tk.sok",
+									"voice": "vo.tk.sok"
 								},
 								"right": {
 									"type": "text",
-									"value": "tk.kilometre",
-									"voice": "vo.tk.kilometre"
+									"value": "tk.sokak",
+									"voice": "vo.tk.sokak"
 								}
 							},
 							{
@@ -835,6 +835,18 @@
 									"type": "text",
 									"value": "tk.doktor",
 									"voice": "vo.tk.doktor"
+								}
+							},
+							{
+								"left": {
+									"type": "text",
+									"value": "tk.cad",
+									"voice": "vo.tk.cad"
+								},
+								"right": {
+									"type": "text",
+									"value": "tk.cadde",
+									"voice": "vo.tk.cadde"
 								}
 							}
 						]

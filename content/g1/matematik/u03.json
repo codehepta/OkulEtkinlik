@@ -102,8 +102,8 @@
 							},
 							{
 								"type": "item",
-								"value": "item.olcu.atac",
-								"voice": "vo.g1.matematik.olcu.atac"
+								"value": "item.olcu.kup",
+								"voice": "vo.g1.matematik.olcu.kup"
 							}
 						]
 					}
@@ -115,7 +115,7 @@
 					"params": {
 						"target": {
 							"type": "item",
-							"value": "item.olcu.misket",
+							"value": "item.olcu.kup",
 							"voice": "vo.g1.matematik.u03.n01.s04"
 						},
 						"options": [
@@ -131,8 +131,8 @@
 							},
 							{
 								"type": "item",
-								"value": "item.olcu.misket",
-								"voice": "vo.g1.matematik.olcu.misket"
+								"value": "item.olcu.kup",
+								"voice": "vo.g1.matematik.olcu.kup"
 							}
 						]
 					}

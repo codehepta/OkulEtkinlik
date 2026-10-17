@@ -496,7 +496,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u01.n04.r03": {
-		"text": "Büyüklüğüne bak! Büyük ayıcığı büyükle, küçük ayıcığı küçükle eşleştir.",
+		"text": "Büyüklüğüne bak! Büyük olanı büyük olanla, küçük olanı küçük olanla eşleştir.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u01.n04.r04": {
@@ -556,7 +556,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u02.n07.r01": {
-		"text": "Soldan başla. Yarışta birinci olan hayvana dokun!",
+		"text": "Soldan başla. Birinci sıradaki hayvana dokun!",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u02.n07.r02": {
@@ -600,7 +600,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u02.n09.r02": {
-		"text": "İkişer sayıyoruz: iki, dört, altı... Sıradaki sayıları bul!",
+		"text": "İkişer sayıyoruz: iki, dört, altı... Sıradaki sayıyı bul!",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u02.n09.r03": {
@@ -628,7 +628,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u02.n10.r03": {
-		"text": "Yirmiden geriye ikişer sayıyoruz: yirmi, on sekiz, on altı... Sıradakini bul!",
+		"text": "Yirmiden geriye ikişer sayıyoruz: yirmi, on sekiz, on altı... Sıradaki sayıları bul!",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u02.n10.r04": {
@@ -648,11 +648,11 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u02.n11.r03": {
-		"text": "Sayılar artıyor: bir, üç, beş... Dördüncü sayı ne olmalı?",
+		"text": "Sayılar artıyor: bir, üç, beş... Boşluklara hangi sayılar gelmeli?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u02.n11.r04": {
-		"text": "Sayılar azalıyor: on beş, on iki, dokuz... Sıradaki sayıyı bul!",
+		"text": "Sayılar azalıyor: on beş, on üç, on bir... Sıradaki sayıları bul!",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u02.n11.intro": {
@@ -676,7 +676,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u03.n01.s02": {
-		"text": "Kalemin uzunluğunu hangisiyle ölçeriz?",
+		"text": "Silginin uzunluğunu hangisiyle ölçeriz?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.olcu.karis": {
@@ -692,7 +692,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u03.n01.s04": {
-		"text": "Elmanın kaç birim ağırlığında olduğunu terazide neyle buluruz?",
+		"text": "Elmayı terazide neyle tartarız?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u03.n01.r01": {
@@ -712,7 +712,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u03.n01.intro": {
-		"text": "Uzunluğu karışla, adımla ya da ataçla ölçebiliriz. Ağırlığı da terazide misketle! Hangisi uygun, bulalım.",
+		"text": "Uzunluğu karışla, adımla ya da ataçla ölçebiliriz. Ağırlığı da terazide küplerle! Hangisi uygun, bulalım.",
 		"speaker": "BILGE"
 	},
 	"vo.g1.matematik.u03.n02.r01": {
@@ -756,7 +756,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u04.n01.h2.p1": {
-		"text": "Dalda yedi kuş var.",
+		"text": "Yedi kuş var.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u04.n01.h2.p2": {
@@ -768,7 +768,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u04.n01.h2.q2": {
-		"text": "Dalda kaç kuş kaldı?",
+		"text": "Kaç kuş kaldı?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u04.n01.h3.p1": {
@@ -820,7 +820,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u04.n02.r05": {
-		"text": "Yirmi üç artı dört kaç eder? Zihninden topla!",
+		"text": "On üç artı beş kaç eder? Zihninden topla!",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u04.n02.intro": {
@@ -828,7 +828,7 @@
 		"speaker": "BILGE"
 	},
 	"vo.g1.matematik.u04.n03.r01": {
-		"text": "Sekiz artı yedi kaç eder? Önce tahmin et, sonra hesapla!",
+		"text": "On iki artı beş kaç eder? Önce tahmin et, sonra hesapla!",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u04.n03.r02": {
@@ -840,7 +840,7 @@
 		"speaker": "BILGE"
 	},
 	"vo.g1.matematik.u04.n04.r01": {
-		"text": "Terazi dengede mi? Soldaki ile sağdakini karşılaştır!",
+		"text": "Soldaki ile sağdakini karşılaştır!",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u04.n04.r02": {
@@ -872,7 +872,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u04.n05.r04": {
-		"text": "On iki eksi beş kaç eder? Teraziyi dengeleyen sayıyı bul!",
+		"text": "On altı eksi beş kaç eder? Teraziyi dengeleyen sayıyı bul!",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u04.n05.intro": {
@@ -976,7 +976,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u06.n01.r01": {
-		"text": "Yuvarlak nesneleri daire kutusuna, köşeli nesneleri kare kutusuna koy!",
+		"text": "Yuvarlak nesneleri yuvarlak kutusuna, köşeli nesneleri köşeli kutusuna koy!",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u06.n01.r02": {
@@ -1004,7 +1004,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u06.n02.s01": {
-		"text": "Saat kulesinin saati hangi şekle benziyor?",
+		"text": "Duvar saati hangi şekle benziyor?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.sekil.cember": {
@@ -1420,7 +1420,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.matematik.u01.n05.r02": {
-		"text": "Yetmiş içinde yedişer geri sayıyoruz. Boşlukları doldur!",
+		"text": "Yedişer geri sayıyoruz. Boşlukları doldur!",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.matematik.u01.n05.r03": {
@@ -1524,11 +1524,11 @@
 		"speaker": "BILGE"
 	},
 	"vo.g3.matematik.u01.n09.r01": {
-		"text": "Her adımda iki küp ekleniyor. Küp sayılarını sürdür!",
+		"text": "Sayılar ikişer ikişer artıyor. Boşlukları doldur!",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.matematik.u01.n09.r02": {
-		"text": "Her adımda üç kare ekleniyor. Dört kareyle başladık. Sıradaki sayılar?",
+		"text": "Sayılar üçer üçer artıyor. Dörtle başladık. Boşlukları doldur!",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.matematik.u01.n09.r03": {
@@ -1540,7 +1540,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.matematik.u01.n09.r05": {
-		"text": "Her adımda dört üçgen ekleniyor. Bir üçgenle başladık. Örüntüyü sürdür!",
+		"text": "Sayılar dörder dörder artıyor. Birle başladık. Örüntüyü sürdür!",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.matematik.u01.n10.intro": {
@@ -1552,7 +1552,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.matematik.u01.n10.r02": {
-		"text": "Kaç çilek var? Onluk grubu sayarak tahmin et!",
+		"text": "Kaç çilek var? Önce tahmin et!",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.matematik.u01.n10.r03": {
@@ -2292,7 +2292,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.matematik.u04.n04.r01": {
-		"text": "Dikdörtgene bak. Kenarlardaki birimleri sayarak çevresini tahmin et!",
+		"text": "Dikdörtgene bak. Kenarlardaki birimleri sayarak çevresini bul!",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.matematik.u04.n04.r02": {
@@ -2320,7 +2320,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.matematik.u04.n04.r04": {
-		"text": "Karış ile ölçelim. Çevreyi tahmin et!",
+		"text": "Kitabı karışlarla ölçtük. Çevresini bul!",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3m.bin.litre_az": {
@@ -2368,7 +2368,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.matematik.u05.n01.intro": {
-		"text": "Simetri doğrusu bir şekli iki eş parçaya ayırır. Bazı şekillerin birden fazla simetri doğrusu var!",
+		"text": "Simetri doğrusu, katlayınca şeklin iki yarısını tam üst üste getiren çizgidir. Bazı şekillerin birden fazla simetri doğrusu var!",
 		"speaker": "BILGE"
 	},
 	"vo.g3.matematik.u05.n01.p1": {
@@ -2412,7 +2412,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.matematik.u05.n01.p4": {
-		"text": "Bir çizgi şekli iki eş parçaya ayırıyorsa o çizgi bir simetri doğrusudur.",
+		"text": "Şekli çizgi boyunca katlayınca iki yarısı tam üst üste geliyorsa o çizgi simetri doğrusudur.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.matematik.u05.n01.q4": {
@@ -2480,7 +2480,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.matematik.u05.n03.r05": {
-		"text": "Şekillere bak ve yargıda bulun!",
+		"text": "Şekillere bak ve cevapla!",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.matematik.u06.n01.intro": {
@@ -2536,7 +2536,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.matematik.u06.n01.r04": {
-		"text": "Göldeki ve çiftlikteki hayvanları nokta grafiğine işle!",
+		"text": "Hayvanları nokta grafiğine işle!",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.matematik.u06.n02.intro": {
@@ -2600,7 +2600,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.fen.u01.n01.r02": {
-		"text": "Ela, hangi oyuncakların suda yüzdüğünü öğrenmek istiyor. Bunun için en uygun yol hangisi?",
+		"text": "Eren, hangi oyuncakların suda yüzdüğünü öğrenmek istiyor. Bunun için en uygun yol hangisi?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.fen.u01.n01.r02.ipucu": {
@@ -2608,7 +2608,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.fen.u01.n01.r03": {
-		"text": "Mert, kuşların yemlikteki hangi yemi en çok yediğini öğrenmek istiyor. Bunun için en uygun yol hangisi?",
+		"text": "Merve, kuşların yemlikteki hangi yemi en çok yediğini öğrenmek istiyor. Bunun için en uygun yol hangisi?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.fen.u01.n01.r03.ipucu": {
@@ -2652,7 +2652,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.fen.u01.n02.r02": {
-		"text": "Deniz Hanım ile Kerem Bey'i düşün. İkisinde de olan özellikleri Ortak kutusuna, yalnızca birinde olanları Farklı kutusuna koy.",
+		"text": "Deniz Hanım ile Kerem Bey'i düşün. İkisinde de olan özellikleri Ortak kutusuna koy. Yalnızca birinin uğraştığı şeyleri Farklı kutusuna koy.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.fen.u01.n02.r03": {
@@ -2684,7 +2684,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.fen.u02.n01.r03": {
-		"text": "Bazı canlılar o kadar küçüktür ki onları ancak mikroskopla görebiliriz. Mikroskoplu kutu onlar için. Her canlıyı doğru gruba koy.",
+		"text": "Bazı canlılar o kadar küçüktür ki onları ancak mikroskopla görebiliriz. Mikroskoplu kutu, gözle görülemeyen minik canlılar için. Şapkalı mantar ve küf, mantar grubundadır. Her canlıyı doğru gruba koy.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.fen.u02.n01.r04": {
@@ -2712,7 +2712,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.fen.u02.n02.r04": {
-		"text": "Ayçiçeği güneşe doğru döner. Kelebek antenleriyle koku alır. Örümcek, ağına konan böceği bacaklarındaki tüylerle hisseder. Her canlıyı, algıladığı şeyin kutusuna koy.",
+		"text": "Ayçiçeği güneşe doğru döner. Kartal keskin gözleriyle görür. Kelebek antenleriyle koku alır. Köpek burnuyla koku arar. Örümcek, ağına konan böceği bacaklarındaki tüylerle hisseder. Küstüm otu dokunulunca yapraklarını kapatır. Her canlıyı, algıladığı şeyin kutusuna koy.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.fen.u02.n03.intro": {
@@ -2728,7 +2728,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.fen.u02.n03.r03": {
-		"text": "Yaşam döngüsü hep tekrar eder. Kelebek yumurtlar, döngü yeniden başlar. Boş yere ne gelmeli?",
+		"text": "Yaşam döngüsü hep tekrar eder. Kelebek yumurtlar, döngü yeniden başlar. Boş yerlere sırayla ne gelmeli?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.fen.u02.n03.r04": {
@@ -2752,7 +2752,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.fen.u03.n01.r01.hedef": {
-		"text": "Mermer",
+		"text": "Mermer. Beyaz ve damarlı bir taş.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.fen.u03.n01.r02": {
@@ -2824,7 +2824,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.fen.u04.n01.r04": {
-		"text": "Her maddeyi niteliğiyle eşleştir: sert, esnek, kırılgan ya da yumuşak.",
+		"text": "Her maddeyi niteliğiyle eşleştir. Ezilmeyen sert, çekince uzayıp eski hâline dönen esnek, yere düşünce kırılan kırılgan, bastırınca ezilen yumuşaktır.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.fen.u04.n02.intro": {
@@ -2904,7 +2904,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.fen.u05.n01.r02": {
-		"text": "Kaydıraktan kayan çocuk ve yokuştan inen top hızlanır. Hangileri yavaşlar? Her birini doğru kutuya koy.",
+		"text": "Kaydıraktan kayan çocuk ve yokuştan inen top hızlanır. Fren yapan bisikletli ve paraşütle inen yavaşlar. Her birini doğru kutuya koy.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.fen.u05.n01.r03": {
@@ -2916,7 +2916,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.fen.u05.n01.r04": {
-		"text": "Top hızla yola doğru yuvarlanıyor. Yolda araçlar var. Ne yapmalısın?",
+		"text": "Top hızla yola yuvarlandı. Yolda araçlar var. Ne yapmalısın?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.fen.u05.n01.r04.sonuc2": {
@@ -2952,7 +2952,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.fen.u05.n02.r04": {
-		"text": "Ece, topa daha güçlü vurursa topun daha uzağa gideceğini tahmin etti. Resme bak: güçlü vurulan top daha uzağa gitti. Ece'nin tahmini doğru muydu?",
+		"text": "Ece, topa daha güçlü vurursa topun daha uzağa gideceğini tahmin etti. Resimde iki şerit var. Alttaki topa daha güçlü vuruldu. Bayraklar topların durduğu yeri gösteriyor. Ece'nin tahmini doğru muydu?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.fen.u05.n02.r04.ipucu": {
@@ -2992,7 +2992,7 @@
 		"speaker": "BILGE"
 	},
 	"vo.g3.fen.u06.n02.r01": {
-		"text": "Elif ellerini yıkadı, elleri hâlâ ıslak. Saç kurutma makinesini prize takmak istiyor. Ne yapmalı?",
+		"text": "Efe ellerini yıkadı, elleri hâlâ ıslak. Saç kurutma makinesini prize takmak istiyor. Ne yapmalı?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.fen.u06.n02.r01.sonuc2": {
@@ -3104,7 +3104,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.fen.u07.n02.r03": {
-		"text": "Fasulye yetiştirmek için yapılması gerekenleri sırala.",
+		"text": "Fasulye yetiştirmek için yapılması gerekenleri sırala. Önce tohumu ek, sonra sula, sonra güneşli yere koy, en sonunda filiz çıkar.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.fen.u08.n01.intro": {
@@ -3612,7 +3612,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.u01.n02.r02": {
-		"text": "Doğadan gelen sesleri yaprak kutusuna, makinelerin seslerini çark kutusuna taşı.",
+		"text": "Doğadan gelen sesleri yaprak kutusuna, insanların yaptığı şeylerin seslerini çark kutusuna taşı.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.u01.n02.r03": {
@@ -5108,7 +5108,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.u07.golge.q2": {
-		"text": "Akşam olunca gölge ne olur sence?",
+		"text": "Ada zıplayınca şekil ne yaptı?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.u07.n01.r01": {
@@ -5116,7 +5116,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.u07.n01.r02": {
-		"text": "Dinle ve düşün: Ada neyi merak ediyor?",
+		"text": "Dinle ve düşün: Bu hikâyede neler oluyor?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.u07.n02.intro": {
@@ -5324,7 +5324,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.u08.sandik.q3": {
-		"text": "Dede çocuğuyla oynarken nasıl hissetti?",
+		"text": "Dede torunuyla oynarken nasıl hissetti?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.u08.bayram.s1": {
@@ -5340,7 +5340,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.u08.bayram.q2": {
-		"text": "Bayram sabahı ilk ne yaptılar?",
+		"text": "Bayram sabahı ilk ne yaptık?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.u08.n01.r01": {
@@ -5364,7 +5364,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.u08.hali.s3": {
-		"text": "Bu halı bize ninemden yadigâr kalacak.",
+		"text": "Bu halı bize ninemden kalacak.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.u08.hali.q1": {
@@ -5512,7 +5512,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.u08.n06.r01": {
-		"text": "Bayramda bir büyüğün sana şeker ikram etti. Ne dersin?",
+		"text": "Bayramda bir büyüğümüz sana şeker ikram etti. Ne dersin?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.u08.n06.r02": {
@@ -5520,7 +5520,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.u08.n06.r03": {
-		"text": "Komşunuz yaşlı Ayşe Teyze'yle karşılaştın. Ona nasıl konuşursun?",
+		"text": "Yaşlı komşun Ayşe Teyze'yle karşılaştın. Ona nasıl konuşursun?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.u09.n01.intro": {
@@ -5564,7 +5564,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.u09.sofra.q2": {
-		"text": "Yemekten sonra ne yapabiliriz?",
+		"text": "Yemekten sonra anneme nasıl yardım edebiliriz?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.u09.n01.r01": {
@@ -6224,11 +6224,11 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u01.n06.r04.ipucu": {
-		"text": "Gövdenin dört köşesi var, uzun kenarları kısa kenarlarından uzun.",
+		"text": "Kolların dört köşesi var, uzun kenarları kısa kenarlarından uzun.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u01.n06.r04": {
-		"text": "Robotun gövdesi hangi şekil?",
+		"text": "Robotun kolları hangi şekil?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u01.n06.r05": {
@@ -6260,7 +6260,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u01.n07.r05": {
-		"text": "Sağdaki şekli çevir! Yan yatmış hâlini zemine boya.",
+		"text": "Sağdaki şekli çeyrek çevir ve zemine boya.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u01.n07.r06": {
@@ -6272,19 +6272,19 @@
 		"speaker": "BILGE"
 	},
 	"vo.g2.matematik.u01.n08.r01": {
-		"text": "Sürahideki su kaç bardağı doldurur? Önce tahmin et, sonra dolan bardakları say.",
+		"text": "Bir sürahideki su kaç bardağı doldurur? Önce tahmin et, sonra dolu bardakları say.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u01.n08.r02": {
-		"text": "Bu kova kaç kupayı doldurur? Tahmin et, sonra kupaları say.",
+		"text": "Bir kovadaki su kaç kupayı doldurur? Tahmin et, sonra kupaları say.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u01.n08.r03": {
-		"text": "Küvet kaç kova suyla doldu? Önce tahmin et, sonra kovaları say.",
+		"text": "Bir küvet kaç kova suyla dolar? Önce tahmin et, sonra kovaları say.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u01.n08.r04": {
-		"text": "Büyük şişedeki meyve suyu kaç küçük şişeyi doldurdu? Say ve doğru sayıya dokun.",
+		"text": "Bir büyük şişedeki meyve suyu kaç küçük şişeyi doldurur? Say ve doğru sayıya dokun.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u02.n01.intro": {
@@ -6456,7 +6456,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u02.n04.r05.hedef": {
-		"text": "Yedi onluktan oluşan sayıyı bul.",
+		"text": "Yalnızca yedi onluktan oluşan sayıyı bul.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u02.n04.r05": {
@@ -6604,7 +6604,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u02.n08.r05.hedef": {
-		"text": "Beş, on, on beş, yirmi. Hangi sayı bu örüntüye ait?",
+		"text": "Beş, on, on beş, yirmi. Sıradaki sayı hangisi?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u02.n08.r05": {
@@ -6620,7 +6620,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u02.n09.r02": {
-		"text": "Kaç kiraz var? Bir sırayı say, bütünü tahmin et. Sonra hepsini say.",
+		"text": "Kaç kiraz var? Birkaçını say, hepsini tahmin et. Sonra hepsini say.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u02.n09.r03": {
@@ -6628,7 +6628,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u02.n09.r04": {
-		"text": "Kaç üzüm var? Onluk sıraya bak, tahmin et, sonra say.",
+		"text": "Kaç üzüm var? Tahmin et, sonra say.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u03.n01.intro": {
@@ -6668,7 +6668,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u03.n01.r02.s1": {
-		"text": "Sınıfta 45 kalem vardı. Öğrenciler 20 kalemi çantalarına koydu.",
+		"text": "Sınıfta 45 kalem vardı. Öğrenciler 20 kalemi alıp bahçeye götürdü.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u03.n01.r02.q1": {
@@ -6732,7 +6732,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u03.n02.r02.q1": {
-		"text": "Kemal'in arkadaşına verdikten sonra kaç misketi kaldı?",
+		"text": "Kemal arkadaşına verdikten sonra kaç misketi kaldı?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u03.n02.r02.q2": {
@@ -6772,11 +6772,11 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.mat2.prob_cocuk": {
-		"text": "Parka 6 çocuk daha geldi.",
+		"text": "Parkta 8 çocuk vardı, 6 çocuk daha geldi.",
 		"speaker": "ANLATICI"
 	},
 	"vo.mat2.prob_yaprak": {
-		"text": "Ağaçtan 9 yaprak düştü.",
+		"text": "Ağaçta 15 yaprak vardı, 9 yaprak düştü.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u03.n02.r04": {
@@ -6828,11 +6828,11 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u03.n04.r02": {
-		"text": "Toplam yaklaşık kaç olur? Tahmin et, sonra hesapla.",
+		"text": "Toplam kaç olur? Tahmin et, sonra hesapla.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u03.n04.r03": {
-		"text": "Fark yaklaşık kaç olur? Tahmin et, sonra hesapla.",
+		"text": "Fark kaç olur? Tahmin et, sonra hesapla.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u03.n05.intro": {
@@ -6900,7 +6900,7 @@
 		"speaker": "BILGE"
 	},
 	"vo.g2.matematik.u03.n06.r01": {
-		"text": "Civcivler üçer üçer duruyor. Üçer sayarak kaç civciv olduğunu bul.",
+		"text": "Civcivleri say. Üstte onluk sıra, altta birlikler var. Kaç civciv var?",
 		"speaker": "ANLATICI"
 	},
 	"vo.mat2.islem_4_arti_4_arti_4": {
@@ -7072,7 +7072,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u03.n08.r03": {
-		"text": "Üç kutuda beşer kalem var. İki kutuda on kalem oldu, bir kutu daha ekle. Üç çarpı beş kaç eder? Doğru balonu patlat.",
+		"text": "Üç kutuda beşer kalem var. İki kutuda on kalem oldu, bir kutu daha ekle. On artı beş kaç eder? Doğru balonu patlat.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u03.n08.r04": {
@@ -7148,7 +7148,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u04.n01.r03": {
-		"text": "Pizzanın yarımını seç.",
+		"text": "Pizzanın yarısını seç.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u04.n01.r04": {
@@ -7180,7 +7180,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u04.n02.r01": {
-		"text": "Eşleştir: kaç parça bir bütün eder?",
+		"text": "Eşleştir: hangi parçalar neye eşit?",
 		"speaker": "ANLATICI"
 	},
 	"vo.mat2.dort_ceyrek": {
@@ -7448,7 +7448,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u04.n07.r03.hedef": {
-		"text": "Kapının boyunu herkes aynı bulsun. Hangi aracı kullanırız?",
+		"text": "Defterin boyunu herkes aynı bulsun. Hangi aracı kullanırız?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u04.n07.r03": {
@@ -7476,7 +7476,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u04.n08.r01": {
-		"text": "Her nesneyi onu ölçtüğümüz birimle eşleştir.",
+		"text": "Silginin uzunluğunu ve karpuzun kütlesini hangi birimle ölçeriz? Eşleştir.",
 		"speaker": "ANLATICI"
 	},
 	"vo.mat2.olc_sinif_boyu": {
@@ -7508,15 +7508,15 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u04.n08.r03": {
-		"text": "Halı kaç metre uzunluğunda? Önce tahmin et, sonra metre çubuklarını say.",
+		"text": "Bir halı kaç metre çubuğu boyunda? Önce tahmin et, sonra metre çubuklarını say.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u04.n08.r04": {
-		"text": "Karpuz kaç kilogram? Tahmin et, sonra terazideki bir kilogramlık ağırlıkları say.",
+		"text": "Bir karpuz kaç kilogram? Tahmin et, sonra bir kilogramlık ağırlıkları say.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u04.n08.r05": {
-		"text": "Kalem kaç santimetre? Tahmin et, sonra yan yana dizilen santimetre küplerini say.",
+		"text": "Kalem kaç santimetre? Tahmin et, sonra tepsideki santimetre küplerini say.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u05.n01.intro": {
@@ -7560,11 +7560,11 @@
 		"speaker": "BILGE"
 	},
 	"vo.g2.matematik.u05.n03.r01": {
-		"text": "Okula giden yolda kaç ayak izi var? Say ve doğru sayıya dokun.",
+		"text": "Kaç ayak izi var? Say ve doğru sayıya dokun.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u05.n03.r02": {
-		"text": "Parka giden yoldaki ayak izlerini say.",
+		"text": "Ayak izlerini say.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u05.n03.r03.hedef": {
@@ -7696,7 +7696,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u06.n03.r01": {
-		"text": "Verileri analize hazırlayalım. Oyuncakları ve meyveleri ayrı kutulara koy.",
+		"text": "Verileri düzenleyelim. Oyuncakları ve meyveleri ayrı kutulara koy.",
 		"speaker": "ANLATICI"
 	},
 	"vo.mat2.veri_cetele": {
@@ -7952,7 +7952,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.turkce.u01.n03.r03.p1": {
-		"text": "Komşumuz Fatma Teyze yaşlıdır. Merdivenleri çıkarken zorlanır.",
+		"text": "Komşumuz Fatma Teyze yaşlıdır. Pazar çantasını taşırken zorlanır.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.turkce.u01.n03.r03.p2": {
@@ -8512,7 +8512,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.turkce.u03.n02.r04": {
-		"text": "Parkta bir çocuk çiçekleri koparıyor. Ona ne söylersin?",
+		"text": "Parkta iki çocuk çiçeklerin yanında duruyor. Biri çiçekleri koparmak istiyor. Ona ne söylersin?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.turkce.u03.n02.r04.hint": {
@@ -8524,7 +8524,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.turkce.u03.n02.r04.c3": {
-		"text": "Çiçekler koparılmaya devam etti. Kibarca uyarabiliriz.",
+		"text": "Çocuk çiçekleri kopardı. Kibarca uyarabiliriz.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.turkce.u03.n03.intro": {
@@ -9408,7 +9408,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.turkce.u06.n03.r03.p1": {
-		"text": "Can ile dedesi bozuk bir duvar saatini açtılar. İçinde küçük dişliler vardı.",
+		"text": "Can ile dedesi bozuk bir cep saatini açtılar. İçinde küçük dişliler vardı.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.turkce.u06.n03.r03.p2": {
@@ -10320,7 +10320,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u01.n05.r03": {
-		"text": "Kısaltmaya gelen eki okunuşuna göre seç. Her kısaltmayı doğru ekle eşleştir.",
+		"text": "Kısaltmaya gelen eki okunuşuna göre bul. Her kısaltmayı doğru ekiyle eşleştir.",
 		"speaker": "ANLATICI"
 	},
 	"vo.tk.tbmm": {
@@ -10636,11 +10636,11 @@
 		"speaker": "BILGE"
 	},
 	"vo.g3.turkce.u02.n05.r01": {
-		"text": "Kıpkırmızı sözcüğünü hecelerden kur.",
+		"text": "Kapkara sözcüğünü hecelerden kur.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u02.n05.r01.word": {
-		"text": "kıpkırmızı",
+		"text": "kapkara",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u02.n05.r02": {
@@ -10652,7 +10652,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u02.n05.r03": {
-		"text": "Kısaltmaya gelen eki okunuşuna göre seç. Her kısaltmayı doğru ekle eşleştir.",
+		"text": "Kısaltmaya gelen eki okunuşuna göre bul. Her kısaltmayı doğru ekiyle eşleştir.",
 		"speaker": "ANLATICI"
 	},
 	"vo.tk.de": {
@@ -10896,7 +10896,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u03.n04.r01.q2": {
-		"text": "Kaan neden dışarı çıkamıyordu?",
+		"text": "Kaan'ın sorunu neydi?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u03.n04.r01.q3": {
@@ -10956,15 +10956,15 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u03.n05.r02": {
-		"text": "Yemyeşil sözcüğünü hecelerden kur.",
+		"text": "Koskocaman sözcüğünü hecelerden kur.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u03.n05.r02.word": {
-		"text": "yemyeşil",
+		"text": "koskocaman",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u03.n05.r03": {
-		"text": "Kısaltmaya gelen eki okunuşuna göre seç. Her kısaltmayı doğru ekle eşleştir.",
+		"text": "Kısaltmaya gelen eki okunuşuna göre bul. Her kısaltmayı doğru ekiyle eşleştir.",
 		"speaker": "ANLATICI"
 	},
 	"vo.tk.dan": {
@@ -11260,7 +11260,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u04.n05.r03": {
-		"text": "Kısaltmaya gelen eki okunuşuna göre seç. Her kısaltmayı doğru ekle eşleştir.",
+		"text": "Kısaltmaya gelen eki okunuşuna göre bul. Her kısaltmayı doğru ekiyle eşleştir.",
 		"speaker": "ANLATICI"
 	},
 	"vo.tk.trt": {
@@ -11516,7 +11516,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u05.n04.r03": {
-		"text": "Hikâyelerdeki nesneleri karşılaştır. Hangisi sporla, hangisi müzikle ilgili? Kartları kutulara taşı.",
+		"text": "Hangisi sporla, hangisi müzikle ilgili? Kartları kutulara taşı.",
 		"speaker": "ANLATICI"
 	},
 	"vo.tk.spor": {
@@ -11532,11 +11532,11 @@
 		"speaker": "BILGE"
 	},
 	"vo.g3.turkce.u05.n05.r01": {
-		"text": "Masmavi sözcüğünü hecelerden kur.",
+		"text": "Dümdüz sözcüğünü hecelerden kur.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u05.n05.r01.word": {
-		"text": "masmavi",
+		"text": "dümdüz",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u05.n05.r02": {
@@ -11548,7 +11548,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u05.n05.r03": {
-		"text": "Kısaltmalara gelen ek, kısaltmanın okunuşuna uyar ve kesme işaretiyle ayrılır. Her kısaltmayı doğru ekle eşleştir.",
+		"text": "Kısaltmalara gelen ek, kısaltmanın okunuşuna uyar ve kesme işaretiyle ayrılır. Her kısaltmayı doğru ekiyle eşleştir.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u05.n05.r04": {
@@ -11736,7 +11736,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u06.n03.r03": {
-		"text": "Her cümlenin sonuna hangi noktalama işareti gelir? Cümleyi işaretle eşleştir.",
+		"text": "Her cümlenin sonuna hangi noktalama işareti gelir? Her cümleyi sonuna gelen noktalama işaretiyle eşleştir.",
 		"speaker": "ANLATICI"
 	},
 	"vo.tk.hava_guzel": {
@@ -11812,11 +11812,11 @@
 		"speaker": "BILGE"
 	},
 	"vo.g3.turkce.u06.n05.r01": {
-		"text": "Tertemiz sözcüğünü hecelerden kur.",
+		"text": "Sapsarı sözcüğünü hecelerden kur.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u06.n05.r01.word": {
-		"text": "tertemiz",
+		"text": "sapsarı",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u06.n05.r02": {
@@ -11828,7 +11828,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u06.n05.r03": {
-		"text": "Kısaltmalara gelen ek, kısaltmanın okunuşuna uyar ve kesme işaretiyle ayrılır. Her kısaltmayı doğru ekle eşleştir.",
+		"text": "Kısaltmalara gelen ek, kısaltmanın okunuşuna uyar ve kesme işaretiyle ayrılır. Her kısaltmayı doğru ekiyle eşleştir.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u06.n05.r04": {
@@ -12104,7 +12104,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u07.n05.r03": {
-		"text": "Kısaltmalara gelen ek, kısaltmanın okunuşuna uyar ve kesme işaretiyle ayrılır. Her kısaltmayı doğru ekle eşleştir.",
+		"text": "Kısaltmalara gelen ek, kısaltmanın okunuşuna uyar ve kesme işaretiyle ayrılır. Her kısaltmayı doğru ekiyle eşleştir.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u07.n05.r04": {
@@ -12304,7 +12304,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u08.n03.r04": {
-		"text": "Her cümlenin sonuna hangi noktalama işareti gelir? Cümleyi işaretle eşleştir.",
+		"text": "Her cümlenin sonuna hangi noktalama işareti gelir? Her cümleyi sonuna gelen noktalama işaretiyle eşleştir.",
 		"speaker": "ANLATICI"
 	},
 	"vo.tk.bahce_temiz_mi": {
@@ -12384,15 +12384,15 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u08.n05.r02": {
-		"text": "Yepyeni sözcüğünü hecelerden kur.",
+		"text": "Paramparça sözcüğünü hecelerden kur.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u08.n05.r02.word": {
-		"text": "yepyeni",
+		"text": "paramparça",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u08.n05.r03": {
-		"text": "Kısaltmalara gelen ek, kısaltmanın okunuşuna uyar ve kesme işaretiyle ayrılır. Her kısaltmayı doğru ekle eşleştir.",
+		"text": "Kısaltmalara gelen ek, kısaltmanın okunuşuna uyar ve kesme işaretiyle ayrılır. Her kısaltmayı doğru ekiyle eşleştir.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u08.n05.r04": {
@@ -12568,7 +12568,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.hayat_bilgisi.u02.n04.r04": {
-		"text": "Her durumu doğru kişiyle eşleştir.",
+		"text": "Her durumu doğru kişiyle ya da numarayla eşleştir.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.hayat_bilgisi.u03.n01.intro": {
@@ -12608,7 +12608,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.hayat_bilgisi.u03.n01.r04.p2": {
-		"text": "Bir gün Elif'in kardeşi hastalandı. Annesi çorba yaptı, babası ona masal okudu, Elif de oyuncaklarını paylaştı.",
+		"text": "Bir gün Elif'in kardeşi hastalandı. Annesi çorba yaptı, babası ona masal okudu, Elif de oyuncaklarını paylaştı. Kardeşi kendini güvende hissetti.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.hayat_bilgisi.u03.n01.r04.p3": {
@@ -12636,7 +12636,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.hayat_bilgisi.u03.n02.r01": {
-		"text": "Annen sana bir bardak su verdi. Ne yaparsın?",
+		"text": "Kız kardeşin sana bir bardak su verdi. Ne yaparsın?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.hayat_bilgisi.u03.n02.r02.ipucu": {
@@ -12696,7 +12696,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.hayat_bilgisi.u03.n03.r04": {
-		"text": "Yemekten sonra ailece sofrayı topluyorsunuz. Kardeşin bardakları kuruluyor. Sen ne yaparsın?",
+		"text": "Yemek bitti. Herkes sofrayı topluyor. Kardeşin bardakları siliyor. Sen ne yaparsın?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.hayat_bilgisi.u04.n01.intro": {
@@ -12720,7 +12720,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.hayat_bilgisi.u04.n01.r03.ipucu": {
-		"text": "Kuzeyde Karadeniz, batıda Ege Denizi, güneyde Akdeniz var. Mavi denizleri say.",
+		"text": "Kuzeyde Karadeniz, batıda Ege Denizi, güneyde Akdeniz var. Doğuda deniz yok. Deniz olan tarafları say.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.hayat_bilgisi.u04.n01.r03": {
@@ -13188,7 +13188,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.ad.levha.isikli_isaret": {
-		"text": "Işıklı işaret cihazı levhası",
+		"text": "Trafik ışığı levhası",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u02.n03.r04": {
@@ -13236,7 +13236,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u03.n01.r01.p2": {
-		"text": "Babası yarasını temizledi. Ablası ona en sevdiği masalı okudu.",
+		"text": "Annesi yarasını temizledi ve ona en sevdiği masalı okudu.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u03.n01.r01.p3": {
@@ -13280,7 +13280,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u03.n01.r02.s2": {
-		"text": "Ailemiz bize neler verir? Sevgi ve destek mi, yalnızlık mı?",
+		"text": "Ailemiz bize neler verir? Yalnızlık mı, sevgi ve destek mi?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u03.n01.r02": {
@@ -13412,7 +13412,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u04.n02.r01.s1": {
-		"text": "Mustafa'ya Kemal adını kim verdi? Matematik öğretmeni mi, sınıf arkadaşı mı?",
+		"text": "Mustafa'ya Kemal adını kim verdi? Sınıf arkadaşı mı, matematik öğretmeni mi?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u04.n02.r01.s2": {
@@ -13492,7 +13492,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u04.n03.r02.s1": {
-		"text": "29 Ekim'de ne ilan edildi? Cumhuriyet mi, tatil mi?",
+		"text": "29 Ekim'de ne ilan edildi? Tatil mi, Cumhuriyet mi?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u04.n03.r02.s2": {
@@ -13548,7 +13548,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u04.n04.r01.s2": {
-		"text": "Bayramlar insanlar arasında neyi güçlendirir? Sevgi ve dostluğu mu, küslüğü mü?",
+		"text": "Bayramlar insanlar arasında neyi güçlendirir? Küslüğü mü, sevgi ve dostluğu mu?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u04.n04.r01": {
@@ -13576,7 +13576,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u04.n04.r02.s2": {
-		"text": "Paylaşmak insanları ne yapar? Birbirine yaklaştırır mı, uzaklaştırır mı?",
+		"text": "Paylaşmak insanları ne yapar? Uzaklaştırır mı, birbirine yaklaştırır mı?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u04.n04.r02": {
@@ -13680,7 +13680,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u05.n02.r03": {
-		"text": "Sabah güneş tepelerin arkasından doğuyor. Güneşin doğduğu yön hangisi? Doğu mu, batı mı, kuzey mi?",
+		"text": "Sabah güneş tepelerin arkasından doğuyor. Güneşin doğduğu yön hangisi? Batı mı, kuzey mi, doğu mu?",
 		"speaker": "ANLATICI"
 	},
 	"vo.ad.etiket.guney": {
@@ -13692,7 +13692,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u05.n02.r04": {
-		"text": "Ormanda bir ağaç gördün. Yosunlar ağacın tek bir yüzünde. Yosunlu yüz hangi yönü gösterir? Kuzey mi, güney mi, doğu mu?",
+		"text": "Ormanda bir ağaç gördün. Yosunlar ağacın tek bir yüzünde. Yosunlu yüz hangi yönü gösterir? Güney mi, kuzey mi, doğu mu?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u05.n03.intro": {
@@ -13716,7 +13716,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u05.n03.r03": {
-		"text": "Bu bilgiler doğru mu? Depremde doğru olan davranışları gülen yüze, yanlış olanları üzgün yüze koy.",
+		"text": "Deprem için doğru olan davranış ve önlemleri gülen yüze, yanlış olanları üzgün yüze koy.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u05.n04.intro": {
@@ -13876,7 +13876,7 @@
 		"speaker": "BILGE"
 	},
 	"vo.g3.hayat_bilgisi.u02.n01.r01": {
-		"text": "Hangi davranışlar sağlığımızı korur? Koruyanları güçlü kalbe, bozanları yorgun kalbe koy.",
+		"text": "Hangi davranışlar sağlığımızı korur? Koruyanları sağlıklı kalbe, bozanları sağlıksız kalbe koy.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.hayat_bilgisi.u02.n01.r02.ipucu": {
@@ -13900,7 +13900,7 @@
 		"speaker": "BILGE"
 	},
 	"vo.g3.hayat_bilgisi.u02.n02.r01.ipucu": {
-		"text": "Elektrik prizleri çok tehlikelidir.",
+		"text": "Prize cisim sokmak tehlikelidir.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.hayat_bilgisi.u02.n02.r01": {
@@ -13908,7 +13908,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.hayat_bilgisi.u02.n02.r02": {
-		"text": "Bu bilgiler doğru mu? Güvenli davranışları gülen yüze, tehlikeli olanları üzgün yüze koy.",
+		"text": "Bu davranışlar güvenli mi? Güvenli davranışları gülen yüze, tehlikeli olanları üzgün yüze koy.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.hayat_bilgisi.u02.n02.r03.ipucu": {
@@ -13988,7 +13988,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.hayat_bilgisi.u03.n01.r03.ipucu": {
-		"text": "Ailelerin bir araya gelmesiyle toplum oluşur.",
+		"text": "Ailelerin bir araya gelmesiyle mahalle, yani toplum oluşur.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.hayat_bilgisi.u03.n01.r03": {
@@ -14176,7 +14176,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.hayat_bilgisi.u04.n03.r01.p3": {
-		"text": "İleri görüşlüydü. Ülkemizin geleceğini düşünerek Cumhuriyet'i kurdu ve eğitime çok önem verdi.",
+		"text": "İleri görüşlüydü. Ülkemizin geleceğini düşünerek Cumhuriyet'i kurdu. Eğitime çok önem verdi. Yeni harfleri herkese öğretti.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.hayat_bilgisi.u04.n03.r01.s1": {
@@ -14348,11 +14348,11 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.ad.kroki.firin_k": {
-		"text": "Fırının yanı",
+		"text": "Fırın",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.hayat_bilgisi.u05.n02.r03": {
-		"text": "Fırının yanında olduğunu gösteren krokiyi bul. Dinle ve bul: Fırının yanı!",
+		"text": "Fırında olduğunu gösteren krokiyi bul. Dinle ve bul: Fırın!",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.hayat_bilgisi.u05.n03.intro": {
@@ -14561,6 +14561,70 @@
 	},
 	"vo.g3.hayat_bilgisi.u06.n03.r03": {
 		"text": "Mimar Sinan'ın eserlerini yakından tanımak istiyorsun. Ne yapabilirsin?",
+		"speaker": "ANLATICI"
+	},
+	"vo.sayi.200": {
+		"text": "iki yüz",
+		"speaker": "ANLATICI"
+	},
+	"vo.g1.turkce.cumle.kelebek_ucar": {
+		"text": "Kelebek uçar.",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.milli.cocuk_senligi": {
+		"text": "Çocuk şenliği",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.milli.genclik_spor": {
+		"text": "Gençlik ve spor",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.milli.cumhuriyet_sokak": {
+		"text": "Bayraklı sokak",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.milli.zafer": {
+		"text": "Zafer",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.madeni_para": {
+		"text": "madenî para",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.kagit_para": {
+		"text": "kâğıt para",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.olc_silgi_uzunluk": {
+		"text": "silginin uzunluğu",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.simetrik": {
+		"text": "simetrik",
+		"speaker": "ANLATICI"
+	},
+	"vo.mat2.simetrik_degil": {
+		"text": "simetrik değil",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.masal": {
+		"text": "Masal",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.guzel": {
+		"text": "güzel",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.hos": {
+		"text": "hoş",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.dost": {
+		"text": "dost",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.arkadas": {
+		"text": "arkadaş",
 		"speaker": "ANLATICI"
 	}
 }

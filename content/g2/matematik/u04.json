@@ -187,16 +187,18 @@
 						"bins": [
 							{
 								"label": {
-									"type": "item",
-									"value": "item.simge.madeni_para"
+									"type": "text",
+									"value": "txt.mat2.madeni_para",
+									"voice": "vo.mat2.madeni_para"
 								},
 								"shape": "circle",
 								"color": "orange"
 							},
 							{
 								"label": {
-									"type": "item",
-									"value": "item.simge.kagit_para"
+									"type": "text",
+									"value": "txt.mat2.kagit_para",
+									"voice": "vo.mat2.kagit_para"
 								},
 								"shape": "square",
 								"color": "blue"
@@ -565,8 +567,8 @@
 								"minute": 45
 							},
 							{
-								"hour": 10,
-								"minute": 45
+								"hour": 9,
+								"minute": 30
 							},
 							{
 								"hour": 9,
@@ -954,7 +956,8 @@
 							{
 								"left": {
 									"type": "item",
-									"value": "item.okul.silgi"
+									"value": "item.okul.silgi",
+									"voice": "vo.mat2.olc_silgi_uzunluk"
 								},
 								"right": {
 									"type": "text",
@@ -965,7 +968,8 @@
 							{
 								"left": {
 									"type": "item",
-									"value": "item.meyve.karpuz"
+									"value": "item.olcu.karpuz",
+									"voice": "vo.mat2.olc_karpuz_kutle"
 								},
 								"right": {
 									"type": "text",

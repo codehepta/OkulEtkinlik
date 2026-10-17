@@ -716,7 +716,7 @@
 							{
 								"token": {
 									"type": "item",
-									"value": "item.hayvan.kus"
+									"value": "item.hayvan.kopek"
 								},
 								"bin": 2
 							},
@@ -744,7 +744,7 @@
 							{
 								"token": {
 									"type": "item",
-									"value": "item.oyuncak.ayicik"
+									"value": "item.oyuncak.top"
 								},
 								"bin": 1
 							},
@@ -1262,7 +1262,7 @@
 					"params": {
 						"kind": "number",
 						"start": 15,
-						"step": -3,
+						"step": -2,
 						"length": 5
 					}
 				}

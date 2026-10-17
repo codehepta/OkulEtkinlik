@@ -248,7 +248,7 @@
 							{
 								"token": {
 									"type": "text",
-									"value": "tk.ali"
+									"value": "tk.su"
 								},
 								"bin": 1
 							},
@@ -730,11 +730,11 @@
 									},
 									{
 										"type": "text",
-										"value": "tk.siir_okuma"
+										"value": "tk.hayir_siir_okuma"
 									},
 									{
 										"type": "text",
-										"value": "tk.bayram_yok"
+										"value": "tk.bence_hic_olmaz"
 									}
 								],
 								"answer": 0
@@ -868,14 +868,13 @@
 					"voice": "vo.g3.turkce.u02.n05.r01",
 					"params": {
 						"parts": [
-							"kıp",
-							"kır",
-							"mı",
-							"zı"
+							"kap",
+							"ka",
+							"ra"
 						],
 						"distractors": [
-							"kim",
-							"mız"
+							"mek",
+							"lı"
 						],
 						"voice": "vo.g3.turkce.u02.n05.r01.word"
 					}

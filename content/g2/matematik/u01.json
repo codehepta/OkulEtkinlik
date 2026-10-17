@@ -155,8 +155,8 @@
 						"options": [
 							{
 								"type": "item",
-								"value": "item.cisim.kup",
-								"voice": "vo.mat2.kup_ad"
+								"value": "item.cisim.silindir",
+								"voice": "vo.mat2.silindir_ad"
 							},
 							{
 								"type": "item",
@@ -291,12 +291,12 @@
 							{
 								"left": {
 									"type": "item",
-									"value": "item.nesne.hediye_kutusu"
+									"value": "item.nesne.zar"
 								},
 								"right": {
 									"type": "item",
-									"value": "item.cisim.kare_prizma",
-									"voice": "vo.mat2.kare_prizma_ad"
+									"value": "item.cisim.kup",
+									"voice": "vo.mat2.kup_ad"
 								}
 							},
 							{
@@ -358,7 +358,7 @@
 									"value": "item.cisim.kure",
 									"voice": "vo.mat2.kure_ad"
 								},
-								"shape": "circle",
+								"shape": "star",
 								"color": "orange"
 							},
 							{
@@ -367,7 +367,7 @@
 									"value": "item.cisim.silindir",
 									"voice": "vo.mat2.silindir_ad"
 								},
-								"shape": "square",
+								"shape": "heart",
 								"color": "blue"
 							}
 						],
@@ -415,7 +415,7 @@
 									"value": "item.cisim.kup",
 									"voice": "vo.mat2.kup_ad"
 								},
-								"shape": "circle",
+								"shape": "star",
 								"color": "orange"
 							},
 							{
@@ -424,7 +424,7 @@
 									"value": "item.cisim.dikdortgen_prizma",
 									"voice": "vo.mat2.dikdortgen_prizma_ad"
 								},
-								"shape": "square",
+								"shape": "heart",
 								"color": "blue"
 							}
 						],
@@ -479,7 +479,7 @@
 									"value": "item.cisim.ucgen_prizma",
 									"voice": "vo.mat2.ucgen_prizma_ad"
 								},
-								"shape": "circle",
+								"shape": "star",
 								"color": "orange"
 							},
 							{
@@ -488,7 +488,7 @@
 									"value": "item.cisim.silindir",
 									"voice": "vo.mat2.silindir_ad"
 								},
-								"shape": "square",
+								"shape": "heart",
 								"color": "blue"
 							},
 							{
@@ -497,7 +497,7 @@
 									"value": "item.cisim.kure",
 									"voice": "vo.mat2.kure_ad"
 								},
-								"shape": "triangle",
+								"shape": "diamond",
 								"color": "green"
 							}
 						],
@@ -1173,7 +1173,7 @@
 									"value": "item.sekil.ucgen",
 									"voice": "vo.mat2.ucgen_ad"
 								},
-								"shape": "circle",
+								"shape": "star",
 								"color": "orange"
 							},
 							{
@@ -1182,7 +1182,7 @@
 									"value": "item.sekil.kare",
 									"voice": "vo.mat2.kare_ad"
 								},
-								"shape": "square",
+								"shape": "heart",
 								"color": "blue"
 							}
 						],
@@ -1230,7 +1230,7 @@
 									"value": "item.sekil.ucgen",
 									"voice": "vo.mat2.ucgen_ad"
 								},
-								"shape": "circle",
+								"shape": "star",
 								"color": "orange"
 							},
 							{
@@ -1239,7 +1239,7 @@
 									"value": "item.sekil.dikdortgen",
 									"voice": "vo.mat2.dikdortgen_ad"
 								},
-								"shape": "square",
+								"shape": "heart",
 								"color": "blue"
 							},
 							{
@@ -1248,7 +1248,7 @@
 									"value": "item.sekil.daire",
 									"voice": "vo.mat2.daire_ad"
 								},
-								"shape": "triangle",
+								"shape": "diamond",
 								"color": "green"
 							}
 						],
@@ -1310,7 +1310,7 @@
 									"value": "item.cisim.silindir",
 									"voice": "vo.mat2.silindir_ad"
 								},
-								"shape": "circle",
+								"shape": "star",
 								"color": "orange"
 							},
 							{
@@ -1319,7 +1319,7 @@
 									"value": "item.cisim.kup",
 									"voice": "vo.mat2.kup_ad"
 								},
-								"shape": "square",
+								"shape": "heart",
 								"color": "blue"
 							}
 						],

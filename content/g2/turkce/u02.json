@@ -696,11 +696,11 @@
 						"items": [
 							{
 								"type": "text",
-								"value": "tk.siiri_ezberledi"
+								"value": "tk.siiri_secti"
 							},
 							{
 								"type": "text",
-								"value": "tk.giyindi"
+								"value": "tk.siiri_ezberledi"
 							},
 							{
 								"type": "text",

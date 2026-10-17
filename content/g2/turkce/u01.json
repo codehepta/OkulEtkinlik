@@ -32,7 +32,7 @@
 							{
 								"text": "story.g2.turkce.u01.n01.r01.p1",
 								"voice": "vo.g2.turkce.u01.n01.r01.p1",
-								"image": "item.hikaye.g2_semsiye"
+								"image": "item.hikaye.g2_semsiye_yagmur"
 							},
 							{
 								"text": "story.g2.turkce.u01.n01.r01.p2",
@@ -696,7 +696,7 @@
 							},
 							{
 								"type": "text",
-								"value": "tk.yuzunu_yikadi"
+								"value": "tk.yataktan_kalkti"
 							},
 							{
 								"type": "text",

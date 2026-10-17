@@ -6,7 +6,7 @@
 - Kısa satır (≤ 2 kelime): ilk harf büyük; '!' ve '.' biçimleri; tek kelimede ayrıca giriş cümlesi.
 - Okunuş düzeltmeleri SAY_AS ile (altmış → atmış).
 - Zor harf/kelimelerde (ı, ö, c, arı) sahip giriş cümleli kesimi seçti.
-- Kısaltmalar açık okunur (ABBR): kg → Kilogram, Dr. → Doktor, TDK → Türk Dil Kurumu (harf harf değil).
+- Kısaltmalar (ABBR): birimler ve unvanlar açık okunur (kg → Kilogram, Dr. → Doktor); harf kısaltmaları aralıksız harf adlarıyla (TDK → TEDEKA, TRT → TERETE; tamamı büyük harf).
 - Soru eki tek başına (mı/mi/mu/mü): önüne fiil konur ('Yazdın mı?'), son kelime kesilir.
 - Uzun satır: metin olduğu gibi.
 Her biçim birden çok tohumla üretilir; Whisper doğru duyan ve kesik olmayan adayı seçer.
@@ -17,7 +17,9 @@ SAY_AS = {"altmış": "atmış"}
 CARRIER = "Şimdi okuyalım: "
 # Kısaltmaların açık okunuşu (2. sınıfta sahip onayladı). Satır içinde de açılır.
 ABBR = {"kg": "kilogram", "km": "kilometre", "Dr.": "Doktor", "Cad.": "Cadde", "Sok.": "Sokak", "No.": "Numara",
-        "TDK": "Türk Dil Kurumu", "TRT": "Türkiye Radyo ve Televizyon Kurumu", "TBMM": "Türkiye Büyük Millet Meclisi"}
+        # Harf kısaltmaları harf adlarıyla aralıksız tek sözcük okunur (K = "ka"); ek de buna uyar (TDK'ya).
+        # Tamamı büyük harf yazılır: küçük harfle başlayınca model bazen yanlış okuyor.
+        "TDK": "TEDEKA", "TRT": "TERETE", "TBMM": "TEBEMEME"}
 # Tek başına soru eki: fiille üretilip son kelime kesilir.
 PARTICLE = {"mı": "Yazdın mı?", "mi": "Bildin mi?", "mu": "Buldun mu?", "mü": "Gördün mü?"}
 

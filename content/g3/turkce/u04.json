@@ -518,25 +518,25 @@
 							{
 								"left": {
 									"type": "text",
-									"value": "tk.soru",
-									"voice": "vo.tk.soru"
+									"value": "tk.ince",
+									"voice": "vo.tk.ince"
 								},
 								"right": {
 									"type": "text",
-									"value": "tk.cevap",
-									"voice": "vo.tk.cevap"
+									"value": "tk.kalin",
+									"voice": "vo.tk.kalin"
 								}
 							},
 							{
 								"left": {
 									"type": "text",
-									"value": "tk.kolay",
-									"voice": "vo.tk.kolay"
+									"value": "tk.hizli",
+									"voice": "vo.tk.hizli"
 								},
 								"right": {
 									"type": "text",
-									"value": "tk.zor",
-									"voice": "vo.tk.zor"
+									"value": "tk.yavas",
+									"voice": "vo.tk.yavas"
 								}
 							},
 							{

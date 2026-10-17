@@ -9,7 +9,7 @@ const WELL_LINE: Color = Color(ClayStyle.CLAY_EDGE, 0.9)
 const WELL_FILL: Color = Color(ClayStyle.COCOA, 0.12)
 
 ## Şekil adları (pattern şablonu ve ipucu modelleri).
-const SHAPES: PackedStringArray = ["circle", "square", "triangle", "star", "heart", "diamond"]
+const SHAPES: PackedStringArray = ["circle", "square", "triangle", "star", "heart", "diamond", "rectangle"]
 ## Renk adı -> kil rengi. Renk her zaman şekille birlikte kullanılır (spec §4.9).
 const COLORS: Dictionary = {
 	"red": Color(0.93, 0.36, 0.33),
@@ -90,7 +90,7 @@ static func draw_shape(ci: CanvasItem, shape: String, r: Rect2, color: Color) ->
 	ci.draw_colored_polygon(pts, color)
 	ci.draw_polyline(pts + PackedVector2Array([pts[0]]), color.darkened(0.3), maxf(3.0, r.size.x * 0.035), true)
 	# Işık lekesi yalnızca geniş gövdeli şekillerde (üçgen / yıldız ucunda taşmasın).
-	if shape in ["circle", "square", "heart"]:
+	if shape in ["circle", "square", "heart", "rectangle"]:
 		var hl: Vector2 = r.get_center() + Vector2(-0.16, -0.16) * r.size
 		ci.draw_circle(hl, r.size.x * 0.07, Color(1, 1, 1, 0.35), true, -1.0, true)
 
@@ -109,6 +109,11 @@ static func shape_points(shape: String, r: Rect2) -> PackedVector2Array:
 			out = PackedVector2Array([c + Vector2(-q, -q), c + Vector2(q, -q), c + Vector2(q, q), c + Vector2(-q, q)])
 		"triangle":
 			out = PackedVector2Array([c + Vector2(0, -s), c + Vector2(s * 0.98, s * 0.78), c + Vector2(-s * 0.98, s * 0.78)])
+		"rectangle":
+			# Yatay dikdörtgen (≈ 1,6 : 1): kareyle karışmasın.
+			var w: float = s * 1.02
+			var h: float = s * 0.62
+			out = PackedVector2Array([c + Vector2(-w, -h), c + Vector2(w, -h), c + Vector2(w, h), c + Vector2(-w, h)])
 		"diamond":
 			out = PackedVector2Array([c + Vector2(0, -s), c + Vector2(s * 0.72, 0), c + Vector2(0, s), c + Vector2(-s * 0.72, 0)])
 		"star":

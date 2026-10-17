@@ -362,7 +362,7 @@
 							{
 								"token": {
 									"type": "item",
-									"value": "item.cevrim.gizlice_konus"
+									"value": "item.cevrim.adres_yaz"
 								},
 								"correct": false
 							}

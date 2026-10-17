@@ -685,7 +685,7 @@
 								"options": [
 									{
 										"type": "text",
-										"value": "tk.eldiveni_yoktu"
+										"value": "tk.eldivenini_bulamiyordu"
 									},
 									{
 										"type": "text",
@@ -909,13 +909,14 @@
 					"voice": "vo.g3.turkce.u03.n05.r02",
 					"params": {
 						"parts": [
-							"yem",
-							"ye",
-							"şil"
+							"kos",
+							"ko",
+							"ca",
+							"man"
 						],
 						"distractors": [
-							"yeş",
-							"yen"
+							"dem",
+							"cin"
 						],
 						"voice": "vo.g3.turkce.u03.n05.r02.word"
 					}
