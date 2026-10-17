@@ -640,7 +640,7 @@
 							{
 								"token": {
 									"type": "text",
-									"value": "tk.balik_ucar"
+									"value": "tk.taslar_ucar"
 								},
 								"bin": 1
 							},
@@ -891,8 +891,8 @@
 								},
 								"right": {
 									"type": "text",
-									"value": "tk.van",
-									"voice": "vo.tk.van"
+									"value": "tk.van_golu",
+									"voice": "vo.tk.van_golu"
 								}
 							}
 						]

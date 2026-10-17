@@ -104,11 +104,6 @@
 								"type": "item",
 								"value": "item.konum.altinda",
 								"voice": "vo.g1.matematik.konum.altinda"
-							},
-							{
-								"type": "item",
-								"value": "item.konum.ustunde",
-								"voice": "vo.g1.matematik.konum.ustunde"
 							}
 						]
 					}

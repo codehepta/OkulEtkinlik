@@ -646,7 +646,7 @@
 							{
 								"token": {
 									"type": "item",
-									"value": "item.olay.el_yikama"
+									"value": "item.olay.yemek_yeme"
 								},
 								"bin": 0
 							},
@@ -656,13 +656,6 @@
 									"value": "item.olay.okul_gunu"
 								},
 								"bin": 1
-							},
-							{
-								"token": {
-									"type": "item",
-									"value": "item.olay.ayakkabi_baglama"
-								},
-								"bin": 0
 							},
 							{
 								"token": {

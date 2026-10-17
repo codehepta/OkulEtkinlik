@@ -75,7 +75,7 @@
 									},
 									{
 										"type": "item",
-										"value": "item.sahne.gece"
+										"value": "item.oyuncak.robot"
 									}
 								],
 								"answer": 0
@@ -421,7 +421,7 @@
 							{
 								"token": {
 									"type": "item",
-									"value": "item.tasit.gemi"
+									"value": "item.tasit.otobus"
 								},
 								"bin": 0
 							},

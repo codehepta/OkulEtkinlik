@@ -575,8 +575,8 @@
 							{
 								"left": {
 									"type": "text",
-									"value": "tk.yasasin_bayram",
-									"voice": "vo.tk.yasasin_bayram"
+									"value": "tk.yasasin",
+									"voice": "vo.tk.yasasin"
 								},
 								"right": {
 									"type": "text",
@@ -587,8 +587,8 @@
 							{
 								"left": {
 									"type": "text",
-									"value": "tk.bayragi_astik",
-									"voice": "vo.tk.bayragi_astik"
+									"value": "tk.bayrak_direkte",
+									"voice": "vo.tk.bayrak_direkte"
 								},
 								"right": {
 									"type": "text",
@@ -890,8 +890,8 @@
 							"yaz"
 						],
 						"distractors": [
-							"bey",
-							"ben"
+							"kor",
+							"tul"
 						],
 						"voice": "vo.g3.turkce.u02.n05.r02.word"
 					}

@@ -134,13 +134,12 @@
 								"voice": "vo.g1.matematik.u07.n02.c4.q1"
 							},
 							{
-								"ask": "diff",
-								"a": 1,
-								"b": 2,
+								"ask": "count",
+								"category": 1,
 								"choices": [
-									2,
-									3,
-									4
+									5,
+									6,
+									7
 								],
 								"voice": "vo.g1.matematik.u07.n02.c4.q2"
 							}
@@ -169,11 +168,12 @@
 								"voice": "vo.g1.matematik.u07.n02.c5.q1"
 							},
 							{
-								"ask": "total",
+								"ask": "count",
+								"category": 2,
 								"choices": [
-									11,
-									12,
-									13
+									3,
+									4,
+									5
 								],
 								"voice": "vo.g1.matematik.u07.n02.c5.q2"
 							}

@@ -228,7 +228,7 @@
 							{
 								"token": {
 									"type": "text",
-									"value": "tk.ad_almak"
+									"value": "tk.adinin_olmasi"
 								},
 								"bin": 0
 							},
@@ -646,8 +646,8 @@
 							{
 								"left": {
 									"type": "text",
-									"value": "tk.copler_kutuda",
-									"voice": "vo.tk.copler_kutuda"
+									"value": "tk.ayse_guldu",
+									"voice": "vo.tk.ayse_guldu"
 								},
 								"right": {
 									"type": "text",
@@ -884,7 +884,7 @@
 						],
 						"distractors": [
 							"sap",
-							"lem"
+							"tör"
 						],
 						"voice": "vo.g3.turkce.u08.n05.r01.word"
 					}

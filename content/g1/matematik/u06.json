@@ -128,7 +128,7 @@
 							{
 								"token": {
 									"type": "item",
-									"value": "item.okul.silgi"
+									"value": "item.esya.zar"
 								},
 								"bin": 1
 							},
@@ -162,7 +162,7 @@
 									"voice": "vo.g1.matematik.yuvarlak"
 								},
 								"shape": "circle",
-								"color": "orange"
+								"color": "purple"
 							},
 							{
 								"label": {
@@ -775,7 +775,7 @@
 							{
 								"left": {
 									"type": "item",
-									"value": "item.sekil.dikdortgen"
+									"value": "item.sekil.dikdortgen_3"
 								},
 								"right": {
 									"type": "item",
@@ -789,7 +789,7 @@
 								},
 								"right": {
 									"type": "item",
-									"value": "item.sekil.ucgen_3"
+									"value": "item.sekil.ucgen"
 								}
 							},
 							{

@@ -276,6 +276,47 @@ def book_spans(name):
         span_hand(f"{name}_kisa{k}", (1.2, -0.8 + 0.8 * k), (1.2, 0.8 * k), (1.0, 0.0))
 
 
+def ellipse(cx, cy, rx, ry, n=48, rot=0.0):
+    pts = []
+    for k in range(n):
+        a = 2 * math.pi * k / n
+        x, y = rx * math.cos(a), ry * math.sin(a)
+        pts.append((cx + x * math.cos(rot) - y * math.sin(rot), cy + x * math.sin(rot) + y * math.cos(rot)))
+    return pts
+
+
+def counted_birds(name, n=7):
+    """Dalda yan yana tam n kuş (düz kil kesik): hepsi sağa bakar, uçan ya da yerde kuş yok."""
+    # Hafif kavisli yatay dal; uçlarında yapraklar (gövde yok: tek başına dal).
+    dal = [(-2.75 + 0.25 * k, -0.2 + 0.05 * math.sin(k / 22 * math.pi)) for k in range(23)]
+    flat_poly(name + "_dal", dal + [(x, y - 0.13) for x, y in reversed(dal)], 0.12, 0.0, "#8A5A3C")
+    for k, (lx, ly, rot) in enumerate([(-2.75, -0.05, 0.6), (-2.7, -0.38, -0.5), (2.75, -0.05, -0.6), (2.7, -0.38, 0.5)]):
+        flat_poly(f"{name}_yaprak{k}", ellipse(lx, ly, 0.24, 0.1, rot=rot), 0.1, 0.0, "#79C267")
+    for i in range(n):
+        x = -2.1 + i * 0.7
+        y = 0.0
+        for fx in (-0.06, 0.06):
+            bump(f"{name}_kus{i}_ayak{fx}", x + fx, y - 0.19, 0.12, 0.035, "#F2A14A", 0.5)
+        flat_poly(f"{name}_kus{i}", ellipse(x, y, 0.24, 0.2), 0.16, 0.02, "#F6D25A")
+        flat_poly(f"{name}_kus{i}_kanat", ellipse(x - 0.04, y - 0.02, 0.12, 0.08, rot=-0.3), 0.18, 0.04, "#E9B83A")
+        flat_poly(f"{name}_kus{i}_bas", ellipse(x + 0.17, y + 0.2, 0.13, 0.13), 0.16, 0.02, "#F6D25A")
+        flat_poly(f"{name}_kus{i}_gaga", [(x + 0.28, y + 0.22), (x + 0.4, y + 0.18), (x + 0.28, y + 0.14)], 0.17, 0.03, "#F2846F")
+        flat_poly(f"{name}_kus{i}_kuyruk", [(x - 0.22, y + 0.02), (x - 0.38, y + 0.12), (x - 0.36, y - 0.08)], 0.15, 0.01, "#E9B83A")
+        bump(f"{name}_kus{i}_goz", x + 0.2, y + 0.24, 0.2, 0.025, "#2B2B33", 0.6)
+
+
+def counted_marbles(name, rows=3, cols=4):
+    """Yeşil kil minderde düzgün ızgarada tam rows x cols bilye (sayılabilir, üst üste binmez)."""
+    flat_poly(name + "_minder", ellipse(0.0, 0.0, 1.55, 1.2), 0.1, 0.0, "#79C267")
+    colors = ["#E5675A", "#5B8FD9", "#5CC27A", "#F6D25A", "#F2A14A", "#A57BD6"]
+    for r in range(rows):
+        for c in range(cols):
+            x = -1.05 + c * 0.7
+            y = 0.62 - r * 0.62
+            bump(f"{name}_{r}_{c}", x, y, 0.22, 0.2, colors[(r * cols + c) % len(colors)], 1.0)
+            bump(f"{name}_{r}_{c}_isik", x - 0.06, y + 0.06, 0.4, 0.05, "#FFFFFF", 0.5)
+
+
 def lopsided_kite(name):
     flat_poly(name, [(0.0, 1.0), (0.75, 0.25), (0.05, -0.85), (-0.38, 0.05)], 0.16, 0.0, "#7FB7EC")
     # kuyruk yalnızca bir yana kıvrılır
@@ -300,6 +341,8 @@ ITEMS = {**{k: ("010-faz3-sablonlar", (lambda k=k, v=v: coin(k, *v))) for k, v i
          "item.simetri.kare_yamuk_cizgi": ("050-g3-matematik-nesneler", lambda: sym_square("kare", off=True)),
          "item.simetri.kare_yatay_cizgi": ("098-gorsel-duzeltmeleri-2", lambda: sym_square("kare", low=True)),
          "item.cevre.kitap_karis": ("098-gorsel-duzeltmeleri-2", lambda: book_spans("kitap")),
+         "item.sahne.kuslar": ("099-gorsel-duzeltmeleri-3", lambda: counted_birds("kuslar", 7)),
+         "item.sahne.bilyeler": ("099-gorsel-duzeltmeleri-3", lambda: counted_marbles("bilyeler", 3, 4)),
          "item.simetri.ev": ("050-g3-matematik-nesneler", lambda: sym_house("ev")),
          "item.simetri.ruzgar_gulu": ("050-g3-matematik-nesneler", lambda: lopsided_kite("ucurtma")),
          }
