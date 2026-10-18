@@ -10,6 +10,7 @@ Yalnızca geliştirici aracıdır, uygulamaya girmez. Godot bu klasörü `.gdign
 | [mflux](https://github.com/filipstrand/mflux) | 0.20.0 (sabit) | MIT | Apple MLX üzerinde model çalıştırma |
 | Z-Image Turbo (`Tongyi-MAI/Z-Image-Turbo`) | — | Apache 2.0 | Metinden görsel (varsayılan) |
 | FLUX.2 [klein] 4B (`black-forest-labs/FLUX.2-klein-4B`) | — | Apache 2.0 | Referans görselle üretim (Bilge pozları, stil referansı) |
+| ERNIE-Image-Turbo (`baidu/ERNIE-Image-Turbo`) | commit `bc68c81` (kayda önbellekten yazılır) | Apache 2.0 | Metinden görsel; istem takibi Z-Image'dan iyi, ev kil stiline en yakın açık model (`--model ernie`) |
 | BiRefNet (`ZhengPeng7/BiRefNet`) | commit `e2bf8e4` (sabit) | MIT | Arka plan silme |
 
 "Ticari olmayan" ya da "araştırma" lisanslı modeller (FLUX.2 klein 9B / dev, Qwen-Image-2.1 vb.) **kullanılmaz**: `assets/` CC BY 4.0'dır.
@@ -18,7 +19,7 @@ Yalnızca geliştirici aracıdır, uygulamaya girmez. Godot bu klasörü `.gdign
 ```bash
 cd tools/imagegen && uv sync
 ```
-Model ağırlıkları ilk kullanımda Hugging Face önbelleğine (`~/.cache/huggingface`) iner: Z-Image ~33 GB, klein 4B ~24 GB, BiRefNet ~0,4 GB. Apple Silicon ve en az 48 GB bellek önerilir (Z-Image tepe kullanımı ~32 GB).
+Model ağırlıkları ilk kullanımda Hugging Face önbelleğine (`~/.cache/huggingface`) iner: Z-Image ~33 GB, klein 4B ~24 GB, BiRefNet ~0,4 GB. Apple Silicon ve en az 48 GB bellek önerilir (Z-Image tepe kullanımı ~32 GB). ERNIE-Image-Turbo q8, 8 adımda 1024² görseli ~45–65 sn'de üretir, tepe bellek ~22,5 GB. Deponun istem geliştirici modeli (`pe/`) indirilmez ve kullanılmaz; mflux yalnızca görsel modelin alt klasörlerini indirir.
 
 ## Kullanım (repo kökünden)
 ```bash
@@ -27,6 +28,12 @@ uv run --project tools/imagegen python tools/imagegen/generate.py 060 --items 1-
 
 # Nesne ve sahne görselleri: klein, referanssız (önerilen; ~10 sn/görsel)
 uv run --project tools/imagegen python tools/imagegen/generate.py 060 --model klein
+
+# ERNIE-Image-Turbo; '- **İnsan:** yok' işaretli öğelerde kil adayının yanında aynı tohumla STYLE_REAL adayı da üretilir
+uv run --project tools/imagegen python tools/imagegen/generate.py 100 --model ernie
+
+# İşaretsiz eski partilerde de kil + kilsiz aday (insanlı öğeleri işaretleyin: '- **İnsan:** var')
+uv run --project tools/imagegen python tools/imagegen/generate.py 090 --items 3-6 --model ernie --dual-style
 
 # Referanslı öğeler (ör. Bilge pozları, karakter sayfası referans olur)
 uv run --project tools/imagegen python tools/imagegen/generate.py 001 --items 2-10 --model klein
@@ -40,6 +47,7 @@ uv run --project tools/imagegen python tools/imagegen/generate.py 060 --model kl
 # Seçilenleri yerleştir: öğe=tohum[:model]
 uv run --project tools/imagegen python tools/imagegen/approve.py 060 1=1000:klein 3=1001:klein
 uv run --project tools/imagegen python tools/imagegen/approve.py 040 9=0:blender
+uv run --project tools/imagegen python tools/imagegen/approve.py 100 2=1000:ernie 3=1001:ernie_real
 
 # Yerleştirmeden sonra: içe aktar, APK ayarlarını uygula, yeniden içe aktar
 godot --headless --path . --import
@@ -51,6 +59,14 @@ cd tools/imagegen && uv run python -m unittest discover -s tests -t .
 ```
 
 Çıktılar `build/imagegen/<parti>/<anahtar>/` altına gider: `s<tohum>_<model>.png` ham görsel, `_cut.png` arka planı silinmiş hâli, `.json` üretim kaydı. Her parti için `sheet_<model>.png` seçim sayfası oluşur.
+
+**Kil ve kilsiz aday** (style-guide §1.8–1.9): parti dosyasında `- **İnsan:** yok` satırı olan öğelerde (ya da `--dual-style` ile İnsan satırı olmayan bütün öğelerde) her tohum için iki aday üretilir: `s1000_ernie.png` (kil) ve `s1000_ernie_real.png` (aynı tohum, kil bloğu `STYLE_REAL` ile değiştirilmiş). Seçim sayfasında yan yana durur, etiketleri `s1000` ve `s1000 real` olur; kilsiz aday `approve.py ... 3=1000:ernie_real` ile seçilir.
+
+- Yalnızca tek nesne/ikon blokları (`STYLE_SPRITE`, `STYLE_ICON`) değiştirilir. `STYLE_SCENE` sahneleri kilde kalır, çünkü `STYLE_REAL` gri zeminli tek nesne bloğudur.
+- `- **İnsan:** var` öğeleri `--dual-style` ile de kilde kalır.
+- `- **Stil:** STYLE_REAL` satırlı öğelerin tek adayı gerçekçidir (`_real`).
+- Blok dönüşümü `styles.py`'dedir. Bloklar `docs/assets/style-guide.md` ile birebir aynı tutulur, test denetler.
+- Konu cümlesinde geçen "clay" gibi sözcükler değiştirilmez. Kilsiz adayın kil gibi görünmemesi için insansız öğelerin konusunu stilden bağımsız yazın.
 
 **Stil referansı uyarısı:** klein'ın düzenleme modu referans görseli "düzenlenecek görsel" sayar. İlgisiz onaylı görselleri stil referansı olarak vermek içeriğe sızar: ırmak, rüzgâr ve robot görsellerine elma ve civciv girdi, "yalnızca stil" talimatı da bunu engellemedi. Nesneler referanssız üretilir; ev stilinin tutarlılığı için onaylı görsellerle LoRA eğitilir.
 

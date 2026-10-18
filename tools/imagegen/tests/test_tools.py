@@ -4,9 +4,10 @@ from pathlib import Path
 
 from PIL import Image
 
-from approve import prepare
+from approve import parse_choice, prepare, provenance_record
 from batch_parser import BatchItem
-from generate import DutyCycle, choose_mask, flood_foreground, is_geometric, select_items
+from generate import MODELS, DutyCycle, candidate_label, choose_mask, flood_foreground, hf_cached_revision, \
+    image_of, is_geometric, select_items
 
 
 def _item(n: int) -> BatchItem:
@@ -112,6 +113,82 @@ class CutoutFallbackTest(unittest.TestCase):
         chosen, used_fallback = choose_mask(good, flood)
         self.assertFalse(used_fallback)
         self.assertIs(chosen, good)
+
+
+class ErnieSupportTest(unittest.TestCase):
+    def test_model_entry(self) -> None:
+        ernie = MODELS["ernie"]
+        self.assertEqual(ernie["registry"], "baidu/ERNIE-Image-Turbo")
+        self.assertEqual(ernie["license"], "Apache-2.0")
+        self.assertEqual(ernie["steps"], 8)
+        self.assertTrue(ernie["revision"].startswith("bc68c81e"))
+
+    def test_image_of_accepts_pil_or_wrapper(self) -> None:
+        im = Image.new("RGB", (4, 4))
+
+        class Wrapped:
+            image = im
+
+        self.assertIs(image_of(im), im)
+        self.assertIs(image_of(Wrapped()), im)
+
+    def test_cached_revision_reads_snapshot_folder(self) -> None:
+        calls: list[tuple[str, str]] = []
+
+        def lookup(repo_id: str, filename: str) -> str:
+            calls.append((repo_id, filename))
+            return f"/hf/hub/models--baidu--ERNIE-Image-Turbo/snapshots/bc68c81e2a17/{filename}"
+
+        self.assertEqual(hf_cached_revision("baidu/ERNIE-Image-Turbo", lookup=lookup), "bc68c81e2a17")
+        self.assertEqual(calls, [("baidu/ERNIE-Image-Turbo", "model_index.json")])
+
+    def test_cached_revision_missing(self) -> None:
+        self.assertIsNone(hf_cached_revision("x/y", lookup=lambda repo_id, filename: None))
+
+
+class CandidateLabelTest(unittest.TestCase):
+    def test_labels_clay_and_real(self) -> None:
+        self.assertEqual(candidate_label(Path("s1000_ernie_cut.png")), "s1000")
+        self.assertEqual(candidate_label(Path("s1000_ernie_real_cut.png")), "s1000 real")
+        self.assertEqual(candidate_label(Path("s1001_zimage_real.png")), "s1001 real")
+
+
+class ApproveChoiceTest(unittest.TestCase):
+    def test_default_model_is_zimage(self) -> None:
+        self.assertEqual(parse_choice("3=1001"), (3, 1001, "zimage", ""))
+
+    def test_model_and_real_suffix(self) -> None:
+        self.assertEqual(parse_choice("7=1000:klein"), (7, 1000, "klein", ""))
+        self.assertEqual(parse_choice("1=1000:ernie"), (1, 1000, "ernie", ""))
+        self.assertEqual(parse_choice("1=1000:ernie_real"), (1, 1000, "ernie", "_real"))
+        self.assertEqual(parse_choice("9=0:blender"), (9, 0, "blender", ""))
+
+    def test_other_sources_pass_through(self) -> None:
+        # gemini / derived gibi elle eklenen adaylar da aynı düzende onaylanır
+        self.assertEqual(parse_choice("2=1:gemini"), (2, 1, "gemini", ""))
+
+    def test_malformed_choice_is_rejected(self) -> None:
+        with self.assertRaises(SystemExit):
+            parse_choice("1:ernie")
+
+    def test_record_fills_ernie_model_license_and_revision(self) -> None:
+        meta = {"key": "item.fen.bardak", "seed": 1000, "model": "baidu/ERNIE-Image-Turbo"}
+        rec = provenance_record(meta, "ernie", "build/imagegen/x/s1000_ernie_real_cut.png", "2026-10-19")
+        self.assertEqual(rec["model"], "baidu/ERNIE-Image-Turbo")
+        self.assertEqual(rec["model_license"], "Apache-2.0")
+        self.assertTrue(rec["hf_revision"].startswith("bc68c81e"))
+        self.assertEqual(rec["approved"], "2026-10-19")
+        self.assertEqual(rec["source_file"], "build/imagegen/x/s1000_ernie_real_cut.png")
+
+    def test_record_keeps_revision_from_generation(self) -> None:
+        meta = {"model": "baidu/ERNIE-Image-Turbo", "model_license": "Apache-2.0", "hf_revision": "abc123"}
+        self.assertEqual(provenance_record(meta, "ernie", "s.png", "2026-10-19")["hf_revision"], "abc123")
+
+    def test_record_leaves_other_models_untouched(self) -> None:
+        meta = {"model": "blender", "seed": 0}
+        rec = provenance_record(meta, "blender", "s.png", "2026-10-19")
+        self.assertNotIn("model_license", rec)
+        self.assertNotIn("hf_revision", rec)
 
 
 if __name__ == "__main__":
