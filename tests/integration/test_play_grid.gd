@@ -18,7 +18,7 @@ func _absolute(extra: Dictionary = {}) -> Dictionary:
 
 func _follow() -> Dictionary:
 	return {"mode": "path", "ask": "follow", "cols": 5, "rows": 4, "start": [0, 3], "facing": "up",
-		"program": ["forward", "forward", "turn_right", "forward"], "arrows": "relative"}
+		"program": ["forward", "forward", "turn_right"], "arrows": "relative"}
 
 func _copy() -> Dictionary:
 	return {"mode": "paint", "ask": "copy", "cols": 8, "rows": 6, "target": [[1, 1], [2, 1], [1, 2]]}
@@ -86,8 +86,8 @@ func test_path_build_correct_and_wrong() -> void:
 ## İleri kartları gezginin baktığı yöne çizilir (3 ileri, sağa bakarken 3 sağ ok).
 func test_path_forward_cards_point_where_walker_faces() -> void:
 	var f: MiniGame = make("grid", _follow())
-	assert_eq(f.call("strip_arrows"), ["up", "up", "", "right"] as Array[String])
-	assert_eq(f.call("strip_facings"), ["up", "up", "up", "right"] as Array[String], "dönüş kartı o anki bakış yönüyle çizilir")
+	assert_eq(f.call("strip_arrows"), ["up", "up", ""] as Array[String])
+	assert_eq(f.call("strip_facings"), ["up", "up", "up"] as Array[String], "dönüş kartı o anki bakış yönüyle çizilir")
 	var g: MiniGame = make("grid", _build(), 2)
 	assert_eq(g.call("palette_forward_arrow"), "right", "boş programda gezgin sağa bakıyor")
 	_add(g, ["forward", "turn_left"])
@@ -127,9 +127,9 @@ func test_path_absolute_arrows() -> void:
 
 func test_path_follow_correct_and_wrong() -> void:
 	var g: MiniGame = make("grid", _follow())
-	assert_eq(g.call("program"), ["forward", "forward", "turn_right", "forward"] as Array[String])
+	assert_eq(g.call("program"), ["forward", "forward", "turn_right"] as Array[String])
 	g.call("_debug_card", "forward")
-	assert_eq((g.call("program") as Array).size(), 4, "follow programı salt okunur")
+	assert_eq((g.call("program") as Array).size(), 3, "follow programı salt okunur")
 	g.call("_debug_tap_cell", Vector2i(0, 0))
 	assert_eq(answers, [false] as Array[bool])
 	await wait_unlocked(g)
@@ -144,9 +144,9 @@ func test_path_build_trail_difficulty() -> void:
 	g.call("_debug_card", "forward")
 	assert_eq(g.call("trail_cells"), [Vector2i(1, 3)] as Array[Vector2i])
 	_add(g, ["turn_left", "forward"])
-	assert_eq(g.call("trail_cells"), [Vector2i(1, 3), Vector2i(1, 2)] as Array[Vector2i])
+	assert_eq(g.call("trail_cells"), [Vector2i(1, 3), Vector2i(1, 2), Vector2i(1, 1)] as Array[Vector2i], "dönüş kartı da bir hücre ilerler")
 	g.call("_debug_remove", 0)
-	assert_eq(g.call("trail_cells"), [Vector2i(0, 2)] as Array[Vector2i])
+	assert_eq(g.call("trail_cells"), [Vector2i(0, 2), Vector2i(0, 1)] as Array[Vector2i])
 	assert_eq(answers.size(), 0, "kart eklemek cevap sayılmaz")
 	var d2: MiniGame = make("grid", _build(), 2)
 	d2.call("_debug_card", "forward")

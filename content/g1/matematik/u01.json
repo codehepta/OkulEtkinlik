@@ -227,7 +227,6 @@
 							"forward",
 							"forward",
 							"turn_left",
-							"forward",
 							"forward"
 						],
 						"arrows": "relative"
@@ -252,9 +251,7 @@
 							"forward",
 							"turn_left",
 							"forward",
-							"forward",
-							"turn_right",
-							"forward"
+							"turn_right"
 						],
 						"arrows": "relative"
 					}
