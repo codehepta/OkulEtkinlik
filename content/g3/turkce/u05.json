@@ -595,13 +595,13 @@
 							{
 								"left": {
 									"type": "text",
-									"value": "tk.yanit",
-									"voice": "vo.tk.yanit"
+									"value": "tk.hizli",
+									"voice": "vo.tk.hizli"
 								},
 								"right": {
 									"type": "text",
-									"value": "tk.cevap",
-									"voice": "vo.tk.cevap"
+									"value": "tk.cabuk",
+									"voice": "vo.tk.cabuk"
 								}
 							},
 							{
@@ -619,13 +619,13 @@
 							{
 								"left": {
 									"type": "text",
-									"value": "tk.kent",
-									"voice": "vo.tk.kent"
+									"value": "tk.okul",
+									"voice": "vo.tk.okul"
 								},
 								"right": {
 									"type": "text",
-									"value": "tk.sehir",
-									"voice": "vo.tk.sehir"
+									"value": "tk.mektep",
+									"voice": "vo.tk.mektep"
 								}
 							}
 						]
@@ -658,14 +658,14 @@
 							{
 								"token": {
 									"type": "text",
-									"value": "tk.altin_yuzuk"
+									"value": "tk.demir_kapi"
 								},
 								"bin": 0
 							},
 							{
 								"token": {
 									"type": "text",
-									"value": "tk.altin_kalp"
+									"value": "tk.demir_irade"
 								},
 								"bin": 1
 							},

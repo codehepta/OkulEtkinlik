@@ -406,7 +406,8 @@
 								"correct": false,
 								"result_voice": "vo.g2.turkce.u01.n02.r04.c3"
 							}
-						]
+						],
+						"hint": "vo.g2.turkce.u01.n02.r04.hint"
 					}
 				}
 			]

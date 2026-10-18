@@ -526,13 +526,13 @@
 							{
 								"left": {
 									"type": "text",
-									"value": "tk.derin",
-									"voice": "vo.tk.derin"
+									"value": "tk.uzun",
+									"voice": "vo.tk.uzun"
 								},
 								"right": {
 									"type": "text",
-									"value": "tk.sig",
-									"voice": "vo.tk.sig"
+									"value": "tk.kisa",
+									"voice": "vo.tk.kisa"
 								}
 							},
 							{
@@ -560,8 +560,8 @@
 							{
 								"left": {
 									"type": "text",
-									"value": "tk.hava_guzel",
-									"voice": "vo.tk.hava_guzel"
+									"value": "tk.ali_uyudu",
+									"voice": "vo.tk.ali_uyudu"
 								},
 								"right": {
 									"type": "text",

@@ -339,7 +339,7 @@
 								},
 								"right": {
 									"type": "item",
-									"value": "item.katki.ogrenme"
+									"value": "item.guvenlik.kitap_oku"
 								}
 							}
 						]

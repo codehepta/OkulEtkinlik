@@ -1028,7 +1028,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u06.n02.r04": {
-		"text": "Yapıların parçalarını benzedikleri şekillerle eşleştir!",
+		"text": "Nesneleri benzedikleri şekillerle eşleştir!",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u06.n02.r05": {
@@ -1068,7 +1068,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u06.n04.r02": {
-		"text": "Şekle bak, eşini bul! Kareyi dikdörtgenle karıştırma.",
+		"text": "Renge değil, şekle bak! Kareyi dikdörtgenle karıştırma.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u06.n04.intro": {
@@ -1108,7 +1108,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u07.n02.c4.q2": {
-		"text": "Köpekler kuşlardan kaç fazla?",
+		"text": "Kaç köpek var?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u07.n02.c5.q1": {
@@ -1116,7 +1116,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u07.n02.c5.q2": {
-		"text": "Hepsi birlikte kaç oyuncak var?",
+		"text": "Kaç ayıcık var?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u07.n02.r01": {
@@ -1128,7 +1128,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u07.n02.r03": {
-		"text": "Oyuncakları grafiğe yerleştir. Sonra hepsini birlikte düşün!",
+		"text": "Oyuncakları grafiğe yerleştir. Sonra grafiğe bakıp soruları cevapla!",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.matematik.u07.n02.intro": {
@@ -1508,7 +1508,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.matematik.u01.n08.r04": {
-		"text": "Şimdi kuralı bulalım! İki tek sayının toplamı, iki çift sayının toplamı, bir tek ile bir çiftin toplamı: tek mi, çift mi?",
+		"text": "Toplam tek mi, çift mi olur? Kutulara ayır!",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3m.bin.uyar": {
@@ -2276,7 +2276,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.matematik.u04.n03.r05": {
-		"text": "Örnekteki üçgeni kareli zemine çiz!",
+		"text": "Örnekteki kareyi kareli zemine boyayarak çiz!",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.matematik.u04.n04.intro": {
@@ -2952,7 +2952,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.fen.u05.n02.r04": {
-		"text": "Ece, topa daha güçlü vurursa topun daha uzağa gideceğini tahmin etti. Resimde iki şerit var. Alttaki topa daha güçlü vuruldu. Bayraklar topların durduğu yeri gösteriyor. Ece'nin tahmini doğru muydu?",
+		"text": "Ece, topa daha güçlü vurursa topun daha uzağa gideceğini tahmin etti. Resimde iki şerit var. Alttaki topa daha güçlü vuruldu. Alttaki şeritte bayrak, topun durduğu yeri gösteriyor. Ece'nin tahmini doğru muydu?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.fen.u05.n02.r04.ipucu": {
@@ -3080,7 +3080,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.fen.u07.n01.r03.hedef": {
-		"text": "Kum. İnce ve küçük taneler.",
+		"text": "Kum. Sarı renkli, elde tek tek hissedilen küçük taneler.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.fen.u07.n01.r04": {
@@ -3116,11 +3116,11 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.fen.u08.n01.r02": {
-		"text": "Şimdi bir de toprak kutusu var. Her canlıyı yaşadığı yere koy.",
+		"text": "Şimdi bir de toprak kutusu var. Toprağın içinde yuva yapanlar toprağa, suda yaşayanlar göle, ağaçlarda yaşayanlar ormana gider. Her canlıyı yaşadığı yere koy.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.fen.u08.n01.r03": {
-		"text": "Bazı canlılar nemli yerlerde, bazıları kuru yerlerde yaşar. Gözlem kartlarını ayır.",
+		"text": "Bazı canlılar nemli yerlerde, bazıları kuru yerlerde yaşar. Canlıları yaşadıkları yere göre ayır.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.fen.u08.n02.intro": {
@@ -3616,7 +3616,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.u01.n02.r03": {
-		"text": "Dinle, düşün ve ayır! Doğal sesler bir kutuya, yapay sesler öbür kutuya.",
+		"text": "Dinle, düşün ve ayır! Doğadan gelen sesler bir kutuya, insanların yaptığı şeylerin sesleri öbür kutuya.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.u01.n03.intro": {
@@ -5416,7 +5416,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.u08.n03.r01": {
-		"text": "Masallarda hayal şeyler olur. Hangisi gerçek, hangisi hayal? Kutulara ayır!",
+		"text": "Masallarda hayal ürünü şeyler olur. Hangisi gerçek, hangisi hayal? Kutulara ayır!",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.u08.n03.r02": {
@@ -5716,7 +5716,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.u09.n05.r02": {
-		"text": "Okulda tatbikat zili çaldı. Kimi dinlersin?",
+		"text": "Okulda tatbikat zili çaldı. Ne yaparsın?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.u09.n05.r03": {
@@ -6080,7 +6080,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u01.n01.r05": {
-		"text": "Hepsi birbirine benziyor. İyi dinle ve doğru cismi bul.",
+		"text": "Bazıları birbirine çok benziyor. İyi dinle ve doğru cismi bul.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u01.n02.intro": {
@@ -6172,7 +6172,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u01.n04.r06": {
-		"text": "Cisimleri yüzlerindeki şekillerle eşleştir. Dikdörtgen prizmaya dikkat!",
+		"text": "Cisimleri tabanlarındaki şekillerle eşleştir. Dikdörtgen prizmaya dikkat!",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u01.n05.intro": {
@@ -7140,11 +7140,11 @@
 		"speaker": "BILGE"
 	},
 	"vo.g2.matematik.u04.n01.r01": {
-		"text": "Pizzayı iki eş parçaya böl.",
+		"text": "İki eş parçaya bölünmüş pizzayı bul.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u04.n01.r02": {
-		"text": "Pizzayı dört eş parçaya böl.",
+		"text": "Dört eş parçaya bölünmüş pizzayı bul.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u04.n01.r03": {
@@ -7884,7 +7884,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.turkce.u01.n02.r04": {
-		"text": "Küçük kardeşin uyumak istiyor. Ona ne dinletirsin?",
+		"text": "Küçük kardeşin yatağına yattı ve gözlerini kapattı. Uykusu geliyor. Ona ne dinletirsin?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.turkce.u01.n02.r04.c2": {
@@ -7992,7 +7992,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.turkce.u01.n04.r03": {
-		"text": "Arkadaşımıza hediye hazırladık. Önce ne yaptık? Kartları sırala.",
+		"text": "Arkadaşımıza hediye hazırladık. Kartları olayların sırasına göre diz.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.turkce.u01.n05.intro": {
@@ -8100,7 +8100,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.turkce.u02.n01.r01.p1": {
-		"text": "Mustafa 1881'de Selanik'te doğdu. Annesinin adı Zübeyde Hanım'dı.",
+		"text": "Mustafa Selanik'te doğdu. Annesinin adı Zübeyde Hanım'dı.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.turkce.u02.n01.r01.p2": {
@@ -8320,7 +8320,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.turkce.u02.n04.r03": {
-		"text": "Sınıfımızı bayram için süsledik. Önce ne yaptık? Kartları sırala.",
+		"text": "Sınıfımızı bayram için süsledik. Kartları olayların sırasına göre diz.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.turkce.u02.n05.intro": {
@@ -8920,7 +8920,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.turkce.u04.n04.r03": {
-		"text": "Bir metni okuduk. Önce ne yaptık? Kartları sırala.",
+		"text": "Bir metni okuduk. Kartları olayların sırasına göre diz.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.turkce.u04.n05.intro": {
@@ -9180,7 +9180,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.turkce.u05.n04.r03": {
-		"text": "Burak kilden bir kaplumbağa yapıyor. Önce ne yaptı? Kartları sırala.",
+		"text": "Burak kilden bir kaplumbağa yapıyor. Kartları olayların sırasına göre diz.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.turkce.u05.n05.intro": {
@@ -9440,7 +9440,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.turkce.u06.n04.r03": {
-		"text": "Bir mucit nasıl çalışır? Önce ne yapar? Kartları sırala.",
+		"text": "Bir mucidin çalışmasını düşün. Kartları olayların sırasına göre diz.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.turkce.u06.n05.intro": {
@@ -9500,7 +9500,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.turkce.u07.n01.r01.p3": {
-		"text": "Hoca kazanı yine aldı, sonra \"Kazan öldü.\" dedi. \"Doğurduğuna inandın, öldüğüne de inan!\" diye güldü.",
+		"text": "Komşu kazanı isteyince Hoca \"Kazan öldü.\" dedi. Komşu şaşırınca Hoca \"Doğurduğuna inandın, öldüğüne de inan!\" dedi.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.turkce.u07.n01.r01.q1": {
@@ -9716,7 +9716,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.turkce.u07.n04.r03": {
-		"text": "Hoca'nın fıkrasında önce ne oldu? Kartları sırala.",
+		"text": "Hoca'nın fıkrasını hatırla. Kartları olayların sırasına göre diz.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.turkce.u07.n05.intro": {
@@ -9988,7 +9988,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.turkce.u08.n04.r03": {
-		"text": "Kerem akşam ne yaptı? Önce ne oldu? Kartları sırala.",
+		"text": "Kerem akşam yatmaya hazırlanıyor. Kartları olayların sırasına göre diz.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.turkce.u08.n05.intro": {
@@ -10356,7 +10356,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u02.n01.r01.p1": {
-		"text": "Mustafa, 1881 yılında Selanik'te doğdu. Annesi Zübeyde Hanım, babası Ali Rıza Efendi'ydi.",
+		"text": "Mustafa, Selanik'te doğdu. Annesi Zübeyde Hanım, babası Ali Rıza Efendi'ydi.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u02.n01.r01.p2": {
@@ -11020,7 +11020,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u04.n01.r02.p1": {
-		"text": "Kuzey denizdeki canlıları çok merak ediyordu. Kütüphaneden kocaman bir ansiklopedi aldı.",
+		"text": "Kuzey, denizde yaşayan canlıları çok merak ediyordu. Kütüphaneden kocaman bir ansiklopedi aldı.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u04.n01.r02.p2": {
@@ -11068,7 +11068,7 @@
 		"speaker": "BILGE"
 	},
 	"vo.g3.turkce.u04.n02.r01.c2": {
-		"text": "Görevli bu sözü kaba buldu. Yardım isterken \"lütfen\" deriz.",
+		"text": "Görevli bu sözü kaba buldu. Yardım isterken kibar bir soru kullanırız.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u04.n02.r01.c3": {
@@ -11780,7 +11780,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u06.n04.r02.p1": {
-		"text": "Ada pencereden baktı. \"Baba, Ay geçen hafta yuvarlaktı. Bu akşam neden yarım görünüyor?\" diye sordu.",
+		"text": "Ada pencereden baktı. \"Baba, Ay daha önce yuvarlaktı. Bu akşam neden ince görünüyor?\" diye sordu.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u06.n04.r02.p2": {
@@ -12600,7 +12600,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.hayat_bilgisi.u03.n01.r03": {
-		"text": "Anne, baba ve kardeşler çekirdek aileyi oluşturur. Büyükanne, dede, teyze ve amca da katılınca geniş aile olur. Kartları ayır.",
+		"text": "Anne, baba ve kardeş çekirdek aile kutusuna girer. Büyükanne, dede ve amca geniş aile kutusuna girer. Kartları ayır.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.hayat_bilgisi.u03.n01.r04.p1": {
@@ -12776,7 +12776,7 @@
 		"speaker": "BILGE"
 	},
 	"vo.g1.hayat_bilgisi.u04.n03.r01.p1": {
-		"text": "Mustafa Kemal Atatürk, 1881 yılında Selanik'te bu evde doğdu.",
+		"text": "Mustafa Kemal Atatürk Selanik'te bu evde doğdu.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.hayat_bilgisi.u04.n03.r01.p2": {
@@ -12784,7 +12784,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.hayat_bilgisi.u04.n03.r01.p3": {
-		"text": "Atatürk 10 Kasım 1938'de İstanbul'da öldü. Şimdi Ankara'daki Anıtkabir'de yatıyor.",
+		"text": "Atatürk 10 Kasım'da İstanbul'da vefat etti. Şimdi Ankara'daki Anıtkabir'de yatıyor.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.hayat_bilgisi.u04.n03.r01.s1": {
@@ -13060,7 +13060,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u01.n02.r03": {
-		"text": "Kütüphanedesin ve arkadaşına bir şey sormak istiyorsun. Nasıl konuşursun?",
+		"text": "Kütüphanede arkadaşına bir şey sormak istiyorsun. Ne yaparsın?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u01.n03.intro": {
@@ -13208,7 +13208,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u02.n04.r01": {
-		"text": "Yüz on ikiyi aradığımızda hangi bilgileri söyleriz? Söylenecekleri telefona, gereksizleri boş balona koy.",
+		"text": "Yüz on ikiyi aradığımızda hangi bilgileri söyleriz? Söylenecekleri telefona, gereksizleri çizgili balona koy.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u02.n04.r02.ipucu": {
@@ -13280,7 +13280,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u03.n01.r02.s2": {
-		"text": "Ailemiz bize neler verir? Yalnızlık mı, sevgi ve destek mi?",
+		"text": "Ailemiz bize neler verir? Sevgi ve destek mi, yalnızlık mı?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u03.n01.r02": {
@@ -13416,7 +13416,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u04.n02.r01.s2": {
-		"text": "Mustafa Kemal nasıl bir öğrenciydi? Tembel mi, çalışkan mı?",
+		"text": "Mustafa Kemal nasıl bir öğrenciydi? Çalışkan mı, tembel mi?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u04.n02.r01": {
@@ -13456,7 +13456,7 @@
 		"speaker": "BILGE"
 	},
 	"vo.g2.hayat_bilgisi.u04.n03.r01.p1": {
-		"text": "23 Nisan 1920'de Ankara'da Türkiye Büyük Millet Meclisi açıldı.",
+		"text": "23 Nisan'da Ankara'da Türkiye Büyük Millet Meclisi açıldı.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u04.n03.r01.p2": {
@@ -13484,7 +13484,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u04.n03.r02.p1": {
-		"text": "29 Ekim 1923'te Cumhuriyet ilan edildi. Cumhuriyette halk, kendini yönetecek kişileri seçer.",
+		"text": "29 Ekim'de Cumhuriyet ilan edildi. Cumhuriyette halk, kendini yönetecek kişileri seçer.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u04.n03.r02.p2": {
@@ -13548,7 +13548,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u04.n04.r01.s2": {
-		"text": "Bayramlar insanlar arasında neyi güçlendirir? Küslüğü mü, sevgi ve dostluğu mu?",
+		"text": "Bayramlar insanlar arasında neyi güçlendirir? Sevgi ve dostluğu mu, küslüğü mü?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u04.n04.r01": {
@@ -13636,7 +13636,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u05.n01.r03": {
-		"text": "Her mevsimi onun hava olayıyla eşleştir.",
+		"text": "Her mevsimi onu anlatan resimle eşleştir.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u05.n02.intro": {
@@ -14625,6 +14625,38 @@
 	},
 	"vo.tk.arkadas": {
 		"text": "arkadaş",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u01.n02.r04.hint": {
+		"text": "Uykuya dalmak için sakin ve yumuşak sesler iyi gelir.",
+		"speaker": "BILGE"
+	},
+	"vo.tk.van_golu": {
+		"text": "Van Gölü",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.bayrak_direkte": {
+		"text": "Bayrak direkte",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.cabuk": {
+		"text": "çabuk",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.okul": {
+		"text": "okul",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.mektep": {
+		"text": "mektep",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.ali_uyudu": {
+		"text": "Ali uyudu",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.ayse_guldu": {
+		"text": "Ayşe güldü",
 		"speaker": "ANLATICI"
 	}
 }
