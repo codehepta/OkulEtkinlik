@@ -680,7 +680,8 @@ static func _draw_arrow(ci: CanvasItem, c: Vector2, s: float, d: Vector2) -> voi
 	ci.draw_colored_polygon(PackedVector2Array([
 		c + d * s * 0.34, c + d * s * 0.04 + perp * s * 0.2, c + d * s * 0.04 - perp * s * 0.2]), ClayStyle.INK)
 
-## Kıvrık dönüş oku: bakış yönünde ilerler, çeyrek yayla yana (side: -1 sol, 1 sağ) döner.
+## Kıvrık dönüş oku: arkadan gelir, çeyrek yayla yana (side: -1 sol, 1 sağ) kıvrılır; ucu gezginin
+## döndükten sonra ilerleyeceği hücreyi gösterir.
 ## Şekil yukarı bakış için kurulur ve `angle` kadar döndürülür (GridLogic.facing_angle).
 static func _draw_turn(ci: CanvasItem, c: Vector2, s: float, side: float, angle: float = 0.0) -> void:
 	var w: float = s * 0.12

@@ -13,7 +13,8 @@ const DIRS: Dictionary = {
 }
 ## Saat yönünde yön sırası (dönüş kartları için).
 const FACING_ORDER: PackedStringArray = ["up", "right", "down", "left"]
-## Göreli oklar: ileri git, sola dön, sağa dön (dönüş yerinde yapılır).
+## Göreli oklar: ileri git, sola dön, sağa dön. Dönüş kartı gösterdiği yöne döner ve o yöne bir
+## hücre ilerler (kıvrık okun ucu gezginin gideceği yer); sonraki kartlar bu yeni yöne göre okunur.
 const RELATIVE_CARDS: PackedStringArray = ["forward", "turn_left", "turn_right"]
 ## Mutlak oklar: her kart bir hücre o yöne gider ve yönü ayarlar.
 const ABSOLUTE_CARDS: PackedStringArray = ["up", "down", "left", "right"]
@@ -55,10 +56,9 @@ static func step(cell: Vector2i, facing: String, card: String) -> Dictionary:
 	match card:
 		"forward":
 			return {"cell": cell + (DIRS[facing] as Vector2i), "facing": facing}
-		"turn_left":
-			return {"cell": cell, "facing": FACING_ORDER[(i + 3) % 4]}
-		"turn_right":
-			return {"cell": cell, "facing": FACING_ORDER[(i + 1) % 4]}
+		"turn_left", "turn_right":
+			var nf: String = FACING_ORDER[(i + (3 if card == "turn_left" else 1)) % 4]
+			return {"cell": cell + (DIRS[nf] as Vector2i), "facing": nf}
 	return {"cell": cell + (DIRS[card] as Vector2i), "facing": card}
 
 ## Kartın üzerinde çizilen ok yönü: "ileri" kartı gezginin o anki bakış yönünü gösterir
