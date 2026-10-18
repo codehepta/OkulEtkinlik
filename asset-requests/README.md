@@ -83,6 +83,7 @@ Yerel üretilen görsellerin kaynağı (model, tohum, prompt): `docs/assets/imag
 
 ## Geliştiriciler (agent) için
 - Yeni bir içerik ünitesi eklendiğinde eksik asset'ler için `tools/missing_assets.gd` çalıştırılır ve sıradaki numarayla yeni bir parti dosyası açılır.
-- Her prompt `docs/assets/style-guide.md`'deki sabit bloklardan biriyle (STYLE_SPRITE / STYLE_SCENE / STYLE_ICON) **tam metin olarak** biter ya da başlar; sahip kopyala-yapıştır yapabilmelidir.
+- Her prompt `docs/assets/style-guide.md`'deki sabit bloklardan biriyle (STYLE_SPRITE / STYLE_SCENE / STYLE_ICON / STYLE_REAL) **tam metin olarak** biter ya da başlar; sahip kopyala-yapıştır yapabilmelidir.
+- Kil görünümünde iyi anlaşılmayan öğeler (özellikle fen: karışımlar, katmanlar, gerçek malzemeler) `STYLE_REAL` ile gerçekçi üretilir ve öğe başlığının altına `- **Stil:** STYLE_REAL` satırı eklenir (style-guide §1.8). `tools/imagegen` ayrıştırıcısı stil bloğunu adla seçmez, promptu olduğu gibi kullanır; `STYLE_REAL` gri arka plan cümlesini içerdiği için arka plan silme de kendiliğinden çalışır.
 - Görsellerde asla metin, harf ya da rakam istenmez.
 - Dosya biçimi önceki partilerle aynı kalır: özet tablo + numaralı promptlar + teslim kontrol listesi.
