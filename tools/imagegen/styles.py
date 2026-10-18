@@ -62,6 +62,11 @@ def real_prompt(prompt: str) -> str | None:
     return prompt.replace(STYLE_BLOCKS[name], STYLE_REAL)
 
 
+def wants_real_variant(item: BatchItem, dual_style: bool) -> bool:
+    """İnsanlı görseller karakter tutarlılığı için kilde kalır; bayrak yalnızca işaretsiz öğeleri genişletir."""
+    return item.has_human is False or (dual_style and item.has_human is None)
+
+
 def variants_for(item: BatchItem, dual_style: bool) -> list[tuple[str, str]]:
     """Öğe için üretilecek (dosya son eki, prompt) çiftleri: kil "" ve/veya gerçekçi "_real"."""
     prompt = item.prompt
@@ -72,9 +77,7 @@ def variants_for(item: BatchItem, dual_style: bool) -> list[tuple[str, str]]:
     if prompt_style(prompt) == "STYLE_REAL":
         return [(REAL_SUFFIX, prompt)]
     variants = [("", prompt)]
-    # insanlı görseller karakter tutarlılığı için kilde kalır; bayrak yalnızca işaretsiz öğeleri genişletir
-    wants_real = item.has_human is False or (dual_style and item.has_human is None)
-    real = real_prompt(prompt) if wants_real else None
+    real = real_prompt(prompt) if wants_real_variant(item, dual_style) else None
     if real is not None:
         variants.append((REAL_SUFFIX, real))
     return variants

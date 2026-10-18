@@ -3,12 +3,15 @@
 Kullanım (repo kökünden):
     uv run --project tools/imagegen python tools/imagegen/generate.py 060 --items 1-5 --seeds 2
 
-Çıktı: build/imagegen/<parti>/<anahtar>/s<tohum>.png (ham) + s<tohum>_cut.png (arka planı silinmiş)
-       + s<tohum>.json (model, sürüm, tohum, prompt) + build/imagegen/<parti>/sheet.png (seçim sayfası).
+Çıktı: build/imagegen/<parti>/<anahtar>/s<tohum>_<model>.png (ham) + _cut.png (arka planı silinmiş)
+       + .json (model, sürüm, tohum, prompt) + build/imagegen/<parti>/sheet_<model>.png (seçim sayfası).
+İnsansız öğelerde (`- **İnsan:** yok` ya da --dual-style) aynı tohumla kilsiz bir aday da üretilir:
+s<tohum>_<model>_real.png (STYLE_REAL; bkz. styles.py).
 Adaylar assets/'e otomatik girmez; seçim sahibindir (bkz. approve.py).
 """
 
 import argparse
+import itertools
 import json
 import sys
 import time
@@ -19,6 +22,7 @@ from pathlib import Path
 from PIL import Image, ImageChops, ImageDraw, ImageFilter
 
 from batch_parser import BatchItem, parse_batch
+from styles import REAL_SUFFIX, prompt_style, variants_for, wants_real_variant
 
 REPO = Path(__file__).resolve().parents[2]
 OUT_ROOT = REPO / "build" / "imagegen"
@@ -39,7 +43,34 @@ SIZES: dict[str, tuple[int, int]] = {
 MODELS: dict[str, dict] = {
     "zimage": {"registry": "z-image-turbo", "license": "Apache-2.0", "steps": 9},
     "klein": {"registry": "flux2-klein-4b", "license": "Apache-2.0", "steps": 4},
+    # istem geliştirici (pe/) indirilmez ve kullanılmaz; mflux yalnızca model alt klasörlerini indirir
+    "ernie": {"registry": "baidu/ERNIE-Image-Turbo", "license": "Apache-2.0", "steps": 8,
+              "hf_repo": "baidu/ERNIE-Image-Turbo", "revision": "bc68c81e2a1730a394d5fc9fae70713dee940140"},
 }
+
+
+def hf_cached_revision(repo_id: str, lookup: Callable[[str, str], object] | None = None) -> str | None:
+    """Hugging Face önbelleğindeki anlık görüntünün commit'i (ağa çıkmaz); önbellekte yoksa None."""
+    if lookup is None:
+        from huggingface_hub import try_to_load_from_cache
+
+        lookup = lambda repo, filename: try_to_load_from_cache(repo, filename)  # noqa: E731
+    path = lookup(repo_id, "model_index.json")
+    if not isinstance(path, str):
+        return None
+    return Path(path).parent.name
+
+
+def image_of(result: object) -> Image.Image:
+    """mflux sürümüne göre sonuç ya PIL görselidir ya da .image taşıyan bir sarmalayıcıdır."""
+    return result if isinstance(result, Image.Image) else result.image
+
+
+def candidate_label(path: Path) -> str:
+    """Seçim sayfasındaki aday etiketi: "s1000" (kil) ya da "s1000 real" (STYLE_REAL)."""
+    stem = path.stem.removesuffix("_cut")
+    seed = stem.split("_")[0]
+    return f"{seed} real" if stem.endswith(REAL_SUFFIX) else seed
 
 
 # klein, stil referanslarındaki nesneleri içerik sanıp çizebiliyor (ör. ırmağın ortasına elma);
@@ -111,7 +142,17 @@ class Generator:
         lora_paths = [l.split(":")[0] for l in lora] or None
         lora_scales = [float(l.split(":")[1]) if ":" in l else 1.0 for l in lora] or None
         registry = MODELS[model]["registry"]
-        if model == "zimage":
+        if model == "ernie":
+            from mflux.models.common.config import ModelConfig
+            from mflux.models.ernie_image import ErnieImage
+
+            self.pipe = ErnieImage(
+                model_config=ModelConfig.ernie_image_turbo(),
+                quantize=quantize,
+                lora_paths=lora_paths,
+                lora_scales=lora_scales,
+            )
+        elif model == "zimage":
             from mflux.models.z_image.variants.z_image import ZImage
 
             self.pipe = ZImage(
@@ -142,7 +183,11 @@ class Generator:
 
     def generate(self, prompt: str, seed: int, size: tuple[int, int], steps: int, refs: list[Path]) -> Image.Image:
         w, h = size
-        if self.model == "zimage":
+        if self.model == "ernie":
+            # damıtılmış model: guidance yalnızca 1.0 olabilir
+            result = self.pipe.generate_image(seed=seed, prompt=prompt, width=w, height=h,
+                                              num_inference_steps=steps, guidance=1.0)
+        elif self.model == "zimage":
             result = self.pipe.generate_image(seed=seed, prompt=prompt, width=w, height=h, num_inference_steps=steps)
         elif not self.needs_refs:
             result = self.pipe.generate_image(seed=seed, prompt=prompt, width=w, height=h, num_inference_steps=steps)
@@ -151,7 +196,7 @@ class Generator:
                 seed=seed, prompt=prompt, width=w, height=h, num_inference_steps=steps,
                 image_paths=[str(r) for r in refs],
             )
-        return result.image
+        return image_of(result)
 
 
 _FILL_MARKER = (255, 0, 254)
@@ -239,7 +284,7 @@ def contact_sheet(rows: list[tuple[str, list[Path]]], dest: Path, cell: int = 30
             x = 12 + c * (cell + 12) + (cell - im.width) // 2
             y = y0 + label_h + (cell - im.height) // 2
             sheet.paste(im, (x, y), im)
-            draw.text((12 + c * (cell + 12), y0 + label_h - 2), p.stem.split("_")[0], fill=(120, 120, 120))
+            draw.text((12 + c * (cell + 12), y0 + label_h - 2), candidate_label(p), fill=(120, 120, 120))
     sheet.save(dest)
 
 
@@ -267,6 +312,9 @@ def main() -> None:
                     help="üretme; mevcut ham adayların arka planını yeniden sil (kesimler üzerine yazılır)")
     ap.add_argument("--no-style-instruction", action="store_true",
                     help="stil referansı varken prompt'a 'yalnızca stil' talimatını ekleme")
+    ap.add_argument("--dual-style", action="store_true",
+                    help="İnsan satırı olmayan öğelerde de kil adayının yanında aynı tohumla STYLE_REAL adayı üret "
+                         "('- **İnsan:** yok' işaretli öğelerde bu zaten yapılır; insanlı öğeler kilde kalır)")
     args = ap.parse_args()
 
     batch_file = find_batch(args.batch)
@@ -294,9 +342,10 @@ def main() -> None:
             if not item.remove_background:
                 continue
             for k in range(args.seeds):
-                raw = out_dir / item.key / f"s{args.seed_base + k}_{args.model}.png"
-                if raw.exists():
-                    to_recut.append((raw, raw.parent / f"{raw.stem}_cut.png", raw.with_suffix(".json")))
+                for suffix, _ in variants_for(item, args.dual_style):
+                    raw = out_dir / item.key / f"s{args.seed_base + k}_{args.model}{suffix}.png"
+                    if raw.exists():
+                        to_recut.append((raw, raw.parent / f"{raw.stem}_cut.png", raw.with_suffix(".json")))
         cut_all(to_recut, flood_thresh(args))
         return
 
@@ -311,6 +360,12 @@ def main() -> None:
         sys.exit("Referanslı ve referanssız öğeler karışık: --items ile ayrı çalıştır.")
     gen = Generator(args.model, args.quantize, args.lora, needs_refs=needs_refs)
     print(f"Model yüklendi: {time.time() - t0:.0f} sn")
+    hf_revision = None
+    if "hf_repo" in MODELS[args.model]:
+        hf_revision = hf_cached_revision(MODELS[args.model]["hf_repo"])
+        if hf_revision != MODELS[args.model]["revision"]:
+            print(f"UYARI: önbellekteki {MODELS[args.model]['hf_repo']} sürümü {hf_revision}, "
+                  f"beklenen {MODELS[args.model]['revision']}; kayda önbellektekini yazıyorum", flush=True)
 
     cycle = DutyCycle(args.work_minutes * 60, args.rest_minutes * 60)
     planned: list[tuple[BatchItem, list[Path]]] = []
@@ -328,20 +383,26 @@ def main() -> None:
             refs.append(ref)
         if args.model == "klein":
             refs += style_refs
-        prompt = item.prompt
-        if args.contrast_bg:
-            prompt = prompt.replace(LIGHT_BG, CONTRAST_BG)
-        if args.model == "klein" and style_refs and not args.no_style_instruction:
-            prompt = STYLE_REF_INSTRUCTION + prompt
+        variants: list[tuple[str, str, str]] = []  # (dosya son eki, prompt, stil bloğu)
+        for suffix, prompt in variants_for(item, args.dual_style):
+            style = prompt_style(prompt) or "?"
+            if args.contrast_bg:
+                prompt = prompt.replace(LIGHT_BG, CONTRAST_BG)
+            if args.model == "klein" and style_refs and not args.no_style_instruction:
+                prompt = STYLE_REF_INSTRUCTION + prompt
+            variants.append((suffix, prompt, style))
+        if wants_real_variant(item, args.dual_style) and [v[0] for v in variants] == [""]:
+            print(f"YALNIZ KİL {item.number} {item.key}: {prompt_style(item.prompt) or 'stil bloğu yok'}, "
+                  f"STYLE_REAL'e çevrilmedi", flush=True)
         size = SIZES.get(item.ratio, SIZES["1:1"])
         item_dir = out_dir / item.key
         item_dir.mkdir(parents=True, exist_ok=True)
         shown: list[Path] = []
-        for k in range(args.seeds):
+        for k, (suffix, prompt, style) in itertools.product(range(args.seeds), variants):
             seed = args.seed_base + k
-            raw = item_dir / f"s{seed}_{args.model}.png"
+            raw = item_dir / f"s{seed}_{args.model}{suffix}.png"
             cut_requested = not args.no_cut and item.remove_background
-            cut_path = item_dir / f"s{seed}_{args.model}_cut.png"
+            cut_path = item_dir / f"s{seed}_{args.model}{suffix}_cut.png"
             if raw.exists() and raw.with_suffix(".json").exists():
                 # önceki çalıştırmadan kalmış: yeniden üretme, yalnızca eksik kesimi tamamla
                 if cut_requested and not cut_path.exists():
@@ -357,10 +418,13 @@ def main() -> None:
                 "model": MODELS[args.model]["registry"], "model_license": MODELS[args.model]["license"],
                 "mflux": MFLUX_VERSION, "quantize": args.quantize, "steps": steps, "seed": seed,
                 "size": list(size), "prompt": prompt, "lora": args.lora,
+                "style": style,
                 "references": [str(r.relative_to(REPO)) for r in refs],
                 "background_removed": cut_requested,
                 "birefnet": f"{BIREFNET_REPO}@{BIREFNET_REVISION}" if cut_requested else None,
             }
+            if hf_revision is not None:
+                meta["hf_revision"] = hf_revision
             meta_path = raw.with_suffix(".json")
             meta_path.write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
             if cut_requested:
@@ -368,7 +432,7 @@ def main() -> None:
             shown.append(cut_path if cut_requested else raw)
             took = time.time() - t
             cycle.add_work(took)
-            print(f"{datetime.now():%H:%M} {item.number:>3} {item.key} s{seed}: {took:.0f} sn", flush=True)
+            print(f"{datetime.now():%H:%M} {item.number:>3} {item.key} s{seed}{suffix}: {took:.0f} sn", flush=True)
             if cycle.work_s and cycle.worked >= cycle.work_s:
                 print(f"{datetime.now():%H:%M} dinlenme: {args.rest_minutes:.0f} dk", flush=True)
                 cycle.maybe_rest()

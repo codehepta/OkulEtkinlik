@@ -6,7 +6,8 @@ from PIL import Image
 
 from approve import prepare
 from batch_parser import BatchItem
-from generate import DutyCycle, choose_mask, flood_foreground, is_geometric, select_items
+from generate import MODELS, DutyCycle, candidate_label, choose_mask, flood_foreground, hf_cached_revision, \
+    image_of, is_geometric, select_items
 
 
 def _item(n: int) -> BatchItem:
@@ -112,6 +113,44 @@ class CutoutFallbackTest(unittest.TestCase):
         chosen, used_fallback = choose_mask(good, flood)
         self.assertFalse(used_fallback)
         self.assertIs(chosen, good)
+
+
+class ErnieSupportTest(unittest.TestCase):
+    def test_model_entry(self) -> None:
+        ernie = MODELS["ernie"]
+        self.assertEqual(ernie["registry"], "baidu/ERNIE-Image-Turbo")
+        self.assertEqual(ernie["license"], "Apache-2.0")
+        self.assertEqual(ernie["steps"], 8)
+        self.assertTrue(ernie["revision"].startswith("bc68c81e"))
+
+    def test_image_of_accepts_pil_or_wrapper(self) -> None:
+        im = Image.new("RGB", (4, 4))
+
+        class Wrapped:
+            image = im
+
+        self.assertIs(image_of(im), im)
+        self.assertIs(image_of(Wrapped()), im)
+
+    def test_cached_revision_reads_snapshot_folder(self) -> None:
+        calls: list[tuple[str, str]] = []
+
+        def lookup(repo_id: str, filename: str) -> str:
+            calls.append((repo_id, filename))
+            return f"/hf/hub/models--baidu--ERNIE-Image-Turbo/snapshots/bc68c81e2a17/{filename}"
+
+        self.assertEqual(hf_cached_revision("baidu/ERNIE-Image-Turbo", lookup=lookup), "bc68c81e2a17")
+        self.assertEqual(calls, [("baidu/ERNIE-Image-Turbo", "model_index.json")])
+
+    def test_cached_revision_missing(self) -> None:
+        self.assertIsNone(hf_cached_revision("x/y", lookup=lambda repo_id, filename: None))
+
+
+class CandidateLabelTest(unittest.TestCase):
+    def test_labels_clay_and_real(self) -> None:
+        self.assertEqual(candidate_label(Path("s1000_ernie_cut.png")), "s1000")
+        self.assertEqual(candidate_label(Path("s1000_ernie_real_cut.png")), "s1000 real")
+        self.assertEqual(candidate_label(Path("s1001_zimage_real.png")), "s1001 real")
 
 
 if __name__ == "__main__":
