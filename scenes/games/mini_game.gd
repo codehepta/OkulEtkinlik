@@ -80,11 +80,16 @@ func _reduce_motion() -> bool:
 	return settings is Dictionary and bool((settings as Dictionary).get("reduce_motion", false))
 
 ## Sol tık ya da dokunma basışı mı?
+## Basış: sol fare tuşu ya da dokunma. Telefonda bir dokunuş, dokunma olayının yanında taklit bir
+## fare olayı da üretir (emulate_mouse_from_touch); ikisini birden saymamak için taklit açıkken
+## dokunma olayı yok sayılır, basış fare olayından gelir.
 static func is_press(event: InputEvent) -> bool:
 	if event is InputEventMouseButton:
 		var mb: InputEventMouseButton = event as InputEventMouseButton
 		return mb.pressed and mb.button_index == MOUSE_BUTTON_LEFT
-	return event is InputEventScreenTouch and (event as InputEventScreenTouch).pressed
+	if event is InputEventScreenTouch and (event as InputEventScreenTouch).pressed:
+		return not bool(ProjectSettings.get_setting("input_devices/pointing/emulate_mouse_from_touch", true))
+	return false
 
 ## Dokunma geri bildirimi: ses + 0.1 sn ölçek "pop".
 func _tap_feedback(c: Control) -> void:

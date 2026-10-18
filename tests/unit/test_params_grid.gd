@@ -133,7 +133,7 @@ func test_grid_invalid() -> void:
 	_bad(_with(_follow(), {"arrows": "absolute"}), "mutlak sette göreli kart")
 	_bad(_with(_follow(), {"program": ["forward", "forward", "forward", "forward"]}), "program ızgaradan çıkar")
 	_bad(_with(_follow(), {"walls": [[0, 1]]}), "program duvara çarpar")
-	_bad(_with(_follow(), {"program": ["turn_left"]}), "program başlangıçta biter")
+	_bad(_with(_follow(), {"program": ["forward", "turn_right", "turn_right", "turn_right"]}), "program başlangıçta biter")
 	_bad(_with(_copy(), {"target": []}), "boş hedef")
 	_bad(_with(_copy(), {"target": [[8, 0]]}), "hedef dışarıda")
 	_bad(_with(_copy(), {"target": [[1, 1], [1, 1]]}), "yinelenen hedef")
@@ -177,7 +177,7 @@ func test_grid_error_messages() -> void:
 	assert_eq(_errs(blocked), [ContentValidator.msg("err.params.grid_unreachable")] as Array[String], "ulaşılamayan hedef")
 	assert_eq(_errs(_with(_follow(), {"program": ["forward", "forward", "forward", "forward"]})),
 		[ContentValidator.msg("err.params.grid_program_path")] as Array[String])
-	assert_eq(_errs(_with(_follow(), {"program": ["turn_left"]})),
+	assert_eq(_errs(_with(_follow(), {"program": ["forward", "turn_right", "turn_right", "turn_right"]})),
 		[ContentValidator.msg("err.params.grid_program_end")] as Array[String])
 	assert_eq(_errs(_with(_sym(), {"axis": 6, "given": [[3, 1]]})),
 		[ContentValidator.msg("err.params.grid_mirror")] as Array[String])
@@ -205,10 +205,10 @@ func test_grid_logic_simulate_and_shortest() -> void:
 	assert_eq((sim["states"] as Array).size(), 1)
 	assert_eq(sim["end"], Vector2i(1, 3))
 	var turn: Dictionary = GridLogic.simulate(["turn_left", "forward"], Vector2i(0, 3), "right", 6, 4, walls)
-	assert_eq(turn["end"], Vector2i(0, 2))
+	assert_eq(turn["end"], Vector2i(0, 1), "sola dön yukarı bir hücre, ileri bir hücre daha")
 	assert_eq(str(turn["end_facing"]), "up")
 	var rel: Array[String] = GridLogic.shortest_program(Vector2i(0, 3), "right", Vector2i(5, 0), "relative", 6, 4, walls)
-	assert_eq(rel.size(), 10, "2 dönüş + 8 ileri")
+	assert_eq(rel.size(), 8, "her kart bir hücre: 5 sağ + 3 yukarı")
 	var rs: Dictionary = GridLogic.simulate(rel, Vector2i(0, 3), "right", 6, 4, walls)
 	assert_false(bool(rs["blocked"]))
 	assert_eq(rs["end"], Vector2i(5, 0))
@@ -285,3 +285,29 @@ func test_card_facings_track_turns() -> void:
 	assert_eq(GridLogic.card_facings(["forward", "forward", "turn_left", "forward", "turn_right", "forward"], "down"),
 		["down", "down", "down", "right", "right", "down"] as Array[String])
 	assert_eq(GridLogic.card_facings([], "up"), [] as Array[String])
+
+## Telefonda bir dokunuş hem dokunma hem (taklit) fare olayı üretir: yalnız biri basış sayılmalı,
+## yoksa ızgara paletine bir basışta iki kart eklenir.
+func test_touch_is_not_counted_twice_when_mouse_is_emulated() -> void:
+	var key: String = "input_devices/pointing/emulate_mouse_from_touch"
+	var before: Variant = ProjectSettings.get_setting(key, true)
+	var touch: InputEventScreenTouch = InputEventScreenTouch.new()
+	touch.pressed = true
+	var mouse: InputEventMouseButton = InputEventMouseButton.new()
+	mouse.pressed = true
+	mouse.button_index = MOUSE_BUTTON_LEFT
+	ProjectSettings.set_setting(key, true)
+	assert_false(MiniGame.is_press(touch), "taklit açıkken dokunma olayı sayılmaz (fare olayı gelecek)")
+	assert_true(MiniGame.is_press(mouse))
+	ProjectSettings.set_setting(key, false)
+	assert_true(MiniGame.is_press(touch), "taklit kapalıysa dokunma basış sayılır")
+	ProjectSettings.set_setting(key, before)
+
+## Dönüş kartı gösterdiği yöne ilerler: döner ve yeni yöne bir hücre gider; sonraki yön okun yönüdür.
+func test_turn_card_moves_where_it_points() -> void:
+	assert_eq(GridLogic.step(Vector2i(2, 2), "right", "turn_left"), {"cell": Vector2i(2, 1), "facing": "up"})
+	assert_eq(GridLogic.step(Vector2i(2, 2), "down", "turn_right"), {"cell": Vector2i(1, 2), "facing": "left"})
+	for f: String in GridLogic.FACING_ORDER:
+		for card: String in ["turn_left", "turn_right"]:
+			var n: Dictionary = GridLogic.step(Vector2i(2, 2), f, card)
+			assert_eq(n["cell"], Vector2i(2, 2) + (GridLogic.DIRS[str(n["facing"])] as Vector2i), "%s + %s: yeni yöne bir hücre" % [f, card])
