@@ -109,8 +109,10 @@ def norm(s: str) -> str:
 
 def heard_ok(expected: str, say: str, asr: str) -> bool:
     # Whisper harf kısaltmasını yazılışıyla verir ("TRT"): yazılış duyulduysa doğru say
-    if expected.strip() in ABBR and expected.strip().isupper() and norm(asr) == norm(expected):
-        return True
+    if expected.strip() in ABBR and expected.strip().isupper():
+        a = norm(asr).replace(" ", "")  # "Tebe Meme" da TEBEMEME'dir
+        if a in (norm(expected), norm(ABBR[expected.strip()])):
+            return True
     expected = expand_abbr(expected)
     n = words_to_int(expected)
     a = norm(asr)
