@@ -3,6 +3,8 @@
 İki biçimi de okur:
 - yeni: "### N. `assets/images/...png`" başlığı + `- **Oran:**`, `- **Referans görsel:**` satırları
 - eski (FAZ1 paketi): `### N. Açıklama` başlığı + `**Dosya:**`, `**Oran:** · **Arka plan:** · **Referans:**` satırı
+
+İsteğe bağlı işaretler (style-guide §1.8–1.9): `- **Stil:** STYLE_REAL` ve `- **İnsan:** yok|var`.
 """
 
 import re
@@ -11,6 +13,8 @@ from dataclasses import dataclass
 _PATH_RE = re.compile(r"`(assets/images/[a-z0-9_/]+\.png)`")
 _RATIO_RE = re.compile(r"\*\*Oran:\*\*\s*([0-9]+:[0-9]+)")
 _REF_RE = re.compile(r"\*\*Referans(?: görsel)?:\*\*\s*`(assets/[^`]+\.png)`")
+_STYLE_RE = re.compile(r"\*\*Stil:\*\*\s*`?(STYLE_[A-Z]+)`?")
+_HUMAN_RE = re.compile(r"\*\*İnsan:\*\*\s*(\S+)")
 _BG_RE = re.compile(r"\*\*Arka plan:\*\*\s*(SİL|KALSIN)")
 _CODE_RE = re.compile(r"^```[a-z]*\n(.*?)\n```", re.S | re.M)
 _HEADING_RE = re.compile(r"^### (\d+)\.", re.M)
@@ -37,6 +41,8 @@ class BatchItem:
     reference: str | None
     prompt: str
     remove_background: bool
+    style: str | None = None  # "Stil:" satırındaki blok adı, ör. STYLE_REAL
+    has_human: bool | None = None  # "İnsan:" satırı; yok → False, satır yoksa None
 
     @property
     def key(self) -> str:
@@ -58,6 +64,8 @@ def parse_batch(text: str) -> list[BatchItem]:
         ratio_match = _RATIO_RE.search(section)
         ref_match = _REF_RE.search(section)
         bg_match = _BG_RE.search(section)
+        style_match = _STYLE_RE.search(section)
+        human_match = _HUMAN_RE.search(section)
         if bg_match is not None:
             remove_bg = bg_match.group(1) == "SİL"
         else:
@@ -69,5 +77,7 @@ def parse_batch(text: str) -> list[BatchItem]:
             reference=ref_match.group(1) if ref_match else None,
             prompt=prompt,
             remove_background=remove_bg,
+            style=style_match.group(1) if style_match else None,
+            has_human=None if human_match is None else human_match.group(1).casefold() != "yok",
         ))
     return items

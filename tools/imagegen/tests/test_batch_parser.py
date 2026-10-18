@@ -49,6 +49,28 @@ island diorama, isolated on a plain solid light grey background (#EEEEEE).
 """
 
 
+MARKED = """### 7. `assets/images/items/fen/su_kum.png`
+
+- **Oran:** 1:1
+- **Referans görsel:** yok
+- **İnsan:** yok
+- **Stil:** STYLE_REAL
+
+```
+a glass of water with sand, isolated on a plain solid light grey background (#EEEEEE), no text.
+```
+
+### 8. `assets/images/items/sahne/oyun.png`
+
+- **Oran:** 1:1
+- **İnsan:** var
+
+```
+two children playing, isolated on a plain solid light grey background (#EEEEEE), no text.
+```
+"""
+
+
 class ParseBatchTest(unittest.TestCase):
     def test_new_format_fields(self) -> None:
         items = parse_batch(NEW_FORMAT)
@@ -77,6 +99,18 @@ class ParseBatchTest(unittest.TestCase):
     def test_sections_without_prompt_are_skipped(self) -> None:
         text = "### 1. `assets/images/ui/x.png`\n\n- **Oran:** 1:1\n\nkod bloğu yok\n"
         self.assertEqual(parse_batch(text), [])
+
+    def test_human_and_style_markers(self) -> None:
+        glass, play = parse_batch(MARKED)
+        self.assertIs(glass.has_human, False)
+        self.assertEqual(glass.style, "STYLE_REAL")
+        self.assertIs(play.has_human, True)
+        self.assertIsNone(play.style)
+
+    def test_markers_absent_by_default(self) -> None:
+        prism = parse_batch(NEW_FORMAT)[0]
+        self.assertIsNone(prism.has_human)
+        self.assertIsNone(prism.style)
 
     def test_key_from_path(self) -> None:
         prism = parse_batch(NEW_FORMAT)[0]
