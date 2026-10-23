@@ -7,7 +7,7 @@ items.json : [{"key": "vo.sayi.11", "text": "on bir", "speaker": "NARRATOR"}, ..
 voices.json: {"NARRATOR": {"ref": "voices/narrator.wav", "ref_text": "<exact transcript of ref>"}, ...}
 Each line's spoken variants come from the rules module (variants(key, text) -> [{"say", "carrier"}]).
 Short lines (<= --short-words, default 2) get 4 seeds per variant, long lines 2. Resumable: existing wavs are skipped.
-Writes out_dir/meta.json for tts_select.py.
+Writes out_dir/meta.json for tts_select.py. --lora loads a VoxCPM2 LoRA adapter on top of the base model.
 """
 import argparse, importlib, json, numpy as np, soundfile as sf, torch
 from pathlib import Path
@@ -20,11 +20,17 @@ ap.add_argument("--short-seeds", type=int, default=4); ap.add_argument("--long-s
 ap.add_argument("--short-words", type=int, default=2, help="lines with at most this many words count as short")
 ap.add_argument("--work-minutes", type=float, default=0, help="duty cycle: generate this long, then rest (0 = off)")
 ap.add_argument("--rest-minutes", type=float, default=10)
+ap.add_argument("--lora", help="VoxCPM2 LoRA directory (lora_weights.safetensors, r=64 alpha=64, LM+DiT), e.g. a Turkish adapter")
+ap.add_argument("--steps", type=int, default=10, help="inference timesteps (Turkish LoRA cards recommend 16)")
 a = ap.parse_args()
 rules = importlib.import_module(a.rules)
 out = Path(a.out); out.mkdir(parents=True, exist_ok=True)
 items = json.load(open(a.items)); voices = json.load(open(a.voices))
-m = VoxCPM.from_pretrained("openbmb/VoxCPM2", load_denoiser=False, optimize=False, device="mps")
+lora = {}
+if a.lora:
+    from voxcpm.model.voxcpm import LoRAConfig
+    lora = {"lora_weights_path": a.lora, "lora_config": LoRAConfig(enable_lm=True, enable_dit=True, enable_proj=False, r=64, alpha=64)}
+m = VoxCPM.from_pretrained("openbmb/VoxCPM2", load_denoiser=False, optimize=False, device="mps", **lora)
 sr = m.tts_model.sample_rate
 import time
 meta = []; work_start = time.time()
@@ -42,7 +48,7 @@ for it in items:
                 # continuation (prompt_wav + prompt_text) keeps the reference's language and accent;
                 # reference_wav keeps the timbre. Both together were needed for short words.
                 w = m.generate(text=var["say"], prompt_wav_path=v["ref"], prompt_text=v["ref_text"],
-                               reference_wav_path=v["ref"], cfg_value=2.0, inference_timesteps=10)
+                               reference_wav_path=v["ref"], cfg_value=2.0, inference_timesteps=a.steps)
                 sf.write(out / name, np.asarray(w, np.float32), sr)
             meta.append({**it, "say": var["say"], "carrier": var["carrier"], "seed": s, "file": name})
     print("done", it["key"], flush=True)

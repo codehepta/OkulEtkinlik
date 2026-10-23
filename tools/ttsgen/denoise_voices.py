@@ -28,11 +28,23 @@ NOTE = "DeepFilterNet3 (deepfilternet 0.5.6, MIT/Apache-2.0), tam bastırma; ard
 def _ffmpeg(args: list[str], data: bytes | None = None) -> bytes:
     return subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", *args], input=data, capture_output=True, check=True).stdout
 
+def _fit(w: np.ndarray, n: int) -> np.ndarray:
+    """Tam n örneğe kırp ya da sonuna sessizlik ekle."""
+    return w[:n].copy() if len(w) >= n else np.concatenate([w, np.zeros(n - len(w), np.float32)])
+
+def _resample(w: np.ndarray, src: int, dst: int, af: str = "") -> np.ndarray:
+    """ffmpeg ile örnekleme hızı dönüşümü (+ isteğe bağlı süzgeç). Sona dolgu eklenir: dönüştürücü kısa
+    dosyalarda son birkaç yüz örneği düşürüyor; çıktı her zaman girdinin süresine birebir uydurulur."""
+    chain = ",".join(x for x in (af, "apad=pad_len=4096") if x)
+    raw = _ffmpeg(["-f", "f32le", "-ar", str(src), "-ac", "1", "-i", "-", "-af", chain,
+                   "-ar", str(dst), "-ac", "1", "-f", "f32le", "-"], w.astype(np.float32).tobytes())
+    return _fit(np.frombuffer(raw, np.float32), len(w) * dst // src)
+
 def decode_48k(path: Path) -> np.ndarray:
-    """Ogg'u 48 kHz mono çözer. ffmpeg Vorbis'in son sayfa kırpmasını uygulamaz (sona ~20 ms fazladan
-    örnek ekler); bu yüzden gerçek uzunluk libsndfile'dan alınır ve fazlası kesilir."""
-    n = sf.info(str(path)).frames * 48000 // sf.info(str(path)).samplerate
-    return np.frombuffer(_ffmpeg(["-i", str(path), "-ac", "1", "-ar", "48000", "-f", "f32le", "-"]), np.float32)[:n].copy()
+    """Ogg'u 48 kHz mono çözer. Uzunluk libsndfile'dan gelir (Vorbis son sayfa kırpması uygulanmış):
+    ffmpeg kimi dosyada sona fazladan örnek ekliyor, kimisinde dönüştürücü sondan örnek düşürüyordu."""
+    x, sr = sf.read(str(path), dtype="float32", always_2d=True)
+    return _resample(x.mean(axis=1), sr, 48000)
 
 _MODEL = None
 def denoise_48k(w: np.ndarray) -> np.ndarray:
@@ -46,9 +58,7 @@ def denoise_48k(w: np.ndarray) -> np.ndarray:
 def write_voice_ogg(w48: np.ndarray, dst: Path) -> None:
     """−18 LUFS, 24 kHz mono Ogg Vorbis (en yüksek sıkıştırma). Uzunluk girdiyle birebir aynı kalır:
     fazladan örnekli kısa (tek sayfalık) dosyaları Chrome "PTS is not defined" diye çalamıyor."""
-    raw = _ffmpeg(["-f", "f32le", "-ar", "48000", "-ac", "1", "-i", "-", "-af", "loudnorm=I=-18:TP=-1.5:LRA=11",
-                   "-ar", "24000", "-ac", "1", "-f", "f32le", "-"], w48.astype(np.float32).tobytes())
-    w = np.frombuffer(raw, np.float32)[:len(w48) // 2]
+    w = _resample(w48, 48000, 24000, "loudnorm=I=-18:TP=-1.5:LRA=11")
     dst.parent.mkdir(parents=True, exist_ok=True)
     tmp = dst.with_suffix(".tmp.ogg")
     with sf.SoundFile(tmp, "w", 24000, 1, format="OGG", subtype="VORBIS", compression_level=1.0) as f:

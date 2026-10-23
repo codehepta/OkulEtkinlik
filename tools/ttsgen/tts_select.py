@@ -33,8 +33,11 @@ for x in meta:
     if x["carrier"]:
         words = [wd for s in r["segments"] for wd in s.get("words", [])]
         if len(words) >= 2:
-            last = words[-1]; heard = last["word"].strip()
-            w = w[max(0, int((last["start"] - 0.06) * sr)):min(len(w), int((last["end"] + 0.12) * sr))]
+            # keep every word after the carrier ("Tebe Meme" is one target split in two), else the last word
+            n = len(getattr(rules, "CARRIER", "").split()) or len(words) - 1
+            tail = words[n:] if x["say"].startswith(getattr(rules, "CARRIER", "\0")) and len(words) > n else words[-1:]
+            heard = " ".join(wd["word"].strip() for wd in tail)
+            w = w[max(0, int((tail[0]["start"] - 0.06) * sr)):min(len(w), int((tail[-1]["end"] + 0.12) * sr))]
     x["heard"], x["dur"] = heard, round(len(w) / sr, 2)
     x["final"] = x["file"].replace(".wav", "_final.wav"); sf.write(D / x["final"], finish(w, sr), sr)
     x["ok"] = rules.heard_ok(x["text"], x["say"], heard)

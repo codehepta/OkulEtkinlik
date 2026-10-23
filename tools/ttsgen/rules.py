@@ -7,7 +7,11 @@
 - Okunuş düzeltmeleri SAY_AS ile (altmış → atmış).
 - Zor harf/kelimelerde (ı, ö, c, arı) sahip giriş cümleli kesimi seçti.
 - Kısaltmalar (ABBR): birimler ve unvanlar açık okunur (kg → Kilogram, Dr. → Doktor); harf kısaltmaları aralıksız harf adlarıyla (TDK → TEDEKA, TRT → TERETE; tamamı büyük harf).
-- Soru eki tek başına (mı/mi/mu/mü): önüne fiil konur ('Yazdın mı?'), son kelime kesilir.
+- Soru eki tek başına (mı/mi/mu/mü): giriş cümlesiyle ('Şimdi okuyalım: mı?'), son kelime kesilir. Fiilli biçimde
+  ('Yazdın mı?') kesilen ekin başında ı/u/ü duyuluyordu (3. sınıf pilotu, 2026-10-23).
+- Noktalama kartı (?, !, .): adıyla okunur ('Soru işareti.').
+- Kart eki ('ye, 'dan): hece gibi giriş cümlesiyle üretilir, son kelime kesilir.
+- Üç ve daha çok kelimelik sayı (vo.sayi): büyük harf ve noktayla düz cümle ('Beş yüz yedi.').
 - Uzun satır: metin olduğu gibi.
 Her biçim birden çok tohumla üretilir; Whisper doğru duyan ve kesik olmayan adayı seçer.
 """
@@ -20,8 +24,10 @@ ABBR = {"kg": "kilogram", "km": "kilometre", "Dr.": "Doktor", "Cad.": "Cadde", "
         # Harf kısaltmaları harf adlarıyla aralıksız tek sözcük okunur (K = "ka"); ek de buna uyar (TDK'ya).
         # Tamamı büyük harf yazılır: küçük harfle başlayınca model bazen yanlış okuyor.
         "TDK": "TEDEKA", "TRT": "TERETE", "TBMM": "TEBEMEME"}
-# Tek başına soru eki: fiille üretilip son kelime kesilir.
-PARTICLE = {"mı": "Yazdın mı?", "mi": "Bildin mi?", "mu": "Buldun mu?", "mü": "Gördün mü?"}
+# Tek başına soru eki: giriş cümlesiyle üretilip son kelime kesilir.
+PARTICLE = {p: f"{CARRIER}{p}?" for p in ("mı", "mi", "mu", "mü")}
+# Noktalama kartları adıyla okunur.
+PUNCT = {"?": "Soru işareti", "!": "Ünlem işareti", ".": "Nokta", ",": "Virgül"}
 
 def expand_abbr(t: str) -> str:
     import re
@@ -45,11 +51,17 @@ def variants(key: str, text: str) -> list[dict]:
             return [{"say": "Yumuşak ge.", "carrier": False}]
         return [{"say": f"{cap(t)}e.", "carrier": False}, {"say": f"{cap(t)}e!", "carrier": False},
                 {"say": f"{CARRIER}{t}e.", "carrier": True}]
+    if t in PUNCT:
+        return [{"say": PUNCT[t] + ".", "carrier": False}, {"say": PUNCT[t] + "!", "carrier": False}]
     if t.rstrip("?") in PARTICLE:
         return [{"say": PARTICLE[t.rstrip("?")], "carrier": True}]
     t = expand_abbr(t)
     if ".hece." in key:
         return [{"say": f"{CARRIER}{t}.", "carrier": True}]
+    if t.startswith("'"):  # kart eki ('ye, 'dan): hece gibi giriş cümlesiyle, kesmeden sonrası okunur
+        return [{"say": f"{CARRIER}{t[1:]}.", "carrier": True}]
+    if key.startswith("vo.sayi.") and len(t.split()) > 2:  # uzun sayı: büyük harf + nokta (düz cümle)
+        return [{"say": cap(t.rstrip(".!?")) + ".", "carrier": False}]
     if len(t.split()) <= 2:
         base = cap(t.rstrip(".!?"))
         out = [{"say": base + "!", "carrier": False}, {"say": base + ".", "carrier": False}]
@@ -102,6 +114,11 @@ def norm(s: str) -> str:
     return re.sub(r"[^\wçğıöşü ]", "", s.lower().replace("İ", "i").replace("I", "ı")).strip()
 
 def heard_ok(expected: str, say: str, asr: str) -> bool:
+    # Whisper harf kısaltmasını yazılışıyla verir ("TRT"): yazılış duyulduysa doğru say
+    if expected.strip() in ABBR and expected.strip().isupper():
+        a = norm(asr).replace(" ", "")  # "Tebe Meme" da TEBEMEME'dir
+        if a in (norm(expected), norm(ABBR[expected.strip()])):
+            return True
     expected = expand_abbr(expected)
     n = words_to_int(expected)
     a = norm(asr)
