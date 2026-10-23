@@ -67,7 +67,7 @@ Projenin tasarımı için önce [spec](docs/superpowers/specs/2026-10-04-bilgi-a
 2. **Küçük ve anlamlı commit'ler.** Biçim: `tür(kapsam): kısa açıklama` — tür: `feat`, `fix`, `content`, `assets`, `docs`, `test`, `ci`, `chore`, `ui`, `tools`. Açıklama Türkçe olabilir. Örnek: `feat(games): sequence şablonu ve testleri`.
 3. **TDD:** önce başarısız testi yaz, sonra kodu.
 4. Push et ve `main`'e PR aç. PR şablonu otomatik gelir; bütün kutuları doldur.
-5. CI (`test` + `android-debug`) yeşil olmadan PR birleştirilmez.
+5. CI PR'larda kapalıdır; yalnızca `main`'e push'ta çalışır (`test` + `android-debug`). PR açmadan önce tam test paketini yerelde çalıştır ve sonucu açıklamaya yaz. PR'ları proje sahibi onaylayıp birleştirir.
 6. Birleştirme yöntemi: **merge commit** (görev başına commit geçmişi korunur). Birleşen dal silinir.
 7. Spec'le çelişen ya da spec'in sessiz kaldığı bir konuda varsayım yapma; PR açıklamasına **"Açık soru"** olarak yaz ve sahibin kararını bekle.
 

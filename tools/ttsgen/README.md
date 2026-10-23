@@ -12,7 +12,8 @@ Ayrıntılı yöntem ve dersler: `~/.claude/skills/generating-speech-locally-wit
   - `SAY_AS` okunuş düzeltmeleri, ör. altmış → atmış.
   - `ABBR` kısaltmaların açık okunuşu (kg → kilogram, Dr. → Doktor), satır içinde de. Harf kısaltmaları aralıksız harf adlarıyla, tamamı büyük harf: TDK → TEDEKA, TRT → TERETE.
   - Kart ekleri ('ye, 'dan) giriş cümlesiyle üretilir, son kelime kesilir.
-  - `PARTICLE` tek başına soru ekleri: fiille üretilir (`Yazdın mı?`), son kelime kesilir.
+  - `PARTICLE` tek başına soru ekleri ve kart ekleri ('de, 'dan): giriş cümlesiyle üretilir (`Şimdi okuyalım: mı?`), son kelime kesilir. Fiilli biçimde (`Yazdın mı?`) kesilen ekin başında ı/u/ü duyuluyordu (3. sınıf pilotu).
+  - `PUNCT` noktalama kartları adıyla okunur: `Soru işareti.`, `Ünlem işareti.`, `Nokta.` (Emrah onayladı, 2026-10-23).
   - Whisper'ın rakamlarını sözcüğe çeviren karşılaştırma.
 - `rules_single.py`: tek aday kipi. Cümle ve iki kelimelik satırlar için.
 - `rules_plain.py`: sayı, saat, para ve tek kelime için düz biçimler (`X!`, `X.`).

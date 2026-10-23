@@ -13,7 +13,7 @@ MEB 1–3. sınıf öğretim programlarıyla (Türkiye Yüzyılı Maarif Modeli)
 - Müfredat öğrenme çıktısı kodlarını **uydurma.** Her kod resmi MEB kaynağından (PDF adı ve sayfası) doğrulanıp `docs/curriculum/outcomes.json`'a kaynağıyla girilir. Doğrulayamıyorsan içeriği yazma, durumu sahibe bildir.
 - İhtiyaç olduğunda `asset-requests/NNN-konu.md` parti dosyası yazarsın (biçim: mevcut 001–006 dosyaları). Prompt'lar Gemini / Nano Banana uyumlu, İngilizce, kopyala-yapıştıra hazır olmalı ve stil bloğunu tam metin içermeli. Görsellerde asla metin, harf ya da rakam istenmez.
 - **Görseller:** Parti dosyalarındaki görseller için yerel açık modellerle (`tools/imagegen/`) ya da Blender'la (geometrik öğeler) **aday** üretebilirsin. **Seçimi ve onayı sahip yapar;** onaylanmamış görsel `assets/`'e girmez. Yalnızca Apache 2.0 / MIT gibi CC BY 4.0 ile uyumlu lisanslı modeller kullanılır (şu an: Z-Image Turbo, FLUX.2 [klein] 4B, ERNIE-Image-Turbo, BiRefNet). "Ticari olmayan" ya da "araştırma" lisanslı modeller (ör. FLUX.2 klein 9B / dev, Qwen-Image-2.1) yasaktır. Her onaylı görselin model, sürüm, tohum ve prompt kaydı tutulur. Sahip görselleri Nano Banana ile kendisi de üretebilir.
-- **Sesleri sen üretmezsin; sahip üretir.**
+- **Sesler:** Seslendirme adaylarını yerel açık modelle (VoxCPM2, Apache 2.0) üretebilirsin. Müzik ve efekt adaylarını da hazırlayabilirsin; yalnızca CC0 ya da proje lisansıyla uyumlu kaynaklar. **Seçimi ve onayı sahip yapar;** onaylanmamış ses `assets/`'e girmez. Model, sürüm, tohum, okunan metin ve referans ses kaydı tutulur. Higgsfield'in müzik/efekt modelleri kullanılmaz. Sahip sesleri kendisi de kaydedebilir.
 - Asset eksikliği **asla** geliştirmeyi durdurmaz. `AssetRegistry` yer tutucu gösterir, `Narrator` cihazın Türkçe TTS'ine düşer.
 - Çocuk UX'i: ceza, can kaybı, süre baskısı, şans kutusu ya da seri (streak) baskısı yok. Bütün yönergeler seslendirilir ve tekrar dinlenebilir.
 
@@ -58,7 +58,7 @@ Cloud ortamında Godot indirmesi başarısız olursa (ağ kısıtı), ortamın `
 
 ## İş akışı
 - Katkı süreci, dal adları, commit biçimi ve PR kontrol listesi: `CONTRIBUTING.md` ve `.github/pull_request_template.md`. Depo ayarları: `docs/github-ayarlari.md`.
-- Plandaki her görev grubu için `main`'den bir dal aç (`feat/<konu>`), küçük ve anlamlı commit'ler at, PR aç. CI yeşil olmadan birleştirme.
+- Plandaki her görev grubu için `main`'den bir dal aç (`feat/<konu>`), küçük ve anlamlı commit'ler at, PR aç. **PR'ları sahip onaylayıp birleştirir;** sen birleştirmezsin. CI PR'larda kapalıdır (yalnızca `main`'e push'ta çalışır), bu yüzden PR açmadan önce tam test paketini yerelde çalıştır ve sonucu PR açıklamasına yaz.
 - Her yerel görsel üretim oturumu `main`'den açılan ayrı bir dalda (`feat/assets-<konu>`) ve kendi PR'ında olur; görseller tek bir uzun PR'da biriktirilmez.
 - TDD: önce başarısız testi yaz, sonra kodu.
 - Bir görev spec'le çelişiyorsa ya da spec bir konuda sessizse, varsayım yapıp ilerleme. Spec'e "Açık soru" olarak ekle ve sahibe sor.
