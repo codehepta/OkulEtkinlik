@@ -2,5 +2,8 @@
 düz biçimin iyi tohumunu seçti (Cam şişe, Zübeyde Hanım, Kâğıt kutusu, Sepeti seç)."""
 import rules
 def variants(key, text):
-    return [v for v in rules.variants(key, text) if not v["carrier"]][:2]
+    v = rules.variants(key, text)
+    plain = [x for x in v if not x["carrier"]][:2]
+    return plain or v  # yalnız giriş cümleli biçimi olanlar (kart eki, soru eki) kalıpla üretilir
 heard_ok = rules.heard_ok
+CARRIER = rules.CARRIER
