@@ -21,43 +21,43 @@ Yerel üretilen görsellerin kaynağı (model, tohum, prompt): `docs/assets/imag
 | 002 | Ada haritası, bölge arka planları, ikonlar, duraklar | Yüksek | ✅ Tamam (Ağaç Evi arka planı yerel klein, 2026-10-05) |
 | 003 | Profil avatarları + arayüz ikonları | Yüksek | ✅ Tamam (hoparlör tarifi netleştirildi, 2026-10-05) |
 | 004 | Sayma ve eşleştirme nesneleri (28 nesne) | Yüksek | ✅ Tamam (13 nesne yerel klein, 2026-10-05) |
-| 005 | Genel seslendirme (Gemini TTS) + sayılar 0–20 | Yüksek | ⏳ Bekliyor |
+| 005 | Genel seslendirme (Gemini TTS) + sayılar 0–20 | Yüksek | ✅ Tamam (yerel VoxCPM2, 1. sınıf, #43; 2026-10-23 itibarıyla eksik ses yok) |
 | 006 | Müzik (6 parça) + ses efektleri (12) | Orta | 🟡 Geçici seçim yerleşti (müzik: OpenGameArt CC0 · 6; efektler: Kenney CC0 · 8/12, unlock/whoosh/celebrate/bilge_hoot kodda kullanılmıyor; 2026-10-07). Sahip müzikleri yeniden değerlendirecek |
-| 007 | 1. sınıf Matematik Faz 1 ünitesi seslendirmesi (32 satır, Faz 3c'de `u02` yollarına taşındı) + `vo.genel.takma_ad` | Yüksek | ⏳ Bekliyor |
-| 008 | 1. sınıf Matematik ünite 1 çıkartmaları (6) + `ui.replay` ikonu | Orta | ⏳ Bekliyor |
+| 007 | 1. sınıf Matematik Faz 1 ünitesi seslendirmesi (32 satır, Faz 3c'de `u02` yollarına taşındı) + `vo.genel.takma_ad` | Yüksek | ✅ Tamam (yerel VoxCPM2, 1. sınıf, #43; 2026-10-23 itibarıyla eksik ses yok) |
+| 008 | 1. sınıf Matematik ünite 1 çıkartmaları (6) + `ui.replay` ikonu | Orta | ✅ Tamam (çıkartmalar ve `ui.replay` yerinde; eksik asset raporu 2026-10-23: 0) |
 | 009 | Oturum sonu: gece zemini (`ui.bg_night`) + "büyüğünü çağır" ikonu (`ui.call_grownup`) | Orta | ✅ Tamam (yerel klein, 2026-10-05) |
 | 010 | Faz 3 şablonları: 5 madeni para + 6 banknot (`item.para.*`), bütün pizza (`item.yiyecek.pizza`), saat kadranı (`ui.clock_face`). 1 kuruş iptal (Faz 3b) | Orta | ✅ Tamam (paralar, banknotlar, pizza, kadran Blender; 2026-10-06) |
 | 011 | Faz 3b `grid` şablonu: gezgin karakter (`char.grid.gezgin`), hedef bayrağı (`ui.grid.hedef`), duvar taşı (`ui.grid.duvar`) | Orta | ✅ Tamam (yerel klein, 2026-10-05) |
-| 012 | Faz 3b seslendirmesi: tahmin modu yönergeleri (`vo.tahmin.*`, 4) + 1. sınıf tam ve yarım saatler (`vo.saat.*`, 24) | Orta | ⏳ Bekliyor |
+| 012 | Faz 3b seslendirmesi: tahmin modu yönergeleri (`vo.tahmin.*`, 4) + 1. sınıf tam ve yarım saatler (`vo.saat.*`, 24) | Orta | ✅ Tamam (yerel VoxCPM2, 1. sınıf, #43; 2026-10-23 itibarıyla eksik ses yok) |
 | 015 | Faz 4a Türkçe şablonları: iz kalemi (`ui.trace_pencil`), sonraki sayfa oku (`ui.page_next`), kitap (`ui.book`) | Orta | ✅ Tamam (yerel klein, 2026-10-05) |
 | 016 | Faz 4a Türkçe şablonları: sayfa çevirme sesi (`sfx.page_turn`) | Düşük | ✅ Tamam (Kenney CC0 card-slide-3, 2026-10-07) |
 | 023 | Ağaç Evi süs eşyaları (12 `decor.*`) | Orta | ✅ Tamam (yerel klein, 2026-10-05) |
-| 024 | Faz 7a seslendirmesi: Tekrar Bulutu girişi + Ağaç Evi (3 satır) | Orta | ⏳ Bekliyor |
+| 024 | Faz 7a seslendirmesi: Tekrar Bulutu girişi + Ağaç Evi (3 satır) | Orta | ✅ Tamam (yerel VoxCPM2, #43–#58; 2026-10-23 itibarıyla eksik ses yok) |
 | 030 | Faz 3c 1. sınıf Matematik: konum resimleri (`item.konum.*`, 11) + ölçme araçları (`item.olcu.*`, 5) | Orta | ✅ Tamam (konum seti Blender, ölçme araçları klein, 2026-10-06) |
 | 031 | Faz 3c: geometrik şekil çeşitleri (`item.sekil.*`, 8; temel üçgen/kare/dikdörtgen 040'ta), yapı parçaları (`item.yapi.*`, 4), yuvarlak/köşeli eşyalar (`item.esya.*`, 8) | Orta | ✅ Tamam (klein + Blender, 2026-10-06) |
 | 032 | Faz 3c: yarışçı hayvanlar (4), küçük ayıcık ve top (2), hikâye sahneleri (`item.sahne.*`, 3) | Orta | ✅ Tamam (sayma sahneleri sayımı doğrulanarak seçildi, 2026-10-06) |
 | 033 | Faz 3c: 1. sınıf Matematik çıkartmaları (`st.matematik.g1_*`, 26) | Orta | ✅ Tamam (çetele ve grafik Blender, 2026-10-06) |
-| 034 | Faz 3c: 1. sınıf Matematik seslendirmesi (187 satır) | Orta | ⏳ Bekliyor |
+| 034 | Faz 3c: 1. sınıf Matematik seslendirmesi (187 satır) | Orta | ✅ Tamam (yerel VoxCPM2, 1. sınıf, #43; 2026-10-23 itibarıyla eksik ses yok) |
 | 040 | 2. sınıf Matematik: geometrik cisim ve şekiller (`item.cisim.*`, `item.sekil.*`; 1. ve 3. sınıfla ortak) | Yüksek | ✅ Tamam (Blender, 2026-10-05) |
 | 041 | 2. sınıf Matematik: cisim örneği nesneler, yapılar ve modeller (`item.nesne.*`, `item.yapi.*`, `item.model.*`) | Yüksek | ✅ Tamam (klein 7 + Blender 9, 2026-10-05) |
 | 042 | 2. sınıf Matematik: sıvı ve ölçme birimleri, sahneler, simetri nesneleri, kutu simgeleri | Orta | ✅ Tamam (yerel klein; el karıştan türetildi, 2026-10-06) |
 | 043 | 2. sınıf Matematik durak çıkartmaları (42 `st.matematik.g2_*`) | Orta | ✅ Tamam (yerel klein + Blender: zar, onluk demeti, çetele; 2026-10-06) |
-| 044 | 2. sınıf Matematik: sayılar 21–100 + kart sesleri (`vo.sayi.*`, `vo.mat2.*`) | Yüksek | ⏳ Bekliyor |
-| 045 | 2. sınıf Matematik ünite 1–6 seslendirmesi (`vo.g2.matematik.*`) | Yüksek | ⏳ Bekliyor |
+| 044 | 2. sınıf Matematik: sayılar 21–100 + kart sesleri (`vo.sayi.*`, `vo.mat2.*`) | Yüksek | ✅ Tamam (yerel VoxCPM2, 2. sınıf, #45; 2026-10-23 itibarıyla eksik ses yok) |
+| 045 | 2. sınıf Matematik ünite 1–6 seslendirmesi (`vo.g2.matematik.*`) | Yüksek | ✅ Tamam (yerel VoxCPM2, 2. sınıf, #45; 2026-10-23 itibarıyla eksik ses yok) |
 | 050 | Faz 3e: 3. sınıf Matematik nesne görselleri (55: taban blokları, olay kartları, ölçü nesneleri, şekiller, araçlar, kaplar, simetri kartları) | Orta | ✅ Tamam (klein + ızgara/simetri Blender, 2026-10-06) |
 | 051 | Faz 3e: 3. sınıf Matematik çıkartmaları (36 `st.matematik.*`) | Orta | ✅ Tamam (yerel klein + Blender: yüzlük blok, küp kule, 5 basamaklı merdiven, 6 yapraklı çiçek, 2 vagonlu tren; 2026-10-06) |
-| 052 | Faz 3e: 3. sınıf Matematik seslendirmesi 1, ünite 1–3 + sayılar, nesne adları, etiketler (230 satır) | Orta | ⏳ Bekliyor |
-| 053 | Faz 3e: 3. sınıf Matematik seslendirmesi 2, ünite 4–6 (103 satır) | Orta | ⏳ Bekliyor |
+| 052 | Faz 3e: 3. sınıf Matematik seslendirmesi 1, ünite 1–3 + sayılar, nesne adları, etiketler (230 satır) | Orta | ✅ Tamam (yerel VoxCPM2, 3. sınıf, #58; 2026-10-23 itibarıyla eksik ses yok) |
+| 053 | Faz 3e: 3. sınıf Matematik seslendirmesi 2, ünite 4–6 (103 satır) | Orta | ✅ Tamam (yerel VoxCPM2, 3. sınıf, #58; 2026-10-23 itibarıyla eksik ses yok) |
 | 060 | 1. sınıf Türkçe: sözcük ve nesne görselleri (70 `item.*`) | Yüksek | ✅ Tamam (yerel klein, 2026-10-05; robot tarifi netleştirildi) |
 | 061 | 1. sınıf Türkçe: hikâye, cümle, durum ve davranış sahneleri (96 `item.*`) | Orta | ✅ Tamam (yerel klein; gölge sahneleri Blender, 2026-10-05) |
 | 062 | 1. sınıf Türkçe: kutu simgeleri, duygu yüzleri, ses simgeleri (13 `item.*`) | Orta | ✅ Tamam (yerel klein; sayı çıkartmaları Blender, 2026-10-06) |
 | 063 | 1. sınıf Türkçe çıkartmaları (65 `st.turkce.g1_*`) | Düşük | ✅ Tamam (yerel klein; sayı çıkartmaları Blender, 2026-10-06) |
-| 064 | 1. sınıf Türkçe: harf sesleri, heceler, sözcükler, ses kaynakları (77 satır) | En yüksek | ⏳ Bekliyor |
-| 065 | 1. sınıf Türkçe ünite 1–5 seslendirmesi (247 satır) | Yüksek | ⏳ Bekliyor |
-| 066 | 1. sınıf Türkçe ünite 6–9 seslendirmesi (219 satır) | Orta | ⏳ Bekliyor |
-| 070 | Faz 4c: 2. sınıf Türkçe seslendirmesi (430 satır, 8 tema) | Yüksek | ⏳ Bekliyor |
-| 071 | Faz 4c: 3. sınıf Türkçe seslendirmesi (515 satır, 8 tema) | Yüksek | ⏳ Bekliyor |
-| 072 | Faz 4c: Türkçe kart sözcükleri seslendirmesi (217 satır, `vo.tk.*`) | Orta | ⏳ Bekliyor |
+| 064 | 1. sınıf Türkçe: harf sesleri, heceler, sözcükler, ses kaynakları (77 satır) | En yüksek | ✅ Tamam (yerel VoxCPM2, 1. sınıf, #43; ses kaynakları CC0; 2026-10-23 itibarıyla eksik ses yok) |
+| 065 | 1. sınıf Türkçe ünite 1–5 seslendirmesi (247 satır) | Yüksek | ✅ Tamam (yerel VoxCPM2, 1. sınıf, #43; 2026-10-23 itibarıyla eksik ses yok) |
+| 066 | 1. sınıf Türkçe ünite 6–9 seslendirmesi (219 satır) | Orta | ✅ Tamam (yerel VoxCPM2, 1. sınıf, #43; 2026-10-23 itibarıyla eksik ses yok) |
+| 070 | Faz 4c: 2. sınıf Türkçe seslendirmesi (430 satır, 8 tema) | Yüksek | ✅ Tamam (yerel VoxCPM2, 2. sınıf, #45; 2026-10-23 itibarıyla eksik ses yok) |
+| 071 | Faz 4c: 3. sınıf Türkçe seslendirmesi (515 satır, 8 tema) | Yüksek | ✅ Tamam (yerel VoxCPM2, 3. sınıf, #58; 2026-10-23 itibarıyla eksik ses yok) |
+| 072 | Faz 4c: Türkçe kart sözcükleri seslendirmesi (217 satır, `vo.tk.*`) | Orta | ✅ Tamam (yerel VoxCPM2, 2–3. sınıf, #45 ve #58; 2026-10-23 itibarıyla eksik ses yok) |
 | 073 | Faz 4c: 2. sınıf Türkçe hikâye ve durum görselleri | Orta | ✅ Tamam (yerel klein; 19 öğe netleştirilmiş tarifle yeniden üretildi, 2026-10-06) |
 | 074 | Faz 4c: 3. sınıf Türkçe hikâye ve durum görselleri | Orta | ✅ Tamam (yerel klein; 16 öğe netleştirilmiş tarifle yeniden üretildi, 2026-10-06) |
 | 075 | Faz 4c: 2–3. sınıf Türkçe çıkartmaları (80) | Orta | ✅ Tamam (yerel klein, 2026-10-06) |
@@ -65,16 +65,16 @@ Yerel üretilen görsellerin kaynağı (model, tohum, prompt): `docs/assets/imag
 | 081 | Hayat Bilgisi 2. sınıf: nesne, davranış kartı ve sahne görselleri (`item.*`, 223) | Orta | ✅ Tamam (yerel klein, 2026-10-05) |
 | 082 | Hayat Bilgisi 3. sınıf: nesne, davranış kartı, sahne ve kroki görselleri (`item.*`, 182) | Orta | ✅ Tamam (yerel klein; krokiler Blender, 2026-10-05) |
 | 083 | Hayat Bilgisi durak çıkartmaları (`st.hayat_bilgisi.*`, 53) | Orta | ✅ Tamam (yerel klein; harita çıkartması Blender, 2026-10-05) |
-| 084 | Hayat Bilgisi 1. sınıf seslendirmesi + nesne adları (148 satır) | Yüksek | ⏳ Bekliyor |
-| 085 | Hayat Bilgisi 2. sınıf seslendirmesi + nesne adları (208 satır) | Yüksek | ⏳ Bekliyor |
-| 086 | Hayat Bilgisi 3. sınıf seslendirmesi + nesne adları (183 satır) | Yüksek | ⏳ Bekliyor |
+| 084 | Hayat Bilgisi 1. sınıf seslendirmesi + nesne adları (148 satır) | Yüksek | ✅ Tamam (yerel VoxCPM2, 1. sınıf, #43; 2026-10-23 itibarıyla eksik ses yok) |
+| 085 | Hayat Bilgisi 2. sınıf seslendirmesi + nesne adları (208 satır) | Yüksek | ✅ Tamam (yerel VoxCPM2, 2. sınıf, #45; 2026-10-23 itibarıyla eksik ses yok) |
+| 086 | Hayat Bilgisi 3. sınıf seslendirmesi + nesne adları (183 satır) | Yüksek | ✅ Tamam (yerel VoxCPM2, 3. sınıf, #58; 2026-10-23 itibarıyla eksik ses yok) |
 | 090 | Fen 3 görselleri, ünite 1–3 (69 `item.fen.*`: canlılar, duyular, yaşam döngüleri, kayaçlar, fosiller) | Orta | ✅ Tamam (yerel klein; nesneler yüzsüz, sorunlu öğeler ikinci turda netleştirildi, 2026-10-06) |
 | 091 | Fen 3 görselleri, ünite 4–6 (64 `item.fen.*`: maddeler, karışımlar, atıklar, hareket, elektrikli araç gereç, davranış kartları) | Orta | ✅ Tamam (yerel klein; nesneler yüzsüz, sorunlu öğeler ikinci turda netleştirildi, 2026-10-06) |
 | 092 | Fen 3 görselleri, ünite 7–8 (39 `item.fen.*`: toprak, bitki yetiştirme, yaşam alanları) | Orta | ✅ Tamam (yerel klein; nesneler yüzsüz, sorunlu öğeler ikinci turda netleştirildi, 2026-10-06) |
 | 093 | Fen 3 durum sahneleri (19 `item.fen.sahne.*`, 16:9) | Orta | ✅ Tamam (yerel klein; nesneler yüzsüz, sorunlu öğeler ikinci turda netleştirildi, 2026-10-06) |
 | 094 | Fen 3 çıkartmaları (20 `st.fen.*`) | Orta | ✅ Tamam (yerel klein; nesneler yüzsüz, sorunlu öğeler ikinci turda netleştirildi, 2026-10-06) |
-| 095 | Fen 3 seslendirmesi, ünite 1–4 (77 satır) | Orta | ⏳ Bekliyor |
-| 096 | Fen 3 seslendirmesi, ünite 5–8 + ortak kart sesleri (164 satır) | Orta | ⏳ Bekliyor |
+| 095 | Fen 3 seslendirmesi, ünite 1–4 (77 satır) | Orta | ✅ Tamam (yerel VoxCPM2, 3. sınıf, #58; 2026-10-23 itibarıyla eksik ses yok) |
+| 096 | Fen 3 seslendirmesi, ünite 5–8 + ortak kart sesleri (164 satır) | Orta | ✅ Tamam (yerel VoxCPM2, 3. sınıf, #58; 2026-10-23 itibarıyla eksik ses yok) |
 | 097 | Görsel düzeltmeleri 1: el kutuları, halı (kırmızı-mavi-sarı), canlı/cansız turlarındaki yüzlü cansızlar, çığ/karlı dağ (13 öğe) | Yüksek | ✅ Tamam (yerel klein, sahip seçti, 2026-10-12) |
 | 098 | Görsel düzeltmeleri 2: içerik denetiminde metni, sesi ya da soruyu tutmayan görseller (136 öğe; 2'si Blender) | Yüksek | ✅ Tamam (klein, Z-Image, Blender; 8 görseli Emrah abi Gemini ile üretti; 2026-10-18) |
 | 099 | Görsel düzeltmeleri 3: ikinci içerik denetiminin görsel bulguları (65 öğe; 5'i Blender) | Yüksek | ✅ Tamam (Z-Image, Blender; 22 görseli Emrah Gemini ile üretti; 2026-10-19) |
