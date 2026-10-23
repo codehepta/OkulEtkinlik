@@ -18,7 +18,7 @@ Ayrıntılı yöntem ve dersler: `~/.claude/skills/generating-speech-locally-wit
 - `rules_plain.py`: sayı, saat, para ve tek kelime için düz biçimler (`X!`, `X.`).
 - `tts_generate.py`, `tts_select.py`: üretim (çalışma/mola döngülü, kaldığı yerden devam eder) ve Whisper ile seçim.
 - `denoise_voices.py`: yerleşmiş seslerdeki arka plan uğultusunu (referans sesten gelen geniş bantlı zemin gürültüsü) DeepFilterNet3 ile giderir ve −18 LUFS'e yeniden normalleştirir. Her yeni yerleştirmeden sonra çalıştırılır; işlenen satırlar kayıtta `denoise` alanıyla işaretlenir ve atlanır (`uv run tools/ttsgen/denoise_voices.py`).
-- `place_g1.py`, `place_g2.py`: sınıfın onaylı seslerini −18 LUFS, mono 24 kHz Ogg Vorbis (en yüksek sıkıştırma, ≈42 kbps; APK bütçesi) olarak `assets/audio/voice/` altına koyar ve `docs/assets/voice-provenance.jsonl` kaydını yazar.
+- `place_g1.py`, `place_g2.py`, `place_g3.py`: sınıfın onaylı seslerini −18 LUFS, mono 24 kHz Ogg Vorbis (en yüksek sıkıştırma, ≈42 kbps; APK bütçesi) olarak `assets/audio/voice/` altına koyar ve `docs/assets/voice-provenance.jsonl` kaydını yazar.
 
 ## Kurulum
 ```bash
