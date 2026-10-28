@@ -78,6 +78,7 @@ Yerel üretilen görsellerin kaynağı (model, tohum, prompt): `docs/assets/imag
 | 097 | Görsel düzeltmeleri 1: el kutuları, halı (kırmızı-mavi-sarı), canlı/cansız turlarındaki yüzlü cansızlar, çığ/karlı dağ (13 öğe) | Yüksek | ✅ Tamam (yerel klein, sahip seçti, 2026-10-12) |
 | 098 | Görsel düzeltmeleri 2: içerik denetiminde metni, sesi ya da soruyu tutmayan görseller (136 öğe; 2'si Blender) | Yüksek | ✅ Tamam (klein, Z-Image, Blender; 8 görseli Emrah abi Gemini ile üretti; 2026-10-18) |
 | 099 | Görsel düzeltmeleri 3: ikinci içerik denetiminin görsel bulguları (65 öğe; 5'i Blender) | Yüksek | ✅ Tamam (Z-Image, Blender; 22 görseli Emrah Gemini ile üretti; 2026-10-19) |
+| 100 | Görsel düzeltmeleri 4: üçüncü içerik denetiminin görsel bulguları (53 öğe; 10'u Blender) | Yüksek | ✅ Tamam (Z-Image, ERNIE, Blender; 1 görseli Emrah Gemini ile üretti; 2026-10-28) |
 
 Önerilen sıra: 001 → 003 → 002 → 004 → 005 → 007 → 006 → 008 → 009 → 010 → 011 → 012 → 015 → 016 → 023 → 024 → 044 → 040 → 041 → 045 → 042 → 043 → 031 → 030 → 032 → 034 → 033 → 064 → 060 → 065 → 061 → 062 → 066 → 063 → 050 → 051 → 052 → 053 → 070 → 071 → 072 → 073 → 074 → 075 → 090 → 093 → 091 → 092 → 094 → 095 → 096. Hayat Bilgisi: 084 → 080 → 085 → 081 → 086 → 082 → 083 (önce seslendirme ve 1. sınıf, sonra üst sınıflar). Bilge karakter sayfası diğer bütün partilerin stil referansıdır.
 
