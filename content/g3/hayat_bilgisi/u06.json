@@ -53,7 +53,8 @@
 										"value": "label.hb.uyku_getirir",
 										"voice": "vo.ad.etiket.uyku_getirir"
 									}
-								]
+								],
+								"ordered": true
 							}
 						]
 					}

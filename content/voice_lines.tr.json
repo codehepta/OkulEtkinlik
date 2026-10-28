@@ -1336,7 +1336,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.matematik.u01.n02.r03": {
-		"text": "Yedi yüz kırk iki sayısının rakamlarına bak. Her rakamı basamak değeriyle eşleştir!",
+		"text": "Yedi yüz kırk iki sayısında yüzler basamağında yedi, onlar basamağında dört, birler basamağında iki var. Her rakamı basamak değeriyle eşleştir!",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.matematik.u01.n02.r04": {
@@ -1376,7 +1376,7 @@
 		"speaker": "BILGE"
 	},
 	"vo.g3.matematik.u01.n04.r01": {
-		"text": "Kırk yediyi sayı doğrusuna yerleştir. Kırka mı, elliye mi daha yakın?",
+		"text": "Kırk yediyi sayı doğrusuna yerleştir! Sonra kırka ve elliye kaç adım uzak olduğuna bak.",
 		"speaker": "ANLATICI"
 	},
 	"vo.sayi.40": {
@@ -2364,7 +2364,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.matematik.u04.n05.r04": {
-		"text": "Bardağa bak ve tahmin et!",
+		"text": "Bardağa bak ve hesapla!",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.matematik.u05.n01.intro": {
@@ -2468,7 +2468,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.matematik.u05.n03.p2": {
-		"text": "Bu şekli ortadan katlarsak iki yarısı üst üste gelir mi?",
+		"text": "İkinci şekli ortadan katlarsak iki yarısı üst üste gelir mi?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.matematik.u05.n03.q1": {
@@ -4968,7 +4968,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.u06.n02.r02": {
-		"text": "Başlığa ve resme bak. Sonra hikâyeyi oku.",
+		"text": "Resme bak. Sonra hikâyeyi oku.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.u06.n03.intro": {
@@ -4988,15 +4988,15 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.cumle.topu_sec": {
-		"text": "Topu seç.",
+		"text": "Topu bul.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.cumle.kalemi_sec": {
-		"text": "Kalemi seç.",
+		"text": "Kalemi bul.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.cumle.kitabi_sec": {
-		"text": "Kitabı seç.",
+		"text": "Kitabı bul.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.u06.n03.r01": {
@@ -5168,7 +5168,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.u07.n02.r02": {
-		"text": "Başlığa ve resme bak. Sence ne olacak? Şimdi oku.",
+		"text": "Resme bak. Sence ne olacak? Şimdi oku.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.u07.n03.intro": {
@@ -5336,7 +5336,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.u08.bayram.q1": {
-		"text": "Bayramda büyüklerimizi ne yaparız?",
+		"text": "Bayramda büyüklerimizi ziyaret edince ne yaparız?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.u08.bayram.q2": {
@@ -5400,7 +5400,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.u08.n02.r02": {
-		"text": "Başlığa ve resme bak. Sonra hikâyeyi oku.",
+		"text": "Resme bak. Sonra hikâyeyi oku.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.u08.n03.intro": {
@@ -5444,15 +5444,15 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.cumle.topaci_sec": {
-		"text": "Topacı seç.",
+		"text": "Topacı bul.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.cumle.sepeti_sec": {
-		"text": "Sepeti seç.",
+		"text": "Sepeti bul.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.cumle.haliyi_sec": {
-		"text": "Halıyı seç.",
+		"text": "Halıyı bul.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.u08.n04.r01": {
@@ -5624,7 +5624,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.u09.n02.r02": {
-		"text": "Başlığa ve resme bak. Sonra hikâyeyi oku.",
+		"text": "Resme bak. Sonra hikâyeyi oku.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.u09.n03.intro": {
@@ -5644,15 +5644,15 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.cumle.tabagi_sec": {
-		"text": "Tabağı seç.",
+		"text": "Tabağı bul.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.cumle.fidani_sec": {
-		"text": "Fidanı seç.",
+		"text": "Fidanı bul.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.cumle.mamayi_sec": {
-		"text": "Mamayı seç.",
+		"text": "Mamayı bul.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.turkce.u09.n03.r01": {
@@ -6164,7 +6164,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u01.n04.r05": {
-		"text": "Her cismin bir yüzü bir şekildir. Cismi, yüzündeki şekille eşleştir.",
+		"text": "Bu cisimlerin düz yüzleri var. Her cismi, düz yüzündeki şekille eşleştir.",
 		"speaker": "ANLATICI"
 	},
 	"vo.mat2.dikdortgen_ad": {
@@ -6172,7 +6172,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u01.n04.r06": {
-		"text": "Cisimleri tabanlarındaki şekillerle eşleştir. Dikdörtgen prizmaya dikkat!",
+		"text": "Her cismi, uçlarındaki yüzün şekliyle eşleştir. Üçgen prizmanın ucuna iyi bak!",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.matematik.u01.n05.intro": {
@@ -9332,7 +9332,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.turkce.u06.n02.r03": {
-		"text": "Bir deney yapacaksın. Adımları öğrenmek için kimi dinlersin?",
+		"text": "Bir deney yapacaksın. Adımları öğrenmek için ne dinlersin?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.turkce.u06.n02.r03.hint": {
@@ -9500,7 +9500,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.turkce.u07.n01.r01.p3": {
-		"text": "Komşu kazanı isteyince Hoca \"Kazan öldü.\" dedi. Komşu şaşırınca Hoca \"Doğurduğuna inandın, öldüğüne de inan!\" dedi.",
+		"text": "Hoca kazanı yine aldı, geri vermedi. Komşu isteyince \"Kazan öldü.\" dedi. Hoca \"Doğurduğuna inandın, öldüğüne de inan!\" dedi.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.turkce.u07.n01.r01.q1": {
@@ -9600,7 +9600,7 @@
 		"speaker": "BILGE"
 	},
 	"vo.g2.turkce.u07.n02.r03.c2": {
-		"text": "Hava durumu havayı anlatır, masal anlatmaz.",
+		"text": "Hava sunucusu havayı anlatır, masal anlatmaz.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.turkce.u07.n02.r03.c3": {
@@ -9708,7 +9708,7 @@
 		"speaker": "BILGE"
 	},
 	"vo.g2.turkce.u07.n04.r01": {
-		"text": "Ayşe bayrama hazırlanıyor. Kartları olayların sırasına göre diz.",
+		"text": "Ayşe'nin bayram sabahını hatırla. Kartları olayların sırasına göre diz.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.turkce.u07.n04.r02": {
@@ -10344,7 +10344,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u01.n05.r04": {
-		"text": "Bu sözcükler büyük harfle başlar. Her sözcüğü türüyle eşleştir.",
+		"text": "Bu sözcükler büyük harfle başlar. Her türü örneğiyle eşleştir.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u02.n01.intro": {
@@ -10668,7 +10668,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u02.n05.r04": {
-		"text": "Bu sözcükler büyük harfle başlar. Her sözcüğü türüyle eşleştir.",
+		"text": "Bu sözcükler büyük harfle başlar. Her türü örneğiyle eşleştir.",
 		"speaker": "ANLATICI"
 	},
 	"vo.tk.erzurum": {
@@ -10972,7 +10972,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u03.n05.r04": {
-		"text": "Bu sözcükler büyük harfle başlar. Her sözcüğü türüyle eşleştir.",
+		"text": "Bu sözcükler büyük harfle başlar. Her türü örneğiyle eşleştir.",
 		"speaker": "ANLATICI"
 	},
 	"vo.tk.kedi_adi": {
@@ -11176,7 +11176,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u04.n04.r01.p1": {
-		"text": "Selin, \"Ben yıldızlarla ilgili bir kitap almak istiyorum.\" dedi. Mete, \"Ben de hayvan kitabı.\" dedi.",
+		"text": "Selin, \"Ben hayvanlarla ilgili bir kitap almak istiyorum.\" dedi. Mete, \"Ben de yıldız kitabı.\" dedi.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u04.n04.r01.p2": {
@@ -11184,7 +11184,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u04.n04.r01.p3": {
-		"text": "Mete, \"Sen yıldız kitabını al, ben hayvan kitabını. Okuyunca değiştirelim mi?\" dedi.",
+		"text": "Mete, \"Sen hayvan kitabını al, ben yıldız kitabını. Okuyunca değiştirelim mi?\" dedi.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u04.n04.r01.q1": {
@@ -11272,7 +11272,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u04.n05.r04": {
-		"text": "Bu sözcükler büyük harfle başlar. Her sözcüğü türüyle eşleştir.",
+		"text": "Bu sözcükler büyük harfle başlar. Her türü örneğiyle eşleştir.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u05.n01.intro": {
@@ -11988,7 +11988,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u07.n03.r01.p3": {
-		"text": "Yemek gelince Hoca kürkünün yenini çorbaya uzattı. \"Ye kürküm ye!\" dedi. Herkes hatasını anladı.",
+		"text": "Yemek gelince Hoca kürkünün kolunu çorbaya uzattı. \"Ye kürküm ye!\" dedi. Herkes hatasını anladı.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u07.n03.r01.q1": {
@@ -12220,7 +12220,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u08.n02.r03": {
-		"text": "Sınıfınıza bir itfaiyeci konuk gelecek. O gelmeden önce ne yaparsın?",
+		"text": "Sınıfınıza bir çocuk kitabı yazarı konuk gelecek. O gelmeden önce ne yaparsın?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u08.n02.r03.hint": {
@@ -12228,7 +12228,7 @@
 		"speaker": "BILGE"
 	},
 	"vo.g3.turkce.u08.n02.r03.c2": {
-		"text": "İtfaiyeci gelince ne soracağını bilemedin. Sorularımızı önceden hazırlarız.",
+		"text": "Yazar gelince ne soracağını bilemedin. Sorularımızı önceden hazırlarız.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.turkce.u08.n02.r03.c3": {
@@ -12420,11 +12420,11 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.ad.simge.uygun": {
-		"text": "Uygun davranış (gülen yüz)",
+		"text": "Uygun davranış, gülen yüz",
 		"speaker": "ANLATICI"
 	},
 	"vo.ad.simge.uygun_degil": {
-		"text": "Uygun olmayan davranış (üzgün yüz)",
+		"text": "Uygun olmayan davranış, üzgün yüz",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.hayat_bilgisi.u01.n01.r02": {
@@ -12544,7 +12544,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.hayat_bilgisi.u02.n04.r01": {
-		"text": "Her durumu yardım isteyeceğin kişiyle eşleştir. Yangında yüz on ikiyi ararız.",
+		"text": "Her durumu yardım isteyeceğin kişiyle ya da numarayla eşleştir. Yangında yüz on ikiyi ararız.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.hayat_bilgisi.u02.n04.r02.ipucu": {
@@ -12960,7 +12960,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g1.hayat_bilgisi.u05.n04.r01": {
-		"text": "Hangi atıklar geri dönüşür? Geri dönüşenleri oklu kutuya, dönüşmeyenleri gri çöp kutusuna koy.",
+		"text": "Hangi atıklar geri dönüşür? Geri dönüşenleri oklu kutuya, dönüşmeyenleri çöp kutusuna koy.",
 		"speaker": "ANLATICI"
 	},
 	"vo.ad.kutu.kagit": {
@@ -13016,7 +13016,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u01.n01.r02": {
-		"text": "Defne'nin gününü sıraya diz. Sabah uyanır, kahvaltı yapar, okula gider, ödevini yapar ve uyur.",
+		"text": "Bir çocuğun gününü sıraya diz. Sabah uyanır, kahvaltı yapar, okula gider, ödevini yapar ve uyur.",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u01.n01.r03.ipucu": {
@@ -13504,19 +13504,19 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.ad.etiket.23_nisan": {
-		"text": "23 Nisan",
+		"text": "23 Nisan Çocuk Bayramı",
 		"speaker": "ANLATICI"
 	},
 	"vo.ad.etiket.19_mayis": {
-		"text": "19 Mayıs",
+		"text": "19 Mayıs Gençlik ve Spor Bayramı",
 		"speaker": "ANLATICI"
 	},
 	"vo.ad.etiket.29_ekim": {
-		"text": "29 Ekim",
+		"text": "29 Ekim Cumhuriyet Bayramı",
 		"speaker": "ANLATICI"
 	},
 	"vo.ad.etiket.30_agustos": {
-		"text": "30 Ağustos",
+		"text": "30 Ağustos Zafer Bayramı",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u04.n03.r03": {
@@ -13704,7 +13704,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u05.n03.r01": {
-		"text": "Depreme karşı neler yapmamız gerektiğini öğrenmek istiyorsun. Kime sorabilirsin?",
+		"text": "Depreme karşı neler yapmamız gerektiğini öğrenmek istiyorsun. Kimden ya da nereden öğrenebilirsin?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g2.hayat_bilgisi.u05.n03.r02.ipucu": {
@@ -14044,7 +14044,7 @@
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.hayat_bilgisi.u03.n02.r02.s2": {
-		"text": "Bu hikâye bize ne anlatıyor? Her meslek önemlidir mi, bazı meslekler gereksizdir mi?",
+		"text": "Bu hikâye bize ne anlatıyor? Her meslek önemli mi, yoksa bazı meslekler gereksiz mi?",
 		"speaker": "ANLATICI"
 	},
 	"vo.g3.hayat_bilgisi.u03.n02.r02": {
@@ -14657,6 +14657,26 @@
 	},
 	"vo.tk.ayse_guldu": {
 		"text": "Ayşe güldü",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.hayat_bilgisi.u04.n02.r01.p4": {
+		"text": "Rüştiyeden sonra Manastır Askerî İdadisi'ne, ardından İstanbul'daki Harp Okulu'na gitti. Rüştiye bugünkü ortaokula, idadi de liseye benzer.",
+		"speaker": "ANLATICI"
+	},
+	"vo.ad.milli.askerler_zafer": {
+		"text": "Askerlerimizin zaferi",
+		"speaker": "ANLATICI"
+	},
+	"vo.g2.turkce.u06.n02.r04.hint": {
+		"text": "Hangisi uçakları anlatır? Bir düşün.",
+		"speaker": "BILGE"
+	},
+	"vo.tk.ad": {
+		"text": "ad",
+		"speaker": "ANLATICI"
+	},
+	"vo.tk.isim": {
+		"text": "isim",
 		"speaker": "ANLATICI"
 	}
 }

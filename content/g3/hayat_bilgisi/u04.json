@@ -257,7 +257,8 @@
 										"value": "label.hb.cumhuriyet",
 										"voice": "vo.ad.etiket.cumhuriyet"
 									}
-								]
+								],
+								"ordered": true
 							},
 							{
 								"voice": "vo.g3.hayat_bilgisi.u04.n02.r03.s2",
@@ -274,7 +275,8 @@
 										"value": "label.hb.tek_kisi",
 										"voice": "vo.ad.etiket.tek_kisi"
 									}
-								]
+								],
+								"ordered": true
 							}
 						]
 					}
@@ -315,20 +317,21 @@
 						"questions": [
 							{
 								"voice": "vo.g3.hayat_bilgisi.u04.n03.r01.s1",
-								"answer": 1,
+								"answer": 0,
 								"page": 0,
 								"options": [
 									{
 										"type": "text",
-										"value": "label.hb.cok_konustugu",
-										"voice": "vo.ad.etiket.cok_konustugu"
+										"value": "label.hb.cok_calistigi",
+										"voice": "vo.ad.etiket.cok_calistigi"
 									},
 									{
 										"type": "text",
-										"value": "label.hb.cok_calistigi",
-										"voice": "vo.ad.etiket.cok_calistigi"
+										"value": "label.hb.cok_konustugu",
+										"voice": "vo.ad.etiket.cok_konustugu"
 									}
-								]
+								],
+								"ordered": true
 							},
 							{
 								"voice": "vo.g3.hayat_bilgisi.u04.n03.r01.s2",
@@ -345,7 +348,8 @@
 										"value": "label.hb.kararsiz",
 										"voice": "vo.ad.etiket.kararsiz"
 									}
-								]
+								],
+								"ordered": true
 							}
 						]
 					}

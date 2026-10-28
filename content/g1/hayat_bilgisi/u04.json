@@ -345,7 +345,8 @@
 										"value": "label.hb.ayse",
 										"voice": "vo.ad.etiket.ayse"
 									}
-								]
+								],
+								"ordered": true
 							},
 							{
 								"voice": "vo.g1.hayat_bilgisi.u04.n03.r02.s2",
@@ -362,7 +363,8 @@
 										"value": "label.hb.ali_riza",
 										"voice": "vo.ad.etiket.ali_riza"
 									}
-								]
+								],
+								"ordered": true
 							}
 						]
 					}

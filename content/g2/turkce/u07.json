@@ -361,7 +361,7 @@
 							{
 								"token": {
 									"type": "text",
-									"value": "tk.hava_durumunu"
+									"value": "tk.hava_sunucusunu"
 								},
 								"correct": false,
 								"result_voice": "vo.g2.turkce.u07.n02.r03.c2"
@@ -724,6 +724,10 @@
 							{
 								"type": "text",
 								"value": "tk.tencereyle_geri_verdi"
+							},
+							{
+								"type": "text",
+								"value": "tk.kazani_yine_aldi"
 							},
 							{
 								"type": "text",

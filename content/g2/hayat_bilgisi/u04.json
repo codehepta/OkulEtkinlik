@@ -140,42 +140,48 @@
 							{
 								"text": "hikaye.g2.hayat_bilgisi.u04.n02.r01.p3",
 								"voice": "vo.g2.hayat_bilgisi.u04.n02.r01.p3"
+							},
+							{
+								"text": "hikaye.g2.hayat_bilgisi.u04.n02.r01.p4",
+								"voice": "vo.g2.hayat_bilgisi.u04.n02.r01.p4"
 							}
 						],
 						"questions": [
 							{
 								"voice": "vo.g2.hayat_bilgisi.u04.n02.r01.s1",
-								"answer": 0,
+								"answer": 1,
 								"page": 1,
 								"options": [
 									{
 										"type": "text",
-										"value": "label.hb.mat_ogretmeni",
-										"voice": "vo.ad.etiket.mat_ogretmeni"
+										"value": "label.hb.sinif_arkadasi",
+										"voice": "vo.ad.etiket.sinif_arkadasi"
 									},
 									{
 										"type": "text",
-										"value": "label.hb.sinif_arkadasi",
-										"voice": "vo.ad.etiket.sinif_arkadasi"
+										"value": "label.hb.mat_ogretmeni",
+										"voice": "vo.ad.etiket.mat_ogretmeni"
 									}
-								]
+								],
+								"ordered": true
 							},
 							{
 								"voice": "vo.g2.hayat_bilgisi.u04.n02.r01.s2",
-								"answer": 1,
+								"answer": 0,
 								"page": 2,
 								"options": [
 									{
 										"type": "text",
-										"value": "label.hb.tembel",
-										"voice": "vo.ad.etiket.tembel"
+										"value": "label.hb.caliskan",
+										"voice": "vo.ad.etiket.caliskan"
 									},
 									{
 										"type": "text",
-										"value": "label.hb.caliskan",
-										"voice": "vo.ad.etiket.caliskan"
+										"value": "label.hb.tembel",
+										"voice": "vo.ad.etiket.tembel"
 									}
-								]
+								],
+								"ordered": true
 							}
 						]
 					}
@@ -336,7 +342,8 @@
 										"value": "label.hb.cumhuriyet",
 										"voice": "vo.ad.etiket.cumhuriyet"
 									}
-								]
+								],
+								"ordered": true
 							},
 							{
 								"voice": "vo.g2.hayat_bilgisi.u04.n03.r02.s2",
@@ -410,8 +417,8 @@
 								},
 								"right": {
 									"type": "item",
-									"value": "item.milli.zafer",
-									"voice": "vo.ad.milli.zafer"
+									"value": "item.milli.askerler",
+									"voice": "vo.ad.milli.askerler_zafer"
 								}
 							}
 						]
@@ -514,20 +521,21 @@
 							},
 							{
 								"voice": "vo.g2.hayat_bilgisi.u04.n04.r02.s2",
-								"answer": 0,
+								"answer": 1,
 								"page": 1,
 								"options": [
 									{
 										"type": "text",
-										"value": "label.hb.yaklastirir",
-										"voice": "vo.ad.etiket.yaklastirir"
+										"value": "label.hb.uzaklastirir",
+										"voice": "vo.ad.etiket.uzaklastirir"
 									},
 									{
 										"type": "text",
-										"value": "label.hb.uzaklastirir",
-										"voice": "vo.ad.etiket.uzaklastirir"
+										"value": "label.hb.yaklastirir",
+										"voice": "vo.ad.etiket.yaklastirir"
 									}
-								]
+								],
+								"ordered": true
 							}
 						]
 					}
