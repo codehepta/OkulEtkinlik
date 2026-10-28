@@ -358,7 +358,7 @@
 							{
 								"token": {
 									"type": "item",
-									"value": "item.esya.yastik"
+									"value": "item.giysi.kazak"
 								},
 								"bin": 0
 							},
@@ -372,7 +372,7 @@
 							{
 								"token": {
 									"type": "item",
-									"value": "item.doga.tas"
+									"value": "item.esya.zar"
 								},
 								"bin": 1
 							},
@@ -422,7 +422,7 @@
 							{
 								"token": {
 									"type": "item",
-									"value": "item.esya.yastik"
+									"value": "item.giysi.pijama"
 								},
 								"bin": 0
 							},
@@ -443,7 +443,7 @@
 							{
 								"token": {
 									"type": "item",
-									"value": "item.doga.tas"
+									"value": "item.okul.kalem"
 								},
 								"bin": 1
 							},

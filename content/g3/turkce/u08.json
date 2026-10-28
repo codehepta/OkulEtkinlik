@@ -235,7 +235,7 @@
 							{
 								"token": {
 									"type": "text",
-									"value": "tk.doktora_gitmek"
+									"value": "tk.sevgi_gormek"
 								},
 								"bin": 0
 							},
@@ -349,7 +349,7 @@
 					"difficulty": 2,
 					"voice": "vo.g3.turkce.u08.n02.r03",
 					"params": {
-						"scene": "item.durum.g3_itfaiyeci_konuk",
+						"scene": "item.durum.g3_yazar_konuk",
 						"hint": "vo.g3.turkce.u08.n02.r03.hint",
 						"choices": [
 							{

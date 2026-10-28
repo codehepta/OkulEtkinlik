@@ -465,10 +465,15 @@ def cut_all(to_cut: list[tuple[Path, Path, Path]], flood_thresh: int = 36) -> No
     remover = BackgroundRemover(flood_thresh)
     for raw, cut_path, meta_path in to_cut:
         remover.cut(Image.open(raw)).save(cut_path)
-        if remover.last_used_fallback and meta_path.exists():
+        if meta_path.exists():
+            # approve.py kesilmiş sürümü yalnız bu işaretle kullanır; sonradan kesilen adaylarda
+            # (yeniden kesme, dışarıdan alınan Gemini görselleri) işaret de yazılmalı.
             meta = json.loads(meta_path.read_text(encoding="utf-8"))
-            meta["cutout_fallback"] = "flood-fill"
+            meta["background_removed"] = True
+            if remover.last_used_fallback:
+                meta["cutout_fallback"] = "flood-fill"
             meta_path.write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
+        if remover.last_used_fallback:
             print(f"YEDEK MASKE {cut_path.parent.name}/{cut_path.name}: BiRefNet nesneyi kaçırdı", flush=True)
         if remover.device == "mps":
             remover.torch.mps.empty_cache()

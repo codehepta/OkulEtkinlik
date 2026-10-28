@@ -232,7 +232,7 @@ func _build_options(q: Dictionary) -> void:
 	_option_views.clear()
 	_faded.clear()
 	var options: Array = q["options"] as Array
-	_option_order = display_order(options, ctx.rng)
+	_option_order = display_order(options, ctx.rng, bool(q.get("ordered", false)))
 	_option_views.resize(options.size())
 	if is_text_options(options):
 		_build_text_options(options)
@@ -241,8 +241,14 @@ func _build_options(q: Dictionary) -> void:
 
 ## Seçeneklerin ekran sırası. Sayılar küçükten büyüğe dizilir; diğerleri karıştırılır ki
 ## doğru cevap hep aynı yerde (çoğunlukla içerikte ilk sırada) durmasın.
-static func display_order(options: Array, rng: RandomNumberGenerator) -> Array[int]:
+## Seçeneklerin ekran sırası: sayılar küçükten büyüğe; "ordered" sorularda içerik sırası (ses seçenekleri
+## "X mi, Y mi?" diye sırayla sayıyor); öbürleri karışık (içerikte doğru cevap çoğunlukla ilk sırada).
+static func display_order(options: Array, rng: RandomNumberGenerator, ordered: bool = false) -> Array[int]:
 	var order: Array[int] = []
+	if ordered:
+		for i: int in options.size():
+			order.append(i)
+		return order
 	var numeric: bool = true
 	for i: int in options.size():
 		order.append(i)
@@ -489,6 +495,8 @@ static func validate_params(p: Dictionary) -> Array[String]:
 		var answer: Variant = q.get("answer")
 		if not ContentValidator.is_int_like(answer) or int(answer) < 0 or int(answer) >= list.size():
 			errs.append(ContentValidator.msg("err.params.st_answer"))
+		if q.has("ordered") and not (q["ordered"] is bool):
+			errs.append(ContentValidator.msg("err.params.st_ordered"))
 		if q.has("page"):
 			var pg_i: Variant = q["page"]
 			if not ContentValidator.is_int_like(pg_i) or int(pg_i) < 0 or int(pg_i) >= (pages as Array).size():

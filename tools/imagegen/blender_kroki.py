@@ -22,6 +22,8 @@ REPO = HERE.parents[1]
 argv = sys.argv[sys.argv.index("--") + 1:] if "--" in sys.argv else []
 SAMPLES = int(argv[argv.index("--samples") + 1]) if "--samples" in argv else 128
 RES = int(argv[argv.index("--res") + 1]) if "--res" in argv else 1600
+# Parti: ilk çizim 082; 3. denetimde (fırına ekmek) 100 partisinden yeniden çekildi.
+BATCH = argv[argv.index("--batch") + 1] if "--batch" in argv else "082-hb-g3-gorseller"
 
 bg_path = HERE / "blender_geometry.py"
 bg = {"__file__": str(bg_path), "__name__": "blender_geometry"}
@@ -86,6 +88,15 @@ def star(name: str, x: float, y: float) -> None:
     ob.data.materials.append(M(name, C("#E5302B")))
 
 
+def loaf(name: str, loc: tuple, scale: tuple, color: str = "#D9954A") -> None:
+    bpy.ops.mesh.primitive_uv_sphere_add(segments=32, ring_count=16, radius=1.0, location=loc)
+    ob = bpy.context.active_object
+    ob.name = name
+    ob.scale = scale
+    ob.data.materials.append(M(name, C(color)))
+    bpy.ops.object.shade_smooth()
+
+
 def build_neighbourhood() -> None:
     bg["reset_scene"](SAMPLES)
     sc = bpy.context.scene
@@ -114,9 +125,10 @@ def build_neighbourhood() -> None:
     # fırın: sağda altta
     box("firin", (1.2, 0.85, 0.5), (3.1, -1.65, 0.25), "#F5D37E")
     box("firin_cati", (1.3, 0.95, 0.1), (3.1, -1.65, 0.55), "#E58B3A")
-    bpy.ops.mesh.primitive_cylinder_add(vertices=32, radius=0.09, depth=0.3, location=(3.1, -2.1, 0.3), rotation=(0, math.radians(90), 0))
-    bpy.context.active_object.data.materials.append(M("ekmek", C("#D9954A")))
-    bpy.ops.object.shade_smooth()
+    # Fırın tanınsın (3. denetim): çatının ön yarısında iri bir ekmek; vitrinde üç küçük ekmek.
+    loaf("ekmek_cati", (3.1, -1.85, 0.68), (0.42, 0.2, 0.13))
+    for k, lx in enumerate((2.92, 3.1, 3.28)):
+        loaf(f"ekmek_vitrin{k}", (lx, -2.12, 0.27), (0.08, 0.045, 0.045), color="#D9954A" if k % 2 == 0 else "#C27A35")
     # birkaç ev
     for k, (hx, hy, col) in enumerate([(-2.9, -1.6, "#B9D7F0"), (0.35, -1.65, "#D7C2EE"), (3.15, 1.3, "#F5C6D6")]):
         box(f"ev{k}", (0.9, 0.7, 0.45), (hx, hy, 0.22), col)
@@ -133,7 +145,8 @@ def build_neighbourhood() -> None:
     sun.rotation_euler = Vector((-0.4, -0.7, 1.0)).to_track_quat("Z", "Y").to_euler()
 
 
-STAR_AT = {"park": (0.35, 1.25), "okul": (-2.9, 1.25), "firin": (3.1, -1.65)}
+# Fırın yıldızı çatının arka yarısında: öndeki ekmeği örtmesin (3. denetim).
+STAR_AT = {"park": (0.35, 1.25), "okul": (-2.9, 1.25), "firin": (3.1, -1.45)}
 SHOTS = {
     "item.kroki.park": ("park", "16:9"), "item.kroki.okul": ("okul", "16:9"),
     "item.kroki.firin_k": ("firin", "1:1"), "item.kroki.park_k": ("park", "1:1"), "item.kroki.okul_k": ("okul", "1:1"),
@@ -163,11 +176,11 @@ def shoot(key: str, where: str, ratio: str, items: dict) -> None:
     cam.location = target + d * 20
     cam.rotation_euler = (-d).to_track_quat("-Z", "Y").to_euler()
     it = items[key]
-    out = REPO / "build" / "imagegen" / "082-hb-g3-gorseller" / key
+    out = REPO / "build" / "imagegen" / BATCH / key
     out.mkdir(parents=True, exist_ok=True)
     sc.render.filepath = str(out / "s0_blender.png")
     bpy.ops.render.render(write_still=True)
-    meta = {"key": key, "target": it.path, "batch": "082-hb-g3-gorseller.md", "number": it.number,
+    meta = {"key": key, "target": it.path, "batch": BATCH + ".md", "number": it.number,
             "model": "blender-procedural", "model_license": "n/a (prosedürel, CC BY 4.0 içerik)",
             "blender": ".".join(map(str, bpy.app.version)), "generator": "tools/imagegen/blender_kroki.py",
             "star": where, "seed": 0, "size": [sc.render.resolution_x, sc.render.resolution_y],
@@ -176,7 +189,7 @@ def shoot(key: str, where: str, ratio: str, items: dict) -> None:
     print("KROKİ", it.number, key, flush=True)
 
 
-items = {i.key: i for i in parse_batch((REPO / "asset-requests" / "082-hb-g3-gorseller.md").read_text(encoding="utf-8"))}
+items = {i.key: i for i in parse_batch((REPO / "asset-requests" / f"{BATCH}.md").read_text(encoding="utf-8"))}
 build_neighbourhood()
 for key, (where, ratio) in SHOTS.items():
     shoot(key, where, ratio, items)

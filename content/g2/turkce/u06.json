@@ -354,14 +354,14 @@
 							{
 								"token": {
 									"type": "text",
-									"value": "tk.ogretmenimi"
+									"value": "tk.ogretmenin_anlatimi"
 								},
 								"correct": true
 							},
 							{
 								"token": {
 									"type": "text",
-									"value": "tk.reklami"
+									"value": "tk.reklam"
 								},
 								"correct": false,
 								"result_voice": "vo.g2.turkce.u06.n02.r03.c2"
@@ -369,7 +369,7 @@
 							{
 								"token": {
 									"type": "text",
-									"value": "tk.ninniyi"
+									"value": "tk.ninni"
 								},
 								"correct": false,
 								"result_voice": "vo.g2.turkce.u06.n02.r03.c3"
@@ -407,7 +407,8 @@
 								"correct": false,
 								"result_voice": "vo.g2.turkce.u06.n02.r04.c3"
 							}
-						]
+						],
+						"hint": "vo.g2.turkce.u06.n02.r04.hint"
 					}
 				}
 			]

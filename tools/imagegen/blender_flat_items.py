@@ -121,8 +121,9 @@ COINS = {
     "item.para.kr_5": ("#E6C566", None, False),
     "item.para.kr_10": ("#D9AE3F", None, False),
     "item.para.kr_25": ("#C99A2E", None, True),
-    "item.para.kr_50": ("#D4A93A", "#C3C7CE", False),   # altın halka, gümüş orta
-    "item.para.tl_1": ("#C3C7CE", "#D9AE3F", False),     # gümüş halka, altın orta
+    # Gerçek paralar (3. denetim): 50 kuruşta halka gümüş, göbek altın; 1 TL'de halka altın, göbek gümüş.
+    "item.para.kr_50": ("#C3C7CE", "#D9AE3F", False),   # gümüş halka, altın orta
+    "item.para.tl_1": ("#D4A93A", "#C3C7CE", False),     # altın halka, gümüş orta
 }
 
 
@@ -285,24 +286,64 @@ def ellipse(cx, cy, rx, ry, n=48, rot=0.0):
     return pts
 
 
-def counted_birds(name, n=7):
-    """Dalda yan yana tam n kuş (düz kil kesik): hepsi sağa bakar, uçan ya da yerde kuş yok."""
-    # Hafif kavisli yatay dal; uçlarında yapraklar (gövde yok: tek başına dal).
-    dal = [(-2.75 + 0.25 * k, -0.2 + 0.05 * math.sin(k / 22 * math.pi)) for k in range(23)]
-    flat_poly(name + "_dal", dal + [(x, y - 0.13) for x, y in reversed(dal)], 0.12, 0.0, "#8A5A3C")
-    for k, (lx, ly, rot) in enumerate([(-2.75, -0.05, 0.6), (-2.7, -0.38, -0.5), (2.75, -0.05, -0.6), (2.7, -0.38, 0.5)]):
-        flat_poly(f"{name}_yaprak{k}", ellipse(lx, ly, 0.24, 0.1, rot=rot), 0.1, 0.0, "#79C267")
-    for i in range(n):
-        x = -2.1 + i * 0.7
-        y = 0.0
-        for fx in (-0.06, 0.06):
-            bump(f"{name}_kus{i}_ayak{fx}", x + fx, y - 0.19, 0.12, 0.035, "#F2A14A", 0.5)
-        flat_poly(f"{name}_kus{i}", ellipse(x, y, 0.24, 0.2), 0.16, 0.02, "#F6D25A")
-        flat_poly(f"{name}_kus{i}_kanat", ellipse(x - 0.04, y - 0.02, 0.12, 0.08, rot=-0.3), 0.18, 0.04, "#E9B83A")
-        flat_poly(f"{name}_kus{i}_bas", ellipse(x + 0.17, y + 0.2, 0.13, 0.13), 0.16, 0.02, "#F6D25A")
-        flat_poly(f"{name}_kus{i}_gaga", [(x + 0.28, y + 0.22), (x + 0.4, y + 0.18), (x + 0.28, y + 0.14)], 0.17, 0.03, "#F2846F")
-        flat_poly(f"{name}_kus{i}_kuyruk", [(x - 0.22, y + 0.02), (x - 0.38, y + 0.12), (x - 0.36, y - 0.08)], 0.15, 0.01, "#E9B83A")
-        bump(f"{name}_kus{i}_goz", x + 0.2, y + 0.24, 0.2, 0.025, "#2B2B33", 0.6)
+def counted_birds(name, n=7, rows=(4, 3)):
+    """Bir ağacın iki dalında tam n kuş (üstte 4, altta 3), hepsi sağa bakar; uçan ya da yerde kuş yok.
+    Tek uzun dal ince bir şerit veriyordu (3. denetim): iki dal kareye yakın bir kompozisyon ve
+    iri kuşlar sağlar. Kuşlar mavi serçe; sarı civcivle karışmasın."""
+    assert sum(rows) == n
+    flat_poly(name + "_govde", [(-2.05, -1.25), (-1.75, -1.25), (-1.78, 1.2), (-2.02, 1.2)], 0.12, 0.0, "#8A5A3C")
+    for r, count in enumerate(rows):
+        y0 = 0.55 - r * 1.15
+        dal = [(-1.9 + 0.2 * k, y0 + 0.04 * math.sin(k / 18 * math.pi)) for k in range(19)]
+        flat_poly(f"{name}_dal{r}", dal + [(x, y - 0.14) for x, y in reversed(dal)], 0.12, 0.0, "#8A5A3C")
+        flat_poly(f"{name}_yaprak{r}", ellipse(1.75, y0 - 0.02, 0.26, 0.11, rot=-0.3), 0.1, 0.0, "#79C267")
+        for i in range(count):
+            x = -1.2 + i * 0.78
+            y = y0 + 0.24
+            pre = f"{name}_{r}_{i}"
+            for fx in (-0.07, 0.07):
+                bump(f"{pre}_ayak{fx}", x + fx, y - 0.24, 0.14, 0.04, "#F2A14A", 0.5)
+            flat_poly(pre, ellipse(x, y, 0.29, 0.24), 0.16, 0.02, "#5B8FD9")
+            flat_poly(pre + "_gogus", ellipse(x + 0.08, y - 0.06, 0.15, 0.12), 0.17, 0.03, "#F4EFE6")
+            flat_poly(pre + "_kanat", ellipse(x - 0.06, y + 0.0, 0.15, 0.1, rot=-0.3), 0.18, 0.04, "#3F6FB8")
+            flat_poly(pre + "_bas", ellipse(x + 0.2, y + 0.24, 0.15, 0.15), 0.16, 0.02, "#5B8FD9")
+            flat_poly(pre + "_gaga", [(x + 0.33, y + 0.27), (x + 0.47, y + 0.22), (x + 0.33, y + 0.17)], 0.17, 0.03, "#F2A14A")
+            flat_poly(pre + "_kuyruk", [(x - 0.26, y + 0.03), (x - 0.46, y + 0.16), (x - 0.44, y - 0.1)], 0.15, 0.01, "#3F6FB8")
+            bump(pre + "_goz", x + 0.24, y + 0.29, 0.2, 0.03, "#2B2B33", 0.6)
+
+
+def octopus_book(name):
+    """Masada açık ansiklopedi; mavi deniz sayfalarının ortasında TAM 8 kollu turuncu kil ahtapot.
+    Kollar 45° aralıkla yıldız gibi yayılır, birbirine değmez; sayfalarda yazı yok."""
+    flat_poly(name + "_masa", [(-1.7, -1.7), (1.7, -1.7), (1.7, 1.7), (-1.7, 1.7)], 0.08, 0.0, "#B9835A")
+    for k in range(5):  # masa tahtası çizgileri
+        flat_poly(f"{name}_tahta{k}", [(-1.7, -1.3 + 0.65 * k), (1.7, -1.3 + 0.65 * k), (1.7, -1.28 + 0.65 * k), (-1.7, -1.28 + 0.65 * k)], 0.085, 0.0, "#A9744C")
+    flat_poly(name + "_kapak", [(-1.45, -1.15), (1.45, -1.15), (1.45, 1.15), (-1.45, 1.15)], 0.12, 0.0, "#4F7FC4")
+    for side in (-1, 1):
+        x0, x1 = (-1.38, -0.03) if side < 0 else (0.03, 1.38)
+        flat_poly(f"{name}_sayfa{side}", [(x0, -1.08), (x1, -1.08), (x1, 1.08), (x0, 1.08)], 0.14, 0.0, "#9ED3EE")
+    flat_poly(name + "_sirt", [(-0.03, -1.08), (0.03, -1.08), (0.03, 1.08), (-0.03, 1.08)], 0.15, 0.0, "#6FA8D6")
+    for k, (x, y) in enumerate([(-1.05, -0.75), (1.05, 0.8), (-1.1, 0.85)]):  # deniz yıldızları
+        pts = [(x + (0.13 if i % 2 == 0 else 0.055) * math.cos(math.pi / 2 + i * math.pi / 5),
+                y + (0.13 if i % 2 == 0 else 0.055) * math.sin(math.pi / 2 + i * math.pi / 5)) for i in range(10)]
+        flat_poly(f"{name}_yildiz{k}", pts, 0.17, 0.0, "#F4A3B5")
+    for k, x in enumerate((1.0, 1.18, -1.2)):  # yosun
+        flat_poly(f"{name}_yosun{k}", [(x, -1.0), (x + 0.05, -1.0), (x + 0.1, -0.6), (x + 0.02, -0.25), (x - 0.03, -0.6)], 0.16, 0.0, "#6DBE6A")
+    oy = 0.05
+    for a_i in range(8):
+        ang = math.pi / 8 + a_i * math.pi / 4
+        for j in range(22):  # sık, iç içe geçen kürelerle düz bir kol (boncuk dizisi gibi görünmesin)
+            d = 0.33 + j * 0.031
+            curl = 0.35 * (j / 21) ** 2
+            x = d * math.cos(ang + curl)
+            y = oy + d * math.sin(ang + curl)
+            bump(f"{name}_kol{a_i}_{j}", x, y, 0.2, 0.095 - j * 0.0028, "#F2894B", 0.55)
+    flat_poly(name + "_bas", ellipse(0.0, oy, 0.36, 0.38), 0.24, 0.02, "#F2894B")
+    for ex in (-0.12, 0.12):
+        bump(f"{name}_goz{ex}", ex, oy + 0.09, 0.27, 0.06, "#FFFFFF", 0.6)
+        bump(f"{name}_bebek{ex}", ex, oy + 0.08, 0.3, 0.03, "#2B2B33", 0.6)
+    gul = [(0.12 * math.cos(math.pi + t * math.pi / 8), oy - 0.1 + 0.07 * math.sin(math.pi + t * math.pi / 8)) for t in range(9)]
+    flat_poly(name + "_gulus", gul + [(x, y + 0.025) for x, y in reversed(gul)], 0.27, 0.0, "#B4533A")
 
 
 def counted_marbles(name, rows=3, cols=4):
@@ -327,7 +368,9 @@ def lopsided_kite(name):
         bump(f"{name}_kuyruk{k}", x, y, 0.06, 0.045, "#F2846F", 0.5)
 
 
-ITEMS = {**{k: ("010-faz3-sablonlar", (lambda k=k, v=v: coin(k, *v))) for k, v in COINS.items()},
+# 3. denetimde renkleri düzeltilen paralar 100 partisinden yeniden çekilir.
+_COIN_BATCH = {"item.para.kr_50": "100-gorsel-duzeltmeleri-4", "item.para.tl_1": "100-gorsel-duzeltmeleri-4"}
+ITEMS = {**{k: (_COIN_BATCH.get(k, "010-faz3-sablonlar"), (lambda k=k, v=v: coin(k, *v))) for k, v in COINS.items()},
          **{k: ("010-faz3-sablonlar", (lambda k=k, v=v: banknote(k, *v))) for k, v in NOTES.items()},
          "item.yiyecek.pizza": ("010-faz3-sablonlar", lambda: pizza("pizza")),
          "ui.clock_face": ("010-faz3-sablonlar", lambda: clock_face("kadran")),
@@ -341,7 +384,8 @@ ITEMS = {**{k: ("010-faz3-sablonlar", (lambda k=k, v=v: coin(k, *v))) for k, v i
          "item.simetri.kare_yamuk_cizgi": ("050-g3-matematik-nesneler", lambda: sym_square("kare", off=True)),
          "item.simetri.kare_yatay_cizgi": ("098-gorsel-duzeltmeleri-2", lambda: sym_square("kare", low=True)),
          "item.cevre.kitap_karis": ("098-gorsel-duzeltmeleri-2", lambda: book_spans("kitap")),
-         "item.sahne.kuslar": ("099-gorsel-duzeltmeleri-3", lambda: counted_birds("kuslar", 7)),
+         "item.sahne.kuslar": ("100-gorsel-duzeltmeleri-4", lambda: counted_birds("kuslar", 7)),
+         "item.hikaye.g3_ahtapot": ("100-gorsel-duzeltmeleri-4", lambda: octopus_book("ahtapot")),
          "item.sahne.bilyeler": ("099-gorsel-duzeltmeleri-3", lambda: counted_marbles("bilyeler", 3, 4)),
          "item.simetri.ev": ("050-g3-matematik-nesneler", lambda: sym_house("ev")),
          "item.simetri.ruzgar_gulu": ("050-g3-matematik-nesneler", lambda: lopsided_kite("ucurtma")),

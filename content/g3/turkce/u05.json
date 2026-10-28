@@ -619,13 +619,13 @@
 							{
 								"left": {
 									"type": "text",
-									"value": "tk.okul",
-									"voice": "vo.tk.okul"
+									"value": "tk.ad",
+									"voice": "vo.tk.ad"
 								},
 								"right": {
 									"type": "text",
-									"value": "tk.mektep",
-									"voice": "vo.tk.mektep"
+									"value": "tk.isim",
+									"voice": "vo.tk.isim"
 								}
 							}
 						]

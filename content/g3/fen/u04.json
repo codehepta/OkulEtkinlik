@@ -429,16 +429,6 @@
 									"type": "item",
 									"value": "item.fen.suzgec"
 								}
-							},
-							{
-								"left": {
-									"type": "item",
-									"value": "item.fen.karisim_su_yag"
-								},
-								"right": {
-									"type": "item",
-									"value": "item.fen.dinlendirme"
-								}
 							}
 						]
 					}

@@ -388,14 +388,14 @@
 							{
 								"token": {
 									"type": "text",
-									"value": "tk.sarkinin_kendisi"
+									"value": "tk.o_sarkiyi"
 								},
 								"correct": true
 							},
 							{
 								"token": {
 									"type": "text",
-									"value": "tk.hava_durumu"
+									"value": "tk.hava_durumunu"
 								},
 								"correct": false,
 								"result_voice": "vo.g2.turkce.u05.n02.r04.c2"
@@ -403,7 +403,7 @@
 							{
 								"token": {
 									"type": "text",
-									"value": "tk.mac_anlatimi"
+									"value": "tk.mac_anlatimini"
 								},
 								"correct": false,
 								"result_voice": "vo.g2.turkce.u05.n02.r04.c3"
