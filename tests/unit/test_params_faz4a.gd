@@ -93,6 +93,7 @@ func test_story_valid() -> void:
 		{"voice": "vo.q1", "answer": 0, "page": 0, "options": [_text("a"), _text("b"), _text("c"), _text("d")]},
 		{"voice": "vo.q2", "answer": 2, "options": [_num(1), _num(2), _num(3)]},
 		{"voice": "vo.q3", "answer": 0, "options": [_item("item.a.b"), _num(2)]}]}))
+	_ok("story", _story({"questions": [{"voice": "vo.q1", "answer": 1, "ordered": true, "options": [_text("a"), _text("b")]}]}))
 
 func test_story_invalid() -> void:
 	_bad("story", _story({"read": "loud"}), "bilinmeyen kip")
@@ -113,6 +114,22 @@ func test_story_invalid() -> void:
 	_bad("story", _story({"questions": [{"voice": "vo.q", "answer": 0, "options": [_text("a"), _num(2)]}]}), "karışık metin seçenek")
 	_bad("story", _story({"questions": [{"voice": "vo.q", "answer": 0, "page": 2, "options": [_num(1), _num(2)]}]}), "sayfa dışarıda")
 	_bad("story", _story({"questions": [{"voice": "vo.q", "text": "", "answer": 0, "options": [_num(1), _num(2)]}]}), "boş soru metni")
+	_bad("story", _story({"questions": [{"voice": "vo.q", "answer": 0, "ordered": "yes", "options": [_text("a"), _text("b")]}]}), "ordered bool değil")
+
+## Seçenekleri sesle sırayla sayan sorular ("Krallık mı, cumhuriyet mi?") "ordered" ile içerik
+## sırasında gösterilir; öbür sorular karışır (doğru cevap çoğunlukla ilk sırada yazılıyor).
+func test_story_display_order_respects_ordered() -> void:
+	var s: GDScript = load(TemplateRegistry.script_path("story")) as GDScript
+	var opts: Array = [_text("a"), _text("b"), _text("c")]
+	var rng: RandomNumberGenerator = RandomNumberGenerator.new()
+	for seed_i: int in 20:
+		rng.seed = seed_i
+		assert_eq(s.call("display_order", opts, rng, true), [0, 1, 2] as Array[int])
+	var seen_first: Dictionary = {}
+	for seed_i: int in 40:
+		rng.seed = seed_i
+		seen_first[(s.call("display_order", opts, rng) as Array[int])[0]] = true
+	assert_gt(seen_first.size(), 1, "sırasız sorularda seçenekler karışmaya devam eder")
 
 # --- drag_match okuma kipi ---
 func _pairs(left_voice: String = "") -> Array:
