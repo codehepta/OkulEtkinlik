@@ -414,3 +414,11 @@ Otomatik denetimler her PR'da çalışır: dokunma hedefleri bütün ekranlarda 
 4. Play Console dahili testinde AAB'den kurulan sürüm aynı davranıyor; sürüm adı 1.0.0.
 5. iOS (Mac hazır olunca): Xcode'dan gerçek cihazda açılış, bir durak, veli kapısı; App Store Connect'te "Veri Toplanmıyor".
 
+
+## Faz 9b — Mağaza hazırlığı (Emrah, cihazda)
+1. Telefona kurulan sürümün ana ekranında simge Bilge. Android 13 ve üzerinde "temalı simgeler" açıkken tek renk Bilge silüeti görünür.
+2. Açılışta Godot logosu görünmez: önce deniz rengi ekran, sonra açılış sahnesi.
+3. iPad'de (ya da 4:3 tabletlerde) ve 20:9 telefonlarda dünya haritası tek ada olarak görünür. Kenarda ikinci, büyütülmüş ada ya da dikiş yok.
+4. Hayat Kasabası patikasında okul tabelası yazısız.
+5. iOS: veli paneli → Profil ve yedek → "Yedeği dışa aktar", sonra Dosyalar → "Bu iPhone'da" → Bilgi Adası klasöründe yedek dosyası görünür.
+6. Mağaza ekran görüntüleri (`fastlane/metadata/android/en-US/images/`, `fastlane/screenshots/tr/`) güncel arayüzle aynı.
