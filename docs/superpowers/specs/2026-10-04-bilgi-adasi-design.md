@@ -110,7 +110,7 @@ Harita → bölge → patika → durak
   - Günlük süre sınırı (10 / 15 / 20 / 30 dk / kapalı).
   - Ses seviyeleri (anlatım, müzik, efekt).
   - Sınıf değiştirme, profil silme.
-  - İlerlemeyi JSON olarak dışa ve içe aktarma (paylaşım menüsü üzerinden).
+  - İlerlemeyi JSON olarak dışa ve içe aktarma. Android'de sistem dosya seçicisi (Storage Access Framework, izinsiz): veli kaydetme ve açma konumunu kendisi seçer. iOS'ta `user://` klasörü (Dosyalar uygulamasında görünür) ve uygulama içi açma diyaloğu (2026-10-29).
   - **Yerleşim (2026-10-12, onaylı yeniden tasarım):** sabit üst şerit (başlık plaketi, çocuk seçici, her zaman görünen Çıkış), solda beş bölüm: İlerleme · Evde (çocuğa özel) · Süre · Ses ve ekran (cihaz geneli, "Bütün çocuklar için ortak") · Profil ve yedek. Yalnızca etkin bölüm kurulur; sayfa kaymaz, uzun listeler kendi kartında kayar. Oturum sonundan veli kapısıyla gelen veli Süre bölümünde açar. Seçili bölüm ve ders kaydedilmez.
 - **Süre dolunca:** mevcut tur bitirilir, ardından Bilge "Uyku zamanı!" animasyonu ve sesiyle oturumu kapatır. Ertesi güne kadar veli kapısı olmadan devam edilemez.
 
