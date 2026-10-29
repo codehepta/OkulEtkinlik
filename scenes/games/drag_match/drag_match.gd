@@ -6,8 +6,12 @@ extends MiniGame
 ## sıradaki çiftin sesini okur. Yönerge (tur sesi) her iki kipte de seslendirilir.
 
 const TOKEN_VIEW: PackedScene = preload("res://scenes/games/token_view.tscn")
+const TOKEN_VIEW_SCRIPT: GDScript = preload("res://scenes/games/token_view.gd")
 ## Çift sayısına göre kart boyu (2–3 çift büyük, 4 çift sığacak kadar).
 const VIEW_SIDE_BY_COUNT: Dictionary = {2: 210.0, 3: 196.0, 4: 160.0}
+## Sol kartların hepsi yazıysa (çetele dışı) kartlar ve bırakma çukurları bu oranda geniştir:
+## uzun adlar ("19 Mayıs Gençlik ve Spor Bayramı") küçülmeden okunur.
+const TEXT_CARD_WIDTH_RATIO: float = 1.75
 const ROW_GAP: float = 28.0
 ## Satırların dikey olarak ortalandığı alan (üst çubuk ve alttaki altyazı payı dışında).
 const AREA_TOP: float = 180.0
@@ -34,6 +38,8 @@ var _matched: Array[bool] = []
 var _drag_index: int = -1
 var _drag_offset: Vector2 = Vector2.ZERO
 var _view_size: Vector2 = Vector2(200, 200)
+## Sol kartların (ve bırakma çukurlarının) boyu; yazı kartlarında _view_size'dan geniştir.
+var _left_size: Vector2 = Vector2(200, 200)
 ## Sessiz okumada kart sesleri ilk cevaba (ya da ipucuna) kadar kapalıdır.
 var _voice_unlocked: bool = true
 
@@ -52,11 +58,12 @@ func setup(params: Dictionary, difficulty_value: int, context: RoundContext) -> 
 		_slot_pair[j] = t
 	var side: float = float(VIEW_SIDE_BY_COUNT.get(clampi(n, 2, 4), 200.0))
 	_view_size = Vector2(side, side)
+	_left_size = Vector2(side * TEXT_CARD_WIDTH_RATIO, side) if _all_left_text() else _view_size
 	var block_h: float = n * side + (n - 1) * ROW_GAP
 	var top: float = AREA_TOP + (AREA_BOTTOM - AREA_TOP - block_h) / 2.0
-	var shelf: Rect2 = Rect2(LEFT_X - TRAY_MARGIN, top - TRAY_MARGIN, side + TRAY_MARGIN * 2.0, block_h + TRAY_MARGIN * 2.0)
+	var shelf: Rect2 = Rect2(LEFT_X - TRAY_MARGIN, top - TRAY_MARGIN, _left_size.x + TRAY_MARGIN * 2.0, block_h + TRAY_MARGIN * 2.0)
 	add_child(ClayStyle.make_panel(ClayStyle.tray_box(0.6), shelf))
-	var board_w: float = side * 2.0 + TARGET_GAP + TRAY_MARGIN * 2.0
+	var board_w: float = _left_size.x + side + TARGET_GAP + TRAY_MARGIN * 2.0
 	var board: Rect2 = Rect2(WELL_X - TRAY_MARGIN, top - TRAY_MARGIN, board_w, block_h + TRAY_MARGIN * 2.0)
 	add_child(ClayStyle.make_panel(ClayStyle.tray_box(0.72), board))
 	for i: int in n:
@@ -70,9 +77,28 @@ func setup(params: Dictionary, difficulty_value: int, context: RoundContext) -> 
 		var lv: Control = _make_view((_pairs[i] as Dictionary)["left"] as Dictionary, _left_home[i], DRAG_COLOR)
 		lv.gui_input.connect(_on_left_input.bind(i))
 		_left_views.append(lv)
+	if _left_size != _view_size:
+		_share_font_size()
 	# Sol öğeler hedeflerin üstünde çizilsin.
 	for lv: Control in _left_views:
 		move_child(lv, -1)
+
+func _all_left_text() -> bool:
+	for pr: Variant in _pairs:
+		var left: Dictionary = (pr as Dictionary)["left"] as Dictionary
+		if str(left.get("type", "")) != "text" or TOKEN_VIEW_SCRIPT.tally_count(Strings.t(str(left["value"]))) > 0:
+			return false
+	return true
+
+## Yazı kartları ortak boyda: en sığmayan kartın sığdığı boy hepsine üst sınır olur.
+func _share_font_size() -> void:
+	var fs: int = 0
+	for v: Control in _left_views:
+		var label: String = TOKEN_VIEW_SCRIPT.layout_label(str(v.get("_label_text")), _left_size)
+		var f: int = TOKEN_VIEW_SCRIPT.fit_font_size(label, _left_size)
+		fs = f if fs == 0 else mini(fs, f)
+	for v: Control in _left_views:
+		v.set("max_font_size", fs)
 
 func _make_view(token: Dictionary, pos: Vector2, color: Color) -> Control:
 	var v: Control = TOKEN_VIEW.instantiate() as Control
@@ -80,10 +106,10 @@ func _make_view(token: Dictionary, pos: Vector2, color: Color) -> Control:
 	v.set("card_color", color)
 	add_child(v)
 	v.call("set_token", token)
-	v.custom_minimum_size = _view_size
-	v.size = _view_size
+	v.custom_minimum_size = _left_size
+	v.size = _left_size
 	v.position = pos
-	v.pivot_offset = _view_size / 2.0
+	v.pivot_offset = _left_size / 2.0
 	return v
 
 ## Sağ yuva: [kesik kenarlı boş çukur][hedef kartı]; bırakma alanı ikisini birden kapsar.
@@ -92,13 +118,13 @@ func _make_slot(token: Dictionary, pos: Vector2) -> Control:
 	slot.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(slot)
 	slot.position = pos
-	slot.size = Vector2(_view_size.x * 2.0 + TARGET_GAP, _view_size.y)
+	slot.size = Vector2(_left_size.x + _view_size.x + TARGET_GAP, _view_size.y)
 	slot.pivot_offset = slot.size / 2.0
 	var well: Control = Control.new()
 	well.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	well.size = _view_size
+	well.size = _left_size
 	well.draw.connect(func() -> void:
-		var r: Rect2 = Rect2(Vector2(6, 6), _view_size - Vector2(12, 12))
+		var r: Rect2 = Rect2(Vector2(6, 6), _left_size - Vector2(12, 12))
 		well.draw_style_box(ClayStyle.soft_box(WELL_FILL, 26), r)
 		ClayStyle.draw_dashed_round_rect(well, r, 26.0, WELL_LINE, 7.0, 14.0))
 	slot.add_child(well)
@@ -116,7 +142,7 @@ func _make_slot(token: Dictionary, pos: Vector2) -> Control:
 				_say_target(token))
 	target.custom_minimum_size = _view_size
 	target.size = _view_size
-	target.position = Vector2(_view_size.x + TARGET_GAP, 0)
+	target.position = Vector2(_left_size.x + TARGET_GAP, 0)
 	return slot
 
 func _on_left_input(event: InputEvent, index: int) -> void:

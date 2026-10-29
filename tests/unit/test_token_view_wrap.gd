@@ -52,3 +52,9 @@ func test_money_value_parses_key() -> void:
 	assert_eq(TokenView.money_value("item.para.kr_5"), {"unit": "kr", "n": 5})
 	assert_eq(TokenView.money_value("item.para.cuzdan"), {})
 	assert_eq(TokenView.money_value("item.esya.para"), {})
+
+func test_line_em_matches_andika_line_height() -> void:
+	# Satır yüksekliği tahmini fontun gerçek yüksekliğinden küçükse çok satırlı yazı karodan taşar.
+	for path: String in ["res://assets/fonts/Andika-Regular.ttf", "res://assets/fonts/Andika-Bold.ttf"]:
+		var f: Font = load(path) as Font
+		assert_gte(TV.LINE_EM, f.get_height(100) / 100.0, path)
