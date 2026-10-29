@@ -1,0 +1,13 @@
+Bilgi Adası ("Knowledge Island") is a free and open source learning game for children aged 6–9, aligned with the Turkish Ministry of National Education (MEB) curriculum for grades 1, 2 and 3. The game is in Turkish.
+
+Children explore four regions of the island with Bilge, a clay owl: Number Forest (Mathematics), Letter Valley (Turkish, including first reading and writing), Life Town (Life Sciences) and Discovery Lab (Science, grade 3).
+
+• Hundreds of short activities linked to official learning outcomes.
+• Every instruction is narrated and can be replayed, so pre-readers can play alone.
+• Adaptive difficulty and spaced review.
+• Sticker album and a tree house to decorate; no penalties, lives, timers, loot boxes or streaks.
+• Up to 4 child profiles; a parent area behind a parent gate with progress, daily time limit and home activity ideas.
+
+Privacy: no internet permission, no ads, no in-app purchases, no accounts, no data collection. All progress stays on the device.
+
+Source code: MIT. Content: CC BY 4.0. https://github.com/codehepta/OkulEtkinlik

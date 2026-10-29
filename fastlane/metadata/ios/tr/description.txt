@@ -1,0 +1,20 @@
+Bilgi Adası, MEB 1., 2. ve 3. sınıf öğretim programlarıyla (Türkiye Yüzyılı Maarif Modeli) uyumlu, 6–9 yaş çocuklar için ücretsiz ve açık kaynak bir eğitim oyunudur.
+
+Çocuklar kil görünümlü baykuş Bilge ile adanın dört bölgesini keşfeder:
+• Sayı Ormanı (Matematik)
+• Harf Vadisi (Türkçe; 1. sınıfta ses temelli cümle yöntemiyle ilk okuma-yazma)
+• Hayat Kasabası (Hayat Bilgisi)
+• Keşif Laboratuvarı (Fen Bilimleri, 3. sınıf)
+
+Öne çıkanlar:
+• Programdaki öğrenme çıktılarına bağlı yüzlerce kısa etkinlik: sayma, eşleştirme, sıralama, terazi, saat ve para, kesir, harf izleme, hece, hikâye ve senaryo oyunları.
+• Bütün yönergeler seslendirilir ve tekrar dinlenebilir; okuma bilmeyen çocuk da tek başına oynayabilir.
+• Uyarlanabilir zorluk: oyun çocuğun hızına göre kolaylaşır ya da zorlaşır, unutulmaya yüz tutan konular Tekrar Bulutu ile geri gelir.
+• Çıkartma albümü ve Bilge'nin Ağaç Evi ile ödül; ceza, can kaybı, süre baskısı, şans kutusu ya da seri baskısı yok.
+• Bir cihazda 4 çocuk profili. Veli panelinde ilerleme, günlük süre sınırı, ses ayarları ve evde etkinlik önerileri (veli kapısı arkasında).
+
+Gizlilik:
+• İnternet izni yok, reklam yok, uygulama içi satın alma yok, hesap yok, veri toplama yok.
+• Bütün ilerleme yalnızca cihazda kalır.
+
+Kaynak kodu MIT, içerik CC BY 4.0 lisanslıdır: https://github.com/codehepta/OkulEtkinlik
