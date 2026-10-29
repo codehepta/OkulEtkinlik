@@ -10,7 +10,7 @@ set -euo pipefail
 
 AAB="${1:?AAB yolu gerekli}"
 SDK_PATH="${ANDROID_HOME:-${ANDROID_SDK_ROOT:-}}"
-AAPT2="${2:-${SDK_PATH}/build-tools/35.0.1/aapt2}"
+AAPT2="${2:-${SDK_PATH}/build-tools/36.0.0/aapt2}"
 BUNDLETOOL_VERSION="1.17.2"
 HERE="$(cd "$(dirname "$0")" && pwd)"
 TMP="$(mktemp -d)"

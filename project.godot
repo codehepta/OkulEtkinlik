@@ -7,7 +7,9 @@ config/name="Bilgi Adası"
 config/version="1.0.0"
 run/main_scene="res://scenes/ui/splash.tscn"
 config/features=PackedStringArray("4.7", "Mobile")
-config/icon="res://icon.svg"
+config/icon="res://assets/images/app_icon/icon_1024.png"
+boot_splash/show_image=false
+boot_splash/bg_color=Color(0.372549, 0.788235, 0.772549, 1)
 
 [autoload]
 
