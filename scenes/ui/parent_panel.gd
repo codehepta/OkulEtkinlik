@@ -53,11 +53,21 @@ const SLIDER_W: float = 1000.0
 const BAR_W: float = 360.0
 const DELETE_MSG_W: float = 900.0
 const BACKUP_PREFIX: String = "bilgi-adasi-yedek-"
+## Sistem seçicisinin süzgeçleri. İçe aktarmada bazı dosya yöneticileri .json'u düz metin ya da
+## bilinmeyen tür olarak gösterir; dosya gri kalmasın diye bu türler de açılabilir.
+const EXPORT_FILTERS: PackedStringArray = ["*.json"]
+const IMPORT_FILTERS: PackedStringArray = ["*.json", "text/plain", "application/octet-stream"]
 
 var app: Node = AppState
 var args: Dictionary = {}
 ## Yedek dosyasının yazılacağı klasör; testlerde değiştirilir.
 var export_dir: String = ""
+## Android'de yedek sistem dosya seçicisiyle (Storage Access Framework) kaydedilir ve açılır:
+## veli konumu kendisi seçer, uygulama izin istemez. Diğer platformlar user:// ve uygulama içi
+## diyaloğu kullanır (iOS'ta bu klasör Dosyalar'da görünür). Testlerde değiştirilir.
+var system_picker: bool = OS.has_feature("android")
+## Sistem seçicisini açar: (kip, dosya adı, süzgeçler, geri çağrı(ok, yollar, süzgeç)). Testlerde değiştirilir.
+var show_picker: Callable = _show_system_picker
 ## Evde etkinlik önerileri dosyası; testlerde değiştirilebilir.
 var home_activities_path: String = HomeActivities.DEFAULT_PATH
 
@@ -261,17 +271,25 @@ func confirm_delete() -> void:
 		app.goto("profile_select")
 
 ## Yedeği user:// (OS.get_user_data_dir()) altına yazar; yolu döndürür ("" = hata).
+## Android'de sistem kaydetme seçicisini açar ve "" döner; dosya, veli konumu seçince yazılır.
 func export_backup() -> String:
-	var dir: String = export_dir if export_dir != "" else OS.get_user_data_dir()
-	var path: String = dir.path_join("%s%s.json" % [BACKUP_PREFIX, _date_text(app.progress.clock.today())])
-	var f: FileAccess = FileAccess.open(path, FileAccess.WRITE)
-	if f == null:
-		_set_status(Strings.t("parent.export_failed"), "profile")
+	var file_name: String = "%s%s.json" % [BACKUP_PREFIX, _date_text(app.progress.clock.today())]
+	if system_picker:
+		show_picker.call(DisplayServer.FILE_DIALOG_MODE_SAVE_FILE, file_name, EXPORT_FILTERS, _on_export_picked)
 		return ""
-	f.store_string(ProgressExport.to_json(app.save.data))
-	f.close()
+	var dir: String = export_dir if export_dir != "" else OS.get_user_data_dir()
+	var path: String = dir.path_join(file_name)
+	if not _write_backup(path):
+		return ""
 	_set_status(Strings.t("parent.export_done", {"path": path}), "profile")
 	return path
+
+## "Yedeği içe aktar": Android'de sistem açma seçicisi, diğer platformlarda uygulama içi diyalog.
+func request_import() -> void:
+	if system_picker:
+		show_picker.call(DisplayServer.FILE_DIALOG_MODE_OPEN_FILE, "", IMPORT_FILTERS, _on_import_picked)
+	else:
+		_import_dialog.popup_centered_ratio(0.8)
 
 ## Yedek metnini içe alır. Geçersizse mevcut kayıt değişmez ve false döner.
 func import_text(text: String) -> bool:
@@ -299,6 +317,32 @@ func import_text(text: String) -> bool:
 
 func _on_import_file(path: String) -> void:
 	import_text(FileAccess.get_file_as_string(path))
+
+## Android'de yol bir content:// adresidir; FileAccess onu SAF üzerinden yazar ve okur.
+## Vazgeçilirse hiçbir şey yazılmaz ve mesaj değişmez.
+func _on_export_picked(ok: bool, paths: PackedStringArray, _filter: int) -> void:
+	if ok and not paths.is_empty() and _write_backup(paths[0]):
+		_set_status(Strings.t("parent.export_saved"), "profile")
+
+func _on_import_picked(ok: bool, paths: PackedStringArray, _filter: int) -> void:
+	if ok and not paths.is_empty():
+		_on_import_file(paths[0])
+
+func _write_backup(path: String) -> bool:
+	var f: FileAccess = FileAccess.open(path, FileAccess.WRITE)
+	if f == null:
+		_set_status(Strings.t("parent.export_failed"), "profile")
+		return false
+	f.store_string(ProgressExport.to_json(app.save.data))
+	f.close()
+	return true
+
+func _show_system_picker(mode: int, file_name: String, filters: PackedStringArray, callback: Callable) -> void:
+	var err: Error = DisplayServer.file_dialog_show(Strings.t("parent.backup_title"), "", file_name, false,
+			mode as DisplayServer.FileDialogMode, filters, callback)
+	if err != OK:
+		push_warning("Veli paneli: sistem dosya seçicisi açılamadı: %s" % error_string(err))
+		_set_status(Strings.t("parent.export_failed" if mode == DisplayServer.FILE_DIALOG_MODE_SAVE_FILE else "parent.import_bad"), "profile")
 
 # --- Yardımcılar ---
 
@@ -762,10 +806,12 @@ func _build_profile(c: VBoxContainer) -> void:
 	backup.add_child(_heading(Strings.t("parent.backup_title")))
 	backup.add_child(_wrap_label(Strings.t("parent.backup_hint"), FONT_SMALL, SOFT_COLOR))
 	var export_b: Button = _button(Strings.t("parent.export"))
+	export_b.name = "ExportButton"
 	export_b.pressed.connect(export_backup)
 	backup.add_child(export_b)
 	var import_b: Button = _button(Strings.t("parent.import"))
-	import_b.pressed.connect(func() -> void: _import_dialog.popup_centered_ratio(0.8))
+	import_b.name = "ImportButton"
+	import_b.pressed.connect(request_import)
 	backup.add_child(import_b)
 	_status_label = _label(_status if _status_tab == "profile" else "", FONT_SMALL)
 	_status_label.name = "BackupStatus"

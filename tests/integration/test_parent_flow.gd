@@ -13,8 +13,11 @@ var _progress: Node = null
 var _timer: Node = null
 var _app: Node = null
 var _root: Node = null
+## Sistem dosya seçicisinin (Android SAF) yerine geçen kayıt: her açılışın kipi, adı ve geri çağrısı.
+var _picks: Array[Dictionary] = []
 
 func before_each() -> void:
+	_picks.clear()
 	DirAccess.make_dir_recursive_absolute(SAVE_DIR)
 	DirAccess.make_dir_recursive_absolute(EXPORT_DIR)
 	_fake = FakeServices.new()
@@ -68,6 +71,20 @@ func _open_panel() -> Node:
 	var panel: Node = _screen()
 	panel.export_dir = EXPORT_DIR
 	return panel
+
+## Paneli Android gibi sistem seçicisiyle çalıştırır; seçici açılışları _picks'e yazılır.
+func _open_panel_with_picker() -> Node:
+	var panel: Node = _open_panel()
+	panel.system_picker = true
+	panel.show_picker = _record_pick
+	panel.select_tab("profile")
+	return panel
+
+func _record_pick(mode: int, file_name: String, filters: PackedStringArray, callback: Callable) -> void:
+	_picks.append({"mode": mode, "file_name": file_name, "filters": filters, "callback": callback})
+
+func _backup_button(panel: Node, button_name: String) -> Button:
+	return panel.find_child(button_name, true, false) as Button
 
 func _type(gate: Node, text: String) -> void:
 	for ch: String in text:
@@ -230,6 +247,72 @@ func test_import_valid_replaces_save_and_persists() -> void:
 	assert_eq(str(_save.data["profiles"][0]["id"]), "p7")
 	var on_disk: Variant = JSON.parse_string(FileAccess.get_file_as_string(SAVE_DIR + "/save_v1.json"))
 	assert_eq(str((on_disk as Dictionary)["profiles"][0]["id"]), "p7")
+
+func test_android_export_opens_save_picker_with_backup_name() -> void:
+	_login(1)
+	var panel: Node = _open_panel_with_picker()
+	_backup_button(panel, "ExportButton").pressed.emit()
+	assert_eq(_picks.size(), 1)
+	assert_eq(int(_picks[0]["mode"]), DisplayServer.FILE_DIALOG_MODE_SAVE_FILE)
+	assert_true(str(_picks[0]["file_name"]).begins_with("bilgi-adasi-yedek-"))
+	assert_true(str(_picks[0]["file_name"]).ends_with(".json"))
+	assert_true((_picks[0]["filters"] as PackedStringArray).has("*.json"))
+	assert_eq(DirAccess.get_files_at(EXPORT_DIR).size(), 0, "seçim yapılmadan dosya yazılmaz")
+
+func test_android_export_writes_to_picked_location() -> void:
+	_login(1)
+	var panel: Node = _open_panel_with_picker()
+	panel.export_backup()
+	var target: String = EXPORT_DIR.path_join("secilen.json")
+	(_picks[0]["callback"] as Callable).call(true, PackedStringArray([target]), 0)
+	assert_true(FileAccess.file_exists(target))
+	assert_true(ProgressExport.from_json(FileAccess.get_file_as_string(target)).has("profiles"))
+	assert_eq(panel.status_text(), Strings.t("parent.export_saved"))
+
+func test_android_export_cancel_writes_nothing() -> void:
+	_login(1)
+	var panel: Node = _open_panel_with_picker()
+	panel.export_backup()
+	(_picks[0]["callback"] as Callable).call(false, PackedStringArray(), 0)
+	assert_eq(DirAccess.get_files_at(EXPORT_DIR).size(), 0)
+	assert_eq(panel.status_text(), "")
+
+func test_android_import_opens_open_picker_and_loads_picked_file() -> void:
+	_login(1)
+	var other: Dictionary = SaveSchema.new_save()
+	other["profiles"].append(SaveSchema.new_profile("p8", "avatar.kedi", "Y", 3))
+	var source: String = EXPORT_DIR.path_join("indirilen.json")
+	var f: FileAccess = FileAccess.open(source, FileAccess.WRITE)
+	f.store_string(ProgressExport.to_json(other))
+	f.close()
+	var panel: Node = _open_panel_with_picker()
+	_backup_button(panel, "ImportButton").pressed.emit()
+	assert_eq(_picks.size(), 1)
+	assert_eq(int(_picks[0]["mode"]), DisplayServer.FILE_DIALOG_MODE_OPEN_FILE)
+	assert_true((_picks[0]["filters"] as PackedStringArray).has("*.json"))
+	(_picks[0]["callback"] as Callable).call(true, PackedStringArray([source]), 0)
+	assert_eq(str(_save.data["profiles"][0]["id"]), "p8")
+	assert_eq(panel.status_text(), Strings.t("parent.import_ok"))
+
+func test_android_import_cancel_keeps_current_save() -> void:
+	_login(1)
+	var before: Dictionary = _save.data.duplicate(true)
+	var panel: Node = _open_panel_with_picker()
+	panel.request_import()
+	(_picks[0]["callback"] as Callable).call(false, PackedStringArray(), 0)
+	assert_eq(_save.data, before)
+	assert_eq(panel.status_text(), "")
+
+func test_without_system_picker_buttons_keep_in_app_flow() -> void:
+	_login(1)
+	var panel: Node = _open_panel()
+	panel.system_picker = false
+	panel.show_picker = _record_pick
+	panel.select_tab("profile")
+	var path: String = panel.export_backup()
+	assert_true(path.begins_with(EXPORT_DIR))
+	_backup_button(panel, "ImportButton").pressed.emit()
+	assert_eq(_picks.size(), 0, "masaüstü ve iOS uygulama içi diyaloğu kullanır")
 
 # --- Oturum sonu ---
 

@@ -211,6 +211,7 @@
 	"parent.unlocked": "Bugünlük süre açıldı.",
 	"parent.export": "Yedeği dışa aktar",
 	"parent.export_done": "Yedek yazıldı: {path}",
+	"parent.export_saved": "Yedek seçtiğiniz yere kaydedildi.",
 	"parent.export_failed": "Yedek dosyası yazılamadı.",
 	"parent.import": "Yedeği içe aktar",
 	"parent.import_ok": "Yedek yüklendi.",
