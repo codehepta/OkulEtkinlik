@@ -53,7 +53,7 @@ jobs:
       - uses: android-actions/setup-android@v4
         with:
           # Varsayılan 'tools' paketi artık yok; yalnızca gerekenleri iste.
-          packages: "platform-tools build-tools;35.0.1 platforms;android-35"
+          packages: "platform-tools build-tools;36.0.0 platforms;android-36"
 
       - name: Export şablonları önbelleği
         uses: actions/cache@v6
@@ -82,7 +82,7 @@ jobs:
 
       # Ağ yok kuralının kanıtı (izin yok, INTERNET yok) + içerik pakette + testler/GUT pakette değil.
       - name: APK izin ve içerik doğrulaması
-        run: scripts/ci-check-apk.sh build/android/bilgi-adasi-debug.apk "$ANDROID_HOME/build-tools/35.0.1/aapt2"
+        run: scripts/ci-check-apk.sh build/android/bilgi-adasi-debug.apk "$ANDROID_HOME/build-tools/36.0.0/aapt2"
 
       - name: APK'yı yükle
         uses: actions/upload-artifact@v7

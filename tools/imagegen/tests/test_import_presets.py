@@ -36,6 +36,12 @@ class PresetForTest(unittest.TestCase):
         self.assertEqual(preset_for("assets/images/items/sahne/bayrak_toreni.png", (1344, 768))["process/size_limit"], 1280)
         self.assertEqual(preset_for("assets/images/items/hayvan/kedi.png", (562, 817))["process/size_limit"], 512)
 
+    def test_app_icon_is_lossless_and_full_size(self) -> None:
+        # Dışa aktarma mağaza simgelerini içe aktarılmış dokudan üretir; küçülürse iOS 1024'ü bulanıklaşır.
+        p = preset_for("assets/images/app_icon/icon_1024.png", (1024, 1024))
+        self.assertEqual(p["process/size_limit"], 0)
+        self.assertEqual(p["compress/mode"], 0)
+
     def test_everything_is_lossy(self) -> None:
         self.assertEqual(preset_for("assets/images/ui/star.png")["compress/mode"], 1)
 

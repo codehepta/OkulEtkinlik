@@ -453,3 +453,13 @@ Hayat Bilgisi 1–3 içeriği (Hayat Kasabası). Ayrıntı: `docs/superpowers/pl
 - **Karar (önerilen seçim):** Play Store paketi gradle derlemesiyle AAB'dir; Android derleme şablonu repoya konmaz, CI her derlemede `--install-android-build-template` ile kurar (`/android/` `.gitignore`'da). F-Droid ve GitHub sürümü gradle'sız APK kullanır.
 - **Açık:** F-Droid, Godot motorunu ve Android şablonunu kaynaktan derleyen bir tarif ister; `fdroiddata` başvurusundaki `Builds` bölümü F-Droid'in güncel Godot örneğine göre sahip tarafından tamamlanır (taslak `docs/release/README.md`).
 
+
+## Açık sorular (Faz 9b — mağaza hazırlığı)
+- **Karar (Emrah 2026-10-29: "tüm sorularını önerilen şekilde ilerlet"):** Önce Google Play ve App Store hazırlanır. Ayrıntı: `docs/superpowers/plans/2026-10-29-faz9b-magaza-hazirligi.md` ve `docs/release/README.md`.
+- **Karar:** Uygulama simgesi yeni görsel üretilmeden, onaylı Bilge görselinden kırpılarak yapılır. Zemin gökyüzü→ada yeşili geçişidir. Android'de uyarlanabilir ve tek renk katmanlar vardır. Açılış ekranında motor logosu yoktur; zemin deniz rengidir.
+- **Karar:** Play hedef API 36. Bu, yeni uygulamalar için 31 Ağustos 2026'dan beri şart; Godot 4.7 varsayılanı da 36. En düşük API 24. CI hedef SDK'yı denetler.
+- **Karar:** iOS'ta şifreleme beyanı "muaf". Kamera, mikrofon ve fotoğraf açıklamaları "kullanmaz" der; motor bu API'lere bağlı olduğundan alanlar boş bırakılamaz. Veli yedeği Dosyalar uygulamasında görünür.
+- **Karar:** App Store kategorisi Eğitim, Çocuklar 6–8 yaş bandı. Uygulama Gizliliği "Veri Toplanmıyor". Play hedef kitle 6–8 ve 9–12 (Aileler Politikası).
+- **Karar:** Mağaza ekran görüntüleri gerçek oyundan, cihaz piksel boyutunda alınır (`tools/store_screenshots.gd`); üzerlerinde yazı yoktur.
+- **Bulgu (düzeltildi):** Dünya haritası, ekran 16:9 değilse arkada ikinci, büyütülmüş bir ada gösteriyordu. Bu iPad'lerde ve 20:9 telefonlarda oluyordu. Arka katman artık düz deniz rengi, ada kenarları ona eriyor.
+- **Bulgu (açık):** Godot'nun resmi iOS şablonunda arm64 simülatör kütüphanesi yok; iOS denemesi gerçek cihazda ya da TestFlight'ta yapılır. Android'de veli yedeği uygulamanın özel klasörüne yazıldığından veli dosyaya ulaşamıyor; bu ayrı bir görevdir.

@@ -15,7 +15,7 @@ set -euo pipefail
 
 APK="${1:?APK yolu gerekli}"
 SDK_PATH="${ANDROID_HOME:-${ANDROID_SDK_ROOT:-}}"
-AAPT2="${2:-${SDK_PATH}/build-tools/35.0.1/aapt2}"
+AAPT2="${2:-${SDK_PATH}/build-tools/36.0.0/aapt2}"
 REQUIRED=("content/g1/matematik/u01.json" "docs/curriculum/outcomes.json" "content/strings.tr.json" "content/voice_lines.tr.json")
 FAIL=0
 
@@ -34,6 +34,14 @@ if [[ -n "$EXTRA" ]]; then
 fi
 if grep -qi 'android.permission.INTERNET' <<<"$PERMS"; then
   echo "HATA: android.permission.INTERNET var." >&2
+  FAIL=1
+fi
+
+echo "== Hedef SDK (Google Play: yeni uygulama ve güncellemelerde en az ${MIN_TARGET_SDK:=36})"
+TARGET_SDK="$("$AAPT2" dump badging "$APK" | sed -n "s/^targetSdkVersion:'\([0-9]*\)'.*/\1/p")"
+echo "targetSdkVersion: ${TARGET_SDK:-?}"
+if [[ -z "$TARGET_SDK" ]] || (( TARGET_SDK < MIN_TARGET_SDK )); then
+  echo "HATA: hedef SDK ${MIN_TARGET_SDK}'dan düşük ya da okunamadı." >&2
   FAIL=1
 fi
 

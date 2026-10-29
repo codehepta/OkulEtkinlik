@@ -324,6 +324,23 @@ func test_map_badges_sit_inside_island_without_overlap() -> void:
 		for j: int in range(i + 1, rects.size()):
 			assert_false(rects[i].intersects(rects[j]), "rozet %d ve %d çakışmamalı" % [i, j])
 
+func test_map_has_one_island_over_plain_sea() -> void:
+	# 16:9 dışındaki ekranlarda (iPad 4:3, 20:9 telefonlar) arkada ikinci, büyütülmüş bir ada
+	# görünmemeli: arka katman düz deniz rengi, ada kenarları ona erir.
+	_login(1)
+	_app.goto("world_map")
+	await wait_process_frames(2)
+	var islands: int = 0
+	for n: Node in _screen().find_children("*", "TextureRect", true, false):
+		if str(n.get("key")) == "map.island":
+			islands += 1
+			assert_not_null((n as CanvasItem).material, "ada kenarı denize erir")
+	assert_eq(islands, 1, "haritada tek ada")
+	var sea: ColorRect = _screen().get_node_or_null("Sea") as ColorRect
+	assert_not_null(sea, "düz deniz katmanı")
+	if sea != null:
+		assert_eq(sea.size, _screen().size, "deniz ekranı doldurur")
+
 func test_path_stops_numbered_and_open_stop_pulses() -> void:
 	_login(1)
 	_app.goto("region_path", {"subject": "matematik"})

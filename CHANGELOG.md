@@ -10,6 +10,8 @@ Biçim: [Keep a Changelog](https://keepachangelog.com/tr/1.1.0/). Sürüm numara
 - 4 çocuk profili; veli kapısı ve veli paneli (ilerleme, günlük süre sınırı, ses ayarları, evde etkinlik önerileri, dışa/içe aktarma).
 - Erişilebilirlik: bütün yönergeler seslendirilir, 128 px dokunma hedefleri, WCAG AA kontrast, "hareketi azalt".
 
+- Kil görünümlü görseller (1675) ve bütün yönergelerin insan sesine yakın seslendirmesi (3670 satır); müzik ve efektler.
+- Uygulama simgesi (Bilge), mağaza ekran görüntüleri ve metinleri (Play Store, App Store, F-Droid).
+
 ### Bilinen eksikler
-- Görsel ve seslerin çoğu yer tutucu / cihaz TTS'i; asset partileri sahibin üretimini bekliyor (`asset-requests/README.md`).
 - Öğretmen gözden geçirmesi bekleyen metinler: Türkçe hikâyeleri, Hayat Bilgisi (Atatürk, güvenlik), harf vuruş sırası (`docs/qa-checklist.md`).

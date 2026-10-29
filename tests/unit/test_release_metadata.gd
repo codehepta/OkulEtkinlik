@@ -73,3 +73,112 @@ func test_orientation_is_sensor_landscape_only() -> void:
 	# Android ve iOS export'u bu proje ayarından yönü alır.
 	assert_eq(int(ProjectSettings.get_setting("display/window/handheld/orientation")),
 		DisplayServer.SCREEN_SENSOR_LANDSCAPE, "yön sensor_landscape olmalı")
+
+# --- Faz 9b: mağaza hazırlığı ---
+
+const ICON_DIR: String = "res://assets/images/app_icon"
+## Açılış ekranı ve iOS başlatma ekranı rengi: ilk sahnenin (ada haritası) deniz rengi.
+const SPLASH_BG: Color = Color8(95, 201, 197)
+## Google Play: yeni uygulama ve güncellemeler 31 Ağustos 2026'dan beri API 36 hedeflemeli.
+const PLAY_MIN_TARGET_SDK: int = 36
+
+func _icon_image(file: String) -> Image:
+	return Image.load_from_file(ProjectSettings.globalize_path(ICON_DIR.path_join(file)))
+
+func test_app_icon_is_set_everywhere() -> void:
+	assert_eq(str(ProjectSettings.get_setting("application/config/icon")), ICON_DIR.path_join("icon_1024.png"))
+	for p: String in ["Android", "Android AAB"]:
+		assert_eq(str(_opt(p, "launcher_icons/main_192x192")), ICON_DIR.path_join("android_main_192.png"), p)
+		assert_eq(str(_opt(p, "launcher_icons/adaptive_foreground_432x432")), ICON_DIR.path_join("android_foreground_432.png"), p)
+		assert_eq(str(_opt(p, "launcher_icons/adaptive_background_432x432")), ICON_DIR.path_join("android_background_432.png"), p)
+		assert_eq(str(_opt(p, "launcher_icons/adaptive_monochrome_432x432")), ICON_DIR.path_join("android_monochrome_432.png"), p)
+	for k: String in ["icons/icon_1024x1024", "icons/app_store_1024x1024"]:
+		assert_eq(str(_opt("iOS", k)), ICON_DIR.path_join("icon_1024.png"), k)
+
+func test_icon_files_have_store_sizes() -> void:
+	var main: Image = _icon_image("icon_1024.png")
+	assert_eq(main.get_size(), Vector2i(1024, 1024))
+	assert_eq(main.detect_alpha(), Image.ALPHA_NONE, "App Store simgesi saydamlık içermez")
+	assert_eq(_icon_image("android_main_192.png").get_size(), Vector2i(192, 192))
+	for f: String in ["android_foreground_432.png", "android_background_432.png", "android_monochrome_432.png"]:
+		assert_eq(_icon_image(f).get_size(), Vector2i(432, 432), f)
+	assert_ne(_icon_image("android_foreground_432.png").detect_alpha(), Image.ALPHA_NONE, "ön katman saydam")
+	assert_ne(_icon_image("android_monochrome_432.png").detect_alpha(), Image.ALPHA_NONE, "tek renk katman saydam")
+
+func test_boot_splash_shows_no_engine_logo() -> void:
+	assert_false(bool(ProjectSettings.get_setting("application/boot_splash/show_image")))
+	assert_true((ProjectSettings.get_setting("application/boot_splash/bg_color") as Color).is_equal_approx(SPLASH_BG))
+	assert_true(bool(_opt("iOS", "storyboard/use_custom_bg_color")))
+	assert_true((_opt("iOS", "storyboard/custom_bg_color") as Color).is_equal_approx(SPLASH_BG))
+
+func test_aab_targets_play_minimum_sdk() -> void:
+	assert_gte(int(str(_opt("Android AAB", "gradle_build/target_sdk"))), PLAY_MIN_TARGET_SDK)
+
+func test_ios_declares_exempt_encryption() -> void:
+	# App Store Connect her yüklemede şifreleme beyanı sorar; uygulama ağ ve şifreleme kullanmaz.
+	var plist: String = str(_opt("iOS", "application/additional_plist_content"))
+	assert_string_contains(plist, "<key>ITSAppUsesNonExemptEncryption</key>")
+	assert_string_contains(plist, "<false/>")
+
+func test_ios_backup_is_reachable_from_files_app() -> void:
+	# Veli panelindeki yedek user:// altına yazılır; iOS'ta veli ona yalnızca Dosyalar'dan ulaşır.
+	assert_true(bool(_opt("iOS", "user_data/accessible_from_files_app")))
+
+func test_ios_usage_descriptions_are_not_empty() -> void:
+	# Motor ses/kamera API'lerine bağlı; App Store'un otomatik denetimi boş açıklamayı reddeder.
+	# Uygulama bu izinleri hiç istemez; açıklama bunu söyler.
+	for k: String in ["privacy/camera_usage_description", "privacy/microphone_usage_description", "privacy/photolibrary_usage_description"]:
+		assert_gt(str(_opt("iOS", k)).strip_edges().length(), 0, k)
+
+const IOS_META: String = "res://fastlane/metadata/ios"
+const IOS_LOCALES: PackedStringArray = ["tr", "en-US"]
+## App Store Connect alan sınırları (karakter; anahtar kelimelerde bayt sayısı da aşılmamalı).
+const IOS_LIMITS: Dictionary = {
+	"name.txt": 30, "subtitle.txt": 30, "keywords.txt": 100, "promotional_text.txt": 170,
+	"description.txt": 4000, "release_notes.txt": 4000,
+}
+
+func _text(path: String) -> String:
+	return FileAccess.get_file_as_string(path).strip_edges()
+
+func test_app_store_texts_fit_limits() -> void:
+	for loc: String in IOS_LOCALES:
+		for f: String in IOS_LIMITS:
+			var t: String = _text(IOS_META.path_join(loc).path_join(f))
+			assert_between(t.length(), 1, int(IOS_LIMITS[f]), "%s/%s" % [loc, f])
+		assert_lte(_text(IOS_META.path_join(loc).path_join("keywords.txt")).to_utf8_buffer().size(), 100, "%s anahtar kelime baytı" % loc)
+		for f: String in ["support_url.txt", "marketing_url.txt", "privacy_url.txt"]:
+			assert_true(_text(IOS_META.path_join(loc).path_join(f)).begins_with("https://"), "%s/%s" % [loc, f])
+
+func test_app_store_name_matches_project() -> void:
+	for loc: String in IOS_LOCALES:
+		assert_eq(_text(IOS_META.path_join(loc).path_join("name.txt")), str(ProjectSettings.get_setting("application/config/name")))
+
+func _image_size(path: String) -> Vector2i:
+	var img: Image = Image.load_from_file(ProjectSettings.globalize_path(path))
+	return img.get_size() if img != null else Vector2i.ZERO
+
+func test_play_store_graphics_have_required_sizes() -> void:
+	var dir: String = "res://fastlane/metadata/android/en-US/images"
+	assert_eq(_image_size(dir.path_join("icon.png")), Vector2i(512, 512))
+	assert_eq(_image_size(dir.path_join("featureGraphic.jpg")), Vector2i(1024, 500))
+	for sub: String in ["phoneScreenshots", "sevenInchScreenshots", "tenInchScreenshots"]:
+		var files: PackedStringArray = DirAccess.get_files_at(dir.path_join(sub))
+		assert_between(files.size(), 2, 8, "%s: Play 2–8 kare ister" % sub)
+		for f: String in files:
+			var s: Vector2i = _image_size(dir.path_join(sub).path_join(f))
+			assert_between(mini(s.x, s.y), 320, 3840, "%s/%s kenar" % [sub, f])
+			assert_lte(float(maxi(s.x, s.y)) / float(mini(s.x, s.y)), 2.0, "%s/%s en-boy ≤ 2:1" % [sub, f])
+
+func test_app_store_screenshots_match_device_sizes() -> void:
+	# iPhone 6.9" ve iPad 13" (yatay); App Store en az 1, en çok 10 kare kabul eder.
+	var want: Dictionary = {"iphone_69": Vector2i(2868, 1320), "ipad_13": Vector2i(2752, 2064)}
+	var dir: String = "res://fastlane/screenshots/tr"
+	var files: PackedStringArray = DirAccess.get_files_at(dir)
+	for device: String in want:
+		var n: int = 0
+		for f: String in files:
+			if f.begins_with(device + "_"):
+				n += 1
+				assert_eq(_image_size(dir.path_join(f)), want[device] as Vector2i, f)
+		assert_between(n, 1, 10, device)

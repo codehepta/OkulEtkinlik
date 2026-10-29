@@ -1,0 +1,5 @@
+İlk sürüm (1.0.0):
+• 1–3. sınıf Matematik, Türkçe ve Hayat Bilgisi; 3. sınıf Fen Bilimleri.
+• 16 mini oyun türü, uyarlanabilir zorluk, Tekrar Bulutu, çıkartma albümü, Ağaç Evi.
+• Veli paneli: ilerleme, süre sınırı, ses ayarları, evde etkinlik önerileri.
+• İnternet, reklam ve veri toplama yok.

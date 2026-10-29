@@ -31,6 +31,9 @@ WIDE_RATIO = 1.5
 def preset_for(path: str, size: tuple[int, int] | None = None) -> dict:
     parts = Path(path).parts
     folder = parts[parts.index("images") + 1] if "images" in parts else ""
+    if folder == "app_icon":
+        # Dışa aktarma mağaza simgelerini içe aktarılmış dokudan üretir: tam boy, kayıpsız.
+        return {"compress/mode": 0, "compress/lossy_quality": LOSSY_QUALITY, "process/size_limit": 0}
     limit = SIZE_LIMITS.get(folder, DEFAULT_LIMIT)
     if size and folder not in SIZE_LIMITS and size[0] >= WIDE_RATIO * size[1]:
         limit = SCENE_LIMIT
