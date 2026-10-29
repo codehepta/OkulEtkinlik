@@ -13,8 +13,9 @@ const ITEM_PADDING_RATIO: float = 0.12
 ## Yazının karo genişliğinde kaplayabileceği oran ve ortalama harf genişliği (em).
 const TEXT_WIDTH_RATIO: float = 0.84
 const CHAR_EM: float = 0.55
-## İki satırlı yazıda satır yüksekliği (em) ve karo yüksekliğinde kaplanabilecek oran.
-const LINE_EM: float = 1.25
+## Çok satırlı yazıda satır yüksekliği (em; Andika ascent + descent = 1.63) ve karo yüksekliğinde
+## kaplanabilecek oran.
+const LINE_EM: float = 1.63
 const TEXT_HEIGHT_RATIO: float = 0.8
 ## Para değer etiketi: karonun kısa kenarına oranla yazı boyu ve alt boşluk.
 const MONEY_FONT_RATIO: float = 0.17
@@ -24,6 +25,11 @@ const MONEY_RE: String = "^item\\.para\\.(tl|kr)_(\\d+)$"
 var token: Dictionary = {}
 var framed: bool = false
 var card_color: Color = ClayStyle.APRICOT
+## Yazı boyu üst sınırı (0: yok). Aynı turdaki kartlar ortak boyda yazılsın diye şablon verir.
+var max_font_size: int = 0:
+	set(value):
+		max_font_size = value
+		_layout()
 
 var _tile: Control = null
 var _image: Control = null
@@ -152,7 +158,8 @@ func _notification(what: int) -> void:
 func _layout() -> void:
 	if _tile != null and is_instance_valid(_tile):
 		_tile.set("text", layout_label(_label_text, size))
-		_tile.set("font_size", fit_font_size(str(_tile.get("text")), size))
+		var fs: int = fit_font_size(str(_tile.get("text")), size)
+		_tile.set("font_size", mini(fs, max_font_size) if max_font_size > 0 else fs)
 	if _image != null and is_instance_valid(_image) and _tile != null:
 		var pad: float = minf(size.x, size.y) * ITEM_PADDING_RATIO
 		_image.offset_left = pad
