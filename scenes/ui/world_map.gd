@@ -17,6 +17,9 @@ const BADGE_ANCHOR: Dictionary = {
 	"fen": Vector2(0.66, 0.735),
 }
 const TREE_ANCHOR: Vector2 = Vector2(0.505, 0.575)
+## Ada görselinin kenarlarındaki deniz rengi: 16:9 olmayan ekranda adanın çevresini doldurur.
+const SEA_COLOR: Color = Color8(95, 201, 197)
+const EDGE_FADE: Shader = preload("res://scenes/ui/edge_fade.gdshader")
 ## Bölgelerin dokunma alanları (görsel içinde 0–1 oranı: x, y, genişlik, yükseklik).
 const ZONE_RECT: Dictionary = {
 	"matematik": Rect2(0.12, 0.06, 0.36, 0.42),
@@ -46,14 +49,19 @@ var _busy: bool = false
 
 func _ready() -> void:
 	_grade = app.current_grade()
-	# Arka katman ekranı doldurur (deniz); ön katman adayı kırpmadan sığdırır.
-	var sea: Control = _image("map.island")
+	# Arka katman düz deniz rengidir; ada kırpılmadan sığar ve kenarları denize erir
+	# (ekran 16:9 değilse arkada ikinci, büyütülmüş bir ada görünmesin).
+	var sea: ColorRect = ColorRect.new()
+	sea.name = "Sea"
+	sea.color = SEA_COLOR
 	sea.set_anchors_preset(Control.PRESET_FULL_RECT)
 	sea.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(sea)
-	sea.set("stretch_mode", TextureRect.STRETCH_KEEP_ASPECT_COVERED)
 	_island = _image("map.island")
 	_island.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	var fade: ShaderMaterial = ShaderMaterial.new()
+	fade.shader = EDGE_FADE
+	_island.material = fade
 	add_child(_island)
 	_island.set("stretch_mode", TextureRect.STRETCH_SCALE)
 
