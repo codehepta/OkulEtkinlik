@@ -42,8 +42,8 @@ Her maddeyi sırayla uygula; "Beklenen" ile uyuşmayan her şeyi not al.
 
 1. **Hareketi azalt** (Ses ve ekran): aç, oyna. Beklenen: zıplama/sallanma animasyonları belirgin biçimde azalır.
 2. **1. sınıfta ekran metni göster** (Ses ve ekran): aç/kapat. Beklenen: 1. sınıf profilinde ekran metni görünür/gizlenir.
-3. **Yedeği dışa aktar** (Profil ve yedek -> Cihaz yedeği kartı): Beklenen: "Yedek yazıldı: <yol>" mesajı kartta kalır. Dosya uygulamanın özel klasörüne yazılır (yol mesajda gösterilir); normal dosya yöneticisinden görünmeyebilir.
-4. Profil ve yedek -> **Profili sil**. Beklenen: kil onay kartı açılır ("Vazgeç" / "Evet, sil"); Vazgeç'te hiçbir şey silinmez. Silmeyi onayla, ardından paneli yeniden aç ve **Yedeği içe aktar**. Beklenen: profil ve ilerleme geri gelir, panel Profil ve yedek bölümünde kalır.
+3. **Yedeği dışa aktar** (Profil ve yedek -> Cihaz yedeği kartı). Android: sistemin dosya seçicisi "bilgi-adasi-yedek-<tarih>.json" adıyla açılır; İndirilenler'i seç ve Kaydet. Beklenen: kartta "Yedek seçtiğiniz yere kaydedildi." yazar, dosya Dosyalar uygulamasında İndirilenler'de görünür; hiçbir izin sorulmaz. Seçicide geri tuşuyla vazgeçince dosya yazılmaz, mesaj çıkmaz. iOS ve masaüstü: "Yedek yazıldı: <yol>" mesajı kartta kalır (iOS'ta dosya Dosyalar → Bilgi Adası klasöründe).
+4. Profil ve yedek -> **Profili sil**. Beklenen: kil onay kartı açılır ("Vazgeç" / "Evet, sil"); Vazgeç'te hiçbir şey silinmez. Silmeyi onayla, ardından paneli yeniden aç ve **Yedeği içe aktar** (Android'de sistem seçicisinde İndirilenler'deki yedek dosyasını seç). Beklenen: profil ve ilerleme geri gelir, panel Profil ve yedek bölümünde kalır.
 5. Ses ve ekran: ses seviyeleri (konuşma/müzik/efekt) kaydırıcıları anında etki eder.
 6. **Faz 2 (müfredat verisi):** Veli paneli -> İlerleme -> Matematik: üstte "X/Y çıktı oynandı · ortalama ustalık %Z" özeti, altta çıktı metinleri (en çok iki satır, MEB kodu gri) görünür (`outcomes.json` şema değişikliği sonrası: `theme` yerine `themes`, yeni alanlar). Beklenen: çıktı metinleri eksiksiz ve doğru yazımla (`’`, `â`) listelenir; boş ya da kod görünen satır yok.
 

@@ -12,6 +12,7 @@ Biçim: [Keep a Changelog](https://keepachangelog.com/tr/1.1.0/). Sürüm numara
 
 - Kil görünümlü görseller (1675) ve bütün yönergelerin insan sesine yakın seslendirmesi (3670 satır); müzik ve efektler.
 - Uygulama simgesi (Bilge), mağaza ekran görüntüleri ve metinleri (Play Store, App Store, F-Droid).
+- Android'de yedek dışa/içe aktarma sistem dosya seçicisiyle yapılır (izin yok); veli yedeği İndirilenler gibi bir yere kaydedip geri yükleyebilir.
 
 ### Bilinen eksikler
 - Öğretmen gözden geçirmesi bekleyen metinler: Türkçe hikâyeleri, Hayat Bilgisi (Atatürk, güvenlik), harf vuruş sırası (`docs/qa-checklist.md`).

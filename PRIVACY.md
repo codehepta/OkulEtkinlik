@@ -18,7 +18,7 @@ Aşağıdakiler yalnızca cihazın uygulamaya ayrılmış alanında tutulur ve c
 Uygulamayı silmek bu verilerin hepsini siler. Veli panelinden bir profil tek başına da silinebilir.
 
 ## Dışa aktarma
-Veli, veli kapısının arkasındaki "Yedeği dışa aktar" ile ilerlemeyi cihazda, uygulamanın kendi klasöründe bir yedek dosyasına kaydedebilir (iOS'ta bu klasör "Dosyalar" uygulamasında görünür). Dosyayı başka bir yere taşımak velinin kararıdır; uygulama hiçbir yere kendiliğinden göndermez.
+Veli, veli kapısının arkasındaki "Yedeği dışa aktar" ile ilerlemeyi cihazda bir yedek dosyasına kaydedebilir. Android'de dosyanın konumunu (ör. İndirilenler) veli sistemin kendi dosya seçicisinde kendisi seçer; uygulama bunun için izin istemez ve yalnızca velinin seçtiği dosyaya yazar. iOS'ta dosya uygulamanın kendi klasörüne yazılır ve bu klasör "Dosyalar" uygulamasında görünür. "Yedeği içe aktar" da aynı şekilde yalnızca velinin seçtiği dosyayı okur. Dosyayı başka bir yere taşımak velinin kararıdır; uygulama hiçbir yere kendiliğinden göndermez.
 
 ## Seslendirme
 Kayıtlı ses dosyası olmayan satırlarda cihazın kendi metin-okuma (TTS) motoru kullanılır. Bu, işletim sisteminin cihaz üzerindeki bir hizmetidir; uygulama ses kaydı almaz ve mikrofon kullanmaz.
@@ -33,4 +33,4 @@ Bu politika değişirse yeni sürüm bu dosyada ve uygulamanın mağaza sayfası
 
 # Privacy Policy — Bilgi Adası (English summary)
 
-Bilgi Adası collects **no data**. It makes no network requests and requests no Android permissions (including INTERNET). There are no ads, in-app purchases, accounts, analytics or third-party SDKs. Profiles (avatar, optional nickname, grade), progress and settings are stored only on the device and are deleted when the app is uninstalled. A parent may save a progress backup file into the app's own folder from the parent area (visible in the Files app on iOS); the app never sends it anywhere. Missing voice recordings fall back to the device's on-device text-to-speech engine; the app never records audio. Contact: https://github.com/codehepta/OkulEtkinlik/issues
+Bilgi Adası collects **no data**. It makes no network requests and requests no Android permissions (including INTERNET). There are no ads, in-app purchases, accounts, analytics or third-party SDKs. Profiles (avatar, optional nickname, grade), progress and settings are stored only on the device and are deleted when the app is uninstalled. From the parent area a parent may save a progress backup file: on Android to a location the parent picks in the system file picker (no permission is requested and the app writes only that file), on iOS into the app's own folder (visible in the Files app). Importing reads only the file the parent picks. The app never sends the backup anywhere. Missing voice recordings fall back to the device's on-device text-to-speech engine; the app never records audio. Contact: https://github.com/codehepta/OkulEtkinlik/issues
