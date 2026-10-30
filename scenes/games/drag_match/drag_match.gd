@@ -35,6 +35,8 @@ var _right_views: Array[Control] = []
 var _slot_pair: Array[int] = []
 var _left_home: Array[Vector2] = []
 var _matched: Array[bool] = []
+## Son yanlış bırakılan sol kart (-1: yok). İpucu 1 bu kartı esas alır.
+var _last_wrong: int = -1
 var _drag_index: int = -1
 var _drag_offset: Vector2 = Vector2.ZERO
 var _view_size: Vector2 = Vector2(200, 200)
@@ -196,6 +198,7 @@ func _drop(left_index: int, right_slot: int) -> void:
 		_place(left_index, right_slot)
 		_submit_answer(true, _all_matched())
 	else:
+		_last_wrong = left_index
 		_move_to(_left_views[left_index], _left_home[left_index])
 		_submit_answer(false, false)
 
@@ -223,17 +226,26 @@ func _move_to(view: Control, pos: Vector2, seconds: float = 0.25) -> void:
 func _first_unmatched() -> int:
 	return _matched.find(false)
 
+## İpucunun çifti: çocuğun son yanlış denediği kart hâlâ açıksa o, yoksa ilk açık çift.
+func _hint_pair() -> int:
+	if _last_wrong >= 0 and not _matched[_last_wrong]:
+		return _last_wrong
+	return _first_unmatched()
+
 func _is_multi_step() -> bool:
 	return true
 
 func show_hint(level: int) -> void:
 	if _done or _busy:
 		return
-	var i: int = _first_unmatched()
+	var i: int = _hint_pair()
 	if i < 0:
 		return
 	if level == 1:
+		# Hem kart hem gideceği hedef parlar: yalnız hedef parlarsa çocuk elindeki (başka) kartı
+		# oraya götürüp yine yanılıyordu.
 		_voice_unlocked = true
+		_glow(_left_views[i])
 		_glow(_right_views[_slot_of(i)])
 		_say_pair(i, true)
 	elif level >= 2:
