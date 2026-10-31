@@ -2,7 +2,7 @@
 
 Biçim: [Keep a Changelog](https://keepachangelog.com/tr/1.1.0/). Sürüm numaraları: `project.godot` `config/version`, Android `version/name` ve iOS `short_version` aynı tutulur; Android `version/code` her sürümde bir artar. Mağaza sürüm notu: `fastlane/metadata/android/<dil>/changelogs/<version/code>.txt`.
 
-## [1.0.0] — sürüm adayı
+## [1.0.0] — 2026-10-31
 ### Eklendi
 - Bilgi Adası: Sayı Ormanı (Matematik 1–3), Harf Vadisi (Türkçe 1–3), Hayat Kasabası (Hayat Bilgisi 1–3), Keşif Laboratuvarı (Fen Bilimleri 3; 1–2. sınıfta kilitli bulut).
 - 16 mini oyun şablonu; MEB öğrenme çıktılarına bağlı 328 durak, 1258 tur.
