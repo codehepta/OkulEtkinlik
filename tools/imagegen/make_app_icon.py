@@ -4,6 +4,8 @@ gökyüzü→ada yeşili geçişli zemin. Yeni görsel üretilmez; çıktılar a
 - android_main_192.png: eski Android simgesi
 - android_{foreground,background,monochrome}_432.png: uyarlanabilir simge katmanları. Ön katmanda Bilge
   108 dp'lik tuvalin ortadaki güvenli alanına sığar; tek renk katman Bilge'nin silüetidir.
+- ios_launch@2x.png / @3x.png: iOS başlatma ekranı (240 pt kare, saydam zemin; storyboard deniz rengi
+  zeminin ortasında gösterir). Verilmezse Godot dışa aktarıcısı kendi logosunu koyar.
 Kullanım: uv run --with pillow python tools/imagegen/make_app_icon.py"""
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFilter
@@ -48,4 +50,12 @@ fg.save(OUT / "android_foreground_432.png")
 sil = Image.new("RGBA", whole.size, (255, 255, 255, 255)); sil.putalpha(whole.getchannel("A"))
 mono = Image.new("RGBA", (432, 432), (0, 0, 0, 0)); mono.alpha_composite(sil, pos)
 mono.save(OUT / "android_monochrome_432.png")
+# iOS başlatma ekranı: el sallayan Bilge, 240 pt'lik karenin ortasında.
+wave = Image.open(R / "assets/images/characters/bilge/wave.png").convert("RGBA")
+for scale in (2, 3):
+    n = 240 * scale
+    canvas = Image.new("RGBA", (n, n), (0, 0, 0, 0))
+    w = fit(wave, n * 0.92)
+    canvas.alpha_composite(w, ((n - w.width) // 2, (n - w.height) // 2))
+    canvas.save(OUT / f"ios_launch@{scale}x.png")
 print("simge dosyaları:", sorted(p.name for p in OUT.glob("*.png")))
