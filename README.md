@@ -9,7 +9,7 @@ MEB 1., 2. ve 3. sınıf öğretim programlarıyla uyumlu, 6–9 yaş çocuklar 
 - 🔊 Bütün yönergeler seslendirilir; okuma bilmeyen çocuk da tek başına oynayabilir
 - 🔒 İnternet bağlantısı, reklam, satın alma ve veri toplama yok; her şey cihazda kalır
 
-> **Durum:** 1.0.0 sürüm adayı. Bütün dersler oynanabilir (1–3. sınıf Matematik, Türkçe, Hayat Bilgisi; 3. sınıf Fen Bilimleri: 328 durak). Bütün görseller ve seslendirme tamam; mağaza yayını hazırlanıyor. Yayın adımları: [docs/release/README.md](docs/release/README.md).
+> **Durum:** 1.0.0 (2026-10-31). Bütün dersler oynanabilir (1–3. sınıf Matematik, Türkçe, Hayat Bilgisi; 3. sınıf Fen Bilimleri: 328 durak). Bütün görseller ve seslendirme tamam; mağaza yayını hazırlanıyor. Yayın adımları: [docs/release/README.md](docs/release/README.md).
 
 ## Çalıştırma ve test
 ```bash
