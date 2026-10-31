@@ -162,6 +162,21 @@ func test_profile_select_has_title_plaque_island_and_bilge() -> void:
 	assert_not_null(s.bilge_view())
 	assert_eq(s.plus_caption().text, Strings.t("profile.new"))
 
+func test_profile_create_has_same_island_backdrop_on_every_step() -> void:
+	# "Hangi arkadaş sen olsun?" ekranı düz yeşildi; profil seçme ekranıyla aynı bulanık ada zemini.
+	_app.goto("profile_create")
+	var s: Node = _screen()
+	var bd: TextureRect = s.backdrop()
+	assert_not_null(bd, "zemin var")
+	if bd == null:
+		return
+	assert_eq(bd.texture, AssetRegistry.texture("map.island"), "ada görseli zemin")
+	assert_not_null(bd.material, "bulanık")
+	s.pick_avatar("avatar.kedi")
+	assert_true(bd.is_visible_in_tree(), "sınıf adımında da zemin görünür")
+	s.pick_grade(2)
+	assert_true(bd.is_visible_in_tree(), "takma ad adımında da zemin görünür")
+
 func test_card_press_bounces_then_selects() -> void:
 	var id: String = _progress.create_profile("avatar.kedi", "A", 2)
 	_app.goto("profile_select")

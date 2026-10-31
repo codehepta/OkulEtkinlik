@@ -7,6 +7,7 @@ const AVATARS: Array[String] = [
 const GRADES: Array[int] = [1, 2, 3]
 const MAX_NICKNAME: int = 12
 const CARD_COLOR: Color = ClayStyle.APRICOT
+const IslandBackdrop: GDScript = preload("res://scripts/ui/island_backdrop.gd")
 
 var app: Node = AppState
 
@@ -16,13 +17,11 @@ var _grade: int = 0
 var _pages: Array[Control] = []
 var _edit: LineEdit = null
 var _navigating: bool = false
+var _backdrop: TextureRect = null
 
 func _ready() -> void:
-	var bg: ColorRect = ColorRect.new()
-	bg.color = ClayStyle.MEADOW
-	bg.set_anchors_preset(Control.PRESET_FULL_RECT)
-	bg.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	add_child(bg)
+	# Profil seçme ekranıyla aynı zemin: bulanık ada + açık perde.
+	_backdrop = IslandBackdrop.add_to(self)
 	_pages = [_build_avatar_page(), _build_grade_page(), _build_nickname_page()]
 	for page: Control in _pages:
 		page.set_anchors_preset(Control.PRESET_FULL_RECT)
@@ -31,6 +30,9 @@ func _ready() -> void:
 	replay.position = Vector2(24, 24)
 	add_child(replay)
 	_show_step(1)
+
+func backdrop() -> TextureRect:
+	return _backdrop
 
 func step() -> int:
 	return _step
