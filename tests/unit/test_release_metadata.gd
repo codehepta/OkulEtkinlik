@@ -111,6 +111,19 @@ func test_boot_splash_shows_no_engine_logo() -> void:
 	assert_true(bool(_opt("iOS", "storyboard/use_custom_bg_color")))
 	assert_true((_opt("iOS", "storyboard/custom_bg_color") as Color).is_equal_approx(SPLASH_BG))
 
+func test_ios_launch_screen_uses_our_image_not_engine_logo() -> void:
+	# iOS başlatma ekranı (storyboard) görsel verilmezse Godot logosunu koyar; show_image=false
+	# yalnız oyun içi açılışı kapatır.
+	var want: Dictionary = {"storyboard/custom_image@2x": Vector2i(480, 480), "storyboard/custom_image@3x": Vector2i(720, 720)}
+	for k: String in want:
+		var path: String = str(_opt("iOS", k))
+		assert_true(path.begins_with(ICON_DIR), "%s: %s" % [k, path])
+		var img: Image = Image.load_from_file(ProjectSettings.globalize_path(path))
+		assert_not_null(img, path)
+		if img != null:
+			assert_eq(img.get_size(), want[k] as Vector2i, k)
+			assert_ne(img.detect_alpha(), Image.ALPHA_NONE, "zemin saydam; arkada deniz rengi görünür")
+
 func test_aab_targets_play_minimum_sdk() -> void:
 	assert_gte(int(str(_opt("Android AAB", "gradle_build/target_sdk"))), PLAY_MIN_TARGET_SDK)
 

@@ -4,7 +4,7 @@ extends Control
 ## "+ Yeni" kartı (4 profilde gizli), sağ altta veli dişlisi. Kartlar sırayla gelir; dokunulan kart
 ## kısa bir zıplamadan sonra açılır. "Hareketi azalt" açıkken animasyon yoktur.
 
-const ISLAND_KEY: String = "map.island"
+const IslandBackdrop: GDScript = preload("res://scripts/ui/island_backdrop.gd")
 const BILGE_KEY: String = "char.bilge.point_right"
 const BILGE_SIZE: Vector2 = Vector2(200, 232)
 const TITLE_FONT_SIZE: int = 84
@@ -17,8 +17,6 @@ const PLUS_COLOR: Color = ClayStyle.MINT
 const PLUS_DISC: Vector2 = Vector2(220, 220)
 const PLUS_LIFT: float = 22.0
 ## Zemin bulanıklığı (kaynak piksel) ve üstündeki açık örtü.
-const BLUR_RADIUS: float = 6.0
-const VEIL: Color = Color(1.0, 0.96, 0.88, 0.38)
 const CARDS_TOP: float = 280.0
 const ENTER_SECONDS: float = 0.45
 const ENTER_STAGGER: float = 0.09
@@ -137,29 +135,9 @@ func _display_name(p: Dictionary) -> String:
 	var key: String = "label." + str(p["avatar"])
 	return Strings.t(key) if Strings.has(key) else ""
 
-## Zemin: ada görseli bulanık ve açık örtülü (kartlar öne çıksın); yoksa çayır yeşili.
+## Zemin: ada görseli bulanık ve açık örtülü (ortak yardımcı: scripts/ui/island_backdrop.gd).
 func _build_backdrop() -> void:
-	_backdrop = TextureRect.new()
-	_backdrop.name = "Backdrop"
-	_backdrop.set_anchors_preset(Control.PRESET_FULL_RECT)
-	_backdrop.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	_backdrop.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
-	_backdrop.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	var island: Texture2D = AssetRegistry.texture(ISLAND_KEY)
-	if island != null:
-		_backdrop.texture = island
-		var mat: ShaderMaterial = ShaderMaterial.new()
-		mat.shader = _blur_shader()
-		mat.set_shader_parameter("radius", BLUR_RADIUS)
-		_backdrop.material = mat
-	else:
-		_backdrop.texture = ClayStyle.vertical_gradient(ClayStyle.MINT, ClayStyle.MEADOW)
-	add_child(_backdrop)
-	var veil: ColorRect = ColorRect.new()
-	veil.color = VEIL
-	veil.set_anchors_preset(Control.PRESET_FULL_RECT)
-	veil.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	add_child(veil)
+	_backdrop = IslandBackdrop.add_to(self)
 
 ## Üstte ortada: işaret eden Bilge + "Kim oynuyor?" kil plaketi.
 func _build_header() -> void:
@@ -264,23 +242,6 @@ func _ribbon(caption: String) -> Control:
 	label.custom_minimum_size = Vector2(minf(ceilf(width) + 2.0, CARD_SIZE.x - 96.0), 0)
 	ribbon.add_child(label)
 	return holder
-
-func _blur_shader() -> Shader:
-	var sh: Shader = Shader.new()
-	sh.code = """shader_type canvas_item;
-uniform float radius = 6.0;
-void fragment() {
-	vec2 px = TEXTURE_PIXEL_SIZE * radius;
-	vec4 c = vec4(0.0);
-	for (int x = -2; x <= 2; x++) {
-		for (int y = -2; y <= 2; y++) {
-			c += texture(TEXTURE, UV + vec2(float(x), float(y)) * px);
-		}
-	}
-	COLOR = c / 25.0;
-}
-"""
-	return sh
 
 ## "+" kartı: nane yeşili kart üstünde kabarık bej kil disk ve büyük artı.
 func _make_plus_card() -> Button:
