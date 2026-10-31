@@ -2,7 +2,7 @@ extends Control
 ## Veli kapısı: çarpım sorusu + 0-9 tuş takımı. Doğru cevapta args.next'e geçilir.
 ## Yanlışta ceza ya da kilit yok; yeni soru gelir.
 
-const BG_COLOR: Color = ClayStyle.MEADOW
+const IslandBackdrop: GDScript = preload("res://scripts/ui/island_backdrop.gd")
 const KEY_SIZE: Vector2 = Vector2(144, 144)
 const KEY_RADIUS: int = 40
 const MAX_DIGITS: int = 4
@@ -85,11 +85,8 @@ func _refresh() -> void:
 		_typed_label.text = _typed if not _typed.is_empty() else "_"
 
 func _build() -> void:
-	var bg: ColorRect = ColorRect.new()
-	bg.color = BG_COLOR
-	bg.set_anchors_preset(Control.PRESET_FULL_RECT)
-	bg.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	add_child(bg)
+	# Profil ekranlarıyla aynı zemin: bulanık ada + açık perde.
+	IslandBackdrop.add_to(self)
 
 	var col: VBoxContainer = VBoxContainer.new()
 	col.set_anchors_preset(Control.PRESET_FULL_RECT)

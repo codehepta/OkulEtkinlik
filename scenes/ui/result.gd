@@ -4,7 +4,7 @@ extends Control
 
 const NarrationWait: GDScript = preload("res://scripts/ui/narration_wait.gd")
 
-const BG_COLOR: Color = ClayStyle.MEADOW
+const IslandBackdrop: GDScript = preload("res://scripts/ui/island_backdrop.gd")
 const STICKER_SIZE: Vector2 = Vector2(256, 256)
 const STEP_SECONDS: float = 0.5
 
@@ -102,11 +102,8 @@ func _pop_in(c: Control) -> void:
 	tw.tween_property(c, "scale", Vector2.ONE, 0.4).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
 
 func _build() -> void:
-	var bg: ColorRect = ColorRect.new()
-	bg.color = BG_COLOR
-	bg.set_anchors_preset(Control.PRESET_FULL_RECT)
-	bg.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	add_child(bg)
+	# Profil ekranlarıyla aynı zemin: bulanık ada + açık perde.
+	IslandBackdrop.add_to(self)
 
 	var col: VBoxContainer = VBoxContainer.new()
 	col.set_anchors_preset(Control.PRESET_FULL_RECT)

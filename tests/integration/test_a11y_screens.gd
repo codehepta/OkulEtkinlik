@@ -106,3 +106,19 @@ func test_parent_screens() -> void:
 	for tab: String in ["progress", "home", "time", "sound", "profile"]:
 		await _audit("parent_panel", {"tab": tab})
 		assert_eq(_app.current_scene().current_tab(), tab)
+
+## Düz yeşil zeminli ekranlar profil ekranlarıyla aynı bulanık ada zeminini kullanır.
+func test_profile_gate_and_result_share_island_backdrop() -> void:
+	var screens: Array = [
+		["profile_create", {}],
+		["parent_gate", {"next": {"scene": "parent_panel", "args": {}}}],
+		["result", {"node_id": "g1.matematik.u01.n01", "stars": 3, "new_sticker": "", "unlocked": "g1.matematik.u01.n02", "subject": "matematik"}],
+	]
+	_login(1)
+	for s: Array in screens:
+		_app.goto(str(s[0]), s[1] as Dictionary)
+		await wait_process_frames(3)
+		var bd: TextureRect = _app.current_scene().find_child("Backdrop", false, false) as TextureRect
+		assert_not_null(bd, "%s: ada zemini" % s[0])
+		if bd != null:
+			assert_eq(bd.texture, AssetRegistry.texture("map.island"), "%s: ada görseli" % s[0])
