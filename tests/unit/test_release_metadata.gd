@@ -163,9 +163,11 @@ func test_app_store_texts_fit_limits() -> void:
 		for f: String in ["support_url.txt", "marketing_url.txt", "privacy_url.txt"]:
 			assert_true(_text(IOS_META.path_join(loc).path_join(f)).begins_with("https://"), "%s/%s" % [loc, f])
 
-func test_app_store_name_matches_project() -> void:
+func test_app_store_name_starts_with_project_name() -> void:
+	# App Store'da adlar benzersizdir; "Bilgi Adası" başka bir uygulamada olduğu için mağaza adı
+	# proje adıyla başlar ve bir ek taşır (cihazdaki ad yine config/name'dir).
 	for loc: String in IOS_LOCALES:
-		assert_eq(_text(IOS_META.path_join(loc).path_join("name.txt")), str(ProjectSettings.get_setting("application/config/name")))
+		assert_string_starts_with(_text(IOS_META.path_join(loc).path_join("name.txt")), str(ProjectSettings.get_setting("application/config/name")))
 
 func _image_size(path: String) -> Vector2i:
 	var img: Image = Image.load_from_file(ProjectSettings.globalize_path(path))

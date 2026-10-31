@@ -166,7 +166,8 @@ open build/ios/bilgi-adasi.xcodeproj
 
 ### 6.2 App Store Connect
 1. Apps → "+" → New App:
-   - Platform iOS, ad "Bilgi Adası", birincil dil Türkçe.
+   - Platform iOS, ad **"Bilgi Adası: 1-3. Sınıf"** ("Bilgi Adası" App Store'da başka bir uygulamada; cihazdaki ad yine "Bilgi Adası"), birincil dil Türkçe.
+   - **Durum (2026-10-31):** kayıt açıldı (Apple ID 6829281918). App ID ve App Store profili API anahtarıyla oluşturuldu; 1.0.1 (2) TestFlight'a yüklendi; metinler ve ekran görüntüleri fastlane ile yüklendi.
    - Paket kimliği `io.github.codehepta.bilgiadasi`, SKU `bilgiadasi`.
 2. **App Information:**
    - Kategori: birincil Eğitim, ikincil Oyunlar → Eğitici.
