@@ -10,6 +10,8 @@ const CONTENT_DIR: String = "res://content"
 const BATCH: int = 24
 const MAX_STEPS: int = 40  # grafik kurma turlarında her nesne ayrı adım (12+ sürükleme + sorular)
 const STEP_SECONDS: float = 1.0
+## İpucu 2 kalan adımları sırayla çözer; grafik turlarında 12+ nesne olabilir.
+const HINT_2_MAX_SECONDS: int = 40
 
 var _saved_settings: Variant = null
 
@@ -89,6 +91,51 @@ func test_every_round_opens_at_hardest_level_with_hint() -> void:
 		if n % 50 == 0:
 			await wait_frames(1)
 	assert_eq(results.size(), 0, "kurulum ve ilk ipucu turu kendiliğinden bitirmemeli")
+
+## Hata akışı (lesson_runner): 2. yanlışta ipucu 1, 3. yanlışta ipucu 2 doğru cevabı gösterip seçer.
+## İpucu 2 yanlış seçeneği gösterirse tur bitmez ya da fazladan yanlış sayılır.
+func test_every_round_hint_2_picks_the_correct_answer() -> void:
+	var rounds: Array[Dictionary] = _all_rounds()
+	var failed: Array[String] = []
+	for start: int in range(0, rounds.size(), BATCH):
+		var batch: Array[Dictionary] = rounds.slice(start, start + BATCH)
+		var games: Array[MiniGame] = []
+		var done: Dictionary = {}
+		for i: int in batch.size():
+			var rd: Dictionary = batch[i]
+			var g: MiniGame = make(str(rd["template"]), rd["params"] as Dictionary, int(rd["difficulty"]), 7 + i, int(rd["grade"]))
+			g.finished.connect(func(r: RoundResult) -> void: done[i] = r)
+			games.append(g)
+		# İki yanlış (aralarda kilit açılsın), sonra ipucu 1 ve ipucu 2.
+		for k: int in 2:
+			for g: MiniGame in games:
+				if g._can_input():
+					g.call("_debug_answer", false)
+			await wait_seconds(STEP_SECONDS)
+		for g: MiniGame in games:
+			g.show_hint(1)
+		await wait_seconds(STEP_SECONDS)
+		var wrong_before: Array[int] = []
+		var done_before: Dictionary = done.duplicate()
+		for g: MiniGame in games:
+			wrong_before.append(g.wrong_count)
+			g.show_hint(2)
+		for step: int in HINT_2_MAX_SECONDS:
+			if done.size() == games.size():
+				break
+			await wait_seconds(STEP_SECONDS)
+		for i: int in games.size():
+			var rd: Dictionary = batch[i]
+			var where: String = "%s · %s" % [rd["konum"], rd["template"]]
+			if done_before.has(i):
+				pass  # test kancasının "yanlış" girdisi turu bitirdi (ör. yatay çizgide yatay kaydırma)
+			elif not done.has(i):
+				failed.append("%s: ipucu 2 turu bitirmedi (yanlış=%d)" % [where, games[i].wrong_count])
+			elif (done[i] as RoundResult).wrong != wrong_before[i] or not (done[i] as RoundResult).helped:
+				failed.append("%s: ipucu 2 yanlış cevap verdi (yanlış %d → %d)" % [where, wrong_before[i], (done[i] as RoundResult).wrong])
+			games[i].queue_free()
+		await wait_frames(2)
+	assert_eq(failed, [] as Array[String], "\n".join(failed))
 
 ## JSON sayıları float gelir; ContentDB gibi tam sayıya çevir.
 func _ints(v: Variant) -> Variant:
