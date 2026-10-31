@@ -444,7 +444,7 @@ func test_panel_hides_subtitle_and_marks_selection() -> void:
 
 # --- Bölümler ---
 
-const TABS: Array[String] = ["progress", "home", "time", "sound", "profile"]
+const TABS: Array[String] = ["progress", "home", "time", "sound", "profile", "privacy"]
 
 func test_section_switch_keeps_selected_child_and_subject() -> void:
 	_login(1)
@@ -468,10 +468,26 @@ func test_child_selector_hidden_in_shared_sections() -> void:
 		panel.select_tab(t)
 		assert_true(panel.child_selector_visible(), "%s: çocuk seçici görünür" % t)
 		assert_false(panel.shared_note_visible(), t)
-	for t: String in ["time", "sound"]:
+	for t: String in ["time", "sound", "privacy"]:
 		panel.select_tab(t)
 		assert_false(panel.child_selector_visible(), "%s: ortak bölümde çocuk seçici yok" % t)
 		assert_true(panel.shared_note_visible(), "%s: ortak not görünür" % t)
+
+## Mağaza şartı (Google Play, App Store): gizlilik politikası uygulamanın içinde de bulunur.
+## Uygulama ağ kullanmadığı için metin çevrimdışı gösterilir; dış bağlantı yoktur.
+func test_privacy_section_shows_policy_offline() -> void:
+	_login(1)
+	var panel: Node = _open_panel()
+	panel.select_tab("privacy")
+	assert_eq(panel.current_tab(), "privacy")
+	var text: String = ""
+	for n: Node in (panel as Control).find_children("*", "Label", true, false):
+		if (n as Label).is_visible_in_tree():
+			text += (n as Label).text + "\n"
+	for k: String in ["parent.privacy_no_data", "parent.privacy_no_network", "parent.privacy_on_device", "parent.privacy_full_text"]:
+		assert_string_contains(text, Strings.t(k), k)
+	assert_string_contains(text, "github.com/codehepta/OkulEtkinlik/blob/main/PRIVACY.md", "tam metnin adresi yazılı")
+	assert_eq((panel as Control).find_children("*", "LinkButton", true, false).size(), 0, "dış bağlantı yok")
 
 func test_session_end_entry_opens_time_section() -> void:
 	_login(1)

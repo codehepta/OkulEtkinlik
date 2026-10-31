@@ -14,9 +14,10 @@ const TABS: Array[Array] = [
 	["time", "parent.tab_time"],
 	["sound", "parent.tab_sound"],
 	["profile", "parent.tab_profile"],
+	["privacy", "parent.tab_privacy"],
 ]
 ## Bütün çocuklar için ortak (cihaz geneli) bölümler: çocuk seçici gizlenir.
-const SHARED_TABS: Array[String] = ["time", "sound"]
+const SHARED_TABS: Array[String] = ["time", "sound", "privacy"]
 const DEFAULT_TAB: String = "progress"
 const LIMITS: Array[int] = [0, 10, 15, 20, 30]
 const GRADES: Array[int] = [1, 2, 3]
@@ -455,6 +456,8 @@ func _rebuild() -> void:
 			_build_sound(content)
 		"profile":
 			_build_profile(content)
+		"privacy":
+			_build_privacy(content)
 		_:
 			_build_progress(content)
 
@@ -670,6 +673,17 @@ func _build_home(c: VBoxContainer) -> void:
 		item.add_child(head)
 		item.add_child(_wrap_label(str(r["text"]), FONT_BODY))
 		card_box.add_child(item)
+
+## Gizlilik: PRIVACY.md'nin özeti, çevrimdışı (mağaza şartı: politika uygulamanın içinde de olur).
+## Tam metnin adresi düz yazıdır; çocuk uygulamasında dış bağlantı verilmez.
+func _build_privacy(c: VBoxContainer) -> void:
+	var box: VBoxContainer = _scroll_card(c)
+	box.add_child(_heading(Strings.t("parent.privacy_title")))
+	for k: String in ["parent.privacy_no_data", "parent.privacy_no_network", "parent.privacy_on_device",
+			"parent.privacy_backup", "parent.privacy_voice"]:
+		box.add_child(_wrap_label(Strings.t(k), FONT_SMALL))
+	box.add_child(_wrap_label(Strings.t("parent.privacy_full_text"), FONT_SMALL, SOFT_COLOR))
+	box.add_child(_wrap_label(Strings.t("parent.privacy_url"), FONT_SMALL, SOFT_COLOR))
 
 func _build_time(c: VBoxContainer) -> void:
 	var limit_card: VBoxContainer = _card(c)
