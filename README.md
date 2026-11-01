@@ -1,4 +1,11 @@
-# Bilgi Adası (OkulEtkinlik)
+<p align="center">
+  <img src="fastlane/metadata/android/en-US/images/featureGraphic.jpg" alt="Bilgi Adası — Bilge baykuşla kil bir ada" width="100%">
+</p>
+
+<h1 align="center">
+  <img src="fastlane/metadata/android/en-US/images/icon.png" alt="" width="96"><br>
+  Bilgi Adası (OkulEtkinlik)
+</h1>
 
 MEB 1., 2. ve 3. sınıf öğretim programlarıyla uyumlu, 6–9 yaş çocuklar için **ücretsiz ve açık kaynak** bir mobil eğitim oyunu.
 
@@ -11,6 +18,26 @@ MEB 1., 2. ve 3. sınıf öğretim programlarıyla uyumlu, 6–9 yaş çocuklar 
 
 > **Durum:** 1.0.0 (2026-10-31). Bütün dersler oynanabilir (1–3. sınıf Matematik, Türkçe, Hayat Bilgisi; 3. sınıf Fen Bilimleri: 328 durak). Bütün görseller ve seslendirme tamam; mağaza yayını hazırlanıyor. Yayın adımları: [docs/release/README.md](docs/release/README.md).
 
+## Ekran görüntüleri
+<table>
+  <tr>
+    <td><img src="fastlane/screenshots/tr/iphone_69_01_01_acilis.jpg" alt="Açılış ekranı" width="100%"></td>
+    <td><img src="fastlane/screenshots/tr/iphone_69_02_02_harita.jpg" alt="Bilgi Adası haritası" width="100%"></td>
+  </tr>
+  <tr>
+    <td><img src="fastlane/screenshots/tr/iphone_69_03_04_sayma.jpg" alt="Sayma oyunu" width="100%"></td>
+    <td><img src="fastlane/screenshots/tr/iphone_69_04_06_eslestirme_fen.jpg" alt="Eşleştirme oyunu" width="100%"></td>
+  </tr>
+  <tr>
+    <td><img src="fastlane/screenshots/tr/iphone_69_05_08_saat_para.jpg" alt="Saat ve para oyunu" width="100%"></td>
+    <td><img src="fastlane/screenshots/tr/iphone_69_09_11_terazi.jpg" alt="Terazi oyunu" width="100%"></td>
+  </tr>
+  <tr>
+    <td><img src="fastlane/screenshots/tr/iphone_69_10_13_album.jpg" alt="Çıkartma albümü" width="100%"></td>
+    <td><img src="fastlane/screenshots/tr/iphone_69_08_14_veli_paneli.jpg" alt="Veli paneli" width="100%"></td>
+  </tr>
+</table>
+
 ## Çalıştırma ve test
 ```bash
 scripts/setup-godot.sh && export PATH="$HOME/.local/bin:$PATH"
@@ -20,8 +47,8 @@ godot --headless --path . -s addons/gut/gut_cmdln.gd -gdir=res://tests -ginclude
 ```
 Gerçek cihazda elle kontrol için [QA kontrol listesi](docs/qa-checklist.md). Debug APK, her PR'da CI ile üretilir.
 
-## Öncelikli asset partileri
-Sırayla: [001](asset-requests/001-bilge-maskot.md) (Bilge), [003](asset-requests/003-avatarlar-ve-arayuz.md) (avatarlar ve arayüz), [002](asset-requests/002-harita-ve-bolgeler.md) (harita), [004](asset-requests/004-sayma-nesneleri.md) (sayma nesneleri), [005](asset-requests/005-genel-seslendirme.md) (genel seslendirme); sonra 006 (müzik/efekt), 007 (Ünite 1 seslendirme), 008 (çıkartmalar). Ayrıntı: [asset-requests/README.md](asset-requests/README.md).
+## Görsel ve sesler
+Bütün görseller ve seslendirme tamam. Yeni asset istekleri ve üretim promptları: [asset-requests/README.md](asset-requests/README.md).
 
 ## Dokümanlar
 - [Tasarım (spec)](docs/superpowers/specs/2026-10-04-bilgi-adasi-design.md)
