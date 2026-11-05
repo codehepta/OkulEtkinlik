@@ -194,6 +194,8 @@ open build/ios/bilgi-adasi.xcodeproj
    - Not: "Uygulama ağ kullanmaz; veli alanı ekrandaki çarpma sorusunun cevabıyla açılır (Çocuklar kategorisi veli kapısı)."
 7. TestFlight'ta dene → "Add for Review" → Submit.
 
+**Apple'ın Çocuklar kategorisi soruları:** ilk gönderimde otomatik bir soru listesi gelir ve sürüm "Rejected" görünür. Hazır yanıt ve süreç notları: [app-review-kids-1-3-reply.md](app-review-kids-1-3-reply.md).
+
 **Çocuklar kategorisi kuralları:**
 - Üçüncü taraf analitik ya da reklam yok.
 - Uygulama dışına bağlantı yok.
