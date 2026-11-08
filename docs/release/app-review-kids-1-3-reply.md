@@ -42,6 +42,11 @@ https://github.com/codehepta/OkulEtkinlik/blob/main/PRIVACY.md
 Thank you.
 
 ## Süreç notları
-- Yanıtı gönderdikten sonra **yeniden gönderme yapma**. Kelime Avcısı'nda (Eylül 2026) yanıttan sonra aynı build yeniden gönderildi; yeni inceleme aynı soruları sordu ve sürüm yine reddedildi. Apple'ın dönüşünü bekle, uzarsa Contact Us → App Review.
+- **5 Kasım 2026:** yanıt mesaj dizisine yazıldı. Üç gün içinde Apple'dan dönüş gelmedi; sürüm "Rejected", gönderim "Unresolved Issues" olarak kaldı.
+- **8 Kasım 2026, işe yarayan yol:** dört sorunun yanıtları **App Review notuna** konuldu, sonra aynı build yeniden gönderildi. Not metni `fastlane/metadata/ios/review_notes.txt` dosyasında. Böylece yeni incelemeci yanıtları en başta görüyor. Kelime Avcısı'nda notta yanıt yokken aynı build yeniden gönderilmiş ve aynı sorular tekrar gelmişti.
+- **Yeniden gönderimin adımları:**
+  1. Notu API'den değiştirmek tek başına yetmez. `submit_for_review` "appStoreVersions … is not in valid state" hatası verir.
+  2. Sürüm sayfasında bir alanı değiştirip **Save**'e bas; sürüm "Ready for Review" olur.
+  3. **Update Review**'a, ardından gönderim sayfasında **Resubmit to App Review**'a bas.
 - Aynı sorular yeniden gelirse aynı dizide kısa bir yanıt yeterlidir: dört soruya da "No", ardından bu metne atıf.
-- Uygulamaya ağ, analitik ya da veri toplama eklenirse bu yanıt **geçersiz** olur; `PRIVACY.md`, App Privacy ve bu metin birlikte yeniden yazılır.
+- Uygulamaya ağ, analitik ya da veri toplama eklenirse bu yanıt **geçersiz** olur; `PRIVACY.md`, App Privacy, inceleme notu ve bu metin birlikte yeniden yazılır.
