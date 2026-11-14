@@ -44,6 +44,10 @@ Thank you.
 ## Süreç notları
 - **5 Kasım 2026:** yanıt mesaj dizisine yazıldı. Üç gün içinde Apple'dan dönüş gelmedi; sürüm "Rejected", gönderim "Unresolved Issues" olarak kaldı.
 - **8 Kasım 2026, işe yarayan yol:** dört sorunun yanıtları **App Review notuna** konuldu, sonra aynı build yeniden gönderildi. Not metni `fastlane/metadata/ios/review_notes.txt` dosyasında. Böylece yeni incelemeci yanıtları en başta görüyor. Kelime Avcısı'nda notta yanıt yokken aynı build yeniden gönderilmiş ve aynı sorular tekrar gelmişti.
+- **11 Kasım 2026, ikinci ret (Yönerge 2.3.6, doğru meta veri):** yaş derecelendirmesinde "Parental Controls" **Evet** işaretliydi. Veli panelindeki günlük süre sınırı ebeveyn denetimi sayılmıştı. Apple uygulamada ne Parental Controls ne Age Assurance buldu; ikisinin de **None** olmasını istedi. Yönerge 1.3 bu mesajda artık sorulmadı.
+  - 15 Kasım'da ikisi de Hayır yapıldı ve API'den doğrulandı: 4+, Made for Kids 6–8, diğer yanıtlar aynı.
+  - Mesaja kısa bir yanıt yazıldı ve sürüm yeniden gönderildi ("Waiting for Review").
+  - Ders: "In-App Controls" yalnızca gerçek bir ebeveyn denetimi ya da yaş doğrulama özelliği varsa **Evet** olur. Süre sınırı ya da veli kapısı bu kapsama girmez.
 - **Yeniden gönderimin adımları:**
   1. Notu API'den değiştirmek tek başına yetmez. `submit_for_review` "appStoreVersions … is not in valid state" hatası verir.
   2. Sürüm sayfasında bir alanı değiştirip **Save**'e bas; sürüm "Ready for Review" olur.
