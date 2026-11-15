@@ -42,6 +42,15 @@ https://github.com/codehepta/OkulEtkinlik/blob/main/PRIVACY.md
 Thank you.
 
 ## Süreç notları
-- Yanıtı gönderdikten sonra **yeniden gönderme yapma**. Kelime Avcısı'nda (Eylül 2026) yanıttan sonra aynı build yeniden gönderildi; yeni inceleme aynı soruları sordu ve sürüm yine reddedildi. Apple'ın dönüşünü bekle, uzarsa Contact Us → App Review.
+- **5 Kasım 2026:** yanıt mesaj dizisine yazıldı. Üç gün içinde Apple'dan dönüş gelmedi; sürüm "Rejected", gönderim "Unresolved Issues" olarak kaldı.
+- **8 Kasım 2026, işe yarayan yol:** dört sorunun yanıtları **App Review notuna** konuldu, sonra aynı build yeniden gönderildi. Not metni `fastlane/metadata/ios/review_notes.txt` dosyasında. Böylece yeni incelemeci yanıtları en başta görüyor. Kelime Avcısı'nda notta yanıt yokken aynı build yeniden gönderilmiş ve aynı sorular tekrar gelmişti.
+- **11 Kasım 2026, ikinci ret (Yönerge 2.3.6, doğru meta veri):** yaş derecelendirmesinde "Parental Controls" **Evet** işaretliydi. Veli panelindeki günlük süre sınırı ebeveyn denetimi sayılmıştı. Apple uygulamada ne Parental Controls ne Age Assurance buldu; ikisinin de **None** olmasını istedi. Yönerge 1.3 bu mesajda artık sorulmadı.
+  - 15 Kasım'da ikisi de Hayır yapıldı ve API'den doğrulandı: 4+, Made for Kids 6–8, diğer yanıtlar aynı.
+  - Mesaja kısa bir yanıt yazıldı ve sürüm yeniden gönderildi ("Waiting for Review").
+  - Ders: "In-App Controls" yalnızca gerçek bir ebeveyn denetimi ya da yaş doğrulama özelliği varsa **Evet** olur. Süre sınırı ya da veli kapısı bu kapsama girmez.
+- **Yeniden gönderimin adımları:**
+  1. Notu API'den değiştirmek tek başına yetmez. `submit_for_review` "appStoreVersions … is not in valid state" hatası verir.
+  2. Sürüm sayfasında bir alanı değiştirip **Save**'e bas; sürüm "Ready for Review" olur.
+  3. **Update Review**'a, ardından gönderim sayfasında **Resubmit to App Review**'a bas.
 - Aynı sorular yeniden gelirse aynı dizide kısa bir yanıt yeterlidir: dört soruya da "No", ardından bu metne atıf.
-- Uygulamaya ağ, analitik ya da veri toplama eklenirse bu yanıt **geçersiz** olur; `PRIVACY.md`, App Privacy ve bu metin birlikte yeniden yazılır.
+- Uygulamaya ağ, analitik ya da veri toplama eklenirse bu yanıt **geçersiz** olur; `PRIVACY.md`, App Privacy, inceleme notu ve bu metin birlikte yeniden yazılır.

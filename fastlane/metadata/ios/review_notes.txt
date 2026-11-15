@@ -1,0 +1,16 @@
+Kids Category (Guideline 1.3): answers to the standard questions, also sent in the Resolution Center on November 5, 2026. The answer to all four is No.
+
+1. Third-party analytics: No. The app contains no analytics SDK or service of any kind (no crash reporter, no attribution SDK) and does not measure usage, locally or remotely.
+2. Third-party advertising: No. There are no ads, no ad network SDK, no promotional content, and no links that open outside the app.
+3. Data shared with third parties: No. The app shares no data with anyone, including the developer. It makes no network requests at all: no server, account, sign-in, in-app purchase, or cloud sync. It works fully in Airplane Mode.
+4. Other user or device data collection: No. The app does not collect or transmit any user or device data. It never accesses the advertising identifier, location, contacts, camera, microphone, or photo library.
+
+Stored only on the device, inside the app's sandbox, never transmitted: child profiles (chosen animal avatar, optional nickname, school grade), game progress (completed stops, stars, mastery, review schedule, stickers, tree house layout) and settings (sound levels, daily time limit, daily usage time). Deleting the app deletes all of it; a parent can also delete a single profile.
+
+Parental gate: the parent area opens only after answering the multiplication question shown on screen with the on-screen keypad. There, a parent can save a backup file into the app's own folder (visible in the Files app). The app itself sends nothing.
+
+Voice: instructions play from recordings bundled in the app; if one is missing, the on-device system text-to-speech is used. No audio is recorded.
+
+Healthy-habit content is limited to the national primary curriculum (Life Sciences).
+
+Built with the open-source Godot engine; no third-party SDKs. Privacy manifest: no tracking, no collected data types. App Privacy: Data Not Collected. Privacy policy in the app (parent area, "Gizlilik") and at https://github.com/codehepta/OkulEtkinlik/blob/main/PRIVACY.md
