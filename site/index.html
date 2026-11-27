@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bilgi Adası: 1–3. Sınıf Eğitici Oyun</title>
+<meta name="description" content="MEB 1., 2. ve 3. sınıf öğretim programlarıyla uyumlu, 6–9 yaş için ücretsiz, reklamsız ve açık kaynak eğitim oyunu.">
+<meta name="theme-color" content="#3cc3c0">
+<!-- iPhone Safari'de App Store akıllı bandı -->
+<meta name="apple-itunes-app" content="app-id=6829281918">
+<!-- WhatsApp ve sosyal medya bağlantı önizlemesi -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:title" content="Bilgi Adası: 1–3. Sınıf">
+<meta property="og:description" content="Okul programıyla uyumlu, ücretsiz ve reklamsız eğitim oyunu. 6–9 yaş.">
+<meta property="og:url" content="https://codehepta.github.io/OkulEtkinlik/">
+<meta property="og:image" content="https://codehepta.github.io/OkulEtkinlik/img/onizleme.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+<!-- Bu sayfa hiçbir dış kaynağa istek atmaz: yazı tipi, görsel ve kod hep aynı sitede. Analitik yoktur. -->
+<style>
+  @font-face { font-family: "Andika"; src: url("fonts/Andika-Regular.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+  @font-face { font-family: "Andika"; src: url("fonts/Andika-Bold.ttf") format("truetype"); font-weight: 700; font-display: swap; }
+
+  :root {
+    --sea: #3cc3c0;
+    --sea-deep: #1f8f8d;
+    --sand: #fbf1dc;
+    --card: #fffaf0;
+    --ink: #2b2a33;
+    --ink-soft: #5d5a66;
+    --owl: #f08a3c;
+    --owl-deep: #c9621b;
+    --leaf: #6cbf4b;
+    --line: #ecdcbc;
+    --shadow: 0 6px 0 rgba(120, 86, 30, .12), 0 14px 30px rgba(120, 86, 30, .10);
+    --radius: 26px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --sand: #1d2427; --card: #273034; --ink: #f4efe6; --ink-soft: #c3bdb1; --line: #39454a;
+      --shadow: 0 6px 0 rgba(0,0,0,.25), 0 14px 30px rgba(0,0,0,.25);
+    }
+  }
+  :root[data-theme="dark"] {
+    --sand: #1d2427; --card: #273034; --ink: #f4efe6; --ink-soft: #c3bdb1; --line: #39454a;
+    --shadow: 0 6px 0 rgba(0,0,0,.25), 0 14px 30px rgba(0,0,0,.25);
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--sand); color: var(--ink);
+    font-family: "Andika", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 18px; line-height: 1.5;
+  }
+  a { color: var(--sea-deep); }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) a { color: #7fe0dd; } }
+  img { max-width: 100%; height: auto; display: block; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+
+  /* Üst bölüm: deniz */
+  .hero {
+    background: radial-gradient(120% 80% at 50% 0%, #6fdad6 0%, var(--sea) 55%, #2fb1ae 100%);
+    color: #11302f; padding: 28px 0 56px; position: relative; overflow: hidden;
+  }
+  .hero::after {
+    content: ""; position: absolute; left: -5%; right: -5%; bottom: -40px; height: 80px;
+    background: var(--sand); border-radius: 50% 50% 0 0;
+  }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand img { width: 56px; height: 56px; border-radius: 14px; box-shadow: 0 4px 0 rgba(0,0,0,.12); }
+  .brand b { font-size: 22px; display: block; line-height: 1.1; }
+  .brand span { font-size: 15px; opacity: .8; }
+  .hero-grid { display: grid; grid-template-columns: 1.3fr .7fr; gap: 24px; align-items: center; margin-top: 28px; position: relative; z-index: 1; }
+  h1 { font-size: clamp(30px, 6vw, 46px); line-height: 1.12; margin: 0 0 14px; }
+  .lead { font-size: 19px; margin: 0 0 22px; max-width: 34em; }
+  .bilge { width: 100%; max-width: 260px; justify-self: center; filter: drop-shadow(0 12px 14px rgba(0,0,0,.18)); }
+
+  .stores { display: flex; flex-wrap: wrap; gap: 12px; }
+  .store {
+    display: inline-flex; flex-direction: column; justify-content: center;
+    min-width: 200px; padding: 12px 22px; border-radius: 18px; text-decoration: none;
+    background: #16161a; color: #fff; box-shadow: 0 5px 0 rgba(0,0,0,.25);
+  }
+  .store small { font-size: 13px; opacity: .85; }
+  .store strong { font-size: 21px; line-height: 1.15; }
+  .store:active { transform: translateY(3px); box-shadow: 0 2px 0 rgba(0,0,0,.25); }
+  .store.soon { background: rgba(255,255,255,.55); color: #1d3b3a; box-shadow: none; border: 2px dashed rgba(17,48,47,.35); }
+  .android-note { display: none; margin: 12px 0 0; font-size: 16px; }
+  .is-android .android-note { display: block; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 0; padding: 0; list-style: none; }
+  .chips li { background: rgba(255,255,255,.7); border-radius: 999px; padding: 6px 14px; font-size: 15px; font-weight: 700; }
+
+  section { padding: 34px 0; }
+  h2 { font-size: clamp(24px, 4.5vw, 32px); margin: 0 0 18px; line-height: 1.2; }
+  .card { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); padding: 22px; }
+
+  .regions { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  .region { text-align: center; padding: 18px 12px; }
+  .region img { width: 92px; height: 92px; object-fit: contain; margin: 0 auto 8px; }
+  .region b { display: block; font-size: 18px; }
+  .region span { color: var(--ink-soft); font-size: 15px; }
+
+  .shots { display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 4px 2px 16px; }
+  .shots img { width: min(78vw, 520px); flex: none; border-radius: 18px; box-shadow: var(--shadow); scroll-snap-align: start; }
+
+  .features { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .features h3 { margin: 0 0 6px; font-size: 19px; }
+  .features p { margin: 0; color: var(--ink-soft); }
+
+  .teacher { background: linear-gradient(135deg, #fff1df, #ffe3c7); color: #3b2a1a; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .teacher { background: linear-gradient(135deg, #3a2f25, #43311f); color: var(--ink); } }
+  :root[data-theme="dark"] .teacher { background: linear-gradient(135deg, #3a2f25, #43311f); color: var(--ink); }
+  .teacher p { margin: 0 0 14px; }
+  .btn {
+    display: inline-block; border: 0; cursor: pointer; font: inherit; font-weight: 700;
+    background: var(--owl); color: #fff; padding: 12px 20px; border-radius: 16px; text-decoration: none;
+    box-shadow: 0 5px 0 var(--owl-deep); margin: 0 8px 10px 0;
+  }
+  .btn.ghost { background: transparent; color: inherit; box-shadow: inset 0 0 0 2px currentColor; }
+  .btn:active { transform: translateY(3px); box-shadow: 0 2px 0 var(--owl-deep); }
+  .copied { font-size: 15px; min-height: 1.5em; margin: 0; }
+
+  footer { padding: 28px 0 48px; color: var(--ink-soft); font-size: 15px; }
+  footer p { margin: 0 0 8px; }
+
+  @media (max-width: 720px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .bilge { max-width: 150px; margin-top: 4px; }
+    .regions { grid-template-columns: repeat(2, 1fr); }
+    .features { grid-template-columns: 1fr; }
+    .store { flex: 1 1 100%; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="brand">
+      <img src="img/icon.webp" alt="" width="56" height="56">
+      <div><b>Bilgi Adası</b><span>1–3. sınıf eğitici oyun</span></div>
+    </div>
+
+    <div class="hero-grid">
+      <div>
+        <h1>Okul programıyla uyumlu, ücretsiz eğitim oyunu</h1>
+        <p class="lead">MEB 1., 2. ve 3. sınıf öğretim programlarına (Türkiye Yüzyılı Maarif Modeli) göre hazırlandı. 6–9 yaşındaki çocuklar baykuş Bilge ile adayı keşfederken Matematik, Türkçe, Hayat Bilgisi ve Fen Bilimleri çalışır.</p>
+
+        <div class="stores">
+          <a class="store" href="https://apps.apple.com/tr/app/id6829281918">
+            <small>iPhone ve iPad için</small>
+            <strong>App Store'dan indir</strong>
+          </a>
+          <!-- Play herkese açılınca bu öğeyi şu bağlantıyla değiştir:
+               <a class="store" href="https://play.google.com/store/apps/details?id=io.github.codehepta.bilgiadasi"><small>Android için</small><strong>Google Play'den indir</strong></a> -->
+          <span class="store soon" aria-disabled="true">
+            <small>Android için</small>
+            <strong>Google Play: çok yakında</strong>
+          </span>
+        </div>
+        <p class="android-note">Android sürümü çok yakında Google Play'de. Bu sayfayı kaydedin; açıldığında buradan indirebilirsiniz.</p>
+
+        <ul class="chips">
+          <li>Ücretsiz</li>
+          <li>Reklamsız</li>
+          <li>İnternetsiz çalışır</li>
+          <li>Veri toplamaz</li>
+        </ul>
+      </div>
+      <img class="bilge" src="img/bilge.webp" alt="El sallayan baykuş Bilge" width="260" height="280">
+    </div>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap">
+      <h2>Adanın dört bölgesi</h2>
+      <div class="regions">
+        <div class="card region"><img src="img/sayi_ormani.webp" alt="" width="92" height="92"><b>Sayı Ormanı</b><span>Matematik</span></div>
+        <div class="card region"><img src="img/harf_vadisi.webp" alt="" width="92" height="92"><b>Harf Vadisi</b><span>Türkçe, ilk okuma-yazma</span></div>
+        <div class="card region"><img src="img/hayat_kasabasi.webp" alt="" width="92" height="92"><b>Hayat Kasabası</b><span>Hayat Bilgisi</span></div>
+        <div class="card region"><img src="img/kesif_laboratuvari.webp" alt="" width="92" height="92"><b>Keşif Laboratuvarı</b><span>Fen Bilimleri (3. sınıf)</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <h2>Oyundan görüntüler</h2>
+      <div class="shots" tabindex="0" aria-label="Ekran görüntüleri, yana kaydırın">
+        <img src="img/ekran_harita.webp" alt="Adanın haritası: Sayı Ormanı, Harf Vadisi, Hayat Kasabası ve Bilge'nin Ağaç Evi" width="1400" height="644" loading="lazy">
+        <img src="img/ekran_sayma.webp" alt="Sayma etkinliği" width="1400" height="644" loading="lazy">
+        <img src="img/ekran_kodlama.webp" alt="Kodlama etkinliği" width="1400" height="644" loading="lazy">
+        <img src="img/ekran_veli_paneli.webp" alt="Veli paneli" width="1400" height="644" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <h2>Veliler için</h2>
+      <div class="features">
+        <div class="card"><h3>Okuma bilmeyen çocuk da oynayabilir</h3><p>Bütün yönergeler seslendirilir ve istendiğinde tekrar dinlenir.</p></div>
+        <div class="card"><h3>Çocuğun hızına göre</h3><p>Zorluk kendiliğinden ayarlanır; unutulmaya yüz tutan konular yeniden karşısına çıkar.</p></div>
+        <div class="card"><h3>Baskı yok</h3><p>Ceza, can kaybı, süre baskısı ya da şans kutusu yok. Ödüller: çıkartma albümü ve Bilge'nin Ağaç Evi.</p></div>
+        <div class="card"><h3>Veli paneli</h3><p>Bir cihazda dört çocuk profili; ilerleme takibi, günlük süre sınırı ve evde etkinlik önerileri.</p></div>
+        <div class="card"><h3>Gizlilik</h3><p>Reklam, uygulama içi satın alma ve hesap yok. Uygulama internete bağlanmaz; ilerleme yalnızca cihazda kalır.</p></div>
+        <div class="card"><h3>Açık kaynak</h3><p>Kaynak kodu ve içeriği herkese açık; isteyen inceleyebilir.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="card teacher">
+        <h2>Öğretmenler için</h2>
+        <p>Bilgi Adası'nı sınıfınızın veli grubunda paylaşabilirsiniz. Bu sayfanın bağlantısı iPhone ve Android kullanan bütün velilere uygundur.</p>
+        <button class="btn" type="button" id="share">Bağlantıyı paylaş</button>
+        <a class="btn ghost" href="ogretmen.jpg" download="bilgi-adasi-veliler-icin.jpg">Velilere gönderilecek görseli indir</a>
+        <p class="copied" id="copied" aria-live="polite"></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Bilgi Adası, MIT (kod) ve CC BY 4.0 (içerik) lisanslı, açık kaynak bir projedir.</p>
+    <p><a href="https://github.com/codehepta/OkulEtkinlik">Kaynak kodu</a> · <a href="https://github.com/codehepta/OkulEtkinlik/blob/main/PRIVACY.md">Gizlilik politikası</a></p>
+    <p>Bu sayfa çerez kullanmaz ve ziyaretçi verisi toplamaz.</p>
+  </div>
+</footer>
+
+<script>
+  // Android cihazda "yakında" notunu göster.
+  if (/Android/i.test(navigator.userAgent)) document.documentElement.classList.add("is-android");
+
+  // Paylaş: telefonda sistem paylaşım menüsü, olmazsa panoya kopyala.
+  (function () {
+    var url = "https://codehepta.github.io/OkulEtkinlik/";
+    var text = "Bilgi Adası: 1–3. sınıf için okul programıyla uyumlu, ücretsiz ve reklamsız eğitim oyunu.";
+    var out = document.getElementById("copied");
+    document.getElementById("share").addEventListener("click", function () {
+      if (navigator.share) {
+        navigator.share({ title: "Bilgi Adası", text: text, url: url }).catch(function () {});
+        return;
+      }
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(text + " " + url).then(function () {
+          out.textContent = "Bağlantı kopyalandı. WhatsApp grubuna yapıştırabilirsiniz.";
+        }, function () { out.textContent = url; });
+      } else {
+        out.textContent = url;
+      }
+    });
+  })();
+</script>
+</body>
+</html>
